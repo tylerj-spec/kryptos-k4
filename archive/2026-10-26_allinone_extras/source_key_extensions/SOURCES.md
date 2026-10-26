@@ -1,0 +1,8 @@
+# R27 source provenance and interpretive limits
+
+- University of Oxford Bodleian Libraries, audio exhibit Stop 3.2 (1922 diary) and Stop 3.3 (1923 publication): https://visit.bodleian.ox.ac.uk/tutankhamun-audio . The excerpts are later display transcripts; editorial expansions, typos (e.g., `form` for `from`) and punctuation affect a running key. **Do not call these a complete facsimile or the whole original book.**
+- Griffith Institute / Tutankhamun Spatial Archive, ca. 1924 Carter lecture notes (edited transcript): https://tutankhamun.griffith.ox.ac.uk/miscellaneous/taa-i12/taa-i1207 . We normalized the editorial markup into an ordinary text sample for this experiment; it's not byte-for-byte a diplomatic original.
+- CIA, original Kryptos panel ciphertext: https://www.cia.gov/legacy/headquarters/kryptos-sculpture/ . K1–K3 = 768 alphabetic characters plus 4 question marks, 772 engraved visible characters. The entire sculpture has 865 letters plus 4 question marks = 869 visible characters (not 869 *K1–K3* letters). K4 has 97 alphabetic characters. Tested two `?` conventions: omission and literal Q replacement.
+- A complete 1923 first edition can be found catalogued at https://openlibrary.org/books/OL6661682M/ . Original OCR download was unavailable from this environment, so we have **not** tested the full text.
+- The Carter publications were used as finite-key streams in source order, then reversed, numbered via AZ and KRYPTOS. No look-ahead and no alignment chosen from K4 readability. No claim that Carter, his book, or K3's original quotation must be K4's key.
+- Known K4 clues supplied to every search: exact 24 raw plaintext letters at their published 0-based positions. They cannot supply independent evidence if rediscovered by the solver.

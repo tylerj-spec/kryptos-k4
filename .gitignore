@@ -1,0 +1,5 @@
+# build outputs and scratch
+k4kit/bin/
+__pycache__/
+*.pyc
+k4kit/runs/**/tmp/

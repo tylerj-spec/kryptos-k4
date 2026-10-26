@@ -1,0 +1,6 @@
+running key: K1-K3 plaintext: 12184 trials, 0 possible (chance would give 5.7)
+repeating dates and coordinates: 202 trials, 0 possible (chance would give 0.1)
+Gromark-style stream, 2-digit primer: 200 trials, 0 possible (chance would give 0.1)
+Gromark-style stream, 3-digit primer: 2000 trials, 0 possible (chance would give 0.9)
+Gromark-style stream, 4-digit primer: 20000 trials, 6 possible (chance would give 9.4)
+total passes saved: 6

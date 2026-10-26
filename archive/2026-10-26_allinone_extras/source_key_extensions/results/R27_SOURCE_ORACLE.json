@@ -1,0 +1,228 @@
+{
+  "models": "in-place 2-free alph shift Vigenere variants; source excerpts only",
+  "summaries": [
+    {
+      "source": "carter_1923_bodleian",
+      "url": "https://visit.bodleian.ox.ac.uk/tutankhamun-audio (Stop 3.3; reproduction transcript, not full volume)",
+      "n_characters": 937,
+      "sha256": "ccf7234b38fb5966f7f0f1ab69f569c3a340dd56b6a7fa6d48ad307a11533d23",
+      "trials": 6728,
+      "passes": 8,
+      "expected_at_random": 3.162
+    },
+    {
+      "source": "carter_diary_1922_bodleian",
+      "url": "https://visit.bodleian.ox.ac.uk/tutankhamun-audio (Stop 3.2; editorially expanded transcript)",
+      "n_characters": 753,
+      "sha256": "6b7604fb75d0c39a07b4355e9576a4253c3d7be68211d027a2c897f54c3f965d",
+      "trials": 5256,
+      "passes": 4,
+      "expected_at_random": 2.47
+    },
+    {
+      "source": "carter_1924_lecture",
+      "url": "https://tutankhamun.griffith.ox.ac.uk/miscellaneous/taa-i12/taa-i1207 (edited letterforms)",
+      "n_characters": 830,
+      "sha256": "cf626fceaf8c41dbe6807f74d09b0e7242695557bfee91df445869757ca30b9c",
+      "trials": 5872,
+      "passes": 6,
+      "expected_at_random": 2.76
+    },
+    {
+      "source": "cia_k1k3_cipher_drop_q",
+      "url": "same CIA source",
+      "n_characters": 768,
+      "sha256": "23e71c225898eb2776995eebd5a190221cd4c38b7f8a5c5db743845ada9bcf85",
+      "trials": 5376,
+      "passes": 2,
+      "expected_at_random": 2.527
+    },
+    {
+      "source": "cia_k1k3_cipher_question_as_q",
+      "url": "same CIA source",
+      "n_characters": 772,
+      "sha256": "787a18f7b6df7969a4db24a091d9385deb8f13beb7a0473df7e34464dfc64c29",
+      "trials": 5408,
+      "passes": 2,
+      "expected_at_random": 2.542
+    }
+  ],
+  "passing_keys": [
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "FWD",
+      "alphabet": "KRY",
+      "offset": 109,
+      "sign": 1,
+      "keystream": "HBHGHTPBFTELGEPTNBFKJFVRKBLHJOGOFXLKEOHEXOHELWLBRHCILCFTKXHGLSDECHTKTFEMPRRLKRPALEOLDHGGHNLXLOHKQ"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "FWD",
+      "alphabet": "KRY",
+      "offset": 109,
+      "sign": -1,
+      "keystream": "HBHGHTPBFTELGEPTNBFKJFVRKBLHJOGOFXLKEOHEXOHELWLBRHCILCFTKXHGLSDECHTKTFEMPRRLKRPALEOLDHGGHNLXLOHKQ"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 263,
+      "sign": 1,
+      "keystream": "VAHTSUMTIYTINRETENATNEMOMEHTROFDLOGFOTNILGEHTEREHWYREVEDLOGDNASEUTATSSLAMINAEGNARTSTSIMEHTMORFYLW"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 263,
+      "sign": -1,
+      "keystream": "VAHTSUMTIYTINRETENATNEMOMEHTROFDLOGFOTNILGEHTEREHWYREVEDLOGDNASEUTATSSLAMINAEGNARTSTSIMEHTMORFYLW"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 431,
+      "sign": 1,
+      "keystream": "RPTUBREKCILFOTEMALFELDNACEHTGNISUACREBMAHCEHTMROFGNIPACSERIATOHEHTGNIHTONEESDLUOCITSRIFTATCIDREVE"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 431,
+      "sign": -1,
+      "keystream": "RPTUBREKCILFOTEMALFELDNACEHTGNISUACREBMAHCEHTMROFGNIPACSERIATOHEHTGNIHTONEESDLUOCITSRIFTATCIDREVE"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "KRY",
+      "offset": 568,
+      "sign": 1,
+      "keystream": "HJKTHTCRLWLCKHRTFWBHTBHJKBFRTPKLBLLDKTHLRKTHJLOEKLEBLGTPPLREEPRHLRFOLOENTPTLKPXTLOEKTHGLGHNRVFMLR"
+    },
+    {
+      "source": "carter_1923_bodleian",
+      "orientation": "REV",
+      "alphabet": "KRY",
+      "offset": 568,
+      "sign": -1,
+      "keystream": "HJKTHTCRLWLCKHRTFWBHTBHJKBFRTPKLBLLDKTHLRKTHJLOEKLEBLGTPPLREEPRHLRFOLOENTPTLKPXTLOEKTHGLGHNRVFMLR"
+    },
+    {
+      "source": "carter_diary_1922_bodleian",
+      "orientation": "FWD",
+      "alphabet": "AZ",
+      "offset": 180,
+      "sign": 1,
+      "keystream": "ALLENDERWITHTHEREISESTHEFOREMENWAITEDINANXIOUSEXPECTATIONITWASSOMETIMEBEFOREONECOULDSEETHEHOTAIRE"
+    },
+    {
+      "source": "carter_diary_1922_bodleian",
+      "orientation": "FWD",
+      "alphabet": "AZ",
+      "offset": 180,
+      "sign": -1,
+      "keystream": "ALLENDERWITHTHEREISESTHEFOREMENWAITEDINANXIOUSEXPECTATIONITWASSOMETIMEBEFOREONECOULDSEETHEHOTAIRE"
+    },
+    {
+      "source": "carter_diary_1922_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 265,
+      "sign": 1,
+      "keystream": "ENONOPUDEPAEHSTCEJBOLUFITUAEBDNAYRANIDROARTXEFOYELDEMLUFREDNOWDNAEGNARTSSTIHTIWENOEROFEBDEMOOLYLL"
+    },
+    {
+      "source": "carter_diary_1922_bodleian",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 265,
+      "sign": -1,
+      "keystream": "ENONOPUDEPAEHSTCEJBOLUFITUAEBDNAYRANIDROARTXEFOYELDEMLUFREDNOWDNAEGNARTSSTIHTIWENOEROFEBDEMOOLYLL"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "FWD",
+      "alphabet": "KRY",
+      "offset": 82,
+      "sign": 1,
+      "keystream": "HBHGHTPBFTELGEPTNBFKJFVRKBLHJOGOFXLKEOHEXOHELWLBRHCILCFTKXHGLSDECHTKTFEMPRRLKRPALEOLDHGGHNLXLOHKQ"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "FWD",
+      "alphabet": "KRY",
+      "offset": 82,
+      "sign": -1,
+      "keystream": "HBHGHTPBFTELGEPTNBFKJFVRKBLHJOGOFXLKEOHEXOHELWLBRHCILCFTKXHGLSDECHTKTFEMPRRLKRPALEOLDHGGHNLXLOHKQ"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 192,
+      "sign": 1,
+      "keystream": "VAHTSUMTIYTINRETENATNEMOMEHTROFDLOGFOTNILGEHTEREHWYREVEDLOGDNASEUTATSSLAMINAEGNARTSTSIMEHTMORFYLW"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 192,
+      "sign": -1,
+      "keystream": "VAHTSUMTIYTINRETENATNEMOMEHTROFDLOGFOTNILGEHTEREHWYREVEDLOGDNASEUTATSSLAMINAEGNARTSTSIMEHTMORFYLW"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "REV",
+      "alphabet": "KRY",
+      "offset": 496,
+      "sign": 1,
+      "keystream": "HJKTHTCRLWLCKHRTFWBHTBHJKBFRTPKLBLLDKTHLRKTHJLOEKLEBLGTPPLREEPRHLRFOLOENTPTLKPXTLOEKTHGLGHNRVFMLR"
+    },
+    {
+      "source": "carter_1924_lecture",
+      "orientation": "REV",
+      "alphabet": "KRY",
+      "offset": 496,
+      "sign": -1,
+      "keystream": "HJKTHTCRLWLCKHRTFWBHTBHJKBFRTPKLBLLDKTHLRKTHJLOEKLEBLGTPPLREEPRHLRFOLOENTPTLKPXTLOEKTHGLGHNRVFMLR"
+    },
+    {
+      "source": "cia_k1k3_cipher_drop_q",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 306,
+      "sign": 1,
+      "keystream": "ANHSYDIBIOETPCOEHRSLNHORHAYDNEGTEALLJWEGLPUNZGJMFADHMDEBEMUQDPKVXDPVUNGMLAYQJRMPLFLGZNPMFQNDERGLZ"
+    },
+    {
+      "source": "cia_k1k3_cipher_drop_q",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 306,
+      "sign": -1,
+      "keystream": "ANHSYDIBIOETPCOEHRSLNHORHAYDNEGTEALLJWEGLPUNZGJMFADHMDEBEMUQDPKVXDPVUNGMLAYQJRMPLFLGZNPMFQNDERGLZ"
+    },
+    {
+      "source": "cia_k1k3_cipher_question_as_q",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 307,
+      "sign": 1,
+      "keystream": "ANHSYDIBIOETPCOEHRSLNHORHAYDNEGTEALLJWEGLPUNZGJMFADHMDEBEMUQDPKVXDPVUNGMLAYQJRMPLFLGZNPMFQNDERGLZ"
+    },
+    {
+      "source": "cia_k1k3_cipher_question_as_q",
+      "orientation": "REV",
+      "alphabet": "AZ",
+      "offset": 307,
+      "sign": -1,
+      "keystream": "ANHSYDIBIOETPCOEHRSLNHORHAYDNEGTEALLJWEGLPUNZGJMFADHMDEBEMUQDPKVXDPVUNGMLAYQJRMPLFLGZNPMFQNDERGLZ"
+    }
+  ]
+}

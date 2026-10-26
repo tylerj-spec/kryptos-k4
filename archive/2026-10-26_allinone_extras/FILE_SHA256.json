@@ -1,0 +1,114 @@
+{
+  "CARTER_MACE_1923_SOURCE_STATUS.md": {
+    "bytes": 2292,
+    "sha256": "547fb1e23ce2bc8c1f65e1a15084c78bd80649537be882bb15641ceac43de1f2"
+  },
+  "KRYPTOS_K4_AGENT_STARTER_2026-10-26.zip": {
+    "bytes": 102760,
+    "sha256": "fc4dcada59548f416b8698ca28649a46218ff305470f9e9268e1270ea2e8c661"
+  },
+  "KRYPTOS_K4_MASTER_AGENT_HANDOFF_2026-10-26.md": {
+    "bytes": 28105,
+    "sha256": "9e5dd7896eae83e9aa884e04465206787515c2730af6ca76200c483db1e3f47c"
+  },
+  "README_K4_AGENT_START.md": {
+    "bytes": 1620,
+    "sha256": "9b045ee125ea71be5c4b9d974048348b816ccb456d206d3eb1b29c5032a2acc0"
+  },
+  "START_HERE.md": {
+    "bytes": 2133,
+    "sha256": "14f2847856a9f25f28b5528b6562901fc7b13b9f2edcd3e2a4e52d16e844c3af"
+  },
+  "agent_starter/KRYPTOS_K4_MASTER_AGENT_HANDOFF_2026-10-26.md": {
+    "bytes": 28105,
+    "sha256": "9e5dd7896eae83e9aa884e04465206787515c2730af6ca76200c483db1e3f47c"
+  },
+  "agent_starter/LEDGER.md": {
+    "bytes": 73210,
+    "sha256": "8497b0b65d1dc535a16af7b02f63c05c4b3759aa14601565c3ef88a81528eec8"
+  },
+  "agent_starter/R28_RESULTS_FOR_REVIEW.txt": {
+    "bytes": 3844,
+    "sha256": "242003996f5567f9914417bd155fa7ac49acdd5671d33427dee2fdcf730ef300"
+  },
+  "agent_starter/README_AGENT_START_HERE.md": {
+    "bytes": 1620,
+    "sha256": "9b045ee125ea71be5c4b9d974048348b816ccb456d206d3eb1b29c5032a2acc0"
+  },
+  "agent_starter/candidates/R23_ALL_REVIEW_STRINGS.csv": {
+    "bytes": 237555,
+    "sha256": "dbbed92fec6c4dbfe1d01ad4dea83ce297f90bf7bc1030527d09e528d2a0ed8b"
+  },
+  "agent_starter/candidates/R27_CANDIDATE_REVIEW.md": {
+    "bytes": 3514,
+    "sha256": "a072ab4847c711f0a7adf28110ac25facca95642ac8db55fc2a79fb7fc813aed"
+  },
+  "agent_starter/claude/r26/key_oracle.py": {
+    "bytes": 3404,
+    "sha256": "b1ff339944b739f9137e38fb474412b2a644395ea41bbac6905b3f5d4d11a619"
+  },
+  "agent_starter/claude/r26/trifid_any.py": {
+    "bytes": 5434,
+    "sha256": "9e5e4f5c51f2f8bda7593fb3173691d32ffd2f8135a72af997d6390f3b8cea1a"
+  },
+  "agent_starter/r27_routes.py": {
+    "bytes": 4327,
+    "sha256": "37debdbc99be0725fcdcfb4648ee2ad1eeb9c39093421fdcc0dd43291d77d99d"
+  },
+  "agent_starter/r28_morse_experiment.py": {
+    "bytes": 8233,
+    "sha256": "f6d4bb2edf40789ce88a22d713aeb7bf64244c350f0d6e4455a814004bf6b5ab"
+  },
+  "agent_starter/r28_morse_pulses.py": {
+    "bytes": 4177,
+    "sha256": "b8bccf889dddb959950ab7794d61f1e5998496920c6c210fe026c2dd849c689a"
+  },
+  "agent_starter/r28_results/R28_MORSE_PULSES.json": {
+    "bytes": 8371,
+    "sha256": "ecd4f9941d27d11337ccd973466bef0e5d19fa7fa5ad71f9e6c93b9a55cef044"
+  },
+  "agent_starter/r28_results/R28_MORSE_TEST.json": {
+    "bytes": 18651,
+    "sha256": "1fc8c56159553743423614e0695eb9c9432ff26647d2cc87ba6a9043bf5ea1c6"
+  },
+  "agent_starter/r28_results/r28_morse_passes.csv": {
+    "bytes": 2428,
+    "sha256": "7aa64943a75d46f2e7a9462f06e9b367a50752afce7378c7361bb9ce7b421f31"
+  },
+  "agent_starter/sources/2026-10-22_world_clock_and_sources.md": {
+    "bytes": 10706,
+    "sha256": "8084fea0e5edc13b62445256d7b57565c7b1ec8ba503137d7c0307cc5235428d"
+  },
+  "agent_starter/sources/world_clock_360.md": {
+    "bytes": 17034,
+    "sha256": "df249fb8e270233f973b9de2d020fee520b81099f290cbe5a1d608fe1bdd44e1"
+  },
+  "fetch_carter_1923_ocr.py": {
+    "bytes": 2072,
+    "sha256": "dd25d634044d7c41d906388d0219eaa1b65e6570b296854b2a22b8bec77db9f4"
+  },
+  "source_key_extensions/SOURCES.md": {
+    "bytes": 1774,
+    "sha256": "2ea095dc6e72f084775ec0b84320ca4fbfa7ebbe3ded88be191494ca71f572c7"
+  },
+  "source_key_extensions/r27_source_null.py": {
+    "bytes": 2645,
+    "sha256": "d034a4ceaad94a3ceff840a796b8fa7e08d5cd9969ff49dedeaa895a23c2c606"
+  },
+  "source_key_extensions/r27_sources.py": {
+    "bytes": 7927,
+    "sha256": "1d31c7ffac559acd157dffe14399e5870289359c159aa8a016f2adbdff35ea4f"
+  },
+  "source_key_extensions/results/R27_SOURCE_ORACLE.json": {
+    "bytes": 7560,
+    "sha256": "8e0737c1e788faa6b43547e57a3d023ccf4470fd72c4b65aa7a7c8424937a14c"
+  },
+  "source_key_extensions/results/R27_SOURCE_PASSES.csv": {
+    "bytes": 3034,
+    "sha256": "37532cbe7a4bfe176ec0535734f86a01eba8fcfe74d42c8493db7ce1495093a2"
+  },
+  "source_key_extensions/results/R27_SOURCE_S2K_SUMMARY.json": {
+    "bytes": 5846,
+    "sha256": "2354063580699516406da2f59476f39540bd98d739b54a8db9ee5c555d07333f"
+  }
+}

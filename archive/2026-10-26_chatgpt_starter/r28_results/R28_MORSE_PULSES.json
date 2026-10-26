@@ -1,0 +1,520 @@
+{
+  "description": "Re-encoded Morse mark stream without gaps; 2 mapping conventions, K0 3 unverified concatenation orders; 97 pulse windows; 4 K3-neighborhood routes plus identity; both orders; +/- signs for one-free; 40 same-inventory mark shuffles per order",
+  "observed": {
+    "slab_first_documented": {
+      "morse_len": 238,
+      "counts": {
+        "one_free": 0,
+        "two_free": 0
+      },
+      "passing": []
+    },
+    "compass_slab_first": {
+      "morse_len": 238,
+      "counts": {
+        "one_free": 0,
+        "two_free": 0
+      },
+      "passing": []
+    },
+    "photographic_page_order": {
+      "morse_len": 238,
+      "counts": {
+        "one_free": 0,
+        "two_free": 0
+      },
+      "passing": []
+    }
+  },
+  "nulls": {
+    "slab_first_documented": [
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      }
+    ],
+    "compass_slab_first": [
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      }
+    ],
+    "photographic_page_order": [
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      },
+      {
+        "one_free": 0,
+        "two_free": 0
+      }
+    ]
+  },
+  "positive": 200,
+  "seed": 282829,
+  "elapsed_s": 18.34
+}
