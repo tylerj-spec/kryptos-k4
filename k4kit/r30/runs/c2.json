@@ -1,0 +1,617 @@
+{
+ "protocol": "9ebe80810e0ce143b99130da8874215e11124938853e1269de6749775bcb2c86",
+ "models": {
+  "ORTH": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "ORTHXQ": "8539bf4dcff8bde719db7b01b16cf62c2ab0795e4dd553eac5cacc01a43d2822"
+ },
+ "result": {
+  "ORTH": {
+   "fixtures_blind_readable": 11,
+   "fixtures_true_line_readable": 11,
+   "of": 22,
+   "best_wrong_W_fixtures": -121.5070946,
+   "unpunctuated_true_line_readable": 15,
+   "unp_of": 20,
+   "detail": {
+    "F00": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -83.44425594,
+     "best_wrong_W": -153.6034984,
+     "true_text": "IPACKEDTHEMAPSYWERODEEASTNORTHEASTUNTILDUSKYWESTOODNEARTHEGREATBERLINCLOCKANDLISTENEDFORITSCHIMES"
+    },
+    "F01": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -117.4096316,
+     "best_wrong_W": -149.2547947,
+     "true_text": "OURBUSWASLATEGWEHIKEDEASTNORTHEASTFORTWOHOURSGTHENWEFOUNDTHEOLDBERLINCLOCKGDIDYOUEVERSEETHATFACEM"
+    },
+    "F02": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -96.36619268,
+     "best_wrong_W": -156.2393924,
+     "true_text": "MYAUNTVROTEXTHEWINDISEASTNORTHEASTXTREROOFLEAKEDALLWEEKSOTHEOLDBERLINCLOCKINTHEHALLSTOPPEDATSEVEN"
+    },
+    "F03": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -137.1721762,
+     "best_wrong_W": -152.2181689,
+     "true_text": "LELAPHAHEWMNYFAXAABEDEASTNORTHEASTAXONGQUARTEKEYBUGLEKVASAMTHATBERLINCLOCKONEJEDAONLOTERZGLDAWARM"
+    },
+    "F04": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -92.61683651,
+     "best_wrong_W": -146.0577914,
+     "true_text": "HEASKEDWHICHWAYXISAIDEASTNORTHEASTMHELAUGHEDANDNOLOVETHANTHEOLDBERLINCLOCKISALWAYSSLOWVWHYISTHATZ"
+    },
+    "F05": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.93653358,
+     "best_wrong_W": -153.2369315,
+     "true_text": "THESTORMCAMEINFROMTHEEASTNORTHEASTZATNIGHTSTREETSLAYEMPTYANDTHEBERLINCLOCKFELLSILENTINTHECOLDRAIN"
+    },
+    "F06": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -91.32541322,
+     "best_wrong_W": -164.4889615,
+     "true_text": "FOLLOWTHECANALQTHENGOEASTNORTHEASTTOTHEBRIDGEQWALKNINEPACESQTHEBERLINCLOCKWILLBERIGHTINFRONTOFYOU"
+    },
+    "F07": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -89.33056816,
+     "best_wrong_W": -149.4309462,
+     "true_text": "ASTHEFOGLIFTEDWEROWEDEASTNORTHEASTANDTHEHARBORLAMPSFADEDJWASTHEBERLINCLOCKSTILLRUNNINGATMIDNIGHTV"
+    },
+    "F08": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -146.7278948,
+     "best_wrong_W": -145.7691613,
+     "true_text": "SKYDIMONCEKWAYBTEASOOEASTNORTHEASTNEOSERBAMTHAMALHEYDEPTHBEISEXBERLINCLOCKVAPADHOKEGETCEDFRYELOWA"
+    },
+    "F09": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -74.98937199,
+     "best_wrong_W": -138.4600977,
+     "true_text": "GRANDPAALWAYSSAIDTHATEASTNORTHEASTWASWHERETHESTORMSCAMEFROMVTHEBERLINCLOCKWASHISUSUALMEETINGPLACE"
+    },
+    "F10": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -86.51699483,
+     "best_wrong_W": -142.4620268,
+     "true_text": "ITWASCOLDYTHEWINDBLEWEASTNORTHEASTALLDAVYWEHUDDLEDBENEATHTHEOLDBERLINCLOCKANDSIPPEDSTRONGBLACKTEA"
+    },
+    "F11": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -90.51162829,
+     "best_wrong_W": -154.8211573,
+     "true_text": "DOYOURECALLHOWBEDROVEEASTNORTHEASTFORWEEKSPIKEHTAXGOTOZITHASTHEBERLINCLOCKTAKENFROMOURHOTELWINDOW"
+    },
+    "F12": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -79.33081398,
+     "best_wrong_W": -143.5611836,
+     "true_text": "THEOLDMAYSHOWEDATRAILEASTNORTHEASTFROMTHEOLDMILLZATITSENDWASTHEBERLINCLOCKMARKEDWITHATINUREDCROSS"
+    },
+    "F13": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -137.1386763,
+     "best_wrong_W": null,
+     "true_text": "XIXREFIGPIEWETPERSAULEASTNORTHEASTMETILLTOTFTVSHEDSAMYENDTICWHYBERLINCLOCKIVYUSEONMMANYXVPIEREVEI"
+    },
+    "F14": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -123.9975575,
+     "best_wrong_W": -125.4266153,
+     "true_text": "DOMYTUTTHYCUPOMGODGWEEASTNORTHEASTNYIICYCLOKEYEDANLLLIMBTHEIRJEBERLINCLOCKAVERYDONEUPIOFLEFTVASON"
+    },
+    "F15": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -92.65956761,
+     "best_wrong_W": -161.1106549,
+     "true_text": "HOWWARISTHERIZEOFITISEASTNORTHEASTOUTORNDABOUTTHREEPIKESPASTTHEBERLINCLOCKONTBEPAINSHOPPINGSTREET"
+    },
+    "F16": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -123.0535578,
+     "best_wrong_W": -134.387924,
+     "true_text": "LISTEMCAITSPLTDBELIFEEASTNORTHEASTSORTNOVAUTXIVTOWNMENDOPINETHEBERLINCLOCKAMEXCATBEISENSTAITATVII"
+    },
+    "F17": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -120.179389,
+     "best_wrong_W": -121.5070946,
+     "true_text": "ABEWEEFEWPRIEDAIDNLEBEASTNORTHEASTHTISTHEYALLEXBEBAATXEDPROUDHEBERLINCLOCKWAYGETXVSTHESAMBINDDEBT"
+    },
+    "F18": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -101.5240756,
+     "best_wrong_W": -141.85765,
+     "true_text": "ISOHISOHERICHORWATTCOEASTNORTHEASTQULITPOOREACHTHERIDERLFINTTHEBERLINCLOCKAUPASKFORXVFRIENDANPREY"
+    },
+    "F19": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -130.4332347,
+     "best_wrong_W": -134.9149394,
+     "true_text": "GXIDUGWEDINVASMOUHTTOEASTNORTHEASTTICOXRIPEWHYLIMPLAFAMONIOFTHEBERLINCLOCKNAMEWAGISQSGTMORMUSTHER"
+    },
+    "F20": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -89.13617767,
+     "best_wrong_W": -122.5539064,
+     "true_text": "MEETMEATNINEXTHENLOOKEASTNORTHEASTFROMTHESTEPSXYOUWILLSEETHEOLDBERLINCLOCKABOVETHECROWDXCOMEALONE"
+    },
+    "F21": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -87.46825732,
+     "best_wrong_W": -128.9772151,
+     "true_text": "WHOMADETHISMAXPITSAYSEASTNORTHEASTFROMTHEOLDWELLVTHENSOUTHTOTHEBERLINCLOCKANDDIGUNDERITSSTONEBASE"
+    },
+    "U00": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -71.13070051,
+     "best_wrong_W": null,
+     "true_text": "ALLMORNINGTHEWINDBLEWEASTNORTHEASTOVERTHEWATERANDWECOULDHEARTHEBERLINCLOCKCHIMINGACROSSTHEHARBOUR"
+    },
+    "U01": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.65402926,
+     "best_wrong_W": null,
+     "true_text": "ALONGRIDGEOFROCKSRUNSEASTNORTHEASTFROMTHELAKETOTHETOWNWITHANOLDBERLINCLOCKINITSPRETTYLITTLESQUARE"
+    },
+    "U02": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -137.182329,
+     "best_wrong_W": null,
+     "true_text": "ASHWIDIHEKNIGGAVEPROVEASTNORTHEASTIHEKEAAUGOMIHEVARIESKMDARETHEBERLINCLOCKJEWAUTORBNSOWSOORSDFFEW"
+    },
+    "U03": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -75.42565172,
+     "best_wrong_W": null,
+     "true_text": "ATSUNRISETHEPULLSFLEWEASTNORTHEASTTOWARDSTHEFISHMARKETBESIDETHEBERLINCLOCKTOWERONTHEOLDWATERFRONT"
+    },
+    "U04": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -74.23884195,
+     "best_wrong_W": null,
+     "true_text": "ATTHETOPOFTHEHILLTURNEASTNORTHEASTANDWALKDOWNTOTHETOWNMUSEUMITSBERLINCLOCKISFAMOUSACROSSTHEREGION"
+    },
+    "U05": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.53723785,
+     "best_wrong_W": null,
+     "true_text": "EACHSUMMERTHEGEESEFLYEASTNORTHEASTOVERTHEHILLSWESAWTHEMABOVETHEBERLINCLOCKINTHEMARKETSQUAREATDUSK"
+    },
+    "U06": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.17952729,
+     "best_wrong_W": null,
+     "true_text": "FOLLOWTHERIVERPATHDUEEASTNORTHEASTFORTHREEMILESPASTTHEFARMTOTHEBERLINCLOCKREPAIRSHOPONTHEMAINROAD"
+    },
+    "U07": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -78.88607374,
+     "best_wrong_W": null,
+     "true_text": "FROMTHEOLDMILLWALKDUEEASTNORTHEASTFORAMILETHENLOOKFORASHOPWITHABERLINCLOCKWHICHSTILLSHOWSTHEHOURS"
+    },
+    "U08": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -77.41668251,
+     "best_wrong_W": null,
+     "true_text": "FROMTHETOWERVENUSROSEEASTNORTHEASTATDAWNJUSTASTHEOLDBELLNEARTHEBERLINCLOCKSTARTEDTORINGFORMORNING"
+    },
+    "U09": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -69.26113268,
+     "best_wrong_W": null,
+     "true_text": "GRANDMOTHERALWAYSSAIDEASTNORTHEASTWASTHEBESTWAYTOFACEAGARDENHERBERLINCLOCKHUNGABOVETHEKITCHENDOOR"
+    },
+    "U10": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -83.19446329,
+     "best_wrong_W": null,
+     "true_text": "HERKITCHENWINDOWFACESEASTNORTHEASTSOTHESUNWAKESHEREACHDAYANDHERBERLINCLOCKTICKSQUIETLYBYTHEWINDOW"
+    },
+    "U11": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -70.55159726,
+     "best_wrong_W": null,
+     "true_text": "INWINTERMYFATHERDROVEEASTNORTHEASTACROSSTHEPLAINSTOBUYANANTIQUEBERLINCLOCKFORHISGROWINGCOLLECTION"
+    },
+    "U12": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.96413989,
+     "best_wrong_W": null,
+     "true_text": "ONOURGAPTHELITTLETOWNEASTNORTHEASTOFTHELAKEISSHOWNINBLUENEARTHEBERLINCLOCKFACTORYANDTHEOLDSTATION"
+    },
+    "U13": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -127.7811295,
+     "best_wrong_W": null,
+     "true_text": "ORNEDAAMOASIDIRTYNOKEEASTNORTHEASTAEDNETONCSATETVERWHOMIAKTETEABERLINCLOCKBRSEABYONSEEGETHEEDGEDR"
+    },
+    "U14": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -72.31137261,
+     "best_wrong_W": null,
+     "true_text": "THECLASSOFCHILDRENRANEASTNORTHEASTTHROUGHTHEGREENPARKTOWATCHTHEBERLINCLOCKSTRIKETWELVETIMESATNOON"
+    },
+    "U15": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -72.47149619,
+     "best_wrong_W": null,
+     "true_text": "THEFORECASTWARNEDTHATEASTNORTHEASTWINDSWOULDBRINGHEAVYSNOWSOTHEBERLINCLOCKREPAIRMUSTWAITFORSPRING"
+    },
+    "U16": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -123.9103296,
+     "best_wrong_W": null,
+     "true_text": "TMCHWFEWMSKWIGETOLDWSEASTNORTHEASTIFTHEBAPTVEGALLERYFACESANGTHEBERLINCLOCKSTANDFINITSFUNNIESTROOM"
+    },
+    "U17": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.41149668,
+     "best_wrong_W": null,
+     "true_text": "THESHOPOWNERPOINTEDUSEASTNORTHEASTANDSAIDTHEOLDESTITEMHEHADWASABERLINCLOCKHISGRANDFATHERONCEFIXED"
+    },
+    "U18": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -146.4592776,
+     "best_wrong_W": null,
+     "true_text": "FFEHLBYPEGGUTIELMOILBEASTNORTHEASTSTFOOMTTFORPAOSMEOXESPDANBYAOBERLINCLOCKLOOKDEWQUOFHELITENDOILG"
+    },
+    "U19": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -119.8785452,
+     "best_wrong_W": null,
+     "true_text": "THETWYTUREOHIKERSWENTEASTNORTHEASTTYREAWMTHEVILLAGEBOXASKTHEYOOBERLINCLOCKONVHEINNWALLSTRUCKSEVEN"
+    }
+   }
+  },
+  "ORTHXQ": {
+   "fixtures_blind_readable": 10,
+   "fixtures_true_line_readable": 10,
+   "of": 22,
+   "best_wrong_W_fixtures": -117.7889986,
+   "unpunctuated_true_line_readable": 12,
+   "unp_of": 20,
+   "detail": {
+    "F00": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -79.39849845,
+     "best_wrong_W": -143.2848761,
+     "true_text": "IPACKEDTHEMAPSXWERODEEASTNORTHEASTUNTILDUSKXWESTOODNEARTHEGREATBERLINCLOCKANDLISTENEDFORITSCHIMES"
+    },
+    "F01": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -97.34194884,
+     "best_wrong_W": -141.7845684,
+     "true_text": "OURBUSWASLATEXWEHIKEDEASTNORTHEASTFORTWOHOURSXTHENWEFOUNDTHEOLDBERLINCLOCKXDIDYOUEVERSEETHATFACEQ"
+    },
+    "F02": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -85.65660515,
+     "best_wrong_W": -143.9494962,
+     "true_text": "QGAUNTWROTEXTHEWINDISEASTNORTHEASTXTHEROOMLEAKEDALLWEEKSOTHEOLDBERLINCLOCKINTHEHALLSTOPPEDATSEVEN"
+    },
+    "F03": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -129.5038739,
+     "best_wrong_W": -145.3406347,
+     "true_text": "MELEIXAXATSNLLAIEXSOLEASTNORTHEASTXVORQTHERWARELBERALOVEEASTHADBERLINCLOCKSNXXXLEANIFDERGRUFFAARK"
+    },
+    "F04": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.8759929,
+     "best_wrong_W": -136.9723823,
+     "true_text": "HEASKEDWHICHWAYXISAIDEASTNORTHEASTXHELAUGHEDANDTOLDMETHATTHEOLDBERLINCLOCKISALWAYSSLOWXWHYISTHATQ"
+    },
+    "F05": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -113.6311308,
+     "best_wrong_W": -140.7726483,
+     "true_text": "THEXTORYCAQQONFROQTHEEASTNORTHEASTZATNIPXQSTREETSLLMEQUTMANDTHEBERLINCLOCKFELLSIZEFTUNTHECOLDLAOF"
+    },
+    "F06": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -75.80421534,
+     "best_wrong_W": -150.3818009,
+     "true_text": "FOLLOWTHECANALXTHENGOEASTNORTHEASTTOTHEBRIDGEXWALKNINEPACESXTHEBERLINCLOCKWILLBERIGHTINFRONTOFYOU"
+    },
+    "F07": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -81.52855502,
+     "best_wrong_W": -144.9185031,
+     "true_text": "ASTHEFOGLIFTEDWEROWEDEASTNORTHEASTANDTHEHARBORLAMPSFADEDXWASTHEBERLINCLOCKSTILLRUNNINGATMIDNIGHTQ"
+    },
+    "F08": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -127.9713332,
+     "best_wrong_W": -132.8506763,
+     "true_text": "HKNTINEWFFSQSOBVEIPROEASTNORTHEASTONEGAUZYUSISUNLANDWARTIMEAGEOBERLINCLOCKFORNTAYSEWITIFIXRDMARKS"
+    },
+    "F09": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -128.2450929,
+     "best_wrong_W": -137.9598436,
+     "true_text": "DRANUSAALWAYSSAGUTMETEASTNORTHEASTWASWMEGETVEVXSOORCAMPWIDTRAMPBERLINCLOCKXASVIKOKOCFJEEXINISLAKE"
+    },
+    "F10": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -92.63955242,
+     "best_wrong_W": -134.2489359,
+     "true_text": "ITWASCOLDXTHEWINDBLEWEASTNORTHEASTALLDAYXWEHUDDLEDBENEATHTHEOLDBERLINCLOCKANDSIPPEDSTKONGBLADQTEA"
+    },
+    "F11": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -84.48827286,
+     "best_wrong_W": -143.9104111,
+     "true_text": "DOYOURECALLHOWWEDROVEEASTNORTHEASTFORWEEKSQIKEPTAPHOTOXITHASTHEBERLINCLOCKTAKENFROMOURHOTELWINDOW"
+    },
+    "F12": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -127.5298659,
+     "best_wrong_W": -134.6333336,
+     "true_text": "TXDOLEFAFEDOWEEATRAILEASTNORTHEASTPROPTEDOPVEILMYATITSDBEWASTEDBERLINCLOCKBARXDULITRATINGHEUPROSS"
+    },
+    "F13": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -133.5345492,
+     "best_wrong_W": null,
+     "true_text": "THCRONIOPWEEESTFRSUEZEASTNORTHEASTWITHPUTATLRIDGEXSAYUMALTHERIOBERLINCLOCKENSSOEAANNKNOCKTHOSEIIT"
+    },
+    "F14": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -126.1248827,
+     "best_wrong_W": -121.7627114,
+     "true_text": "WEOETATTHECAZEQWEDUDEEASTNORTHEASTBYXICYCLEQSHEDCAXGLIOBEDSUNHEBERLINCLOCKTHEKEWEASSLMUCHIFTHESON"
+    },
+    "F15": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -87.25930967,
+     "best_wrong_W": -147.2416351,
+     "true_text": "HOWWARISTHERIVERFITISEASTNORTHEASTOUTOWNXABOUTTHREEDIDESPASTTHEBERLINCLOCKONTBEDAINSHOPPINGSTREET"
+    },
+    "F16": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -122.1583828,
+     "best_wrong_W": -130.3965179,
+     "true_text": "LIGAEZCASESILIDBUBOLEEASTNORTHEASTSORTROBALEXANTOURTENDOINNETWEBERLINCLOCKAZURXATMENFUNFADITAINIA"
+    },
+    "F17": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -111.3745689,
+     "best_wrong_W": -117.7889986,
+     "true_text": "OWEWEEVENFRYEMAYMYLEDEASTNORTHEASTOLOGTHEDALLASLEDAOFPEAFROXIHEBERLINCLOCKSAUGETIESTHESONDONIMELT"
+    },
+    "F18": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -95.30376093,
+     "best_wrong_W": -125.4302295,
+     "true_text": "ISTHISTHERIGHTRZATXGOEASTNORTHEASTGDPIQTOOREACHTHERIVERLFINTTHEBERLINCLOCKADDASKFORMYFRIENDANDREW"
+    },
+    "F19": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -126.9645795,
+     "best_wrong_W": -126.4981116,
+     "true_text": "AORAMALEAHIMISTOAYXPMEASTNORTHEASTBYCONRHERWHUNITEBADIIAOFGUYHEBERLINCLOCKQATLUIWPETHASXORTMQXYER"
+    },
+    "F20": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.2621917,
+     "best_wrong_W": -119.8379344,
+     "true_text": "MEETMEATNINEXTHENLOOKEASTNORTHEASTFROMTHESTEPSXYOUWILLSEETHEOLDBERLINCLOCKABOVETHECROWDXCOMEALONE"
+    },
+    "F21": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -80.33698306,
+     "best_wrong_W": -125.9855555,
+     "true_text": "WHOMADETHISMAPQITSAYSEASTNORTHEASTFROMTHEOLDWELLXTHENSOUTHTOTHEBERLINCLOCKANDDIGUNDERITSSTONEBASE"
+    },
+    "U00": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -120.7245401,
+     "best_wrong_W": null,
+     "true_text": "ALLPORNICHTWEXINDOLEXEASTNORTHEASTOFSETWEDATERANKOSCOULDPEARDWEBERLINCLOCKCLIPICHACROSSTWWWMRFOUR"
+    },
+    "U01": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -76.65402926,
+     "best_wrong_W": null,
+     "true_text": "ALONGRIDGEOFROCKSRUNSEASTNORTHEASTFROMTHELAKETOTHETOWNWITHANOLDBERLINCLOCKINITSPRETTYLITTLESQUARE"
+    },
+    "U02": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -151.6403068,
+     "best_wrong_W": null,
+     "true_text": "ANPOPDIHIYEUXCQMEFROMEASTNORTHEASTIHEYNAGXXIXITEMQNSENYQGANITHYBERLINCLOCKBYPAXTONUNQCONRTRSUDDEN"
+    },
+    "U03": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -75.42565172,
+     "best_wrong_W": null,
+     "true_text": "ATSUNRISETHEPULLSFLEWEASTNORTHEASTTOWARDSTHEFISHMARKETBESIDETHEBERLINCLOCKTOWERONTHEOLDWATERFRONT"
+    },
+    "U04": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -72.90321176,
+     "best_wrong_W": null,
+     "true_text": "ATTHETOXOFTHEHILLTURNEASTNORTHEASTANDWALKDOWNTOTHETOWNMUSEUMITSBERLINCLOCKISFAMOUSACROSSTHEREGION"
+    },
+    "U05": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -100.4145017,
+     "best_wrong_W": null,
+     "true_text": "EACHSUMMERTHEWEESEYLPEASTNORTHEASTOVERTHEHILLSNESDOTHEMDBYVETHEBERLINCLOCKIFTHEMARKETSQUAREDTAUSX"
+    },
+    "U06": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -83.5615491,
+     "best_wrong_W": null,
+     "true_text": "FOLLOWTHERIVERPATHDUEEASTNORTHEASTFORTHREEPILEDPASTTHEFARMTOTHEBERLINCLOCKREXAIRSGOXONTHEPAINROAD"
+    },
+    "U07": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -133.4575997,
+     "best_wrong_W": null,
+     "true_text": "IVOFTHEOLAGNLSIALLJOEEASTNORTHEASTDOYAWNXETHERLUCKDOESSHAMINTHABERLINCLOCKIHICHSTNLXEHVISTHEHOWVS"
+    },
+    "U08": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -77.41668251,
+     "best_wrong_W": null,
+     "true_text": "FROMTHETOWERVENUSROSEEASTNORTHEASTATDAWNJUSTASTHEOLDBELLNEARTHEBERLINCLOCKSTARTEDTORINGFORMORNING"
+    },
+    "U09": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -69.26113268,
+     "best_wrong_W": null,
+     "true_text": "GRANDMOTHERALWAYSSAIDEASTNORTHEASTWASTHEBESTWAYTOFACEAGARDENHERBERLINCLOCKHUNGABOVETHEKITCHENDOOR"
+    },
+    "U10": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -83.19446329,
+     "best_wrong_W": null,
+     "true_text": "HERKITCHENWINDOWFACESEASTNORTHEASTSOTHESUNWAKESHEREACHDAYANDHERBERLINCLOCKTICKSQUIETLYBYTHEWINDOW"
+    },
+    "U11": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -70.55159726,
+     "best_wrong_W": null,
+     "true_text": "INWINTERMYFATHERDROVEEASTNORTHEASTACROSSTHEPLAINSTOBUYANANTIQUEBERLINCLOCKFORHISGROWINGCOLLECTION"
+    },
+    "U12": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.49695468,
+     "best_wrong_W": null,
+     "true_text": "ONOURMAYTHELITTLETOWNEASTNORTHEASTOFTHELAKEISSHOWNINBLUENEARTHEBERLINCLOCKFACTORXANDTHEOLDSTATION"
+    },
+    "U13": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.13291111,
+     "best_wrong_W": null,
+     "true_text": "OURLITTLETOURBUSDROVEEASTNORTHEASTALONGTHECOASTTHENSTOPPEDATTHEBERLINCLOCKMUSEUMFORALONGAFTERNOON"
+    },
+    "U14": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -100.5766035,
+     "best_wrong_W": null,
+     "true_text": "THECLASSUPCHILDRENRANEASTNORTHEASTTHROUGHTHEFREEIRARKTHMDTAHTHEBERLINCLOCKSTRIKETOELGETIYESATNOON"
+    },
+    "U15": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -72.47149619,
+     "best_wrong_W": null,
+     "true_text": "THEFORECASTWARNEDTHATEASTNORTHEASTWINDSWOULDBRINGHEAVYSNOWSOTHEBERLINCLOCKREPAIRMUSTWAITFORSPRING"
+    },
+    "U16": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -97.47465571,
+     "best_wrong_W": null,
+     "true_text": "THEMUSEUMSGUIDETOLDUSEASTNORTHEASTISTHEYAPTWEXALLERPFACESANDTHEBERLINCLOCKSTANDSINITSSUNNIESTROOM"
+    },
+    "U17": {
+     "blind_readable": true,
+     "true_line_readable": true,
+     "true_W": -73.41149668,
+     "best_wrong_W": null,
+     "true_text": "THESHOPOWNERPOINTEDUSEASTNORTHEASTANDSAIDTHEOLDESTITEMHEHADWASABERLINCLOCKHISGRANDFATHERONCEFIXED"
+    },
+    "U18": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -126.9205787,
+     "best_wrong_W": null,
+     "true_text": "DUESLBUYEGGQTHENSAILSEASTNORTHEASTWORANTOXRAUPHASSENDERSCAMBXIABERLINCLOCKFOODSARPENNHELITEVIOHOF"
+    },
+    "U19": {
+     "blind_readable": false,
+     "true_line_readable": false,
+     "true_W": -130.0670784,
+     "best_wrong_W": null,
+     "true_text": "THETFUTSLENDSOERYHENBEASTNORTHEASTBYRUINXTHEXILCAMEBLVAPOTDUGAXBERLINCLOCKOHQDEINQFALLSTLICOMEXEH"
+    }
+   }
+  }
+ }
+}
