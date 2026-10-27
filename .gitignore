@@ -7,3 +7,6 @@ k4kit/r30/runs/*_in*.txt
 k4kit/r30/runs/*_out*.jsonl
 k4kit/r30/runs/word_model_orthxq.tsv
 k4kit/r30/runs/r27_passes.csv
+k4kit/r30/runs/word_model_de.tsv
+k4kit/r30/runs/word_model_nl.tsv
+k4kit/r30/runs/word_model_mix.tsv

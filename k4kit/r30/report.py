@@ -5,17 +5,20 @@ aid, not evidence (unforced letters are optimiser choices)."""
 import csv
 import json
 
-from r30lib import ANCH, HERE, MODELS, RUNS
+from r30lib import HERE, RUNS
 
 FAMILIES = [  # (file stem, title)
-    ("e1_ORTH", "E1 chain addition, 6/7-digit primers (ORTH)"),
-    ("e2_ORTH", "E2 one-cycle K3-style routes + Gromark (ORTH)"),
-    ("g5_ORTHXQ", "E3a 5-digit Gromark, 39 primers (ORTHXQ punctuation model)"),
-    ("r2_ORTHXQ", "E3b two-cycle K3-style routes + Gromark (ORTHXQ)"),
-    ("e1_ORTHXQ", "E3c E1 passes (ORTHXQ)"),
-    ("e2_ORTHXQ", "E3d E2 settings (ORTHXQ)"),
-    ("g5_ORTH", "Reference: 5-digit Gromark, 39 primers (ORTH, re-run)"),
-    ("r2_ORTH", "Reference: two-cycle routes (ORTH, re-run)"),
+    ("e4_carter_v1_doran_full64", "E4 Carter & Mace 1923 vol. I as running key, all 585 passes (English, 64 restarts)"),
+    ("e6_DE", "E6 Carter passes + 39 Gromark primers, German word model"),
+    ("e6_NL", "E6 Carter passes + 39 Gromark primers, Dutch word model"),
+    ("e6_MIX", "E6 Carter passes + 39 Gromark primers, mixed English/German/Dutch model"),
+    ("e1_ORTH", "E1 chain addition, 6/7-digit primers (English)"),
+    ("e2_ORTH", "E2 one-cycle K3-style routes + Gromark (English)"),
+    ("e5_ORTH", "E5 one mis-carved clue letter + Gromark (English)"),
+    ("g5_ORTHXQ", "E3a 5-digit Gromark, 39 primers (punctuation model; exploratory, gate failed)"),
+    ("r2_ORTHXQ", "E3b two-cycle K3-style routes + Gromark (punctuation model; exploratory)"),
+    ("g5_ORTH", "Reference: 5-digit Gromark, 39 primers (English, re-run)"),
+    ("r2_ORTH", "Reference: two-cycle routes (English, re-run)"),
 ]
 
 
@@ -71,7 +74,7 @@ def mask_view(fm):
 
 
 if __name__ == "__main__":
-    model = load_model(MODELS["ORTHXQ"])
+    model = load_model(RUNS / "word_model_mix.tsv")  # English + German + Dutch (built by build_lang_models.py)
     rows, md = [], ["# R30 human-review shortlist (REVIEW ONLY unless marked CANDIDATE)", "",
                     "Each row is the raw 97-letter output of the English search for one key setting, exactly as "
                     "decrypted (it re-encrypts to K4 with its own alphabets, checked independently).",

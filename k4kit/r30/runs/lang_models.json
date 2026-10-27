@@ -1,0 +1,16 @@
+{
+ "wordfreq": "3.1.1",
+ "python": "3.13.17",
+ "de": {
+  "words": 98712,
+  "sha256": "91fbe70e240feb2f07957c2f7971115ba50888b160288b4af5aca9b6f9a9aea5"
+ },
+ "nl": {
+  "words": 98137,
+  "sha256": "19af0220730150fd036fb4d248504bf48382e3ef24e1556e1b1f49e11cf1c883"
+ },
+ "mix": {
+  "words": 388151,
+  "sha256": "c36f6960f9059fc9421223baa2028ed32240bfc989a205225d2bddd10a66be68"
+ }
+}
