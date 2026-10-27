@@ -1,0 +1,114 @@
+[
+  {
+    "id": "PLANTUNKNOWN_00",
+    "score": -142.7729076,
+    "plaintext": "ASSBONUDUPTRYBAREMSYDYILTROTWRYIFWIKETWHYDATENIREBYOOSHEHEATTREMENSAROHIOCORDBAUPIONILLTHERATMOST",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 75,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_01",
+    "score": -144.2900943,
+    "plaintext": "JAKEPTDOORNAPXMAWEJAWINBIENTOISFWOMHAWARIAVARAIIIIXXATLEGINAISMISACETOSELLEBROWNTIOUBYDOGFEECFFEW",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 96,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_02",
+    "score": -140.2217357,
+    "plaintext": "IBUCKJRRAKEONPESASATWRITHOTIFROCKOFAATMIIIXVIRAMSIANDONUPHAAHAYSMATENITTILYOKEOUTUPLLTRONJUTSLYDI",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 96,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_03",
+    "score": -131.4100274,
+    "plaintext": "LAYLAMPSOTOAKAIDESILYLMUGJSOBSAUNITNEVERTAOFFASWEORSOIKONBEAIOFOFOHAFLINGONCEAOKAIWANOWNLIFEWONAN",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 91,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_04",
+    "score": -136.605926,
+    "plaintext": "WWWEXISQUEIFAPPFEWGOASKSTOREWEOWNTWAXYANICRYAINWONOFLASTDOASLETPASGOAHADDIXSONSTAHSTERDNOPOMPGONA",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 91,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_05",
+    "score": -146.461388,
+    "plaintext": "ITMDRAWVIFANDISPALMISINHAVETHESLEHEISVOWSDSUKYVSHEMAYROTGUNTRVSISHLEFTPUTLHISPERATAMSWINBOYSUPAOE",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 94,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_06",
+    "score": -151.798253,
+    "plaintext": "OVALAMRIDORRGOWAAIVIFSOTOSHEUPBULBCBEAREREDXXICRYMABEOWENAISAIMDOMETLUNGJRSIROAETIPAPUFFYASHHELDY",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 94,
+    "readable_within_5": false
+  },
+  {
+    "id": "PLANTUNKNOWN_07",
+    "score": -146.0746461,
+    "plaintext": "NDAAOUTDRSAVEIALEFRPEALENANDGUMSRODAELISEONAHDEANNCAPSWPAPPVSCOXALEVERBOXFOXMRSTOYNEWRAYSWAYANPAW",
+    "kind": "PLANTED",
+    "blind_input_mask_all_unknown": true,
+    "wrong_letters": 93,
+    "readable_within_5": false
+  },
+  {
+    "id": "K4_G5_R1",
+    "score": -164.2124575,
+    "plaintext": "TOBREAKAMALOOKTOIVOOHTJUGIVNONOEXSAAHIMLLIXXLLFFHMAXBUDHAVEASPIFMYUTTHHAFLBOYBYXVSDDAWEEGLIDEEZRO",
+    "kind": "K4",
+    "blind_input_mask_all_unknown": true,
+    "known_anchor_matches_after_freeze": 0,
+    "known_east_segment": "TJUGIVNONOEXS",
+    "known_berlin_segment": "FMYUTTHHAFL"
+  },
+  {
+    "id": "K4_G5_R2",
+    "score": -150.98178,
+    "plaintext": "LOOCTWOUDLMENDREUPACTSHUNCANLIDSVALIFWGOOROPUPIFEDHOOKOSLANDXTOIJANETBITBYILYNEDESUCHASNETDOWNEAR",
+    "kind": "K4",
+    "blind_input_mask_all_unknown": true,
+    "known_anchor_matches_after_freeze": 0,
+    "known_east_segment": "SHUNCANLIDSVA",
+    "known_berlin_segment": "IJANETBITBY"
+  },
+  {
+    "id": "K4_CARTER_R1",
+    "score": -156.8914288,
+    "plaintext": "QUODWEOFFQKUWAGEUSWEINCABASICKTAOMAMEFRETTOULNASEETRUTSUMAINIKIISGIGSONOPTIBADXVITPICNHKEYNOTINEE",
+    "kind": "K4",
+    "blind_input_mask_all_unknown": true,
+    "known_anchor_matches_after_freeze": 2,
+    "known_east_segment": "NCABASICKTAOM",
+    "known_berlin_segment": "ISGIGSONOPT"
+  },
+  {
+    "id": "K4_CARTER_R2",
+    "score": -140.895022,
+    "plaintext": "IITWHKNEWUPDRIEDADJANUSDEEPACODEFOXWASTRAPOADASAOFMYEVEYAERGOBAWELFFNOAORPGMETMENDIDIDOAOURRIBUTA",
+    "kind": "K4",
+    "blind_input_mask_all_unknown": true,
+    "known_anchor_matches_after_freeze": 3,
+    "known_east_segment": "USDEEPACODEFO",
+    "known_berlin_segment": "WELFFNOAORP"
+  }
+]
