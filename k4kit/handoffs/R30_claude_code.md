@@ -9,7 +9,8 @@
   - None of the 585 produced English. Planted messages hidden under real Carter keys come back 80% of the time, so
     this is a fairly strong negative for "Carter's book, read straight, as a Vigenère/Quagmire running key with
     English plaintext".
-  - *E6 result for German, Dutch and mixed models: see §3.*
+  - The same 585 passes were then re-searched with German, Dutch and mixed English+German+Dutch word models (§3).
+    Still nothing.
 - **The K2/K3 punctuation idea (X = full stop, Q = question mark) does not help the search.** The ordinary model
   already reads X-punctuated text about half the time.
 - **Every "no candidate" is qualified by recovery power.** Planted messages are recovered 30–80% of the time,
@@ -32,13 +33,31 @@
 | L103 | K3-style routes + Gromark, all 1-cycle settings | 6,607 | −142.19 | 9/20 (16), 15/20 (64) | no candidate |
 | L105 | One mis-carved clue + Gromark | 3,178 | −140.94 | 4/20 (16), 6/20 (64) | no candidate, low power |
 | L104 | X/Q punctuation scoring | 22 fresh fixtures (blind test) | — | 10/22 vs plain 11/22 | rule not useful |
-| L108 | German / Dutch / mixed word models on Carter + Gromark | see §3 | see §3 | see §3 | see §3 |
+| L108 | German / Dutch / mixed word models on Carter + Gromark | 624 per model (64 restarts) | DE −121.44, NL −121.32, MIX −103.30 (bars −117.07 / −112.05 / −99.89) | DE 9/10, NL 9/10, MIX 24/30 blind | no candidate |
 
 Human-review list (REVIEW ONLY): `r30/SHORTLIST_R30.md` and `r30/shortlist_r30.csv`. They give raw 97 letters,
 forced masks and the scorer's word split, labelled as interpretation.
 
 ## 3. Non-English re-run (E6, amendment 4)
-*Filled in after the run; see L108 and `r30/runs/e6_*.json`.*
+- **Models:** German, Dutch and mixed (English + German + Dutch) word models were built from `wordfreq` 3.1.1 (top
+  100,000 words; umlauts → ae/oe/ue/ss).
+- **Calibration:** blind on 20 fresh German/Dutch messages with the English clues in place. German 9/10, Dutch 9/10,
+  mixed 24/30.
+- **Real text vs K4 under each model:**
+
+| Model | Real text | Bar (best wrong key) | K4's best |
+|---|---|---|---|
+| German | −67 to −81 | −117.07 | −121.44 |
+| Dutch | −66 to −76 | −112.05 | −121.32 |
+| Mixed | −66 to −79 | −99.89 | −103.30 |
+
+- **Result:** K4's best is 25–40 points below real text in every model. **No candidate.**
+- The German top output replicates exactly but is gibberish (`CRZNEINESIEKALK…`). It is a stable optimum, not a
+  reading.
+- **Not covered:**
+  - languages other than these three;
+  - phonetic spellings outside ORTH's Dutch-like variant list;
+  - non-Germanic word lists (French, Latin, Russian transliteration).
 
 ## 4. Lessons added this round
 1. **Pass-count excesses from book keys are English structure, not signal.** Compare against word-order-shuffled

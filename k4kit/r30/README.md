@@ -14,7 +14,12 @@ Every script asserts these hashes.
 | `calib.py` | C1 (chain-addition planted), C3 (one-cycle routes planted), C2 (blind punctuation test on `fixtures_punct.json`) |
 | `search.py` | K4 English searches: `e1`, `e2` (16-restart screen, top 20 replicated at 64 with new seeds), `g5`, `r2` (64 restarts) |
 | `e5.py` | C5 and E5: one mis-carved clue letter + 5-digit Gromark |
-| `e4_book.py` | Whole-book running key, ready for the Carter & Mace 1923 vol. I text. Runs under `python3 -I` |
+| `e4_book.py` | Whole-book running key (oracle, letter-shuffled null, 16-restart screen, top-20 replication). Runs under `python3 -I` |
+| `e4_full.py` | Amendment 3: every book pass at 64 restarts, plus the word-order-shuffle diagnostic |
+| `c4_bookplant.py` | Planted messages under real Carter-book keys (16/20 recovered at 64 restarts) |
+| `build_lang_models.py` | Amendment 4: German, Dutch and mixed word models from `wordfreq` 3.1.1 (needs `pip install wordfreq`) |
+| `e6.py` | C6 (blind German/Dutch/mixed calibration on `fixtures_lang.json`) and E6 (Carter passes + 39 primers under each model) |
+| `make_handoff_zip.py` | Builds `k4kit/handoffs/R30_handoff.zip` (small; the large ranked JSONs stay in the repo) |
 | `report.py` | Builds `SHORTLIST_R30.md` and `shortlist_r30.csv` (REVIEW ONLY rows, with forced masks and the scorer's word split) |
 | `fixtures_punct.json` | 22 fresh hidden messages with K2/K3 punctuation (X = stop, Q = question mark) |
 | `runs/` | Logs and JSON results. Solver scratch files are git-ignored |
@@ -38,9 +43,14 @@ python3 search.py g5 ORTH; python3 search.py r2 ORTH; python3 search.py g5 ORTHX
 python3 search.py e1 ORTH                             # ~15 min on 4 cores
 python3 search.py e2 ORTH                             # ~25 min on 4 cores
 python3 e5.py c5; python3 e5.py run
-python3 report.py
-# Carter book, once the text is available:
-python3 -I e4_book.py /path/to/carter_v1.txt --anchor-phrase TREMBLINGHANDSIMADEATINYBREACH --label carter_v1
+# Carter book (from the repo root):
+python3 -I k4kit/r30/e4_book.py archive/sources/carter_mace_1923_v1_doran_google_ocr.txt \
+    --anchor-phrase TREMBLINGHANDSIMADEATINYBREACH --label carter_v1_doran
+python3 -I k4kit/r30/e4_full.py archive/sources/carter_mace_1923_v1_doran_google_ocr.txt carter_v1_doran
+python3 -I k4kit/r30/c4_bookplant.py
+# Non-English models (needs wordfreq 3.1.1 in some interpreter):
+<venv>/bin/python build_lang_models.py; python3 e6.py c6; python3 e6.py run
+python3 report.py; python3 make_handoff_zip.py
 ```
 
 Results depend on g++/libstdc++ (`std::shuffle` and the random stream), as noted in `tools/solver_s2kp.cpp`.

@@ -82,12 +82,15 @@ if __name__ == "__main__":
                     "chose the letter). Only forced letters are evidence.",
                     "- **W:** the word score. Readable planted English scores about −69 to −95. The best wrong keys "
                     "reach about −115.",
-                    "- **Word split:** the scorer's own segmentation, given as an interpretation aid only.", ""]
-    for stem, title in FAMILIES:
-        f = RUNS / f"{stem}.json"
-        if not f.exists():
-            continue
-        d = json.load(open(f))
+                    "- **Word split:** the scorer's own segmentation, given as an interpretation aid only.", "",
+                    "| Family | Settings | Best W | Bar | Candidates |", "|---|---|---|---|---|"]
+    loaded = [(stem, title, json.load(open(RUNS / f"{stem}.json"))) for stem, title in FAMILIES
+              if (RUNS / f"{stem}.json").exists()]
+    for stem, title, d in loaded:
+        s = d["summary"]
+        md.append(f"| {title} | {s['settings']} | {s['best_W']:.2f} | {s['bar']:.2f} | {len(s['candidates'])} |")
+    md.append("")
+    for stem, title, d in loaded:
         s, rep = d["summary"], d["replication"]
         md += [f"## {title}", "",
                f"- **Searched:** {s['settings']} settings at {s['restarts']} restarts.",
@@ -98,7 +101,7 @@ if __name__ == "__main__":
             r = rep.get(x["id"])
             status = "CANDIDATE" if x["id"] in s["candidates"] else "REVIEW ONLY"
             repl = (f"replication W {r['W']:.2f}, {r['letters_changed_vs_screen']} letters changed"
-                    if r else "not replicated")
+                    if r else "below the bar, so not replicated")
             md += [f"**{x['id']}**: W {x['W']:.2f} ({repl}); forced beyond clues {x['forced_beyond_clues']}; "
                    f"{status}", "", "```", f"raw   {x['plaintext']}", f"mask  {mask_view(x['forced_mask'])}",
                    "```", f"Word split (interpretation): `{segment(x['plaintext'], model)}`", ""]
