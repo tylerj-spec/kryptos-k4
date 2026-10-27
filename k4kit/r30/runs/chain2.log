@@ -1,3 +1,9 @@
 === 00:21:49 start python3 search.py e1 ORTH
 === 00:37:09 end python3 search.py e1 ORTH rc=0
 === 00:37:09 start python3 search.py e2 ORTH
+=== 01:07:18 end python3 search.py e2 ORTH rc=0
+=== 01:07:18 start python3 e5.py c5
+=== 01:08:03 end python3 e5.py c5 rc=0
+=== 01:08:03 start python3 e5.py run
+=== 01:26:30 end python3 e5.py run rc=0
+=== CHAIN2 DONE
