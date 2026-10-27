@@ -83,6 +83,20 @@ if __name__ == "__main__":
                     "- **W:** the word score. Readable planted English scores about −69 to −95. The best wrong keys "
                     "reach about −115.",
                     "- **Word split:** the scorer's own segmentation, given as an interpretation aid only.", "",
+                    "**Why every row shows EASTNORTHEAST and BERLINCLOCK.**",
+                    "- Each row starts from the original K4 ciphertext and re-encrypts back to it exactly.",
+                    "- These families assume two *unknown* scrambled alphabets, besides the key. The 24 known letters "
+                    "are the only firm information about those alphabets, so they are used to fill them in, and "
+                    "every row shows the clues by construction.",
+                    "- Without the clues even the true key fails: 0/8 planted messages recovered (ledger L109).",
+                    "- **The real checks are elsewhere.**",
+                    "  - The exact clue test rejects about 2,099 of every 2,100 keys before any filling happens "
+                    "(Carter book: 1,131,312 → 585).",
+                    "  - A right key would make the other 73 letters readable, and the same on every re-run. Wrong "
+                    "keys leave most of them to the optimiser, which is why the rest differs from run to run.",
+                    "- With fixed standard alphabets (nothing fitted), the clues must appear on their own. For the "
+                    "Carter book they never do: best 9/24 over 13.6 million decryptions, about what luck gives "
+                    "(L109).", "",
                     "| Family | Settings | Best W | Bar | Candidates |", "|---|---|---|---|---|"]
     loaded = [(stem, title, json.load(open(RUNS / f"{stem}.json"))) for stem, title in FAMILIES
               if (RUNS / f"{stem}.json").exists()]

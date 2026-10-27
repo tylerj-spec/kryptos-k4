@@ -1,0 +1,42 @@
+{
+ "planted_best": [
+  24,
+  "fwd/KRY/PA=KRY/CA=KRY/vig/off6534"
+ ],
+ "planted_full": [
+  "fwd/KRY/PA=KRY/CA=KRY/vig/off6534"
+ ],
+ "k4_best": [
+  9,
+  "rev/AZ/PA=KRY/CA=AZ/vig/off235516"
+ ],
+ "k4_hist": [
+  5728612,
+  4946436,
+  2139358,
+  610340,
+  127387,
+  20616,
+  2695,
+  270,
+  28,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "k4_full": [],
+ "decryptions": 13575744
+}
