@@ -3,3 +3,6 @@ k4kit/bin/
 __pycache__/
 *.pyc
 k4kit/runs/**/tmp/
+k4kit/r30/runs/*_in*.txt
+k4kit/r30/runs/*_out*.jsonl
+k4kit/r30/runs/word_model_orthxq.tsv
