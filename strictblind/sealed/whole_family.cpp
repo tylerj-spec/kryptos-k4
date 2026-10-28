@@ -53,10 +53,33 @@ int main(int argc, char **argv) {
       for (int num = 0; num < 2; num++) { const string &al = num ? KRY : AZ; int p[26]; for (int i = 0; i < 26; i++) p[al[i] - 'A'] = i;
         for (size_t off = 0; off + N <= s.size(); off++) { for (int i = 0; i < N; i++) K[i] = p[s[off + i] - 'A'];
           run_key(string(dir ? "rev" : "fwd") + "/" + (num ? "KRY" : "AZ") + "/off" + to_string(off)); } } } }
-  else { int b = stoi(karg), lim = 1; for (int i = 0; i < b; i++) lim *= 10;
-    for (int p = 0; p < lim; p++) { int v = p; for (int i = b - 1; i >= 0; i--) { K[i] = v % 10; v /= 10; }
-      for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % 10;
-      run_key("primer" + to_string(p)); } }
+  else if (kind == "CHAIN" || kind == "CHAINBASE") {
+    int base = 10, b = 0;
+    if (kind == "CHAIN") b = stoi(karg);
+    else {
+      auto split = karg.find(',');
+      if (split == string::npos) throw runtime_error("CHAINBASE requires BASE,LENGTH");
+      base = stoi(karg.substr(0, split));
+      b = stoi(karg.substr(split + 1));
+    }
+    if (base < 2 || base > 26 || b < 2 || b > 8) throw runtime_error("invalid base or primer length");
+    long long lim = 1;
+    for (int i = 0; i < b; i++) {
+      lim *= base;
+      if (kind == "CHAINBASE" && lim > 20000000) throw runtime_error("primer limit");
+    }
+    const string symbols = "0123456789ABCDEFGHIJKLMNOP";
+    for (long long p = 0; p < lim; p++) {
+      long long v = p; string primer(b, '0');
+      for (int i = b - 1; i >= 0; i--) {
+        K[i] = int(v % base);
+        primer[i] = symbols[K[i]];
+        v /= base;
+      }
+      for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % base;
+      run_key("primer" + primer);
+    }
+  } else throw runtime_error("key kind");
   cout << "BEST\t" << best << "\t" << bestset << "\nHIST";
   for (int i = 0; i < 25; i++) cout << "\t" << hist[i];
   cout << "\n";
