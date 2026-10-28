@@ -15,15 +15,17 @@ is never evidence.
 
 ## Where things are
 - **`LEDGER.md`:** the canonical record of every model tested (L01–L119+).
-- **`HANDOFF.md`, `AUDIT_NOTES.md`:** ChatGPT's R33 handoff (copies of `r33/`).
+- **`HANDOFF.md`:** the latest handoff (R34, Claude Code). ChatGPT's R33 handoff and audit notes are in `r33/`;
+  `AUDIT_NOTES.md` at the root is R33's copy.
 - **`k4kit/`:** the toolkit.
   - `CLAUDE.md`: the working rules.
   - `tools/`: oracle, solvers, validation.
   - `r30/`: R30 crib-assisted searches and the Carter book test.
   - `r32/`: R32 strict-blind scans.
-  - `handoffs/`: every Claude brief.
+  - `handoffs/`: every Claude Code brief up to R32.
 - **`r33/`:** ChatGPT's R33 strict-blind keyword-columnar scans, self-contained with data. Replay with
   `bash verify_all.sh`.
+- **`r34/`:** R34 strict-blind runs on the harness (E1–E3) and the D1 solver probe.
 - **`strictblind/`:** the shared strict-blind harness (one scanner, route makers, key sources, plants, freeze,
   reveal) that new rounds should use instead of copying code (from R34).
 - **`archive/`:** ChatGPT packets and sources, kept unchanged for audit.

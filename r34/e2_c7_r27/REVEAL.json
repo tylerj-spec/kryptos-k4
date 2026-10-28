@@ -1,0 +1,41 @@
+[
+ {
+  "tag": "K4_E2_C7_R27",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -589.3142161,
+  "top_plaintext": "UVYLZDECESOTRULTBAPJNPEYOBONTURNWATSSEISAHETWHYDSAGIFXJSDRALJAILIHIELMLSUOKJZYMILBHAWOKTULMALNOBV",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   3,
+   2,
+   1,
+   2,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2
+  ]
+ },
+ {
+  "tag": "PLANT_C",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -387.6511133,
+  "top_plaintext": "INSIDETHEFORTWEWALKEDEASTNORTHEASTWHILEREADINGTHECHARTBESIDETHEBERLINCLOCKANDKEEPTHATMAPOUTOFVIEW",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R24x8/CCW/inv",
+   "order": "T_then_S",
+   "key": "primer2871318",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ }
+]
