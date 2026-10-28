@@ -38,9 +38,10 @@ elif kind in ("CHAINBASE", "CHAINALPH"):
     spec = "primer" + "".join(reversed(chars))
 else:
     raise ValueError("unknown key family")
-pa, ca, op = rng.choice(["AZ", "KRY"]), rng.choice(["AZ", "KRY"]), rng.choice(["VIG", "BEAU", "VARB"])
+choices = ["AZ", "KRY", "PAL", "ABS"] if kind == "CHAINALPH" else ["AZ", "KRY"]
+pa, ca, op = rng.choice(choices), rng.choice(choices), rng.choice(["VIG", "BEAU", "VARB"])
 ct = encrypt(P, R[name, order], order, make_key(kind, karg, spec),
-             AZ if pa == "AZ" else KRY, KRY if ca == "KRY" else AZ, op)
+             ALPHABETS[pa], ALPHABETS[ca], op)
 (exp / f"{tag}_ct.txt").write_text(ct + "\n")
 (exp / "sealed").mkdir(exist_ok=True)
 tf = exp / "sealed/truth.json"
