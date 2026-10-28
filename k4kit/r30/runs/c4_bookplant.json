@@ -1,0 +1,86 @@
+{
+ "readable": 16,
+ "of": 20,
+ "rows": {
+  "C4_00_fwd_KRY": {
+   "W": -71.13070051,
+   "wrong_letters": 0
+  },
+  "C4_01_rev_KRY": {
+   "W": -76.65402926,
+   "wrong_letters": 0
+  },
+  "C4_02_fwd_KRY": {
+   "W": -73.1979694,
+   "wrong_letters": 0
+  },
+  "C4_03_rev_AZ": {
+   "W": -75.42565172,
+   "wrong_letters": 1
+  },
+  "C4_04_fwd_KRY": {
+   "W": -74.23884195,
+   "wrong_letters": 0
+  },
+  "C4_05_fwd_KRY": {
+   "W": -76.53723785,
+   "wrong_letters": 0
+  },
+  "C4_06_fwd_KRY": {
+   "W": -76.17952729,
+   "wrong_letters": 0
+  },
+  "C4_07_fwd_AZ": {
+   "W": -160.028002,
+   "wrong_letters": 44
+  },
+  "C4_08_fwd_AZ": {
+   "W": -77.41668251,
+   "wrong_letters": 0
+  },
+  "C4_09_fwd_AZ": {
+   "W": -69.26113268,
+   "wrong_letters": 0
+  },
+  "C4_10_rev_AZ": {
+   "W": -147.5481603,
+   "wrong_letters": 62
+  },
+  "C4_11_rev_KRY": {
+   "W": -70.55159726,
+   "wrong_letters": 0
+  },
+  "C4_12_fwd_KRY": {
+   "W": -73.96413989,
+   "wrong_letters": 1
+  },
+  "C4_13_rev_KRY": {
+   "W": -73.13291111,
+   "wrong_letters": 0
+  },
+  "C4_14_fwd_AZ": {
+   "W": -72.31137261,
+   "wrong_letters": 0
+  },
+  "C4_15_rev_KRY": {
+   "W": -152.0229457,
+   "wrong_letters": 38
+  },
+  "C4_16_fwd_AZ": {
+   "W": -81.88514635,
+   "wrong_letters": 0
+  },
+  "C4_17_rev_AZ": {
+   "W": -73.41149668,
+   "wrong_letters": 0
+  },
+  "C4_18_fwd_KRY": {
+   "W": -154.2162347,
+   "wrong_letters": 34
+  },
+  "C4_19_fwd_AZ": {
+   "W": -95.31103753,
+   "wrong_letters": 0
+  }
+ }
+}

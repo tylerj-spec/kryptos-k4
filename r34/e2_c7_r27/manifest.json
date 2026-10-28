@@ -1,0 +1,24 @@
+{
+ "runs": [
+  {
+   "tag": "K4_E2_C7_R27",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAIN",
+    "7"
+   ],
+   "label": "C7"
+  },
+  {
+   "tag": "PLANT_C",
+   "ct": "PLANT_C_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAIN",
+    "7"
+   ],
+   "label": "C7"
+  }
+ ]
+}

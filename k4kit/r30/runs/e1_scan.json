@@ -1,0 +1,15 @@
+{
+ "protocol": "9ebe80810e0ce143b99130da8874215e11124938853e1269de6749775bcb2c86",
+ "b6_passes": 412,
+ "b7_passes": 3834,
+ "b6_null_passes_5_shuffles": [
+  80,
+  31095,
+  21752,
+  99,
+  80
+ ],
+ "expected_b6": 390.0,
+ "expected_b7": 3900.0,
+ "seconds": 132.7
+}

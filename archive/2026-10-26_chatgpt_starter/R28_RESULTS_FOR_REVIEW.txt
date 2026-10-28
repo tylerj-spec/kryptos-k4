@@ -1,0 +1,70 @@
+KRYPTOS K4 — ROUND 28 (26 OCTOBER 2026)
+Directly executable results; NOT A SOLUTION. No official validator submission.
+
+THE QUESTION
+Can the photographed Morse inscriptions supply a non-repeating key for K4,
+either directly or combined with a K3-like transposition?
+
+DATA
+K4 ciphertext: OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR
+24 known plaintext letters, zero-based positions 21–33: EASTNORTHEAST;
+63–73: BERLINCLOCK. These are inputs to all experiments, not discoveries.
+Photo-backed Morse source: https://rumkin.com/reference/kryptos/k0/
+Source description is tied to 1999 photographs, but the true geographic
+reading order of the separated inscriptions is NOT verified here.
+
+EXPERIMENT A — DECODED MORSE LETTERS (PRESERVING THE ISOLATED E MARKS)
+Source 106 letters; three explicitly selected provisional concatenation orders,
+normal/reverse directions, A-Z/KRYPTOS key-numbering, each 97-symbol key window,
+identity + 4 frozen K3-like rearrangements, both operation orders.
+With one substitution alphabet fixed (AZ or KRY) and the other arbitrary:
+  0 compatible / 8,640 evaluated, BOTH +/- signs tested.
+With BOTH substitution alphabets unrestricted:
+  24 compatible / 1,080 evaluated; all 24 have ZERO independent crib cycles.
+  Source-order totals: 7 / 12 / 5 compatible.
+  80 fixed-seed source-letter shuffles per ordering: comparison p-values
+  0.765 / 0.358 / 0.889 respectively, no excess.
+  Positive controls: 200/200 true planted cipher settings recover feasibility.
+This EXCLUDES only these exact model/ordering/keystream combinations; broader
+masking and transposition remain completely open.
+
+EXPERIMENT B — MORSE PULSES (DOTS AND DASHES) AS NONREPEATING KEY
+106 decoded letters re-encoded as 238 Morse pulse symbols; inter-symbol gaps
+omitted. Two historically simple numerical encodings: dot=0/dash=1 and
+short=1/long=3. Same three proxy source orders, 97-pulse windows,
+normal/reverse, same restricted K3 route choices, +/- for one-free-alpha.
+  One fixed substitution alphabet: 0 / 122,688 evaluated.
+  Both alphabets arbitrary: 0 / 15,336 evaluated.
+  40 dot/dash-inventory-preserving shuffles per order: also zero.
+  Positive controls: 200/200 successful.
+IMPORTANT: Morse pulses are mathematically regenerated from the reconstructed
+letters, not independently measured from original plates. Ambiguities such as
+truncated marks are not exhaustively searched.
+
+CARTER BOOK STATUS
+Located the 1923 Cassell Volume I scan and catalog entries:
+  https://openlibrary.org/books/OL6661682M/The_tomb_of_Tut.ankh.Amen
+  https://en.wikisource.org/wiki/Index:The_tomb_of_Tut%27Ankh%27Amen_(London).djvu
+  https://archive.org/details/tomboftutankhame01cart
+However full machine-readable text could not be fetched in this environment.
+Therefore the COMPLETE 1923 BOOK WAS NOT TESTED.
+R27's preexisting verified Carter EXCERPTS remain negative vs matched controls,
+and cannot establish the full-book result. Do not mistake a different 1923
+book by G. Elliot Smith for Howard Carter & A. C. Mace's work.
+
+USER-READABLE CANDIDATES
+No independently grounded readable 97-letter plaintext was obtained.
+The 24 alphabet-free fits impose zero additional crib-cycle constraints and
+provide no reason to privilege a solver-created English-looking completion.
+Preserve Germanic phonetic spellings as allowed outcomes in future searches.
+
+HISTORICAL SOURCES
+  https://rumkin.com/reference/kryptos/k0/
+  https://www.cia.gov/legacy/headquarters/kryptos-sculpture/
+  https://openlibrary.org/books/OL6661682M/The_tomb_of_Tut.ankh.Amen
+
+To verify in a Python 3 environment with the included scripts:
+  python -I r28_morse_experiment.py
+  python -I r28_morse_pulses.py
+Both scripts are deterministic except for elapsed-wall-time metadata.
+No authentication or paid validator is needed.

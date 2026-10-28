@@ -1,0 +1,58 @@
+[
+ {
+  "tag": "K4_E1_CARTER_COLUMNAR",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -591.0221028,
+  "top_plaintext": "KYDIFSIEWNOIQICAAISMDATTHOGBYMALYIHYJNTNAVEENNLBURGAREDSIMMWFEJFRYSPCILTNKBPIRETEDLSQHUBWEMEONHDP",
+  "kind": "K4",
+  "clue_matches_max": 5,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "tag": "PLANT_A",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -393.312187,
+  "top_plaintext": "IFOLLOWEDATRACKTOWARDEASTNORTHEASTUNTILYOUSEETHESHADOWBESIDETHEBERLINCLOCKASTHEMORNINGSUNISRISING",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "KRYPTOS/F1S0O1V0/INV",
+   "order": "S_then_T",
+   "key": "fwd/AZ/off59806",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANT_B",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -397.1896822,
+  "top_plaintext": "INSIDETHEFORTWEWALKEDEASTNORTHEASTANDFOLLOWANARROWPATHTOWARDTHEBERLINCLOCKANDWAITUNTILTHESUNRISES",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "PALIMPSEST/F1S1O1V0/FWD",
+   "order": "S_then_T",
+   "key": "rev/KRY/off69578",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ }
+]

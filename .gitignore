@@ -1,0 +1,24 @@
+# build outputs and scratch
+k4kit/bin/
+__pycache__/
+*.pyc
+k4kit/runs/**/tmp/
+k4kit/r30/runs/*_in*.txt
+k4kit/r30/runs/*_out*.jsonl
+k4kit/r30/runs/word_model_orthxq.tsv
+k4kit/r30/runs/r27_passes.csv
+k4kit/r30/runs/word_model_de.tsv
+k4kit/r30/runs/word_model_nl.tsv
+k4kit/r30/runs/word_model_mix.tsv
+R3*_repo_history.bundle
+k4kit/r32/runs/blind_route_scan
+k4kit/r32/runs/whole_family
+k4kit/r32/runs/routes_f2.txt
+k4kit/r32/runs/carter_az.txt
+k4kit/r32/runs/part_*
+k4kit/r32/runs/wf_*
+k4kit/r32/runs/idcheck_*
+strictblind/**/out/
+r34/*/carter_az.txt
+r34/e3_carter_rot/routes.txt
+R34_handoff.zip

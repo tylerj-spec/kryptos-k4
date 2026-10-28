@@ -1,0 +1,13 @@
+=== 00:08:31 start python3 calib.py c1
+=== 00:08:54 end python3 calib.py c1 rc=0
+=== 00:08:54 start python3 calib.py c3
+=== 00:09:18 end python3 calib.py c3 rc=0
+=== 00:09:18 start python3 search.py g5 ORTH
+=== 00:09:56 end python3 search.py g5 ORTH rc=0
+=== 00:09:56 start python3 search.py r2 ORTH
+=== 00:10:30 end python3 search.py r2 ORTH rc=0
+=== 00:10:30 start python3 calib.py c2
+=== 00:20:15 end python3 calib.py c2 rc=0
+=== 00:20:15 start python3 search.py g5 ORTHXQ
+=== 00:20:52 end python3 search.py g5 ORTHXQ rc=0
+=== 00:20:52 start python3 search.py r2 ORTHXQ

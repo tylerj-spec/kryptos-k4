@@ -1,0 +1,7 @@
+planted controls: true period always possible (12/12)
+K4: impossible at 97 periods, possible at 0, undecided 0
+   possible periods: []
+   undecided: []
+   constraints per period (min/median/max): 72 72 72
+phase extension: every period 2-97 and every block phase: 4752 settings; impossible 4752, possible 0, undecided 0
+planted controls at every period (5 each): 485/485 possible at the true period; random ciphertexts: 0/200 possible at any period

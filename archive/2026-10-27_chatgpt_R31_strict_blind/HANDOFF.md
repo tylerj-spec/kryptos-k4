@@ -1,0 +1,41 @@
+# R31 ChatGPT → Coding Agent / Claude — STRICT BLIND K4 discovery protocol
+**26 October 2026** (user-local date). **No K4 solution. No external verifier submissions.**
+
+## One-paragraph explanation for Tyler
+Tyler identified a genuine methodological flaw: many earlier candidate strings were fitted *after* the solver had been told the two known plaintext phrases. That is valid for a feasibility proof, but it is **not blind decryption**. I audited R30 code and built a separate experiment in which every K4 run started with the original 97-letter ciphertext, the search never saw the two known words or their positions, and its outputs were hash-frozen **before** any clue check. Two large fixed-alphabet sweeps found no K4 candidate; two planted true-English controls were recovered exactly using the identical blind pipeline. Conversely, R30's flexible two-alphabet solver failed eight planted messages when the crib mask was removed—even when the correct key was supplied. Therefore, prior visually compelling G4/G7/R30 completions must not be portrayed as independently decrypted K4 text.
+
+## Non-negotiable new workflow
+1. **Discovery phase:** original K4 ciphertext, historically chosen key sources, fixed cipher families, pre-registered exhaustive enumeration or training/validation search. Zero access to crib words, their positions, or an oracle that uses them. No masked plaintext supplied to the solver; no manual insertion of expected fragments.
+2. **Freeze:** save the complete raw plaintext and method/key, then checksum result files and code. Do not tune on K4 clue mismatch.
+3. **Reveal:** a separate checker loads 24 known plaintext letters, scores how many positions match, and independently reconstructs the **full ciphertext** under each candidate's specified method. Never edit results to force a match.
+4. **Human review:** candidates with partial apparent words may be presented, but original 97-letter text is immutable; interpretation separate. A fully plausible plaintext with 0/24 clue matches is still **not K4 plaintext**.
+5. **Controls:** hidden-message positive controls run through exactly the same no-crib search; matched negative controls when appropriate. Where a cipher has two completely free alphabets, first demonstrate blind recovery on planted texts without crib information. Otherwise mark as **crib-constrained feasibility only**.
+
+## R30 audit
+- In `tools/solver_s2kp.cpp`, `Fixture` creates a graph from every non-`?` character in the `MASK97` input; this ensures known letters are satisfied while the solver optimizes the rest. `r30/search.py` and `r30/e4_book.py` pass `ANCH` via `solver_line`, so *those candidate strings are not blind recoveries*.
+- `verify_row()` correctly checks independent forward re-encryption with fitted alphabet pairs, but it is not independent evidence that the key is authentic, because alphabet assignments were selected using the cribs.
+- Exceptions: R30 `strict_book_check.py` genuinely used fixed alphabets and post-hoc clue checks across **13,575,744 Carter settings** (0 full matches, at most 9/24); R30 follow-up no-clue benchmark found **0/8** recovery even with the true key. These remain valid under the new standard.
+
+## R31 experiments (new, independently scripted)
+- Ciphertext: `OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR` (97 A–Z characters).
+- Code and input separation: `blind31/blind_scan_fixed.cpp` reads only ciphertext, real Carter source, and a fixed quadgram language table. It does **not** contain or load any crib mask or known plaintext positions. All K4 outputs were SHA256-frozen in `blind31/FROZEN_BEFORE_CHECK.sha256` before executing `sealed31/check_after_freeze.py`.
+- Five-digit Gromark: **100,000 primers × 4 fully specified AZ/KRY substitution-alphabet pairings × 3 fixed operation conventions = 1,200,000** candidate plaintexts. Blind top100: 0/100 full clue matches, max 4/24. Independently checked *all* 1.2m settings after freezing: 0/1.2m with all clues; best **7/24**.
+- Carter/Mace Volume I 1923 as numeric running key: 282,924 cleaned OCR letters, 282,828 windows × 2 directions × 2 key numberings × 4 alphabet pairings × 3 operations = **13,575,744** settings. Blind top100: 0/100 full clue matches, max 4/24; the independent R30 full-family checker finds 0/13,575,744 with all clues, best **9/24**.
+- Two hidden English calibration ciphertexts generated under fixed methods (one Gromark, one Carter) were fed into identical searches without the key, plaintext, or crib positions. Both correct 97-letter messages ranked **#1, 97/97 exact**. Two examples alone are not a comprehensive benchmark for nonstandard plaintext.
+- The fixed-alphabet scanner chooses top100 by raw English quadgrams, not by recognized clue words or a dictionary of Dutch/English mixed words. Phonetic-English scoring could be added as a separately frozen model; it must not repair the raw plaintext afterward.
+- With two **arbitrary unknown** substitution alphabets and given keystream, we reused the previous C++ optimizer but passed a 97-character `????????` mask. On eight independently planted, correctly encrypted 97-character messages, at 16 restarts × 40,000 proposals each: **0/8** recovered within five letters (75–96 wrong). All full ciphertexts re-encrypt. Four original-K4 settings, selected solely as top key sequences from the blind fixed scan, gave **0–3/24** post-hoc clue matches. These are calibration failures, *not proof the free-alphabet model is mathematically impossible*.
+
+## Raw source and candidates
+- `blind31/K4_G5_BLIND.tsv`, `blind31/K4_CARTER_BLIND.tsv`: top100 frozen 97-letter strings per family, key configuration, offset, quad score. `sealed31/BLIND_CHECK_REPORT.json`: retrospective clue counts and independent re-encryption results. None is a K4 submission candidate.
+- `blind31/UNKNOWN_BLIND_ALL_OUTPUTS.jsonl`: 192 raw solver restart outputs from 8 planted and 4 original-K4 cases, mask ALL '?'. `sealed31/UNKNOWN_BLIND_AFTER_CHECK.json`: evaluated only after SHA freeze.
+- `blind31/carter_az.txt`: 282,924 letters, byte-for-byte equal to R30 `e4_book.normalise` of the original uploaded 1923 Doran Google OCR; the original OCR is also in `R30_handoff_original.zip`. The OCR may have errors; this negative result applies to this exact text normalization and cipher convention.
+- `LEDGER.md`: cumulative ledger with new L110–L112 and a note under Changes. Keep previous EXCL/STAT/FEAS distinctions.
+
+## Next agent tasks (priority)
+1. Implement an engine-independent **blind-search contract**: check source code / API cannot import `ANCH`, cannot accept `MASK97` except all '?', cannot use `key_oracle.possible()` or word-positions to prefilter keys; store immutable output, hash, then independently check clues. Require this as CI.
+2. Develop a solver that **passes blind tests with two unknown alphabets and the true key** on at least 16/20 new planted tests before trying K4. R31 and R30 both fail the eight-sample blind gate. Consider evolutionary population search, differentiable reparameterization, expectation maximization, letter-language models, or additional external constraints that are independent of the K4 clues. Treat a priori fixed alphabets as the cleanest route.
+3. Perform a **blind** two-stage route + Carter/VIC key search using physical K3/clock geometry selected historically before running; no crib-pruning. First verify success on hidden planted texts with the same algorithm.
+4. Keep phonetic/dutch-like English as legitimate readable plaintext: use an independently trained scorer, normal dictionary words plus controlled spelling variants. The solver may use that scorer, but may never edit 97 letters after decryption to fit clues.
+5. Maintain separate `historical feasibility` and `strictly blind discovery` ledgers. Avoid calling a crib-constrained output a decrypted plaintext. Report any readable raw 97-letter results for Tyler to interpret, with correct-anchor count attached **after** freezing.
+
+The `R30_handoff_original.zip` is included for audit provenance. The upstream `R30_repo_history.bundle` is separate (user already uploaded it); its HEAD was `d8e74731285b4d834f03953323149e04ce39e57e`.

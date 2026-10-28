@@ -1,0 +1,181 @@
+{
+ "plants": [
+  {
+   "plant": "PLANT_F1_0",
+   "family": "CARTER",
+   "route": "R24x8/CW/inv",
+   "order": "T_then_S",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-389.6166482",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F1_1",
+   "family": "K1K3",
+   "route": "R25x8/CCW/inv",
+   "order": "T_then_S",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-376.8014927",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F1_2",
+   "family": "G5",
+   "route": "R23x8/CCW/inv",
+   "order": "S_then_T",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-380.73839",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F1_3",
+   "family": "C6",
+   "route": "R24x9/CW/inv",
+   "order": "S_then_T",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-390.7860315",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F1_4",
+   "family": "CARTER",
+   "route": "R24x7/CCW/inv",
+   "order": "S_then_T",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-399.2846568",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F1_5",
+   "family": "G5",
+   "route": "R24x9/CW/fwd",
+   "order": "T_then_S",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-396.3994856",
+   "top_is_truth": true
+  },
+  {
+   "plant": "PLANT_F2_6",
+   "family": "G5",
+   "route": "R25x6/CCW/inv",
+   "order": "T_then_S",
+   "true_rank": 1,
+   "true_in_top100": true,
+   "top_score": "-396.7111347",
+   "top_is_truth": true
+  }
+ ],
+ "k4": [
+  {
+   "run": "K4_F1_CARTER",
+   "rows": 100,
+   "forward_check": "all rows re-encrypt to K4",
+   "top_score": "-592.201968",
+   "top_plaintext": "VOJRAELDOCBASESNTAZEYHUOWDRWOKTSXTHORCETRATAMPQALLSTSRIWYYCSNYVRFORGLOTELUNOIEROKEGEDOGIDHAHCFRUT",
+   "clue_matches_max": 5,
+   "rows_with_24": 0,
+   "clue_matches_by_rank_top10": [
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    2,
+    0,
+    2
+   ]
+  },
+  {
+   "run": "K4_F1_K1K3",
+   "rows": 100,
+   "forward_check": "all rows re-encrypt to K4",
+   "top_score": "-629.4182804",
+   "top_plaintext": "LNYBGEMDBYEQTRTKHKHZWATUBGWXADSSINFEPODOAOFSHYDEPDCTBIPRSKRMNKGFRIVRRNRDBALDPOIRHAMERTSRMGODOOMHA",
+   "clue_matches_max": 4,
+   "rows_with_24": 0,
+   "clue_matches_by_rank_top10": [
+    0,
+    1,
+    0,
+    4,
+    1,
+    1,
+    2,
+    2,
+    0,
+    1
+   ]
+  },
+  {
+   "run": "K4_F1_G5",
+   "rows": 100,
+   "forward_check": "all rows re-encrypt to K4",
+   "top_score": "-622.7207782",
+   "top_plaintext": "DGLEONNINTWTOYIHYSGOWRNPCZDROWCALIZEPUESIGREFSTJOGKLKUKIKOKPHSJRRVRGCESTAXAMJOWDTWUWUSMRIPIIPRUMX",
+   "clue_matches_max": 4,
+   "rows_with_24": 0,
+   "clue_matches_by_rank_top10": [
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    1,
+    1,
+    4
+   ]
+  },
+  {
+   "run": "K4_F1_C6",
+   "rows": 100,
+   "forward_check": "all rows re-encrypt to K4",
+   "top_score": "-606.5934415",
+   "top_plaintext": "MUNBRIMTIVESHINZGDIQIHZVENEGWAERNTLYSELCXFJJBLYONKEENNDYFHIARRMELBIEBNTSCRINTYRTBKWELMJSINEALOLIR",
+   "clue_matches_max": 5,
+   "rows_with_24": 0,
+   "clue_matches_by_rank_top10": [
+    4,
+    1,
+    1,
+    2,
+    3,
+    2,
+    0,
+    2,
+    0,
+    0
+   ]
+  },
+  {
+   "run": "K4_F2_G5",
+   "rows": 100,
+   "forward_check": "all rows re-encrypt to K4",
+   "top_score": "-587.6228094",
+   "top_plaintext": "CTTBICHEPEDBOBNADUTAGERPGARINCBJMEERVINCISPUYGDMNGIRCSYINJPDSROPROTCFBACJAFYVITICKSQAMHOSDBYFEDDH",
+   "clue_matches_max": 5,
+   "rows_with_24": 0,
+   "clue_matches_by_rank_top10": [
+    1,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  }
+ ]
+}

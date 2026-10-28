@@ -1,0 +1,20 @@
+=== 00:51:42 e1_carter_columnar
+K4_E1_CARTER_COLUMNAR: top -591.0221028 (195 s)
+PLANT_A: top -393.312187 (196 s)
+PLANT_B: top -397.1896822 (201 s)
+FROZEN 12 files -> /home/user/kryptos-k4/r34/e1_carter_columnar/FROZEN.sha256
+=== 01:01:36 e2_c7_r27
+K4_E2_C7_R27: top -589.3142161 (395 s)
+PLANT_C: top -387.6511133 (367 s)
+FROZEN 8 files -> /home/user/kryptos-k4/r34/e2_c7_r27/FROZEN.sha256
+=== 01:14:20 D1
+U0 found W -123.5  true W -71.1  wrong letters 91
+U1 found W -130.6  true W -76.7  wrong letters 91
+U2 found W -123.6  true W -73.2  wrong letters 90
+U3 found W -126.3  true W -93.8  wrong letters 96
+U4 found W -124.0  true W -74.2  wrong letters 92
+U5 found W -124.5  true W -76.5  wrong letters 97
+U6 found W -123.7  true W -76.2  wrong letters 91
+U7 found W -124.2  true W -78.9  wrong letters 91
+D1: readable 0/8 at 256 x 200,000 (L109: 0/8 at 64 x 40,000)
+=== 01:19:08 e3_carter_rot

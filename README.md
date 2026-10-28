@@ -1,18 +1,43 @@
-# Kryptos K4 R33 strict-blind handoff (27 Oct 2026)
+# Kryptos K4 research workspace
 
-**No solution. No GitHub pushes. No external validator submissions.**
+**No verified K4 solution exists here.** No submissions to any external checker without Tyler's go-ahead.
 
-Start with `HANDOFF.md` and `LEDGER.md`. The `r33/` directory contains:
+## Standard for any claimed solution (adopted R31)
+1. **Blind discovery:** the search reads only the original 97-letter ciphertext, a declared key source and a
+   language model. It never sees the known words (EASTNORTHEAST at 22–34, BERLINCLOCK at 64–74).
+2. **Freeze:** outputs are hashed (and committed) before anything checks them.
+3. **Reveal:** a separate checker re-encrypts each output forward to the ciphertext and counts how many of the 24
+   known letters it has. A solution must have all 24 *and* read as language.
+4. **Planted controls:** hidden test messages are run through the identical search and must come out #1.
 
-- A frozen preregistered 97-character K4 ciphertext-only keyword-columnar experiment: `r33/PREREGISTRATION.md` and `r33/blind/`.
-- The unchanged Carter 1923 OCR-derived 282,924-letter key stream, original scorer, and the already-frozen top 100 candidate outputs for two key families.
-- Exhaustive *postfreeze* clue-only histograms over 556,217,856 settings, 0 with all 24 clues, maximum 10.
-- Two new planted synthetic ciphertexts, each independently recovered exactly rank #1.
-- An independent 1,600-row mathematical re-encryption and quadgram-score audit across R32 and R33.
-- The verbatim original `R32_handoff_original.zip`; its omitted route file is reconstructed from its own supplied code by `verify_all.sh`.
+Searches that use the known words to fill in unknown alphabets are labelled **crib-assisted**. Their fitted text
+is never evidence.
 
-Run `bash verify_all.sh` to recheck the frozen data and independent output audit offline (no full cryptanalytic rescan). To redo all 556m decryptions, follow `r33/README_START_HERE.md`.
+## Where things are
+- **`LEDGER.md`:** the canonical record of every model tested (L01–L119+).
+- **`HANDOFF.md`:** the latest handoff (R34, Claude Code). ChatGPT's R33 handoff and audit notes are in `r33/`;
+  `AUDIT_NOTES.md` at the root is R33's copy.
+- **`k4kit/`:** the toolkit.
+  - `CLAUDE.md`: the working rules.
+  - `tools/`: oracle, solvers, validation.
+  - `r30/`: R30 crib-assisted searches and the Carter book test.
+  - `r32/`: R32 strict-blind scans.
+  - `handoffs/`: every Claude Code brief up to R32.
+- **`r33/`:** ChatGPT's R33 strict-blind keyword-columnar scans, self-contained with data. Replay with
+  `bash verify_all.sh`.
+- **`r34/`:** R34 strict-blind runs on the harness (E1–E3) and the D1 solver probe.
+- **`strictblind/`:** the shared strict-blind harness (one scanner, route makers, key sources, plants, freeze,
+  reveal) that new rounds should use instead of copying code (from R34).
+- **`archive/`:** ChatGPT packets and sources, kept unchanged for audit.
+  - `archive/sources/`: the Carter & Mace 1923 vol. I OCR text.
+- **`R32_handoff_original.zip`, `R33_DELIVERY_MANIFEST.sha256`:** R33's verbatim copy of the R32 zip, and R33's
+  checksum snapshot of the files as delivered. Some of those files, such as `README.md` and `LEDGER.md`, have since
+  been edited on purpose.
 
-For user review, **no new candidate** qualifies: no actual K4 decryption in this R32/R33 search matched the confirmed clues at both positions. Prior G4/G7 readable fragments came from crib-assisted free-alphabet optimization and are not blind discoveries.
+## Build and validate the toolkit (about 30 s)
 
-All new blind K4 runs operated on the original ciphertext; known words were used only by `sealed/` after all output files were frozen. The separate synthetic planted ciphertexts are needed to verify that the scanner can solve its own cipher family; they are not used to generate or alter K4 candidates.
+```bash
+cd k4kit
+g++ -std=c++17 -O3 -march=native tools/solver_s2kp.cpp -o bin/solver_s2kp
+python3 tools/validate.py
+```

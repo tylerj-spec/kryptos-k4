@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""Build the R30 human-review shortlist from runs/*.json (REVIEW ONLY unless a row meets the candidate rule).
+Writes SHORTLIST_R30.md and shortlist_r30.csv. The word split is the scorer's own segmentation: an interpretation
+aid, not evidence (unforced letters are optimiser choices)."""
+import csv
+import json
+
+from r30lib import HERE, RUNS
+
+FAMILIES = [  # (file stem, title)
+    ("e4_carter_v1_doran_full64", "E4 Carter & Mace 1923 vol. I as running key, all 585 passes (English, 64 restarts)"),
+    ("e6_DE", "E6 Carter passes + 39 Gromark primers, German word model"),
+    ("e6_NL", "E6 Carter passes + 39 Gromark primers, Dutch word model"),
+    ("e6_MIX", "E6 Carter passes + 39 Gromark primers, mixed English/German/Dutch model"),
+    ("e1_ORTH", "E1 chain addition, 6/7-digit primers (English)"),
+    ("e2_ORTH", "E2 one-cycle K3-style routes + Gromark (English)"),
+    ("e5_ORTH", "E5 one mis-carved clue letter + Gromark (English)"),
+    ("g5_ORTHXQ", "E3a 5-digit Gromark, 39 primers (punctuation model; exploratory, gate failed)"),
+    ("r2_ORTHXQ", "E3b two-cycle K3-style routes + Gromark (punctuation model; exploratory)"),
+    ("g5_ORTH", "Reference: 5-digit Gromark, 39 primers (English, re-run)"),
+    ("r2_ORTH", "Reference: two-cycle routes (English, re-run)"),
+]
+
+
+def load_model(path):
+    m = {}
+    for ln in open(path):
+        w, ex, ed = ln.split()
+        m[w] = (float(ex), float(ed))
+    return m
+
+
+def segment(p, model):
+    """Best split under the word model (same DP as solver_s2kp: skip -7/letter, up to 2 edit-matched words).
+    Skipped letters are lower case; edit-matched (spelling-variant) words are marked with ~."""
+    NEG = -1e99
+    n = len(p)
+    dp = [[(NEG, None)] * 3 for _ in range(n + 1)]
+    dp[0][0] = (0.0, None)
+    for i in range(n):
+        for b in range(3):
+            s, _ = dp[i][b]
+            if s <= NEG:
+                continue
+            if s - 7 > dp[i + 1][b][0]:
+                dp[i + 1][b] = (s - 7, (i, b, "skip"))
+            for j in range(i + 1, min(n, i + 24) + 1):
+                w = p[i:j]
+                if w not in model:
+                    continue
+                ex, ed = model[w]
+                if ex > -1e99 and s + ex > dp[j][b][0]:
+                    dp[j][b] = (s + ex, (i, b, "w"))
+                if ed > -1e99 and b < 2 and s + ed > dp[j][b + 1][0]:
+                    dp[j][b + 1] = (s + ed, (i, b, "e"))
+    b = max(range(3), key=lambda x: dp[n][x][0])
+    out, j = [], n
+    while j > 0:
+        i, pb, kind = dp[j][b][1]
+        tok = p[i:j]
+        out.append(tok.lower() if kind == "skip" else (tok + "~" if kind == "e" else tok))
+        j, b = i, pb
+    toks, merged = out[::-1], []
+    for t in toks:  # merge runs of skipped letters
+        if merged and t.islower() and merged[-1].islower():
+            merged[-1] += t
+        else:
+            merged.append(t)
+    return " ".join(merged)
+
+
+def mask_view(fm):
+    return "".join(c if c != "?" else "." for c in fm)
+
+
+if __name__ == "__main__":
+    model = load_model(RUNS / "word_model_mix.tsv")  # English + German + Dutch (built by build_lang_models.py)
+    rows, md = [], ["# R30 human-review shortlist (REVIEW ONLY unless marked CANDIDATE)", "",
+                    "Each row is the raw 97-letter output of the English search for one key setting, exactly as "
+                    "decrypted (it re-encrypts to K4 with its own alphabets, checked independently).",
+                    "- **Forced mask:** the letters the clue equations force for that key (`.` means the optimiser "
+                    "chose the letter). Only forced letters are evidence.",
+                    "- **W:** the word score. Readable planted English scores about −69 to −95. The best wrong keys "
+                    "reach about −115.",
+                    "- **Word split:** the scorer's own segmentation, given as an interpretation aid only.", "",
+                    "**Why every row shows EASTNORTHEAST and BERLINCLOCK.**",
+                    "- Each row starts from the original K4 ciphertext and re-encrypts back to it exactly.",
+                    "- These families assume two *unknown* scrambled alphabets, besides the key. The 24 known letters "
+                    "are the only firm information about those alphabets, so they are used to fill them in, and "
+                    "every row shows the clues by construction.",
+                    "- Without the clues even the true key fails: 0/8 planted messages recovered (ledger L109).",
+                    "- **The real checks are elsewhere.**",
+                    "  - The exact clue test rejects about 2,099 of every 2,100 keys before any filling happens "
+                    "(Carter book: 1,131,312 → 585).",
+                    "  - A right key would make the other 73 letters readable, and the same on every re-run. Wrong "
+                    "keys leave most of them to the optimiser, which is why the rest differs from run to run.",
+                    "- With fixed standard alphabets (nothing fitted), the clues must appear on their own. For the "
+                    "Carter book they never do: best 9/24 over 13.6 million decryptions, about what luck gives "
+                    "(L109).", "",
+                    "| Family | Settings | Best W | Bar | Candidates |", "|---|---|---|---|---|"]
+    loaded = [(stem, title, json.load(open(RUNS / f"{stem}.json"))) for stem, title in FAMILIES
+              if (RUNS / f"{stem}.json").exists()]
+    for stem, title, d in loaded:
+        s = d["summary"]
+        md.append(f"| {title} | {s['settings']} | {s['best_W']:.2f} | {s['bar']:.2f} | {len(s['candidates'])} |")
+    md.append("")
+    for stem, title, d in loaded:
+        s, rep = d["summary"], d["replication"]
+        md += [f"## {title}", "",
+               f"- **Searched:** {s['settings']} settings at {s['restarts']} restarts.",
+               f"- **Best W** {s['best_W']:.2f}, median {s['median_W']:.2f}, bar {s['bar']:.2f}; above the bar: "
+               f"{s['n_above_bar']}.",
+               f"- **Candidates:** {len(s['candidates'])}.", ""]
+        for x in d["ranked"][:5]:
+            r = rep.get(x["id"])
+            status = "CANDIDATE" if x["id"] in s["candidates"] else "REVIEW ONLY"
+            repl = (f"replication W {r['W']:.2f}, {r['letters_changed_vs_screen']} letters changed"
+                    if r else "below the bar, so not replicated")
+            md += [f"**{x['id']}**: W {x['W']:.2f} ({repl}); forced beyond clues {x['forced_beyond_clues']}; "
+                   f"{status}", "", "```", f"raw   {x['plaintext']}", f"mask  {mask_view(x['forced_mask'])}",
+                   "```", f"Word split (interpretation): `{segment(x['plaintext'], model)}`", ""]
+            rows.append({"family": stem, "id": x["id"], "W": round(x["W"], 3),
+                         "replication_W": round(r["W"], 3) if r else "",
+                         "replication_letters_changed": r["letters_changed_vs_screen"] if r else "",
+                         "forced_beyond_clues": x["forced_beyond_clues"], "status": status,
+                         "raw_plaintext": x["plaintext"], "forced_mask": x["forced_mask"],
+                         "word_split_interpretation": segment(x["plaintext"], model)})
+    (HERE / "SHORTLIST_R30.md").write_text("\n".join(md) + "\n")
+    with open(HERE / "shortlist_r30.csv", "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+    print(f"{len(rows)} shortlist rows")

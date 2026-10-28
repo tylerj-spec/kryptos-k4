@@ -1,0 +1,114 @@
+[
+  {
+    "family": "K4_G5_BLIND.tsv",
+    "settings_in_full_blind_scan": 1200000,
+    "top100_correct_all24": 0,
+    "top100_max_crib_matches": 4,
+    "best_quad": {
+      "score_quad": "-637.81232333",
+      "setting": "G5/PRIMER=88602/PA=AZ/CA=AZ/OP=VIG",
+      "plaintext": "GTERSITIEZULTSGLAXTTOZFLPMONPNAGOQITONIMBMOOAIRROUTDEHOXGAWGFDBLYPTRRMXBLIUAVEVPPFCBGYGSDUYOYGASP",
+      "anchor_matches": 1,
+      "east_section": "ZFLPMONPNAGOQ",
+      "berlin_section": "LYPTRRMXBLI"
+    },
+    "strongest_crib_retrospective": [
+      {
+        "rank": "50",
+        "score_quad": "-661.64614534",
+        "plaintext": "FBSARYTWINTNEACLHMZZTEITTSNWAOEWYABBVAUZLOCZJZZYOEDPAPRIOFRJQJARTXVEDNSLCUVFITRYEHECPEWSGMEOKTHHT",
+        "anchor_matches": 4,
+        "east_section": "EITTSNWAOEWYA",
+        "berlin_section": "RTXVEDNSLCU"
+      },
+      {
+        "rank": "65",
+        "score_quad": "-663.83384895",
+        "plaintext": "UGSNJRMSBBKUCNOYADGALBURNNLOPOYURPRPHNMLSTQNAQIENEORSSHEUFIAWCIPJRLIQRDCLSJDESIHNAHYSZYGULDOXWGBS",
+        "anchor_matches": 4,
+        "east_section": "BURNNLOPOYURP",
+        "berlin_section": "PJRLIQRDCLS"
+      },
+      {
+        "rank": "3",
+        "score_quad": "-644.56146026",
+        "plaintext": "NSBPOOPNYBMCSOKEACTAREKIPKOPMLYINLOTPRJSCHJLXERTSXPFKENVETSDLEAERMTTNMUDJERZVIYVOJZABBHOHSSLYICTM",
+        "anchor_matches": 3,
+        "east_section": "EKIPKOPMLYINL",
+        "berlin_section": "ERMTTNMUDJE"
+      },
+      {
+        "rank": "7",
+        "score_quad": "-649.41867375",
+        "plaintext": "HHBARDYCIITZHCOXNUEIXINRTXZOCUVASSSDTTUGNRAHEKABOAFWAZPINFPMYUCYTEVTOMAFTROUEYBTGNDIQITRHYGULAFGA",
+        "anchor_matches": 3,
+        "east_section": "INRTXZOCUVASS",
+        "berlin_section": "YTEVTOMAFTR"
+      },
+      {
+        "rank": "15",
+        "score_quad": "-655.45580506",
+        "plaintext": "DYGDNZEVPOLLUYDRPUUYFORHMIODFHNEWAVAJEMYKKYUTEJFHBYMILFULTFPLOUNGBGEAKHOZGLTSIFGEKTYNVCFMFTHPARVB",
+        "anchor_matches": 3,
+        "east_section": "ORHMIODFHNEWA",
+        "berlin_section": "NGBGEAKHOZG"
+      }
+    ]
+  },
+  {
+    "family": "K4_CARTER_BLIND.tsv",
+    "settings_in_full_blind_scan": 13575744,
+    "top100_correct_all24": 0,
+    "top100_max_crib_matches": 4,
+    "best_quad": {
+      "score_quad": "-607.24031591",
+      "setting": "CARTER/DIR=FORWARD/KEYNUM=KRY/PA=KRY/CA=KRY/OP=BEAU",
+      "plaintext": "SORDYKNOXGCWPBJRMAPCHSQMBGISTYSTOTARTPWRENOWJOTSTWEINHLQZTHTEZNEOFWHAROYBDHHOVFFBEVBIRECASOFMAMWE",
+      "anchor_matches": 2,
+      "east_section": "SQMBGISTYSTOT",
+      "berlin_section": "EOFWHAROYBD"
+    },
+    "strongest_crib_retrospective": [
+      {
+        "rank": "14",
+        "score_quad": "-628.86261964",
+        "plaintext": "FVUGVHICITBKSOKWISFSDMJMANSKFAMHFACTVXDOHDRGYBTOVEKRTYMXCTMIELDAQREKACRORPEOPHPITPOPITTRICHJPUTRL",
+        "anchor_matches": 4,
+        "east_section": "MJMANSKFAMHFA",
+        "berlin_section": "AQREKACRORP"
+      },
+      {
+        "rank": "61",
+        "score_quad": "-639.07673812",
+        "plaintext": "OZASYCGYRONBAPZOTUZLICASLKILMAEOFIAPKAYIEZBUILBOWBYWUBYJLDHASOULDOSIPPFGBEDEBYUTWFVBDUEGDTNLWTSTB",
+        "anchor_matches": 4,
+        "east_section": "CASLKILMAEOFI",
+        "berlin_section": "LDOSIPPFGBE"
+      },
+      {
+        "rank": "62",
+        "score_quad": "-639.0841856",
+        "plaintext": "SSVRCHOOVMIYPAHNMUTOELYZMQUATSUILDIVEYVAMHGGHNDKWELOYRHLVELWATGBCRITKMDUEKJOUYNAWNNDMYBYUHIHEAGSK",
+        "anchor_matches": 4,
+        "east_section": "LYZMQUATSUILD",
+        "berlin_section": "BCRITKMDUEK"
+      },
+      {
+        "rank": "64",
+        "score_quad": "-639.35265231",
+        "plaintext": "BMITOMSSFASTHNLQCYAPVIATTCMWIGFUTYOETTSPWGCAUAOMTTLYAVRSENIDLBICIKWRNYLLRMENFMBFWEBNBWLEORUREHLDQ",
+        "anchor_matches": 4,
+        "east_section": "IATTCMWIGFUTY",
+        "berlin_section": "CIKWRNYLLRM"
+      },
+      {
+        "rank": "4",
+        "score_quad": "-623.74720836",
+        "plaintext": "WWIGASOHIPBEZHAMIMWOFPPSNSHASEVBDAFRFOYLOWTOFNUSOFTONAGDTHVSQEGAEAYENJUHEHUQILUJKOAIASMPPGXRTHWFH",
+        "anchor_matches": 3,
+        "east_section": "PPSNSHASEVBDA",
+        "berlin_section": "AEAYENJUHEH"
+      }
+    ]
+  }
+]

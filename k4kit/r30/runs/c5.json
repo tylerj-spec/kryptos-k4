@@ -1,0 +1,178 @@
+{
+ "protocol": "9ebe80810e0ce143b99130da8874215e11124938853e1269de6749775bcb2c86",
+ "amendment": "cf583846b942acad815c0c53448c573df92932a199662123a2f460adc594b343",
+ "result": {
+  "16": {
+   "readable": 4,
+   "of": 20,
+   "rows": {
+    "C5_00_pos32": {
+     "W": -147.6583095,
+     "wrong_letters": 24
+    },
+    "C5_01_pos32": {
+     "W": -148.5469374,
+     "wrong_letters": 25
+    },
+    "C5_02_pos32": {
+     "W": -143.1073805,
+     "wrong_letters": 54
+    },
+    "C5_03_pos70": {
+     "W": -117.7240057,
+     "wrong_letters": 32
+    },
+    "C5_04_pos33": {
+     "W": -141.9808453,
+     "wrong_letters": 47
+    },
+    "C5_05_pos30": {
+     "W": -131.3026621,
+     "wrong_letters": 26
+    },
+    "C5_06_pos27": {
+     "W": -89.65372518,
+     "wrong_letters": 1
+    },
+    "C5_07_pos34": {
+     "W": -153.2317763,
+     "wrong_letters": 42
+    },
+    "C5_08_pos27": {
+     "W": -145.2734672,
+     "wrong_letters": 53
+    },
+    "C5_09_pos72": {
+     "W": -100.2968397,
+     "wrong_letters": 1
+    },
+    "C5_10_pos64": {
+     "W": -139.5546011,
+     "wrong_letters": 46
+    },
+    "C5_11_pos23": {
+     "W": -152.9795062,
+     "wrong_letters": 52
+    },
+    "C5_12_pos27": {
+     "W": -114.5678544,
+     "wrong_letters": 13
+    },
+    "C5_13_pos29": {
+     "W": -165.8907461,
+     "wrong_letters": 66
+    },
+    "C5_14_pos73": {
+     "W": -142.3676852,
+     "wrong_letters": 26
+    },
+    "C5_15_pos70": {
+     "W": -80.03216349,
+     "wrong_letters": 1
+    },
+    "C5_16_pos22": {
+     "W": -145.5685937,
+     "wrong_letters": 27
+    },
+    "C5_17_pos65": {
+     "W": -192.4894543,
+     "wrong_letters": 48
+    },
+    "C5_18_pos28": {
+     "W": -147.2037548,
+     "wrong_letters": 28
+    },
+    "C5_19_pos67": {
+     "W": -95.26590966,
+     "wrong_letters": 4
+    }
+   }
+  },
+  "64": {
+   "readable": 6,
+   "of": 20,
+   "rows": {
+    "C5_00_pos32": {
+     "W": -138.5560885,
+     "wrong_letters": 38
+    },
+    "C5_01_pos32": {
+     "W": -155.0148273,
+     "wrong_letters": 42
+    },
+    "C5_02_pos32": {
+     "W": -139.2478764,
+     "wrong_letters": 45
+    },
+    "C5_03_pos70": {
+     "W": -82.98631902,
+     "wrong_letters": 2
+    },
+    "C5_04_pos33": {
+     "W": -136.2069644,
+     "wrong_letters": 49
+    },
+    "C5_05_pos30": {
+     "W": -146.2404692,
+     "wrong_letters": 36
+    },
+    "C5_06_pos27": {
+     "W": -89.65372518,
+     "wrong_letters": 1
+    },
+    "C5_07_pos34": {
+     "W": -116.9440877,
+     "wrong_letters": 15
+    },
+    "C5_08_pos27": {
+     "W": -151.1877925,
+     "wrong_letters": 48
+    },
+    "C5_09_pos72": {
+     "W": -100.2968397,
+     "wrong_letters": 1
+    },
+    "C5_10_pos64": {
+     "W": -83.67100484,
+     "wrong_letters": 1
+    },
+    "C5_11_pos23": {
+     "W": -136.5894467,
+     "wrong_letters": 57
+    },
+    "C5_12_pos27": {
+     "W": -141.2352338,
+     "wrong_letters": 20
+    },
+    "C5_13_pos29": {
+     "W": -137.1526112,
+     "wrong_letters": 30
+    },
+    "C5_14_pos73": {
+     "W": -139.5156211,
+     "wrong_letters": 47
+    },
+    "C5_15_pos70": {
+     "W": -80.03216349,
+     "wrong_letters": 1
+    },
+    "C5_16_pos22": {
+     "W": -137.1430492,
+     "wrong_letters": 42
+    },
+    "C5_17_pos65": {
+     "W": -173.9608322,
+     "wrong_letters": 55
+    },
+    "C5_18_pos28": {
+     "W": -132.8572001,
+     "wrong_letters": 33
+    },
+    "C5_19_pos67": {
+     "W": -93.59296354,
+     "wrong_letters": 3
+    }
+   }
+  }
+ }
+}

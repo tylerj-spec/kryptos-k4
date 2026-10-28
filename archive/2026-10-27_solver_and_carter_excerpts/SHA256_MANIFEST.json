@@ -1,0 +1,22 @@
+{
+  "CARTER_MACE_1923_SOURCE_STATUS.md": "547fb1e23ce2bc8c1f65e1a15084c78bd80649537be882bb15641ceac43de1f2",
+  "KRYPTOS_K4_MASTER_AGENT_HANDOFF_2026-10-26.md": "9e5dd7896eae83e9aa884e04465206787515c2730af6ca76200c483db1e3f47c",
+  "LEDGER.md": "8497b0b65d1dc535a16af7b02f63c05c4b3759aa14601565c3ef88a81528eec8",
+  "SOURCES.md": "2ea095dc6e72f084775ec0b84320ca4fbfa7ebbe3ded88be191494ca71f572c7",
+  "START_HERE.md": "2acbc11abfdcdf2a87bc300b71a80815d32789a2fc1058db43f8ea90ec1c73cf",
+  "__pycache__/r27_sources.cpython-313.pyc": "a0e7d198f225584e2753b559c5e3fbfd637df3bedadf9245d5e905b38035cc73",
+  "claude/r26/__pycache__/key_oracle.cpython-313.pyc": "592d7bf7a79bb8f24a94f8d3c7924ab2ca11783f2249d9a21015325d33620f2f",
+  "claude/r26/key_oracle.py": "b1ff339944b739f9137e38fb474412b2a644395ea41bbac6905b3f5d4d11a619",
+  "fetch_carter_1923_ocr.py": "dd25d634044d7c41d906388d0219eaa1b65e6570b296854b2a22b8bec77db9f4",
+  "r27_source_null.py": "d034a4ceaad94a3ceff840a796b8fa7e08d5cd9969ff49dedeaa895a23c2c606",
+  "r27_sources.py": "1d31c7ffac559acd157dffe14399e5870289359c159aa8a016f2adbdff35ea4f",
+  "results/R27_SOURCE_ORACLE.json": "8e0737c1e788faa6b43547e57a3d023ccf4470fd72c4b65aa7a7c8424937a14c",
+  "results/R27_SOURCE_PASSES.csv": "37532cbe7a4bfe176ec0535734f86a01eba8fcfe74d42c8493db7ce1495093a2",
+  "results/R27_SOURCE_S2K_SUMMARY.json": "2354063580699516406da2f59476f39540bd98d739b54a8db9ee5c555d07333f",
+  "run_book_test.py": "ceda20125af3a8e032966470128452ee9946b54a2d0a6a1beacf4fa0c3e38715",
+  "source_excerpts/carter_1923_bodleian.txt": "d270742b8b1b15834ee6558a9051278a4e2f29a13d1f5887ebc4511c060ace11",
+  "source_excerpts/carter_1924_lecture.txt": "201d45df3724da32634bc9de58b4db1ce0fb7c0bbc5d52dcfb5ee1b83e23a0ce",
+  "source_excerpts/carter_diary_1922_bodleian.txt": "24754028aa57ae8ff74695406e4e63534b7a954d7c272ccce5a63c7f57f5b3e0",
+  "source_excerpts/cia_k1k3_cipher_drop_q.txt": "2a3522b2ecd3b0151e55e6496619d646ee868f5be1f2b35f2ab91a90a35f5ef2",
+  "source_excerpts/cia_k1k3_cipher_question_as_q.txt": "9956fe39ccfc4b39525db20d3e8e431ecbd38176063039cb5810dc4fceb8a1d4"
+}

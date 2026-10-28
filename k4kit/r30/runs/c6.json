@@ -1,0 +1,327 @@
+{
+ "protocol": "9ebe80810e0ce143b99130da8874215e11124938853e1269de6749775bcb2c86",
+ "amendment4": "44f9f7d08538e62fa23c42d247eb793037754ecd93f99e46248b7f90cb4cf7ce",
+ "result": {
+  "DE": {
+   "blind_readable": 9,
+   "of": 10,
+   "bar": -117.0714951,
+   "detail": {
+    "DE00": {
+     "blind_readable": true,
+     "true_W": -74.96171718,
+     "true_text": "WIRFUHRENAMMORGENNACHEASTNORTHEASTUNDSAHENSPAETAMABENDDIEGROSSEBERLINCLOCKMITIHRENGOLDENENZEIGERN",
+     "true_wrong_letters": 0
+    },
+    "DE01": {
+     "blind_readable": true,
+     "true_W": -81.25698308,
+     "true_text": "DERSTURMKAMGESTERNAUSEASTNORTHEASTUNDALLEFENSTERKLIRRTENLAUTDIEBERLINCLOCKBLIEBNACHTSUMZEHNSTEHEN",
+     "true_wrong_letters": 0
+    },
+    "DE02": {
+     "blind_readable": true,
+     "true_W": -69.55482746,
+     "true_text": "FOLGEDEMALTENPFADNACHEASTNORTHEASTBISZURBRUECKEDAHINTERSTEHTDIEBERLINCLOCKNEBENDEMKLEINENGASTHAUS",
+     "true_wrong_letters": 0
+    },
+    "DE03": {
+     "blind_readable": false,
+     "true_W": -113.4203321,
+     "true_text": "UNDEREKARTESEIDDJENAJEASTNORTHEASTVONHIERAUSCUMMARKTXWATCFOEINEBERLINCLOCKHOCHADPKEKKAMBYESDUCHES",
+     "true_wrong_letters": 22
+    },
+    "DE04": {
+     "blind_readable": true,
+     "true_W": -67.42471499,
+     "true_text": "MEINGROSSVATERSCHAUTEEASTNORTHEASTWENNERANDIEHEIMATDACHTEUNDDIEBERLINCLOCKERINNERTEIHNANDIEJUGEND",
+     "true_wrong_letters": 0
+    },
+    "DE05": {
+     "blind_readable": true,
+     "true_W": -70.58304499,
+     "true_text": "WIRTRAFENUNSUNDGINGENEASTNORTHEASTDURCHDENGARTENZURSTRASSEWODIEBERLINCLOCKDIEGANZEWOCHEFALSCHGING",
+     "true_wrong_letters": 0
+    },
+    "DE06": {
+     "blind_readable": true,
+     "true_W": -69.18298189,
+     "true_text": "DASBOOTSEGELTELANGSAMEASTNORTHEASTUNDAMHORIZONTERSCHIENSPAETDIEBERLINCLOCKSOWIEDIEDAECHERDERSTADT",
+     "true_wrong_letters": 0
+    },
+    "DE07": {
+     "blind_readable": true,
+     "true_W": -72.99439168,
+     "true_text": "GEHEZUMBAHNHOFUNDDANNEASTNORTHEASTETWAVIERHUNDERTSCHRITTEBISZURBERLINCLOCKWIRWARTENDORTBISACHTUHR",
+     "true_wrong_letters": 0
+    },
+    "DE08": {
+     "blind_readable": true,
+     "true_W": -72.08415231,
+     "true_text": "ESWARKALTUNDWIRGINGENEASTNORTHEASTDURCHDENNEUSCHNEEBISWIRVORDERBERLINCLOCKSTANDENUNDSIEANSCHAUTEN",
+     "true_wrong_letters": 0
+    },
+    "DE09": {
+     "blind_readable": true,
+     "true_W": -75.22418575,
+     "true_text": "DERSCHATZLIEGTGENAUIMEASTNORTHEASTDESGARTENSUNTERDEMSTEINBEIDERBERLINCLOCKGRABEDORTFUENFMETERTIEF",
+     "true_wrong_letters": 0
+    }
+   }
+  },
+  "NL": {
+   "blind_readable": 9,
+   "of": 10,
+   "bar": -112.0453526,
+   "detail": {
+    "NL00": {
+     "blind_readable": false,
+     "true_W": -119.0201038,
+     "true_text": "VIVREDEMKPRROUTEMNDPFEASTNORTHEASTENJPVERALSINDEKATEAMORUCASATEBERLINCLOCKDEAUERORDEVOCDANUILJEAS",
+     "true_wrong_letters": 41
+    },
+    "NL01": {
+     "blind_readable": true,
+     "true_W": -76.32327698,
+     "true_text": "DESTORMKWAMVANDAAGUITEASTNORTHEASTENDERAMENRAMMELDENTERWIJLONZEBERLINCLOCKOPEENSOMZESUURSTILSTOND",
+     "true_wrong_letters": 0
+    },
+    "NL02": {
+     "blind_readable": true,
+     "true_W": -69.78506152,
+     "true_text": "VOLGHETOUDEPADNAARHETEASTNORTHEASTTOTAANDEBRUGDAARACHTERSTAATDEBERLINCLOCKNAASTHETKLEINEWINKELTJE",
+     "true_wrong_letters": 0
+    },
+    "NL03": {
+     "blind_readable": true,
+     "true_W": -71.36123105,
+     "true_text": "ONZEKAARTWIJSTPRECIESEASTNORTHEASTVANHIERNAARHETOUDEPLEINWAARDEBERLINCLOCKHOOGBOVENOPDEGROTETOREN",
+     "true_wrong_letters": 0
+    },
+    "NL04": {
+     "blind_readable": true,
+     "true_W": -66.08455514,
+     "true_text": "MIJNGROOTVADERKEEKOOKEASTNORTHEASTWANNEERHIJAANVROEGERDACHTENDEBERLINCLOCKHEMAANDEJEUGDHERINNERDE",
+     "true_wrong_letters": 0
+    },
+    "NL05": {
+     "blind_readable": true,
+     "true_W": -66.60272308,
+     "true_text": "WEGINGENSAMENRICHTINGEASTNORTHEASTDOORHETPARKNAARDESTRAATWAARDEBERLINCLOCKDEHELEMAANDVERKEERDLIEP",
+     "true_wrong_letters": 0
+    },
+    "NL06": {
+     "blind_readable": true,
+     "true_W": -73.47826361,
+     "true_text": "DEBOOTZEIKDETRAAGNAAREASTNORTHEASTENAANJEHORIZONVERSCHENENWASDEBERLINCLOCKENDEHOGETORENSVANDESTAD",
+     "true_wrong_letters": 3
+    },
+    "NL07": {
+     "blind_readable": true,
+     "true_W": -69.0060957,
+     "true_text": "GANAARHETSTATIONENDANEASTNORTHEASTONGEVEERDRIEHONDERDMETERTOTDEBERLINCLOCKDAARWACHTENWETOTACHTUUR",
+     "true_wrong_letters": 0
+    },
+    "NL08": {
+     "blind_readable": true,
+     "true_W": -73.15889442,
+     "true_text": "HETWASKOUDENWIJGINGENEASTNORTHEASTDOORDEDIEZESNEEUWTOTWIJVOORDEBERLINCLOCKSTONDENENNAARBOVENKEKEN",
+     "true_wrong_letters": 1
+    },
+    "NL09": {
+     "blind_readable": true,
+     "true_W": -75.19444718,
+     "true_text": "DESCHATLIGTVERNAARHETEASTNORTHEASTVANHETDORPONDERDESTEENNAASTDEBERLINCLOCKGRAAFDAARZEVENMETERDIEP",
+     "true_wrong_letters": 0
+    }
+   }
+  },
+  "MIX": {
+   "blind_readable": 24,
+   "of": 30,
+   "bar": -99.89487684,
+   "detail": {
+    "DE00": {
+     "blind_readable": true,
+     "true_W": -73.04371767,
+     "true_text": "WIRFUHRENAMMORGENNACHEASTNORTHEASTUNDSAHENSPAETAMABENDDIEGROSSEBERLINCLOCKMITIHRENGOLDENENZEIGERN",
+     "true_wrong_letters": 0
+    },
+    "DE01": {
+     "blind_readable": true,
+     "true_W": -78.74693072,
+     "true_text": "DERSTURMKAMGESTERNAUSEASTNORTHEASTUNDALLEFENSTERKLIRRTENLAUTDIEBERLINCLOCKBLIEBNACHTSUMZEHNSTEHEN",
+     "true_wrong_letters": 0
+    },
+    "DE02": {
+     "blind_readable": true,
+     "true_W": -69.55482746,
+     "true_text": "FOLGEDEMALTENPFADNACHEASTNORTHEASTBISZURBRUECKEDAHINTERSTEHTDIEBERLINCLOCKNEBENDEMKLEINENGASTHAUS",
+     "true_wrong_letters": 0
+    },
+    "DE03": {
+     "blind_readable": false,
+     "true_W": -96.6806051,
+     "true_text": "UNSEREWATWESEIJAGENAUEASTNORTHEASTVONHIERALPBYIIARCWIESTOZOEINEBERLINCLOCKTOCHANDHECHFFHDEPAYEKEP",
+     "true_wrong_letters": 33
+    },
+    "DE04": {
+     "blind_readable": false,
+     "true_W": -96.70043608,
+     "true_text": "MEINGROSSVATERSCOWATBEASTNORTHEASTWENABRAADEEOEIHATDACOTEUNDDIEBERLINCLOCKERZNNERTEIOFANDIEDAYEND",
+     "true_wrong_letters": 17
+    },
+    "DE05": {
+     "blind_readable": true,
+     "true_W": -70.01135363,
+     "true_text": "WIRTRAFENUNSUNDGINGENEASTNORTHEASTDURCHDENGARTENZURSTRASSEWODIEBERLINCLOCKDIEGANZEWOCHEFALSCHGING",
+     "true_wrong_letters": 0
+    },
+    "DE06": {
+     "blind_readable": true,
+     "true_W": -69.0126138,
+     "true_text": "DASBOOTSEGELTELANGSAMEASTNORTHEASTUNDAMHORIZONTERSCHIENSPAETDIEBERLINCLOCKSOWIEDIEDAECHERDERSTADT",
+     "true_wrong_letters": 0
+    },
+    "DE07": {
+     "blind_readable": true,
+     "true_W": -72.78367452,
+     "true_text": "JEHEZUMBAHNHOFUNDDANNEASTNORTHEASTETWAVIERHUNDERTSCHRITTEBISZURBERLINCLOCKWIRWARTENDORTBISACHTUHR",
+     "true_wrong_letters": 1
+    },
+    "DE08": {
+     "blind_readable": false,
+     "true_W": -94.51026104,
+     "true_text": "ESFARWAGTUNDVGRMPPMENEASTNORTHEASTDURCHDENNEUSCHNEENISFPRVORDERBERLINCLOCKITANDENUPDIJEANSCHAUTEN",
+     "true_wrong_letters": 16
+    },
+    "DE09": {
+     "blind_readable": true,
+     "true_W": -75.13566448,
+     "true_text": "DERSCHATZLIEGTGENAUIMEASTNORTHEASTDESGARTENSUNTERDEMSTEINBEIDERBERLINCLOCKGRABEDORTFUENFMETERTIEF",
+     "true_wrong_letters": 0
+    },
+    "EN00": {
+     "blind_readable": true,
+     "true_W": -69.71409598,
+     "true_text": "ALLMORNINGTHEWINDBLEWEASTNORTHEASTOVERTHEWATERANDWECOULDHEARTHEBERLINCLOCKCHIMINGACROSSTHEHARBOUR",
+     "true_wrong_letters": 0
+    },
+    "EN01": {
+     "blind_readable": true,
+     "true_W": -76.39485398,
+     "true_text": "ALONGRIDGEOFROCKSRUNSEASTNORTHEASTFROMTHELAKETOTHETOWNWITHANOLDBERLINCLOCKINITSPRETTYLITTLESQUARE",
+     "true_wrong_letters": 0
+    },
+    "EN02": {
+     "blind_readable": true,
+     "true_W": -72.0548051,
+     "true_text": "ATDUSKTHEVINDCAMEFROMEASTNORTHEASTTHESEAANDINTHEMARKETSQUARETHEBERLINCLOCKBEGANTORINGOUTFORSUPPER",
+     "true_wrong_letters": 1
+    },
+    "EN03": {
+     "blind_readable": true,
+     "true_W": -73.98106223,
+     "true_text": "ATSUNRISETHEPULLSFLEWEASTNORTHEASTTOWARDSTHEFISHMARKETBESIDETHEBERLINCLOCKTOWERONTHEOLDWATERFRONT",
+     "true_wrong_letters": 1
+    },
+    "EN04": {
+     "blind_readable": true,
+     "true_W": -72.61337685,
+     "true_text": "ATTHETOPOFTHEHILLTURNEASTNORTHEASTANDWALKDOWNTOTHETOWNMUSEUMITSBERLINCLOCKISFAMOUSACROSSTHEREGION",
+     "true_wrong_letters": 0
+    },
+    "EN05": {
+     "blind_readable": false,
+     "true_W": -74.25255393,
+     "true_text": "EACHSUMMERTHEDEEDEPLYEASTNORTHEASTOVERTHEHILLSGESAGTHEMABOVETHEBERLINCLOCKINTHEMARKETSQUAREATZUSK",
+     "true_wrong_letters": 6
+    },
+    "EN06": {
+     "blind_readable": true,
+     "true_W": -76.09876393,
+     "true_text": "FOLLOWTHERIVERPATHDUEEASTNORTHEASTFORTHREEMILESPASTTHEFARMTOTHEBERLINCLOCKREPAIRSHOPONTHEMAINROAD",
+     "true_wrong_letters": 0
+    },
+    "EN07": {
+     "blind_readable": true,
+     "true_W": -78.80531038,
+     "true_text": "FROMTHEOLDMILLWALKDUEEASTNORTHEASTFORAMILETHENLOOKFORASHOPWITHABERLINCLOCKWHICHSTILLSHOWSTHEHOURS",
+     "true_wrong_letters": 0
+    },
+    "EN08": {
+     "blind_readable": true,
+     "true_W": -75.48905545,
+     "true_text": "FROMTHETOWERPENUMROSEEASTNORTHEASTATDAWNJUSTASTHEOLDBELLNEARTHEBERLINCLOCKSTARTEDTORINGFORMORNING",
+     "true_wrong_letters": 2
+    },
+    "EN09": {
+     "blind_readable": true,
+     "true_W": -68.22966198,
+     "true_text": "GRANDMOTHERALWAYSSAIDEASTNORTHEASTWASTHEBESTWAYTOFACEAGARDENHERBERLINCLOCKHUNGABOVETHEKITCHENDOOR",
+     "true_wrong_letters": 0
+    },
+    "NL00": {
+     "blind_readable": false,
+     "true_W": -92.65293952,
+     "true_text": "PIZREDENVANLOWKENNAAREASTNORTHEASTONJAZENURSINDOFATEAVONXZEOUTEBERLINCLOCKHEAXELOFDEZOUDENFIGJEIS",
+     "true_wrong_letters": 26
+    },
+    "NL01": {
+     "blind_readable": true,
+     "true_W": -74.80692008,
+     "true_text": "DESTORMKWAMVANDAAGUITEASTNORTHEASTENDERAMENRAMMELDENTERWIJLONZEBERLINCLOCKOFEENSOMZESUURSTILSTOND",
+     "true_wrong_letters": 1
+    },
+    "NL02": {
+     "blind_readable": true,
+     "true_W": -69.78506152,
+     "true_text": "VOLGHETOUDEPADNAARHETEASTNORTHEASTTOTAANDEBRUGDAARACHTERSTAATDEBERLINCLOCKNAASTHETKLEINEWINKELTJE",
+     "true_wrong_letters": 0
+    },
+    "NL03": {
+     "blind_readable": false,
+     "true_W": -89.91364018,
+     "true_text": "ONZEKASRMAIUSMOREINESEASTNORTHEASTVANDNERNAARDEMOMJETOEINGAATJEBERLINCLOCKDOOFBOVENSOJEFRAMETOREN",
+     "true_wrong_letters": 27
+    },
+    "NL04": {
+     "blind_readable": true,
+     "true_W": -66.08455514,
+     "true_text": "MIJNGROOTVADERKEEKOOKEASTNORTHEASTWANNEERHIJAANVROEGERDACHTENDEBERLINCLOCKHEMAANDEJEUGDHERINNERDE",
+     "true_wrong_letters": 0
+    },
+    "NL05": {
+     "blind_readable": true,
+     "true_W": -66.60272308,
+     "true_text": "WEGINGENSAMENRICHTINGEASTNORTHEASTDOORHETPARKNAARDESTRAATWAARDEBERLINCLOCKDEHELEMAANDVERKEERDLIEP",
+     "true_wrong_letters": 0
+    },
+    "NL06": {
+     "blind_readable": true,
+     "true_W": -72.75514216,
+     "true_text": "DEBOOTZEIKDETRAAGNAAREASTNORTHEASTENAANJEHORIZONVERSCHENENWASDEBERLINCLOCKENDEHOGETORENSVANDESTAD",
+     "true_wrong_letters": 3
+    },
+    "NL07": {
+     "blind_readable": true,
+     "true_W": -66.22791237,
+     "true_text": "GANAARHETSTATIONENDANEASTNORTHEASTONGEVEERDRIEHONDERDPETERTOTDEBERLINCLOCKDAARWACHTENWETOMACHTUUR",
+     "true_wrong_letters": 2
+    },
+    "NL08": {
+     "blind_readable": true,
+     "true_W": -72.17455897,
+     "true_text": "HETWASKOUDENWIJGINGENEASTNORTHEASTDOORDEDIEZESNEEUWTOTWIJVOORDEBERLINCLOCKSTONDENENNAARBOVENKEKEN",
+     "true_wrong_letters": 1
+    },
+    "NL09": {
+     "blind_readable": true,
+     "true_W": -75.19444718,
+     "true_text": "DESCHATLIGTVERNAARHETEASTNORTHEASTVANHETDORPONDERDESTEENNAASTDEBERLINCLOCKGRAAFDAARZEVENMETERDIEP",
+     "true_wrong_letters": 0
+    }
+   }
+  }
+ }
+}
