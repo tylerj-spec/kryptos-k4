@@ -1,0 +1,34 @@
+{
+ "runs": [
+  {
+   "tag": "K4_E1_CARTER_COLUMNAR",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "carter_az.txt"
+   ],
+   "label": "CARTER"
+  },
+  {
+   "tag": "PLANT_A",
+   "ct": "PLANT_A_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "carter_az.txt"
+   ],
+   "label": "CARTER"
+  },
+  {
+   "tag": "PLANT_B",
+   "ct": "PLANT_B_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "carter_az.txt"
+   ],
+   "label": "CARTER"
+  }
+ ]
+}

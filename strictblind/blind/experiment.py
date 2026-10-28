@@ -2,7 +2,7 @@
 """strictblind BLIND experiment runner: python3 -I blind/experiment.py EXPERIMENT_DIR
 Reads EXPERIMENT_DIR/manifest.json (runs: tag, ct, routes, key [kind, arg], label; paths relative to EXPERIMENT_DIR),
 builds the scanner, runs every run 4-way parallel, merges each top 100, then freezes every output with sha256
-(EXPERIMENT_DIR/FROZEN.sha256). Reads no clue information and refuses manifests that carry plaintext."""
+(EXPERIMENT_DIR/FROZEN.sha256), together with the ciphertexts, routes, key texts and manifest. Reads no clue information and refuses manifests that carry plaintext."""
 import csv
 import glob
 import hashlib
@@ -67,7 +67,8 @@ def main():
         assert all(p.wait() == 0 for p in procs), run["tag"]
         print(f"{run['tag']}: top {merge(out, run['tag'])} ({time.time() - t0:.0f} s)", flush=True)
     frozen = [p for p in sorted(out.glob("*.tsv"))] + [exp / r["ct"] for r in man["runs"]] + [exp / "manifest.json"]
-    lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {os.path.relpath(p, exp)}" for p in dict.fromkeys(frozen)]
+    frozen += [exp / r["routes"] for r in man["runs"]] + [exp / r["key"][1] for r in man["runs"] if r["key"][0] == "TEXT"]
+    lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {os.path.relpath(p.resolve(), exp)}" for p in dict.fromkeys(frozen)]
     (exp / "FROZEN.sha256").write_text("\n".join(lines) + "\n")
     print("FROZEN", len(lines), "files ->", exp / "FROZEN.sha256")
 

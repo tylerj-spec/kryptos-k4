@@ -19,3 +19,5 @@ k4kit/r32/runs/part_*
 k4kit/r32/runs/wf_*
 k4kit/r32/runs/idcheck_*
 strictblind/**/out/
+r34/*/carter_az.txt
+r34/e3_carter_rot/routes.txt
