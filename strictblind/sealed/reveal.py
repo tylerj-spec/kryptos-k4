@@ -22,6 +22,7 @@ for run in man["runs"]:
     kind, arg = run["key"]
     karg = str(exp / arg) if kind == "TEXT" else str(arg)
     rows = list(csv.DictReader(open(exp / "out" / f"{run['tag']}.tsv"), delimiter="\t"))
+    alph = ALPHABETS_ACA if kind == "CHAINACA" else ALPHABETS
     for r in rows:
         _, name, order, spec, pa, ca, op = r["setting"].split("|")
         enc = encrypt(r["plaintext"], R[name, order], order, make_key(kind, karg, spec),
