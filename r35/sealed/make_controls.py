@@ -38,7 +38,8 @@ elif kind in ("CHAINBASE", "CHAINALPH", "CHAINACA"):
     spec = "primer" + "".join(reversed(chars))
 else:
     raise ValueError("unknown key family")
-choices = ["AZ", "KRY", "PAL", "ABS"] if kind == "CHAINALPH" else ["AZ", "KRY"]
+choices = ["AZ", "KRY", "PAL", "ABS"] if kind in ("CHAINALPH", "CHAINACA") else ["AZ", "KRY"]
+alph = ALPHABETS_ACA if kind == "CHAINACA" else ALPHABETS
 pa, ca, op = rng.choice(choices), rng.choice(choices), rng.choice(["VIG", "BEAU", "VARB"])
 ct = encrypt(P, R[name, order], order, make_key(kind, karg, spec),
              ALPHABETS[pa], ALPHABETS[ca], op)
