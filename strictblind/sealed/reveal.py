@@ -26,7 +26,7 @@ for run in man["runs"]:
     for r in rows:
         _, name, order, spec, pa, ca, op = r["setting"].split("|")
         enc = encrypt(r["plaintext"], R[name, order], order, make_key(kind, karg, spec),
-                      ALPHABETS[pa[3:]], ALPHABETS[ca[3:]], op[3:])
+                      alph[pa[3:]], alph[ca[3:]], op[3:])
         assert enc == ct, (run["tag"], r["rank"])
     entry = {"tag": run["tag"], "rows": len(rows), "forward_check": "every row re-encrypts to its ciphertext",
              "top_score": float(rows[0]["score"]), "top_plaintext": rows[0]["plaintext"]}
