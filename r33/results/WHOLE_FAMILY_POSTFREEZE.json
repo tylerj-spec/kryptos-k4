@@ -1,0 +1,93 @@
+{
+  "G5": {
+    "settings": 230400000,
+    "max_clue_match": 10,
+    "full24": 0,
+    "histogram": [
+      89986774,
+      86279418,
+      39625144,
+      11615440,
+      2444193,
+      393229,
+      50092,
+      5226,
+      435,
+      47,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_settings": [
+      "G5|KRYPTOS/F1S0O0V1/INV|S_then_T|primer19329|PA=AZ|CA=KRY|OP=2"
+    ],
+    "sum_per_partition": [
+      57600000,
+      57600000,
+      57600000,
+      57600000
+    ]
+  },
+  "CARTER": {
+    "settings": 325817856,
+    "max_clue_match": 10,
+    "full24": 0,
+    "histogram": [
+      126587381,
+      121665114,
+      56451087,
+      16824698,
+      3609706,
+      593456,
+      77256,
+      8395,
+      695,
+      66,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "best_settings": [
+      "CARTER|KRYPTOS/F0S0O1V0/FWD|S_then_T|rev/KRY/off265075|PA=KRY|CA=KRY|OP=1",
+      "CARTER|PALIMPSEST/F0S0O1V0/FWD|T_then_S|fwd/KRY/off259555|PA=AZ|CA=KRY|OP=2"
+    ],
+    "sum_per_partition": [
+      81454464,
+      81454464,
+      81454464,
+      81454464
+    ]
+  },
+  "routes_g5.txt": {
+    "route_order_settings": 192,
+    "distinct_permutations": 96
+  },
+  "routes_carter.txt": {
+    "route_order_settings": 24,
+    "distinct_permutations": 12
+  }
+}

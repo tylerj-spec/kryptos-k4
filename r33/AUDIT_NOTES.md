@@ -1,0 +1,9 @@
+# Audit boundaries and integrity notes
+
+- R32 `PROTOCOL.sha256` and `runs/FROZEN.sha256`: all entries verified. Its F2 route file is not part of the ZIP; regenerated deterministically from `blind/make_routes.py`, and the existing F1 route list remains byte-identical after regeneration. Its original sources are not fully bundled. Values and histograms in `r32/runs/WHOLE_FAMILY.json` were **not** independently recalculated across 7.10 billion settings.
+- Audit of R32: five top100 K4 lists plus seven top100 planted lists; 1,200 distinct rows in the lists, exact independent encryption and independent quadgram score reproduction. Compare to `r33/results/INDEPENDENT_AUDIT.json`.
+- R33 test was committed in `r33/PREREGISTRATION.md` and hash-frozen before any new K4 scan. Outputs then frozen in `r33/runs/FROZEN.sha256`. Only afterwards were known plaintext letters checked via the independent Python audit and whole-family postcheck binary.
+- Reusing the R32 fixed-alphabet scanner for a new permutation family does not make the tested algorithms broader; the only new forms are keyed irregular-columnar with 3 predetermined sculpture words.
+- Count labels are **settings**, not statistically independent trials: the 192 G5 route-orders share 96 distinct permutations, the 24 Carter route-orders share 12; the two stage orders are generally different decryption equations.
+- The two planted controls are separate known-answer calibration ciphertexts; they deliberately do NOT use the original K4 ciphertext. All K4 claims, by contrast, are generated from exactly the original K4 ciphertext without known words being supplied.
+- No language recovery claim: all K4 top100s have extremely poor quadgram scores vs the two exact recovered 97-letter controls. Alternative phonetic English remains theoretically open; the strict mathematical 24/24 postcheck would still detect it if one of the listed full decryption settings were correct.

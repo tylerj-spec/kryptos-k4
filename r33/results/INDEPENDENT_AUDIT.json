@@ -1,0 +1,172 @@
+{
+  "r32": {
+    "K4_F1_CARTER": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 5,
+      "number_24": 0,
+      "top_plaintext": "VOJRAELDOCBASESNTAZEYHUOWDRWOKTSXTHORCETRATAMPQALLSTSRIWYYCSNYVRFORGLOTELUNOIEROKEGEDOGIDHAHCFRUT",
+      "top_score": -592.201968
+    },
+    "K4_F1_K1K3": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 4,
+      "number_24": 0,
+      "top_plaintext": "LNYBGEMDBYEQTRTKHKHZWATUBGWXADSSINFEPODOAOFSHYDEPDCTBIPRSKRMNKGFRIVRRNRDBALDPOIRHAMERTSRMGODOOMHA",
+      "top_score": -629.4182804
+    },
+    "K4_F1_G5": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 4,
+      "number_24": 0,
+      "top_plaintext": "DGLEONNINTWTOYIHYSGOWRNPCZDROWCALIZEPUESIGREFSTJOGKLKUKIKOKPHSJRRVRGCESTAXAMJOWDTWUWUSMRIPIIPRUMX",
+      "top_score": -622.7207782
+    },
+    "K4_F1_C6": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 5,
+      "number_24": 0,
+      "top_plaintext": "MUNBRIMTIVESHINZGDIQIHZVENEGWAERNTLYSELCXFJJBLYONKEENNDYFHIARRMELBIEBNTSCRINTYRTBKWELMJSINEALOLIR",
+      "top_score": -606.5934415
+    },
+    "K4_F2_G5": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 5,
+      "number_24": 0,
+      "top_plaintext": "CTTBICHEPEDBOBNADUTAGERPGARINCBJMEERVINCISPUYGDMNGIRCSYINJPDSROPROTCFBACJAFYVITICKSQAMHOSDBYFEDDH",
+      "top_score": -587.6228094
+    },
+    "PLANT_F1_0": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "AFTERTHERAINSWEHEADEDEASTNORTHEASTANDCROSSTHEBROADSQUARENEARTHEBERLINCLOCKANDKEEPTHATMAPOUTOFVIEW",
+      "top_score": -389.6166482,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F1_1": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "AFTERTHERAINSWEHEADEDEASTNORTHEASTANDSEARCHTHEWIDESQUARENEARTHEBERLINCLOCKWITHOUTSPEAKINGTOANYONE",
+      "top_score": -376.8014927,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F1_2": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "ALONGTHEWALLWEMARCHEDEASTNORTHEASTANDCROSSTHEBROADSQUARENEARTHEBERLINCLOCKAFTERTHEMINUTEHANDSTOPS",
+      "top_score": -380.73839,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F1_3": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "ALONGTHEWALLWEMARCHEDEASTNORTHEASTTOFINDTHEBRASSMARKERBESIDETHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+      "top_score": -390.7860315,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F1_4": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "ATLASTLIGHTOURSPYWENTEASTNORTHEASTANDMAKEASILENTEXCHANGENEARTHEBERLINCLOCKANDWAITUNTILTHESUNRISES",
+      "top_score": -399.2846568,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F1_5": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "ATLASTLIGHTOURSPYWENTEASTNORTHEASTWHILEREADINGTHECHARTBESIDETHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+      "top_score": -396.3994856,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_F2_6": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "BEFOREDAWNWEALLWALKEDEASTNORTHEASTBEFORETHEFINALCHURCHBELLATTHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+      "top_score": -396.7111347,
+      "truth_rank": 1,
+      "top_is_truth": true
+    }
+  },
+  "r33": {
+    "K4_G5": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 5,
+      "number_24": 0,
+      "top_plaintext": "VAOSEWNRBJKUPFNADAIRUPUYDGRELLDGONTKERVIGXTSERYYIENFIGAYNTKELOECEBMNWADEOSORDUHELULKBOYIFDSWAXHEK",
+      "top_score": -601.3558538
+    },
+    "K4_CARTER": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 5,
+      "number_24": 0,
+      "top_plaintext": "JYPLYDRYORMFFORCQUGLAGBIEQVONMCKGAJKEKEVIWVISAFRPPENZEMAKYKHOLETARMICKIANPDEFMIJOINONSDUALYMTHUSH",
+      "top_score": -592.5423253
+    },
+    "PLANT_G5": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "ALONGTHEWALLWEMARCHEDEASTNORTHEASTTOFINDTHEBRASSMARKERBESIDETHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+      "top_score": -390.7860315,
+      "truth_rank": 1,
+      "top_is_truth": true
+    },
+    "PLANT_CARTER": {
+      "rows": 100,
+      "independent_forward_ok": true,
+      "independent_score_ok": true,
+      "max_known_letters_in_saved_rows": 24,
+      "number_24": 1,
+      "top_plaintext": "IFOLLOWEDATRACKTOWARDEASTNORTHEASTANDMAKEASILENTEXCHANGENEARTHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+      "top_score": -392.8847263,
+      "truth_rank": 1,
+      "top_is_truth": true
+    }
+  },
+  "r32_saved_k4_rows_verified": 500,
+  "r32_saved_plants_verified": 700,
+  "r33_rows_verified": 400,
+  "frozen_sha_verified": true
+}
