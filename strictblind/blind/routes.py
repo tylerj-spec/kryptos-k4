@@ -114,6 +114,15 @@ if __name__ == "__main__":
         named = [(f"R{w1}x{w2}/{d}/{k}", rotation(f"R{w1}x{w2}/{d}/{k}")) for w1 in range(lo, hi + 1)
                  for w2 in range(lo, hi + 1) for d in ("CW", "CCW") for k in ("fwd", "inv")]
         n = write(a[3], both(named))
+    elif a[0] == "rot-mixed":
+        lo, hi = int(a[1]), int(a[2])
+        if not (2 <= lo <= hi <= N):
+            sys.exit("rotation widths must satisfy 2 <= LO <= HI <= 97")
+        named = [(nm, mixed_rotation(nm)) for w1 in range(lo, hi + 1)
+                 for w2 in range(lo, hi + 1) for dirs in ("CW-CCW", "CCW-CW")
+                 for kind in ("fwd", "inv")
+                 for nm in (f"R{w1}x{w2}/{dirs}/{kind}",)]
+        n = write(a[3], both(named))
     elif a[0] == "columnar":
         n = write(a[2], both(columnar_routes(a[1].split(","), "--canonical" in a)))
     else:
