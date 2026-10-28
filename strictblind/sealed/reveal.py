@@ -24,8 +24,8 @@ for run in man["runs"]:
     rows = list(csv.DictReader(open(exp / "out" / f"{run['tag']}.tsv"), delimiter="\t"))
     for r in rows:
         _, name, order, spec, pa, ca, op = r["setting"].split("|")
-        enc = encrypt(r["plaintext"], R[name, order], order, make_key(kind, karg, spec), AZ if pa == "PA=AZ" else KRY,
-                      AZ if ca == "CA=AZ" else KRY, op[3:])
+        enc = encrypt(r["plaintext"], R[name, order], order, make_key(kind, karg, spec),
+                      ALPHABETS[pa[3:]], ALPHABETS[ca[3:]], op[3:])
         assert enc == ct, (run["tag"], r["rank"])
     entry = {"tag": run["tag"], "rows": len(rows), "forward_check": "every row re-encrypts to its ciphertext",
              "top_score": float(rows[0]["score"]), "top_plaintext": rows[0]["plaintext"]}
