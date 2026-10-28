@@ -29,7 +29,10 @@ for run in man["runs"]:
                                str(min(n, (h + 1) * step))], stdout=subprocess.PIPE, text=True) for h in range(4) if h * step < n]
     hist, best, full = [0] * 25, (0, ""), []
     for p in procs:
-        for ln in p.communicate()[0].splitlines():
+        stdout, stderr = p.communicate()
+        if p.returncode != 0:
+            raise RuntimeError(f"whole_family worker failed ({p.returncode}): {stderr}")
+        for ln in stdout.splitlines():
             f = ln.split("\t")
             if f[0] == "HIST":
                 hist = [a + int(b) for a, b in zip(hist, f[1:])]
