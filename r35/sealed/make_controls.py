@@ -42,7 +42,7 @@ choices = ["AZ", "KRY", "PAL", "ABS"] if kind in ("CHAINALPH", "CHAINACA") else 
 alph = ALPHABETS_ACA if kind == "CHAINACA" else ALPHABETS
 pa, ca, op = rng.choice(choices), rng.choice(choices), rng.choice(["VIG", "BEAU", "VARB"])
 ct = encrypt(P, R[name, order], order, make_key(kind, karg, spec),
-             ALPHABETS[pa], ALPHABETS[ca], op)
+             alph[pa], alph[ca], op)
 (exp / f"{tag}_ct.txt").write_text(ct + "\n")
 (exp / "sealed").mkdir(exist_ok=True)
 tf = exp / "sealed/truth.json"
