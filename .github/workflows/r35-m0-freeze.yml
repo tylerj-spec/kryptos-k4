@@ -1,0 +1,41 @@
+name: R35 M0 freeze-only experiment
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r35-blind-integrity-and-mixed-rotations'
+    paths:
+      - '.github/workflows/r35-m0-freeze.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  blind-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Confirm R35 controls
+        run: bash strictblind/tests/run_all.sh
+      - name: Prepare preregistered inputs and controls
+        run: python3 -I r35/m0_prepare.py
+      - name: Run blind scanner (NO REVEAL)
+        run: python3 -I strictblind/blind/experiment.py r35/m0
+      - name: Record freeze commit before any reveal
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f r35/m0
+          git commit -m "R35 M0: preregistered blind outputs FROZEN before reveal"
+          git push origin HEAD:refs/heads/chatgpt/r35-m0-frozen
+      - name: Archive freeze results
+        uses: actions/upload-artifact@v4
+        with:
+          name: r35-m0-blind-frozen
+          path: r35/m0
+          retention-days: 30
