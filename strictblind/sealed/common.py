@@ -64,7 +64,33 @@ def encrypt(plain, perm, order, key, pa, ca, op):
     return "".join(out)
 
 
+def _same_at_freeze_commit(exp, path, digest):
+    """True if `path` had sha256 `digest` in the commit that first added exp/FROZEN.sha256 (git history)."""
+    import subprocess
+    try:
+        run = lambda *a: subprocess.run(["git", *a], cwd=exp, check=True, capture_output=True).stdout  # noqa: E731
+        commit = run("log", "--diff-filter=A", "--format=%H", "-1", "--", "FROZEN.sha256").decode().strip()
+        root = Path(run("rev-parse", "--show-toplevel").decode().strip())
+        blob = run("show", f"{commit}:{path.relative_to(root).as_posix()}") if commit else b""
+    except (subprocess.CalledProcessError, ValueError, OSError):
+        return False
+    return bool(commit) and hashlib.sha256(blob).hexdigest() == digest
+
+
 def check_frozen(exp):
-    for ln in (Path(exp) / "FROZEN.sha256").read_text().splitlines():
+    """Every frozen file must be unchanged. Exception: shared harness sources that older experiments (R35-R38)
+    froze by path outside their directory may have been edited by later rounds; those must match the git
+    commit that froze the experiment. New experiments freeze their own snapshot (out/blind_src/)."""
+    exp = Path(exp).resolve()
+    later = []
+    for ln in (exp / "FROZEN.sha256").read_text().splitlines():
         h, f = ln.split(maxsplit=1)
-        assert hashlib.sha256((Path(exp) / f.strip()).read_bytes()).hexdigest() == h, f"{f} changed after freeze"
+        p = (exp / f.strip()).resolve()
+        if hashlib.sha256(p.read_bytes()).hexdigest() == h:
+            continue
+        if not p.is_relative_to(exp) and _same_at_freeze_commit(exp, p, h):
+            later.append(f.strip())
+            continue
+        raise AssertionError(f"{f} changed after freeze")
+    if later:
+        print(f"note: shared harness file(s) edited after this freeze, verified at the freeze commit: {later}")

@@ -8,6 +8,7 @@ import glob
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import sys
 import time
@@ -30,7 +31,8 @@ def merge(out, tag):
         for i, r in enumerate(rows[:100]):
             fh.write(f"{i + 1}\t{r['score']}\t{r['setting']}\t{r['plaintext']}\n")
     rr = []
-    for f in sorted(glob.glob(str(out / f"part_{tag}_routes_[0-9].tsv"))):
+    parts = [(f, f.stem.removeprefix(f"part_{tag}_routes_")) for f in out.glob(f"part_{tag}_routes_*.tsv")]
+    for f, part in sorted((x for x in parts if x[1].isdigit()), key=lambda x: int(x[1])):   # any worker count
         rr += list(csv.DictReader(open(f), delimiter="\t"))
     with open(out / f"{tag}_routes.tsv", "w") as fh:
         fh.write("route\torder\tbest_score\n")
@@ -71,8 +73,13 @@ def main():
     if out.exists() and any(out.iterdir()):
         raise RuntimeError("output directory is not empty; use a new experiment directory")
     out.mkdir(exist_ok=True)
+    # snapshot the exact blind sources with the experiment, so later harness edits never invalidate this freeze
+    src = out / "blind_src"
+    src.mkdir()
+    for name in ("scan.cpp", "experiment.py", "routes.py"):
+        shutil.copy2(HERE / name, src / name)
     exe = out / "scan"
-    subprocess.run(["g++", "-std=c++17", "-O3", "-march=native", str(HERE / "scan.cpp"), "-o", str(exe)], check=True)
+    subprocess.run(["g++", "-std=c++17", "-O3", "-march=native", str(src / "scan.cpp"), "-o", str(exe)], check=True)
     for run in man["runs"]:
         t0 = time.time()
         routes = exp / run["routes"]
@@ -94,7 +101,7 @@ def main():
             raise RuntimeError(f"scanner worker failed for {run['tag']}: exit codes {codes}; outputs not frozen")
         print(f"{run['tag']}: top {merge(out, run['tag'])} ({time.time() - t0:.0f} s)", flush=True)
     frozen = [p for p in sorted(out.glob("*.tsv"))] + [exp / r["ct"] for r in man["runs"]] + [exp / "manifest.json"]
-    frozen += [HERE / "scan.cpp", HERE / "experiment.py", HERE / "routes.py", QUAD, exe]
+    frozen += [src / "scan.cpp", src / "experiment.py", src / "routes.py", QUAD, exe]
     frozen += [exp / r["routes"] for r in man["runs"]] + [exp / r["key"][1] for r in man["runs"] if r["key"][0] == "TEXT"]
     lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {os.path.relpath(p.resolve(), exp)}" for p in dict.fromkeys(frozen)]
     (exp / "FROZEN.sha256").write_text("\n".join(lines) + "\n")
