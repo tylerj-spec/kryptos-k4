@@ -77,6 +77,12 @@ def _same_at_freeze_commit(exp, path, digest):
     return bool(commit) and hashlib.sha256(blob).hexdigest() == digest
 
 
+def _shallow(exp):
+    import subprocess
+    r = subprocess.run(["git", "rev-parse", "--is-shallow-repository"], cwd=exp, capture_output=True, text=True)
+    return r.stdout.strip() == "true"
+
+
 def check_frozen(exp):
     """Every frozen file must be unchanged. Exception: shared harness sources that older experiments (R35-R38)
     froze by path outside their directory may have been edited by later rounds; those must match the git
@@ -91,6 +97,9 @@ def check_frozen(exp):
         if not p.is_relative_to(exp) and _same_at_freeze_commit(exp, p, h):
             later.append(f.strip())
             continue
+        if not p.is_relative_to(exp) and _shallow(exp):
+            raise AssertionError(f"{f} differs from its freeze; checking it needs the full git history (shallow clone: "
+                                 "fetch with --unshallow, or fetch-depth: 0 in CI)")
         raise AssertionError(f"{f} changed after freeze")
     if later:
         print(f"note: shared harness file(s) edited after this freeze, verified at the freeze commit: {later}")
