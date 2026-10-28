@@ -1,0 +1,41 @@
+[
+ {
+  "tag": "K4_E3_CARTER_ROT",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -577.3600209,
+  "top_plaintext": "XBFMLIDKIPMHARQWORLYIERAVAELHRJLCAKEANAHBCOODKYDSALNWERUNRODSULUORMLITRHARJEWISTLBOCHGITHEMEASDEA",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   2,
+   2,
+   1,
+   1,
+   0,
+   2,
+   0,
+   0,
+   1,
+   0
+  ]
+ },
+ {
+  "tag": "PLANT_D",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -398.1649847,
+  "top_plaintext": "STAYCALMANDKEEPMOVINGEASTNORTHEASTWHILEREADINGTHECHARTBESIDETHEBERLINCLOCKANDKEEPTHATMAPOUTOFVIEW",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R15x13/CCW/fwd",
+   "order": "S_then_T",
+   "key": "rev/KRY/off147173",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ }
+]

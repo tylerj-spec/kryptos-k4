@@ -22,3 +22,7 @@ strictblind/**/out/
 r34/*/carter_az.txt
 r34/e3_carter_rot/routes.txt
 R34_handoff.zip
+
+# compiled by sealed reveal scripts
+r3*/**/out/whole_family
+r4*/**/out/whole_family
