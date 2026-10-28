@@ -1,0 +1,165 @@
+{
+ "workers": 2,
+ "runs": [
+  {
+   "tag": "K4_B5",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "5,5"
+   ],
+   "label": "B5ACA"
+  },
+  {
+   "tag": "PLANTA_B5",
+   "ct": "PLANTA_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "5,5"
+   ],
+   "label": "B5ACA"
+  },
+  {
+   "tag": "PLANTB_B5",
+   "ct": "PLANTB_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "5,5"
+   ],
+   "label": "B5ACA"
+  },
+  {
+   "tag": "NULL_B5",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "5,5"
+   ],
+   "label": "B5ACA"
+  },
+  {
+   "tag": "K4_B10",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "10,5"
+   ],
+   "label": "B10ACA"
+  },
+  {
+   "tag": "PLANTA_B10",
+   "ct": "PLANTA_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "10,5"
+   ],
+   "label": "B10ACA"
+  },
+  {
+   "tag": "PLANTB_B10",
+   "ct": "PLANTB_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "10,5"
+   ],
+   "label": "B10ACA"
+  },
+  {
+   "tag": "NULL_B10",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "10,5"
+   ],
+   "label": "B10ACA"
+  },
+  {
+   "tag": "K4_B12",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "12,5"
+   ],
+   "label": "B12ACA"
+  },
+  {
+   "tag": "PLANTA_B12",
+   "ct": "PLANTA_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "12,5"
+   ],
+   "label": "B12ACA"
+  },
+  {
+   "tag": "PLANTB_B12",
+   "ct": "PLANTB_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "12,5"
+   ],
+   "label": "B12ACA"
+  },
+  {
+   "tag": "NULL_B12",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "12,5"
+   ],
+   "label": "B12ACA"
+  },
+  {
+   "tag": "K4_B26",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "26,5"
+   ],
+   "label": "B26ACA"
+  },
+  {
+   "tag": "PLANTA_B26",
+   "ct": "PLANTA_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "26,5"
+   ],
+   "label": "B26ACA"
+  },
+  {
+   "tag": "PLANTB_B26",
+   "ct": "PLANTB_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "26,5"
+   ],
+   "label": "B26ACA"
+  },
+  {
+   "tag": "NULL_B26",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINACA",
+    "26,5"
+   ],
+   "label": "B26ACA"
+  }
+ ]
+}
