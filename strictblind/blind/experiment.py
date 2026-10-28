@@ -43,7 +43,30 @@ def main():
     man = json.loads((exp / "manifest.json").read_text())
     blob = json.dumps(man).upper()
     assert "PLAINTEXT" not in blob and "TRUTH" not in blob, "manifest must not carry plaintext"
+    if (exp / "FROZEN.sha256").exists():
+        raise RuntimeError("experiment already frozen; create a new experiment directory")
+    tags = [r["tag"] for r in man["runs"]]
+    if len(tags) != len(set(tags)) or not tags:
+        raise ValueError("run tags must be nonempty and unique")
+    if any(not t or any(c not in "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-" for c in t) for t in tags):
+        raise ValueError("run tags must be simple filenames")
+    if workers := man.get("workers"):
+        if type(workers) is not int or not (1 <= workers <= 64):
+            raise ValueError("workers must be integer 1..64")
+    for run in man["runs"]:
+        if run["key"][0] not in ("TEXT", "CHAIN"):
+            raise ValueError("unsupported key type")
+        for name in ("ct", "routes"):
+            p = (exp / run[name]).resolve()
+            if not p.is_relative_to(exp) or not p.is_file():
+                raise ValueError(f"invalid experiment path: {run[name]}")
+        if run["key"][0] == "TEXT":
+            p = (exp / run["key"][1]).resolve()
+            if not p.is_relative_to(exp) or not p.is_file():
+                raise ValueError("invalid key path")
     out = exp / "out"
+    if out.exists() and any(out.iterdir()):
+        raise RuntimeError("output directory is not empty; use a new experiment directory")
     out.mkdir(exist_ok=True)
     exe = out / "scan"
     subprocess.run(["g++", "-std=c++17", "-O3", "-march=native", str(HERE / "scan.cpp"), "-o", str(exe)], check=True)
