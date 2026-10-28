@@ -27,7 +27,7 @@ if kind == "TEXT":
     spec = f"{rng.choice(['fwd', 'rev'])}/{rng.choice(['AZ', 'KRY'])}/off{rng.randrange(L - N + 1)}"
 elif kind == "CHAIN":
     spec = f"primer{rng.randrange(10 ** int(arg)):0{int(arg)}d}"
-elif kind in ("CHAINBASE", "CHAINALPH"):
+elif kind in ("CHAINBASE", "CHAINALPH", "CHAINACA"):
     base, b = map(int, arg.split(","))
     value = rng.randrange(base ** b)
     symbols = "0123456789ABCDEFGHIJKLMNOP"
