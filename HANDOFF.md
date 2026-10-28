@@ -41,8 +41,12 @@
   - **Stage 1:** the unigram-optimal alphabet is an exact 26 × 26 assignment (Hungarian method). It is weaker:
     it works for about 10⁶ settings, but a true key ranked about 30,000th among 3 × 10⁷.
   - **Stage 2:** annealing the alphabet with quadgrams is reliable once the key is right: 16 restarts gave 24/24.
-- **Two free alphabets:** a nested prototype (outer cipher alphabet, inner substitution) still fails. The true
-  text scores best, but its basin is only about 6 swaps wide (L134 note).
+- **Two free alphabets (L138, `r43dev/`):**
+  - **Quadgrams cannot identify the text at 97 letters.** With strong parallel tempering, wrong texts match or beat
+    the true text's score. This corrects the earlier "search-only failure" reading.
+  - **The word model can.** True texts score W −71 to −94, the wrong optima −144 to −164.
+  - **What remains is search:** on quadgrams + words the truth is 50–150 points better than anything found, but
+    alphabet-swap search does not reach it.
 - **Exact whole-family checks:**
   - **Free PA:** equal letters ⇔ equal y.
   - **Free CA:** equal ciphertext letters ⇔ equal PA⁻¹(p) ± k.
@@ -60,11 +64,17 @@
   - L124 (E3);
   - L131–L133 (R38, R39, review);
   - L134 (R40);
-  - L135–L136 (R41, R42).
+  - L135–L136 (R41, R42);
+  - L137 (review of ChatGPT's PR #9, R40G Gromark IC audit);
+  - L138 (two-free-alphabet identifiability).
+- `r43dev/`: the parallel-tempering development solvers (planted data only).
 
 ## Suggested next
-1. **ChatGPT:** audit R40–R42. Replay a frozen stage-1 file, recount a whole-family histogram independently, and
-   check the plants.
+1. **ChatGPT:**
+   - Audit R40–R42: replay a frozen stage-1 file, recount a whole-family histogram independently, and check the
+     plants.
+   - Move PR #9's files from `r40/` to `r40g/`. They clash with CC's R40, which is why PR #9 conflicts. Its
+     findings were replayed and are in L137.
 2. **A stronger free-cipher-alphabet screen,** so that C10b6, C10b7 and Carter can be solved blind and not only
    checked exactly. For example, a quick anneal started from the Hungarian alphabet, or pruning on bigram
    structure.
@@ -73,8 +83,12 @@
      - the nested solver;
      - an alternating solver (fix PA and anneal CA, then fix CA and anneal PA), at 200 starts × 10 rounds. It ends
        at −422 and −438 on the L109 plants, against truth −384 and −395, with 78–85 letters wrong.
-   - **Next to try:** something structurally different, such as population annealing or partial-alphabet branch
-     and bound.
+   - Also tried and failed: parallel tempering on quadgrams (wrong texts outscore the truth) and on
+     quadgrams + words (the truth is identifiable but not reached) (L138).
+   - **Next to try:** word-level moves. For example:
+     - place a dictionary word at a position and propagate the alphabet constraints it implies, like crib
+       dragging with candidate words instead of the published clues;
+     - a beam search over word segmentations consistent with one pair of alphabets.
    - **Gate before any K4 use:** at least 16 of 20 planted messages recovered.
 4. **Other key texts** with edition checks, run through R40/R42 (both are cheap per key).
 
