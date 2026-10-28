@@ -1,0 +1,75 @@
+{
+  "model": "identity direct lagged-addition Gromark, fixed AZ and ACA KRY/PAL/ABS columnar-transposed alphabet pairs",
+  "k4_settings": 587199984,
+  "expected_k4_settings": 587199984,
+  "bases": [
+    {
+      "base": 5,
+      "k4_settings": 150000,
+      "plant_truth_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "max_clue_matches": 8,
+      "full24_count": 0,
+      "full24_settings": [],
+      "k4_top_english_score": -641.4542592,
+      "null_top_english_score": -641.6816735,
+      "k4_minus_null": 0.2274,
+      "status": "EXCL_EXACT_FIXED_FAMILY"
+    },
+    {
+      "base": 10,
+      "k4_settings": 4800000,
+      "plant_truth_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "max_clue_matches": 9,
+      "full24_count": 0,
+      "full24_settings": [],
+      "k4_top_english_score": -627.5787196,
+      "null_top_english_score": -620.4047573,
+      "k4_minus_null": -7.174,
+      "status": "EXCL_EXACT_FIXED_FAMILY"
+    },
+    {
+      "base": 12,
+      "k4_settings": 11943936,
+      "plant_truth_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "max_clue_matches": 9,
+      "full24_count": 0,
+      "full24_settings": [],
+      "k4_top_english_score": -613.0268385,
+      "null_top_english_score": -611.9276872,
+      "k4_minus_null": -1.0992,
+      "status": "EXCL_EXACT_FIXED_FAMILY"
+    },
+    {
+      "base": 26,
+      "k4_settings": 570306048,
+      "plant_truth_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "max_clue_matches": 11,
+      "full24_count": 0,
+      "full24_settings": [],
+      "k4_top_english_score": -580.4711454,
+      "null_top_english_score": -597.8465011,
+      "k4_minus_null": 17.3754,
+      "status": "EXCL_EXACT_FIXED_FAMILY"
+    }
+  ],
+  "plant_gate_passed": 4,
+  "plant_gate_total": 4,
+  "total_full24_candidates": 0,
+  "limitation": "Cannot eliminate unknown alphabets, alternative key expansion, or any transposition."
+}
