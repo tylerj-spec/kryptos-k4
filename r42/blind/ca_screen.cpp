@@ -1,5 +1,6 @@
 // R42 BLIND stage 1. NO known plaintext, clue positions or masks anywhere in this program.
-// Family: fixed plaintext alphabet PA (7 choices), FREE cipher alphabet, key from a fixed family, in place.
+// Family: fixed plaintext alphabet PA (7 choices), FREE cipher alphabet, in place; keys: base-10 chain addition with
+// 5-digit primers (C10b5) and the K1-K3 plaintext as running key (K1K3). The CARTER argument is read but unused.
 // With x = PA^-1(p) and t = position of c in the unknown cipher alphabet: VIG t = x + k, so x = t - k;
 // BEAU t = k - x and VARB t = x - k both give x = t' + k for a relabelled t'. Every ciphertext letter class
 // therefore takes one unknown offset. Stage 1 scores a setting by the best unigram log-likelihood over all
@@ -94,7 +95,7 @@ int main(int argc, char **argv) {
         }
       }
     };
-    for (fam = 0; fam < 2; fam++) {   // chain addition base 10, b = 5, 6
+    for (fam = 0; fam < 1; fam++) {   // chain addition base 10, b = 5
       int b = 5 + fam; long long lim = 1; for (int i = 0; i < b; i++) lim *= 10;
       for (long long p = 0; p < lim; p++) {
         long long v = p; string primer(b, '0');
@@ -104,7 +105,7 @@ int main(int argc, char **argv) {
       }
     }
     const string *texts[2] = {&carter, &k1k3}; const char *tn[2] = {"CARTER", "K1K3"};
-    for (int tx = 0; tx < 2; tx++) {
+    for (int tx = 1; tx < 2; tx++) {   // K1-K3 running key (Carter is outside the R42 blind family)
       fam = 2 + tx;
       for (int dir = 0; dir < 2; dir++) {
         string s = dir ? string(texts[tx]->rbegin(), texts[tx]->rend()) : *texts[tx];

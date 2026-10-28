@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """R42 BLIND runner. Reads only the *_ct.txt ciphertexts in EXPDIR, the quadgram table and the two key texts.
 Stage 1 (ca_screen): every setting of the declared family (fixed plaintext alphabet, free cipher alphabet),
-global top 20,000 by the unigram-optimal assignment score.
-Stage 2 (casolve): those 20,000 annealed over the cipher alphabet, 8 restarts each.
+global top 30,000 by the unigram-optimal assignment score.
+Stage 2 (casolve): those 30,000 annealed over the cipher alphabet, 8 restarts each.
 Stage 3: the 50 best stage-2 rows re-solved with 64 restarts. Then everything is hashed into FROZEN.sha256.
 Usage: python3 -I r42/blind/run.py EXPDIR"""
 import csv
@@ -19,8 +19,8 @@ QUAD = REPO / "k4kit/data/quad_log10.f32"
 CARTER = REPO / "r34/carter_az.txt"
 K1K3 = REPO / "k4kit/data/k1k3_plaintext.txt"
 HASHES = {CARTER: "6761a5075869325f708e1d81f8bd0efeeab5aaaad43206e1551ed53243f13ee0"}
-TOPK, S2_RESTARTS, S3_ROWS, S3_RESTARTS, WORKERS = 20000, 8, 50, 64, 4
-EXPECTED = 31294872   # settings per ciphertext, as pre-registered
+TOPK, S2_RESTARTS, S3_ROWS, S3_RESTARTS, WORKERS = 30000, 8, 50, 64, 4
+EXPECTED = 1456504   # settings per ciphertext, as pre-registered
 
 
 def sha(p):

@@ -4,6 +4,7 @@
 // position of c_i. So ANY cipher alphabet fits exactly when equal ciphertext letters have equal z and different
 // ones different z. V = number of position pairs that break this; V = 0 means consistent.
 // Build: g++ -std=c++17 -O3 -march=native whole_family.cpp -o whole_family
+// Keys (wider than the blind family): base-10 chains with 5-, 6-, 7-digit primers; Carter and K1-K3 running keys.
 // Usage: whole_family CT.txt CARTER.txt K1K3.txt LETTERS97 OUT.tsv
 #include <bits/stdc++.h>
 using namespace std;
@@ -45,7 +46,7 @@ int main(int argc, char **argv) {
             if (V == minV && minset.size() < 50) minset.push_back(label + "|PA=" + PA[a].first + "|OP=" + (op == 0 ? "VIG" : "BEAU|VARB"));
         }
     };
-    for (int b = 5; b <= 6; b++) {
+    for (int b = 5; b <= 7; b++) {   // C10b5, C10b6, C10b7
         long long lim = llround(pow(10, b));
         for (long long p = 0; p < lim; p++) {
             long long v = p; string pr(b, '0');
