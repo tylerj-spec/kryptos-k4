@@ -9,6 +9,7 @@ on:
       - '.github/workflows/strictblind-ci.yml'
       - 'strictblind/**'
       - 'r35/**'
+      - 'r36/**'
       - 'verify_all.sh'
 
 permissions:

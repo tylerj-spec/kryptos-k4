@@ -27,6 +27,15 @@ if kind == "TEXT":
     spec = f"{rng.choice(['fwd', 'rev'])}/{rng.choice(['AZ', 'KRY'])}/off{rng.randrange(L - N + 1)}"
 elif kind == "CHAIN":
     spec = f"primer{rng.randrange(10 ** int(arg)):0{int(arg)}d}"
+elif kind == "CHAINBASE":
+    base, b = map(int, arg.split(","))
+    value = rng.randrange(base ** b)
+    symbols = "0123456789ABCDEFGHIJKLMNOP"
+    chars = []
+    for _ in range(b):
+        chars.append(symbols[value % base])
+        value //= base
+    spec = "primer" + "".join(reversed(chars))
 else:
     raise ValueError("unknown key family")
 pa, ca, op = rng.choice(["AZ", "KRY"]), rng.choice(["AZ", "KRY"]), rng.choice(["VIG", "BEAU", "VARB"])

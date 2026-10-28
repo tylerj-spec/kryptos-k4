@@ -34,11 +34,18 @@ def make_key(kind, arg, spec, text_cache={}):
         al = AZ if num == "AZ" else KRY
         o = int(off[3:])
         return [al.index(c) for c in s[o:o + N]]
-    b = int(arg)
-    k = [int(c) for c in spec[6:]]
-    assert len(k) == b
+    if kind == "CHAIN":
+        base, b = 10, int(arg)
+    elif kind == "CHAINBASE":
+        base, b = map(int, arg.split(","))
+    else:
+        raise ValueError(f"invalid key kind: {kind}")
+    symbols = "0123456789ABCDEFGHIJKLMNOP"
+    k = [symbols.index(c) for c in spec[6:]]
+    if len(k) != b or any(x >= base for x in k):
+        raise ValueError("invalid base primer")
     while len(k) < N:
-        k.append((k[-b] + k[-b + 1]) % 10)
+        k.append((k[-b] + k[-b + 1]) % base)
     return k
 
 

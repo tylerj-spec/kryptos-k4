@@ -1,0 +1,525 @@
+{
+ "workers": 2,
+ "runs": [
+  {
+   "tag": "K4_B3",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "3,5"
+   ],
+   "label": "B3L5"
+  },
+  {
+   "tag": "PLANTA_B3",
+   "ct": "PLANTA_B3_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "3,5"
+   ],
+   "label": "B3L5"
+  },
+  {
+   "tag": "PLANTB_B3",
+   "ct": "PLANTB_B3_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "3,5"
+   ],
+   "label": "B3L5"
+  },
+  {
+   "tag": "NULL_B3",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "3,5"
+   ],
+   "label": "B3L5"
+  },
+  {
+   "tag": "K4_B4",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "4,5"
+   ],
+   "label": "B4L5"
+  },
+  {
+   "tag": "PLANTA_B4",
+   "ct": "PLANTA_B4_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "4,5"
+   ],
+   "label": "B4L5"
+  },
+  {
+   "tag": "PLANTB_B4",
+   "ct": "PLANTB_B4_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "4,5"
+   ],
+   "label": "B4L5"
+  },
+  {
+   "tag": "NULL_B4",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "4,5"
+   ],
+   "label": "B4L5"
+  },
+  {
+   "tag": "K4_B5",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "5,5"
+   ],
+   "label": "B5L5"
+  },
+  {
+   "tag": "PLANTA_B5",
+   "ct": "PLANTA_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "5,5"
+   ],
+   "label": "B5L5"
+  },
+  {
+   "tag": "PLANTB_B5",
+   "ct": "PLANTB_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "5,5"
+   ],
+   "label": "B5L5"
+  },
+  {
+   "tag": "NULL_B5",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "5,5"
+   ],
+   "label": "B5L5"
+  },
+  {
+   "tag": "K4_B6",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "6,5"
+   ],
+   "label": "B6L5"
+  },
+  {
+   "tag": "PLANTA_B6",
+   "ct": "PLANTA_B6_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "6,5"
+   ],
+   "label": "B6L5"
+  },
+  {
+   "tag": "PLANTB_B6",
+   "ct": "PLANTB_B6_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "6,5"
+   ],
+   "label": "B6L5"
+  },
+  {
+   "tag": "NULL_B6",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "6,5"
+   ],
+   "label": "B6L5"
+  },
+  {
+   "tag": "K4_B7",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "7,5"
+   ],
+   "label": "B7L5"
+  },
+  {
+   "tag": "PLANTA_B7",
+   "ct": "PLANTA_B7_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "7,5"
+   ],
+   "label": "B7L5"
+  },
+  {
+   "tag": "PLANTB_B7",
+   "ct": "PLANTB_B7_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "7,5"
+   ],
+   "label": "B7L5"
+  },
+  {
+   "tag": "NULL_B7",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "7,5"
+   ],
+   "label": "B7L5"
+  },
+  {
+   "tag": "K4_B8",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "8,5"
+   ],
+   "label": "B8L5"
+  },
+  {
+   "tag": "PLANTA_B8",
+   "ct": "PLANTA_B8_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "8,5"
+   ],
+   "label": "B8L5"
+  },
+  {
+   "tag": "PLANTB_B8",
+   "ct": "PLANTB_B8_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "8,5"
+   ],
+   "label": "B8L5"
+  },
+  {
+   "tag": "NULL_B8",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "8,5"
+   ],
+   "label": "B8L5"
+  },
+  {
+   "tag": "K4_B9",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "9,5"
+   ],
+   "label": "B9L5"
+  },
+  {
+   "tag": "PLANTA_B9",
+   "ct": "PLANTA_B9_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "9,5"
+   ],
+   "label": "B9L5"
+  },
+  {
+   "tag": "PLANTB_B9",
+   "ct": "PLANTB_B9_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "9,5"
+   ],
+   "label": "B9L5"
+  },
+  {
+   "tag": "NULL_B9",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "9,5"
+   ],
+   "label": "B9L5"
+  },
+  {
+   "tag": "K4_B10",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "10,5"
+   ],
+   "label": "B10L5"
+  },
+  {
+   "tag": "PLANTA_B10",
+   "ct": "PLANTA_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "10,5"
+   ],
+   "label": "B10L5"
+  },
+  {
+   "tag": "PLANTB_B10",
+   "ct": "PLANTB_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "10,5"
+   ],
+   "label": "B10L5"
+  },
+  {
+   "tag": "NULL_B10",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "10,5"
+   ],
+   "label": "B10L5"
+  },
+  {
+   "tag": "K4_B11",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "11,5"
+   ],
+   "label": "B11L5"
+  },
+  {
+   "tag": "PLANTA_B11",
+   "ct": "PLANTA_B11_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "11,5"
+   ],
+   "label": "B11L5"
+  },
+  {
+   "tag": "PLANTB_B11",
+   "ct": "PLANTB_B11_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "11,5"
+   ],
+   "label": "B11L5"
+  },
+  {
+   "tag": "NULL_B11",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "11,5"
+   ],
+   "label": "B11L5"
+  },
+  {
+   "tag": "K4_B12",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "12,5"
+   ],
+   "label": "B12L5"
+  },
+  {
+   "tag": "PLANTA_B12",
+   "ct": "PLANTA_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "12,5"
+   ],
+   "label": "B12L5"
+  },
+  {
+   "tag": "PLANTB_B12",
+   "ct": "PLANTB_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "12,5"
+   ],
+   "label": "B12L5"
+  },
+  {
+   "tag": "NULL_B12",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "12,5"
+   ],
+   "label": "B12L5"
+  },
+  {
+   "tag": "K4_B16",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "16,5"
+   ],
+   "label": "B16L5"
+  },
+  {
+   "tag": "PLANTA_B16",
+   "ct": "PLANTA_B16_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "16,5"
+   ],
+   "label": "B16L5"
+  },
+  {
+   "tag": "PLANTB_B16",
+   "ct": "PLANTB_B16_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "16,5"
+   ],
+   "label": "B16L5"
+  },
+  {
+   "tag": "NULL_B16",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "16,5"
+   ],
+   "label": "B16L5"
+  },
+  {
+   "tag": "K4_B20",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "20,5"
+   ],
+   "label": "B20L5"
+  },
+  {
+   "tag": "PLANTA_B20",
+   "ct": "PLANTA_B20_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "20,5"
+   ],
+   "label": "B20L5"
+  },
+  {
+   "tag": "PLANTB_B20",
+   "ct": "PLANTB_B20_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "20,5"
+   ],
+   "label": "B20L5"
+  },
+  {
+   "tag": "NULL_B20",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "20,5"
+   ],
+   "label": "B20L5"
+  },
+  {
+   "tag": "K4_B26",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "26,5"
+   ],
+   "label": "B26L5"
+  },
+  {
+   "tag": "PLANTA_B26",
+   "ct": "PLANTA_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "26,5"
+   ],
+   "label": "B26L5"
+  },
+  {
+   "tag": "PLANTB_B26",
+   "ct": "PLANTB_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "26,5"
+   ],
+   "label": "B26L5"
+  },
+  {
+   "tag": "NULL_B26",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINBASE",
+    "26,5"
+   ],
+   "label": "B26L5"
+  }
+ ]
+}

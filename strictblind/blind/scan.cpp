@@ -7,6 +7,7 @@
 //   ID: no rearrangement; S_then_T: CT[j] = X[perm[j]], X[i] = sub(P[i], k_i); T_then_S: CT[j] = sub(P[perm[j]], k_j).
 // Keys: TEXT <file> = every 97-letter window of the text, forward and reversed, key letters numbered AZ or KRYPTOS;
 //       CHAIN <b>   = b-digit chain addition k_i = k_{i-b} + k_{i-b+1} mod 10, all 10^b primers.
+//       CHAINBASE <base>,<b> = the same recurrence modulo a declared base 2..26, base^b primers.
 // Build: g++ -std=c++17 -O3 -march=native scan.cpp -o scan
 // Usage: scan TEXT|CHAIN FILE|B LABEL CT.txt QUAD.f32 ROUTES.txt LO HI OUT_TOP.tsv OUT_ROUTES.tsv
 #include <algorithm>
@@ -59,10 +60,23 @@ int main(int argc, char **argv) {
         idx++;
       } }
     // keys are generated on the fly (key-outer loop), so memory stays small for any key family
-    string src; vector<int> lims; int b = 0, lim = 1;
-    if (kind == "TEXT") { src = letters(karg); if (src.size() < (size_t)N) throw runtime_error("text too short"); }
-    else if (kind == "CHAIN") { b = stoi(karg); if (b < 2 || b > 8) throw runtime_error("chain length 2..8"); for (int i = 0; i < b; i++) lim *= 10; }
-    else throw runtime_error("key kind");
+    string src; int b = 0, base = 10; long long lim = 1;
+    if (kind == "TEXT") {
+      src = letters(karg);
+      if (src.size() < (size_t)N) throw runtime_error("text too short");
+    } else if (kind == "CHAIN" || kind == "CHAINBASE") {
+      if (kind == "CHAIN") b = stoi(karg);
+      else {
+        size_t sep = karg.find(',');
+        if (sep == string::npos) throw runtime_error("CHAINBASE requires BASE,LENGTH");
+        base = stoi(karg.substr(0, sep)); b = stoi(karg.substr(sep + 1));
+      }
+      if (b < 2 || b > 8 || base < 2 || base > 26) throw runtime_error("base 2..26, chain length 2..8");
+      for (int i = 0; i < b; i++) {
+        lim *= base;
+        if (kind == "CHAINBASE" && lim > 20000000) throw runtime_error("CHAINBASE primer cap 20 million");
+      }
+    } else throw runtime_error("key kind");
     int cmap[2][26], pmap[2][26];
     for (int h = 0; h < 2; h++) { const string &al = h ? KRY : AZ; for (int i = 0; i < 26; i++) { cmap[h][al[i] - 'A'] = i; pmap[h][i] = al[i] - 'A'; } }
     size_t R = names.size();
@@ -108,11 +122,14 @@ int main(int argc, char **argv) {
         }
       }
     } else {
-      for (int p = 0; p < lim; p++) {
-        int v = p; for (int i = b - 1; i >= 0; i--) { K[i] = v % 10; v /= 10; }
-        for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % 10;
-        ostringstream o; o << "primer" << setw(b) << setfill('0') << p;
-        run_key(K, o.str());
+      const string symbols = "0123456789ABCDEFGHIJKLMNOP";
+      for (long long p = 0; p < lim; p++) {
+        long long v = p; string primer(b, '0');
+        for (int i = b - 1; i >= 0; i--) {
+          K[i] = int(v % base); primer[i] = symbols[K[i]]; v /= base;
+        }
+        for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % base;
+        run_key(K, "primer" + primer);
       }
     }
     ofstream ro(argv[10]); ro << setprecision(10) << "route\torder\tbest_score\n";
