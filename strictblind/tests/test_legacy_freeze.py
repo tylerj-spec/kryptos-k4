@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Older experiments (R35-R38) froze shared harness sources by path; later harness edits must not break their
-integrity check, and a genuinely altered frozen file must still fail. Needs the git history of the repository."""
-import shutil
+"""Verify legacy freeze history and actually detect tampering of a committed output.
+
+Old tests copied an experiment outside the repo and accepted FileNotFoundError.
+Because old FROZEN.sha256 references shared files via ../../strictblind/,
+the missing shared files raised FileNotFoundError before the tampered TSV was
+checked; the test could incorrectly report success. This test modifies an
+existing frozen output briefly and ALWAYS restores the exact bytes.
+"""
 import sys
-import tempfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -11,19 +15,30 @@ sys.path.insert(0, str(REPO / "strictblind" / "sealed"))
 from common import check_frozen  # noqa: E402
 
 legacy = REPO / "r37" / "p3_keyword_gromark"
-if not legacy.exists():
-    print("LEGACY FREEZE SKIPPED (no R37 experiment in this checkout)")
-    sys.exit(0)
-check_frozen(legacy)                       # passes although strictblind/blind/scan.cpp changed after R37
-with tempfile.TemporaryDirectory() as td:  # a tampered copy must fail
-    t = Path(td) / "exp"
-    shutil.copytree(legacy, t, ignore=shutil.ignore_patterns("scan", "whole_family"))
-    tsv = next((t / "out").glob("K4_*.tsv"))
-    tsv.write_text(tsv.read_text().replace("\t", " \t", 1))
+if not legacy.is_dir():
+    raise AssertionError("missing expected committed R37 legacy experiment")
+check_frozen(legacy)  # must verify older shared sources at their freeze commit
+
+tsv = next(sorted((legacy / "out").glob("K4_*.tsv")), None)
+assert tsv is not None, "missing legacy frozen K4 result"
+original = tsv.read_bytes()
+assert original, "empty frozen result"
+caught = False
+try:
+    # Alter the real tracked output in-place rather than copying an experiment
+    # into a directory where relative shared source paths cannot resolve.
+    tsv.write_bytes(b"!" + original[1:])
     try:
-        check_frozen(t)
-    except (AssertionError, FileNotFoundError):
-        print("LEGACY FREEZE OK: old experiment verifies via its freeze commit; tampering is still caught")
-        sys.exit(0)
-print("LEGACY FREEZE FAILED: tampered copy was accepted")
-sys.exit(1)
+        check_frozen(legacy)
+    except AssertionError as exc:
+        assert tsv.name in str(exc), (
+            f"freeze check failed for a different reason: {exc}")
+        caught = True
+finally:
+    # Never leave a mutated fixture in the working tree, even if checks fail.
+    tsv.write_bytes(original)
+
+assert caught, "tampered committed TSV passed its frozen hash validation"
+assert tsv.read_bytes() == original
+check_frozen(legacy)  # restored experiment must still validate
+print("LEGACY FREEZE OK: historical sources verified, actual TSV tampering rejected and restored")
