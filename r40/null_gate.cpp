@@ -37,7 +37,8 @@ string read_ct(const char* f) {
 }
 vector<array<int,2>> pairs() {
   vector<array<int,2>> ps;for(int i=0;i<N;++i)for(int j=i+1;j<N;++j)ps.push_back({i,j});
-  if(ps.size()!=PAIRS)throw runtime_error("invalid pairs");return ps;
+  if(ps.size()!=PAIRS)throw runtime_error("invalid pairs");
+  return ps;
 }
 Bits equal_letters(const string& ct,const vector<array<int,2>>& ps) {
   Bits b{};for(int t=0;t<PAIRS;++t)if(ct[ps[t][0]]==ct[ps[t][1]])b[t/64]|=1ULL<<(t%64);return b;
@@ -49,7 +50,8 @@ vector<Class> make_classes(const vector<array<int,2>>& ps) {
     Class c;c.prime=p;auto k=stream(p);
     for(int t=0;t<PAIRS;++t)if(k[ps[t][0]]==k[ps[t][1]])c.same[t/64]|=1ULL<<(t%64);
     for(auto w:c.same)c.den+=__builtin_popcountll(w);
-    if(!c.den)throw runtime_error("zero denominator");ret.push_back(c);
+    if(!c.den)throw runtime_error("zero denominator");
+    ret.push_back(c);
   }
   if(ret.size()!=25024)throw runtime_error("expected 25024 equivalence classes");
   return ret;
@@ -78,7 +80,8 @@ int main(int argc,char** argv) {
   string ct=read_ct(argv[1]);int count=argc>2?stoi(argv[2]):1000;
   if(count<1||count>100000)throw runtime_error("invalid null count");
   uint64_t seed=argc>3?stoull(argv[3]):40001ULL;
-  auto ps=pairs(),classes=make_classes(ps);
+  auto ps = pairs();
+  auto classes = make_classes(ps);
   for(int p:{0,42,27641,49287,61823,83469,99999}) {
     auto k=stream(p);int n=0,d=0;
     for(auto ij:ps)if(k[ij[0]]==k[ij[1]]){++d;n+=ct[ij[0]]==ct[ij[1]];}
