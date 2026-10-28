@@ -19,7 +19,10 @@ QUAD = HERE.parents[1] / "k4kit" / "data" / "quad_log10.f32"
 
 def merge(out, tag):
     rows = []
-    for f in sorted(glob.glob(str(out / f"part_{tag}_[0-9].tsv"))):
+    for f in sorted(out.glob(f"part_{tag}_*.tsv")):
+        part = f.stem.removeprefix(f"part_{tag}_")
+        if not part.isdigit():
+            continue
         rows += list(csv.DictReader(open(f), delimiter="\t"))
     rows.sort(key=lambda r: (-float(r["score"]), r["setting"]))
     with open(out / f"{tag}.tsv", "w") as fh:
@@ -86,11 +89,12 @@ def main():
                                            str(lo), str(hi), str(out / f"part_{run['tag']}_{h}.tsv"),
                                            str(out / f"part_{run['tag']}_routes_{h}.tsv")],
                                           stderr=open(out / f"{run['tag']}.log", "a")))
-        if not all(p.wait() == 0 for p in procs):
-            raise RuntimeError(f"scanner worker failed for {run['tag']}; outputs not frozen")
+        codes = [p.wait() for p in procs]
+        if any(code != 0 for code in codes):
+            raise RuntimeError(f"scanner worker failed for {run['tag']}: exit codes {codes}; outputs not frozen")
         print(f"{run['tag']}: top {merge(out, run['tag'])} ({time.time() - t0:.0f} s)", flush=True)
     frozen = [p for p in sorted(out.glob("*.tsv"))] + [exp / r["ct"] for r in man["runs"]] + [exp / "manifest.json"]
-    frozen += [HERE / "scan.cpp", HERE / "experiment.py", QUAD, exe]
+    frozen += [HERE / "scan.cpp", HERE / "experiment.py", HERE / "routes.py", QUAD, exe]
     frozen += [exp / r["routes"] for r in man["runs"]] + [exp / r["key"][1] for r in man["runs"] if r["key"][0] == "TEXT"]
     lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {os.path.relpath(p.resolve(), exp)}" for p in dict.fromkeys(frozen)]
     (exp / "FROZEN.sha256").write_text("\n".join(lines) + "\n")
