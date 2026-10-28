@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 python3 -I test_contract.py
 python3 -I test_r35_integrity.py
 python3 -I test_r36_chainbase.py
+python3 -I test_r37_keyed.py
 python3 -I test_roundtrip.py
 python3 -I test_regression_r32.py
 echo "ALL STRICTBLIND TESTS PASSED"
