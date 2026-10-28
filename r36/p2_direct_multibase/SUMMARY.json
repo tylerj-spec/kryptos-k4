@@ -1,0 +1,218 @@
+{
+  "analysis": "strict-blind, post-freeze, fixed-alphabet no-transposition five-primer nondecimal Gromark",
+  "total_k4_settings": 201127524,
+  "models": [
+    {
+      "base": 3,
+      "primer_length": 5,
+      "settings": 2916,
+      "max_clue_matches": 7,
+      "all24": 0,
+      "top_english_score": -667.9609175,
+      "null_english_score": -670.4130676,
+      "difference_from_null": 2.4522,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 4,
+      "primer_length": 5,
+      "settings": 12288,
+      "max_clue_matches": 6,
+      "all24": 0,
+      "top_english_score": -682.1582189,
+      "null_english_score": -637.0758519,
+      "difference_from_null": -45.0824,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 5,
+      "primer_length": 5,
+      "settings": 37500,
+      "max_clue_matches": 6,
+      "all24": 0,
+      "top_english_score": -656.3241661,
+      "null_english_score": -642.5638933,
+      "difference_from_null": -13.7603,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 6,
+      "primer_length": 5,
+      "settings": 93312,
+      "max_clue_matches": 6,
+      "all24": 0,
+      "top_english_score": -657.5944133,
+      "null_english_score": -645.0890718,
+      "difference_from_null": -12.5053,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 7,
+      "primer_length": 5,
+      "settings": 201684,
+      "max_clue_matches": 7,
+      "all24": 0,
+      "top_english_score": -653.8251464,
+      "null_english_score": -660.0715129,
+      "difference_from_null": 6.2464,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 8,
+      "primer_length": 5,
+      "settings": 393216,
+      "max_clue_matches": 7,
+      "all24": 0,
+      "top_english_score": -645.6814754,
+      "null_english_score": -628.6972499,
+      "difference_from_null": -16.9842,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 9,
+      "primer_length": 5,
+      "settings": 708588,
+      "max_clue_matches": 7,
+      "all24": 0,
+      "top_english_score": -636.4113142,
+      "null_english_score": -633.1576757,
+      "difference_from_null": -3.2536,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 10,
+      "primer_length": 5,
+      "settings": 1200000,
+      "max_clue_matches": 7,
+      "all24": 0,
+      "top_english_score": -637.8123233,
+      "null_english_score": -641.0641432,
+      "difference_from_null": 3.2518,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 11,
+      "primer_length": 5,
+      "settings": 1932612,
+      "max_clue_matches": 8,
+      "all24": 0,
+      "top_english_score": -635.1125765,
+      "null_english_score": -624.8624165,
+      "difference_from_null": -10.2502,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 12,
+      "primer_length": 5,
+      "settings": 2985984,
+      "max_clue_matches": 8,
+      "all24": 0,
+      "top_english_score": -618.445972,
+      "null_english_score": -627.923049,
+      "difference_from_null": 9.4771,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 16,
+      "primer_length": 5,
+      "settings": 12582912,
+      "max_clue_matches": 10,
+      "all24": 0,
+      "top_english_score": -614.2851498,
+      "null_english_score": -614.9460347,
+      "difference_from_null": 0.6609,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 20,
+      "primer_length": 5,
+      "settings": 38400000,
+      "max_clue_matches": 9,
+      "all24": 0,
+      "top_english_score": -604.004591,
+      "null_english_score": -608.1785588,
+      "difference_from_null": 4.174,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    },
+    {
+      "base": 26,
+      "primer_length": 5,
+      "settings": 142576512,
+      "max_clue_matches": 9,
+      "all24": 0,
+      "top_english_score": -612.3112099,
+      "null_english_score": -613.3851779,
+      "difference_from_null": 1.074,
+      "plant_ranks": [
+        1,
+        1
+      ],
+      "plant_gate": true,
+      "status": "EXCL_FIXED_FAMILY"
+    }
+  ],
+  "overall_candidates_with_all_24": 0,
+  "plant_gates_passed": 13,
+  "plant_gates_total": 13,
+  "limitation": "No inference about arbitrary alphabets, other key lengths or other stream generator rules."
+}
