@@ -37,7 +37,7 @@ def make_key(kind, arg, spec, text_cache={}):
         return [al.index(c) for c in s[o:o + N]]
     if kind == "CHAIN":
         base, b = 10, int(arg)
-    elif kind == "CHAINBASE":
+    elif kind in ("CHAINBASE", "CHAINALPH"):
         base, b = map(int, arg.split(","))
     else:
         raise ValueError(f"invalid key kind: {kind}")
