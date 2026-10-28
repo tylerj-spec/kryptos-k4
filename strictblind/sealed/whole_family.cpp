@@ -12,6 +12,7 @@ using namespace std;
 constexpr int N = 97;
 const string AZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", KRY = "KRYPTOSABCDEFGHIJLMNQUVWXZ";
 string letters(const string &f) { ifstream in(f); string s((istreambuf_iterator<char>(in)), {});
+  for (char &c : s) if (c >= 'a' && c <= 'z') c = char(c - 'a' + 'A');
   s.erase(remove_if(s.begin(), s.end(), [](char c) { return c < 'A' || c > 'Z'; }), s.end()); return s; }
 int main(int argc, char **argv) {
   if (argc != 7) { cerr << "usage: whole_family TEXT|CHAIN FILE|B CT ROUTES LO HI\n"; return 1; }
