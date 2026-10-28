@@ -1,0 +1,36 @@
+r27 41 route-orders
+columnar 192 route-orders
+rot 5000 route-orders
+rot-mixed 5000 route-orders
+ciphertexts: ['K4', 'NULL_00', 'NULL_01', 'PLANT_00', 'PLANT_01', 'PLANT_02', 'PLANT_03', 'PLANT_04', 'PLANT_05']
+routes 116 settings 3630205152 max L1 -271.788
+routes 116 settings 3630205152 max L1 -271.47
+routes 116 settings 3630205152 max L1 -271.137
+routes 5000 settings 7282520000 max L1 -270.644
+routes 5000 settings 7282520000 max L1 -270.079
+routes 116 settings 3630205152 max L1 -264.954
+routes 116 settings 3630205152 max L1 -270.391
+routes 5000 settings 7282520000 max L1 -270.493
+routes 5000 settings 7282520000 max L1 -269.859
+routes 116 settings 3630205152 max L1 -268.958
+routes 116 settings 3630205152 max L1 -272.239
+routes 5000 settings 7282520000 max L1 -269.03
+routes 5000 settings 7282520000 max L1 -270.429
+routes 116 settings 3630205152 max L1 -271.43
+routes 116 settings 3630205152 max L1 -270.006
+routes 5000 settings 7282520000 max L1 -270.873
+routes 5000 settings 7282520000 max L1 -271.858
+routes 5000 settings 7282520000 max L1 -270.508
+stage 1 done
+stage 2 done
+stage 3 done
+K4 best -445.1430974 CARTER/rev/KRY/off56833|ROUTE=ABSCISSA/F0S1O1V1/INV|CA=AZ|OP=VIG|BEAU
+NULL_00 best -445.672868 C10b5/primer57557|ROUTE=R9x27/CCW/fwd|CA=ACAKRY|OP=VIG|BEAU
+NULL_01 best -445.5637968 C10b5/primer98570|ROUTE=PALIMPSEST/F0S1O1V0/INV|CA=KRY|OP=VARB
+PLANT_00 best -396.5436053 C10b5/primer05540|ROUTE=ABSCISSA/F1S1O0V1/INV|CA=KRY|OP=VARB
+PLANT_01 best -393.1297946 C10b6/primer735290|ROUTE=PALIMPSEST/F0S1O1V0/FWD|CA=ACAPAL|OP=VIG|BEAU
+PLANT_02 best -382.982434 CARTER/rev/AZ/off273475|ROUTE=R24x9/CCW/fwd|CA=ACAPAL|OP=VARB
+PLANT_03 best -391.9554212 K1K3/rev/KRY/off196|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU
+PLANT_04 best -395.6046474 C10b5/primer20507|ROUTE=R9x17/CW-CCW/inv|CA=KRY|OP=VIG|BEAU
+PLANT_05 best -408.5451307 K1K3/rev/KRY/off755|ROUTE=R5x5/CCW-CW/fwd|CA=ABSP|OP=VARB
+FROZEN 115 files -> /home/user/kryptos-k4/r41/x1_route_pafree/FROZEN.sha256
