@@ -50,9 +50,9 @@ def main():
         raise ValueError("run tags must be nonempty and unique")
     if any(not t or any(c not in "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-" for c in t) for t in tags):
         raise ValueError("run tags must be simple filenames")
-    if workers := man.get("workers"):
-        if type(workers) is not int or not (1 <= workers <= 64):
-            raise ValueError("workers must be integer 1..64")
+    workers = man.get("workers", 4)
+    if type(workers) is not int or not (1 <= workers <= 64):
+        raise ValueError("workers must be integer 1..64")
     for run in man["runs"]:
         if run["key"][0] not in ("TEXT", "CHAIN"):
             raise ValueError("unsupported key type")
@@ -70,7 +70,6 @@ def main():
     out.mkdir(exist_ok=True)
     exe = out / "scan"
     subprocess.run(["g++", "-std=c++17", "-O3", "-march=native", str(HERE / "scan.cpp"), "-o", str(exe)], check=True)
-    workers = int(man.get("workers", 4))
     for run in man["runs"]:
         t0 = time.time()
         routes = exp / run["routes"]
@@ -87,7 +86,8 @@ def main():
                                            str(lo), str(hi), str(out / f"part_{run['tag']}_{h}.tsv"),
                                            str(out / f"part_{run['tag']}_routes_{h}.tsv")],
                                           stderr=open(out / f"{run['tag']}.log", "a")))
-        assert all(p.wait() == 0 for p in procs), run["tag"]
+        if not all(p.wait() == 0 for p in procs):
+        raise RuntimeError(f"scanner worker failed for {run['tag']}; outputs not frozen")
         print(f"{run['tag']}: top {merge(out, run['tag'])} ({time.time() - t0:.0f} s)", flush=True)
     frozen = [p for p in sorted(out.glob("*.tsv"))] + [exp / r["ct"] for r in man["runs"]] + [exp / "manifest.json"]
     frozen += [HERE / "scan.cpp", HERE / "experiment.py", QUAD, exe]
