@@ -42,7 +42,7 @@ for run in man["runs"]:
                 full.append(f[1])
     keys = (4 * (len(letters(karg)) - 97 + 1) if kind == "TEXT" else
             int(arg.split(",")[0]) ** int(arg.split(",")[1]) if kind in ("CHAINBASE", "CHAINALPH") else 10 ** int(arg))
-    expected = n * keys * 12
+    expected = n * keys * (48 if kind == "CHAINALPH" else 12)
     tot = sum(hist)
     if tot != expected:
         raise RuntimeError(f"whole_family incomplete: {tot} settings, expected {expected}")
