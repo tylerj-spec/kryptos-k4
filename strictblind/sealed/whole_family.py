@@ -41,7 +41,7 @@ for run in man["runs"]:
             elif f[0] == "FULL24":
                 full.append(f[1])
     keys = (4 * (len(letters(karg)) - 97 + 1) if kind == "TEXT" else
-            int(arg.split(",")[0]) ** int(arg.split(",")[1]) if kind == "CHAINBASE" else 10 ** int(arg))
+            int(arg.split(",")[0]) ** int(arg.split(",")[1]) if kind in ("CHAINBASE", "CHAINALPH") else 10 ** int(arg))
     expected = n * keys * 12
     tot = sum(hist)
     if tot != expected:
