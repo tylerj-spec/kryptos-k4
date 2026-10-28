@@ -1,0 +1,63 @@
+{
+  "status": "posthoc_descriptive_only",
+  "p1_original_k4_score": -579.3495047,
+  "null_count": 12,
+  "null_scores_by_seed": [
+    {
+      "seed": 35021,
+      "score": -594.8616834
+    },
+    {
+      "seed": 35022,
+      "score": -581.334084
+    },
+    {
+      "seed": 35023,
+      "score": -602.1706061
+    },
+    {
+      "seed": 35024,
+      "score": -593.8084178
+    },
+    {
+      "seed": 35025,
+      "score": -585.568413
+    },
+    {
+      "seed": 35026,
+      "score": -588.9093769
+    },
+    {
+      "seed": 35027,
+      "score": -589.4069552
+    },
+    {
+      "seed": 35028,
+      "score": -588.8307505
+    },
+    {
+      "seed": 35029,
+      "score": -597.1800027
+    },
+    {
+      "seed": 35030,
+      "score": -581.2874274
+    },
+    {
+      "seed": 35031,
+      "score": -594.8022954
+    },
+    {
+      "seed": 35032,
+      "score": -596.5606389
+    }
+  ],
+  "null_mean": -591.2267209416666,
+  "null_stdev": 6.462593666893821,
+  "null_min": -602.1706061,
+  "null_max": -581.2874274,
+  "nulls_at_least_k4": 0,
+  "empirical_p_add_one": 0.07692307692307693,
+  "k4_above_all_new_nulls": true,
+  "caution": "Study was selected after observing P1's single null gap; not a prespecified confirmatory significance test."
+}

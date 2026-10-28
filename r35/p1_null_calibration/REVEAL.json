@@ -1,0 +1,110 @@
+[
+ {
+  "tag": "NULL_00",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -594.8616834,
+  "top_plaintext": "EZIPEESPNZNANYANKALMTHROVPSWSUMODXMOANJCRCCTUEBWATCSTGHZEPOPWGECTTHREDINOCSTSGPSVREXTINGANKJOUURF",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_01",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -581.334084,
+  "top_plaintext": "FPRLBIOORYNBYCDALOOVNFINNINKAZLOFGUIAFPWITAMENULRIDNRABORUVSCFTSALKDATHIYIESOWSPARURITSGRYKSYAYPT",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_02",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -602.1706061,
+  "top_plaintext": "PGDLPROHTIVUPPETSOVWLLPQUNYVICBCGREWARTSDNMXTVIAJOUTSTOTMWESTNHUNEIOOGBLAZICELMNKDIUMALRHAYBANJOE",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_03",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -593.8084178,
+  "top_plaintext": "IJMACAKEOFITEUNYPKFISBVPUGARTWUKDJSTCDWINMRPRGETIMIGYMSNEAFEXFULNASSEVOLPASDRYUAJIDABCJVPOUNRABIF",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_04",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -585.568413,
+  "top_plaintext": "NEBULTHTTRARTUAHALGERZRNFLAAHULVESASYFJRSULFONJOUNTSILKPFBXDEHEXNNDQUADSFIRKOCYLABBSOGSSIPITBEMTP",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_05",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -588.9093769,
+  "top_plaintext": "VQUTFLUPSAVEOSICHEAEDAYXESINRJWRIEWPDENMNOENCHBAXCRAOZSNZPEPOONHRNHOWRRELYAGYOFREYJFPORESUAINOKCA",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_06",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -589.4069552,
+  "top_plaintext": "MHKTSHWBCWBAYWOQJDAAMPHDACIPGEFEIMETENFWMEHSREINKASLANDDQGOOICAYFOYSOOLDELSRINEHEJTEDJELESASNOLUC",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_07",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -588.8307505,
+  "top_plaintext": "TNOBASSNFERAUBGISFAVIMGBMVMSBULARWXHRNCIXAETOEFCOUTTETIRTINGTANNYWIYBRSQDAAHOWHSDANATAPROMIQILERM",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_08",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -597.1800027,
+  "top_plaintext": "WJEFYPIOMNIFICPMTMATIFSWBMDHABYBEAVWASELILEORIAHLDYUKDALDANTWOITSPPUPATRHITYFAPTMVCSKTCVNUEHAXCAG",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_09",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -581.2874274,
+  "top_plaintext": "PDFEYEWOFCTATAPHOECCCXRTYAYOSGTDAHTHJTOTAKHILPITYSFGNBUZRIEVISHSKASTRIMUMDBCPATFRIAUCHLPLIURITYWW",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_10",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -594.8022954,
+  "top_plaintext": "XTHEOYAOAGWNVDOKEPOKEEMNGHOIFHOSEXFOERTICCARKLXGBJAYHEAJULYDHABUOISUELOCHOUAGMYWTEWHAUKZYSRHEATHL",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "NULL_11",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -596.5606389,
+  "top_plaintext": "KWBEERALBLAHIAFFCRLISABDNTGENOTCRBETIIRMUKOGBLEFOYUAEGANSHYBDNUVOCSSHBPAFWRMEMGKAAGZILOSEAAPINKSR",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ }
+]
