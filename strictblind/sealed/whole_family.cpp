@@ -6,6 +6,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 using namespace std;
@@ -30,21 +31,37 @@ int main(int argc, char **argv) {
         vector<array<int, 2>> m; for (int t : pos) m.push_back({od == "ID" ? t : q[t], od == "T_then_S" ? q[t] : t});
         R.push_back(m); names.push_back(nm + "|" + od); }
       idx++; } }
-  int cm[2][26], pm[2][26];
-  for (int h = 0; h < 2; h++) { const string &al = h ? KRY : AZ; for (int i = 0; i < 26; i++) { cm[h][al[i] - 'A'] = i; pm[h][i] = al[i] - 'A'; } }
-  vector<array<int, 24>> cvr[2];
-  for (int ca = 0; ca < 2; ca++) for (auto &m : R) { array<int, 24> c; for (int j = 0; j < 24; j++) c[j] = cm[ca][ct[m[j][0]] - 'A']; cvr[ca].push_back(c); }
+  const string AL[4] = {AZ, KRY, "PALIMSETBCDFGHJKNOQRUVWXYZ", "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
+  const string AN[4] = {"AZ", "KRY", "PAL", "ABS"};
+  const int A = kind == "CHAINALPH" ? 4 : 2;
+  int cm[4][26], pm[4][26];
+  for (int h = 0; h < A; h++) {
+    if (AL[h].size() != 26) throw runtime_error("alphabet length");
+    bool seen[26]{};
+    for (int i = 0; i < 26; i++) {
+      int c = AL[h][i] - 'A';
+      if (c < 0 || c >= 26 || seen[c]) throw runtime_error("invalid alphabet");
+      seen[c] = true; cm[h][c] = i; pm[h][i] = c;
+    }
+  }
+  vector<array<int, 24>> cvr[4];
+  for (int ca = 0; ca < A; ca++)
+    for (auto &m : R) {
+      array<int, 24> c;
+      for (int j = 0; j < 24; j++) c[j] = cm[ca][ct[m[j][0]] - 'A'];
+      cvr[ca].push_back(c);
+    }
   array<long long, 25> hist{}; int best = 0; string bestset;
   array<int, N> K{};
   auto run_key = [&](const string &kn) {
-    for (size_t r = 0; r < R.size(); r++) for (int ca = 0; ca < 2; ca++) {
+    for (size_t r = 0; r < R.size(); r++) for (int ca = 0; ca < A; ca++) {
       const auto &cv = cvr[ca][r];
-      for (int op = 0; op < 3; op++) for (int pa = 0; pa < 2; pa++) {
+      for (int op = 0; op < 3; op++) for (int pa = 0; pa < A; pa++) {
         int hits = 0;
         for (int j = 0; j < 24; j++) { int k = K[R[r][j][1]], x = op == 0 ? cv[j] - k : op == 1 ? k - cv[j] : cv[j] + k; x %= 26; if (x < 0) x += 26;
           hits += (pm[pa][x] == want[j] - 'A'); }
         hist[hits]++;
-        if (hits > best) { best = hits; bestset = names[r] + "|" + kn + "|PA=" + (pa ? "KRY" : "AZ") + "|CA=" + (ca ? "KRY" : "AZ") + "|OP=" + to_string(op); }
+        if (hits > best) { best = hits; bestset = names[r] + "|" + kn + "|PA=" + AN[pa] + "|CA=" + AN[ca] + "|OP=" + to_string(op); }
         if (hits == 24) cout << "FULL24\t" << names[r] << "|" << kn << "|" << pa << ca << op << "\n";
       } }
   };
@@ -53,7 +70,7 @@ int main(int argc, char **argv) {
       for (int num = 0; num < 2; num++) { const string &al = num ? KRY : AZ; int p[26]; for (int i = 0; i < 26; i++) p[al[i] - 'A'] = i;
         for (size_t off = 0; off + N <= s.size(); off++) { for (int i = 0; i < N; i++) K[i] = p[s[off + i] - 'A'];
           run_key(string(dir ? "rev" : "fwd") + "/" + (num ? "KRY" : "AZ") + "/off" + to_string(off)); } } } }
-  else if (kind == "CHAIN" || kind == "CHAINBASE") {
+  else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH") {
     int base = 10, b = 0;
     if (kind == "CHAIN") b = stoi(karg);
     else {
@@ -66,7 +83,7 @@ int main(int argc, char **argv) {
     long long lim = 1;
     for (int i = 0; i < b; i++) {
       lim *= base;
-      if (kind == "CHAINBASE" && lim > 20000000) throw runtime_error("primer limit");
+      if ((kind == "CHAINBASE" || kind == "CHAINALPH") && lim > 20000000) throw runtime_error("primer limit");
     }
     const string symbols = "0123456789ABCDEFGHIJKLMNOP";
     for (long long p = 0; p < lim; p++) {

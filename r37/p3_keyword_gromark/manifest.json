@@ -1,0 +1,165 @@
+{
+ "workers": 2,
+ "runs": [
+  {
+   "tag": "K4_B5",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "5,5"
+   ],
+   "label": "B5KEYED"
+  },
+  {
+   "tag": "PLANTA_B5",
+   "ct": "PLANTA_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "5,5"
+   ],
+   "label": "B5KEYED"
+  },
+  {
+   "tag": "PLANTB_B5",
+   "ct": "PLANTB_B5_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "5,5"
+   ],
+   "label": "B5KEYED"
+  },
+  {
+   "tag": "NULL_B5",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "5,5"
+   ],
+   "label": "B5KEYED"
+  },
+  {
+   "tag": "K4_B10",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "10,5"
+   ],
+   "label": "B10KEYED"
+  },
+  {
+   "tag": "PLANTA_B10",
+   "ct": "PLANTA_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "10,5"
+   ],
+   "label": "B10KEYED"
+  },
+  {
+   "tag": "PLANTB_B10",
+   "ct": "PLANTB_B10_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "10,5"
+   ],
+   "label": "B10KEYED"
+  },
+  {
+   "tag": "NULL_B10",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "10,5"
+   ],
+   "label": "B10KEYED"
+  },
+  {
+   "tag": "K4_B12",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "12,5"
+   ],
+   "label": "B12KEYED"
+  },
+  {
+   "tag": "PLANTA_B12",
+   "ct": "PLANTA_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "12,5"
+   ],
+   "label": "B12KEYED"
+  },
+  {
+   "tag": "PLANTB_B12",
+   "ct": "PLANTB_B12_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "12,5"
+   ],
+   "label": "B12KEYED"
+  },
+  {
+   "tag": "NULL_B12",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "12,5"
+   ],
+   "label": "B12KEYED"
+  },
+  {
+   "tag": "K4_B26",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "26,5"
+   ],
+   "label": "B26KEYED"
+  },
+  {
+   "tag": "PLANTA_B26",
+   "ct": "PLANTA_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "26,5"
+   ],
+   "label": "B26KEYED"
+  },
+  {
+   "tag": "PLANTB_B26",
+   "ct": "PLANTB_B26_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "26,5"
+   ],
+   "label": "B26KEYED"
+  },
+  {
+   "tag": "NULL_B26",
+   "ct": "NULL_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "CHAINALPH",
+    "26,5"
+   ],
+   "label": "B26KEYED"
+  }
+ ]
+}

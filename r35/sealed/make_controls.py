@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "strictblind/sealed"))
-from common import AZ, KRY, N, encrypt, letters, make_key, read_routes  # noqa: E402
+from common import ALPHABETS, N, encrypt, letters, make_key, read_routes  # noqa: E402
 
 exp, tag, routefile, kind, arg, ti, seed = sys.argv[1:8]
 exp = Path(exp)
@@ -27,7 +27,7 @@ if kind == "TEXT":
     spec = f"{rng.choice(['fwd', 'rev'])}/{rng.choice(['AZ', 'KRY'])}/off{rng.randrange(L - N + 1)}"
 elif kind == "CHAIN":
     spec = f"primer{rng.randrange(10 ** int(arg)):0{int(arg)}d}"
-elif kind == "CHAINBASE":
+elif kind in ("CHAINBASE", "CHAINALPH"):
     base, b = map(int, arg.split(","))
     value = rng.randrange(base ** b)
     symbols = "0123456789ABCDEFGHIJKLMNOP"
@@ -38,9 +38,10 @@ elif kind == "CHAINBASE":
     spec = "primer" + "".join(reversed(chars))
 else:
     raise ValueError("unknown key family")
-pa, ca, op = rng.choice(["AZ", "KRY"]), rng.choice(["AZ", "KRY"]), rng.choice(["VIG", "BEAU", "VARB"])
+choices = ["AZ", "KRY", "PAL", "ABS"] if kind == "CHAINALPH" else ["AZ", "KRY"]
+pa, ca, op = rng.choice(choices), rng.choice(choices), rng.choice(["VIG", "BEAU", "VARB"])
 ct = encrypt(P, R[name, order], order, make_key(kind, karg, spec),
-             AZ if pa == "AZ" else KRY, KRY if ca == "KRY" else AZ, op)
+             ALPHABETS[pa], ALPHABETS[ca], op)
 (exp / f"{tag}_ct.txt").write_text(ct + "\n")
 (exp / "sealed").mkdir(exist_ok=True)
 tf = exp / "sealed/truth.json"

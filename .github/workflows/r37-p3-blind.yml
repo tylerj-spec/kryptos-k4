@@ -1,0 +1,41 @@
+name: R37 P3 keyword alphabet Gromark blind search
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r37-keyword-gromark'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r37-p3
+  cancel-in-progress: false
+
+jobs:
+  search-p3:
+    if: "startsWith(github.event.head_commit.message, 'R37 P3: RUN BLIND')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r37-keyword-gromark
+          fetch-depth: 0
+      - name: Commit attribution
+        run: |
+          git config user.name "R37 Research Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Blind contract and historical regression tests
+        run: |
+          bash strictblind/tests/run_all.sh
+          bash verify_all.sh
+      - name: Lock protocol then blind scan/freezing then sealed checks
+        run: bash r37/run_p3.sh
+      - name: Preserve experiment output as artifact if push fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r37-p3-keyword-gromark
+          path: r37/p3_keyword_gromark/
+          if-no-files-found: warn
