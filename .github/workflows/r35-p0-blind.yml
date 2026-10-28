@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   run-p0:
-    if: startsWith(github.event.head_commit.message, 'R35 P0: RUN BLIND')
+    if: "startsWith(github.event.head_commit.message, 'R35 P0: RUN BLIND')"
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
