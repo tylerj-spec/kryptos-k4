@@ -1,0 +1,67 @@
+[
+ {
+  "tag": "K4_P1",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -579.3495047,
+  "top_plaintext": "TURFCHAHDIGODEGEKOREIONULETOLGROFRVYNSCYYWIRSTSLLAQPMATARTECROHTXSTKOWRDWOUHYEZATNSESABCODLEARJOV",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   3,
+   4,
+   2,
+   1,
+   1,
+   0,
+   3,
+   3,
+   1
+  ]
+ },
+ {
+  "tag": "PLANT_C",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R24x9/CW-CCW/fwd",
+   "order": "T_then_S",
+   "key": "fwd/AZ/off9768",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANT_D",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R23x9/CCW-CW/inv",
+   "order": "T_then_S",
+   "key": "rev/KRY/off225640",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -597.7636127,
+  "top_plaintext": "MZEHSYMSCHSURUXTGFUOTETHEDNKSIEDCOOHTYPUSELIFSTDDKEDISBHSZSKHWRUNGGWHERYIPWOOLEINLEIOMADNEVSTVKTT",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ }
+]
