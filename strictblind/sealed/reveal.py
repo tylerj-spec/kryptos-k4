@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ALPHABETS, CLUES, K4, check_frozen, encrypt, letters, make_key, read_routes  # noqa: E402
+from common import ALPHABETS, ALPHABETS_ACA, CLUES, K4, check_frozen, encrypt, letters, make_key, read_routes  # noqa: E402
 
 exp = Path(sys.argv[1]).resolve()
 check_frozen(exp)
