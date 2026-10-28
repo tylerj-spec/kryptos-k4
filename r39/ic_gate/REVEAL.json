@@ -1,0 +1,268 @@
+[
+  {
+    "tag": "K4",
+    "max_ic": 0.07510729613733906,
+    "top_primer": 27641,
+    "type": "K4"
+  },
+  {
+    "tag": "PLANT_00",
+    "max_ic": 0.08686440677966102,
+    "top_primer": 21045,
+    "type": "PLANT",
+    "true_primer": 21425,
+    "true_primer_ic": 0.08676789587852494,
+    "true_primer_rank": 5,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_01",
+    "max_ic": 0.07592190889370933,
+    "top_primer": 17148,
+    "type": "PLANT",
+    "true_primer": 44341,
+    "true_primer_ic": 0.058212058212058215,
+    "true_primer_rank": 1026,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_02",
+    "max_ic": 0.08256880733944955,
+    "top_primer": 25417,
+    "type": "PLANT",
+    "true_primer": 25615,
+    "true_primer_ic": 0.08061002178649238,
+    "true_primer_rank": 5,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_03",
+    "max_ic": 0.08771929824561403,
+    "top_primer": 52738,
+    "type": "PLANT",
+    "true_primer": 54916,
+    "true_primer_ic": 0.08771929824561403,
+    "true_primer_rank": 2,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_04",
+    "max_ic": 0.10344827586206896,
+    "top_primer": 12305,
+    "type": "PLANT",
+    "true_primer": 32824,
+    "true_primer_ic": 0.0757238307349666,
+    "true_primer_rank": 103,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_05",
+    "max_ic": 0.0867579908675799,
+    "top_primer": 13881,
+    "type": "PLANT",
+    "true_primer": 77908,
+    "true_primer_ic": 0.07126436781609195,
+    "true_primer_rank": 186,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_06",
+    "max_ic": 0.08755760368663594,
+    "top_primer": 10149,
+    "type": "PLANT",
+    "true_primer": 23685,
+    "true_primer_ic": 0.07743362831858407,
+    "true_primer_rank": 69,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_07",
+    "max_ic": 0.08,
+    "top_primer": 18652,
+    "type": "PLANT",
+    "true_primer": 73519,
+    "true_primer_ic": 0.06880733944954129,
+    "true_primer_rank": 59,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_08",
+    "max_ic": 0.08061002178649238,
+    "top_primer": 12204,
+    "type": "PLANT",
+    "true_primer": 92006,
+    "true_primer_ic": 0.05790645879732739,
+    "true_primer_rank": 687,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_09",
+    "max_ic": 0.0735930735930736,
+    "top_primer": 21919,
+    "type": "PLANT",
+    "true_primer": 66372,
+    "true_primer_ic": 0.05296610169491525,
+    "true_primer_rank": 2275,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_10",
+    "max_ic": 0.08078602620087336,
+    "top_primer": 52960,
+    "type": "PLANT",
+    "true_primer": 59825,
+    "true_primer_ic": 0.0784313725490196,
+    "true_primer_rank": 8,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_11",
+    "max_ic": 0.07834101382488479,
+    "top_primer": 15714,
+    "type": "PLANT",
+    "true_primer": 88449,
+    "true_primer_ic": 0.06430155210643015,
+    "true_primer_rank": 260,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_12",
+    "max_ic": 0.08908685968819599,
+    "top_primer": 2861,
+    "type": "PLANT",
+    "true_primer": 15658,
+    "true_primer_ic": 0.05672268907563025,
+    "true_primer_rank": 6029,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_13",
+    "max_ic": 0.09859154929577464,
+    "top_primer": 18374,
+    "type": "PLANT",
+    "true_primer": 4219,
+    "true_primer_ic": 0.08884297520661157,
+    "true_primer_rank": 22,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_14",
+    "max_ic": 0.08185840707964602,
+    "top_primer": 23656,
+    "type": "PLANT",
+    "true_primer": 78601,
+    "true_primer_ic": 0.06209850107066381,
+    "true_primer_rank": 511,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_15",
+    "max_ic": 0.08441558441558442,
+    "top_primer": 29027,
+    "type": "PLANT",
+    "true_primer": 29522,
+    "true_primer_ic": 0.06623931623931624,
+    "true_primer_rank": 253,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_16",
+    "max_ic": 0.09018036072144289,
+    "top_primer": 23907,
+    "type": "PLANT",
+    "true_primer": 66977,
+    "true_primer_ic": 0.04665314401622718,
+    "true_primer_rank": 33687,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_17",
+    "max_ic": 0.09318181818181819,
+    "top_primer": 19715,
+    "type": "PLANT",
+    "true_primer": 78001,
+    "true_primer_ic": 0.07032967032967033,
+    "true_primer_rank": 1116,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_18",
+    "max_ic": 0.08431372549019608,
+    "top_primer": 20342,
+    "type": "PLANT",
+    "true_primer": 66322,
+    "true_primer_ic": 0.080338266384778,
+    "true_primer_rank": 17,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "PLANT_19",
+    "max_ic": 0.0737527114967462,
+    "top_primer": 12694,
+    "type": "PLANT",
+    "true_primer": 70029,
+    "true_primer_ic": 0.0728476821192053,
+    "true_primer_rank": 7,
+    "forward_ciphertext_verified": true
+  },
+  {
+    "tag": "NULL_00",
+    "max_ic": 0.0752212389380531,
+    "top_primer": 29874,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_01",
+    "max_ic": 0.08849557522123894,
+    "top_primer": 238,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_02",
+    "max_ic": 0.07555555555555556,
+    "top_primer": 25047,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_03",
+    "max_ic": 0.08,
+    "top_primer": 52339,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_04",
+    "max_ic": 0.07640449438202247,
+    "top_primer": 51574,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_05",
+    "max_ic": 0.0891304347826087,
+    "top_primer": 23519,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_06",
+    "max_ic": 0.08043478260869565,
+    "top_primer": 28114,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_07",
+    "max_ic": 0.08050847457627118,
+    "top_primer": 26594,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_08",
+    "max_ic": 0.07188160676532769,
+    "top_primer": 22717,
+    "type": "NULL"
+  },
+  {
+    "tag": "NULL_09",
+    "max_ic": 0.08131868131868132,
+    "top_primer": 2856,
+    "type": "NULL"
+  }
+]
