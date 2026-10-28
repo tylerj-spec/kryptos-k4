@@ -1,0 +1,44 @@
+name: R40 Gromark IC null calibration
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r40-gromark-ic-audit'
+    paths:
+      - '.github/workflows/r40-null.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  independent-null-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Run existing cryptanalysis regressions
+        run: bash strictblind/tests/run_all.sh
+      - name: Independent 1000-null exact IC comparison (no clues)
+        run: |
+          g++ -std=c++17 -O3 -march=native -Wall -Wextra r40/null_gate.cpp -o /tmp/r40-null
+          /tmp/r40-null k4kit/r32/runs/k4_ciphertext.txt 1000 40001 > r40/NULL_1000.tsv 2> r40/RUN_LOG.txt
+          cat r40/RUN_LOG.txt
+          test "$(wc -l < r40/NULL_1000.tsv)" -eq 1002
+          sha256sum r40/null_gate.cpp k4kit/r32/runs/k4_ciphertext.txt r40/NULL_1000.tsv r40/RUN_LOG.txt > r40/R40_RESULT.sha256
+      - name: Commit tested, frozen R40 numerical results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r40/NULL_1000.tsv r40/RUN_LOG.txt r40/R40_RESULT.sha256
+          git commit -m "R40: 1000 blind conditional-IC null maxima and independent checks [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r40-gromark-ic-audit
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r40-conditional-ic-1000-null
+          path: |
+            r40/NULL_1000.tsv
+            r40/RUN_LOG.txt
+            r40/R40_RESULT.sha256
+          retention-days: 90
