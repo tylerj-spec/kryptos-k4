@@ -32,6 +32,18 @@ def rot(n, w, cw):
     return out
 
 
+def mixed_rotation(name, n=N):
+    """Double rotation with independent directions; excluded from the earlier same-direction sweep."""
+    dims, dirs, kind = name[1:].split("/")
+    w1, w2 = map(int, dims.split("x"))
+    d1, d2 = dirs.split("-")
+    if d1 not in ("CW", "CCW") or d2 not in ("CW", "CCW") or d1 == d2:
+        raise ValueError("mixed rotation requires opposite directions")
+    p1, p2 = rot(n, w1, d1 == "CW"), rot(n, w2, d2 == "CW")
+    p = [p1[i] for i in p2]
+    return p if kind == "fwd" else inv(p)
+
+
 def rotation(name, n=N):
     """K3's double quarter-turn, R27 naming (verified on K3 in earlier rounds)."""
     dims, cwn, kind = name[1:].split("/")
