@@ -17,10 +17,10 @@
     - **Result: no candidate.** The in-place family is excluded exactly: 0 of 337,634,136 settings fit the 24 known
       letters. All 12 plants passed (L134).
   - **R41, free plaintext alphabet, substitution then K3-style transposition:** 116 R27/columnar routes and 5,000
-    double rotations. Result: pending (running at the time of writing; see L135 when filled in).
+    double rotations. Result: no candidate; an exact rule-out of 10.9 billion settings under any plaintext alphabet (L135).
   - **R42, free cipher alphabet:** Quagmire II and the ACA standard Gromark with any keyword.
     - With the key known, annealing the cipher alphabet recovers planted text blind: 24/24 in development.
-    - Result: pending (running at the time of writing; see L136 when filled in).
+    - Result: no candidate, and an exact in-place rule-out under any cipher alphabet (171 million settings). But the blind gate failed (4/6 plants), so the blind solve is trusted for C10b5 keys only (L136).
 
 ## Are we close? (honest view)
 **No.**
