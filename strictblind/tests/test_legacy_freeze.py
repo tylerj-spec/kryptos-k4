@@ -19,7 +19,7 @@ if not legacy.is_dir():
     raise AssertionError("missing expected committed R37 legacy experiment")
 check_frozen(legacy)  # must verify older shared sources at their freeze commit
 
-tsv = next(sorted((legacy / "out").glob("K4_*.tsv")), None)
+tsv = next(iter(sorted((legacy / "out").glob("K4_*.tsv"))), None)
 assert tsv is not None, "missing legacy frozen K4 result"
 original = tsv.read_bytes()
 assert original, "empty frozen result"
