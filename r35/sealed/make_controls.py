@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "strictblind/sealed"))
-from common import AZ, KRY, N, encrypt, letters, make_key, read_routes  # noqa: E402
+from common import ALPHABETS, N, encrypt, letters, make_key, read_routes  # noqa: E402
 
 exp, tag, routefile, kind, arg, ti, seed = sys.argv[1:8]
 exp = Path(exp)
