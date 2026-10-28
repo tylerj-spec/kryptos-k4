@@ -1,0 +1,470 @@
+{
+ "plants": {
+  "PLANT_00": {
+   "family": "C10b5",
+   "transposed": false,
+   "setting": "C10b5/primer84663|CA=KRY|OP=VIG|BEAU",
+   "true_L1": -272.364,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "best_setting": "C10b5/primer84663|CA=KRY|OP=VIG|BEAU",
+   "best_score": -400.1942141,
+   "true_row_score": -400.1942141,
+   "true_row_wrong_letters": 0,
+   "best_row_plaintext": "THEOLDFERRYLEFTTHEPIERATDAWNANDTHEPASSENGERSWATCHEDTHEGULLSCIRCLEABOVETHEGREYWATERASTHEENGINEHUMM"
+  },
+  "PLANT_01": {
+   "family": "C10b6",
+   "transposed": false,
+   "setting": "C10b6/primer277359|CA=ACAPAL|OP=VIG|BEAU",
+   "true_L1": -265.2191,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "best_setting": "C10b6/primer277359|CA=ACAPAL|OP=VIG|BEAU",
+   "best_score": -389.3774874,
+   "true_row_score": -389.3774874,
+   "true_row_wrong_letters": 11,
+   "best_row_plaintext": "CEFOUNDTHEMETTERINSIDEALOGOFSEEDSINTHEWARDENSHEDANDITDESPRILEDABOURNEYAPROSSTHEDESERTTOAHIDDENCEM"
+  },
+  "PLANT_02": {
+   "family": "C10b7",
+   "transposed": false,
+   "setting": "C10b7/primer6274471|CA=PALP|OP=VARB",
+   "true_L1": -264.0354,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "best_setting": "C10b7/primer6274471|CA=PALP|OP=VARB",
+   "best_score": -362.3141429,
+   "true_row_score": -362.3141429,
+   "true_row_wrong_letters": 1,
+   "best_row_plaintext": "AFTERTHESTORMTHEWILLAGERSGATHEREDINTHESQUARETOCOUNTTHEFALLENTREESANDTOREPAIRTHEROOFOFTHESMALLSCHO"
+  },
+  "PLANT_03": {
+   "family": "C26b5",
+   "transposed": false,
+   "setting": "C26b5/primer20C51|CA=AZ|OP=VIG|BEAU",
+   "true_L1": -273.5445,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "best_setting": "C26b5/primer20C51|CA=AZ|OP=VIG|BEAU",
+   "best_score": -400.6091034,
+   "true_row_score": -400.6091034,
+   "true_row_wrong_letters": 5,
+   "best_row_plaintext": "HERGRANDFATHERKESTAMASOFTHERIVERVALLEYSINNEDABOVEHICDECKWITHEVERYBRIDGEANDMILLMARKEDINFADEDREDINK"
+  },
+  "PLANT_04": {
+   "family": "CARTER",
+   "transposed": false,
+   "setting": "CARTER/rev/KRY/off60964|CA=ACAABS|OP=VIG|BEAU",
+   "true_L1": -268.5973,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "best_setting": "CARTER/rev/KRY/off60964|CA=ACAABS|OP=VIG|BEAU",
+   "best_score": -392.8462842,
+   "true_row_score": -392.8462842,
+   "true_row_wrong_letters": 3,
+   "best_row_plaintext": "THEMUSEUMGUARDNOTICEDTHATONEOFTHESTATUESHADBEENMOVEDDURINGTHENIGHTTHOUGHNODOORORLINDOLLASEVEROPEN"
+  },
+  "PLANT_05": {
+   "family": "K1K3",
+   "transposed": false,
+   "setting": "K1K3/fwd/KRY/off437|CA=ACAPAL|OP=VIG|BEAU",
+   "true_L1": -278.6667,
+   "L1_rank": 130,
+   "final_rank": 1,
+   "best_setting": "K1K3/fwd/KRY/off437|CA=ACAPAL|OP=VIG|BEAU",
+   "best_score": -373.8400881,
+   "true_row_score": -373.8400881,
+   "true_row_wrong_letters": 5,
+   "best_row_plaintext": "KANYSAILORSBELIEVEDTHATTHELIGHTHOUSEWEEPERCOULDPREDICTTHEMEATHERBYMATCHINGTHECOLOUROFTHEEVENINGSW"
+  },
+  "PLANT_06": {
+   "family": "C10b5",
+   "transposed": true,
+   "setting": "C10b5/primer92670|CA=KRY|OP=VIG|BEAU",
+   "true_L1": -271.6236,
+   "L1_rank": 1,
+   "final_rank": 2865,
+   "best_setting": "C26b5/primer6D9E7|CA=ACAKRY|OP=VARB",
+   "best_score": -451.4169648,
+   "true_row_score": -489.6929898,
+   "true_row_wrong_letters": 75,
+   "best_row_plaintext": "OALDASHMURDIDLESTATYEARCESOFWEARHEFOCULLANCODCATHWETINEARONCHSPEETRASREBYSMSIPPREMIESAIDSERARGOVR"
+  },
+  "PLANT_07": {
+   "family": "C10b6",
+   "transposed": true,
+   "setting": "C10b6/primer551772|CA=ACAKRY|OP=VARB",
+   "true_L1": -274.3993,
+   "L1_rank": 4,
+   "final_rank": 63,
+   "best_setting": "C26b5/primerNJ6KC|CA=ACAPAL|OP=VIG|BEAU",
+   "best_score": -453.908565,
+   "true_row_score": -468.531076,
+   "true_row_wrong_letters": 93,
+   "best_row_plaintext": "NOWTOGODFEMPTIORITALESULFCHEDHISESEPTEROLTTRYSWINPOLDSOUTAPTOPRACHMERELIAVENUEFANENSBINCEMBEBUDAU"
+  },
+  "PLANT_08": {
+   "family": "C10b7",
+   "transposed": true,
+   "setting": "C10b7/primer8256758|CA=ACAPAL|OP=VIG|BEAU",
+   "true_L1": -271.728,
+   "L1_rank": 1,
+   "final_rank": 29,
+   "best_setting": "C10b6/primer635646|CA=ACAPAL|OP=VARB",
+   "best_score": -454.8805816,
+   "true_row_score": -465.6762803,
+   "true_row_wrong_letters": 96,
+   "best_row_plaintext": "EEELANGUANDTORDFUNDSFORCLEMUNCUSOTHAMILELRWHOBEOVEDOEMBYNEXIMFRESPOUTHEELTEANCEAKINEUPSKELISRELEA"
+  },
+  "PLANT_09": {
+   "family": "C26b5",
+   "transposed": true,
+   "setting": "C26b5/primerMABI8|CA=KRY|OP=VARB",
+   "true_L1": -275.6167,
+   "L1_rank": 3,
+   "final_rank": 477,
+   "best_setting": "C10b7/primer8061983|CA=ACAPAL|OP=VIG|BEAU",
+   "best_score": -452.3258631,
+   "true_row_score": -477.7491689,
+   "true_row_wrong_letters": 79,
+   "best_row_plaintext": "YHUHAPARTEEWHADDRISHEDIALSTATTIBRANBUTHONENINDTOSENGGHHAMESSRUCKSYNCHARTALNOWHYMARSDIVEBANPRESHYK"
+  },
+  "PLANT_10": {
+   "family": "CARTER",
+   "transposed": true,
+   "setting": "CARTER/rev/KRY/off144312|CA=KRY|OP=VIG|BEAU",
+   "true_L1": -272.9428,
+   "L1_rank": 2,
+   "final_rank": 110,
+   "best_setting": "C10b6/primer249555|CA=AZ|OP=VARB",
+   "best_score": -454.9567301,
+   "true_row_score": -470.5662985,
+   "true_row_wrong_letters": 88,
+   "best_row_plaintext": "RFIREBATTSASLIKESTILLJUDGESOUZUNVENMEACHANINSUSESTTHELDAELFANNFSKINTWOALEOFARIKELYMPHSHASOVADOTAP"
+  },
+  "PLANT_11": {
+   "family": "K1K3",
+   "transposed": true,
+   "setting": "K1K3/rev/AZ/off542|CA=KRY|OP=VIG|BEAU",
+   "true_L1": -269.7958,
+   "L1_rank": 2,
+   "final_rank": 278,
+   "best_setting": "C10b7/primer5179988|CA=ACAKRY|OP=VARB",
+   "best_score": -444.6547871,
+   "true_row_score": -473.7641046,
+   "true_row_wrong_letters": 97,
+   "best_row_plaintext": "AINTOPARTYPREASNISWHENETWASIESISTHAGUIESSUMASOLDEXFORMEDITEAPARRYDHALOEWWIGOTSOFANDIMISHOCYBEASTL"
+  }
+ },
+ "nulls": {
+  "NULL_00": {
+   "best_score": -454.0727587,
+   "best_setting": "C10b6/primer642594|CA=ACAKRY|OP=VIG|BEAU",
+   "max_L1": -273.5997834,
+   "settings": 337634136
+  },
+  "NULL_01": {
+   "best_score": -451.5528021,
+   "best_setting": "C10b7/primer5652726|CA=ACAPAL|OP=VIG|BEAU",
+   "max_L1": -275.2860711,
+   "settings": 337634136
+  },
+  "NULL_02": {
+   "best_score": -456.1688786,
+   "best_setting": "CARTER/rev/KRY/off8853|CA=KRY|OP=VARB",
+   "max_L1": -272.6783192,
+   "settings": 337634136
+  },
+  "NULL_03": {
+   "best_score": -450.2192376,
+   "best_setting": "C10b7/primer2379127|CA=PALP|OP=VARB",
+   "max_L1": -274.4915688,
+   "settings": 337634136
+  }
+ },
+ "k4": {
+  "settings": 337634136,
+  "max_L1": -275.0829946,
+  "best_score": -454.7549858,
+  "forward_check": "top 20 rows re-encrypt exactly to K4",
+  "top20": [
+   {
+    "setting": "C10b7/primer5948649|CA=ACAKRY|OP=VARB",
+    "score": -454.7549858,
+    "L1": -282.39252,
+    "clue_matches": 1,
+    "plaintext": "NPRINHIHIRENGOFBINGOVEDFPLANBEATUANCEPOOKLYMARKALRATLYTSPREPESBEAWALKAASSETOWNASCERSBUTTHRTHINTHY"
+   },
+   {
+    "setting": "C10b7/primer8864277|CA=ACAABS|OP=VIG|BEAU",
+    "score": -454.9699528,
+    "L1": -278.6848465,
+    "clue_matches": 4,
+    "plaintext": "LERTRYSISHEARMOFTHONYMIGREERTHOULARANDWAKMWAROUBEEHRSANEDENCAANDMUCHATILCOMPUNRSHIRBADNIGLERERTIG"
+   },
+   {
+    "setting": "C26b5/primerMFF3I|CA=ACAABS|OP=VARB",
+    "score": -457.2300358,
+    "L1": -283.709562,
+    "clue_matches": 2,
+    "plaintext": "UNDCAFENSHEEEENMUSATEROSSWEILINDBADCOLEJUMPMAYNOPARKINDSHERYGERMIRCEVIEIMDISSAOFHAVERSTITUALONGAB"
+   },
+   {
+    "setting": "C26b5/primer4BBN8|CA=ACAABS|OP=VIG|BEAU",
+    "score": -457.3836079,
+    "L1": -283.709562,
+    "clue_matches": 4,
+    "plaintext": "YNDLOSENTHEEEENCYTOBERITTWEAKANDJODLIKEMYCFCOUNIFORGANDTHERUPERCARLEVAEACDATTOISHOVERTBABYOKINPOJ"
+   },
+   {
+    "setting": "C26b5/primer7F745|CA=ACAPAL|OP=VIG|BEAU",
+    "score": -457.8957922,
+    "L1": -279.3976644,
+    "clue_matches": 2,
+    "plaintext": "WVINEUTINCHTHEDRUSABUTTASOFAGWHENEALTMAYHEHTTASPAPALLOWPAIDITURNABASNISONERABBCSRCKOFINTEREEODONO"
+   },
+   {
+    "setting": "C26b5/primerJBJML|CA=ACAPAL|OP=VARB",
+    "score": -459.0827889,
+    "L1": -279.3976644,
+    "clue_matches": 1,
+    "plaintext": "NVICEPTICUSTSELDPROMPTTORAGOWNSECEOFTHOBSESTTORYOYOFFANYOILITPDCOMORCIRACEDOMMURDUKAGICTEDEEALACA"
+   },
+   {
+    "setting": "C10b7/primer5267955|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -459.7375309,
+    "L1": -278.4649767,
+    "clue_matches": 0,
+    "plaintext": "TOAPATRESTERYNTSPRSOUTCHOFSPRENLONGNEWYSENSOFINDITWILVERSITOEXPIMPYOFBATHLANKMARNDEPROLLATTTNEXTR"
+   },
+   {
+    "setting": "C10b7/primer1279120|CA=ACAABS|OP=VIG|BEAU",
+    "score": -461.1360593,
+    "L1": -284.0009737,
+    "clue_matches": 1,
+    "plaintext": "HRSITSUNTERFROSOMASSFUCIHBBYJOINGATEOLDANDDARKSICALPRASSLOOKEAROURIALENCWTFIFTIMANYPEYTHEBARYSTBE"
+   },
+   {
+    "setting": "C26b5/primerD0HNO|CA=AZ|OP=VIG|BEAU",
+    "score": -461.1993034,
+    "L1": -284.0156271,
+    "clue_matches": 0,
+    "plaintext": "EETHIENLGIANSBOUHANYOUEPLAYBYSTHERNAMTOFOREARTENOWDSHUTKEEBELOSIDINTJOCADBERYENVILLSTLOFFORICMAGN"
+   },
+   {
+    "setting": "C26b5/primer6EJB1|CA=ACAABS|OP=VARB",
+    "score": -461.8846278,
+    "L1": -280.8452569,
+    "clue_matches": 1,
+    "plaintext": "CTWISHEDAYSPENICOFCBYTHISCETTALOYDGKIEINTWIMUMYOUTLLWARENTEDINHUGEDASAVARSTATEHEACORNALCNNIEHOPOE"
+   },
+   {
+    "setting": "C26b5/primerKNDP4|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -461.9207673,
+    "L1": -282.767439,
+    "clue_matches": 1,
+    "plaintext": "QBTASTEDTONTIPRANDDUPONGTVATISFLOWARDBYTOOSEESCHPOPUTORNCANARGERINCRCHINESIBGDDOOMANSTIARACKRBELM"
+   },
+   {
+    "setting": "C26b5/primer63D1M|CA=ACAKRY|OP=VARB",
+    "score": -462.1178846,
+    "L1": -282.767439,
+    "clue_matches": 1,
+    "plaintext": "JUTASTEDTONTIGRANDDYGONMTVATISBLOWARDUPTOOSEESCHGOGYTORNCANARMERINCRCHINESIUMDDOOFANSTIARACKRUELF"
+   },
+   {
+    "setting": "C26b5/primer798G0|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -462.3094821,
+    "L1": -283.9053454,
+    "clue_matches": 2,
+    "plaintext": "OTGHTLYMAICKPRENJURYADISCHOLOGANDNASBRUDFLAWSATYDOAVELECANDBEVEESEDLINSHONIALTHEDEABASITISISTCKPE"
+   },
+   {
+    "setting": "C26b5/primerJHIA0|CA=ACAKRY|OP=VARB",
+    "score": -462.3094821,
+    "L1": -283.9053454,
+    "clue_matches": 2,
+    "plaintext": "OTGHTLYMAICKPRENJURYADISCHOLOGANDNASBRUDFLAWSATYDOAVELECANDBEVEESEDLINSHONIALTHEDEABASITISISTCKPE"
+   },
+   {
+    "setting": "C10b7/primer2921427|CA=KRY|OP=VIG|BEAU",
+    "score": -462.910079,
+    "L1": -281.6527221,
+    "clue_matches": 3,
+    "plaintext": "OECKBOBYTHWHECORDHOUSFLAWARSMAIASOUNBURYPBUSHBWELONDAIRITEWITTOASEASETMONENTINALURFORDCLINCROADUA"
+   },
+   {
+    "setting": "C10b6/primer293708|CA=PALP|OP=VARB",
+    "score": -462.9721067,
+    "L1": -279.8619994,
+    "clue_matches": 1,
+    "plaintext": "RLBSTHARDTWEENANOMMLAMESHRIGHLLTODAMINTPLAYNDIFYAPOTTOTEDWHELEFTHPINEPHEGRYLOCKSEROCERASTAUSEBOOT"
+   },
+   {
+    "setting": "C26b5/primer39PK8|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -462.9758191,
+    "L1": -282.4392098,
+    "clue_matches": 3,
+    "plaintext": "HOHEKINGSTFTERYSESNOTITISPOPINAINITILTAROCCUNUPORMMANCLUDBOBUCKOFTLANTCHVALOWSANEASOLDEDSREBENOWC"
+   },
+   {
+    "setting": "CARTER/rev/KRY/off247093|CA=KRY|OP=VIG|BEAU",
+    "score": -463.7076273,
+    "L1": -278.5815984,
+    "clue_matches": 6,
+    "plaintext": "SSTOFINIFOACCESKBECKWHOBUNDTOWNONSSTOUSEDSENGETTYLERUNTGOVOLONSBARCISCAORIONPLYMODIMSCCALALTHOOLU"
+   },
+   {
+    "setting": "C26b5/primerG7C47|CA=PALP|OP=VARB",
+    "score": -463.7886715,
+    "L1": -281.1658887,
+    "clue_matches": 2,
+    "plaintext": "APEREYWARDOHISHEKEDETHEBREDERESPOSOPEECLEDAYSECOVESCRMAIRLLPIORFUNINGETOFKMDBMCTRISVERBYSUNSATINS"
+   },
+   {
+    "setting": "C26b5/primerN0479|CA=ACAABS|OP=VIG|BEAU",
+    "score": -463.860981,
+    "L1": -280.0600025,
+    "clue_matches": 0,
+    "plaintext": "OOKSNORTIREUPHISDHEAGAMCSPRARIONTILDAYMDGOTHESJOHNMUATERMIGHAHINFEEWISTUPPORALANDEUREFORCHOARDWRM"
+   }
+  ]
+ },
+ "whole_family": {
+  "K4": {
+   "settings": 337634136,
+   "consistent": 0,
+   "min_V": 6,
+   "min_settings": [
+    "CARTER/fwd/AZ/off123140|CA=KRY|OP=VIG|BEAU"
+   ]
+  },
+  "NULL_00": {
+   "settings": 337634136,
+   "consistent": 0,
+   "min_V": 8,
+   "min_settings": [
+    "C10b6/primer523717|CA=ACAPAL|OP=VIG|BEAU",
+    "C10b7/primer2530603|CA=KRY|OP=VARB",
+    "C10b7/primer4190427|CA=KRY|OP=VIG|BEAU",
+    "C10b7/primer5040817|CA=KRY|OP=VARB",
+    "C10b7/primer5680244|CA=ACAABS|OP=VARB",
+    "C10b7/primer5989139|CA=KRY|OP=VARB",
+    "C26b5/primer6KDMN|CA=ABSP|OP=VIG|BEAU",
+    "C26b5/primerAKLJK|CA=KRY|OP=VIG|BEAU",
+    "C26b5/primerBAFBB|CA=AZ|OP=VIG|BEAU",
+    "C26b5/primerCCB7G|CA=ACAKRY|OP=VARB",
+    "C26b5/primerD6C5B|CA=ACAABS|OP=VIG|BEAU",
+    "C26b5/primerDKELF|CA=ACAABS|OP=VARB",
+    "C26b5/primerEEFJA|CA=ACAKRY|OP=VIG|BEAU",
+    "C26b5/primerFGBFF|CA=AZ|OP=VARB",
+    "C26b5/primerG6576|CA=KRY|OP=VARB",
+    "C26b5/primerK6D43|CA=ABSP|OP=VARB",
+    "CARTER/fwd/AZ/off45407|CA=ACAPAL|OP=VIG|BEAU",
+    "CARTER/fwd/KRY/off66916|CA=ACAABS|OP=VARB",
+    "CARTER/rev/KRY/off33393|CA=KRY|OP=VARB"
+   ]
+  },
+  "NULL_01": {
+   "settings": 337634136,
+   "consistent": 0,
+   "min_V": 7,
+   "min_settings": [
+    "C26b5/primer1AHNH|CA=PALP|OP=VIG|BEAU",
+    "C26b5/primerPG939|CA=PALP|OP=VARB"
+   ]
+  },
+  "NULL_02": {
+   "settings": 337634136,
+   "consistent": 0,
+   "min_V": 7,
+   "min_settings": [
+    "C10b7/primer4717588|CA=ACAABS|OP=VIG|BEAU",
+    "C10b7/primer6393522|CA=ACAABS|OP=VARB",
+    "C26b5/primer1CP3H|CA=PALP|OP=VARB",
+    "C26b5/primer55EHD|CA=AZ|OP=VIG|BEAU",
+    "C26b5/primerBL1GP|CA=ACAABS|OP=VIG|BEAU",
+    "C26b5/primerF5PA1|CA=ACAABS|OP=VARB",
+    "C26b5/primerLLC9D|CA=AZ|OP=VARB",
+    "C26b5/primerPE1N9|CA=PALP|OP=VIG|BEAU"
+   ]
+  },
+  "NULL_03": {
+   "settings": 337634136,
+   "consistent": 0,
+   "min_V": 7,
+   "min_settings": [
+    "C10b7/primer9500087|CA=ACAABS|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_00": {
+   "settings": 337634136,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer84663|CA=KRY|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_01": {
+   "settings": 337634136,
+   "consistent": 2,
+   "min_V": 0,
+   "min_settings": [
+    "C10b6/primer277359|CA=ACAPAL|OP=VIG|BEAU",
+    "C10b6/primer833751|CA=ACAPAL|OP=VARB"
+   ]
+  },
+  "PLANT_02": {
+   "settings": 337634136,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b7/primer6274471|CA=PALP|OP=VARB"
+   ]
+  },
+  "PLANT_03": {
+   "settings": 337634136,
+   "consistent": 2,
+   "min_V": 0,
+   "min_settings": [
+    "C26b5/primer20C51|CA=AZ|OP=VIG|BEAU",
+    "C26b5/primerO0ELP|CA=AZ|OP=VARB"
+   ]
+  },
+  "PLANT_04": {
+   "settings": 337634136,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "CARTER/rev/KRY/off60964|CA=ACAABS|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_05": {
+   "settings": 337634136,
+   "consistent": 3,
+   "min_V": 0,
+   "min_settings": [
+    "CARTER/fwd/KRY/off138798|CA=ACAPAL|OP=VIG|BEAU",
+    "K1K3/fwd/KRY/off437|CA=ACAPAL|OP=VIG|BEAU",
+    "K1K3/fwd/KRY/off773|CA=ACAPAL|OP=VIG|BEAU"
+   ]
+  }
+ },
+ "decision": {
+  "gate_in_place_plants_rank1": "6/6",
+  "gate_transposed_plants_in_top5000": "6/6",
+  "gate_whole_family_plants_true_setting_consistent": "6/6",
+  "gate_passed": true,
+  "score_threshold": -425.4142,
+  "null_best": -450.2192376,
+  "plant_true_min": -400.6091034,
+  "k4_best_score": -454.7549858,
+  "k4_top20_clue_matches_max": 6,
+  "k4_candidate": false,
+  "k4_whole_family_consistent": 0,
+  "k4_max_L1": -275.0829946,
+  "null_max_L1": -272.6783192,
+  "transposed_plant_true_L1_min": -275.6167
+ }
+}
