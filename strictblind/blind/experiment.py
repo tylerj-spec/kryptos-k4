@@ -90,6 +90,7 @@ def main():
         assert all(p.wait() == 0 for p in procs), run["tag"]
         print(f"{run['tag']}: top {merge(out, run['tag'])} ({time.time() - t0:.0f} s)", flush=True)
     frozen = [p for p in sorted(out.glob("*.tsv"))] + [exp / r["ct"] for r in man["runs"]] + [exp / "manifest.json"]
+    frozen += [HERE / "scan.cpp", HERE / "experiment.py", QUAD, exe]
     frozen += [exp / r["routes"] for r in man["runs"]] + [exp / r["key"][1] for r in man["runs"] if r["key"][0] == "TEXT"]
     lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {os.path.relpath(p.resolve(), exp)}" for p in dict.fromkeys(frozen)]
     (exp / "FROZEN.sha256").write_text("\n".join(lines) + "\n")
