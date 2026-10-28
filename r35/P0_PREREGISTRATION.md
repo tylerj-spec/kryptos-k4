@@ -5,7 +5,7 @@ Historical basis: K1–K3 plaintext is part of the same installation; K3 uses co
 
 ## Exact family
 
-- Input: original public K4 ciphertext, 97 characters, byte-for-byte SHA256 `2797de1451ab97118211735dcef370fc7ab9c840e60d7cc3ba7` (if this example SHA is wrong, abort; the actual authoritative SHA is listed in R34 E1's freeze).
+- Input: original public K4 ciphertext, 97 characters, byte-for-byte SHA256 `2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3`.
 - Route: `strictblind/blind/routes.py rot-mixed 4 28`, 5,000 route-orders (625 width pairs x 2 opposite direction assignments x forward/inverse x 2 operation orders).
 - Key: `k4kit/data/k1k3_plaintext.txt`, every contiguous 97-letter window, forward and reverse, with A–Z or KRYPTOS letter numbering. This text is the actual K1–K3 decrypted text, not K4 clues.
 - Alphabet/cipher convention: 12 fixed choices (plaintext alphabet A–Z / KRYPTOS, ciphertext alphabet A–Z / KRYPTOS, Vigenère / Beaufort / variant Beaufort).
