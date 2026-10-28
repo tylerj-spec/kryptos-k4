@@ -26,7 +26,9 @@ const char *OPN[3] = {"VIG", "BEAU", "VARB"};
 struct Hit { double s; string setting, plain; };
 struct Cmp { bool operator()(const Hit &a, const Hit &b) const { return a.s != b.s ? a.s > b.s : a.setting < b.setting; } };
 string letters(const string &f) { ifstream in(f, ios::binary); if (!in) throw runtime_error("no file " + f);
-  string s((istreambuf_iterator<char>(in)), {}); s.erase(remove_if(s.begin(), s.end(), [](char c) { return c < 'A' || c > 'Z'; }), s.end()); return s; }
+  string s((istreambuf_iterator<char>(in)), {});
+  for (char &c : s) if (c >= 'a' && c <= 'z') c = char(c - 'a' + 'A');
+  s.erase(remove_if(s.begin(), s.end(), [](char c) { return c < 'A' || c > 'Z'; }), s.end()); return s; }
 int main(int argc, char **argv) {
   try {
     if (argc != 11) throw runtime_error("usage: scan TEXT|CHAIN FILE|B LABEL CT QUAD ROUTES LO HI OUT_TOP OUT_ROUTES");
