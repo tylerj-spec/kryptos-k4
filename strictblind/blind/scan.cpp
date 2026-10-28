@@ -8,7 +8,8 @@
 // Keys: TEXT <file> = every 97-letter window of the text, forward and reversed, key letters numbered AZ or KRYPTOS;
 //       CHAIN <b>   = b-digit chain addition k_i = k_{i-b} + k_{i-b+1} mod 10, all 10^b primers.
 //       CHAINBASE <base>,<b> = the same recurrence modulo a declared base 2..26, base^b primers.
-//       CHAINALPH <base>,<b> = the same stream with two additional keyed alphabets, PALIMPSEST and ABSCISSA.
+//       CHAINALPH <base>,<b> = same stream with keyword-prefixed PALIMPSEST and ABSCISSA alphabets.
+//       CHAINACA <base>,<b>  = ACA Gromark columnar transposition alphabets, a different fixed family.
 // Build: g++ -std=c++17 -O3 -march=native scan.cpp -o scan
 // Usage: scan TEXT|CHAIN FILE|B LABEL CT.txt QUAD.f32 ROUTES.txt LO HI OUT_TOP.tsv OUT_ROUTES.tsv
 #include <algorithm>
@@ -65,7 +66,7 @@ int main(int argc, char **argv) {
     if (kind == "TEXT") {
       src = letters(karg);
       if (src.size() < (size_t)N) throw runtime_error("text too short");
-    } else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH") {
+    } else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") {
       if (kind == "CHAIN") b = stoi(karg);
       else {
         size_t sep = karg.find(',');
@@ -75,12 +76,15 @@ int main(int argc, char **argv) {
       if (b < 2 || b > 8 || base < 2 || base > 26) throw runtime_error("base 2..26, chain length 2..8");
       for (int i = 0; i < b; i++) {
         lim *= base;
-        if ((kind == "CHAINBASE" || kind == "CHAINALPH") && lim > 20000000) throw runtime_error("CHAINBASE primer cap 20 million");
+        if ((kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") && lim > 20000000) throw runtime_error("CHAINBASE primer cap 20 million");
       }
     } else throw runtime_error("key kind");
-    const string AL[4] = {AZ, KRY, "PALIMSETBCDFGHJKNOQRUVWXYZ", "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
+    const string AL[4] = {AZ,
+                          kind == "CHAINACA" ? "KAHUOFNPDLXRBIVSGQTEMZYCJW" : KRY,
+                          kind == "CHAINACA" ? "ACOZEJWIFRLDQMGUPBNYSHVTKX" : "PALIMSETBCDFGHJKNOQRUVWXYZ",
+                          kind == "CHAINACA" ? "ADJOUZBEKPVCGMRXIHNTYSFLQW" : "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
     const string AN[4] = {"AZ", "KRY", "PAL", "ABS"};
-    const int A = kind == "CHAINALPH" ? 4 : 2;
+    const int A = (kind == "CHAINALPH" || kind == "CHAINACA") ? 4 : 2;
     int cmap[4][26], pmap[4][26];
     for (int h = 0; h < A; h++) {
       if (AL[h].size() != 26) throw runtime_error("alphabet length");

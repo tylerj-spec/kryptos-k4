@@ -57,7 +57,7 @@ def main():
     if type(workers) is not int or not (1 <= workers <= 64):
         raise ValueError("workers must be integer 1..64")
     for run in man["runs"]:
-        if run["key"][0] not in ("TEXT", "CHAIN", "CHAINBASE", "CHAINALPH"):
+        if run["key"][0] not in ("TEXT", "CHAIN", "CHAINBASE", "CHAINALPH", "CHAINACA"):
             raise ValueError("unsupported key type")
         for name in ("ct", "routes"):
             p = (exp / run[name]).resolve()

@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ALPHABETS, CLUES, K4, check_frozen, encrypt, letters, make_key, read_routes  # noqa: E402
+from common import ALPHABETS, ALPHABETS_ACA, CLUES, K4, check_frozen, encrypt, letters, make_key, read_routes  # noqa: E402
 
 exp = Path(sys.argv[1]).resolve()
 check_frozen(exp)
@@ -22,10 +22,11 @@ for run in man["runs"]:
     kind, arg = run["key"]
     karg = str(exp / arg) if kind == "TEXT" else str(arg)
     rows = list(csv.DictReader(open(exp / "out" / f"{run['tag']}.tsv"), delimiter="\t"))
+    alph = ALPHABETS_ACA if kind == "CHAINACA" else ALPHABETS
     for r in rows:
         _, name, order, spec, pa, ca, op = r["setting"].split("|")
         enc = encrypt(r["plaintext"], R[name, order], order, make_key(kind, karg, spec),
-                      ALPHABETS[pa[3:]], ALPHABETS[ca[3:]], op[3:])
+                      alph[pa[3:]], alph[ca[3:]], op[3:])
         assert enc == ct, (run["tag"], r["rank"])
     entry = {"tag": run["tag"], "rows": len(rows), "forward_check": "every row re-encrypts to its ciphertext",
              "top_score": float(rows[0]["score"]), "top_plaintext": rows[0]["plaintext"]}
