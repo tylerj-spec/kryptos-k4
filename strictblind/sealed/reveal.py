@@ -33,13 +33,16 @@ for run in man["runs"]:
         m = [sum(r["plaintext"][i] == c for i, c in CLUES.items()) for r in rows]
         entry.update({"kind": "K4", "clue_matches_max": max(m), "rows_with_all_24": sum(x == 24 for x in m),
                       "clue_matches_top10": m[:10]})
-    else:
+    elif run["tag"] in truth:
         t = truth[run["tag"]]
         rank = next((int(r["rank"]) for r in rows if r["plaintext"] == t["plaintext"]), None)
         entry.update({"kind": "PLANT", "truth_rank": rank, "planted_setting": {k: t[k] for k in ("route", "order", "key", "PA", "CA", "OP")}})
+    else:
+        entry.update({"kind": "NULL", "description": "non-K4 ciphertext with no planted truth"})
     report.append(entry)
 (exp / "REVEAL.json").write_text(json.dumps(report, indent=1) + "\n")
 for e in report:
     tail = (f"truth rank {e['truth_rank']}" if e["kind"] == "PLANT" else
-            f"clue matches max {e['clue_matches_max']}/24, rows with all 24: {e['rows_with_all_24']}")
+            f"clue matches max {e['clue_matches_max']}/24, rows with all 24: {e['rows_with_all_24']}" if e["kind"] == "K4"
+            else "null control")
     print(f"{e['tag']:24s} top {e['top_score']:9.2f}  {tail}")
