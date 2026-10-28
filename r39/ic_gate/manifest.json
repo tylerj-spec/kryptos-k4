@@ -1,0 +1,128 @@
+{
+  "runs": [
+    {
+      "tag": "K4",
+      "ct": "k4_ciphertext.txt"
+    },
+    {
+      "tag": "PLANT_00",
+      "ct": "PLANT_00_ct.txt"
+    },
+    {
+      "tag": "PLANT_01",
+      "ct": "PLANT_01_ct.txt"
+    },
+    {
+      "tag": "PLANT_02",
+      "ct": "PLANT_02_ct.txt"
+    },
+    {
+      "tag": "PLANT_03",
+      "ct": "PLANT_03_ct.txt"
+    },
+    {
+      "tag": "PLANT_04",
+      "ct": "PLANT_04_ct.txt"
+    },
+    {
+      "tag": "PLANT_05",
+      "ct": "PLANT_05_ct.txt"
+    },
+    {
+      "tag": "PLANT_06",
+      "ct": "PLANT_06_ct.txt"
+    },
+    {
+      "tag": "PLANT_07",
+      "ct": "PLANT_07_ct.txt"
+    },
+    {
+      "tag": "PLANT_08",
+      "ct": "PLANT_08_ct.txt"
+    },
+    {
+      "tag": "PLANT_09",
+      "ct": "PLANT_09_ct.txt"
+    },
+    {
+      "tag": "PLANT_10",
+      "ct": "PLANT_10_ct.txt"
+    },
+    {
+      "tag": "PLANT_11",
+      "ct": "PLANT_11_ct.txt"
+    },
+    {
+      "tag": "PLANT_12",
+      "ct": "PLANT_12_ct.txt"
+    },
+    {
+      "tag": "PLANT_13",
+      "ct": "PLANT_13_ct.txt"
+    },
+    {
+      "tag": "PLANT_14",
+      "ct": "PLANT_14_ct.txt"
+    },
+    {
+      "tag": "PLANT_15",
+      "ct": "PLANT_15_ct.txt"
+    },
+    {
+      "tag": "PLANT_16",
+      "ct": "PLANT_16_ct.txt"
+    },
+    {
+      "tag": "PLANT_17",
+      "ct": "PLANT_17_ct.txt"
+    },
+    {
+      "tag": "PLANT_18",
+      "ct": "PLANT_18_ct.txt"
+    },
+    {
+      "tag": "PLANT_19",
+      "ct": "PLANT_19_ct.txt"
+    },
+    {
+      "tag": "NULL_00",
+      "ct": "NULL_00_ct.txt"
+    },
+    {
+      "tag": "NULL_01",
+      "ct": "NULL_01_ct.txt"
+    },
+    {
+      "tag": "NULL_02",
+      "ct": "NULL_02_ct.txt"
+    },
+    {
+      "tag": "NULL_03",
+      "ct": "NULL_03_ct.txt"
+    },
+    {
+      "tag": "NULL_04",
+      "ct": "NULL_04_ct.txt"
+    },
+    {
+      "tag": "NULL_05",
+      "ct": "NULL_05_ct.txt"
+    },
+    {
+      "tag": "NULL_06",
+      "ct": "NULL_06_ct.txt"
+    },
+    {
+      "tag": "NULL_07",
+      "ct": "NULL_07_ct.txt"
+    },
+    {
+      "tag": "NULL_08",
+      "ct": "NULL_08_ct.txt"
+    },
+    {
+      "tag": "NULL_09",
+      "ct": "NULL_09_ct.txt"
+    }
+  ]
+}
