@@ -34,7 +34,7 @@ git add -f "$E/out/scan"
 git commit -m "R35 P0 blind outputs and immutable freeze [skip ci]"
 git push origin "HEAD:${GITHUB_REF_NAME}"
 echo "COMMITTED BLIND FREEZE BEFORE REVEAL"
-sha256sum -c "$E/FROZEN.sha256"
+(cd "$E" && sha256sum -c FROZEN.sha256)
 python3 -I strictblind/sealed/reveal.py "$E"
 python3 -I strictblind/sealed/whole_family.py "$E"
 python3 -I r35/sealed/summarize.py "$E"
