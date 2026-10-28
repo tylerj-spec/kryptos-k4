@@ -31,9 +31,12 @@ int main(int argc, char **argv) {
         vector<array<int, 2>> m; for (int t : pos) m.push_back({od == "ID" ? t : q[t], od == "T_then_S" ? q[t] : t});
         R.push_back(m); names.push_back(nm + "|" + od); }
       idx++; } }
-  const string AL[4] = {AZ, KRY, "PALIMSETBCDFGHJKNOQRUVWXYZ", "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
+  const string AL[4] = {AZ,
+                       kind == "CHAINACA" ? "KAHUOFNPDLXRBIVSGQTEMZYCJW" : KRY,
+                       kind == "CHAINACA" ? "ACOZEJWIFRLDQMGUPBNYSHVTKX" : "PALIMSETBCDFGHJKNOQRUVWXYZ",
+                       kind == "CHAINACA" ? "ADJOUZBEKPVCGMRXIHNTYSFLQW" : "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
   const string AN[4] = {"AZ", "KRY", "PAL", "ABS"};
-  const int A = kind == "CHAINALPH" ? 4 : 2;
+  const int A = (kind == "CHAINALPH" || kind == "CHAINACA") ? 4 : 2;
   int cm[4][26], pm[4][26];
   for (int h = 0; h < A; h++) {
     if (AL[h].size() != 26) throw runtime_error("alphabet length");
@@ -70,7 +73,7 @@ int main(int argc, char **argv) {
       for (int num = 0; num < 2; num++) { const string &al = num ? KRY : AZ; int p[26]; for (int i = 0; i < 26; i++) p[al[i] - 'A'] = i;
         for (size_t off = 0; off + N <= s.size(); off++) { for (int i = 0; i < N; i++) K[i] = p[s[off + i] - 'A'];
           run_key(string(dir ? "rev" : "fwd") + "/" + (num ? "KRY" : "AZ") + "/off" + to_string(off)); } } } }
-  else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH") {
+  else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") {
     int base = 10, b = 0;
     if (kind == "CHAIN") b = stoi(karg);
     else {
@@ -83,7 +86,7 @@ int main(int argc, char **argv) {
     long long lim = 1;
     for (int i = 0; i < b; i++) {
       lim *= base;
-      if ((kind == "CHAINBASE" || kind == "CHAINALPH") && lim > 20000000) throw runtime_error("primer limit");
+      if ((kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") && lim > 20000000) throw runtime_error("primer limit");
     }
     const string symbols = "0123456789ABCDEFGHIJKLMNOP";
     for (long long p = 0; p < lim; p++) {
