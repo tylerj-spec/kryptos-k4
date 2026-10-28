@@ -40,7 +40,11 @@ for run in man["runs"]:
                 best = (int(f[1]), f[2])
             elif f[0] == "FULL24":
                 full.append(f[1])
+    keys = 4 * (len(letters(karg)) - 97 + 1) if kind == "TEXT" else 10 ** int(arg)
+    expected = n * keys * 12
     tot = sum(hist)
+    if tot != expected:
+        raise RuntimeError(f"whole_family incomplete: {tot} settings, expected {expected}")
     res[run["tag"]] = {"settings": tot, "max": best[0], "best_setting": best[1], "full24": full, "histogram": hist,
                        "observed_ge": {m: sum(hist[m:]) for m in range(8, 13)},
                        "chance_ge": {m: round(tail(tot, m), 2) for m in range(8, 13)}}
