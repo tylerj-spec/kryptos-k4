@@ -14,7 +14,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "k4kit" / "tools"))
 sys.path.insert(0, str(ROOT / "r45" / "sealed"))
 sys.path.insert(0, str(ROOT / "r46" / "sealed"))
