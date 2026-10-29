@@ -26,6 +26,10 @@ jobs:
         run: bash strictblind/tests/run_all.sh
       - name: Compile prototype (no clues, masks or known K4 plaintext)
         run: g++ -std=c++17 -O3 -Wall -Wextra -Werror r43/blind/word_constraint_beam.cpp -o /tmp/r43_word
+      - name: Check modular graph's full bijection witnesses
+        run: |
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror r43/blind/test_graph.cpp -o /tmp/r43_graph_test
+          /tmp/r43_graph_test
       - name: Create independent D0 controls
         run: |
           python3 -I r43/sealed/make_d0.py
@@ -39,8 +43,11 @@ jobs:
           python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_low.jsonl r43/d0/sealed_truth.json r43/d0/LOW_REPORT.json
           /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_high.jsonl 384 512 18 > r43/d0/high_stdout.log 2> r43/d0/high_stderr.log
           python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_high.jsonl r43/d0/sealed_truth.json r43/d0/HIGH_REPORT.json
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_cycles.jsonl 384 512 18 3.258096538 > r43/d0/cycles_stdout.log 2> r43/d0/cycles_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_cycles.jsonl r43/d0/sealed_truth.json r43/d0/CYCLES_REPORT.json
           cat r43/d0/low_stderr.log
           cat r43/d0/high_stderr.log
+          cat r43/d0/cycles_stderr.log
       - name: Preserve honest results, including failure
         uses: actions/upload-artifact@v4
         if: always()
