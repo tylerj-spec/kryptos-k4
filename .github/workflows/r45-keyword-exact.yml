@@ -1,0 +1,64 @@
+name: R45 exact postfreeze Gromark keyword-alphabet feasibility
+
+on:
+  push:
+    branches:
+      - "chatgpt/r45-keyword-alphabet-exact-feasibility"
+    paths:
+      - ".github/workflows/r45-keyword-exact.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  exact-family-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Preserve existing strictblind and R44 contract regressions
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+      - name: Assert pre-registered SHA256 before running K4 postfreeze audit
+        run: |
+          sha256sum -c r45/PROTOCOL.sha256
+          sha256sum r39/ic_gate/k4_ciphertext.txt
+          test ! -e r45/R45_EXACT_RESULT.json
+      - name: Evaluate all 100000 Gromark primers under both keyword orientations and signs
+        run: |
+          python3 -I r45/sealed/keyword_exact.py r45/R45_EXACT_RESULT.json
+          python3 - <<'PY'
+          import json
+          v = json.load(open("r45/R45_EXACT_RESULT.json"))
+          assert v["primers_exhaustively_checked"] == 100000
+          assert v["keyword_word_count"] == 5000
+          assert v["distinct_keyword_alphabets"] == 4749
+          assert v["K4"]["free_both_primer_count"] == 39
+          assert v["controls"]["prior_R44b_keyword_PA_controls"] == 20
+          assert v["controls"]["new_keyword_CA_mirror_controls"] == 20
+          assert len(v["nulls"]) == 4
+          print("R45:", v["classification"])
+          print("K4 matching keyword PA", v["K4"]["keyword_PA_matches"])
+          print("K4 matching keyword CA", v["K4"]["keyword_CA_matches"])
+          print("K4 settings total", len(v["K4"]["all_settings"]))
+          PY
+      - name: Freeze exact (crib-assisted, non-decryption) outputs to separate review branch
+        run: |
+          sha256sum r45/PREREGISTRATION.md r45/sealed/keyword_exact.py r45/R45_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r45/R45_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r45/R45_EXACT_RESULT.json r45/R45_RESULT.sha256
+          git commit -m "R45: exact full-family keyword feasibility results [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r45-keyword-alphabet-exact-feasibility
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r45-exact-postfreeze-report
+          path: |
+            r45/R45_EXACT_RESULT.json
+            r45/R45_RESULT.sha256
+          retention-days: 90
