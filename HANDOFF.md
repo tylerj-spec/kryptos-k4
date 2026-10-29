@@ -1,23 +1,32 @@
 # Kryptos K4: R40–R42 handoff (Claude Code, 28–29 Oct 2026). Earlier briefs: R34 in git history; ChatGPT's in `r33/`–`r39/`.
 
-## Start here (state at hand-off)
+## Start here (state at hand-off, 29 Oct 2026, R44b)
 - **No verified K4 solution. Nothing submitted to any external checker.**
-- **Branch:** `claude/kryptos-k4-refinement-n8pbh3` (the last research commit is 71e85ee; this handoff follows it); `main` is unchanged.
-- **PRs:**
-  - **#8 (open draft, CI green):** merges ChatGPT's R35–R39 (PRs #2–#6), the #10 test fix, my harness fixes, R34
-    E3, R40–R42, the PR #9 review and the L138 development notes. Merge it, then close #2–#6 and #10.
-  - **#9 (ChatGPT's R40G Gromark IC audit):** findings replayed and confirmed (L137), but it conflicts because its
-    files sit in `r40/`, which my R40 uses. Move them to `r40g/` before merging.
-- **Checks before any push:**
-  - `bash strictblind/tests/run_all.sh` (all pass; needs full git history);
-  - `bash verify_all.sh` (R32/R33 audit).
+- **Status on GitHub:**
+  - **`main`:** includes R35–R42, R40G (PR #9) and this handoff's earlier rounds.
+  - **PR #11 (ChatGPT R43, word-constraint beam; open, do not merge as a solver):** reviewed in
+    `r44/REVIEW_PR11.md`. The algebra is correct; the beam must be replaced. Reason: the true text closes almost
+    no checkable constraints in its first 30–40 letters.
+  - **PR #12 (Claude R44/R44b; draft, targets PR #11's branch):** review, audit and a new solver.
+- **New capability (L140):** a blind solver for **keyword plaintext alphabet × completely free cipher alphabet**,
+  with the true key given.
+  - **Pre-registered fresh holdout:** **20/20 exact** (bar 16), 0 invalid witnesses.
+  - **Code:** `r44/blind/kwpa_solve.cpp` (enumerates 4,749 keyword alphabets and anneals the cipher alphabet), then
+    `r44/blind/polish.cpp` (word-score polish).
+  - **Not covered:** two *uniformly random* alphabets are still unsolved (L138, L139).
+- **Most promising next step: a pre-registered K4 round with this solver.**
+  - **Key shortlist:** the key is unknown, so start from one, e.g. R39's frozen IC-ranked Gromark primers (top
+    100–1,000). Add K1–K3 running-key windows if the budget allows.
+  - **Settings:** both operation forms (Vigenère; Beaufort ≡ variant Beaufort); also the mirror case (keyword
+    cipher alphabet × free plaintext alphabet, solved R40-style).
+  - **Controls:** shuffled-K4 nulls and plants.
+  - **Order:** freeze the blind output before looking at EASTNORTHEAST or BERLINCLOCK.
+  - **Cost:** about 4,749 keywords × 2 forms × 75 ms per key; 100 keys ≈ 5 h on 4 cores.
+- **Checks before any push:** `bash strictblind/tests/run_all.sh`, `bash verify_all.sh`,
+  `python3 -I r44/tests/test_contract.py`.
 - **Rules:** `k4kit/CLAUDE.md`.
-  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text, run untrusted
-    packets with `python3 -I`.
-  - Never `git stash` while a background job writes tracked files.
-- **Ledger:** this session added L124 and L131–L138.
-- **Most promising next step:** a two-free-alphabet solver that scores with **words** and searches with
-  **word-level moves** (L138). Gate it on planted messages before K4.
+  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text.
+  - Never `git stash` while jobs write tracked files.
 
 ## What this round means (plain words)
 - **ChatGPT's R35–R39 checks out.**
