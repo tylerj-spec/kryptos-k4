@@ -1,5 +1,6 @@
 // Independent internal sanity tests for the blind mathematical graph, no K4 text or hints.
 // Renames the CLI main so that the exact production EdgeGraph is tested.
+#include <random>
 #define main r43_cli_main
 #include "word_constraint_beam.cpp"
 #undef main
