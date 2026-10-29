@@ -30,12 +30,17 @@ jobs:
         run: |
           python3 -I r43/sealed/make_d0.py
           head -n 3 r43/d0/blind.tsv > r43/d0/smoke.tsv
-      - name: Execute first two D0 cases at deliberately bounded beam budget
+      - name: Measure lexical coverage (sealed diagnostic only)
+        run: python3 -I r43/sealed/coverage.py r43/d0/sealed_truth.json k4kit/data/word_model_orth.tsv
+      - name: Compare small and larger two-control word-beam budgets
         timeout-minutes: 15
         run: |
-          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_outputs.jsonl 64 64 14 > r43/d0/solver_stdout.log 2> r43/d0/solver_stderr.log
-          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_outputs.jsonl r43/d0/sealed_truth.json r43/d0/SMOKE_REPORT.json
-          cat r43/d0/solver_stderr.log
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_low.jsonl 64 64 14 > r43/d0/low_stdout.log 2> r43/d0/low_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_low.jsonl r43/d0/sealed_truth.json r43/d0/LOW_REPORT.json
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_high.jsonl 384 512 18 > r43/d0/high_stdout.log 2> r43/d0/high_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_high.jsonl r43/d0/sealed_truth.json r43/d0/HIGH_REPORT.json
+          cat r43/d0/low_stderr.log
+          cat r43/d0/high_stderr.log
       - name: Preserve honest results, including failure
         uses: actions/upload-artifact@v4
         if: always()
