@@ -51,3 +51,7 @@ Under H-KW, can 97-letter English plaintext be recovered **exactly** with no pla
   run by itself. A K4 use needs its own pre-registration with a key search, a cost plan and nulls.
 - **Not covered:** two uniformly random alphabets (R43's D0 bar) are outside H-KW; no method here solves them (L138,
   R44 notes).
+
+## Amendment 1 (29 Oct 2026, before any holdout ciphertext existed or the solver ran on it)
+The generator's own guard rejected passage 2 because "CLOCKMAKER" contains the K4 clue word CLOCK. "clockmaker" was
+replaced by "watchmaker"; nothing else changed. No holdout file had been written. PROTOCOL.sha256 was re-hashed.

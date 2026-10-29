@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 AZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 PASSAGES = [
     "On the first cold morning of winter the shepherd led his flock down from the hills and counted every animal twice before closing the gate.",
-    "The old clockmaker kept a drawer full of tiny brass wheels and he could tell from the sound of a ticking watch exactly which part was worn.",
+    "The old watchmaker kept a drawer full of tiny brass wheels and he could tell from the sound of a ticking watch exactly which part was worn.",
     "Our neighbors planted sunflowers along the fence and by the end of summer the flowers were taller than the roof of their small garden shed.",
     "When the ferry reached the island the passengers carried their bags along a stone pier and searched for the road that led up to the village.",
     "My sister learned to play the violin in an empty church because the walls made every note sound larger and more beautiful than at home.",
