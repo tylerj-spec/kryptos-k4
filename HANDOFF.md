@@ -1,23 +1,34 @@
 # Kryptos K4: R40–R42 handoff (Claude Code, 28–29 Oct 2026). Earlier briefs: R34 in git history; ChatGPT's in `r33/`–`r39/`.
 
-## Start here (state at hand-off)
+## Start here (state at hand-off, 29 Oct 2026, R44b)
 - **No verified K4 solution. Nothing submitted to any external checker.**
-- **Branch:** `claude/kryptos-k4-refinement-n8pbh3` (the last research commit is 71e85ee; this handoff follows it); `main` is unchanged.
-- **PRs:**
-  - **#8 (open draft, CI green):** merges ChatGPT's R35–R39 (PRs #2–#6), the #10 test fix, my harness fixes, R34
-    E3, R40–R42, the PR #9 review and the L138 development notes. Merge it, then close #2–#6 and #10.
-  - **#9 (ChatGPT's R40G Gromark IC audit):** findings replayed and confirmed (L137), but it conflicts because its
-    files sit in `r40/`, which my R40 uses. Move them to `r40g/` before merging.
-- **Checks before any push:**
-  - `bash strictblind/tests/run_all.sh` (all pass; needs full git history);
-  - `bash verify_all.sh` (R32/R33 audit).
+- **Status on GitHub:**
+  - **`main`:** includes R35–R42, R40G (PR #9) and this handoff's earlier rounds.
+  - **PR #11 (ChatGPT R43, word-constraint beam; open, do not merge as a solver):** reviewed in
+    `r44/REVIEW_PR11.md`. The algebra is correct; the beam must be replaced. Reason: the true text closes almost
+    no checkable constraints in its first 30–40 letters.
+  - **PR #12 (Claude R44/R44b; draft, targets PR #11's branch):** review, audit and a new solver.
+- **New capability (L140):** a blind solver for **keyword plaintext alphabet × completely free cipher alphabet**,
+  with the true key given.
+  - **Pre-registered fresh holdout:** **20/20 exact** (bar 16), 0 invalid witnesses.
+  - **Code:** `r44/blind/kwpa_solve.cpp` (enumerates 4,749 keyword alphabets and anneals the cipher alphabet), then
+    `r44/blind/polish.cpp` (word-score polish).
+  - **Not covered:** two *uniformly random* alphabets are still unsolved (L138, L139).
+- **Correction (owner review on PR #12):** do **not** run the R44b solver on K4 with Gromark keys.
+  - R39's top 1,000 IC primers contain no crib-feasible primer even with two free alphabets (L137).
+  - PR #13 and an independent replication (`r44/audit/KW_EXACT_CHECK_RESULT.md`, L141) show **0 feasible K4
+    settings**, in place, for all 100,000 primers × 4,749 keyword alphabets × both operations × both orientations.
+- **Next worthwhile hypotheses change the keystream or the order of operations, then apply R44b where it fits:**
+  - running keys (K1–K3, Carter) × keyword alphabet;
+  - other keyword dictionaries;
+  - transposition before or after the substitution.
+  - **First do the cheap exact feasibility check** (as in `kw_exact_check.cpp`, pre-registered), and only run the
+    blind solver on families that are still feasible.
+- **Checks before any push:** `bash strictblind/tests/run_all.sh`, `bash verify_all.sh`,
+  `python3 -I r44/tests/test_contract.py`.
 - **Rules:** `k4kit/CLAUDE.md`.
-  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text, run untrusted
-    packets with `python3 -I`.
-  - Never `git stash` while a background job writes tracked files.
-- **Ledger:** this session added L124 and L131–L138.
-- **Most promising next step:** a two-free-alphabet solver that scores with **words** and searches with
-  **word-level moves** (L138). Gate it on planted messages before K4.
+  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text.
+  - Never `git stash` while jobs write tracked files.
 
 ## What this round means (plain words)
 - **ChatGPT's R35–R39 checks out.**
