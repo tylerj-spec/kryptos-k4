@@ -1,0 +1,54 @@
+name: R40G Gromark IC independent replay
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/r40g-verify.yml"
+      - "r40g/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Strict-blind contract and regression
+        run: bash strictblind/tests/run_all.sh
+      - name: Compile independent R40G key-symmetry scorer
+        run: g++ -std=c++17 -O3 -Wall -Wextra -Werror r40g/null_gate.cpp -o /tmp/r40g_null
+      - name: Reproduce preregistered original-vs-1000-null IC test
+        run: |
+          /tmp/r40g_null k4kit/r32/runs/k4_ciphertext.txt 1000 40001 > r40g/NULL_1000_replay.tsv 2> r40g/NULL_1000_replay.log
+          cat r40g/NULL_1000_replay.log
+          test "$(wc -l < r40g/NULL_1000_replay.tsv)" -eq 1002
+          grep -q 'n_ge=716' r40g/NULL_1000_replay.log
+          grep -q 'n_classes=25024' r40g/NULL_1000_replay.log
+          sha256sum r40g/NULL_1000_replay.tsv
+      - name: Independently check R39 frozen-score and known-letter consistency (postfreeze only)
+        run: |
+          python3 -I r40g/postfreeze_oracle.py
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r40g/POSTFREEZE_ORACLE_RESULT.json"))
+          assert v["feasible_primers"]==39
+          assert v["n_feasible_top100"]==0
+          assert v["n_feasible_top1000"]==0
+          assert v["n_feasible_top5000"]==1
+          assert v["ranked_feasible"][0]["primer"]=="98800"
+          assert v["ranked_feasible"][0]["rank"]==1436
+          print("R40G postfreeze exact check reproduced")
+          PY
+      - name: Preserve audit result artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: r40g-independent-audit
+          path: |
+            r40g/NULL_1000_replay.tsv
+            r40g/NULL_1000_replay.log
+            r40g/POSTFREEZE_ORACLE_RESULT.json
+          retention-days: 90
