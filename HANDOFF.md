@@ -1,4 +1,23 @@
-# Kryptos K4: R40–R42 handoff (Claude Code, 28 Oct 2026). Earlier briefs: R34 in git history; ChatGPT's in `r33/`–`r39/`.
+# Kryptos K4: R40–R42 handoff (Claude Code, 28–29 Oct 2026). Earlier briefs: R34 in git history; ChatGPT's in `r33/`–`r39/`.
+
+## Start here (state at hand-off)
+- **No verified K4 solution. Nothing submitted to any external checker.**
+- **Branch:** `claude/kryptos-k4-refinement-n8pbh3`, head 71e85ee; `main` is unchanged.
+- **PRs:**
+  - **#8 (open draft, CI green):** merges ChatGPT's R35–R39 (PRs #2–#6), the #10 test fix, my harness fixes, R34
+    E3, R40–R42, the PR #9 review and the L138 development notes. Merge it, then close #2–#6 and #10.
+  - **#9 (ChatGPT's R40G Gromark IC audit):** findings replayed and confirmed (L137), but it conflicts because its
+    files sit in `r40/`, which my R40 uses. Move them to `r40g/` before merging.
+- **Checks before any push:**
+  - `bash strictblind/tests/run_all.sh` (all pass; needs full git history);
+  - `bash verify_all.sh` (R32/R33 audit).
+- **Rules:** `k4kit/CLAUDE.md`.
+  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text, run untrusted
+    packets with `python3 -I`.
+  - Never `git stash` while a background job writes tracked files.
+- **Ledger:** this session added L124 and L131–L138.
+- **Most promising next step:** a two-free-alphabet solver that scores with **words** and searches with
+  **word-level moves** (L138). Gate it on planted messages before K4.
 
 ## What this round means (plain words)
 - **ChatGPT's R35–R39 checks out.**
