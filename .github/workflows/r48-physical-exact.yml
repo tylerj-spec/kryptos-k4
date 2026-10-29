@@ -1,0 +1,67 @@
+name: R48 unverified physical K4 reverse-tableau keystream exact audit
+on:
+  push:
+    branches:
+      - "chatgpt/r48-physical-tableau-key-hypothesis"
+    paths:
+      - ".github/workflows/r48-physical-exact.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/r48-physical-exact.yml"
+      - "r48/**"
+
+permissions:
+  contents: write
+
+jobs:
+  candidate-packet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Baseline, no-clue boundaries and preregistration
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+          sha256sum -c r45/R45_RESULT.sha256
+          sha256sum -c r48/PROTOCOL.sha256
+      - name: Check all 52 physical-key hypotheses on original K4 and four nulls
+        run: |
+          if test -f r48/R48_EXACT_RESULT.json; then
+            python3 -I r48/sealed/physical_key_exact.py /tmp/r48_replay.json
+            cmp /tmp/r48_replay.json r48/R48_EXACT_RESULT.json
+          else
+            python3 -I r48/sealed/physical_key_exact.py r48/R48_EXACT_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r48/R48_EXACT_RESULT.json"))
+          assert v["num_key_sequences"]==52
+          assert v["keyword_alphabets"]==4749
+          assert v["positive_controls"]==dict(KW_PA=10,KW_CA=10,plus=10,minus=10)
+          assert len(v["nulls"])==4
+          assert v["K4"]["total_full_97letter_keystreams"]==52
+          print("R48 conclusion:",v["classification"])
+          PY
+      - name: Freeze exact output on R48 review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r48/PREREGISTRATION.md r48/sealed/physical_key_exact.py r48/R48_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r48/R48_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r48/R48_EXACT_RESULT.json r48/R48_RESULT.sha256
+          if git diff --cached --quiet; then echo "Identical report"; else
+            git commit -m "R48: speculative reverse-tableau literal stream exact results [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r48-physical-tableau-key-hypothesis
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r48-physical-packet-literal-exact-result
+          path: |
+            r48/R48_EXACT_RESULT.json
+            r48/R48_RESULT.sha256
+          retention-days: 90
