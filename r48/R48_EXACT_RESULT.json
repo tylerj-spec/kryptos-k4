@@ -1,0 +1,383 @@
+{
+  "type": "R48_SPECULATIVE_physical_packet_24_public_letter_consistency_NOT_BLIND_DECRYPTION",
+  "protocol_sha256": "ce9bcd61e36b58cdbb009bca5b3bb2fc88763944959f850fdda1c2ae52df9c9f",
+  "program_sha256": "3f5431d068312636ca5c2e9ce9b0daed04d7cbd4c85f758958c46a58ea890925",
+  "canonical_K4_sha256_with_newline": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "keyword_model_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "unverified_literal_packet": "WXZKYXZKRYPTOSABCDEFGHIJLMNQUVWXZKRZZKRYPTOSABCDEFGHIJLMNQUVWXZKRY_ABCDEFGHIJKLMNOPQRSTUVWXYZABCD",
+  "blank_options": 26,
+  "numbering_alphabets": [
+    "AZ",
+    "KRY"
+  ],
+  "num_key_sequences": 52,
+  "operations": [
+    "+k",
+    "-k"
+  ],
+  "keyword_orientations": [
+    "KW_PA_FREE_CA",
+    "FREE_PA_KW_CA"
+  ],
+  "keyword_alphabets": 4749,
+  "positive_controls": {
+    "KW_PA": 10,
+    "KW_CA": 10,
+    "plus": 10,
+    "minus": 10
+  },
+  "K4": {
+    "total_full_97letter_keystreams": 52,
+    "both_free_feasible_keys": 0,
+    "both_free_which": [],
+    "keyword_PA_feasible": 0,
+    "keyword_CA_feasible": 0,
+    "all_feasible_settings": []
+  },
+  "nulls": [
+    {
+      "total_full_97letter_keystreams": 52,
+      "both_free_feasible_keys": 0,
+      "both_free_which": [],
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 48100,
+      "ciphertext_sha256": "5b8c989243ac57b6c882ba2a95ff4a3396bc08027b9f6e5df9eea927f551c102"
+    },
+    {
+      "total_full_97letter_keystreams": 52,
+      "both_free_feasible_keys": 25,
+      "both_free_which": [
+        {
+          "blank_letter": "A",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "B",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "C",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "E",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "F",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "G",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "H",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "I",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "J",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "K",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "L",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "M",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "N",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "O",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "P",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Q",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "R",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "S",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "T",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "U",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "V",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "W",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "X",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Y",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Z",
+          "numbering": "AZ"
+        }
+      ],
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 48101,
+      "ciphertext_sha256": "98a7c3741565759450d1501349a61d0b2d001723926ab424a97dced6a092eb00"
+    },
+    {
+      "total_full_97letter_keystreams": 52,
+      "both_free_feasible_keys": 50,
+      "both_free_which": [
+        {
+          "blank_letter": "A",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "A",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "B",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "B",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "C",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "C",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "E",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "E",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "F",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "F",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "G",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "G",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "H",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "H",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "I",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "I",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "J",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "J",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "K",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "K",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "L",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "L",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "M",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "M",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "N",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "N",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "O",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "O",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "P",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "P",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "Q",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Q",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "R",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "R",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "S",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "S",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "T",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "T",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "U",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "U",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "V",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "V",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "W",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "W",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "X",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "X",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "Y",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Y",
+          "numbering": "KRY"
+        },
+        {
+          "blank_letter": "Z",
+          "numbering": "AZ"
+        },
+        {
+          "blank_letter": "Z",
+          "numbering": "KRY"
+        }
+      ],
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 48102,
+      "ciphertext_sha256": "71a71089cd9076ef6b7fdee3ec859485781b2df4e9989ecb1bcba37a04b817fd"
+    },
+    {
+      "total_full_97letter_keystreams": 52,
+      "both_free_feasible_keys": 0,
+      "both_free_which": [],
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 48103,
+      "ciphertext_sha256": "49687be573bb661a1e1177d12a61c8f85d353086eac19ce8250a15268b0a1f47"
+    }
+  ],
+  "classification": "EXCL this literal packet and model ONLY",
+  "scientific_limit": "Packet is copied literally from a third-party field guide also offering a fitted/non-authentic plaintext; it is NOT certified from original sculpture photographs. No reconstructed K4 plaintext or back-fitted gate/card shift was used in this run."
+}
