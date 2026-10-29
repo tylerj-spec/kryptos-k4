@@ -21,6 +21,7 @@ constexpr int N=97, V=52;
 static int mod(int v){v%=26;return v<0?v+26:v;}
 struct EdgeGraph {
   array<uint8_t,V> parent{},shift{};
+  uint8_t components=V;
   EdgeGraph(){for(int i=0;i<V;i++)parent[i]=(uint8_t)i;shift.fill(0);}
   pair<int,int> find(int v)const{
     int p=0;while(parent[v]!=v){p=mod(p+shift[v]);v=parent[v];}
@@ -31,7 +32,7 @@ struct EdgeGraph {
     auto [b,pb]=find(cipher+26);
     int diff=mod(delta+pa-pb);
     if(a==b)return diff==0;
-    parent[b]=(uint8_t)a;shift[b]=(uint8_t)diff;return true;
+    parent[b]=(uint8_t)a;shift[b]=(uint8_t)diff;--components;return true;
   }
   bool compatible()const{
     unsigned used[V][2]={};
@@ -87,9 +88,9 @@ struct Word {string s;double w;};
 struct State {
   EdgeGraph g;
   string plain,seg;
-  double score=0;
+  double score=0,priority=0;
 };
-struct Options {int width=256,per_length=128,max_len=17;};
+struct Options {int width=256,per_length=128,max_len=17;double cycle_weight=0.0;};
 static vector<vector<Word>> model_words(const string&path,const Options&opt){
   ifstream in(path);if(!in)throw runtime_error("word model unavailable");
   vector<vector<Word>> out(opt.max_len+1);
@@ -123,7 +124,7 @@ static vector<vector<Word>> model_words(const string&path,const Options&opt){
   return out;
 }
 static bool sort_by_score(const State&a,const State&b){
-  return a.score>b.score||(a.score==b.score&&a.plain<b.plain);
+  return a.priority>b.priority||(a.priority==b.priority&&a.plain<b.plain);
 }
 static void push_bounded(vector<State>&v,State&&s,int limit){
   v.push_back(move(s));
@@ -161,6 +162,8 @@ static Answer solve(const string&ct,const vector<int>&key,
           s.g=next;s.plain=state.plain+w.s;
           s.seg=state.seg.empty()?w.s:state.seg+" "+w.s;
           s.score=state.score+w.w;
+          int cycles=(pos+len)-(V-int(s.g.components));
+          s.priority=s.score+opt.cycle_weight*cycles;
           if(pos+len==N){
             ++full;
             if(s.score<=answer.score)continue;
@@ -203,9 +206,9 @@ static string json_escape(const string&s){
 }
 int main(int argc,char**argv){
  try{
-  if(argc<4||argc>7)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17]");
-  Options o;if(argc>=5)o.width=stoi(argv[4]);if(argc>=6)o.per_length=stoi(argv[5]);if(argc>=7)o.max_len=stoi(argv[6]);
-  if(o.width<1||o.width>20000||o.per_length<1||o.per_length>20000||o.max_len<1||o.max_len>24)throw runtime_error("invalid budget");
+  if(argc<4||argc>8)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17] [CYCLE_BONUS=0]");
+  Options o;if(argc>=5)o.width=stoi(argv[4]);if(argc>=6)o.per_length=stoi(argv[5]);if(argc>=7)o.max_len=stoi(argv[6]);if(argc>=8)o.cycle_weight=stod(argv[7]);
+  if(o.width<1||o.width>20000||o.per_length<1||o.per_length>20000||o.max_len<1||o.max_len>24||o.cycle_weight<0||o.cycle_weight>20)throw runtime_error("invalid budget");
   auto dictionary=model_words(argv[1],o);
   ifstream fin(argv[2]);ofstream out(argv[3]);
   if(!fin||!out)throw runtime_error("input or output inaccessible");
