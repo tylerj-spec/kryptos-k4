@@ -1,4 +1,4 @@
-# R40 preregistration — Gromark IC unit-symmetry and max-score null calibration
+# R40G preregistration — Gromark IC unit-symmetry and max-score null calibration
 Date: 2026-10-28. Base commit `00baaa94868103f5450f40f778bc866a0dc0da0d`.
 
 ## Purpose (before new null results)
@@ -20,3 +20,5 @@ The experiment must verify this equality and verify a fresh independent implemen
 - No automatic external checker submission; disclose every result and any failed verification.
 
 No conclusions from new 1,000-null experiment are known at registration.
+
+Archival note: this research was **pre-registered originally under `r40/` in commit `32994c77`** before numerical results were produced. Moving to `r40g/` avoids a naming collision with Claude's separate R40 one-free-alphabet experiment. Neither the scientific search space nor the frozen historical results were changed by this move.

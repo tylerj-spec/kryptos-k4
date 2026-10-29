@@ -1,6 +1,6 @@
-# R40 B — postfreeze intersection of blind IC ranks and the pre-existing exact 24-letter feasibility oracle
+# R40G B — postfreeze intersection of blind IC ranks and the pre-existing exact 24-letter feasibility oracle
 
-This check is **postfreeze by design**. R39 full 100,000-primer K4 score vector was committed before its reveal (commit `00baaa94868103f5450f40f778bc866a0dc0da0d`, see `r39/ic_gate/FROZEN.sha256`). The R40 independent IC null audit was registered before computing its 1,000 shuffled maxima (`r40/PREREGISTRATION.md`).
+This check is **postfreeze by design**. R39 full 100,000-primer K4 score vector was committed before its reveal (commit `00baaa94868103f5450f40f778bc866a0dc0da0d`, see `r39/ic_gate/FROZEN.sha256`). The R40 independent IC null audit was registered before computing its 1,000 shuffled maxima (`r40g/PREREGISTRATION.md`).
 
 ## Question and method, declared before calculating intersection
 
@@ -14,3 +14,5 @@ For the **identity-route, two-arbitrary-alphabet**, five-decimal-digit chain-add
 7. Caveat: IC ranking and feasibility are both functions of the same K4 ciphertext; do **not** treat their overlap as statistically independent or attach a naive p-value.
 
 No external verifiers. Commit exact source and tabular results for audit.
+
+Archival note: originally committed separately as the post-freeze audit protocol under `r40/`; relocated without changing the declared test.

@@ -1,4 +1,4 @@
-// R40: independent ciphertext-only Gromark IC null audit.
+// R40G: independent ciphertext-only Gromark IC null audit.
 // Reads original 97 letters, no plaintext, clues, masks or language model.
 // 100,000 base-ten five-digit primers compressed by exact unit orbits.
 // Usage: null_gate CT_FILE [NULL_COUNT=1000] [SEED=40001]

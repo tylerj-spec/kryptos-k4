@@ -1,4 +1,4 @@
-# R40 research findings — 28 October 2026
+# R40G research findings — 28 October 2026
 
 ## 1. Mathematical degeneracy in the R39 IC ranking (proved)
 
@@ -6,7 +6,7 @@ Five-digit Gromark recurrence is linear over the ring `Z/10Z`. Multiplication by
 
 ## 2. Independent larger null test (ciphertext only; no K4 known words)
 
-Preregistered in `r40/PREREGISTRATION.md`, then built and run using a separately written C++ implementation, using 1,000 seed-40001 letter-frequency-preserving shuffles of the original K4 ciphertext.
+Preregistered in `r40g/PREREGISTRATION.md`, then built and run using a separately written C++ implementation, using 1,000 seed-40001 letter-frequency-preserving shuffles of the original K4 ciphertext.
 
 - Verified original maximum IC: `0.075107296137339061` (representative `27641`), agreeing with R39.
 - **716 / 1,000** shuffled ciphertexts attained maximum IC >= K4; four tied K4 exactly.
@@ -36,3 +36,5 @@ On 20 already-revealed R39 planted examples with each true 5-digit key supplied,
 Implication: the next candidate method needs a proper English language likelihood and independent planted exact-text recovery, not pure IC or repeated patterns.
 
 No verified K4 solution, no external verifier contact.
+
+**Independent replay:** Claude's integration review in the merged repository ledger (L137) separately reproduced 716/1,000 and the 39-primer intersection. This is still not a plaintext candidate.

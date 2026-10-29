@@ -39,5 +39,5 @@ out = {
     "ranked_feasible": [{"rank": r, "primer": f"{p:05d}", "IC": s} for r, p, s in ranked],
     "warning": "Not blind recovery; public clues filter feasibility AFTER blind scores froze. No recovered plaintext."
 }
-(ROOT / "r40" / "POSTFREEZE_ORACLE_RESULT.json").write_text(json.dumps(out, indent=2) + "\n")
+(ROOT / "r40g" / "POSTFREEZE_ORACLE_RESULT.json").write_text(json.dumps(out, indent=2) + "\n")
 print(f"POSTFREEZE 39 feasible; top100={out['n_feasible_top100']}; top1000={out['n_feasible_top1000']}; top5000={out['n_feasible_top5000']}; best={ranked[0]}")
