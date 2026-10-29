@@ -1,0 +1,29 @@
+name: R49 historical World Clock source-integrity gate
+
+on:
+  push:
+    branches:
+      - "chatgpt/r49-historical-world-clock-evidence"
+  pull_request:
+    paths:
+      - "r49/**"
+      - ".github/workflows/r49-source-integrity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  source-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate exact 24-segment structure and guard against data fabrication
+        run: |
+          python3 -I r49/tests/test_inventory.py
+          python3 -I r49/validate_inventory.py --allow-incomplete r49/world_clock_1986_inventory.json
+          if python3 -I r49/validate_inventory.py r49/world_clock_1986_inventory.json; then
+            echo "ERROR: Historical primary source not acquired; strict gate must FAIL"
+            exit 1
+          else
+            echo "R49 correct: incomplete primary-source inventory cannot be promoted to a cipher key"
+          fi
