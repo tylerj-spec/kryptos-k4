@@ -1,0 +1,70 @@
+name: R47 Carter and K1K3 keyword-running-key exact postfreeze test
+
+on:
+  push:
+    branches:
+      - "chatgpt/r47-runningkey-keyword-feasibility"
+    paths:
+      - ".github/workflows/r47-runningkey-exact.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/r47-runningkey-exact.yml"
+      - "r47/**"
+
+permissions:
+  contents: write
+
+jobs:
+  exact-runningkey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Baseline and source fingerprints
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+          sha256sum -c r45/R45_RESULT.sha256
+          sha256sum -c r47/PROTOCOL.sha256
+          sha256sum r34/carter_az.txt k4kit/data/k1k3_plaintext.txt
+      - name: Execute both running-key sources, all windows, four variants, both signs/orientations
+        run: |
+          if test -e r47/R47_EXACT_RESULT.json; then
+            python3 -I r47/sealed/runningkey_exact.py /tmp/r47_replay.json
+            cmp /tmp/r47_replay.json r47/R47_EXACT_RESULT.json
+          else
+            python3 -I r47/sealed/runningkey_exact.py r47/R47_EXACT_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r47/R47_EXACT_RESULT.json"))
+          assert v["unique_R44b_keyword_alphabets"]==4749
+          assert v["controls"]["counts"]==dict(KW_PA=10,KW_CA=10,plus=10,minus=10)
+          assert len(v["nulls"])==2
+          assert v["K4"]["total_key_windows_checked"]>1000000
+          assert v["K4"]["keyword_PA_feasible"]+v["K4"]["keyword_CA_feasible"]==v["K4_total_keyword_settings"]
+          print("R47 K4 total",v["K4_total_keyword_settings"])
+          print("R47 conclusion:",v["classification"])
+          PY
+      - name: Freeze raw R47 exact output on review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r47/PREREGISTRATION.md r47/sealed/runningkey_exact.py r47/R47_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt r34/carter_az.txt k4kit/data/k1k3_plaintext.txt k4kit/data/word_model_orth.tsv > r47/R47_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r47/R47_EXACT_RESULT.json r47/R47_RESULT.sha256
+          if git diff --cached --quiet; then echo "Exact result unchanged"; else
+            git commit -m "R47 exact Carter and K1K3 running-key results [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r47-runningkey-keyword-feasibility
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r47-exact-runningkey-crib-assisted-audit
+          path: |
+            r47/R47_EXACT_RESULT.json
+            r47/R47_RESULT.sha256
+          retention-days: 90
