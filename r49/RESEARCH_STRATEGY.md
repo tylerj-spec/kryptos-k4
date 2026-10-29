@@ -1,5 +1,7 @@
 # R49 — K4 strategy reset: historical-source acquisition and unknown-key blind gate
 
+> **CORRECTION — PRIOR WORK RECOVERED (29 Oct 2026).** This strategy originally framed the original World Clock chart as missing. That was incorrect. Tyler and Claude already created a 24-face historical photo-derived 360° map on 25 October, at `archive/2026-10-26_chatgpt_starter/sources/world_clock_360.md`, with 1969–1990 upper/lower lettering, source dates, uncertain rows, ENE orientation and prior K4 tests. It is now preserved verbatim in `r49/prior_photo_360_chart.json`; see `r49/PRIOR_WORK_CORRECTION.md`. The all-null `world_clock_pre1991_inventory.json` is **only a stricter primary-verification checklist**, not a claim that our working reconstruction is absent. **No manufacturer contact is needed now.** Historical-drawing outreach is deferred unless a specific missing inscription or surveyed alignment can change a fresh, independently motivated cipher hypothesis. Avoid all redundant city-text/clock-key experiments (ledger L37–L42, L75–L79).
+
 **29 October 2026. Status: EVIDENCE ACQUISITION, not a new K4 decryption.** This is a self-contained branch based on `main` to avoid importing the failed R43 beam or stacked PRs #11–#17 before review. Live tracking: [Issue #18](https://github.com/tylerj-spec/kryptos-k4/issues/18).
 
 ## Decision: why past search methods are no longer the critical path
