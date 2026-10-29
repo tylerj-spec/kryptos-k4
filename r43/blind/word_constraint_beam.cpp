@@ -27,7 +27,8 @@ struct EdgeGraph {
     return {v,p};
   }
   bool add(int plain,int cipher,int delta){
-    auto [a,pa]=find(plain),[b,pb]=find(cipher+26);
+    auto [a,pa]=find(plain);
+    auto [b,pb]=find(cipher+26);
     int diff=mod(delta+pa-pb);
     if(a==b)return diff==0;
     parent[b]=(uint8_t)a;shift[b]=(uint8_t)diff;return true;
