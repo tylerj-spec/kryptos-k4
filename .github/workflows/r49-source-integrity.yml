@@ -20,8 +20,8 @@ jobs:
       - name: Validate exact 24-segment structure and guard against data fabrication
         run: |
           python3 -I r49/tests/test_inventory.py
-          python3 -I r49/validate_inventory.py --allow-incomplete r49/world_clock_1986_inventory.json
-          if python3 -I r49/validate_inventory.py r49/world_clock_1986_inventory.json; then
+          python3 -I r49/validate_inventory.py --allow-incomplete r49/world_clock_pre1991_inventory.json
+          if python3 -I r49/validate_inventory.py r49/world_clock_pre1991_inventory.json; then
             echo "ERROR: Historical primary source not acquired; strict gate must FAIL"
             exit 1
           else
