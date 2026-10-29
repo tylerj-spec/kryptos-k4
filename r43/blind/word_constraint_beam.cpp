@@ -107,6 +107,17 @@ static vector<vector<Word>> model_words(const string&path,const Options&opt){
     if((int)ws.size()>opt.per_length)ws.resize(opt.per_length);
     count+=(int)ws.size();
   }
+  // The 97-character ciphertext can end mid-word, and real texts have proper
+  // names. The existing ORTH language model permits unmatched letters at -7.
+  // Retain that exact fallback so we do not require a fully word-segmentable text.
+  for(int v=0;v<26;v++) {
+    string one(1,char('A'+v));
+    auto it=find_if(out[1].begin(),out[1].end(),
+       [&](const Word &w){return w.s==one;});
+    if(it==out[1].end())out[1].push_back({one,-7.0});
+    else it->w=max(it->w,-7.0);
+  }
+  count=0;for(int l=1;l<=opt.max_len;l++)count+=(int)out[l].size();
   if(count<100)throw runtime_error("word model too small");
   cerr<<"R43 dictionary words "<<count<<" per_length "<<opt.per_length<<"\n";
   return out;
@@ -121,12 +132,12 @@ static void push_bounded(vector<State>&v,State&&s,int limit){
     v.resize(limit);
   }
 }
-struct Answer {string plain,pa,ca,seg;double score;long long proposed,valid_graph;};
+struct Answer {string plain,pa,ca,seg;double score;long long proposed,valid_graph,full_graph,full_bijections;};
 static Answer solve(const string&ct,const vector<int>&key,
                    const vector<vector<Word>>&dictionary,const Options&opt){
   vector<vector<State>> at(N+1);
   at[0].emplace_back();
-  long long proposed=0,passed=0;Answer answer{"","","","",-1e100,0,0};
+  long long proposed=0,passed=0,full=0,full_bij=0;Answer answer{"","","","",-1e100,0,0,0,0};
   for(int pos=0;pos<N;pos++){
     auto &cur=at[pos];if(cur.empty())continue;
     if((int)cur.size()>opt.width){
@@ -151,9 +162,11 @@ static Answer solve(const string&ct,const vector<int>&key,
           s.seg=state.seg.empty()?w.s:state.seg+" "+w.s;
           s.score=state.score+w.w;
           if(pos+len==N){
+            ++full;
             if(s.score<=answer.score)continue;
             string pa,ca;
             if(!s.g.alphabets(pa,ca))continue;
+            ++full_bij;
             // Independent forward encryption (not a reward signal).
             bool forward=true;
             for(int i=0;i<N;i++){
@@ -162,13 +175,14 @@ static Answer solve(const string&ct,const vector<int>&key,
                 forward=false;break;
               }
             }
-            if(forward)answer={s.plain,pa,ca,s.seg,s.score,proposed,passed};
+            if(forward)answer={s.plain,pa,ca,s.seg,s.score,proposed,passed,full,full_bij};
           }else push_bounded(at[pos+len],move(s),opt.width);
         }
       }
     }
   }
   answer.proposed=proposed;answer.valid_graph=passed;
+  answer.full_graph=full;answer.full_bijections=full_bij;
   return answer;
 }
 static vector<int> key_parse(string raw){
@@ -207,10 +221,13 @@ int main(int argc,char**argv){
     out<<"{\"id\":\""<<json_escape(id)<<"\",\"plaintext\":\""<<ans.plain
        <<"\",\"plaintext_alphabet\":\""<<ans.pa<<"\",\"ciphertext_alphabet\":\""<<ans.ca
        <<"\",\"segmented\":\""<<ans.seg<<"\",\"score\":"<<setprecision(12)<<ans.score
-       <<",\"proposals\":"<<ans.proposed<<",\"compatible\":"<<ans.valid_graph<<"}\n";
+       <<",\"proposals\":"<<ans.proposed<<",\"compatible\":"<<ans.valid_graph
+       <<",\"full_graph\":"<<ans.full_graph<<",\"full_bijections\":"<<ans.full_bijections<<"}\n";
     out.flush();
     cerr<<"R43 "<<id<<" valid="<<(!ans.pa.empty())<<" proposals="<<ans.proposed
-        <<" graph_pass="<<ans.valid_graph<<" best_score="<<ans.score<<"\n";
+        <<" graph_pass="<<ans.valid_graph<<" full_graph="<<ans.full_graph
+        <<" full_bijections="<<ans.full_bijections
+        <<" best_score="<<ans.score<<"\n";
     count++;
   }
   if(!count)throw runtime_error("no input ciphertexts");
