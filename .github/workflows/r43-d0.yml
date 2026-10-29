@@ -47,7 +47,10 @@ jobs:
           python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_cycles.jsonl r43/d0/sealed_truth.json r43/d0/CYCLES_REPORT.json
           cat r43/d0/low_stderr.log
           cat r43/d0/high_stderr.log
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_global.jsonl 384 512 18 3.258096538 75 > r43/d0/global_stdout.log 2> r43/d0/global_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_global.jsonl r43/d0/sealed_truth.json r43/d0/GLOBAL_REPORT.json
           cat r43/d0/cycles_stderr.log
+          cat r43/d0/global_stderr.log
       - name: Preserve honest results, including failure
         uses: actions/upload-artifact@v4
         if: always()
