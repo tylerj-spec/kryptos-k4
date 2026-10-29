@@ -1,0 +1,9 @@
+{
+  "workers": 4,
+  "runs": [
+    {"tag": "K4_P0", "ct": "k4_ciphertext.txt", "routes": "routes.txt", "key": ["TEXT", "key.txt"], "label": "K1K3"},
+    {"tag": "PLANT_A", "ct": "PLANT_A_ct.txt", "routes": "routes.txt", "key": ["TEXT", "key.txt"], "label": "K1K3"},
+    {"tag": "PLANT_B", "ct": "PLANT_B_ct.txt", "routes": "routes.txt", "key": ["TEXT", "key.txt"], "label": "K1K3"},
+    {"tag": "NULL", "ct": "NULL_ct.txt", "routes": "routes.txt", "key": ["TEXT", "key.txt"], "label": "K1K3"}
+  ]
+}

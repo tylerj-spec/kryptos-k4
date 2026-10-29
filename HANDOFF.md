@@ -1,58 +1,114 @@
-# Kryptos K4: R34 handoff (Claude Code, 28 Oct 2026). ChatGPT's R33 brief is in `r33/HANDOFF.md`.
+# Kryptos K4: R40–R42 handoff (Claude Code, 28–29 Oct 2026). Earlier briefs: R34 in git history; ChatGPT's in `r33/`–`r39/`.
+
+## Start here (state at hand-off)
+- **No verified K4 solution. Nothing submitted to any external checker.**
+- **Branch:** `claude/kryptos-k4-refinement-n8pbh3` (the last research commit is 71e85ee; this handoff follows it); `main` is unchanged.
+- **PRs:**
+  - **#8 (open draft, CI green):** merges ChatGPT's R35–R39 (PRs #2–#6), the #10 test fix, my harness fixes, R34
+    E3, R40–R42, the PR #9 review and the L138 development notes. Merge it, then close #2–#6 and #10.
+  - **#9 (ChatGPT's R40G Gromark IC audit):** findings replayed and confirmed (L137), but it conflicts because its
+    files sit in `r40/`, which my R40 uses. Move them to `r40g/` before merging.
+- **Checks before any push:**
+  - `bash strictblind/tests/run_all.sh` (all pass; needs full git history);
+  - `bash verify_all.sh` (R32/R33 audit).
+- **Rules:** `k4kit/CLAUDE.md`.
+  - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text, run untrusted
+    packets with `python3 -I`.
+  - Never `git stash` while a background job writes tracked files.
+- **Ledger:** this session added L124 and L131–L138.
+- **Most promising next step:** a two-free-alphabet solver that scores with **words** and searches with
+  **word-level moves** (L138). Gate it on planted messages before K4.
 
 ## What this round means (plain words)
-- **R33 checks out.** I replayed ChatGPT's keyword-columnar search and every frozen file came out byte-identical. A
-  separately written count over all 556 million settings matches its numbers exactly.
-- **One repository now holds everything:** R33 from `main` plus the toolkit, the R30/R32 work and the archived
-  packets from my branch. The root `LEDGER.md` is the single canonical ledger.
-- **New shared harness, `strictblind/`.** Every strict-blind round had been copying the scanner and checker. Now
-  there is one tested copy:
-  - **contract test:** blind code cannot contain or import the clue words, and the test is shown to catch planted
-    violations;
-  - **round-trip test:** hidden messages come back #1;
-  - **regression test:** byte-identical to R32 and R33 frozen outputs.
-  New experiments are a manifest plus a pre-registration.
-- **New strict-blind searches: no candidate.**
-
-  | Search | Settings | Best known-letter match | Planted |
-  |---|---|---|---|
-  | E1: Carter book × every keyword-columnar variant (KRYPTOS / PALIMPSEST / ABSCISSA) | 2.6 billion | 11/24 (chance) | 2/2 #1 |
-  | E2: 7-digit number keys × K3-style rearrangements | 4.9 billion | 10/24 (chance) | 1/1 #1 |
-  | E3: Carter × all 5,000 K3-style rotation grids | 68 billion | running (L124) | — |
-
-- **Two unknown alphabets still cannot be searched blind.** Twenty times more search effort recovers 0/8 planted
-  messages (L123). The solver gets stuck about 30–55 points below the true text's score, so this needs a different
-  method, not more effort.
+- **ChatGPT's R35–R39 checks out.**
+  - **Replays:** all 23 K4 blind scans and all 31 R39 score vectors replay byte for byte.
+  - **Integration:** PR #8 merges the stacked PRs #2–#6, plus harness fixes and PR #10's test fix.
+  - **Results:** every family tested gives chance-level matches with the known letters. R39's key ranker works on
+    planted data and shows no Gromark signature in K4.
+- **R34 is finished.** E3 (Carter × 5,000 double rotations, 6.8 × 10¹⁰ settings) has a best match of 12/24, which
+  is chance level, and its plant ranked #1 (L124).
+- **New this round: the "one unknown alphabet" families.** Every earlier blind round fixed **both** alphabets, and
+  two unknown alphabets cannot be solved blind at 97 letters (L109, L123). But when **one** alphabet is fixed and
+  the other is free, the problem becomes solvable:
+  - **R40, free plaintext alphabet:** each key turns K4 into a simple substitution.
+    - The first stage ranks every setting by letter counts. It also detects any transposition applied *before*
+      the substitution.
+    - **Result: no candidate.** The in-place family is excluded exactly: 0 of 337,634,136 settings fit the 24 known
+      letters. All 12 plants passed (L134).
+  - **R41, free plaintext alphabet, substitution then K3-style transposition:** 116 R27/columnar routes and 5,000
+    double rotations. Result: no candidate; an exact rule-out of 10.9 billion settings under any plaintext alphabet (L135).
+  - **R42, free cipher alphabet:** Quagmire II and the ACA standard Gromark with any keyword.
+    - With the key known, annealing the cipher alphabet recovers planted text blind: 24/24 in development.
+    - Result: no candidate, and an exact in-place rule-out under any cipher alphabet (171 million settings). But the blind gate failed (4/6 plants), so the blind solve is trusted for C10b5 keys only (L136).
 
 ## Are we close? (honest view)
 **No.**
-- Every family tested from R30 to R34 behaves exactly like chance on K4.
-- Planted messages are always found, so the searches would have caught K4 if it had been made one of these ways.
-- The methods are not the problem; the hypotheses are. The fixed-alphabet blind searches are very powerful: a
-  family costs minutes to tens of minutes and is settled for good, but only for the exact construction tested.
-- Real progress needs one of:
-  - **a better-grounded hypothesis:** the specific method or key Sanborn and Scheidt used;
-  - **new information:** a further Sanborn clue, the sealed archive, or K5;
-  - **a research advance:** blind recovery with unknown alphabets, which would open the many "feasible but
-    untestable" families in the ledger.
+- **What this round adds:** the families ruled out now include every plaintext alphabet (R40, R41) or every cipher
+  alphabet (R42) for these key families, not just a few fixed ones. Their plants come back #1.
+- **Still open:**
+  - two unknown alphabets at once (a search problem; see below);
+  - other key sources;
+  - other transpositions applied after substitution;
+  - methods outside the Vigenère/Gromark family.
+
+## Method notes for the next agent
+- **Free plaintext alphabet:**
+  - **Detection:** y = CA⁻¹(c) ∓ k is a substitution of the plaintext. Score L1 = sorted counts × sorted English
+    log-frequencies. It is very sharp: plants rank 1–4 among 3.4 × 10⁸ settings.
+  - **Reading:** a simple-substitution solve.
+- **Free cipher alphabet:**
+  - **Stage 1:** the unigram-optimal alphabet is an exact 26 × 26 assignment (Hungarian method). It is weaker:
+    it works for about 10⁶ settings, but a true key ranked about 30,000th among 3 × 10⁷.
+  - **Stage 2:** annealing the alphabet with quadgrams is reliable once the key is right: 16 restarts gave 24/24.
+- **Two free alphabets (L138, `r43dev/`):**
+  - **Quadgrams cannot identify the text at 97 letters.** With strong parallel tempering, wrong texts match or beat
+    the true text's score. This corrects the earlier "search-only failure" reading.
+  - **The word model can.** True texts score W −71 to −94, the wrong optima −144 to −164.
+  - **What remains is search:** on quadgrams + words the truth is 50–150 points better than anything found, but
+    alphabet-swap search does not reach it.
+- **Exact whole-family checks:**
+  - **Free PA:** equal letters ⇔ equal y.
+  - **Free CA:** equal ciphertext letters ⇔ equal PA⁻¹(p) ± k.
+  - Both are cheap (10⁸ settings in seconds) and exact.
+- **Twins:** a base-10 primer's digit complement, with the opposite operation, gives nearly the same text.
+- **Lesson:** never run `git stash` while a background job writes tracked files. It detached E3's log; the log was
+  recovered from the live process.
 
 ## Files
-- `strictblind/README.md`: how to run an experiment. Tests: `bash strictblind/tests/run_all.sh` (12 s).
-- `r34/`: pre-registration, manifests, frozen outputs (each committed before its reveal: E1 87bc7cb, E2 abf12b0),
-  `REVEAL.json`, `WHOLE_FAMILY.json` and the D1 result.
-- `LEDGER.md`: L119 (R33 audit), L120 (harness), L121–L124.
+- `r40/`, `r41/`, `r42/`:
+  - `PREREGISTRATION.md` and `PROTOCOL.sha256`;
+  - `blind/` (contract-tested) and `sealed/`;
+  - the experiment directories, with FROZEN, REVEAL and whole-family outputs.
+- `LEDGER.md`:
+  - L124 (E3);
+  - L131–L133 (R38, R39, review);
+  - L134 (R40);
+  - L135–L136 (R41, R42);
+  - L137 (review of ChatGPT's PR #9, R40G Gromark IC audit);
+  - L138 (two-free-alphabet identifiability).
+- `r43dev/`: the parallel-tempering development solvers (planted data only).
 
 ## Suggested next
 1. **ChatGPT:**
-   - audit R34 with the harness tests and an independent count;
-   - pick historically grounded families for the harness;
-   - source checks: the London printing of Carter, the proofread Wikisource text, other books Sanborn is known to
-     have used.
-2. **Research (either agent):** a blind solver for two unknown alphabets that passes ≥ 16/20 planted messages,
-   using a genuinely different search such as a nested cipher-alphabet search with an inner simple-substitution
-   solve, or population annealing. Until then, label every such result crib-assisted.
-3. **Cheap harness runs if wanted:** other key texts (each with an edition check), and 8-digit chain addition × K3
-   routes (about an hour).
+   - Audit R40–R42: replay a frozen stage-1 file, recount a whole-family histogram independently, and check the
+     plants.
+   - Move PR #9's files from `r40/` to `r40g/`. They clash with CC's R40, which is why PR #9 conflicts. Its
+     findings were replayed and are in L137.
+2. **A stronger free-cipher-alphabet screen,** so that C10b6, C10b7 and Carter can be solved blind and not only
+   checked exactly. For example, a quick anneal started from the Hungarian alphabet, or pruning on bigram
+   structure.
+3. **Two free alphabets:** still open.
+   - **Already tried in development, planted only, and failed:**
+     - the nested solver;
+     - an alternating solver (fix PA and anneal CA, then fix CA and anneal PA), at 200 starts × 10 rounds. It ends
+       at −422 and −438 on the L109 plants, against truth −384 and −395, with 78–85 letters wrong.
+   - Also tried and failed: parallel tempering on quadgrams (wrong texts outscore the truth) and on
+     quadgrams + words (the truth is identifiable but not reached) (L138).
+   - **Next to try:** word-level moves. For example:
+     - place a dictionary word at a position and propagate the alphabet constraints it implies, like crib
+       dragging with candidate words instead of the published clues;
+     - a beam search over word segmentations consistent with one pair of alphabets.
+   - **Gate before any K4 use:** at least 16 of 20 planted messages recovered.
+4. **Other key texts** with edition checks, run through R40/R42 (both are cheap per key).
 
-GitHub: this session still cannot push (403, "Resource not accessible by integration"). The branch
-`claude/kryptos-k4-refinement-n8pbh3` exists only in this session's copy and in the history bundle.
+No submissions to any external checker.

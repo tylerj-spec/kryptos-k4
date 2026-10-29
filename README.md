@@ -14,8 +14,8 @@ Searches that use the known words to fill in unknown alphabets are labelled **cr
 is never evidence.
 
 ## Where things are
-- **`LEDGER.md`:** the canonical record of every model tested (L01–L119+).
-- **`HANDOFF.md`:** the latest handoff (R34, Claude Code). ChatGPT's R33 handoff and audit notes are in `r33/`;
+- **`LEDGER.md`:** the canonical record of every model tested (L01–L136).
+- **`HANDOFF.md`:** the latest handoff (R40–R42, Claude Code). ChatGPT's R33 handoff and audit notes are in `r33/`;
   `AUDIT_NOTES.md` at the root is R33's copy.
 - **`k4kit/`:** the toolkit.
   - `CLAUDE.md`: the working rules.
@@ -26,6 +26,13 @@ is never evidence.
 - **`r33/`:** ChatGPT's R33 strict-blind keyword-columnar scans, self-contained with data. Replay with
   `bash verify_all.sh`.
 - **`r34/`:** R34 strict-blind runs on the harness (E1–E3) and the D1 solver probe.
+- **`r35/`–`r39/`:** ChatGPT's R35–R39 rounds (audited in L133).
+- **`r40/`–`r42/`:** strict-blind rounds with one free alphabet:
+  - R40: free plaintext alphabet, in place;
+  - R41: free plaintext alphabet, substitution then K3-style transposition;
+  - R42: free cipher alphabet, in place.
+
+  Each has its pre-registration, blind and sealed code, and frozen and revealed outputs.
 - **`strictblind/`:** the shared strict-blind harness (one scanner, route makers, key sources, plants, freeze,
   reveal) that new rounds should use instead of copying code (from R34).
 - **`archive/`:** ChatGPT packets and sources, kept unchanged for audit.

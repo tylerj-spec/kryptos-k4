@@ -7,6 +7,9 @@
 //   ID: no rearrangement; S_then_T: CT[j] = X[perm[j]], X[i] = sub(P[i], k_i); T_then_S: CT[j] = sub(P[perm[j]], k_j).
 // Keys: TEXT <file> = every 97-letter window of the text, forward and reversed, key letters numbered AZ or KRYPTOS;
 //       CHAIN <b>   = b-digit chain addition k_i = k_{i-b} + k_{i-b+1} mod 10, all 10^b primers.
+//       CHAINBASE <base>,<b> = the same recurrence modulo a declared base 2..26, base^b primers.
+//       CHAINALPH <base>,<b> = same stream with keyword-prefixed PALIMPSEST and ABSCISSA alphabets.
+//       CHAINACA <base>,<b>  = ACA Gromark columnar transposition alphabets, a different fixed family.
 // Build: g++ -std=c++17 -O3 -march=native scan.cpp -o scan
 // Usage: scan TEXT|CHAIN FILE|B LABEL CT.txt QUAD.f32 ROUTES.txt LO HI OUT_TOP.tsv OUT_ROUTES.tsv
 #include <algorithm>
@@ -26,7 +29,9 @@ const char *OPN[3] = {"VIG", "BEAU", "VARB"};
 struct Hit { double s; string setting, plain; };
 struct Cmp { bool operator()(const Hit &a, const Hit &b) const { return a.s != b.s ? a.s > b.s : a.setting < b.setting; } };
 string letters(const string &f) { ifstream in(f, ios::binary); if (!in) throw runtime_error("no file " + f);
-  string s((istreambuf_iterator<char>(in)), {}); s.erase(remove_if(s.begin(), s.end(), [](char c) { return c < 'A' || c > 'Z'; }), s.end()); return s; }
+  string s((istreambuf_iterator<char>(in)), {});
+  for (char &c : s) if (c >= 'a' && c <= 'z') c = char(c - 'a' + 'A');
+  s.erase(remove_if(s.begin(), s.end(), [](char c) { return c < 'A' || c > 'Z'; }), s.end()); return s; }
 int main(int argc, char **argv) {
   try {
     if (argc != 11) throw runtime_error("usage: scan TEXT|CHAIN FILE|B LABEL CT QUAD ROUTES LO HI OUT_TOP OUT_ROUTES");
@@ -57,34 +62,65 @@ int main(int argc, char **argv) {
         idx++;
       } }
     // keys are generated on the fly (key-outer loop), so memory stays small for any key family
-    string src; vector<int> lims; int b = 0, lim = 1;
-    if (kind == "TEXT") { src = letters(karg); if (src.size() < (size_t)N) throw runtime_error("text too short"); }
-    else if (kind == "CHAIN") { b = stoi(karg); if (b < 2 || b > 8) throw runtime_error("chain length 2..8"); for (int i = 0; i < b; i++) lim *= 10; }
-    else throw runtime_error("key kind");
-    int cmap[2][26], pmap[2][26];
-    for (int h = 0; h < 2; h++) { const string &al = h ? KRY : AZ; for (int i = 0; i < 26; i++) { cmap[h][al[i] - 'A'] = i; pmap[h][i] = al[i] - 'A'; } }
+    string src; int b = 0, base = 10; long long lim = 1;
+    if (kind == "TEXT") {
+      src = letters(karg);
+      if (src.size() < (size_t)N) throw runtime_error("text too short");
+    } else if (kind == "CHAIN" || kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") {
+      if (kind == "CHAIN") b = stoi(karg);
+      else {
+        size_t sep = karg.find(',');
+        if (sep == string::npos) throw runtime_error("CHAINBASE requires BASE,LENGTH");
+        base = stoi(karg.substr(0, sep)); b = stoi(karg.substr(sep + 1));
+      }
+      if (b < 2 || b > 8 || base < 2 || base > 26) throw runtime_error("base 2..26, chain length 2..8");
+      for (int i = 0; i < b; i++) {
+        lim *= base;
+        if ((kind == "CHAINBASE" || kind == "CHAINALPH" || kind == "CHAINACA") && lim > 20000000) throw runtime_error("CHAINBASE primer cap 20 million");
+      }
+    } else throw runtime_error("key kind");
+    const string AL[4] = {AZ,
+                          kind == "CHAINACA" ? "KAHUOFNPDLXRBIVSGQTEMZYCJW" : KRY,
+                          kind == "CHAINACA" ? "ACOZEJWIFRLDQMGUPBNYSHVTKX" : "PALIMSETBCDFGHJKNOQRUVWXYZ",
+                          kind == "CHAINACA" ? "ADJOUZBEKPVCGMRXIHNTYSFLQW" : "ABSCIDEFGHJKLMNOPQRTUVWXYZ"};
+    const string AN[4] = {"AZ", "KRY", "PAL", "ABS"};
+    const int A = (kind == "CHAINALPH" || kind == "CHAINACA") ? 4 : 2;
+    int cmap[4][26], pmap[4][26];
+    for (int h = 0; h < A; h++) {
+      if (AL[h].size() != 26) throw runtime_error("alphabet length");
+      bool seen[26]{};
+      for (int i = 0; i < 26; i++) {
+        int c = AL[h][i] - 'A';
+        if (c < 0 || c >= 26 || seen[c]) throw runtime_error("alphabet is not a permutation");
+        seen[c] = true; cmap[h][c] = i; pmap[h][i] = c;
+      }
+    }
     size_t R = names.size();
-    vector<array<int, N>> cv0(R), cv1(R);
-    for (size_t r = 0; r < R; r++) for (int t = 0; t < N; t++) { cv0[r][t] = cmap[0][ct[srcidx[r][t]] - 'A']; cv1[r][t] = cmap[1][ct[srcidx[r][t]] - 'A']; }
+    vector<array<int, N>> cv[4];
+    for (int ca = 0; ca < A; ca++) {
+      cv[ca].resize(R);
+      for (size_t r = 0; r < R; r++) for (int t = 0; t < N; t++)
+        cv[ca][r][t] = cmap[ca][ct[srcidx[r][t]] - 'A'];
+    }
     vector<double> rbest(R, -1e300);
     priority_queue<Hit, vector<Hit>, Cmp> best;
     long long count = 0;
     auto run_key = [&](const array<int, N> &K, const string &kn) {
       for (size_t r = 0; r < R; r++) {
         int kk[N]; for (int t = 0; t < N; t++) kk[t] = K[kidx[r][t]];
-        for (int ca = 0; ca < 2; ca++) {
-          const auto &cvals = ca ? cv1[r] : cv0[r];
+        for (int ca = 0; ca < A; ca++) {
+          const auto &cvals = cv[ca][r];
           for (int op = 0; op < 3; op++) {
             int idxs[N];
             for (int t = 0; t < N; t++) { int x = op == 0 ? cvals[t] - kk[t] : op == 1 ? kk[t] - cvals[t] : cvals[t] + kk[t]; x %= 26; idxs[t] = x < 0 ? x + 26 : x; }
-            for (int pa = 0; pa < 2; pa++) {
+            for (int pa = 0; pa < A; pa++) {
               int v[N]; for (int t = 0; t < N; t++) v[t] = pmap[pa][idxs[t]];
               double sc = 0; for (int t = 3; t < N; t++) sc += Q[((v[t - 3] * 26 + v[t - 2]) * 26 + v[t - 1]) * 26 + v[t]];
               count++;
               if (sc > rbest[r]) rbest[r] = sc;
               if ((int)best.size() < TOP || sc >= best.top().s) {
                 string pl(N, 'A'); for (int t = 0; t < N; t++) pl[t] = char('A' + v[t]);
-                Hit h{sc, label + "|" + names[r] + "|" + orders[r] + "|" + kn + "|PA=" + (pa ? "KRY" : "AZ") + "|CA=" + (ca ? "KRY" : "AZ") + "|OP=" + OPN[op], pl};
+                Hit h{sc, label + "|" + names[r] + "|" + orders[r] + "|" + kn + "|PA=" + AN[pa] + "|CA=" + AN[ca] + "|OP=" + OPN[op], pl};
                 if ((int)best.size() < TOP) best.push(h);
                 else if (Cmp()(h, best.top())) { best.pop(); best.push(h); }
               }
@@ -106,11 +142,14 @@ int main(int argc, char **argv) {
         }
       }
     } else {
-      for (int p = 0; p < lim; p++) {
-        int v = p; for (int i = b - 1; i >= 0; i--) { K[i] = v % 10; v /= 10; }
-        for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % 10;
-        ostringstream o; o << "primer" << setw(b) << setfill('0') << p;
-        run_key(K, o.str());
+      const string symbols = "0123456789ABCDEFGHIJKLMNOP";
+      for (long long p = 0; p < lim; p++) {
+        long long v = p; string primer(b, '0');
+        for (int i = b - 1; i >= 0; i--) {
+          K[i] = int(v % base); primer[i] = symbols[K[i]]; v /= base;
+        }
+        for (int i = b; i < N; i++) K[i] = (K[i - b] + K[i - b + 1]) % base;
+        run_key(K, "primer" + primer);
       }
     }
     ofstream ro(argv[10]); ro << setprecision(10) << "route\torder\tbest_score\n";

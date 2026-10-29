@@ -1,0 +1,67 @@
+[
+ {
+  "tag": "K4_P0",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -604.6045775,
+  "top_plaintext": "BXTRHYPOPUTULLSBLWITYPHVOYEEIHMRMKTOASERKPLYLLHTDOHASYFPBAWWDRVINECTMUPMGEIIVGFSUVELGRTYAGESWATKZ",
+  "kind": "K4",
+  "clue_matches_max": 5,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   0,
+   2,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1
+  ]
+ },
+ {
+  "tag": "PLANT_A",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -378.8629992,
+  "top_plaintext": "THEMESSENGERFOLLOWEDANARROWFOOTPATHTHROUGHTHEFORESTBEFORESUNRISEANDCOUNTEDEVERYTURNINGALONGTHERIV",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R8x21/CCW-CW/inv",
+   "order": "S_then_T",
+   "key": "rev/AZ/off547",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANT_B",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.0181196,
+  "top_plaintext": "ATTHEEDGEOFTHEVILLAGEANABANDONEDOBSERVATORYSTOODABOVETHEHILLSITSBRASSINSTRUMENTSCOVEREDWITHDUSTAN",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R4x15/CW-CCW/fwd",
+   "order": "T_then_S",
+   "key": "fwd/AZ/off892",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "NULL",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -600.9837606,
+  "top_plaintext": "WKSLNTSJQCGILBOYOVNIFOGWAKESEJASWHMHTPUSISIGCARCLLLITIMORICSSUREXSIODBOSUGTIDCTAIJDMTOLSMNIURRYOV",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ }
+]

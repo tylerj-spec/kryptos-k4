@@ -1,0 +1,847 @@
+[
+ {
+  "tag": "K4_B3",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -667.9609175,
+  "top_plaintext": "OAJPSNVOFHUJAROJIDAZUDLRUPOPQLGIRSMRWSORHPSSEKYZWASIKLTBHAVINEAMYOTRSLZEPIVFCIZVRJABHEITHUZUDKBZQ",
+  "kind": "K4",
+  "clue_matches_max": 5,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   2,
+   3,
+   0,
+   1,
+   0,
+   0,
+   3,
+   1,
+   3
+  ]
+ },
+ {
+  "tag": "PLANTA_B3",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer00102",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANTB_B3",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer10102",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL_B3",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -670.4130676,
+  "top_plaintext": "ZDVDWMCRIOYSSMNTINPRIVYUCTGBBEFRJTISDGERICSIITPRXJINFQFHVADABNHUUIZSTUONYMPSHSLSDJGLRAEKOTLOYXMBV",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B4",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -682.1582189,
+  "top_plaintext": "OAKRRNWODHSKYPMIIDAATDIPVPPOPMEIPPLTVROPINSREKWYVAQJIKRAGXWGMEYLVNVSSLXENITDAKYVRGBAIFKUETZUBKAZO",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   2,
+   3,
+   0,
+   1,
+   1,
+   2,
+   1,
+   0,
+   2
+  ]
+ },
+ {
+  "tag": "PLANTA_B4",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer22101",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANTB_B4",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer12132",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "NULL_B4",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -637.0758519,
+  "top_plaintext": "XDUETOCOKNAPRKLSILPPIXAWASHCYFFTHRJRAGERIDSIIUNSYHIMHPDGTYBYZNHUUKWSTWNOYONPIRIRFJGLPZEKMULLAWNYU",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B5",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -656.3241661,
+  "top_plaintext": "HMDEYGAGOSYUKGHSPOKLYOVBAXVHFVRAJHGIAIWGSWHINECCBIGRCRYNSJAQUMIXEEWIFVAQDEBNOECCITLMSPAZOVJZPALIE",
+  "kind": "K4",
+  "clue_matches_max": 3,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   3,
+   1,
+   2,
+   2,
+   3,
+   2,
+   1,
+   1,
+   1,
+   2
+  ]
+ },
+ {
+  "tag": "PLANTA_B5",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer33202",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "PLANTB_B5",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer31013",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL_B5",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -642.5638933,
+  "top_plaintext": "DFAHASGSLTDSWRPYMORVJABAHWLCEHIXNUOTFLITLEWONYSTALISKVHMXCHEFRIXXLBWUATODOSVNWNTHOHOTBKOTWPQCAOCB",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B6",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -657.5944133,
+  "top_plaintext": "JPLEBHBIXWALKDLMUXKRTUNFADHFHIXUBCFDCBEENDDFRMPRARENNNEWWRAWMUPISJCAALTZENTURNTTFMXRMQLDWSREXQZKD",
+  "kind": "K4",
+  "clue_matches_max": 3,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   2
+  ]
+ },
+ {
+  "tag": "PLANTA_B6",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer42505",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "PLANTB_B6",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer21101",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "NULL_B6",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -645.0890718,
+  "top_plaintext": "VDUATOYQINWNRINSILRNETYSAQHCAFDTJTHPCGATEBUGGUNOWFEOHRDEVAZYBNDUSIYORSNOYOPPIRKPBJEHPBCKOSHJYWNYW",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B7",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -653.8251464,
+  "top_plaintext": "NBGOUNTODGPHYOIJIFYAUFINSONPRIBHSNLSTOPOFPMNDFZVQUOFHGQBIZUCLEYMXMRPRIZEJESFDFWSSEBCCAESHPVTCFZUO",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   2,
+   1,
+   3,
+   0,
+   1
+  ]
+ },
+ {
+  "tag": "PLANTA_B7",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer46434",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "PLANTB_B7",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer43515",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "NULL_B7",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -660.0715129,
+  "top_plaintext": "VZWFVLWRJMYMTIIUKHNRIRXSCTFCWEERFOHODECTEAOIGUNRSFELHOEISXXXWOFSTEVOQWNMYLNNGOFSELDMPADINRHIVUNYT",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B8",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -645.6814754,
+  "top_plaintext": "KYGONHQHEBOFASKHBEXBTFGNSNLOKHGESNINQONOFNSLEDWSPTRHEFTZIWPDJBYJXPOMOLSZLEWBBITSMFCAEDGRANTNCEWUQ",
+  "kind": "K4",
+  "clue_matches_max": 3,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   3,
+   1,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   2,
+   0
+  ]
+ },
+ {
+  "tag": "PLANTA_B8",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer66464",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANTB_B8",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer53007",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL_B8",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -628.6972499,
+  "top_plaintext": "RVAREGYDUDOGFMLANJEJVCOORDVTTYKBNDUIRZWEUZSUWEGGSUNEQCKMORTARHNFAUOHHDEIALLFMENDKNRUCKWUMANGORMTC",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B9",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -636.4113142,
+  "top_plaintext": "OCYOUSRELIZLCEDUJMCBYNXYRWZEARUTEEFAWOWANUDDITTAOITQAXPHLFPMZNDNYAVSTVPHOTONHSYPOLCMUIRPNPDUITEDO",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2,
+   2,
+   1,
+   1
+  ]
+ },
+ {
+  "tag": "PLANTA_B9",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer66633",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANTB_B9",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer17625",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL_B9",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -633.1576757,
+  "top_plaintext": "FMYOYLKEDBOKBUKYBAHITGLBLGRRNPSGEDINQSSKTLWEBAVLHFUJPHOSEKMKIDTAYADEMAYJHHBOTHRKOVOYJOSYIATIKAANE",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B10",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -637.8123233,
+  "top_plaintext": "GTERSITIEZULTSGLAXTTOZFLPMONPNAGOQITONIMBMOOAIRROUTDEHOXGAWGFDBLYPTRRMXBLIUAVEVPPFCBGYGSDUYOYGASP",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   0,
+   3,
+   1,
+   2,
+   0,
+   3,
+   0,
+   0,
+   1
+  ]
+ },
+ {
+  "tag": "PLANTA_B10",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer35604",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B10",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer96095",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "NULL_B10",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -641.0641432,
+  "top_plaintext": "DRFRDAWEDLTUNPAEINCESGCLTYPYTTSWILAZYPVBORFBIJIVHDSAMWNKGUSTVCPHIIKCBENACBOWQBNWWMOMHTROZOOEACLWI",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B11",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -635.1125765,
+  "top_plaintext": "BQOLIFVCRKLOLLTYPORNNKECUBEACOTBGGTIICFICDIERTJIFLIRRPMYYQFOSTVEHAIFMOVPAYFRNOMNIORPKXONZIXHUBUMG",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   4,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   3,
+   3
+  ]
+ },
+ {
+  "tag": "PLANTA_B11",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer12495",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B11",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primerA6844",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "NULL_B11",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -624.8624165,
+  "top_plaintext": "SGTNAGLTSRFSTUSRCNTANADSNOIDIVISBRRDQMMCMGORBRUSEYUTWSUWALMEHEUVOPYETZKISAYEVIRSFUUNPFHKSRVIBBNFX",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B12",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -618.445972,
+  "top_plaintext": "JJSAUFKONUTNHACYWNGETILCSTWEARHEBBHTXBOILZCHUSADPESWORRNIDRMYIIKYPSSEMCFFAAWNTTSELMEMUDOMSGPGPHCE",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   3,
+   1,
+   0,
+   1,
+   1,
+   2,
+   2,
+   1,
+   3
+  ]
+ },
+ {
+  "tag": "PLANTA_B12",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer44601",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B12",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer6BB59",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "NULL_B12",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -627.923049,
+  "top_plaintext": "CONYFWBHAJEANKXJCSEGRDXDSERVUYOFGFLETRAFMYKIKOIVEILATWVNNBAETESOFIDAFLQBCAMYRAUGZKSRISTLDOPDBEKUG",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B16",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -614.2851498,
+  "top_plaintext": "DUITDADAIICOFCQPLNDNEUKHORVCANVBMFHORSCJUKAIKESCOLSLYNAGMEETZNDSAJONSQOQTTORNOETETDFYMIXPWEWGRIGO",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   2,
+   1,
+   0,
+   2,
+   1,
+   3,
+   2,
+   1,
+   1
+  ]
+ },
+ {
+  "tag": "PLANTA_B16",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primerAC27A",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B16",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer6FB69",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "NULL_B16",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -614.9460347,
+  "top_plaintext": "HDPRPACOPHTETHWOIVAKMIIPDERCBTAWETCHUNPLMVHPALOVNHAGMATSMYCHTMNPUACIFSHIGDGIMHRKOYSONHRUBSMKICHUQ",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B20",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -604.004591,
+  "top_plaintext": "NNKAPLEKENELMCWHENAGYVECGNAAAHSZSCIBOTBBGJRSTHBYDTSURPEBLIEDRCETHACKSKESILYNTLFJALYIUBMSFCDQUDADB",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   3,
+   2,
+   0,
+   1,
+   2,
+   2,
+   1,
+   1,
+   1,
+   2
+  ]
+ },
+ {
+  "tag": "PLANTA_B20",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer463D8",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B20",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer8ID5H",
+   "PA": "KRY",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "NULL_B20",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -608.1785588,
+  "top_plaintext": "FWLIMGIJDEFTNBUGUAGDSVJENIVRKLLABOREILKPANNDNCTLARTYIFNMEWDJNKOEYAAAFUITSSHAKERSOUICTENEZEYRDQUZH",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ },
+ {
+  "tag": "K4_B26",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -612.3112099,
+  "top_plaintext": "ERTSSELWAJEHEYHOUZEUPFIUVTRWVYOPOFYEYKXXAPASBURYHISHOMVUBYOYOAFJDCBABMSSMOCHABAMOEBSIQMPLIVEWINGR",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   1,
+   0,
+   2,
+   2,
+   2,
+   4,
+   0,
+   3
+  ]
+ },
+ {
+  "tag": "PLANTA_B26",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6788232,
+  "top_plaintext": "BENEATHTHECOURTYARDAFORGOTTENSTAIRCASEDESCENDEDTOWARDAPASSAGEWHEREFAINTMARKSONTHESTONESSUGGESTEDT",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primerKPDEA",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ },
+ {
+  "tag": "PLANTB_B26",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -385.0627718,
+  "top_plaintext": "AFTERMIDNIGHTTHESURVEYOREXAMINEDHISMAPANDMEASUREDTHESHADOWSCASTBYTHELANTERNBESIDETHENORTHERNENTRA",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "primer2INA9",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "NULL_B26",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -613.3851779,
+  "top_plaintext": "FWORVNPVSUSXUHZALIPHYSHONUTZKWOGSERENUFPLAIYPAHOCIMKOBUTOIBDOFRCBEIRVEAFDSVAMUCHPWAODENORWBUSHGOD",
+  "kind": "NULL",
+  "description": "non-K4 ciphertext with no planted truth"
+ }
+]

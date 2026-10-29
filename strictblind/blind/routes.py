@@ -32,6 +32,18 @@ def rot(n, w, cw):
     return out
 
 
+def mixed_rotation(name, n=N):
+    """Double rotation with independent directions; excluded from the earlier same-direction sweep."""
+    dims, dirs, kind = name[1:].split("/")
+    w1, w2 = map(int, dims.split("x"))
+    d1, d2 = dirs.split("-")
+    if d1 not in ("CW", "CCW") or d2 not in ("CW", "CCW") or d1 == d2:
+        raise ValueError("mixed rotation requires opposite directions")
+    p1, p2 = rot(n, w1, d1 == "CW"), rot(n, w2, d2 == "CW")
+    p = [p1[i] for i in p2]
+    return p if kind == "fwd" else inv(p)
+
+
 def rotation(name, n=N):
     """K3's double quarter-turn, R27 naming (verified on K3 in earlier rounds)."""
     dims, cwn, kind = name[1:].split("/")
@@ -101,6 +113,15 @@ if __name__ == "__main__":
         lo, hi = int(a[1]), int(a[2])
         named = [(f"R{w1}x{w2}/{d}/{k}", rotation(f"R{w1}x{w2}/{d}/{k}")) for w1 in range(lo, hi + 1)
                  for w2 in range(lo, hi + 1) for d in ("CW", "CCW") for k in ("fwd", "inv")]
+        n = write(a[3], both(named))
+    elif a[0] == "rot-mixed":
+        lo, hi = int(a[1]), int(a[2])
+        if not (2 <= lo <= hi <= N):
+            sys.exit("rotation widths must satisfy 2 <= LO <= HI <= 97")
+        named = [(nm, mixed_rotation(nm)) for w1 in range(lo, hi + 1)
+                 for w2 in range(lo, hi + 1) for dirs in ("CW-CCW", "CCW-CW")
+                 for kind in ("fwd", "inv")
+                 for nm in (f"R{w1}x{w2}/{dirs}/{kind}",)]
         n = write(a[3], both(named))
     elif a[0] == "columnar":
         n = write(a[2], both(columnar_routes(a[1].split(","), "--canonical" in a)))

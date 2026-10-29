@@ -18,3 +18,7 @@ U6 found W -123.7  true W -76.2  wrong letters 91
 U7 found W -124.2  true W -78.9  wrong letters 91
 D1: readable 0/8 at 256 x 200,000 (L109: 0/8 at 64 x 40,000)
 === 01:19:08 e3_carter_rot
+K4_E3_CARTER_ROT: top -577.3600209 (5153 s)
+PLANT_D: top -398.1649847 (7009 s)
+FROZEN 9 files -> /home/user/kryptos-k4/r34/e3_carter_rot/FROZEN.sha256
+=== 04:41:52 CHAIN DONE

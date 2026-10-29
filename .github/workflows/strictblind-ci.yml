@@ -1,0 +1,33 @@
+name: Strict-blind integrity
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r35-*'
+  pull_request:
+    paths:
+      - '.github/workflows/strictblind-ci.yml'
+      - 'strictblind/**'
+      - 'r35/**'
+      - 'r36/**'
+      - 'verify_all.sh'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # test_legacy_freeze reads older freeze commits
+      - name: Compiler and test environment
+        run: |
+          python3 --version
+          g++ --version
+      - name: Blind contract, regressions, plants, and R35 integrity
+        run: bash strictblind/tests/run_all.sh
+      - name: Historical R32 and R33 audit
+        run: bash verify_all.sh

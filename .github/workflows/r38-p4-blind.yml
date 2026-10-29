@@ -1,0 +1,41 @@
+name: R38 P4 canonical ACA Gromark blind search
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r38-aca-gromark-alphabets'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r38-p4
+  cancel-in-progress: false
+
+jobs:
+  search-p4:
+    if: "startsWith(github.event.head_commit.message, 'R38 P4: RUN BLIND')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r38-aca-gromark-alphabets
+          fetch-depth: 0
+      - name: Commit attribution
+        run: |
+          git config user.name "R38 Research Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Blind contract and historical regression tests
+        run: |
+          bash strictblind/tests/run_all.sh
+          bash verify_all.sh
+      - name: Lock protocol then blind scan/freezing then sealed checks
+        run: bash r38/run_p4.sh
+      - name: Preserve experiment output as artifact if push fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r38-p4-aca-gromark
+          path: r38/p4_aca_gromark/
+          if-no-files-found: warn

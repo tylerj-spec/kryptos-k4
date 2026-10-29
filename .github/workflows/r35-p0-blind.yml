@@ -1,0 +1,42 @@
+name: R35 P0 strict-blind experiment
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r35-blind-integrity-and-mixed-rotations'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r35-p0
+  cancel-in-progress: false
+
+jobs:
+  run-p0:
+    if: "startsWith(github.event.head_commit.message, 'R35 P0: RUN BLIND')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r35-blind-integrity-and-mixed-rotations
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Commit attribution
+        run: |
+          git config user.name "R35 Research Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Standard regression and historical audits
+        run: |
+          bash strictblind/tests/run_all.sh
+          bash verify_all.sh
+      - name: Run pre-registered blind P0; freeze+commit BEFORE reveal
+        run: bash r35/run_p0.sh
+      - name: Preserve outputs even if git push is blocked
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r35-p0-run
+          path: r35/p0_k1k3_mixed/
+          if-no-files-found: warn

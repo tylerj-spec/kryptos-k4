@@ -1,0 +1,356 @@
+{
+ "plants": {
+  "PLANT_00": {
+   "family": "C10b5",
+   "setting": "C10b5/primer76091|PA=ACAPAL|OP=BEAU|VARB",
+   "true_stage1_score": -264.9994,
+   "stage1_rank": 1745,
+   "final_rank": 1,
+   "true_row_score": -373.0266511,
+   "true_row_wrong_letters": 0,
+   "best_setting": "C10b5/primer76091|PA=ACAPAL|OP=BEAU|VARB",
+   "best_score": -373.0266511,
+   "best_row_plaintext": "EVERYSPRINGTHEOLDGARDENERPLANTEDBEANSALONGTHESOUTHWALLANDTOLDTHECHILDRENSTORIESABOUTHISYEARSATSEA"
+  },
+  "PLANT_01": {
+   "family": "K1K3",
+   "setting": "K1K3/fwd/KRY/off126|PA=KRY|OP=VIG",
+   "true_stage1_score": -259.9201,
+   "stage1_rank": 6,
+   "final_rank": 1,
+   "true_row_score": -384.8595381,
+   "true_row_wrong_letters": 0,
+   "best_setting": "K1K3/fwd/KRY/off126|PA=KRY|OP=VIG",
+   "best_score": -384.8595381,
+   "best_row_plaintext": "THECAPTAINORDEREDTHECREWTOLOWERTHESAILSWHENTHEFOGROLLEDINANDTHEYALLWAITEDQUIETLYFORTHEMORNINGTIDE"
+  },
+  "PLANT_02": {
+   "family": "C10b5",
+   "setting": "C10b5/primer07507|PA=PALP|OP=BEAU|VARB",
+   "true_stage1_score": -267.6125,
+   "stage1_rank": 10996,
+   "final_rank": 1,
+   "true_row_score": -382.6982164,
+   "true_row_wrong_letters": 7,
+   "best_setting": "C10b5/primer07507|PA=PALP|OP=BEAU|VARB",
+   "best_score": -382.6982164,
+   "best_row_plaintext": "ATTHEENDOFTHEMARKETDAYTHETRADERSPACKEDTHEIRCARTSWITHUNSOLDAPARESANDALIKEDSLOWLYHOMEALONGTHERUSTIR"
+  },
+  "PLANT_03": {
+   "family": "K1K3",
+   "setting": "K1K3/rev/KRY/off82|PA=KRY|OP=BEAU|VARB",
+   "true_stage1_score": -269.06,
+   "stage1_rank": null,
+   "final_rank": null,
+   "true_row_score": null,
+   "true_row_wrong_letters": null,
+   "best_setting": "C10b5/primer45584|PA=KRY|OP=VIG",
+   "best_score": -449.5787566,
+   "best_row_plaintext": "CBLALAROLANANDERATEONANGARIFIEEMPARFEEDICIDDEREINCASIAMEGUDIOTESMCESUSCOATSANSELYEDHEDDYTHENHEGIR"
+  },
+  "PLANT_04": {
+   "family": "C10b5",
+   "setting": "C10b5/primer75982|PA=ABSP|OP=BEAU|VARB",
+   "true_stage1_score": -264.6203,
+   "stage1_rank": 679,
+   "final_rank": 1,
+   "true_row_score": -374.0753381,
+   "true_row_wrong_letters": 0,
+   "best_setting": "C10b5/primer75982|PA=ABSP|OP=BEAU|VARB",
+   "best_score": -374.0753381,
+   "best_row_plaintext": "THESTUDENTSSPENTTHEAFTERNOONCOPYINGOLDMAPSINTHEARCHIVEANDCOMPARINGTHECOASTLINESWITHTHEMODERNCHART"
+  },
+  "PLANT_05": {
+   "family": "K1K3",
+   "setting": "K1K3/rev/KRY/off678|PA=ACAPAL|OP=BEAU|VARB",
+   "true_stage1_score": -268.914,
+   "stage1_rank": null,
+   "final_rank": null,
+   "true_row_score": null,
+   "true_row_wrong_letters": null,
+   "best_setting": "C10b5/primer78438|PA=AZ|OP=BEAU|VARB",
+   "best_score": -445.731185,
+   "best_row_plaintext": "MLISESEALEHEHHOUGEAGEFOSHAUDYONERENEVERHETEUROSUBECOMEATRAMEDICULHEREPOLTTHISTSMELEXTRANTROLYBRUZ"
+  }
+ },
+ "nulls": {
+  "NULL_00": {
+   "best_score": -447.7624407,
+   "best_setting": "C10b5/primer40641|PA=ACAABS|OP=BEAU|VARB",
+   "max_stage1": -257.0352734
+  },
+  "NULL_01": {
+   "best_score": -448.7331278,
+   "best_setting": "C10b5/primer77995|PA=AZ|OP=BEAU|VARB",
+   "max_stage1": -259.05155
+  }
+ },
+ "k4": {
+  "settings": 1456504,
+  "max_stage1": -259.4127757,
+  "best_score": -446.0786793,
+  "forward_check": "top 20 rows re-encrypt exactly to K4",
+  "top20": [
+   {
+    "setting": "C10b5/primer30409|PA=ACAABS|OP=VIG",
+    "score": -446.0786793,
+    "stage1": -265.6542871,
+    "clue_matches": 1,
+    "plaintext": "TOTCHTONLATLAYMARKOWMEDENTCIEEBITISEVERMERNHASINCOMENDTORANCAGOORINPEDHEFICOORYBREMURALASTOALTROU",
+    "cipher_alphabet": "UMHBELGXNADRFJTIYCVWQSOKPZ"
+   },
+   {
+    "setting": "K1K3/fwd/KRY/off116|PA=PALP|OP=VIG",
+    "score": -447.3199379,
+    "stage1": -267.0721794,
+    "clue_matches": 2,
+    "plaintext": "FMMELEMLOVEISERDANTINWHALLORPERSICHEORVEYHEGIMERDINAPMPOSTALLEADIUMHALEASESTRENANNTOONEDAMFLOUANR",
+    "cipher_alphabet": "GFWNEJQHXVDKCYLISOARTUBMPZ"
+   },
+   {
+    "setting": "C10b5/primer88381|PA=ACAABS|OP=BEAU|VARB",
+    "score": -449.4629152,
+    "stage1": -265.4365879,
+    "clue_matches": 0,
+    "plaintext": "NGTHEINCHOMAUEREEQUESAUGOSICINCTEDIWOWNOTHOPRIEAWNASSAVEENAMSDETHEDADBEDELARENOTTYAKERHBORNERSATH",
+    "cipher_alphabet": "ZSPDBIUEGROAQYJNKXFTWCHMLV"
+   },
+   {
+    "setting": "C10b5/primer38186|PA=AZ|OP=VIG",
+    "score": -451.3290265,
+    "stage1": -267.8987099,
+    "clue_matches": 0,
+    "plaintext": "YBPRIANSARONGFUNSOBEINTWILISSADOEBSINELEDOFATISNMALBOTHESDININGDUSEDKERMOONVIPOTHEWEMENISHEFANDFY",
+    "cipher_alphabet": "YOECGMSANBJTVDUQKWFIZLXPHR"
+   },
+   {
+    "setting": "C10b5/primer68147|PA=AZ|OP=VIG",
+    "score": -452.5229256,
+    "stage1": -268.4809944,
+    "clue_matches": 1,
+    "plaintext": "BRILODRCLESSTEDPEATYEASICLOCKOFGAYHOCKIGONEYTHINESHSCONSCOFENBYLOCCHOTEDWEHISHESITANAMENEROSTESLN",
+    "cipher_alphabet": "XCEPIHSOFKVWGZTRQNYADULJMB"
+   },
+   {
+    "setting": "C10b5/primer59442|PA=ACAABS|OP=BEAU|VARB",
+    "score": -452.8374407,
+    "stage1": -268.0978108,
+    "clue_matches": 2,
+    "plaintext": "DNSWEATUREGEMMWRPIRVICEDETHASARANTATTTHYMINGETEERARNAPEOPANGTHISODERIEDRSAFRONESITCACHLEDCOMPLODS",
+    "cipher_alphabet": "MHCVIULEGBFSJWTQXKNPYRODAZ"
+   },
+   {
+    "setting": "C10b5/primer03475|PA=ACAABS|OP=VIG",
+    "score": -453.0700345,
+    "stage1": -268.607829,
+    "clue_matches": 2,
+    "plaintext": "FSENNTOSALLESUREWHINGIRSUPEMICYCALITHAPAGEALAUKINUSREPREFEISTITTORAFFERINETSPECDABOKATONARAYBELEF",
+    "cipher_alphabet": "ITGCSHEAYVXKQDJLMZPNFWOUBR"
+   },
+   {
+    "setting": "K1K3/fwd/AZ/off203|PA=AZ|OP=VIG",
+    "score": -453.9115348,
+    "stage1": -264.9094369,
+    "clue_matches": 1,
+    "plaintext": "FSEINDIFFENTOMITTIRDPJOBBYENUESMETRUDEOINISTNINATTHELLTOWHARRNALLYNCOYNEUNESENRANCREASRESHESOTETB",
+    "cipher_alphabet": "UFMGCVELROBASIHKJZDXPTQWNY"
+   },
+   {
+    "setting": "C10b5/primer91762|PA=ACAKRY|OP=VIG",
+    "score": -454.7321973,
+    "stage1": -264.295699,
+    "clue_matches": 2,
+    "plaintext": "ZANDFOCATSWEAYORATHESGEFREENFRTLIEHNINTTOTSITICEDANALINTALDHIGENTALKNOTENIRETIMUALERMEDFRADKERGAL",
+    "cipher_alphabet": "GEBIOXPUTJAVMKRNWHDFLYSQCZ"
+   },
+   {
+    "setting": "C10b5/primer78985|PA=KRY|OP=VIG",
+    "score": -455.0071638,
+    "stage1": -267.2335945,
+    "clue_matches": 1,
+    "plaintext": "UATDOWMUSOBLICKIANDANIGINDFALIAADSUSESHAMEETSECADROMONBRATITEMENWONCALINSANORODUOUNSBASSYOUCKONTD",
+    "cipher_alphabet": "MVOYAHDEPGUISKTBZQRWNLFCJX"
+   },
+   {
+    "setting": "C10b5/primer69442|PA=KRY|OP=BEAU|VARB",
+    "score": -455.4548552,
+    "stage1": -266.8572499,
+    "clue_matches": 2,
+    "plaintext": "OSENETHATPLERSTNEFORMAILCHIRIUREDASAIRCAUDOBUASCUSTHENILEANALGOWLYATARSOUGLYGHEMOURMBREETHEINDWAU",
+    "cipher_alphabet": "TVZSAFIKQULXDJWRYNMEPCHBGO"
+   },
+   {
+    "setting": "C10b5/primer10748|PA=AZ|OP=VIG",
+    "score": -455.6874714,
+    "stage1": -266.7686553,
+    "clue_matches": 1,
+    "plaintext": "EDAINEDEAONIADYKINVALMOLONIILETHABELONLETODAYDROLTOPFMSFAULDEMADREGOTTONEBSTHENBUSEDAYERTSTOTANWH",
+    "cipher_alphabet": "AEGBSONKDIXPRCVQLFWZTUJHMY"
+   },
+   {
+    "setting": "K1K3/fwd/AZ/off149|PA=PALP|OP=BEAU|VARB",
+    "score": -456.0627599,
+    "stage1": -263.2318785,
+    "clue_matches": 0,
+    "plaintext": "AVEFOSTAFORELSRAINVEGOLDGANDANFLFEARIRUSBESIZAGSOMROLIMSENWATAPENTMETRENGEONEENLYASTEATREADORIUMA",
+    "cipher_alphabet": "UOBYXMTRVWQEZDHLACSPJINFGK"
+   },
+   {
+    "setting": "C10b5/primer81544|PA=ABSP|OP=BEAU|VARB",
+    "score": -456.3031993,
+    "stage1": -267.4861457,
+    "clue_matches": 1,
+    "plaintext": "AFECBBUBRESAMEAVASONSUSESOUTENTSENTHSHMEMODETDEDINONEWASEMIATYERAPEONGHUPEDOUFINORSTIMICHEMEREBLA",
+    "cipher_alphabet": "WKVHZSBAMTGJNQXPEYODFLCUIR"
+   },
+   {
+    "setting": "C10b5/primer09442|PA=ACAKRY|OP=BEAU|VARB",
+    "score": -456.5304739,
+    "stage1": -264.1304785,
+    "clue_matches": 1,
+    "plaintext": "XROCEECTAGEONTINTSHDOMOWAGESENYOTEERCRESITIBOHLOCANDONENTNAGOGONAGANICUTSOFANAOWILIISONESTOWNASHE",
+    "cipher_alphabet": "KZBLEDTJPCOSQIFHMUYRXGWVNA"
+   },
+   {
+    "setting": "C10b5/primer85885|PA=ACAKRY|OP=BEAU|VARB",
+    "score": -456.6222823,
+    "stage1": -267.8127049,
+    "clue_matches": 1,
+    "plaintext": "IKESADEROPHCOPLEASKORCEREONLICFIRSBUSALLPONSOSURITHOSEASCADEUTOMTHENNINGDRINEEPGARGSCHRODAEOFSEAB",
+    "cipher_alphabet": "PGZQJOSRWYDKMCLFXVAINBUTEH"
+   },
+   {
+    "setting": "C10b5/primer75136|PA=AZ|OP=BEAU|VARB",
+    "score": -456.6348326,
+    "stage1": -262.7593629,
+    "clue_matches": 2,
+    "plaintext": "FCDERANCEITEATEMSTABEWHILSURDIVIONHOLLOROPPROHNRHARMEMORTWETEXYEDALOMANUREFARENOONTRSELSENERGINAI",
+    "cipher_alphabet": "HRKWLEVXTZJUSCQIDPMFYGABON"
+   },
+   {
+    "setting": "C10b5/primer83381|PA=PALP|OP=VIG",
+    "score": -456.8646224,
+    "stage1": -267.6642339,
+    "clue_matches": 0,
+    "plaintext": "UITTEAVACOPHEIRNEYEINORGASSOBEDTIMATHTHLOCLANDOROWAUSHITEANDINISINIASWONVINGTINUINEFFOCTGMAENDEPT",
+    "cipher_alphabet": "MXOASVBUTNKCYIQRDWGHLPJEZF"
+   },
+   {
+    "setting": "C10b5/primer13730|PA=ABSP|OP=BEAU|VARB",
+    "score": -456.9842532,
+    "stage1": -266.2601748,
+    "clue_matches": 0,
+    "plaintext": "GIHANKOFHARCISOFTHECOLGISDMECANSCANUPOFADEASTHESPROFSHONYPORAMIALFANLYAREELONGGRLESNTMCTANRUBEENS",
+    "cipher_alphabet": "ZBKLPQGOWFAYTDUXINEVMSHRCJ"
+   },
+   {
+    "setting": "C10b5/primer83465|PA=ABSP|OP=BEAU|VARB",
+    "score": -457.0089891,
+    "stage1": -266.1180174,
+    "clue_matches": 0,
+    "plaintext": "XGEEXPRORNAKETTHEVENSTMAKIASSOVEMOURINCOTINMHIFHEHMUSHTISEDEOWERDTHOMPERBIGWASFORTVSAREYOVERESSEC",
+    "cipher_alphabet": "RAKELBZMHVTXSFNOJGUPCQYDIW"
+   }
+  ]
+ },
+ "whole_family": {
+  "K4": {
+   "settings": 171294872,
+   "consistent": 0,
+   "min_V": 5,
+   "min_settings": [
+    "C10b7/primer1395776|PA=ACAABS|OP=BEAU|VARB",
+    "C10b7/primer9715334|PA=ACAABS|OP=VIG"
+   ]
+  },
+  "NULL_00": {
+   "settings": 171294872,
+   "consistent": 0,
+   "min_V": 8,
+   "min_settings": [
+    "C10b6/primer237532|PA=ACAABS|OP=BEAU|VARB",
+    "C10b6/primer873578|PA=ACAABS|OP=VIG",
+    "C10b7/primer1668977|PA=ACAPAL|OP=BEAU|VARB",
+    "C10b7/primer3035638|PA=ACAKRY|OP=VIG",
+    "C10b7/primer6225028|PA=AZ|OP=VIG",
+    "C10b7/primer6851114|PA=ACAKRY|OP=VIG",
+    "C10b7/primer7565127|PA=ACAPAL|OP=BEAU|VARB",
+    "C10b7/primer9442133|PA=ACAPAL|OP=VIG",
+    "CARTER/rev/AZ/off211207|PA=ACAPAL|OP=BEAU|VARB"
+   ]
+  },
+  "NULL_01": {
+   "settings": 171294872,
+   "consistent": 0,
+   "min_V": 5,
+   "min_settings": [
+    "C10b7/primer2539641|PA=ABSP|OP=VIG",
+    "C10b7/primer2559815|PA=KRY|OP=BEAU|VARB",
+    "CARTER/fwd/AZ/off233268|PA=ABSP|OP=VIG"
+   ]
+  },
+  "PLANT_00": {
+   "settings": 171294872,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer76091|PA=ACAPAL|OP=BEAU|VARB"
+   ]
+  },
+  "PLANT_01": {
+   "settings": 171294872,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "K1K3/fwd/KRY/off126|PA=KRY|OP=VIG"
+   ]
+  },
+  "PLANT_02": {
+   "settings": 171294872,
+   "consistent": 2,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer03503|PA=PALP|OP=VIG",
+    "C10b5/primer07507|PA=PALP|OP=BEAU|VARB"
+   ]
+  },
+  "PLANT_03": {
+   "settings": 171294872,
+   "consistent": 2,
+   "min_V": 0,
+   "min_settings": [
+    "K1K3/rev/KRY/off82|PA=KRY|OP=BEAU|VARB",
+    "K1K3/rev/KRY/off418|PA=KRY|OP=BEAU|VARB"
+   ]
+  },
+  "PLANT_04": {
+   "settings": 171294872,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer75982|PA=ABSP|OP=BEAU|VARB"
+   ]
+  },
+  "PLANT_05": {
+   "settings": 171294872,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "K1K3/rev/KRY/off678|PA=ACAPAL|OP=BEAU|VARB"
+   ]
+  }
+ },
+ "decision": {
+  "gate_plants_rank1": "4/6",
+  "gate_whole_family_plants_true_setting_consistent": "6/6",
+  "gate_passed": false,
+  "score_threshold": -416.31098940000004,
+  "null_best": -447.7624407,
+  "plant_true_min": -384.8595381,
+  "k4_best_score": -446.0786793,
+  "k4_top20_clue_matches_max": 2,
+  "k4_candidate": false,
+  "k4_whole_family_consistent": 0,
+  "k4_whole_family_min_V": 5
+ }
+}

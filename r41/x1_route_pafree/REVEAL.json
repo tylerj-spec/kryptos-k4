@@ -1,0 +1,343 @@
+{
+ "plants": {
+  "PLANT_00": {
+   "family": "C10b5",
+   "part": "A",
+   "setting": "C10b5/primer05540|ROUTE=ABSCISSA/F1S1O0V1/INV|CA=KRY|OP=VARB",
+   "true_L1": -264.9538,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "true_row_score": -396.5436053,
+   "true_row_wrong_letters": 5,
+   "best_setting": "C10b5/primer05540|ROUTE=ABSCISSA/F1S1O0V1/INV|CA=KRY|OP=VARB",
+   "best_score": -396.5436053,
+   "best_row_plaintext": "THECAMEROPENEDHISSHOPCEFORESUNRISEANDTHESBELLOFFRESHCREADDRIFTEDDOWNTHENARROWSTREETTOWARDTHERIVER"
+  },
+  "PLANT_01": {
+   "family": "C10b6",
+   "part": "A",
+   "setting": "C10b6/primer735290|ROUTE=PALIMPSEST/F0S1O1V0/FWD|CA=ACAPAL|OP=VIG|BEAU",
+   "true_L1": -277.7142,
+   "L1_rank": 1252,
+   "final_rank": 1,
+   "true_row_score": -393.1297946,
+   "true_row_wrong_letters": 0,
+   "best_setting": "C10b6/primer735290|ROUTE=PALIMPSEST/F0S1O1V0/FWD|CA=ACAPAL|OP=VIG|BEAU",
+   "best_score": -393.1297946,
+   "best_row_plaintext": "OURTEACHERTOLDUSTHATTHEOLDBRIDGEWASBUILTBYHANDOVERMANYYEARSUSINGHEAVYSTONESCARRIEDFROMTHENEARBYHI"
+  },
+  "PLANT_02": {
+   "family": "CARTER",
+   "part": "A",
+   "setting": "CARTER/rev/AZ/off273475|ROUTE=R24x9/CCW/fwd|CA=ACAPAL|OP=VARB",
+   "true_L1": -268.9576,
+   "L1_rank": 1,
+   "final_rank": 1,
+   "true_row_score": -382.982434,
+   "true_row_wrong_letters": 3,
+   "best_setting": "CARTER/rev/AZ/off273475|ROUTE=R24x9/CCW/fwd|CA=ACAPAL|OP=VARB",
+   "best_score": -382.982434,
+   "best_row_plaintext": "SHEBEUTEVERYLETTERHERPROTHERSENTFROMTHEISLANDANDREADTHEMAGAINEACHWINTERWHENTHECOLDNIGHTSGREWVERYL"
+  },
+  "PLANT_03": {
+   "family": "K1K3",
+   "part": "A",
+   "setting": "K1K3/rev/KRY/off532|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU",
+   "true_L1": -274.4234,
+   "L1_rank": 62,
+   "final_rank": 64,
+   "true_row_score": -460.0091972,
+   "true_row_wrong_letters": 61,
+   "best_setting": "K1K3/rev/KRY/off196|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU",
+   "best_score": -391.9554212,
+   "best_row_plaintext": "THESURVEYORSMEASUREDTHEFIELDTWICEBECAUSETHEFIRSTRESULTDIDNOTAGREEWITHTHEMAPDRAWNBYTHEPREVIOUSOWNE"
+  },
+  "PLANT_04": {
+   "family": "C10b5",
+   "part": "B",
+   "setting": "C10b5/primer20507|ROUTE=R9x17/CW-CCW/inv|CA=KRY|OP=VIG|BEAU",
+   "true_L1": -273.8486,
+   "L1_rank": 31,
+   "final_rank": 1,
+   "true_row_score": -395.6046474,
+   "true_row_wrong_letters": 0,
+   "best_setting": "C10b5/primer20507|ROUTE=R9x17/CW-CCW/inv|CA=KRY|OP=VIG|BEAU",
+   "best_score": -395.6046474,
+   "best_row_plaintext": "ATRAVELLINGCIRCUSARRIVEDINTHETOWNONEAUTUMNANDTHECHILDRENWATCHEDTHEELEPHANTSWALKSLOWLYPASTTHECHURC"
+  },
+  "PLANT_05": {
+   "family": "K1K3",
+   "part": "B",
+   "setting": "K1K3/rev/KRY/off755|ROUTE=R5x5/CCW-CW/fwd|CA=ABSP|OP=VARB",
+   "true_L1": -275.0349,
+   "L1_rank": 223,
+   "final_rank": 1,
+   "true_row_score": -408.5451307,
+   "true_row_wrong_letters": 18,
+   "best_setting": "K1K3/rev/KRY/off755|ROUTE=R5x5/CCW-CW/fwd|CA=ABSP|OP=VARB",
+   "best_score": -408.5451307,
+   "best_row_plaintext": "WHENTHESNOWMELTEDTHESHEYHERDSLEDTHEURFLOCKSAYTOTHEHUGHYISTARESINDPAULTSMILLHATSFROMPRINCHESINDMAD"
+  }
+ },
+ "nulls": {
+  "NULL_00": {
+   "best_score": -445.672868,
+   "best_setting": "C10b5/primer57557|ROUTE=R9x27/CCW/fwd|CA=ACAKRY|OP=VIG|BEAU",
+   "max_L1": -270.6442242
+  },
+  "NULL_01": {
+   "best_score": -445.5637968,
+   "best_setting": "C10b5/primer98570|ROUTE=PALIMPSEST/F0S1O1V0/INV|CA=KRY|OP=VARB",
+   "max_L1": -270.4934247
+  }
+ },
+ "k4": {
+  "settings": {
+   "A": 3630205152,
+   "B": 7282520000
+  },
+  "max_L1": -270.0791283,
+  "best_score": -445.1430974,
+  "forward_check": "top 20 rows re-encrypt exactly to K4",
+  "top20": [
+   {
+    "setting": "CARTER/rev/KRY/off56833|ROUTE=ABSCISSA/F0S1O1V1/INV|CA=AZ|OP=VIG|BEAU",
+    "score": -445.1430974,
+    "L1": -281.1015517,
+    "clue_matches": 3,
+    "plaintext": "HCTSBUTERBOLSMULUBERTETIMTHELBEESSEEMOVIKALATHEGOINTSWEIDENGAPSOBSCUREOFAPEVERSANDBOWMILYNORATOPD"
+   },
+   {
+    "setting": "C10b6/primer749973|ROUTE=KRYPTOS/F0S0O1V0/INV|CA=ACAPAL|OP=VIG|BEAU",
+    "score": -448.945277,
+    "L1": -279.245373,
+    "clue_matches": 0,
+    "plaintext": "AAHUPOFTHINGOBLEVESSFINORUGHOADLUCHFARTROMPERATSOUKFORDESESBEWORKSORYWISINDBREARDIRTHOFDONHESTADI"
+   },
+   {
+    "setting": "CARTER/fwd/KRY/off276786|ROUTE=PALIMPSEST/F0S1O0V1/INV|CA=ACAPAL|OP=VARB",
+    "score": -449.2576022,
+    "L1": -279.9190297,
+    "clue_matches": 3,
+    "plaintext": "NQUICKSHERAANTTANTSTEETILABUTILANGLESFLOALABPEOPISHOWACADESFASTHUMANDNESWAIRFAVEILORMETOSIXPRORUI"
+   },
+   {
+    "setting": "C10b5/primer05849|ROUTE=R7x13/CW-CCW/fwd|CA=AZ|OP=VARB",
+    "score": -450.5022638,
+    "L1": -273.7955713,
+    "clue_matches": 1,
+    "plaintext": "GEDINEDIRFACAVICCEENAIMPALGOMPLTHTERINGSSOSITYILOOTFRENSESTARESCOEASTOBRUARTRIONICABURRUPESWHERET"
+   },
+   {
+    "setting": "K1K3/rev/AZ/off540|ROUTE=R20x15/CCW/fwd|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -450.7514381,
+    "L1": -278.3952464,
+    "clue_matches": 2,
+    "plaintext": "NTISABOTHESALCAREINDIPSTRATSOBEVERHIOININTOMANTICADMYDPHADACOASCRCHEFTGORLIESTIGHWALDSTENURBEJUDI"
+   },
+   {
+    "setting": "C10b5/primer39182|ROUTE=R5x4/CCW-CW/fwd|CA=ABSP|OP=VIG|BEAU",
+    "score": -452.6476328,
+    "L1": -276.0472775,
+    "clue_matches": 1,
+    "plaintext": "EOURNAMETHSPORANTKNESTRUCEMERNTOWNGATYCHENONSOLIGHLENARSSYFISAENOATIVENDOFAINENGCOTIUNDBLISHPREOF"
+   },
+   {
+    "setting": "C10b5/primer25844|ROUTE=R7x22/CCW-CW/inv|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -453.6643023,
+    "L1": -275.6282882,
+    "clue_matches": 3,
+    "plaintext": "IHATARYORTENSTORLSPEAKSHOSARESWELLGRESPAPNDIDMEASKSTAGOTHNEBEEMANSHIPCISMSFIRETERVININULSOOUNDEVP"
+   },
+   {
+    "setting": "CARTER/fwd/AZ/off200518|ROUTE=PALIMPSEST/F1S1O0V0/FWD|CA=AZ|OP=VIG|BEAU",
+    "score": -453.7334292,
+    "L1": -280.8416423,
+    "clue_matches": 1,
+    "plaintext": "KFLOHINDSTHDISTOPLENTOBEGINEFLYGURANDUELDIATANGWAFATHLSHECARENASESEMPTATPEREDUCTCAVORGENCNESEPEDW"
+   },
+   {
+    "setting": "C10b5/primer98190|ROUTE=R7x6/CW-CCW/inv|CA=ABSP|OP=VARB",
+    "score": -453.9922478,
+    "L1": -280.1550939,
+    "clue_matches": 1,
+    "plaintext": "OSESBOYNAMEMEFEXTHENGOOPTAWIPENNESEMEDWHILEDALOFACQUEIRSTMHOPREANWANOSARADINEVERSMFROMPLOCUSHIPSP"
+   },
+   {
+    "setting": "C10b5/primer99686|ROUTE=R10x7/CW-CCW/inv|CA=ACAABS|OP=VARB",
+    "score": -454.0434401,
+    "L1": -280.5192538,
+    "clue_matches": 1,
+    "plaintext": "NACAPTOWASWONBPOFTYSBRIEDINTHEMINALSHUMADERABDECCRDOWNTROURBLACHONSUNTOTICHTOMGRALDDHASBEDANYHAMT"
+   },
+   {
+    "setting": "CARTER/fwd/KRY/off129183|ROUTE=KRYPTOS/F0S1O0V1/FWD|CA=ACAABS|OP=VIG|BEAU",
+    "score": -454.2324722,
+    "L1": -278.9275696,
+    "clue_matches": 2,
+    "plaintext": "YDHURMONGLEANEETRATSERUSHSTISTOSSCREVISFIASWIDHBONUNICALEMODYEUKASALSWARSITNOFTEDTOABOUNTYPROOMMO"
+   },
+   {
+    "setting": "C10b5/primer28725|ROUTE=R8x8/CCW-CW/inv|CA=PALP|OP=VARB",
+    "score": -454.3542607,
+    "L1": -281.118872,
+    "clue_matches": 3,
+    "plaintext": "YCENSEAMBSHTHITSMOFTACKANGSLITCALTOAREASKHPASSUEOVALSHEBRIEVEEDORGUDIOROWNBEUPTERRIENDSEWANCOLLIA"
+   },
+   {
+    "setting": "C10b5/primer41714|ROUTE=R21x10/CCW-CW/fwd|CA=PALP|OP=VARB",
+    "score": -454.4694159,
+    "L1": -280.9955794,
+    "clue_matches": 1,
+    "plaintext": "TTOCKERSTEPOPARTATTGPOTFAMSENDIAMENHADSRBYWASRELIFIMANYSURVEAMANDSISALSSHISBECALECTJOSAECIVIETHYT"
+   },
+   {
+    "setting": "C10b5/primer69511|ROUTE=R8x7/CCW/inv|CA=KRY|OP=VARB",
+    "score": -454.7391782,
+    "L1": -279.5236399,
+    "clue_matches": 2,
+    "plaintext": "ECTICERSBOASRPOLIDMAYFRULLTHAYBURAHOMEDAIPSTBATATOTENTHORYALLTHEALEINFILMOUSHECAGITHYINGUPWHILORY"
+   },
+   {
+    "setting": "C10b5/primer48657|ROUTE=R8x22/CW-CCW/fwd|CA=AZ|OP=VIG|BEAU",
+    "score": -454.9019918,
+    "L1": -274.5809718,
+    "clue_matches": 1,
+    "plaintext": "NTSEMOSSSWINOWAMAJOBUMEREOFNSOIDDEDTOMPULDARITYSULSORTOCISASEBEGOAMENTHESENACOMELEPLAIDSOFTSPLCPD"
+   },
+   {
+    "setting": "C10b5/primer14132|ROUTE=R22x16/CCW/inv|CA=ACAABS|OP=VARB",
+    "score": -455.4099281,
+    "L1": -280.4094666,
+    "clue_matches": 2,
+    "plaintext": "RBERISALMOFWAGEMOFSMARIPSPRITTBUNDLEYKOHNSIGHRCKATHEWABORANIVENREENOTTTHIMURIACOMESANDESAIDENODOO"
+   },
+   {
+    "setting": "CARTER/rev/KRY/off112378|ROUTE=KRYPTOS/F1S0O0V1/INV|CA=ACAPAL|OP=VARB",
+    "score": -455.4541097,
+    "L1": -276.0936817,
+    "clue_matches": 0,
+    "plaintext": "LRACKILYMEAMETORENUMBARNPRISINGNKIDSTWNDEPRESHESEOUSARAGUEDOATITAPOTELEDIREORIVEEREANMPTTYTHEFKUS"
+   },
+   {
+    "setting": "CARTER/fwd/AZ/off64167|ROUTE=PALIMPSEST/F1S0O1V0/INV|CA=ABSP|OP=VIG|BEAU",
+    "score": -456.4107933,
+    "L1": -279.9581887,
+    "clue_matches": 4,
+    "plaintext": "PONSPNOTREHASSEDRUMESTATNOFFOKINGADECAUWEALPENEFUNYGONOONASNEYWHENGLYMPACKTOESPERCEMAANRABOUSDISQ"
+   },
+   {
+    "setting": "C10b5/primer92117|ROUTE=R9x5/CW-CCW/inv|CA=ACAPAL|OP=VIG|BEAU",
+    "score": -456.6351411,
+    "L1": -281.0609587,
+    "clue_matches": 5,
+    "plaintext": "UGECHILEGENTTOPPOTLIKSDTOGAUTPSARCHPERBYMIHASICCOMPOPEPORTWOSCAVEALIGNDASESTYESHONOTOUNTHEABUTAFY"
+   },
+   {
+    "setting": "CARTER/rev/AZ/off114912|ROUTE=KRYPTOS/F0S1O0V0/FWD|CA=ACAKRY|OP=VIG|BEAU",
+    "score": -456.6663408,
+    "L1": -278.4551993,
+    "clue_matches": 1,
+    "plaintext": "PGTDRMQUODRILLEDEVEPRATHEAUSITAANDDTEASAREMATHELOCKSTHOFACTILDBRYSOMAINSEONRICHISTEHEOPHODEAGUCCH"
+   }
+  ]
+ },
+ "whole_family": {
+  "K4": {
+   "settings": 10912725152,
+   "consistent": 0,
+   "min_V": 5,
+   "min_settings": [
+    "C10b5/primer29465|ROUTE=R22x26/CCW-CW/inv|CA=ACAPAL|OP=VIG|BEAU"
+   ]
+  },
+  "NULL_00": {
+   "settings": 10912725152,
+   "consistent": 0,
+   "min_V": 6,
+   "min_settings": [
+    "CARTER/rev/AZ/off225634|ROUTE=KRYPTOS/F1S0O0V0/FWD|CA=AZ|OP=VIG|BEAU",
+    "CARTER/rev/KRY/off164819|ROUTE=PALIMPSEST/F0S1O0V0/FWD|CA=AZ|OP=VARB",
+    "C10b5/primer02983|ROUTE=R24x13/CCW/inv|CA=AZ|OP=VARB",
+    "C10b5/primer30072|ROUTE=R24x25/CCW/fwd|CA=AZ|OP=VIG|BEAU",
+    "C10b5/primer41024|ROUTE=R24x15/CCW-CW/fwd|CA=ABSP|OP=VARB",
+    "C10b5/primer41043|ROUTE=R18x27/CW-CCW/inv|CA=AZ|OP=VARB",
+    "C10b5/primer69067|ROUTE=R18x27/CW-CCW/inv|CA=AZ|OP=VIG|BEAU",
+    "C10b5/primer69086|ROUTE=R24x15/CCW-CW/fwd|CA=ABSP|OP=VIG|BEAU",
+    "C10b5/primer85800|ROUTE=R10x13/CCW/fwd|CA=AZ|OP=VIG|BEAU"
+   ]
+  },
+  "NULL_01": {
+   "settings": 10912725152,
+   "consistent": 0,
+   "min_V": 5,
+   "min_settings": [
+    "C10b5/primer78437|ROUTE=R17x25/CW/inv|CA=ACAPAL|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_00": {
+   "settings": 10912725152,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer05540|ROUTE=ABSCISSA/F1S1O0V1/INV|CA=KRY|OP=VARB"
+   ]
+  },
+  "PLANT_01": {
+   "settings": 10912725152,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b6/primer735290|ROUTE=PALIMPSEST/F0S1O1V0/FWD|CA=ACAPAL|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_02": {
+   "settings": 10912725152,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "CARTER/rev/AZ/off273475|ROUTE=R24x9/CCW/fwd|CA=ACAPAL|OP=VARB"
+   ]
+  },
+  "PLANT_03": {
+   "settings": 10912725152,
+   "consistent": 4,
+   "min_V": 0,
+   "min_settings": [
+    "K1K3/rev/KRY/off196|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU",
+    "K1K3/rev/KRY/off532|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU",
+    "K1K3/rev/KRY/off196|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU",
+    "K1K3/rev/KRY/off532|ROUTE=R24x8/CW/fwd|CA=PALP|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_04": {
+   "settings": 10912725152,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "C10b5/primer20507|ROUTE=R9x17/CW-CCW/inv|CA=KRY|OP=VIG|BEAU"
+   ]
+  },
+  "PLANT_05": {
+   "settings": 10912725152,
+   "consistent": 1,
+   "min_V": 0,
+   "min_settings": [
+    "K1K3/rev/KRY/off755|ROUTE=R5x5/CCW-CW/fwd|CA=ABSP|OP=VARB"
+   ]
+  }
+ },
+ "decision": {
+  "gate_plants_rank1": "5/6",
+  "gate_whole_family_plants_true_setting_consistent": "6/6",
+  "gate_passed": true,
+  "score_threshold": -452.786497,
+  "null_best": -445.5637968,
+  "plant_true_min": -460.0091972,
+  "k4_best_score": -445.1430974,
+  "k4_top20_clue_matches_max": 5,
+  "k4_candidate": true,
+  "k4_whole_family_consistent": 0,
+  "k4_whole_family_min_V": 5
+ }
+}

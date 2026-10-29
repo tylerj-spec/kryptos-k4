@@ -1,0 +1,41 @@
+name: R39 ciphertext-only Gromark IC key-ranker gate
+
+on:
+  push:
+    branches:
+      - 'chatgpt/r39-gromark-blind-ic-gate'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r39-ic
+  cancel-in-progress: false
+
+jobs:
+  study:
+    if: "startsWith(github.event.head_commit.message, 'R39 IC: RUN BLIND')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r39-gromark-blind-ic-gate
+          fetch-depth: 0
+      - name: Commit attribution
+        run: |
+          git config user.name "R39 Research Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Standard strict-blind tests and historical audits
+        run: |
+          bash strictblind/tests/run_all.sh
+          bash verify_all.sh
+      - name: Precommit protocol, blind ranker output, and secret-primer reveal
+        run: bash r39/run.sh
+      - name: Preserve outputs if push fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r39-gromark-ic-keygate
+          path: r39/ic_gate/
+          if-no-files-found: warn

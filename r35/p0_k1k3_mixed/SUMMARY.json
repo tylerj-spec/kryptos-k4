@@ -1,0 +1,15 @@
+{
+  "tested_family_settings": 242160000,
+  "k4_top_score": -604.6045775,
+  "null_top_score": -600.9837606,
+  "k4_minus_null_top_score": -3.6208,
+  "plant_truth_ranks": {
+    "PLANT_A": 1,
+    "PLANT_B": 1
+  },
+  "plant_controls_passed": true,
+  "all24_count": 0,
+  "whole_family_max_clue_matches": 10,
+  "interpretation": "NO_CANDIDATE_TESTED_FAMILY_WITH_CONTROLS_PASSING",
+  "limitation": "Exclusion is only for the pre-registered fixed-alphabet key/route family."
+}

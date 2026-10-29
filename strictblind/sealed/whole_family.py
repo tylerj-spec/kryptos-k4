@@ -29,7 +29,10 @@ for run in man["runs"]:
                                str(min(n, (h + 1) * step))], stdout=subprocess.PIPE, text=True) for h in range(4) if h * step < n]
     hist, best, full = [0] * 25, (0, ""), []
     for p in procs:
-        for ln in p.communicate()[0].splitlines():
+        stdout, stderr = p.communicate()
+        if p.returncode != 0:
+            raise RuntimeError(f"whole_family worker failed ({p.returncode}): {stderr}")
+        for ln in stdout.splitlines():
             f = ln.split("\t")
             if f[0] == "HIST":
                 hist = [a + int(b) for a, b in zip(hist, f[1:])]
@@ -37,7 +40,12 @@ for run in man["runs"]:
                 best = (int(f[1]), f[2])
             elif f[0] == "FULL24":
                 full.append(f[1])
+    keys = (4 * (len(letters(karg)) - 97 + 1) if kind == "TEXT" else
+            int(arg.split(",")[0]) ** int(arg.split(",")[1]) if kind in ("CHAINBASE", "CHAINALPH", "CHAINACA") else 10 ** int(arg))
+    expected = n * keys * (48 if kind in ("CHAINALPH", "CHAINACA") else 12)
     tot = sum(hist)
+    if tot != expected:
+        raise RuntimeError(f"whole_family incomplete: {tot} settings, expected {expected}")
     res[run["tag"]] = {"settings": tot, "max": best[0], "best_setting": best[1], "full24": full, "histogram": hist,
                        "observed_ge": {m: sum(hist[m:]) for m in range(8, 13)},
                        "chance_ge": {m: round(tail(tot, m), 2) for m in range(8, 13)}}
