@@ -15,7 +15,7 @@ Preregistered in `r40g/PREREGISTRATION.md`, then built and run using a separatel
 
 This is strong evidence **against using maximum IC to distinguish K4 from its letter-shuffled controls**. It does not mathematically exclude Gromark, nor identify any key or plaintext.
 
-Independent local output SHA256: `aca8343ebed0b5ab896816a0976abfb3147dc8bdf0487df245a3b194c7e304c2`. A GitHub Actions reproduction is configured; treat that separate execution as unconfirmed until its logs and/or committed output are checked.
+Independent **GitHub Actions** verification of this numerical result completed successfully in [run 40803602190](https://github.com/tylerj-spec/kryptos-k4/actions/runs/40803602190): all 1,000 maxima, 716 exceedances, four exact ties, quantiles, plus the postfreeze 39-primer result. The workflow's output TSV SHA256 is `6a7d7f0afc00df033b4d5a91028623086d2954471c59ef176ec542e9de3e7b78`. An earlier local output SHA256 (`aca8343ebed0b5ab896816a0976abfb3147dc8bdf0487df245a3b194c7e304c2`) was **not** reproduced in Claude's independent replay; the cause of the byte mismatch is not established, and no cross-environment byte-identity claim is made. All checked numerical quantities agree.
 
 ## 3. Postfreeze intersection with exact two-free-alphabet 24-letter constraints
 
