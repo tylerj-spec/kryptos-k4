@@ -1,0 +1,74 @@
+name: R46 K3 rotation keyword-family exact postfreeze test
+
+on:
+  push:
+    branches:
+      - "chatgpt/r46-k3-rotation-keyword-feasibility"
+    paths:
+      - ".github/workflows/r46-k3-exact.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/r46-k3-exact.yml"
+      - "r46/**"
+
+permissions:
+  contents: write
+
+jobs:
+  verify-four-routes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Recheck strictblind baseline and R44 no-crib contract
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+      - name: Verify prerequisite R45 raw output and pinned R46 protocol
+        run: |
+          sha256sum -c r45/R45_RESULT.sha256
+          sha256sum -c r46/PROTOCOL.sha256
+          test -f r39/ic_gate/FROZEN.sha256
+          test -f r44/holdout_b/FROZEN.sha256
+      - name: Evaluate all four routes and all keys (K4 and two nulls; no K4 plaintext)
+        run: |
+          if test -f r46/R46_EXACT_RESULT.json; then
+            python3 -I r46/sealed/k3_keyword_exact.py /tmp/r46_replay.json
+            cmp /tmp/r46_replay.json r46/R46_EXACT_RESULT.json
+          else
+            python3 -I r46/sealed/k3_keyword_exact.py r46/R46_EXACT_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r46/R46_EXACT_RESULT.json"))
+          assert v["route_count"]==4 and v["key_primers_per_route"]==100000
+          assert v["distinct_keyword_alphabets"]==4749 and len(v["nulls"])==2
+          assert v["controls"]["counts"]==dict(keyword_PA_positive=10,keyword_CA_mirror_positive=10,sign_plus=10,sign_minus=10)
+          assert set(v["K4_results_by_route"])=={"R24x8/CW/fwd","R24x8/CW/inv","R24x8/CCW/fwd","R24x8/CCW/inv"}
+          print("R46 exact result:",v["classification"])
+          for k,x in v["K4_results_by_route"].items():
+              print(k,"free_both=",x["free_both_primer_count"],
+                    "keyword_PA=",x["keyword_PA_matches"],"keyword_CA=",x["keyword_CA_matches"])
+          PY
+      - name: Freeze read-only auditor result on R46 review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r46/PREREGISTRATION.md r46/sealed/k3_keyword_exact.py r46/R46_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r46/R46_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r46/R46_EXACT_RESULT.json r46/R46_RESULT.sha256
+          if git diff --cached --quiet; then echo "Identical frozen report"; else
+            git commit -m "R46 exact K3-rotation family feasibility results [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r46-k3-rotation-keyword-feasibility
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r46-k3-four-route-crib-assisted-exact-audit
+          path: |
+            r46/R46_EXACT_RESULT.json
+            r46/R46_RESULT.sha256
+          retention-days: 90
