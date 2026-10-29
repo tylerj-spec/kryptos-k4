@@ -2,7 +2,7 @@
 
 ## Start here (state at hand-off)
 - **No verified K4 solution. Nothing submitted to any external checker.**
-- **Branch:** `claude/kryptos-k4-refinement-n8pbh3`, head 71e85ee; `main` is unchanged.
+- **Branch:** `claude/kryptos-k4-refinement-n8pbh3` (the last research commit is 71e85ee; this handoff follows it); `main` is unchanged.
 - **PRs:**
   - **#8 (open draft, CI green):** merges ChatGPT's R35–R39 (PRs #2–#6), the #10 test fix, my harness fixes, R34
     E3, R40–R42, the PR #9 review and the L138 development notes. Merge it, then close #2–#6 and #10.
