@@ -1,0 +1,231 @@
+{
+  "total": 20,
+  "exact": 20,
+  "within3": 20,
+  "no_witness": 0,
+  "median_errors": 0,
+  "all_forward_witnesses_valid": true,
+  "rows": [
+    {
+      "id": "HB_00",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -464.1672279,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THELIGHTHOUSEKEEPERCLIMBEDTHESPIRALSTAIRSEVERYEVENINGTOCLEANTHEGREATLENSANDWATCHTHESHIPSPASSSLOWL",
+      "truth": "THELIGHTHOUSEKEEPERCLIMBEDTHESPIRALSTAIRSEVERYEVENINGTOCLEANTHEGREATLENSANDWATCHTHESHIPSPASSSLOWL"
+    },
+    {
+      "id": "HB_01",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -472.7904624,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "MYUNCLEGREWTOMATOESONTHEBALCONYOFHISAPARTMENTANDEVERYSUMMERHEGAVEBASKETSOFTHEMTOTHENEIGHBORSWHOLI",
+      "truth": "MYUNCLEGREWTOMATOESONTHEBALCONYOFHISAPARTMENTANDEVERYSUMMERHEGAVEBASKETSOFTHEMTOTHENEIGHBORSWHOLI"
+    },
+    {
+      "id": "HB_02",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -448.8167208,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEORCHESTRAREHEARSEDINACOLDHALLALLAFTERNOONANDTHECONDUCTORSTOPPEDTHEMMANYTIMESTOREPEATADIFFICULT",
+      "truth": "THEORCHESTRAREHEARSEDINACOLDHALLALLAFTERNOONANDTHECONDUCTORSTOPPEDTHEMMANYTIMESTOREPEATADIFFICULT"
+    },
+    {
+      "id": "HB_03",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -478.4525653,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "AGROUPOFHIKERSFOLLOWEDTHERIVERUPSTREAMUNTILTHEYFOUNDAWATERFALLHIDDENBEHINDTHETREESANDSTOPPEDTHERE",
+      "truth": "AGROUPOFHIKERSFOLLOWEDTHERIVERUPSTREAMUNTILTHEYFOUNDAWATERFALLHIDDENBEHINDTHETREESANDSTOPPEDTHERE"
+    },
+    {
+      "id": "HB_04",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -470.9713229,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEVILLAGEBLACKSMITHWORKEDFROMSUNRISETOSUNSETSHAPINGHORSESHOESANDTOOLSWHILECHILDRENGATHEREDATTHED",
+      "truth": "THEVILLAGEBLACKSMITHWORKEDFROMSUNRISETOSUNSETSHAPINGHORSESHOESANDTOOLSWHILECHILDRENGATHEREDATTHED"
+    },
+    {
+      "id": "HB_05",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -474.6567633,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "EVERYWINTERTHETOWNORGANIZEDARACEACROSSTHEFROZENLAKEANDTHEWINNERRECEIVEDAWOODENTROPHYCARVEDBYTHEOL",
+      "truth": "EVERYWINTERTHETOWNORGANIZEDARACEACROSSTHEFROZENLAKEANDTHEWINNERRECEIVEDAWOODENTROPHYCARVEDBYTHEOL"
+    },
+    {
+      "id": "HB_06",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -458.5815691,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEYOUNGDOCTORWALKEDTHROUGHTHESNOWTOVISITAFAMILYONADISTANTFARMANDARRIVEDJUSTASTHEMOTHERBEGANTOPRE",
+      "truth": "THEYOUNGDOCTORWALKEDTHROUGHTHESNOWTOVISITAFAMILYONADISTANTFARMANDARRIVEDJUSTASTHEMOTHERBEGANTOPRE"
+    },
+    {
+      "id": "HB_07",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -439.5368249,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "WEFOUNDANOLDMAPINTHEATTICTHATSHOWEDTHEORIGINALSTREETSOFTHETOWNBEFORETHERAILWAYSTATIONANDTHENEWBRI",
+      "truth": "WEFOUNDANOLDMAPINTHEATTICTHATSHOWEDTHEORIGINALSTREETSOFTHETOWNBEFORETHERAILWAYSTATIONANDTHENEWBRI"
+    },
+    {
+      "id": "HB_08",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -446.1950893,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEPAINTERSETUPHEREASELNEARTHEHARBOREACHMORNINGANDTRIEDTOCAPTURETHECHANGINGCOLORSOFTHEWATERBEFORE",
+      "truth": "THEPAINTERSETUPHEREASELNEARTHEHARBOREACHMORNINGANDTRIEDTOCAPTURETHECHANGINGCOLORSOFTHEWATERBEFORE"
+    },
+    {
+      "id": "HB_09",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -432.4392961,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "WHENTHEPOWERFAILEDDURINGTHESTORMTHEWHOLEFAMILYGATHEREDINTHEKITCHENANDTOLDSTORIESBYTHELIGHTOFASING",
+      "truth": "WHENTHEPOWERFAILEDDURINGTHESTORMTHEWHOLEFAMILYGATHEREDINTHEKITCHENANDTOLDSTORIESBYTHELIGHTOFASING"
+    },
+    {
+      "id": "HB_10",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -445.6198028,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEFARMERREPAIREDTHESTONEWALLAROUNDHISFIELDAFTERTHESPRINGRAINSANDFOUNDANANCIENTCOINBURIEDINTHEMUD",
+      "truth": "THEFARMERREPAIREDTHESTONEWALLAROUNDHISFIELDAFTERTHESPRINGRAINSANDFOUNDANANCIENTCOINBURIEDINTHEMUD"
+    },
+    {
+      "id": "HB_11",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -478.5898116,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "OURSCHOOLTOOKATRIPTOTHESCIENCEMUSEUMWHEREWEWATCHEDAMODELOFTHEPLANETSMOVINGSLOWLYAROUNDABRIGHTLAMP",
+      "truth": "OURSCHOOLTOOKATRIPTOTHESCIENCEMUSEUMWHEREWEWATCHEDAMODELOFTHEPLANETSMOVINGSLOWLYAROUNDABRIGHTLAMP"
+    },
+    {
+      "id": "HB_12",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -506.6818285,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEMAILCARRIERKNEWEVERYDOGONHERROUTEBYNAMEANDALWAYSKEPTAFEWBISCUITSINHERPOCKETTOMAKESURETHEMORNIN",
+      "truth": "THEMAILCARRIERKNEWEVERYDOGONHERROUTEBYNAMEANDALWAYSKEPTAFEWBISCUITSINHERPOCKETTOMAKESURETHEMORNIN"
+    },
+    {
+      "id": "HB_13",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -455.5939159,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "ASTRONGWINDCARRIEDTHEKITEHIGHABOVETHEBEACHANDTHELITTLEBOYLAUGHEDASHERANALONGTHESANDHOLDINGTIGHTLY",
+      "truth": "ASTRONGWINDCARRIEDTHEKITEHIGHABOVETHEBEACHANDTHELITTLEBOYLAUGHEDASHERANALONGTHESANDHOLDINGTIGHTLY"
+    },
+    {
+      "id": "HB_14",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -432.1732439,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THETAILORMEASUREDTHEGROOMCAREFULLYANDPROMISEDTHATTHESUITWOULDBEFINISHEDINTIMEFORTHEWEDDINGATTHEEN",
+      "truth": "THETAILORMEASUREDTHEGROOMCAREFULLYANDPROMISEDTHATTHESUITWOULDBEFINISHEDINTIMEFORTHEWEDDINGATTHEEN"
+    },
+    {
+      "id": "HB_15",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -447.1569582,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "AFTERMANYYEARSABROADTHESAILORRETURNEDTOHISVILLAGEANDFOUNDTHATTHEOLDTAVERNBYTHERIVERHADBECOMEABUSY",
+      "truth": "AFTERMANYYEARSABROADTHESAILORRETURNEDTOHISVILLAGEANDFOUNDTHATTHEOLDTAVERNBYTHERIVERHADBECOMEABUSY"
+    },
+    {
+      "id": "HB_16",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -493.9303046,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THESCIENTISTSCAMPEDONTHEGLACIERFORTHREEWEEKSTOMEASUREHOWQUICKLYTHEICEWASMOVINGTOWARDTHEVALLEYFARB",
+      "truth": "THESCIENTISTSCAMPEDONTHEGLACIERFORTHREEWEEKSTOMEASUREHOWQUICKLYTHEICEWASMOVINGTOWARDTHEVALLEYFARB"
+    },
+    {
+      "id": "HB_17",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -458.6769718,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "EVERYSUNDAYMORNINGTHEMARKETSQUAREFILLEDWITHFARMERSSELLINGCHEESEANDHONEYWHILEMUSICIANSPLAYEDOLDSON",
+      "truth": "EVERYSUNDAYMORNINGTHEMARKETSQUAREFILLEDWITHFARMERSSELLINGCHEESEANDHONEYWHILEMUSICIANSPLAYEDOLDSON"
+    },
+    {
+      "id": "HB_18",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -458.7966948,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "THEFIREFIGHTERSPRACTICEDONTHEEMPTYFIELDBEHINDTHESTATIONANDTHENEIGHBORSCAMEOUTTOWATCHTHEMCLIMBTHET",
+      "truth": "THEFIREFIGHTERSPRACTICEDONTHEEMPTYFIELDBEHINDTHESTATIONANDTHENEIGHBORSCAMEOUTTOWATCHTHEMCLIMBTHET"
+    },
+    {
+      "id": "HB_19",
+      "errors": 0,
+      "exact": true,
+      "within3": true,
+      "word_score": -488.5336918,
+      "proposals": 0,
+      "compatible": 0,
+      "candidate": "SHEPLANTEDASMALLGARDENOFHERBSOUTSIDETHEKITCHENWINDOWSOTHATSHECOULDPICKFRESHLEAVESWHILESHECOOKEDDI",
+      "truth": "SHEPLANTEDASMALLGARDENOFHERBSOUTSIDETHEKITCHENWINDOWSOTHATSHECOULDPICKFRESHLEAVESWHILESHECOOKEDDI"
+    }
+  ],
+  "notes": "DEVELOPMENT ONLY, true key supplied; not a K4 decryption or holdout."
+}
