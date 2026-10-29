@@ -1,0 +1,45 @@
+name: R43 D0 word-constraint planted development
+on:
+  push:
+    branches:
+      - "chatgpt/r43-blind-word-constraints"
+    paths:
+      - ".github/workflows/r43-d0.yml"
+      - "r43/**"
+  pull_request:
+    paths:
+      - ".github/workflows/r43-d0.yml"
+      - "r43/**"
+
+permissions:
+  contents: read
+
+jobs:
+  development:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Protect existing strict-blind baselines
+        run: bash strictblind/tests/run_all.sh
+      - name: Compile prototype (no clues, masks or known K4 plaintext)
+        run: g++ -std=c++17 -O3 -Wall -Wextra -Werror r43/blind/word_constraint_beam.cpp -o /tmp/r43_word
+      - name: Create independent D0 controls
+        run: |
+          python3 -I r43/sealed/make_d0.py
+          head -n 3 r43/d0/blind.tsv > r43/d0/smoke.tsv
+      - name: Execute first two D0 cases at deliberately bounded beam budget
+        timeout-minutes: 15
+        run: |
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_outputs.jsonl 64 64 14 > r43/d0/solver_stdout.log 2> r43/d0/solver_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_outputs.jsonl r43/d0/sealed_truth.json r43/d0/SMOKE_REPORT.json
+          cat r43/d0/solver_stderr.log
+      - name: Preserve honest results, including failure
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r43-development-smoke
+          path: r43/d0/
+          retention-days: 30
