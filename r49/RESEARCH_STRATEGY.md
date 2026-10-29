@@ -45,7 +45,7 @@ Other independently dated physical snapshots:
 3. Dated source images/build drawings, independent verification on visible segments, link and checksum of each original image. Record unknowns as `null` rather than guessed letters.
 4. If supplied by Kunsch or a museum, permission to use/quote/redistribute the source. A research-only transcription may be stored with provenance; copyrighted photographs are not automatically redistributable.
 
-Use `r49/world_clock_1986_inventory.json` for a strictly **incomplete, explicitly blank** 24-panel data contract. `r49/validate_inventory.py` must reject its promotion to a complete ciphertext key until actual primary records have been supplied.
+Use `r49/world_clock_pre1991_inventory.json` for a strictly **incomplete, explicitly blank** 24-panel data contract. `r49/validate_inventory.py` must reject its promotion to a complete ciphertext key until actual primary records have been supplied.
 
 ## Hypothesis discipline and decision criteria
 
@@ -62,3 +62,6 @@ Two separate, explicitly conditional tracks:
 To the original builder's firm: ask for the original **1969 panel drawings showing the exact engraved names on both 24-segment rings**, and whether any panel inscriptions or date-line orientations changed during **1969–1989**. Ask for a photograph or permitted transcription of the plans, and identify year/date, panel numbering, and permissions. If their drawings predate a 1980s update, request updates or referral to the Berlin heritage archive.
 
 **Owner task if approved:** send a short email to Kunsch Metallbau, or authorize an outreach draft; see Issue #18. No Git commit is necessary from the owner.
+## Chronology uncertainty (added before use of any R49 historical data)
+
+Sanborn's 2025 remarks connect a 1986 trip, writing around 1988, and the **1989** fall of the Berlin Wall, despite the chronology. The invention date of any potential K4 physical key is **not known**, and may fall as late as the 1990 installation. The source inventory therefore accepts physical evidence depicting **1969–1990**, with date/era shown per panel; no hard-coded 1988 condition is allowed. A 1969 build drawing alone does not prove its text was unchanged in 1989. See the amended `world_clock_pre1991_inventory.json` and validation tests.
