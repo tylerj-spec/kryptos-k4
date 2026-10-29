@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
     vector<pair<double, string>> ws;
     { ifstream f(argv[1]); string w; double ex, ed; while (f >> w >> ex >> ed) if (ex > -1e90 && w.size() >= 5 && w.size() <= 10) ws.push_back({ex, w}); }
     sort(ws.begin(), ws.end(), [](auto &a, auto &b) { return a.first != b.first ? a.first > b.first : a.second < b.second; });
-    ws.resize(5000);
+    if (ws.size() > 5000) ws.resize(5000);
     set<string> u; for (auto &x : ws) u.insert(kw_alpha(x.second));
     vector<string> alph(u.begin(), u.end());
     string ct; { ifstream f(argv[2]); string l; while (getline(f, l)) for (char ch : l) if (isalpha((unsigned char)ch)) ct += toupper(ch); }
