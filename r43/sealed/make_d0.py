@@ -56,7 +56,7 @@ for i, sentence in enumerate(SENTENCES):
     ct = "".join(ca[(pa.index(letter) + k[j]) % 26] for j, letter in enumerate(p))
     label = f"D0_{i:02}"
     inputs.append(label + "\t" + ct + "\t" + ",".join(map(str, k)))
-    truth[label] = {"plaintext": p, "plaintext_alphabet": "".join(pa),
+    truth[label] = {"plaintext": p, "source_sentence": sentence, "plaintext_alphabet": "".join(pa),
                     "ciphertext_alphabet": "".join(ca), "primer": "".join(map(str, primer))}
 (OUT / "blind.tsv").write_text("\n".join(inputs) + "\n")
 (OUT / "sealed_truth.json").write_text(json.dumps(truth, indent=2) + "\n")
