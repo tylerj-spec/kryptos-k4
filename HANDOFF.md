@@ -14,14 +14,16 @@
   - **Code:** `r44/blind/kwpa_solve.cpp` (enumerates 4,749 keyword alphabets and anneals the cipher alphabet), then
     `r44/blind/polish.cpp` (word-score polish).
   - **Not covered:** two *uniformly random* alphabets are still unsolved (L138, L139).
-- **Most promising next step: a pre-registered K4 round with this solver.**
-  - **Key shortlist:** the key is unknown, so start from one, e.g. R39's frozen IC-ranked Gromark primers (top
-    100–1,000). Add K1–K3 running-key windows if the budget allows.
-  - **Settings:** both operation forms (Vigenère; Beaufort ≡ variant Beaufort); also the mirror case (keyword
-    cipher alphabet × free plaintext alphabet, solved R40-style).
-  - **Controls:** shuffled-K4 nulls and plants.
-  - **Order:** freeze the blind output before looking at EASTNORTHEAST or BERLINCLOCK.
-  - **Cost:** about 4,749 keywords × 2 forms × 75 ms per key; 100 keys ≈ 5 h on 4 cores.
+- **Correction (owner review on PR #12):** do **not** run the R44b solver on K4 with Gromark keys.
+  - R39's top 1,000 IC primers contain no crib-feasible primer even with two free alphabets (L137).
+  - PR #13 and an independent replication (`r44/audit/KW_EXACT_CHECK_RESULT.md`, L141) show **0 feasible K4
+    settings**, in place, for all 100,000 primers × 4,749 keyword alphabets × both operations × both orientations.
+- **Next worthwhile hypotheses change the keystream or the order of operations, then apply R44b where it fits:**
+  - running keys (K1–K3, Carter) × keyword alphabet;
+  - other keyword dictionaries;
+  - transposition before or after the substitution.
+  - **First do the cheap exact feasibility check** (as in `kw_exact_check.cpp`, pre-registered), and only run the
+    blind solver on families that are still feasible.
 - **Checks before any push:** `bash strictblind/tests/run_all.sh`, `bash verify_all.sh`,
   `python3 -I r44/tests/test_contract.py`.
 - **Rules:** `k4kit/CLAUDE.md`.
