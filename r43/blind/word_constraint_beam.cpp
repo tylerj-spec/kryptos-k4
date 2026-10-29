@@ -16,6 +16,7 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <unordered_set>
 using namespace std;
 constexpr int N=97, V=52;
 static int mod(int v){v%=26;return v<0?v+26:v;}
@@ -90,7 +91,7 @@ struct State {
   string plain,seg;
   double score=0,priority=0;
 };
-struct Options {int width=256,per_length=128,max_len=17;double cycle_weight=0.0;};
+struct Options {int width=256,per_length=128,max_len=17,global_after=101;double cycle_weight=0.0;};
 static vector<vector<Word>> model_words(const string&path,const Options&opt){
   ifstream in(path);if(!in)throw runtime_error("word model unavailable");
   vector<vector<Word>> out(opt.max_len+1);
@@ -126,26 +127,39 @@ static vector<vector<Word>> model_words(const string&path,const Options&opt){
 static bool sort_by_score(const State&a,const State&b){
   return a.priority>b.priority||(a.priority==b.priority&&a.plain<b.plain);
 }
+// Exact dominance: at one prefix length identical plaintext implies identical
+// modular graph, whatever the word segmentation. Keep only its best word score.
+static void trim_unique(vector<State>&v,int limit){
+  sort(v.begin(),v.end(),sort_by_score);
+  unordered_set<string> seen;
+  vector<State> keep;keep.reserve(limit);
+  for(auto &x:v){
+    if(!seen.insert(x.plain).second)continue;
+    keep.push_back(move(x));
+    if((int)keep.size()>=limit)break;
+  }
+  v.swap(keep);
+}
 static void push_bounded(vector<State>&v,State&&s,int limit){
   v.push_back(move(s));
-  if((int)v.size()>=limit*2){
-    nth_element(v.begin(),v.begin()+limit,v.end(),sort_by_score);
-    v.resize(limit);
-  }
+  if((int)v.size()>=limit*2)trim_unique(v,limit);
 }
 struct Answer {string plain,pa,ca,seg;double score;long long proposed,valid_graph,full_graph,full_bijections;};
 static Answer solve(const string&ct,const vector<int>&key,
                    const vector<vector<Word>>&dictionary,const Options&opt){
   vector<vector<State>> at(N+1);
   at[0].emplace_back();
-  long long proposed=0,passed=0,full=0,full_bij=0;Answer answer{"","","","",-1e100,0,0,0,0};
+  long long proposed=0,passed=0,full=0,full_bij=0,global_reject=0;Answer answer{"","","","",-1e100,0,0,0,0};
   for(int pos=0;pos<N;pos++){
     auto &cur=at[pos];if(cur.empty())continue;
-    if((int)cur.size()>opt.width){
-      nth_element(cur.begin(),cur.begin()+opt.width,cur.end(),sort_by_score);
-      cur.resize(opt.width);
-    }
+    if((int)cur.size()>opt.width)trim_unique(cur,opt.width);
     for(const State &state:cur){
+      if(pos>=opt.global_after){
+        string pa,ca;
+        if(!state.g.alphabets(pa,ca)){
+          global_reject++;continue;
+        }
+      }
       for(int len=1;len<=opt.max_len&&pos+len<=N;len++){
         for(const Word &w:dictionary[len]){
           proposed++;
@@ -186,6 +200,8 @@ static Answer solve(const string&ct,const vector<int>&key,
   }
   answer.proposed=proposed;answer.valid_graph=passed;
   answer.full_graph=full;answer.full_bijections=full_bij;
+  if(opt.global_after<=N)
+    cerr<<"R43 global_assignment_rejections "<<global_reject<<"\n";
   return answer;
 }
 static vector<int> key_parse(string raw){
@@ -206,9 +222,9 @@ static string json_escape(const string&s){
 }
 int main(int argc,char**argv){
  try{
-  if(argc<4||argc>8)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17] [CYCLE_BONUS=0]");
-  Options o;if(argc>=5)o.width=stoi(argv[4]);if(argc>=6)o.per_length=stoi(argv[5]);if(argc>=7)o.max_len=stoi(argv[6]);if(argc>=8)o.cycle_weight=stod(argv[7]);
-  if(o.width<1||o.width>20000||o.per_length<1||o.per_length>20000||o.max_len<1||o.max_len>24||o.cycle_weight<0||o.cycle_weight>20)throw runtime_error("invalid budget");
+  if(argc<4||argc>9)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17] [CYCLE_BONUS=0] [GLOBAL_AFTER=101]");
+  Options o;if(argc>=5)o.width=stoi(argv[4]);if(argc>=6)o.per_length=stoi(argv[5]);if(argc>=7)o.max_len=stoi(argv[6]);if(argc>=8)o.cycle_weight=stod(argv[7]);if(argc>=9)o.global_after=stoi(argv[8]);
+  if(o.width<1||o.width>20000||o.per_length<1||o.per_length>20000||o.max_len<1||o.max_len>24||o.cycle_weight<0||o.cycle_weight>20||o.global_after<0||o.global_after>101)throw runtime_error("invalid budget");
   auto dictionary=model_words(argv[1],o);
   ifstream fin(argv[2]);ofstream out(argv[3]);
   if(!fin||!out)throw runtime_error("input or output inaccessible");
