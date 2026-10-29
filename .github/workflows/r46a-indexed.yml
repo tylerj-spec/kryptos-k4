@@ -1,0 +1,74 @@
+name: R46A indexed exact verification of original R46 key/route/keyword family
+
+on:
+  push:
+    branches:
+      - "chatgpt/r46-indexed-independent-replay"
+    paths:
+      - ".github/workflows/r46a-indexed.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/r46a-indexed.yml"
+      - "r46a/**"
+
+permissions:
+  contents: write
+
+jobs:
+  indexed-exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify original R46 preregistration and frozen predecessors
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+          sha256sum -c r45/R45_RESULT.sha256
+          sha256sum -c r46/PROTOCOL.sha256
+          test -f r46a/AMENDMENT.md
+          test -f r46a/indexed_exact.py
+      - name: Check complete K4 and both nulls with indexed equality filter and full keyword crosschecks
+        run: |
+          if test -f r46a/R46A_RESULT.json; then
+            python3 -I r46a/indexed_exact.py /tmp/r46a_replay.json
+            cmp /tmp/r46a_replay.json r46a/R46A_RESULT.json
+          else
+            python3 -I r46a/indexed_exact.py r46a/R46A_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r46a/R46A_RESULT.json"))
+          assert v["route_count"]==4
+          assert v["key_primers_per_route"]==100000
+          assert v["distinct_keyword_alphabets"]==4749
+          assert v["controls"]["counts"]==dict(keyword_PA_positive=10,keyword_CA_mirror_positive=10,sign_plus=10,sign_minus=10)
+          assert len(v["nulls"])==2
+          assert sum(len(x["free_both_primers"]) for x in v["K4_results_by_route"].values())>0
+          for x in v["K4_results_by_route"].values():
+              assert x["free_both_primer_count"]==len(x["free_both_primers"])
+          print("R46A exact result",v["classification"])
+          print("R46A K4 keyword feasible:",v["K4_total_feasible_keyword_settings"])
+          PY
+      - name: Commit raw exact result and source digests to indexed review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r46/PREREGISTRATION.md r46a/AMENDMENT.md r46a/indexed_exact.py r46a/R46A_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r46a/R46A_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r46a/R46A_RESULT.json r46a/R46A_RESULT.sha256
+          if git diff --cached --quiet; then echo "Identical indexed report"; else
+            git commit -m "R46A indexed: exact unchanged R46 family outputs [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r46-indexed-independent-replay
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r46a-indexed-exact-replay-artifacts
+          path: |
+            r46a/R46A_RESULT.json
+            r46a/R46A_RESULT.sha256
+          retention-days: 90
