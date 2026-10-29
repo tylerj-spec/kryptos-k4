@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("r49_validation", ROOT / "validate_inventory.py")
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
-blank = json.loads((ROOT / "world_clock_1986_inventory.json").read_text())
+blank = json.loads((ROOT / "world_clock_pre1991_inventory.json").read_text())
 assert mod.validate(blank, allow_incomplete=True)["unknown_rings"] == 48
 
 
@@ -40,12 +40,15 @@ for row in synthetic["panels"]:
         "raw_sha256": "0" * 64
     }]
 assert mod.validate(synthetic)["unknown_rings"] == 0
+period1990 = copy.deepcopy(synthetic)
+period1990["panels"][8]["period_evidence_year"] = 1990
+assert mod.validate(period1990)["unknown_rings"] == 0, "1989-1990 evidence must not be wrongly excluded"
 bad = copy.deepcopy(synthetic)
 bad["panels"][3]["upper_lines"] = None
 assert rejected(bad), "complete record cannot contain missing panel names"
 bad = copy.deepcopy(synthetic)
 bad["panels"][8]["period_evidence_year"] = 1997
-assert rejected(bad), "1997 restoration cannot substitute for original period evidence"
+assert rejected(bad), "post-1990 restoration cannot substitute for K4-era physical evidence"
 bad = copy.deepcopy(synthetic)
 bad["panels"][2]["evidence"] = []
 assert rejected(bad), "an unsourced segment is not a verified original"
