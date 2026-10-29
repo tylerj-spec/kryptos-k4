@@ -6,6 +6,10 @@ on:
       - "chatgpt/r45-keyword-alphabet-exact-feasibility"
     paths:
       - ".github/workflows/r45-keyword-exact.yml"
+  pull_request:
+    paths:
+      - ".github/workflows/r45-keyword-exact.yml"
+      - "r45/**"
 
 permissions:
   contents: write
@@ -27,10 +31,15 @@ jobs:
         run: |
           sha256sum -c r45/PROTOCOL.sha256
           sha256sum r39/ic_gate/k4_ciphertext.txt
-          test ! -e r45/R45_EXACT_RESULT.json
+          if test -e r45/R45_EXACT_RESULT.json; then echo "Frozen report already present: verify byte-identical replay"; fi
       - name: Evaluate all 100000 Gromark primers under both keyword orientations and signs
         run: |
-          python3 -I r45/sealed/keyword_exact.py r45/R45_EXACT_RESULT.json
+          if test -e r45/R45_EXACT_RESULT.json; then
+            python3 -I r45/sealed/keyword_exact.py /tmp/r45-replay.json
+            cmp /tmp/r45-replay.json r45/R45_EXACT_RESULT.json
+          else
+            python3 -I r45/sealed/keyword_exact.py r45/R45_EXACT_RESULT.json
+          fi
           python3 - <<'PY'
           import json
           v = json.load(open("r45/R45_EXACT_RESULT.json"))
@@ -47,13 +56,18 @@ jobs:
           print("K4 settings total", len(v["K4"]["all_settings"]))
           PY
       - name: Freeze exact (crib-assisted, non-decryption) outputs to separate review branch
+        if: github.event_name == 'push'
         run: |
           sha256sum r45/PREREGISTRATION.md r45/sealed/keyword_exact.py r45/R45_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r45/R45_RESULT.sha256
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add r45/R45_EXACT_RESULT.json r45/R45_RESULT.sha256
-          git commit -m "R45: exact full-family keyword feasibility results [skip ci]"
-          git push origin HEAD:refs/heads/chatgpt/r45-keyword-alphabet-exact-feasibility
+          if git diff --cached --quiet; then
+            echo "Frozen report unchanged; no commit needed"
+          else
+            git commit -m "R45: exact full-family keyword feasibility results [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r45-keyword-alphabet-exact-feasibility
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
