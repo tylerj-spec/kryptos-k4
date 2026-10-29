@@ -32,3 +32,18 @@ An internal ten-message random-alphabet graph unit test is also added to validat
 - There are many consistent *feasible* completions in an unknown-alphabet model; an internally consistent witness without exact plaintext recovery on plants is not evidence of decryption.
 
 This document is a negative development record, not an exclusion of any K4 cipher family.
+
+## Third and fourth CI experiments — cycle priority, global bijection pruning, and sealed prefix trace
+
+- [Cycle comparison, run 40806757384](https://github.com/tylerj-spec/kryptos-k4/actions/runs/40806757384): 10 independently encrypted, 97-character full-bijection graph unit cases **passed**. Baseline high beam still 0/2. With additional bonus of `ln(26)` for each modular cycle, D0_01 produced **242** locally consistent 97-letter graph states but **0** complete two-alphabet witnesses; D0_00 produced no full graph. Result 0/2 exact.
+- [Global-bijection and duplicate-prefix search, run 40807030314](https://github.com/tylerj-spec/kryptos-k4/actions/runs/40807030314): explicit complete alphabet feasibility is checked on prefixes beginning at position 75; duplicate plain-text prefixes at the same length retain only the best lexical score. D0_01 produced **two** complete valid alphabet witnesses (from 485 locally consistent full graphs), but the best plaintext was **91 letters wrong out of 97** with word score -190.382556927. D0_00 had no full witness. Result **0/2 exact**; a reversible but incorrect plaintext is not evidence.
+- [Sealed blind-beam prefix trace, run 40807366412](https://github.com/tylerj-spec/kryptos-k4/actions/runs/40807366412): same cycle+global algorithm; opt-in `BLIND_BEAM_TRACE.tsv` records partial hypotheses **without seeing truth**, then `r43/sealed/trace_report.py` tests the traces against actual secret plaintext after the run. On D0_00 the **longest exact 10-letter prefix** survived at rank **277** (among up to 384 beam states); on D0_01 the true prefix survived only through **two letters**, rank **18**. The first message had 23/23 complete true words within the 512-per-length vocabulary cap (plus truncated final token), so the first loss cannot be explained by absent ordinary words. This is early beam attrition, *not* a late-stage algebra failure. Result **0/2 exact**.
+- All runs: `strictblind/tests/run_all.sh` and the 10-control full 26x26 alphabet graph unit tests passed. GitHub Actions' green check marks mean program/tests executed, **not** that plaintext recovery was successful. The strict blind-gate remains FAILED.
+
+### Decision
+
+**R43 word-prefix beam is not ready for K4.** Even though the modular algebra is implemented consistently and a few full reversible hypotheses can be constructed, the left-to-right score-prioritized beam throws away the correct plaintext extremely early.
+
+Next architectural experiment should try **nonsequential, high-information word placements** (maintain an interval/word-domain CSP), global consistency propagation and ranked language completion, or a diversified/retrospective search that demonstrably retains true paths in planted messages. Merely increasing a beam width that discards the answer by letter 2 or 10 is not a defensible use of computation. The predeclared **separate 20-message holdout requiring >=16/20 exact** remains binding before any K4 attack.
+
+No original K4 ciphertext has been sent to R43, no K4 plaintext generated, and no external checker contacted.
