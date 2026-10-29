@@ -28,7 +28,7 @@ Anchor constraints: `EASTNORTHEAST` at zero-based 21–33, `BERLINCLOCK` at zero
 - Positive controls: 20 already revealed 97-letter R44b English passages. Independently choose key windows from both text sources, both source directions and alphabets, both signs, both keyword-orientation cases. Encrypt with complete arbitrary counterpart alphabet and test that the exact oracle admits each true setting, and the complete independent forward-encryption equals the synthetic ciphertext. At least 10 controls per orientation and exactly 20/20 must pass.
 - Nulls: exactly **two** shuffled copies of the original K4 ciphertext preserving all 97 letter counts (fixed seeds **47100** and **47101**), run through the **same full** key-source/variant/window/keyword family with the K4 public anchors.
 - For K4 and each null, list the number of full key windows enumerated, the exact number passing the two-free-alphabet prescreen, keyword-PA and keyword-CA feasible counts, and **every viable (source,direction,numbering,offset,sign,orientation,keyword)** setting (untruncated). Never present 2 nulls as a calibrated statistical p-value.
-- Record the 40-character original K4 and both source digests, ORTH model digest, preregistered protocol SHA256, program digest, and full raw output digests, committed on the R47 review branch with GitHub Actions logs/artifacts.
+- Record the 97-character original K4 and both source digests, ORTH model digest, preregistered protocol SHA256, program digest, and full raw output digests, committed on the R47 review branch with GitHub Actions logs/artifacts.
 - The experiment must stop on missing sources or mutated frozen R45 result; do not consult any external K4 checker.
 
 ## Decision
