@@ -1,0 +1,282 @@
+{
+  "type": "R47_known_clue_exact_runningkey_feasibility_NOT_BLIND_DECRYPTION",
+  "protocol_sha256": "cbbe8b15fb658044d9a08c7513730a6205f6e8f2cd0a1965b97b9dccf5336dc9",
+  "program_sha256": "184c1b610a84b7c1c488eee5398dd6757b09eaa59647d4573268a624d24f4eed",
+  "original_K4_sha256_with_newline": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "word_model_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "source_sha256": {
+    "K1K3": {
+      "file": "k4kit/data/k1k3_plaintext.txt",
+      "sha256": "bb6b5b03500084ccd45bd93ab7a63ab986026e83e6a84aa2b93cb8824d3281b5",
+      "normalized_sha256": "0e303f3ed3f0c99f43c7ff3b6ddd288b422d4b95c2b85771de81b7d51e151f04",
+      "normalized_length": 1105
+    },
+    "CARTER": {
+      "file": "r34/carter_az.txt",
+      "sha256": "6761a5075869325f708e1d81f8bd0efeeab5aaaad43206e1551ed53243f13ee0",
+      "normalized_sha256": "6761a5075869325f708e1d81f8bd0efeeab5aaaad43206e1551ed53243f13ee0",
+      "normalized_length": 282924
+    }
+  },
+  "unique_R44b_keyword_alphabets": 4749,
+  "four_variants_per_source": true,
+  "operations": [
+    "+k",
+    "-k"
+  ],
+  "keyword_orientations": [
+    "KW_PA_FREE_CA",
+    "FREE_PA_KW_CA"
+  ],
+  "controls": {
+    "counts": {
+      "KW_PA": 10,
+      "KW_CA": 10,
+      "plus": 10,
+      "minus": 10
+    },
+    "samples": [
+      {
+        "id": "HB_00",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "AZ",
+        "offset": 669,
+        "sign": 1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "d2532f46de849575e43339ca8eaac6e44309c0859b1bf1f1e061f990ee904ef6"
+      },
+      {
+        "id": "HB_01",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "KRY",
+        "offset": 228,
+        "sign": 1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "aebd2ad891a885c93ac0c0054b1a6e7d255cfb58091c258ec83b43cbcbbdd563"
+      },
+      {
+        "id": "HB_02",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "AZ",
+        "offset": 237,
+        "sign": -1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "6211759f1fe04186df950bb51ae1008ca98f7c0c09f6df4b037ff273b52e564e"
+      },
+      {
+        "id": "HB_03",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "KRY",
+        "offset": 77,
+        "sign": -1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "1df29b694f4b245bf1e38e3254c8d5e877c261a5e66d10fd5b40ba9b75934a28"
+      },
+      {
+        "id": "HB_04",
+        "source": "CARTER",
+        "direction": "forward",
+        "numbering": "AZ",
+        "offset": 89999,
+        "sign": 1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "fc0ec259efd616b4cf972a7bd358e3434a244f8f4bd84432a2773da17bf96c4d"
+      },
+      {
+        "id": "HB_05",
+        "source": "CARTER",
+        "direction": "forward",
+        "numbering": "KRY",
+        "offset": 180317,
+        "sign": 1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "74fd2656cf4ba16345d51df7f8cce034b8e4ddd92e0ea306912ed18d6660bc99"
+      },
+      {
+        "id": "HB_06",
+        "source": "CARTER",
+        "direction": "reversed",
+        "numbering": "AZ",
+        "offset": 150619,
+        "sign": -1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "b520dfc9c542399072a7debed5b311f16aabf9c5556dd73703914e525b1e95c6"
+      },
+      {
+        "id": "HB_07",
+        "source": "CARTER",
+        "direction": "reversed",
+        "numbering": "KRY",
+        "offset": 85127,
+        "sign": -1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "98380e429cf8cd50046e50be0fd54b832f5bda29f748d8bb1697c485539c1f46"
+      },
+      {
+        "id": "HB_08",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "AZ",
+        "offset": 590,
+        "sign": 1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "79bd8e098ef65a89ea14ef7e7b86f5ed8327e7516cc803693072c39fcd763224"
+      },
+      {
+        "id": "HB_09",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "KRY",
+        "offset": 784,
+        "sign": 1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "fc621e9cebca67ee6c9e71b6aeaae97cae6893774285b93e8813a6bfd48b9521"
+      },
+      {
+        "id": "HB_10",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "AZ",
+        "offset": 323,
+        "sign": -1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "fbd72a840a75028eeed1541291bea4d21714788ea3102b54acebab737be2213a"
+      },
+      {
+        "id": "HB_11",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "KRY",
+        "offset": 153,
+        "sign": -1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "f4e9c8cc8710b0b6920d07a65039bb6c66618c85dcb51b7a030f9adee22b3b04"
+      },
+      {
+        "id": "HB_12",
+        "source": "CARTER",
+        "direction": "forward",
+        "numbering": "AZ",
+        "offset": 64078,
+        "sign": 1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "ac83444aa560dbfd2d95ee7fc11f3ade1ec9978cb86bb3818e8826c543d701a0"
+      },
+      {
+        "id": "HB_13",
+        "source": "CARTER",
+        "direction": "forward",
+        "numbering": "KRY",
+        "offset": 134180,
+        "sign": 1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "f6c89860e2ea6fb70419fd7772309ef981c38668291e4ce06f38198522e722fd"
+      },
+      {
+        "id": "HB_14",
+        "source": "CARTER",
+        "direction": "reversed",
+        "numbering": "AZ",
+        "offset": 131761,
+        "sign": -1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "17f0692214421366b8a1c316268de7783cfda60097fdea2737aba60c739e772d"
+      },
+      {
+        "id": "HB_15",
+        "source": "CARTER",
+        "direction": "reversed",
+        "numbering": "KRY",
+        "offset": 230561,
+        "sign": -1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "f8373e2fcf87f1d80cbf62cc7fd3afac49f4d2676bec3fbeaa475dd83994fed7"
+      },
+      {
+        "id": "HB_16",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "AZ",
+        "offset": 91,
+        "sign": 1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "41d23a8b1b7367dd0615c9c727eb57aee63a720fa21d57e71c4248d92dfa8d3e"
+      },
+      {
+        "id": "HB_17",
+        "source": "K1K3",
+        "direction": "forward",
+        "numbering": "KRY",
+        "offset": 986,
+        "sign": 1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "9a380f06e84052bfba55142b9d1ad9403c5b86c141f6c6d1b6abec5ee49d83ee"
+      },
+      {
+        "id": "HB_18",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "AZ",
+        "offset": 533,
+        "sign": -1,
+        "family": "KW_PA",
+        "ciphertext_sha256": "d8a77d333bc2e1aed06d32cdfbf7620360e770269960c1e577af08597d5b41dc"
+      },
+      {
+        "id": "HB_19",
+        "source": "K1K3",
+        "direction": "reversed",
+        "numbering": "KRY",
+        "offset": 578,
+        "sign": -1,
+        "family": "KW_CA",
+        "ciphertext_sha256": "87932aff3311ae8de1ab56819b4d31f6c0b2d9fa73bfe4c003497067c929045c"
+      }
+    ]
+  },
+  "K4": {
+    "total_key_windows_checked": 1135348,
+    "two_free_alphabet_surviving_windows": 585,
+    "two_free_survivors_by_source": {
+      "CARTER": 585
+    },
+    "keyword_PA_feasible": 0,
+    "keyword_CA_feasible": 0,
+    "all_feasible_settings": []
+  },
+  "nulls": [
+    {
+      "total_key_windows_checked": 1135348,
+      "two_free_alphabet_surviving_windows": 4142,
+      "two_free_survivors_by_source": {
+        "K1K3": 8,
+        "CARTER": 4134
+      },
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 47100,
+      "ciphertext_sha256": "7730d4782c5ce129d723bae30e2a226696c122cc7cfa4f2aa1a594caa260b587"
+    },
+    {
+      "total_key_windows_checked": 1135348,
+      "two_free_alphabet_surviving_windows": 1012,
+      "two_free_survivors_by_source": {
+        "K1K3": 3,
+        "CARTER": 1009
+      },
+      "keyword_PA_feasible": 0,
+      "keyword_CA_feasible": 0,
+      "all_feasible_settings": [],
+      "seed": 47101,
+      "ciphertext_sha256": "2d82cfd63f0e84392b922185fa145501e27b2fa6307c70fb2f28e828200c064a"
+    }
+  ],
+  "K4_total_keyword_settings": 0,
+  "classification": "EXCL exactly two stated running-key sources/windows, both signs and keyword orientations, identity route",
+  "warning": "No K4 plaintext produced; this postfreeze check uses the published 24 known letters only to rule out or list algebraically possible settings."
+}
