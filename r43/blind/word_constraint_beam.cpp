@@ -146,13 +146,20 @@ static void push_bounded(vector<State>&v,State&&s,int limit){
 }
 struct Answer {string plain,pa,ca,seg;double score;long long proposed,valid_graph,full_graph,full_bijections;};
 static Answer solve(const string&ct,const vector<int>&key,
-                   const vector<vector<Word>>&dictionary,const Options&opt){
+                   const vector<vector<Word>>&dictionary,const Options&opt,
+                   const string&id,ostream *trace=nullptr){
   vector<vector<State>> at(N+1);
   at[0].emplace_back();
   long long proposed=0,passed=0,full=0,full_bij=0,global_reject=0;Answer answer{"","","","",-1e100,0,0,0,0};
   for(int pos=0;pos<N;pos++){
     auto &cur=at[pos];if(cur.empty())continue;
     if((int)cur.size()>opt.width)trim_unique(cur,opt.width);
+    if(trace){
+      sort(cur.begin(),cur.end(),sort_by_score);
+      for(size_t i=0;i<cur.size();i++)
+        (*trace)<<id<<"\t"<<pos<<"\t"<<(i+1)<<"\t"<<cur[i].priority
+                <<"\t"<<cur[i].score<<"\t"<<cur[i].plain<<"\n";
+    }
     for(const State &state:cur){
       if(pos>=opt.global_after){
         string pa,ca;
@@ -222,12 +229,15 @@ static string json_escape(const string&s){
 }
 int main(int argc,char**argv){
  try{
-  if(argc<4||argc>9)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17] [CYCLE_BONUS=0] [GLOBAL_AFTER=101]");
+  if(argc<4||argc>10)throw runtime_error("usage: solver MODEL.tsv INPUT.tsv OUTPUT.jsonl [BEAM_WIDTH=256] [PER_LEN=128] [MAX_LEN=17] [CYCLE_BONUS=0] [GLOBAL_AFTER=101] [OPTIONAL_TRACE.tsv]");
   Options o;if(argc>=5)o.width=stoi(argv[4]);if(argc>=6)o.per_length=stoi(argv[5]);if(argc>=7)o.max_len=stoi(argv[6]);if(argc>=8)o.cycle_weight=stod(argv[7]);if(argc>=9)o.global_after=stoi(argv[8]);
   if(o.width<1||o.width>20000||o.per_length<1||o.per_length>20000||o.max_len<1||o.max_len>24||o.cycle_weight<0||o.cycle_weight>20||o.global_after<0||o.global_after>101)throw runtime_error("invalid budget");
   auto dictionary=model_words(argv[1],o);
   ifstream fin(argv[2]);ofstream out(argv[3]);
   if(!fin||!out)throw runtime_error("input or output inaccessible");
+  ofstream trace;
+  if(argc>=10){trace.open(argv[9]);if(!trace)throw runtime_error("trace file unavailable");
+    trace<<"id\tposition\trank\tpriority\tword_score\tplaintext_prefix\n";}
   string l;int count=0;
   while(getline(fin,l)){
     if(l.empty()||l[0]=='#'||l.rfind("id\t",0)==0)continue;
@@ -236,7 +246,7 @@ int main(int argc,char**argv){
     const string &id=col[0],&ct=col[1];
     if(ct.size()!=N||!all_of(ct.begin(),ct.end(),[](char c){return c>='A'&&c<='Z';}))throw runtime_error("invalid ciphertext");
     auto key=key_parse(col[2]);
-    auto ans=solve(ct,key,dictionary,o);
+    auto ans=solve(ct,key,dictionary,o,id,argc>=10?&trace:nullptr);
     out<<"{\"id\":\""<<json_escape(id)<<"\",\"plaintext\":\""<<ans.plain
        <<"\",\"plaintext_alphabet\":\""<<ans.pa<<"\",\"ciphertext_alphabet\":\""<<ans.ca
        <<"\",\"segmented\":\""<<ans.seg<<"\",\"score\":"<<setprecision(12)<<ans.score
