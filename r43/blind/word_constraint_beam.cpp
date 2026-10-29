@@ -235,4 +235,5 @@ int main(int argc,char**argv){
   }
   if(!count)throw runtime_error("no input ciphertexts");
  }catch(const exception&e){cerr<<"R43 ERROR "<<e.what()<<"\n";return 1;}
+ return 0;
 }
