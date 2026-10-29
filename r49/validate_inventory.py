@@ -8,7 +8,7 @@ import json
 import sys
 from pathlib import Path
 
-EXPECTED_ID = "BERLIN_WELTZEITUHR_1988_HISTORICAL_INVENTORY"
+EXPECTED_ID = "BERLIN_WELTZEITUHR_PRE1991_HISTORICAL_INVENTORY"
 REQUIRED_EVIDENCE = ("url", "capture_date", "artifact_date", "rights", "raw_sha256")
 COMPLETE = "COMPLETE_PRIMARY_24_PANELS"
 INCOMPLETE = "INCOMPLETE_SOURCE_NOT_ACQUIRED"
@@ -21,8 +21,8 @@ def validate(data, allow_incomplete=False):
     status = data.get("status")
     if status not in (COMPLETE, INCOMPLETE):
         errors.append("status missing or invalid")
-    if data.get("target_year") != 1988:
-        errors.append("target_year must be the 1988 K4-era working hypothesis")
+    if data.get("candidate_era") != "1969-1990":
+        errors.append("candidate_era must include the entire pre-1991 construction/use window")
     zones = data.get("panels")
     if not isinstance(zones, list) or len(zones) != 24:
         errors.append("exactly 24 panels required")
@@ -45,8 +45,8 @@ def validate(data, allow_incomplete=False):
             continue
         period = row.get("period_evidence_year")
         if period is not None and (not isinstance(period, int) or isinstance(period, bool)
-                                   or not 1969 <= period <= 1989):
-            errors.append(f"panel {i}: evidence must depict <=1989 physical state")
+                                   or not 1969 <= period <= 1990):
+            errors.append(f"panel {i}: evidence must depict <=1990 physical state")
         sources = row.get("evidence")
         if not isinstance(sources, list):
             errors.append(f"panel {i}: evidence must be list (possibly empty)")
