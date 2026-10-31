@@ -1,0 +1,71 @@
+name: R52 exploratory plaintext-guess negative controls
+
+on:
+  push:
+    branches:
+      - "chatgpt/r52-educated-plaintext-probe"
+    paths:
+      - ".github/workflows/r52-educated-plaintext.yml"
+      - "r52/educated_plaintext_probe.py"
+      - "r52/README.md"
+  pull_request:
+    paths:
+      - ".github/workflows/r52-educated-plaintext.yml"
+      - "r52/**"
+
+permissions:
+  contents: write
+
+jobs:
+  exploratory-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numeric dependency
+        run: python -m pip install --disable-pip-version-check 'numpy==2.1.3'
+      - name: Run crib-conditioned controls, NOT a K4 solver
+        run: |
+          python -I r52/educated_plaintext_probe.py
+          python - <<'PY'
+          import json
+          v=json.load(open("r52/R52_RESULTS.json"))
+          assert v["classification"]=="EXPLORATORY_GUESSES_CRIB_CONDITIONED_NO_K4_SOLUTION"
+          assert len(v["candidates"])==8
+          assert all(len(x["plaintext_97"])==97 for x in v["candidates"])
+          assert all(x["plaintext_97"][21:34]=="EASTNORTHEAST" for x in v["candidates"])
+          assert all(x["plaintext_97"][63:74]=="BERLINCLOCK" for x in v["candidates"])
+          assert v["familywise"]["null_count"]==2000
+          assert v["familywise"]["null_exceedances"]==579
+          assert abs(v["familywise"]["empirical_p"]-0.289855)<0.000001
+          assert v["synthetic_positive_control"]["found_period"]==9
+          assert v["synthetic_positive_control"]["forward_exact"]
+          assert v["synthetic_positive_control"]["null_exceedances"]==0
+          print("R52 PASS: 8 exact-layout educated guesses; multiple-testing corrected p=0.289855; positive synthetic key detected")
+          PY
+      - name: Freeze exploratory JSON on isolated research branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r52/README.md r52/educated_plaintext_probe.py r52/R52_RESULTS.json > r52/R52_FROZEN.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r52/R52_RESULTS.json r52/R52_FROZEN.sha256
+          if git diff --cached --quiet; then
+            echo "No changes to exploratory result"
+          else
+            git commit -m "R52: freeze eight exploratory plaintext guesses and null-calibrated negative finding [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r52-educated-plaintext-probe
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r52-educated-plaintext-exploratory-no-solve
+          path: |
+            r52/R52_RESULTS.json
+            r52/R52_FROZEN.sha256
+          retention-days: 90

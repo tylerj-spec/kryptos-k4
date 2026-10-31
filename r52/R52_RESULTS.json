@@ -1,0 +1,147 @@
+{
+  "classification": "EXPLORATORY_GUESSES_CRIB_CONDITIONED_NO_K4_SOLUTION",
+  "ciphertext_sha256_no_newline": "eea813570c7f1fd3b34674e47b5c3da8948026f5cefee612a0b38ffaa515ceab",
+  "length": 97,
+  "confirmed_plaintext_letters": 24,
+  "unknown_letters": 73,
+  "candidate_count": 8,
+  "nulls_each": 2000,
+  "search_alphabets": [
+    "AZ_AZ",
+    "KRY_KRY",
+    "KRY_AZ",
+    "AZ_KRY"
+  ],
+  "search_lags": "1..24",
+  "candidates": [
+    {
+      "id": "route_and_handoff",
+      "speculative_punctuation": "The path to follow points east northeast. Follow the line until you reach the Berlin Clock and look for a new beginning.",
+      "plaintext_97": "THEPATHTOFOLLOWPOINTSEASTNORTHEASTFOLLOWTHELINEUNTILYOUREACHTHEBERLINCLOCKANDLOOKFORANEWBEGINNING",
+      "best_alphabet_pair": "KRY_AZ",
+      "best_lag": 19,
+      "lag_equalities": 7,
+      "max_shift_Z": 2.35514,
+      "null_exceedances": 1670,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.835082,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "instruction_and_hidden_object",
+      "speculative_punctuation": "The first step is looking east northeast. The final clue is positioned at the Berlin Clock. The secret lies underneath.",
+      "plaintext_97": "THEFIRSTSTEPISLOOKINGEASTNORTHEASTTHEFINALCLUEISPOSITIONEDATTHEBERLINCLOCKTHESECRETLIESUNDERNEATH",
+      "best_alphabet_pair": "KRY_KRY",
+      "best_lag": 19,
+      "lag_equalities": 8,
+      "max_shift_Z": 2.94392,
+      "null_exceedances": 864,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.432284,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "wall_clock_delivery",
+      "speculative_punctuation": "Look from the wall toward east northeast, and then find the hour marked on the Berlin Clock, and the message will appear.",
+      "plaintext_97": "LOOKFROMTHEWALLTOWARDEASTNORTHEASTANDTHENFINDTHEHOURMARKEDONTHEBERLINCLOCKANDTHEMESSAGEWILLAPPEAR",
+      "best_alphabet_pair": "AZ_KRY",
+      "best_lag": 16,
+      "lag_equalities": 8,
+      "max_shift_Z": 2.82222,
+      "null_exceedances": 1067,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.533733,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "message_handoff",
+      "speculative_punctuation": "The path to follow points east northeast. Then pass it to another agent at the Berlin Clock. Then transmit the final key.",
+      "plaintext_97": "THEPATHTOFOLLOWPOINTSEASTNORTHEASTTHENPASSITTOANOTHERAGENTATTHEBERLINCLOCKTHENTRANSMITTHEFINALKEY",
+      "best_alphabet_pair": "KRY_KRY",
+      "best_lag": 16,
+      "lag_equalities": 8,
+      "max_shift_Z": 2.82222,
+      "null_exceedances": 1078,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.53923,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "physical_layer",
+      "speculative_punctuation": "Look from the wall toward east northeast. The last message was placed beside Berlin Clock. The second layer is waiting.",
+      "plaintext_97": "LOOKFROMTHEWALLTOWARDEASTNORTHEASTTHELASTMESSAGEWASPLACEDBESIDEBERLINCLOCKTHESECONDLAYERISWAITING",
+      "best_alphabet_pair": "AZ_KRY",
+      "best_lag": 7,
+      "lag_equalities": 11,
+      "max_shift_Z": 4.13204,
+      "null_exceedances": 85,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.042979,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "no_literal_clock_key",
+      "speculative_punctuation": "The first step is looking east northeast. This is only one piece of the puzzle. Berlin Clock is the beginning not the end.",
+      "plaintext_97": "THEFIRSTSTEPISLOOKINGEASTNORTHEASTTHISISONLYONEPIECEOFTHEPUZZLEBERLINCLOCKISTHEBEGINNINGNOTTHEEND",
+      "best_alphabet_pair": "KRY_KRY",
+      "best_lag": 13,
+      "lag_equalities": 8,
+      "max_shift_Z": 2.7059,
+      "null_exceedances": 1177,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.588706,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "egypt_to_clock",
+      "speculative_punctuation": "From the pyramids look to east northeast and receive the message beside the Berlin Clock and look for a new beginning.",
+      "plaintext_97": "FROMTHEPYRAMIDSLOOKTOEASTNORTHEASTANDRECEIVETHEMESSAGEBESIDETHEBERLINCLOCKANDLOOKFORANEWBEGINNING",
+      "best_alphabet_pair": "KRY_KRY",
+      "best_lag": 3,
+      "lag_equalities": 10,
+      "max_shift_Z": 3.42432,
+      "null_exceedances": 346,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.173413,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    },
+    {
+      "id": "cairo_wall_message",
+      "speculative_punctuation": "The Cairo messenger went east northeast. The message from Egypt reached the Berlin Clock. Witness the fall of the wall.",
+      "plaintext_97": "THECAIROMESSENGERWENTEASTNORTHEASTTHEMESSAGEFROMEGYPTREACHEDTHEBERLINCLOCKWITNESSTHEFALLOFTHEWALL",
+      "best_alphabet_pair": "AZ_KRY",
+      "best_lag": 7,
+      "lag_equalities": 8,
+      "max_shift_Z": 2.48766,
+      "null_exceedances": 1419,
+      "null_count": 2000,
+      "candidate_lookelsewhere_uncorrected_p": 0.709645,
+      "note": "This is not a ciphertext solution: an additive key always exists by construction."
+    }
+  ],
+  "familywise": {
+    "max_observed_Z": 4.13204,
+    "best_id": "physical_layer",
+    "null_count": 2000,
+    "null_exceedances": 579,
+    "empirical_p": 0.289855,
+    "null_median_Z": 3.76872,
+    "null_95th_percentile_Z": 4.82451
+  },
+  "synthetic_positive_control": {
+    "key_period": 9,
+    "found_period": 9,
+    "max_Z": 46.90416,
+    "null_count": 300,
+    "null_exceedances": 0,
+    "empirical_p": 0.003322,
+    "forward_exact": true
+  },
+  "limits": [
+    "Candidates were hand-authored after knowing the published 24 letters.",
+    "For any plaintext a 97-position additive key can be fitted, so re-encryption proves nothing.",
+    "A candidate's small uncorrected p is invalid without a full multi-candidate lookelsewhere adjustment.",
+    "Only a short-repeating shift test was tried; it has no power against arbitrary masks or transpositions.",
+    "No authentic K4 plaintext was recovered, no verifier submission was made."
+  ]
+}
