@@ -26,7 +26,11 @@ assert "process.env" not in SOURCE and "child_process" not in SOURCE
 assert "eval(" not in SOURCE and "exec(" not in SOURCE
 assert "method_fingerprint.js" in SCRIPT.name
 
-if len(sys.argv) == 2:
+CPP = (ROOT / "r54/blind/period_columns.cpp").read_text()
+for w in BANNED:
+    assert w not in CPP.upper(), "column method scanner uses forbidden K4 plaintext source"
+assert not any(x in CPP for x in ('system(', 'popen(', 'EASTNORTHEAST', 'BERLINCLOCK'))
+if len(sys.argv) in (2, 3):
     report = json.loads(Path(sys.argv[1]).read_text())
     assert report["classification"] == (
         "EXPLORATORY_CIPHERTEXT_ONLY_METHOD_FINGERPRINTS_NO_DECRYPTION"
@@ -53,6 +57,28 @@ if len(sys.argv) == 2:
     assert 0 <= report["shuffled_ciphertext_lag_null"]["familywise_p"] <= 1
     assert report["shuffled_ciphertext_lag_null"]["observed_best_lag"] == 7
     assert report["shuffled_ciphertext_lag_null"]["observed_best_lag_matches"] == 9
+    if len(sys.argv) == 3:
+        columns = json.loads(Path(sys.argv[2]).read_text())
+        assert columns["classification"] == "METHOD_ONLY_WITHIN_COLUMN_PERIOD_SCAN_NOT_DECRYPTION"
+        assert columns["ciphertext_length"] == 97
+        assert columns["searched_period_range"] == "2..24"
+        assert columns["shuffle_null_trials"] == 30000
+        assert len(columns["periods"]) == 23
+        assert columns["best_period"] == 10
+        assert columns["best_z"] < 1.1
+        assert columns["familywise_empirical_p"] > 0.90
+        # Verify the observed within-column IC independently from pure Python.
+        def scan(period):
+            num = den = 0
+            for residue in range(period):
+                xs = ct[residue::period]
+                f = Counter(xs)
+                num += sum(n*(n-1) for n in f.values())
+                den += len(xs)*(len(xs)-1)
+            return num/den
+        for item in columns["periods"]:
+            assert abs(scan(item["period"])-item["observed_column_IC"]) < 1e-14
+        print("R54 COLUMN PASS: all 23 period IC statistics independently reproduced, no period signal")
     print("R54 CHECK PASS: original ciphertext independent IC/counts, no clue paths, all nulls recorded")
 else:
     assert len(sys.argv) == 1
