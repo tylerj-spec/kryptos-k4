@@ -1,0 +1,76 @@
+name: R51 ciphertext-autokey K3 before-substitution exact feasibility
+
+on:
+  push:
+    branches:
+      - "chatgpt/r51-ciphertext-feedback-k3-feasibility"
+    paths:
+      - ".github/workflows/r51-cipherfeedback.yml"
+      - "r51/**"
+  pull_request:
+    paths:
+      - ".github/workflows/r51-cipherfeedback.yml"
+      - "r51/**"
+
+permissions:
+  contents: write
+
+jobs:
+  exact-feedback-family:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify original blind-method contracts and pinned experiment before K4
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+          sha256sum -c r50/PROTOCOL.sha256
+          sha256sum -c r51/PROTOCOL.sha256
+          sha256sum -c r45/R45_RESULT.sha256
+      - name: Execute all lag-basis-route candidates, forward plants, and nulls
+        run: |
+          if test -e r51/R51_EXACT_RESULT.json; then
+            python3 -I r51/sealed/cipherfeedback_exact.py /tmp/r51_replay.json
+            cmp /tmp/r51_replay.json r51/R51_EXACT_RESULT.json
+          else
+            python3 -I r51/sealed/cipherfeedback_exact.py r51/R51_EXACT_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          x=json.load(open("r51/R51_EXACT_RESULT.json"))
+          assert x["lags"]==list(range(1,25))
+          assert x["base_numberings"]==["AZ","KRYPTOS"]
+          assert x["candidate_keyword_alphabets"]==dict(common=4749,themed_extra=12)
+          assert x["positive_controls"]["counts"]==dict(KW_PA=10,KW_CA=10,plus=10,minus=10,basis_AZ=10,basis_KRYPTOS=10)
+          assert len(x["K4_by_route"])==4 and len(x["nulls"])==2
+          for name,case in x["K4_by_route"].items():
+              assert case["total_lag_basis_settings"]==48
+              assert case["keyword_hits"]==len(case["all_keyword_matches"])
+              assert case["highcoverage_nonzero_cycle_hits"]+case["lowcoverage_or_zero_cycle_hits"]==case["keyword_hits"]
+              print("R51",name,"twofree",case["two_free_surviving_lag_basis"],"keyword",case["keyword_hits"],"high",case["highcoverage_nonzero_cycle_hits"])
+          assert x["total_K4_keyword_feasible"]==sum(v["keyword_hits"] for v in x["K4_by_route"].values())
+          print("R51",x["classification"])
+          PY
+      - name: Freeze entire postfreeze exact algebraic report to research branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r51/PREREGISTRATION.md r51/sealed/cipherfeedback_exact.py r51/R51_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r51/R51_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r51/R51_EXACT_RESULT.json r51/R51_RESULT.sha256
+          if git diff --cached --quiet; then echo "Identical report"; else
+            git commit -m "R51 freeze complete ciphertext-autokey exact findings [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r51-ciphertext-feedback-k3-feasibility
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r51-postfreeze-ciphertext-autokey-full-audit
+          path: |
+            r51/R51_EXACT_RESULT.json
+            r51/R51_RESULT.sha256
+          retention-days: 90

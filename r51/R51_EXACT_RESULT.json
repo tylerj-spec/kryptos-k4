@@ -1,0 +1,1003 @@
+{
+  "type": "R51_postfreeze_24_public_letter_ciphertext_feedback_exact_NOT_K4_PLAINTEXT",
+  "protocol_sha256": "a05b6dbe2c3e7e3932484146cd8b416438b668c1ad4ce92e72355d039ce3b65a",
+  "program_sha256": "e43fa71ec3f7834185a5d43480daa23b5e3a1c20a6358b6bb0ab46e6962e2ef7",
+  "canonical_original_K4_SHA256_with_newline": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "keyword_model_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "candidate_keyword_alphabets": {
+    "common": 4749,
+    "themed_extra": 12
+  },
+  "transposition": "T_then_S_K3_24x8_four_routes",
+  "lags": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "base_numberings": [
+    "AZ",
+    "KRYPTOS"
+  ],
+  "signs": [
+    1,
+    -1
+  ],
+  "unknown_initial_seed": "first lag letters unconstrained; initial key never guessed",
+  "positive_controls": {
+    "counts": {
+      "KW_PA": 10,
+      "KW_CA": 10,
+      "plus": 10,
+      "minus": 10,
+      "basis_AZ": 10,
+      "basis_KRYPTOS": 10
+    },
+    "cases": [
+      {
+        "id": "HB_00",
+        "route": "R24x8/CW/fwd",
+        "lag": 1,
+        "basis": "AZ",
+        "known_anchors": 23,
+        "sign": 1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "3badd985ed5d2b28c8e33754c4012db7a3423457556db0895022171de5edd28d"
+      },
+      {
+        "id": "HB_01",
+        "route": "R24x8/CW/inv",
+        "lag": 2,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": 1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "1e336717823e6fec86a8009058f32ee1632d5ead23ef20c25ce949b8e60c59b9"
+      },
+      {
+        "id": "HB_02",
+        "route": "R24x8/CCW/fwd",
+        "lag": 3,
+        "basis": "AZ",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "bd41d8ec199762150c05287d2a1c8c8b009cc3fe502f671c8eea27b65f4dc031"
+      },
+      {
+        "id": "HB_03",
+        "route": "R24x8/CCW/inv",
+        "lag": 4,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "b25e3dc8cd39e754c8e904d5e27e1efc53ce2a2fa305a7611eaddc02d5f2aed3"
+      },
+      {
+        "id": "HB_04",
+        "route": "R24x8/CW/fwd",
+        "lag": 5,
+        "basis": "AZ",
+        "known_anchors": 22,
+        "sign": 1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "e0dfe40078451d2d119b5862ff4d2a99318a24e0fc9328fb1714dac8222d0528"
+      },
+      {
+        "id": "HB_05",
+        "route": "R24x8/CW/inv",
+        "lag": 6,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": 1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "4d98450d8fb1e7bd902e8f1c18a6168560cd071fdb5367116825ad700a2d7f68"
+      },
+      {
+        "id": "HB_06",
+        "route": "R24x8/CCW/fwd",
+        "lag": 7,
+        "basis": "AZ",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "34abdc1c8b4c926c63053fffee2084142a2aa60c2d58eac22098fad5bc90e5c5"
+      },
+      {
+        "id": "HB_07",
+        "route": "R24x8/CCW/inv",
+        "lag": 8,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "ecad3a617534122c2892afbb7fe77b3ff9b7a58387ada54119f885fcea7d11da"
+      },
+      {
+        "id": "HB_08",
+        "route": "R24x8/CW/fwd",
+        "lag": 9,
+        "basis": "AZ",
+        "known_anchors": 22,
+        "sign": 1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "05769941b6308e804eebcc32bf6c68677c754127b79f97976ba1b4f582ea4898"
+      },
+      {
+        "id": "HB_09",
+        "route": "R24x8/CW/inv",
+        "lag": 10,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": 1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "1cb001ddae031671720b186ee659a783ae31550420a1832f3849879002770779"
+      },
+      {
+        "id": "HB_10",
+        "route": "R24x8/CCW/fwd",
+        "lag": 11,
+        "basis": "AZ",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "6b690eb0a03822677539c61588db1f529822b52bee79d431f77921262ea7fabf"
+      },
+      {
+        "id": "HB_11",
+        "route": "R24x8/CCW/inv",
+        "lag": 12,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "c972f2eb158f3f2c4d6c17c2d3ab18d2daf3fcf556ad42134905c357695e8dea"
+      },
+      {
+        "id": "HB_12",
+        "route": "R24x8/CW/fwd",
+        "lag": 13,
+        "basis": "AZ",
+        "known_anchors": 22,
+        "sign": 1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "149379056f02c1415145abc7d3576caeb576c81e452332bfea0eeaecd6bc8df3"
+      },
+      {
+        "id": "HB_13",
+        "route": "R24x8/CW/inv",
+        "lag": 14,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": 1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "a7b258a51859b08482774fc5043b24eba1bee4a80e86b80361c2cc0ca9a3428d"
+      },
+      {
+        "id": "HB_14",
+        "route": "R24x8/CCW/fwd",
+        "lag": 15,
+        "basis": "AZ",
+        "known_anchors": 20,
+        "sign": -1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "4d477d06374a3ad3a4ae8153c1ee93d57578f7317d1b5760fb0a6e2bccf74a71"
+      },
+      {
+        "id": "HB_15",
+        "route": "R24x8/CCW/inv",
+        "lag": 16,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "63d812931d88454e5e05c1a20642dd014c80c65a6287e97aacb18338a00fdb21"
+      },
+      {
+        "id": "HB_16",
+        "route": "R24x8/CW/fwd",
+        "lag": 17,
+        "basis": "AZ",
+        "known_anchors": 22,
+        "sign": 1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "a200a96064e5d9b3831ba32e257057a7b87ce7b137e54fdf48a12b067cfc789e"
+      },
+      {
+        "id": "HB_17",
+        "route": "R24x8/CW/inv",
+        "lag": 18,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": 1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "e879ba8d7c01b1d63cbc996bf8a8bf4a545123f30842dbb7f2a2d0d777efdf07"
+      },
+      {
+        "id": "HB_18",
+        "route": "R24x8/CCW/fwd",
+        "lag": 19,
+        "basis": "AZ",
+        "known_anchors": 19,
+        "sign": -1,
+        "orientation": "KW_PA",
+        "ciphertext_sha256": "53ea6b4e72c05e36ae5d1d81f4c6efd3d6df7d417c69e5842488e88e38883be4"
+      },
+      {
+        "id": "HB_19",
+        "route": "R24x8/CCW/inv",
+        "lag": 20,
+        "basis": "KRYPTOS",
+        "known_anchors": 24,
+        "sign": -1,
+        "orientation": "KW_CA",
+        "ciphertext_sha256": "ea6c9a8e3ee35f8c0e832dd475a0d363e7bcb9561457f3452befdc3c631c3109"
+      }
+    ]
+  },
+  "K4_by_route": {
+    "R24x8/CW/fwd": {
+      "total_lag_basis_settings": 48,
+      "two_free_surviving_lag_basis": 2,
+      "two_free_survivors": [
+        {
+          "lag": 9,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 22,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 17,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 22,
+          "independent_cycles": 0
+        }
+      ],
+      "keyword_hits": 0,
+      "highcoverage_nonzero_cycle_hits": 0,
+      "lowcoverage_or_zero_cycle_hits": 0,
+      "all_keyword_matches": [],
+      "unindexed_crosschecked_twofree_parameters": 2
+    },
+    "R24x8/CW/inv": {
+      "total_lag_basis_settings": 48,
+      "two_free_surviving_lag_basis": 8,
+      "two_free_survivors": [
+        {
+          "lag": 1,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 1,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 5,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 5,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 12,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 13,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 17,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 18,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        }
+      ],
+      "keyword_hits": 0,
+      "highcoverage_nonzero_cycle_hits": 0,
+      "lowcoverage_or_zero_cycle_hits": 0,
+      "all_keyword_matches": [],
+      "unindexed_crosschecked_twofree_parameters": 3
+    },
+    "R24x8/CCW/fwd": {
+      "total_lag_basis_settings": 48,
+      "two_free_surviving_lag_basis": 6,
+      "two_free_survivors": [
+        {
+          "lag": 13,
+          "numbering": "AZ",
+          "anchor_coverage": 22,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 15,
+          "numbering": "AZ",
+          "anchor_coverage": 20,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 15,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 20,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 16,
+          "numbering": "AZ",
+          "anchor_coverage": 19,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 23,
+          "numbering": "AZ",
+          "anchor_coverage": 19,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 24,
+          "numbering": "AZ",
+          "anchor_coverage": 19,
+          "independent_cycles": 0
+        }
+      ],
+      "keyword_hits": 0,
+      "highcoverage_nonzero_cycle_hits": 0,
+      "lowcoverage_or_zero_cycle_hits": 0,
+      "all_keyword_matches": [],
+      "unindexed_crosschecked_twofree_parameters": 3
+    },
+    "R24x8/CCW/inv": {
+      "total_lag_basis_settings": 48,
+      "two_free_surviving_lag_basis": 21,
+      "two_free_survivors": [
+        {
+          "lag": 1,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 1,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 3,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 5,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 5,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 6,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 7,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 15,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 15,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 16,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 17,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 17,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 18,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 18,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 19,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 19,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 22,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 23,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 23,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 24,
+          "numbering": "AZ",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        },
+        {
+          "lag": 24,
+          "numbering": "KRYPTOS",
+          "anchor_coverage": 24,
+          "independent_cycles": 0
+        }
+      ],
+      "keyword_hits": 0,
+      "highcoverage_nonzero_cycle_hits": 0,
+      "lowcoverage_or_zero_cycle_hits": 0,
+      "all_keyword_matches": [],
+      "unindexed_crosschecked_twofree_parameters": 3
+    }
+  },
+  "nulls": [
+    {
+      "seed": 51100,
+      "ciphertext_sha256": "d227af2aa4a0ab651d2166a045c432ac48626343b87bd77ace492693c72ee98c",
+      "by_route": {
+        "R24x8/CW/fwd": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 11,
+          "two_free_survivors": [
+            {
+              "lag": 1,
+              "numbering": "AZ",
+              "anchor_coverage": 23,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 1,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 23,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 2,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 2,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 3,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 5,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 8,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 9,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        },
+        "R24x8/CW/inv": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 1,
+          "two_free_survivors": [
+            {
+              "lag": 20,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 1
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 1
+        },
+        "R24x8/CCW/fwd": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 5,
+          "two_free_survivors": [
+            {
+              "lag": 18,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 19,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 23,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 23,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        },
+        "R24x8/CCW/inv": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 0,
+          "two_free_survivors": [],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 0
+        }
+      }
+    },
+    {
+      "seed": 51101,
+      "ciphertext_sha256": "5b7cd28761510b9630ddf5440b2be6c707148c1ab492ef35355d7ac3fd3dcac1",
+      "by_route": {
+        "R24x8/CW/fwd": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 14,
+          "two_free_survivors": [
+            {
+              "lag": 3,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 10,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 10,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 16,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 16,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 17,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 20,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 22,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 22,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 24,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        },
+        "R24x8/CW/inv": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 13,
+          "two_free_survivors": [
+            {
+              "lag": 5,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 8,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 8,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 11,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 14,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 19,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 19,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 20,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 24,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 24,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        },
+        "R24x8/CCW/fwd": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 14,
+          "two_free_survivors": [
+            {
+              "lag": 2,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 13,
+              "numbering": "AZ",
+              "anchor_coverage": 22,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 18,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 19,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 19,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 20,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 20,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 21,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 23,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 23,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 24,
+              "numbering": "AZ",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            },
+            {
+              "lag": 24,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 19,
+              "independent_cycles": 0
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        },
+        "R24x8/CCW/inv": {
+          "total_lag_basis_settings": 48,
+          "two_free_surviving_lag_basis": 3,
+          "two_free_survivors": [
+            {
+              "lag": 5,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 1
+            },
+            {
+              "lag": 7,
+              "numbering": "AZ",
+              "anchor_coverage": 24,
+              "independent_cycles": 1
+            },
+            {
+              "lag": 7,
+              "numbering": "KRYPTOS",
+              "anchor_coverage": 24,
+              "independent_cycles": 1
+            }
+          ],
+          "keyword_hits": 0,
+          "highcoverage_nonzero_cycle_hits": 0,
+          "lowcoverage_or_zero_cycle_hits": 0,
+          "all_keyword_matches": [],
+          "unindexed_crosschecked_twofree_parameters": 3
+        }
+      }
+    }
+  ],
+  "total_K4_keyword_feasible": 0,
+  "K4_highcoverage_nonzero_cycle_hits": 0,
+  "classification": "EXCL exact tested T_then_S/ciphertext-feedback L1..24/basis AZ-KRY/keyword-free family",
+  "warnings": [
+    "No K4 plaintext inferred, no unknown initial key recovered.",
+    "Known K4 anchor letters were used ONLY for postfreeze feasibility.",
+    "All positive controls are already revealed texts, not blind recovery.",
+    "High coverage is an information criterion, NOT a p-value or independent confirmation."
+  ]
+}
