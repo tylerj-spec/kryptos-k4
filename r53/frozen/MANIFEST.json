@@ -1,0 +1,9 @@
+{
+  "candidate_file": "BLIND_RESULTS.ndjson",
+  "candidates_sha256": "5af8b23e0cefd3b4e6cfb8ad8398f2bae86cc608e826a80f5d2f52bccd330f17",
+  "contract": "r53-owner-hard-blind-before-validation",
+  "input_sha256": "5a27c16b336500b4441ad009313487bb8e8134d4d6c254adefc78cb2a9427065",
+  "solver_sha256": "ec8a2cd67001e7541bfd826aa85aa35a249375ed92aa3d6b18b4f7d0887510c3",
+  "status": "BLIND_FROZEN_NO_VALIDATION_YET",
+  "warning": "Caesar baseline is only an input-isolation smoke test; it is not a K4 solution"
+}
