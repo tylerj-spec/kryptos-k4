@@ -1,0 +1,2 @@
+R44 keyword alphabets 4749 from 5000 words
+R44 CTL_1 best -372.523 PA SPEAKINGBCDFHJLMOQRTUVWXYZ
