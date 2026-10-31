@@ -1,0 +1,387 @@
+{
+  "classification": "EXPLORATORY_CIPHERTEXT_ONLY_METHOD_FINGERPRINTS_NO_DECRYPTION",
+  "ciphertext_sha256": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "reference_k1k3_plaintext_sha256": "bb6b5b03500084ccd45bd93ab7a63ab986026e83e6a84aa2b93cb8824d3281b5",
+  "target_letters": 97,
+  "independent_reference_characters": 1105,
+  "original_ciphertext": {
+    "index_of_coincidence": 0.03608247422680412,
+    "unique_letters": 26,
+    "shannon_entropy_bits_per_letter": 4.5547809200742915,
+    "letter_counts": {
+      "A": 4,
+      "B": 5,
+      "C": 2,
+      "D": 3,
+      "E": 2,
+      "F": 4,
+      "G": 4,
+      "H": 2,
+      "I": 4,
+      "J": 3,
+      "K": 8,
+      "L": 4,
+      "M": 1,
+      "N": 3,
+      "O": 5,
+      "P": 3,
+      "Q": 4,
+      "R": 4,
+      "S": 6,
+      "T": 6,
+      "U": 6,
+      "V": 2,
+      "W": 5,
+      "X": 2,
+      "Y": 1,
+      "Z": 4
+    },
+    "repeated_bigrams": [
+      {
+        "text": "DI",
+        "indices": [
+          55,
+          83
+        ]
+      },
+      {
+        "text": "EK",
+        "indices": [
+          44,
+          92
+        ]
+      },
+      {
+        "text": "FB",
+        "indices": [
+          17,
+          61
+        ]
+      },
+      {
+        "text": "GK",
+        "indices": [
+          30,
+          85
+        ]
+      },
+      {
+        "text": "HU",
+        "indices": [
+          9,
+          88
+        ]
+      },
+      {
+        "text": "KZ",
+        "indices": [
+          45,
+          77
+        ]
+      },
+      {
+        "text": "QS",
+        "indices": [
+          38,
+          41
+        ]
+      },
+      {
+        "text": "SO",
+        "indices": [
+          13,
+          33
+        ]
+      },
+      {
+        "text": "SS",
+        "indices": [
+          32,
+          42
+        ]
+      },
+      {
+        "text": "TJ",
+        "indices": [
+          50,
+          80
+        ]
+      }
+    ],
+    "repeated_trigrams": [],
+    "top_lag_coincidence_peaks": [
+      {
+        "lag": 7,
+        "matches": 9,
+        "positions_compared": 90,
+        "z": 3.035786553761644
+      },
+      {
+        "lag": 38,
+        "matches": 5,
+        "positions_compared": 59,
+        "z": 1.848682535927699
+      },
+      {
+        "lag": 43,
+        "matches": 4,
+        "positions_compared": 54,
+        "z": 1.3608276348795432
+      },
+      {
+        "lag": 41,
+        "matches": 4,
+        "positions_compared": 56,
+        "z": 1.282853961179637
+      },
+      {
+        "lag": 1,
+        "matches": 6,
+        "positions_compared": 96,
+        "z": 1.224744871391589
+      },
+      {
+        "lag": 31,
+        "matches": 4,
+        "positions_compared": 66,
+        "z": 0.9354953314429288
+      },
+      {
+        "lag": 10,
+        "matches": 5,
+        "positions_compared": 87,
+        "z": 0.9220167799605035
+      },
+      {
+        "lag": 30,
+        "matches": 4,
+        "positions_compared": 67,
+        "z": 0.9040538882366584
+      },
+      {
+        "lag": 28,
+        "matches": 4,
+        "positions_compared": 69,
+        "z": 0.8427009716003844
+      },
+      {
+        "lag": 4,
+        "matches": 5,
+        "positions_compared": 93,
+        "z": 0.7673442541005145
+      },
+      {
+        "lag": 45,
+        "matches": 3,
+        "positions_compared": 52,
+        "z": 0.7211102550927979
+      },
+      {
+        "lag": 44,
+        "matches": 3,
+        "positions_compared": 53,
+        "z": 0.6868028197434451
+      }
+    ]
+  },
+  "english_reference": {
+    "description": "All 97-letter contiguous windows of independently known K1-K3 plaintext; windows heavily overlap, not independent trials",
+    "windows": 1009,
+    "window_ic_statistics": {
+      "count": 1009,
+      "mean": 0.0659849583984689,
+      "minimum": 0.05326460481099656,
+      "p05": 0.05584192439862543,
+      "median": 0.06335910652920962,
+      "p95": 0.08333333333333333,
+      "maximum": 0.0895618556701031
+    },
+    "count_ic_at_or_below_ciphertext": 0,
+    "count_full_26_letter_alphabet": 0
+  },
+  "english_marginal_null": {
+    "description": "Independent identically distributed letters with generic English letter marginals (ignores word/correlation effects)",
+    "replicates": 200000,
+    "count_ic_at_or_below_ciphertext": 0,
+    "empirical_tail_probability": 0.0000049999750001249995,
+    "count_full_26_letter_alphabet": 1
+  },
+  "shuffled_ciphertext_lag_null": {
+    "description": "40,000 frequency-preserving permutations of original ciphertext; 48 lags searched each; no K4 plaintext used",
+    "replicates": 40000,
+    "tested_lags": "1..48",
+    "observed_best_lag": 7,
+    "observed_max_z": 3.035786553761644,
+    "observed_best_lag_matches": 9,
+    "familywise_exceedances": 5946,
+    "familywise_p": 0.14867128321791956,
+    "lag7_uncorrected_exceedances": 204,
+    "lag7_uncorrected_p": 0.005124871878203045,
+    "maximum_z_null_distribution": {
+      "count": 40000,
+      "mean": 2.433373149120748,
+      "minimum": 0.7923547734168842,
+      "p05": 1.5714285714285714,
+      "median": 2.343379732657209,
+      "p95": 3.5473934092513617,
+      "maximum": 6.696177109275701
+    }
+  },
+  "independent_synthetic_cipher_models": {
+    "description": "Generic independent K1-K3 plaintext 97-character windows encrypted using random periodic Vigenere AZ keys. This is a model-family calibration, NOT an inferred K4 key.",
+    "lengths_tested": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      11,
+      17,
+      31,
+      97
+    ],
+    "simulated_per_length": 6000,
+    "by_period": {
+      "1": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.00016663889351774705,
+        "fraction_all_26_letters": 0,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.0658896406071019,
+          "minimum": 0.05326460481099656,
+          "p05": 0.05584192439862543,
+          "median": 0.06335910652920962,
+          "p95": 0.08333333333333333,
+          "maximum": 0.0895618556701031
+        }
+      },
+      "2": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.00016663889351774705,
+        "fraction_all_26_letters": 0.0295,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.053096864261168254,
+          "minimum": 0.03865979381443299,
+          "p05": 0.043170103092783504,
+          "median": 0.05197594501718213,
+          "p95": 0.0661512027491409,
+          "maximum": 0.08848797250859107
+        }
+      },
+      "3": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.0018330278286952174,
+        "fraction_all_26_letters": 0.10383333333333333,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.04875275630011427,
+          "minimum": 0.03436426116838488,
+          "p05": 0.040378006872852236,
+          "median": 0.04789518900343643,
+          "p95": 0.060352233676975946,
+          "maximum": 0.0861254295532646
+        }
+      },
+      "5": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.016163972671221463,
+        "fraction_all_26_letters": 0.228,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.0438919315578466,
+          "minimum": 0.03243127147766323,
+          "p05": 0.03758591065292096,
+          "median": 0.04338487972508591,
+          "p95": 0.05197594501718213,
+          "maximum": 0.06529209621993128
+        }
+      },
+      "7": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.028995167472087986,
+        "fraction_all_26_letters": 0.2653333333333333,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.04325526202749153,
+          "minimum": 0.03264604810996564,
+          "p05": 0.036941580756013746,
+          "median": 0.04252577319587629,
+          "p95": 0.05197594501718213,
+          "maximum": 0.07130584192439862
+        }
+      },
+      "11": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.06598900183302783,
+        "fraction_all_26_letters": 0.36833333333333335,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.04099484536082476,
+          "minimum": 0.03200171821305842,
+          "p05": 0.035867697594501716,
+          "median": 0.04059278350515464,
+          "p95": 0.04746563573883161,
+          "maximum": 0.06550687285223368
+        }
+      },
+      "17": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.12847858690218297,
+        "fraction_all_26_letters": 0.45916666666666667,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.03951639461626579,
+          "minimum": 0.03157216494845361,
+          "p05": 0.0350085910652921,
+          "median": 0.0390893470790378,
+          "p95": 0.045103092783505154,
+          "maximum": 0.05433848797250859
+        }
+      },
+      "31": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.18613564405932345,
+        "fraction_all_26_letters": 0.5288333333333334,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.03872615979381451,
+          "minimum": 0.030283505154639175,
+          "p05": 0.03436426116838488,
+          "median": 0.038445017182130586,
+          "p95": 0.04402920962199313,
+          "maximum": 0.05240549828178694
+        }
+      },
+      "97": {
+        "simulated": 6000,
+        "p_at_or_below_observed_IC": 0.2196300616563906,
+        "fraction_all_26_letters": 0.5533333333333333,
+        "ic_stats": {
+          "count": 6000,
+          "mean": 0.03843112829324171,
+          "minimum": 0.030927835051546393,
+          "p05": 0.03436426116838488,
+          "median": 0.03823024054982818,
+          "p95": 0.043599656357388314,
+          "maximum": 0.05283505154639175
+        }
+      }
+    }
+  },
+  "interpretation": {
+    "attenuates": [
+      "pure columnar/route transposition of ordinary English",
+      "single fixed bijective substitution of ordinary English",
+      "ordinary unencrypted English"
+    ],
+    "consistent_but_unproven": [
+      "polyalphabetic substitution",
+      "variable-shift or running key",
+      "two-layer or changing-alphabet mechanism",
+      "homophonic or otherwise frequency-flattening cipher"
+    ],
+    "warning": "Exact method and order of operations are not statistically identified by 97 ciphertext letters. The 48-lag maximum must be multiple-comparison calibrated; a period-7 look is NOT an independently discovered cipher key."
+  }
+}
