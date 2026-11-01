@@ -14,7 +14,7 @@ FORBIDDEN=("EASTNORTHEAST","BERLINCLOCK","NORTHEAST","KEY_ORACLE",
 for marker in FORBIDDEN:
     assert marker not in SRC, ("blind source contains prohibited dependency",marker)
 assert "NUM_FAMILIES = 29952" in SRC
-assert "constexpr int TOP = 12" in SRC
+assert "CONSTEXPR INT TOP = 12" in SRC
 
 if len(sys.argv)!=3:
     raise SystemExit("test_contract.py BINARY QUAD_MODEL")
