@@ -4,8 +4,8 @@ What was read to write `docs/`, and what each source said. The record lets anyon
 experiments were run.
 
 ## 1. Repository sources read
-- **`LEDGER.md`,** rows L01–L143: the model, status and key numbers of every row, summarised family by family in
-  `CIPHER_TYPES_TESTED.md`. `main` holds L01–L142; L143 is on PR #12.
+- **`LEDGER.md`,** rows L01–L146: the model, exact scope, status and key numbers of each recorded round, summarised in
+  `CIPHER_TYPES_TESTED.md`. L143 was integrated on `main` **only as a historical, crib-conditioned row**; its code remains on unmerged PR #12. L144–L146 document negative R55–R57 findings.
 - **Reviews and handoffs:** `HANDOFF.md`, `r44/REVIEW_R45_R48.md`, `r44/REVIEW_PR11.md`.
 - **Research notes:**
   - `r38/RESEARCH_NOTES.md`: the ACA Gromark alphabet rule and Sanborn's November 2025 statements.
