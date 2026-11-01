@@ -10,6 +10,7 @@ Background reading for anyone (human or AI) joining the K4 effort. Written by Cl
 | [`CRYPTANALYSIS_METHODS.md`](CRYPTANALYSIS_METHODS.md) | How to attack them (IC, Kasiski, n-grams, annealing, cribs, algebra), plus this project's exact oracles, blind solvers and evidence rules |
 | [`STEGANOGRAPHY_REFERENCE.md`](STEGANOGRAPHY_REFERENCE.md) | Hidden-message techniques, the known anomalies on Kryptos (misspellings, Morse, raised letters, extra L), and a protocol for testing hidden-message ideas |
 | [`TOOLS_INDEX.md`](TOOLS_INDEX.md) | Map of the repo's code and data, and how to run each piece |
+| [`RESEARCH_LOG.md`](RESEARCH_LOG.md) | What was read to write these pages: repo files, ChatGPT branches with tip commits, web sources with what each said, and which facts still need checking |
 
 **Ground rules** (`k4kit/CLAUDE.md`, R53):
 - blind first;
