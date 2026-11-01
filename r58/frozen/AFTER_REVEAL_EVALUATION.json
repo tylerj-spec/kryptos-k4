@@ -1,0 +1,92 @@
+{
+  "all_24_matches": 0,
+  "best_of_eight_known_24": 1,
+  "blind_abstained": true,
+  "blind_declared_detected_family": "ABSTAIN",
+  "candidates_in_original_frozen_order": [
+    {
+      "blind_rank": 1,
+      "frozen_generic_quad_score": -677.07906103,
+      "frozen_key": "COUNT",
+      "frozen_method": "V",
+      "frozen_plaintext": "VPOBLVNDQDFFGGRBDLITHAVBMEIBBITUEGRUMCRYAIEGALQTTPUEOXLRDFTEDAGKXQLCEHJABANTOOSQUEHLETUKULXJJAOXV",
+      "frozen_route": null,
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 2,
+      "frozen_generic_quad_score": -681.69707251,
+      "frozen_key": "COULD",
+      "frozen_method": "TV",
+      "frozen_plaintext": "OWJVOVVFULHDICEUPIRTUKDOGQGAGOUNKJXPEDFIDXVEDUUCAIQWORSAMCJCOHHUXZVDNTGBLAFBTIMVELSEEFDYLBBTBETEC",
+      "frozen_route": "COL_LB",
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 3,
+      "frozen_generic_quad_score": -682.77197862,
+      "frozen_key": "YOUNG",
+      "frozen_method": "TV",
+      "frozen_plaintext": "EEBAPBNRGIIACBEGMNEXTEBFLKLOBESHUOVPBDNGDUVMBUMCHGQQOBTAICWAOELKJOOPQFMLUBISEYRIXTYXDYGREADOYYUJV",
+      "frozen_route": "COL_LT",
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 4,
+      "frozen_generic_quad_score": -686.97994971,
+      "frozen_key": "YOUNG",
+      "frozen_method": "TV",
+      "frozen_plaintext": "YUJVOPQFMLUBISEYRIXTYXDYGREADOYLKJOPBDNGDUVMBUMCHGQQOBTAICWAOEHUOVPBNRGIIACBEGMNEXTEBFLKLOBESEEBA",
+      "frozen_route": "COL_LB",
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 5,
+      "frozen_generic_quad_score": -690.71484041,
+      "frozen_key": "WOULD",
+      "frozen_method": "TV",
+      "frozen_plaintext": "GVEBZJWJHHOCYCMASGOWQINCUUDWVXDITBPDJEUNAOGAGSGODKATRIPAECIDKLUXNOVCDKOEBJBBLYVFEESPEVMIJBFALQFDD",
+      "frozen_route": "COL_RT",
+      "matches_all_known_24": false,
+      "matches_known_24": 0
+    },
+    {
+      "blind_rank": 6,
+      "frozen_generic_quad_score": -692.09369683,
+      "frozen_key": "COUNT",
+      "frozen_method": "VT",
+      "frozen_plaintext": "MUGFLVNDQDFFGGRBDLITHAVBMEIBBITUEGRQWXIBDDYHERJVAFUYYSULSEGJARZENULCEHJABANTOOSQUEHLETUKULXJJAOXV",
+      "frozen_route": "SNAKE_R",
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 7,
+      "frozen_generic_quad_score": -692.3230443,
+      "frozen_key": "COULD",
+      "frozen_method": "TV",
+      "frozen_plaintext": "ETECVDNTGBLAFBTIMVELSEEFDYLBBTBHUXZPEDFIDXVEDUUCAIQWORSAMCJCOHNKJXOVVFULHDICEUPIRTUKDOGQGAGOUOWJV",
+      "frozen_route": "COL_LT",
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    },
+    {
+      "blind_rank": 8,
+      "frozen_generic_quad_score": -692.72953105,
+      "frozen_key": "FIRST",
+      "frozen_method": "V",
+      "frozen_plaintext": "NNZULNCTADCYAKROKEYTEWJUMBOYUIREOKRMBPHYTOOKAHDXLPMRZELXKSLEAWAGXLAPXHGWYQNRUZNQMRBTEREQBLUSDQOUF",
+      "frozen_route": null,
+      "matches_all_known_24": false,
+      "matches_known_24": 1
+    }
+  ],
+  "classification": "R58B_POST_REMOTE_FREEZE_ONLY_PUBLIC_K4_LETTER_COMPARISON",
+  "note": "These confirmed letters were never available to blind solver; comparing outputs does not authorize a new ranking or key search.",
+  "raw_output_sha256": "706c87a7d77b990bca0b8823d349b070e10015eed9c0f5c52f0eb7f70a4aa82c",
+  "top_rank_known_24": 1
+}
