@@ -1,9 +1,9 @@
 # Cipher types tested on K4 so far (Claude Code and ChatGPT, rounds 1–57)
 
-Written 1 Nov 2026 by Claude Code. The canonical record is `LEDGER.md`: rows L01–L142 on `main`.
+Created 1 Nov 2026 by Claude Code; independently reviewed and extended. The canonical record is `LEDGER.md`: rows L01–L146 on `main`.
 
 **Where the newer rounds live:**
-- **L143,** Claude's crib-conditioned R52, is on the unmerged PR #12.
+- **L143** records Claude's historical **crib-conditioned** R52 findings on `main` as an archival ledger row; its solver/code remains on **unmerged PR #12** and cannot seed blind K4 candidate generation.
 - **ChatGPT's R49, R53, R54, R55, R56 and R57** are on `main`.
 - **ChatGPT's R45–R48 and R50–R52** are on their own branches and PRs.
 
@@ -128,7 +128,7 @@ chance.** The most important open items are in §17.
   - Ciphertext-only IC ranker: no Gromark signature in K4 (L132, L137).
   - Keyword × free alphabet:
     - **EXCL** (crib-assisted) for base-10 5-digit keys, in place and with K3 rotations (R45 = L141; R46 = L142; R50).
-    - **EXCL** for 46 of R52's 47 chain families (L143, unmerged PR #12).
+    - **EXCL only within the 46 of 47 explicitly crib-assisted finite R52 families** (L143 historical record; solver on unmerged PR #12).
     - R52's B26/b5 family keeps one crib-selected setting. A single known-key heuristic solve of it gave gibberish,
       which is negative evidence, not an exclusion (**WEAK/OPEN**).
     - R52 as a whole is crib-conditioned exploratory work.
