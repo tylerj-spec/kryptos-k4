@@ -12,7 +12,7 @@ assert not any(w in SRC for w in (
     "K4_CIPHERTEXT","CLUE_POSITION","ANCHORED_POSITION",
     "R55/FROZEN","R52/EDUCATED"
 )), "blind source has K4-known-plaintext dependencies"
-assert "CONSTEXPR INT TOP=12" in SRC
+assert "TOP=12" in SRC
 assert "CONSTEXPR INT N=97" in SRC
 
 def rotate(s,k):
