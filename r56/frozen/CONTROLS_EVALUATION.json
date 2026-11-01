@@ -1,0 +1,14 @@
+{
+  "all_forward_witnesses_valid": true,
+  "candidates_per_input": 12,
+  "classification": "R56_POST_REMOTE_FREEZE_INDEPENDENT_AUDIT",
+  "gate_passed": true,
+  "inputs": 20,
+  "limitation": "closed-world synthetic keys, not an identification of K4 encryption",
+  "phase": "controls",
+  "raw_output_sha256": "14c04d3f2bbd627f6a75ee6ee167cc38c8a4ec8f2fa552b4f6ef74075344099d",
+  "required_exact": 16,
+  "top1_exact_key": 20,
+  "top1_exact_plaintext": 20,
+  "verified_witnesses": 240
+}
