@@ -1,0 +1,176 @@
+name: R55 strict-blind affine feedback (unknown-key controls before K4)
+on:
+  push:
+    branches: ["chatgpt/r55-feedback-mask-blind"]
+    paths:
+      - ".github/workflows/r55-feedback-mask.yml"
+      - "r55/PREREGISTRATION.md"
+      - "r55/blind/**"
+      - "r55/sealed/**"
+      - "r55/after_reveal/**"
+      - "r55/tests/**"
+permissions:
+  contents: write
+concurrency:
+  group: r55-feedback-mask-frozen-sequence
+  cancel-in-progress: false
+jobs:
+  controls-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Compile exact 29,952-setting solver and independently test contract
+        run: |
+          mkdir -p "$RUNNER_TEMP/r55/bin"
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror -static r55/blind/solve.cpp -o "$RUNNER_TEMP/r55/bin/solve"
+          python3 -I r55/tests/test_contract.py "$RUNNER_TEMP/r55/bin/solve" k4kit/data/quad_log10.f32
+      - name: Create 20 sealed synthetic messages and keys OUTSIDE solver
+        run: |
+          mkdir -p "$RUNNER_TEMP/r55/input" "$RUNNER_TEMP/r55/sealed" "$RUNNER_TEMP/r55/output" "$RUNNER_TEMP/r55/language"
+          python3 -I r55/sealed/prepare.py controls "$RUNNER_TEMP/r55/input/controls.tsv" "$RUNNER_TEMP/r55/sealed/truth.json"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r55/language/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r55/input" "$RUNNER_TEMP/r55/language"
+          chmod 0777 "$RUNNER_TEMP/r55/output"
+      - name: Search 29,952 keys blindly without repo or sealed truths mounted
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --user 65534:65534 --pids-limit 120 --memory 512m \
+            -v "$RUNNER_TEMP/r55/bin:/tool:ro" -v "$RUNNER_TEMP/r55/input:/input:ro" \
+            -v "$RUNNER_TEMP/r55/language:/language:ro" -v "$RUNNER_TEMP/r55/output:/output:rw" \
+            ubuntu:24.04 /tool/solve /input/controls.tsv /language/quad.f32 /output/results.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r55/output/results.jsonl")" -eq 20
+      - name: Commit raw control outputs and hashes before truth reveal
+        run: |
+          mkdir -p r55/frozen
+          python3 -I r55/sealed/freeze.py controls "$RUNNER_TEMP/r55/input/controls.tsv" \
+            "$RUNNER_TEMP/r55/output/results.jsonl" r55/blind/solve.cpp \
+            k4kit/data/quad_log10.f32 r55/PREREGISTRATION.md "$RUNNER_TEMP/r55/CONTROLS_MANIFEST.json"
+          cp "$RUNNER_TEMP/r55/input/controls.tsv" r55/frozen/CONTROLS_INPUT.tsv
+          cp "$RUNNER_TEMP/r55/output/results.jsonl" r55/frozen/CONTROLS_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r55/CONTROLS_MANIFEST.json" r55/frozen/CONTROLS_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r55/frozen/CONTROLS_INPUT.tsv r55/frozen/CONTROLS_RESULTS.jsonl r55/frozen/CONTROLS_MANIFEST.json
+          git commit -m "R55: freeze ciphertext-only 20-control outputs before evaluating [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r55-feedback-mask-blind
+          echo "CONTROL RAW OUTPUTS FROZEN IN REMOTE GIT BEFORE SEALED TRUTH"
+
+  controls-gate:
+    needs: controls-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r55-feedback-mask-blind
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Assert blind outputs were already remotely committed
+        run: |
+          git ls-tree -r --name-only HEAD r55/frozen/CONTROLS_RESULTS.jsonl | grep -q CONTROLS_RESULTS
+      - name: NOW reveal sealed control truth; require at least 16/20 exact with unknown keys
+        run: |
+          mkdir -p "$RUNNER_TEMP/r55"
+          python3 -I r55/sealed/prepare.py controls "$RUNNER_TEMP/r55/control_repeat.tsv" "$RUNNER_TEMP/r55/truth.json"
+          cmp "$RUNNER_TEMP/r55/control_repeat.tsv" r55/frozen/CONTROLS_INPUT.tsv
+          python3 -I r55/sealed/verify_frozen.py controls \
+            r55/frozen/CONTROLS_INPUT.tsv r55/frozen/CONTROLS_RESULTS.jsonl \
+            r55/frozen/CONTROLS_MANIFEST.json r55/blind/solve.cpp \
+            k4kit/data/quad_log10.f32 r55/PREREGISTRATION.md \
+            "$RUNNER_TEMP/r55/CONTROLS_EVALUATION.json" "$RUNNER_TEMP/r55/truth.json"
+          cp "$RUNNER_TEMP/r55/CONTROLS_EVALUATION.json" r55/frozen/CONTROLS_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r55/frozen/CONTROLS_EVALUATION.json
+          git commit -m "R55: sealed hidden-key control gate after remote freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r55-feedback-mask-blind
+
+  target-freeze:
+    needs: controls-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r55-feedback-mask-blind
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Abort before K4 unless genuine 20-case control gate succeeded
+        run: |
+          python3 - <<'PY'
+          import json
+          x=json.load(open('r55/frozen/CONTROLS_EVALUATION.json'))
+          assert x['gate_passed'] and x['top1_exact_plaintext']>=16
+          assert x['all_forward_witnesses_valid'] and x['verified_witnesses']==240
+          print('Unknown-key blind recovery control gate:',x['top1_exact_plaintext'],'/20 EXACT')
+          PY
+      - name: Recompile unchanged solver, provide ONLY K4 ciphertext and generic quadgram model
+        run: |
+          mkdir -p "$RUNNER_TEMP/r55/bin" "$RUNNER_TEMP/r55/input" "$RUNNER_TEMP/r55/output" "$RUNNER_TEMP/r55/language"
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror -static r55/blind/solve.cpp -o "$RUNNER_TEMP/r55/bin/solve"
+          python3 -I r55/sealed/prepare.py target r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r55/input/target.tsv"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r55/language/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r55/input" "$RUNNER_TEMP/r55/language"
+          chmod 0777 "$RUNNER_TEMP/r55/output"
+      - name: Blind K4 search isolated from all known words, keys, and repository
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --user 65534:65534 --pids-limit 120 --memory 512m \
+            -v "$RUNNER_TEMP/r55/bin:/tool:ro" -v "$RUNNER_TEMP/r55/input:/input:ro" \
+            -v "$RUNNER_TEMP/r55/language:/language:ro" -v "$RUNNER_TEMP/r55/output:/output:rw" \
+            ubuntu:24.04 /tool/solve /input/target.tsv /language/quad.f32 /output/results.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r55/output/results.jsonl")" -eq 13
+      - name: Commit ALL raw 97-letter K4 candidates and 12 null-control outputs BEFORE clue check
+        run: |
+          mkdir -p r55/frozen
+          python3 -I r55/sealed/freeze.py target "$RUNNER_TEMP/r55/input/target.tsv" \
+            "$RUNNER_TEMP/r55/output/results.jsonl" r55/blind/solve.cpp \
+            k4kit/data/quad_log10.f32 r55/PREREGISTRATION.md "$RUNNER_TEMP/r55/K4_MANIFEST.json"
+          cp "$RUNNER_TEMP/r55/input/target.tsv" r55/frozen/K4_INPUT.tsv
+          cp "$RUNNER_TEMP/r55/output/results.jsonl" r55/frozen/K4_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r55/K4_MANIFEST.json" r55/frozen/K4_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r55/frozen/K4_INPUT.tsv r55/frozen/K4_RESULTS.jsonl r55/frozen/K4_MANIFEST.json
+          git commit -m "R55: freeze K4 blind raw full-text candidates BEFORE any K4 clue check [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r55-feedback-mask-blind
+          echo "K4 RAW OUTPUTS NOW FROZEN IN REMOTE GIT"
+
+  target-after-freeze:
+    needs: target-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r55-feedback-mask-blind
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify K4 frozen ciphertext-only outputs already exist in remote Git
+        run: |
+          git ls-tree -r --name-only HEAD r55/frozen/K4_RESULTS.jsonl | grep -q K4_RESULTS
+          git ls-tree -r --name-only HEAD r55/frozen/K4_MANIFEST.json | grep -q K4_MANIFEST
+      - name: Independently verify all 156 forward cipher witnesses BEFORE clues
+        run: |
+          mkdir -p "$RUNNER_TEMP/r55"
+          python3 -I r55/sealed/verify_frozen.py target \
+            r55/frozen/K4_INPUT.tsv r55/frozen/K4_RESULTS.jsonl r55/frozen/K4_MANIFEST.json \
+            r55/blind/solve.cpp k4kit/data/quad_log10.f32 r55/PREREGISTRATION.md \
+            "$RUNNER_TEMP/r55/INDEPENDENT_FORWARD_AUDIT.json"
+      - name: ONLY NOW separately check published K4 letters against raw frozen candidates
+        run: |
+          python3 -I r55/after_reveal/check_clues.py \
+            r55/frozen/K4_RESULTS.jsonl r55/frozen/K4_MANIFEST.json \
+            "$RUNNER_TEMP/r55/INDEPENDENT_FORWARD_AUDIT.json" \
+            "$RUNNER_TEMP/r55/AFTER_REVEAL_EVALUATION.json"
+          cp "$RUNNER_TEMP/r55/INDEPENDENT_FORWARD_AUDIT.json" r55/frozen/INDEPENDENT_FORWARD_AUDIT.json
+          cp "$RUNNER_TEMP/r55/AFTER_REVEAL_EVALUATION.json" r55/frozen/AFTER_REVEAL_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r55/frozen/INDEPENDENT_FORWARD_AUDIT.json r55/frozen/AFTER_REVEAL_EVALUATION.json
+          git commit -m "R55: independent forward encryption and isolated K4 clue comparison AFTER freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r55-feedback-mask-blind
