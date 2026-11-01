@@ -31,3 +31,7 @@ The codebook test is a small mathematical identifiability control. Passing it do
 
 ## Final claims permitted
 Evidence that semantic codebook interpretation is independent of cryptographic recovery; measurable ability of fixed blind cipher-family solver to recover ordinary covertext under hidden-key controls; quantitative mismatch between K4 and *generic IID English letter distribution*. Neither semantic aliasing nor monogram tests derive the K4 plaintext, an actual K4 cipher key, the true semantic map, or a new masking algorithm. No external checker, no merge to main without owner review.
+
+## Amendment A — before generator, controls or test outputs
+
+To eliminate an accidental side channel, **shuffle all 40 cases** (20 coded covertexts, 20 IID uniform nulls) with seed `600060` before assigning the opaque labels `CASE_000..CASE_039`. The first 20 IDs must NOT reveal class. Five cases per supported V/T/VT/TV family remain unchanged. The separate independently seeded uniform null generator remains `random.Random(600061)`. The verifier must retrieve true family only from sealed truth after the remote freeze. No other protocol, prior, thresholds or pass rules change.
