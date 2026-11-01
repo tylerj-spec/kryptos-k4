@@ -1,0 +1,14 @@
+{
+  "all_forward_witnesses_valid": true,
+  "candidates_per_input": 12,
+  "classification": "POST_REMOTE_FREEZE_CONTROL_GATE",
+  "gate_passed": true,
+  "inputs": 20,
+  "phase": "controls",
+  "raw_output_sha256": "dc48f8d8a9dea73925f1bc3874b2ca229fd0ee525dcc54882691785b5614988b",
+  "required_exact": 16,
+  "top1_exact_plaintext": 20,
+  "top1_true_settings": 20,
+  "verified_witnesses": 240,
+  "warning": "Synthetic same-family test, not evidence that K4 uses the model"
+}

@@ -1,0 +1,26 @@
+{
+  "all_forward_witnesses_valid": true,
+  "candidates_per_input": 12,
+  "classification": "POST_REMOTE_FREEZE_FORWARD_AUDIT_NO_K4_CLUES",
+  "inputs": 13,
+  "k4_score_empirical_upper_tail_13": 0.23076923076923078,
+  "k4_top1_score": -640.80454636,
+  "null_top1_scores": [
+    -656.25898194,
+    -655.84013128,
+    -650.28011656,
+    -645.4500227,
+    -638.74499369,
+    -656.36670732,
+    -648.05971861,
+    -641.41735101,
+    -660.01571226,
+    -658.03164983,
+    -635.55298376,
+    -653.27158642
+  ],
+  "phase": "target",
+  "raw_output_sha256": "09e1e33cb95f4af56b50b68e663efc596b89e4e5f771f0eefa6c936b59defc21",
+  "verified_witnesses": 156,
+  "warning": "Only 12 shuffles; the language score is not a K4 decryption or confirmed method."
+}

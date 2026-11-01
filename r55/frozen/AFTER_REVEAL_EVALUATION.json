@@ -1,0 +1,205 @@
+{
+  "best_agreement_any_frozen_candidate": 2,
+  "blind_top1_agreement": 1,
+  "candidates_in_original_blind_order": [
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "OZHBHAHHCDBTSREFRDEMJBKMSHETEIRKMWEPZZLABFAWYOLUNYRMRNTJHAYINGEOHDWOSTHICFEMLDLYKMHTHOKIBBCCUOSMV",
+      "known_letter_agreement_of_24": 1,
+      "parameters": {
+        "lag": 1,
+        "method": "affine_feedback",
+        "mode": "ciphertext",
+        "multiplier": 19,
+        "offset": 8,
+        "sign": -1,
+        "step": 0
+      },
+      "rank_blind_frozen": 1,
+      "score_blind_frozen": -640.80454636
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "EJRCMGXXHCMNEEWTTARWCVIHEAIDEHNJHLVYYFLDOGAMMYRSKILYALHUEUGGDGFSORKHAANMVTVLMYROZWOTTPFTEIMSAWOAX",
+      "known_letter_agreement_of_24": 2,
+      "parameters": {
+        "lag": 1,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 7,
+        "offset": 12,
+        "sign": 1,
+        "step": 0
+      },
+      "rank_blind_frozen": 2,
+      "score_blind_frozen": -660.96593809
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "OBQTYODOYEGURSJPOCRCDDPUNRTAVMTBVEGEVSKUBESJINHTZAJBORFUGIHTDARASHTBSTIMVPTPKKWUEFWXJAXTINUDCACYW",
+      "known_letter_agreement_of_24": 0,
+      "parameters": {
+        "lag": 8,
+        "method": "affine_feedback",
+        "mode": "ciphertext",
+        "multiplier": 11,
+        "offset": 16,
+        "sign": -1,
+        "step": 0
+      },
+      "rank_blind_frozen": 3,
+      "score_blind_frozen": -663.50818849
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "ERAHKERVWEUFIDAFSAZUMATHKASFAKGAANETSJGVDZARAVSOMHJUSPWAHKENZVYNSSKEHPHNPETLANERCKSGCNCUPQSXWUHGZ",
+      "known_letter_agreement_of_24": 1,
+      "parameters": {
+        "lag": 6,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 1,
+        "offset": 10,
+        "sign": -1,
+        "step": 0
+      },
+      "rank_blind_frozen": 4,
+      "score_blind_frozen": -664.46480751
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "UHETSUTJEQMXSHKHSYBWOMPLAMGHOIOAIZYHEBITFRABMPGCAHXICDSEXWIVXNINOEKOHZDNZIPXORIXWOCSCPOWNMYNKOLML",
+      "known_letter_agreement_of_24": 1,
+      "parameters": {
+        "lag": 6,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 23,
+        "offset": 22,
+        "sign": -1,
+        "step": 0
+      },
+      "rank_blind_frozen": 5,
+      "score_blind_frozen": -668.17566991
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "BNDVRWMGAPUZONZJKZLUHBXTRZYDROOFBAEWWFDSAWOKAWEMHAGDVEUNDREQJHBJFRYUBLLTRPETCHLCKHDERDATPIAARGDRM",
+      "known_letter_agreement_of_24": 2,
+      "parameters": {
+        "lag": 7,
+        "method": "affine_feedback",
+        "mode": "ciphertext",
+        "multiplier": 25,
+        "offset": 15,
+        "sign": -1,
+        "step": -1
+      },
+      "rank_blind_frozen": 6,
+      "score_blind_frozen": -668.39637542
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "ICUYARNTSIQBOAYSITLYIKPLQBAOSVOWABITYOCEXAETALWYMWDREGSCPMEFBWOGILGQTZHZPFNCSSIJSIAOMMGNDRARAUFSZ",
+      "known_letter_agreement_of_24": 0,
+      "parameters": {
+        "lag": 6,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 15,
+        "offset": 24,
+        "sign": -1,
+        "step": -1
+      },
+      "rank_blind_frozen": 7,
+      "score_blind_frozen": -669.71674705
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "QMYSCJVNMAYSEGZQCCDIGDRYRYOGILYCUPISBWUPOTIOUXEWLZVQHOUBHGYOFSGREEBVRTUSNETYOZFPRJOSZOVYORSOEESVA",
+      "known_letter_agreement_of_24": 2,
+      "parameters": {
+        "lag": 7,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 3,
+        "offset": 18,
+        "sign": 1,
+        "step": -1
+      },
+      "rank_blind_frozen": 8,
+      "score_blind_frozen": -672.58954287
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "WIYQMRHLESWAOMTOEKREGDRABMYAULAWYJOCPGEDWTEQULUMLRJWLSAPPOEGHWOBOMHJXVUANMBEEVLZBZIGRIRISNEUACALO",
+      "known_letter_agreement_of_24": 1,
+      "parameters": {
+        "lag": 7,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 25,
+        "offset": 10,
+        "sign": 1,
+        "step": -1
+      },
+      "rank_blind_frozen": 9,
+      "score_blind_frozen": -676.50592709
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "KWEKMFNNQYQIQOJIMANUMPTCTAGWAZAUINYGHEUJEVEEMHKERDVSNQSNDMEKRKABUCNRJRECTYNOSLXLLPIMJSJSINWMEAANI",
+      "known_letter_agreement_of_24": 2,
+      "parameters": {
+        "lag": 7,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 1,
+        "offset": 4,
+        "sign": -1,
+        "step": 1
+      },
+      "rank_blind_frozen": 10,
+      "score_blind_frozen": -677.15351939
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "BGMOMXMMFWOIRANEAWNTUOLTRMNINDALTHNSGGCXOEXHPBCZKPATAKIUMXPDKVNBMWHBRIMDFENTCWCPLTMIMBLDOOFFZBRTQ",
+      "known_letter_agreement_of_24": 1,
+      "parameters": {
+        "lag": 1,
+        "method": "affine_feedback",
+        "mode": "ciphertext",
+        "multiplier": 21,
+        "offset": 19,
+        "sign": -1,
+        "step": 0
+      },
+      "rank_blind_frozen": 11,
+      "score_blind_frozen": -677.35484219
+    },
+    {
+      "all_24_known_letters": false,
+      "full_raw_plaintext": "VIFBNOBILPNRNYSJFELBLTFPZWIDKYQRTZSRSIARIDIFIZTUSGAUHWRBNOKKAKUEVKUJOLDUHGZASWAYSOHWTAVIGALVHAGCU",
+      "known_letter_agreement_of_24": 0,
+      "parameters": {
+        "lag": 3,
+        "method": "affine_feedback",
+        "mode": "plaintext",
+        "multiplier": 23,
+        "offset": 25,
+        "sign": 1,
+        "step": 0
+      },
+      "rank_blind_frozen": 12,
+      "score_blind_frozen": -677.8213315
+    }
+  ],
+  "classification": "POSTFREEZE_K4_KNOWN_LETTER_COMPARISON_NOT_A_SOLVE",
+  "frozen_raw_output_sha256": "09e1e33cb95f4af56b50b68e663efc596b89e4e5f771f0eefa6c936b59defc21",
+  "full_24_agreement": 0,
+  "no_clue_in_candidate_selection": true,
+  "original_ciphertext_unchanged": true,
+  "total_candidates": 12,
+  "warning": "An output contradicting known letters is rejected as a K4 solution. No model or key tuning from this evaluation."
+}
