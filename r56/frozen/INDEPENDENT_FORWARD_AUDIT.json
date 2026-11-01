@@ -1,0 +1,26 @@
+{
+  "all_forward_witnesses_valid": true,
+  "candidates_per_input": 12,
+  "classification": "R56_POST_REMOTE_FREEZE_INDEPENDENT_AUDIT",
+  "descriptive_upper_tail": 0.38461538461538464,
+  "inputs": 13,
+  "k4_top_score": -645.11949611,
+  "limitation": "Only twelve shuffled nulls; no K4 clues evaluated in this stage",
+  "null_top_scores": [
+    -623.95646715,
+    -647.3406136,
+    -649.98730803,
+    -631.99576259,
+    -652.56958342,
+    -649.42133093,
+    -645.0039897,
+    -659.33885169,
+    -633.54482317,
+    -652.04901934,
+    -645.19405866,
+    -659.38243556
+  ],
+  "phase": "target",
+  "raw_output_sha256": "4260f7cea9a02919b3918aacb675c12dbd0a25d77ab5ed8955e1bac6d6723e4f",
+  "verified_witnesses": 156
+}

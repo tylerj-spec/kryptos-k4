@@ -1,0 +1,131 @@
+{
+  "best_of_twelve_matches": 3,
+  "classification": "R56_POSTFREEZE_K4_KNOWN_LETTER_EVALUATION_NOT_A_SOLUTION",
+  "frozen_raw_output_sha256": "4260f7cea9a02919b3918aacb675c12dbd0a25d77ab5ed8955e1bac6d6723e4f",
+  "full_24_matches": 0,
+  "original_order_kept": true,
+  "raw_candidates_original_frozen_order": [
+    {
+      "blind_rank": 1,
+      "frozen_score": -645.11949611,
+      "keyword_alphabet": "WALKEDBCFGHIJMNOPQRSTUVXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 0,
+      "raw_97_letter_plaintext": "DSKIOISMVUTNBYCALMDOMFDRSBKDOZSSDMKBARFRASLANPROUEQXUACTUBTAXTYEMHBTUZRGMWFYPLPEMIYASONBYMBEYSOWJ",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 2,
+      "frozen_score": -650.63868928,
+      "keyword_alphabet": "ALONGBCDEFHIJKMPQRSTUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 2,
+      "raw_97_letter_plaintext": "SCQYOYCAFEDLTIUMPASOAVSBCTQSOJCCSAQTMBVBMCPMLNBOERGHEMUDETDMHDIRAXTDEJBWAKVINPNRAYIMCOLTIATRICOKZ",
+      "right_initial_phase": 4
+    },
+    {
+      "blind_rank": 3,
+      "frozen_score": -651.12465358,
+      "keyword_alphabet": "POSIBLEACDFGHJKMNQRTUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 2,
+      "raw_97_letter_plaintext": "TAQZIZAOFDCSUHVMNOTIOWTEAUQTIJAATOQUMEWEMANMSBEIDRLGDMVCDUCMGCHROYUCDJEXOKWHBNBROZHMAISUHOURHAIKP",
+      "right_initial_phase": 5
+    },
+    {
+      "blind_rank": 4,
+      "frozen_score": -651.16969633,
+      "keyword_alphabet": "SINGLEABCDFHJKMOPQRTUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 1,
+      "raw_97_letter_plaintext": "ETGHOHTKWVUMAYBINKEOKCERTAGEOZTTEKGAIRCRITNIMPROVLQXVIBUVAUIXUYLKFAUVZRDKSCYPNPLKHYITOMAYKALYTOSJ",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 5,
+      "frozen_score": -652.53649879,
+      "keyword_alphabet": "SUDENLYABCFGHIJKMOPQRTVWXZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 2,
+      "raw_97_letter_plaintext": "ATLIOITKXWVMBSCENKAOKFARTBLAOUTTAKLBERFRETNEMPROWYQZWECVWBVEZVSYKHBVWURGKDFSPNPYKISETOMBSKBYSTODJ",
+      "right_initial_phase": 19
+    },
+    {
+      "blind_rank": 6,
+      "frozen_score": -652.56733441,
+      "keyword_alphabet": "CELSABDFGHIJKMNOPQRTUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 1,
+      "raw_97_letter_plaintext": "BTSJOJTMWVUNDYFELMBOMGBRTDSBOZTTBMSDERGRETLENPROVAQXVEFUVDUEXUYAMIDUVZRHMCGYPLPAMJYETONDYMDAYTOCK",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 7,
+      "frozen_score": -652.57088304,
+      "keyword_alphabet": "TALKEDBCFGHIJMNOPQRSUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 0,
+      "raw_97_letter_plaintext": "DSKIOISMWVUNBYCALMDOMFDRSBKDOZSSDMKBARFRASLANPROVEQXVACUVBUAXUYEMHBUVZRGMTFYPLPEMIYASONBYMBEYSOTJ",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 8,
+      "frozen_score": -652.70909691,
+      "keyword_alphabet": "LIMTEDABCFGHJKNOPQRSUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 0,
+      "raw_97_letter_plaintext": "DSTHOHSKWVUNAYBIMKDOKCDRSATDOZSSDKTAIRCRISMINPROVEQXVIBUVAUIXUYEKGAUVZRFKLCYPMPEKHYISONAYKAEYSOLJ",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 9,
+      "frozen_score": -652.85929871,
+      "keyword_alphabet": "TWICEABDFGHJKLMNOPQRSUVXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 1,
+      "raw_97_letter_plaintext": "SFQTETFIJHGCULVOPISEIXSDFUQSEMFFSIQUODXDOFPOCADEHRBKHOVGHUGOKGLRIZUGHMDYINXLAPARITLOFECULIURLFENW",
+      "right_initial_phase": 6
+    },
+    {
+      "blind_rank": 10,
+      "frozen_score": -653.18656492,
+      "keyword_alphabet": "INJURYABCDEFGHKLMOPQSTVWXZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 3,
+      "raw_97_letter_plaintext": "BTYHOHTLXWVMCIDURLBOLEBSTCYBONTTBLYCUSESUTRUMPSOWAQZWUDVWCVUZVIALGCVWNSFLJEIPRPALHIUTOMCILCAITOJK",
+      "right_initial_phase": 19
+    },
+    {
+      "blind_rank": 11,
+      "frozen_score": -653.6401403,
+      "keyword_alphabet": "HILSABCDEFGJKMNOPQRTUVWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 2,
+      "raw_97_letter_plaintext": "BTSJOJTMWVUNCYDILMBOMEBRTCSBOZTTBMSCIRERITLINPROVAQXVIDUVCUIXUYAMGCUVZRFMHEYPLPAMJYITONCYMCAYTOHK",
+      "right_initial_phase": 17
+    },
+    {
+      "blind_rank": 12,
+      "frozen_score": -653.73308945,
+      "keyword_alphabet": "BELIVDACFGHJKMNOPQRSTUWXYZ",
+      "keyword_side": "right",
+      "pass_all_24": false,
+      "published_matches_of_24": 0,
+      "raw_97_letter_plaintext": "DSIJOJSMWUTNAYCELMDOMFDRSAIDOZSSDMIAERFRESLENPROUVQXUECTUATEXTYVMHATUZRGMBFYPLPVMJYESONAYMAVYSOBK",
+      "right_initial_phase": 17
+    }
+  ],
+  "rule": "known plaintext never enters blind solver or key search",
+  "top1_matches": 0
+}
