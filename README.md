@@ -14,7 +14,7 @@ Searches that use the known words to fill in unknown alphabets are labelled **cr
 is never evidence.
 
 ## Where things are
-- **`docs/`:** the reference library. It covers cipher types tested on K4 and what is untested, Kryptos facts,
+- **`docs/`:** the reviewed Claude Code reference library, updated through R57. It covers cipher types tested on K4 and what is untested, Kryptos facts,
   cryptography, cryptanalysis and steganography references, a tools index and a research log with sources. Start
   with `docs/CIPHER_TYPES_TESTED.md`.
 - **`LEDGER.md`:** the canonical record of every model tested (L01–L142).
