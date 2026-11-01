@@ -1,0 +1,66 @@
+{
+  "K4": {
+    "departure_flag": false,
+    "familywise_uniform_null_p": 0.3399150212,
+    "feature_names": [
+      "abs_IC_deviation_from_uniform",
+      "max_pooled_periodic_IC_m2_to12",
+      "max_lag_equality_z_lag1_to24",
+      "max_column_best_shift_log_likelihood_m2_to12"
+    ],
+    "feature_upper_tail_p_values": [
+      0.3901524619,
+      0.7553111722,
+      0.1149712572,
+      0.9735066233
+    ],
+    "feature_values": [
+      0.0023790642,
+      0.0449172577,
+      3.0357865538,
+      20.2159049648
+    ],
+    "interpretation": "No statistically significant departure from iid uniform; cannot infer a true one-time pad or rule out a structured mask."
+  },
+  "all_forward_witnesses_valid": true,
+  "classification": "R59_POST_REMOTE_FREEZE_MASKING_FINGERPRINT_EVALUATION_NO_K4_PLAINTEXT",
+  "independent_full_forward_witnesses": 90,
+  "limitations": [
+    "Reproducibly generated pseudo-uniform pad controls are NOT operationally secure one-time pads.",
+    "Periodic detection power is specific to period 3..6 and 97-letter English sources.",
+    "Failure to reject a uniform ciphertext distribution never proves that a true OTP was used.",
+    "A book key is deterministic and source-dependent even when its output looks uniform.",
+    "No K4 plaintext, key or published-letter fit was generated or used."
+  ],
+  "periodic_mask_power_target_met": true,
+  "phase": "controls_plus_K4",
+  "raw_output_sha256": "5f81c4b75e61ceb252ce2353a01b01dbc153d813f5b556fd652f5f4fb58193f2",
+  "simulated_uniform_false_positive_target_met": true,
+  "status": "COMPLETE",
+  "synthetic_family_results": {
+    "BOOK_RUNNING_KEY": {
+      "count": 30,
+      "departure_flags_p_le_0_01": 0,
+      "max_omnibus_p": 0.9225193702,
+      "median_omnibus_p": 0.3672831792,
+      "min_omnibus_p": 0.0224943764,
+      "not_flagged": 30
+    },
+    "PERIODIC_MASK": {
+      "count": 30,
+      "departure_flags_p_le_0_01": 28,
+      "max_omnibus_p": 0.0379905024,
+      "median_omnibus_p": 0.0009997501,
+      "min_omnibus_p": 0.0009997501,
+      "not_flagged": 2
+    },
+    "SIMULATED_UNIFORM_PAD": {
+      "count": 30,
+      "departure_flags_p_le_0_01": 1,
+      "max_omnibus_p": 0.9962509373,
+      "median_omnibus_p": 0.44476380905,
+      "min_omnibus_p": 0.0099975006,
+      "not_flagged": 29
+    }
+  }
+}
