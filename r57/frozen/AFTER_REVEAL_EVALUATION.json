@@ -1,0 +1,166 @@
+{
+  "best_of_twelve_matches": 2,
+  "blind_top1_matches": 0,
+  "candidates_original_blind_order": [
+    {
+      "blind_rank": 1,
+      "frozen_language_score": -646.99887848,
+      "matches_of_24": 0,
+      "matrix": [
+        23,
+        18,
+        15,
+        19
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "GJGDOCFFGXARDPSLIJTWSXDEDTWTBEUIEGMXOFKENHEGAGHEMWLAEHGFCIGITOXOYBREZLJATROSDFPOLAINEEUODLYEAGUCL"
+    },
+    {
+      "blind_rank": 2,
+      "frozen_language_score": -655.01841402,
+      "matches_of_24": 0,
+      "matrix": [
+        25,
+        3,
+        5,
+        16
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "NJZDMCSFLXFRSPTLTJNWVXBEKTPTVESIAGDXTFWEMHAGOGNESWHALHVFQICIDOPOFBREOLBAKRGSMFROHALNEEGOALMEOGECA"
+    },
+    {
+      "blind_rank": 3,
+      "frozen_language_score": -658.16889286,
+      "matches_of_24": 2,
+      "matrix": [
+        3,
+        15,
+        16,
+        3
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "JNDHCUFEXBRRPELXJXWNXJETTITZEJIEGAXFFXECHUGAGGENWEADHBFJISIMOFOZBRELLGATRISKFUOLADNBEYOKLAEUGGCYM"
+    },
+    {
+      "blind_rank": 4,
+      "frozen_language_score": -658.78342438,
+      "matches_of_24": 1,
+      "matrix": [
+        17,
+        2,
+        13,
+        5
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "GVGTOIFVGRAXDBSXIBTISBDGDLWDBAUCEOMJOJKONLEOACHSMALUEXGLCAGMTOXAYDRWZFJOTPOWDPPCLUILEWUEDRYEACUAJ"
+    },
+    {
+      "blind_rank": 5,
+      "frozen_language_score": -658.88922501,
+      "matches_of_24": 0,
+      "matrix": [
+        17,
+        16,
+        13,
+        1
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "GBGROOFBGHALDFSLIFTOSFDEDDWPBAUKESMTOTKSNDESAKHMMALWELGDCAGITSXAYPRGZZJSTXOGDXPKLWIDEGUUDHYUAKUAN"
+    },
+    {
+      "blind_rank": 6,
+      "frozen_language_score": -660.34269595,
+      "matches_of_24": 1,
+      "matrix": [
+        9,
+        2,
+        3,
+        23
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "KBYBUYZDMBINNHYDQXXOWDRUVHAVLYYMYSEPALMGBNYSMADMCCHEAFCBWWIOHOTGWRHSTPBINBAYTHVWHEYXUSKMFHCEMAMMR"
+    },
+    {
+      "blind_rank": 7,
+      "frozen_language_score": -662.05779576,
+      "matches_of_24": 0,
+      "matrix": [
+        9,
+        24,
+        18,
+        15
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "CPOTIALMAXSTTUMVAJPPONPXLASVRDQEKKUFCLICZEKKOWLLWKPTIFKJIGEUFDBRABBHFARZZOCYNSJPPTSPOUEABOUMOWCIH"
+    },
+    {
+      "blind_rank": 8,
+      "frozen_language_score": -662.21938038,
+      "matches_of_24": 2,
+      "matrix": [
+        21,
+        18,
+        25,
+        19
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "OJODYCDFOXARHPQLKJBWQXHEHTITLEMISGCXYFGENHSGAGZECWRASHOFWIOIBOTOEBFEPLVABRYSHFJORAKNSEMOHLEEAGMCR"
+    },
+    {
+      "blind_rank": 9,
+      "frozen_language_score": -662.7633009,
+      "matches_of_24": 1,
+      "matrix": [
+        25,
+        2,
+        5,
+        21
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "EJWDKCNFOXORDPILKJRWYXXERTWTREKIUGGXOFSEFHUGIGJEWWHAEHQFIIUIPOBOEBNEDLBATROSHFDOHAYNAESOPLIEIGCCD"
+    },
+    {
+      "blind_rank": 10,
+      "frozen_language_score": -662.94538641,
+      "matches_of_24": 0,
+      "matrix": [
+        19,
+        16,
+        13,
+        1
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "EBERSOZBEHALPFMLOFROMFPEPDGPFAWKUSITSTYSNDUSAKJMIADWULEDKAEIRSLAQPHGVZTSRXSGPXXKDWODUGWUPHQUAKWAN"
+    },
+    {
+      "blind_rank": 11,
+      "frozen_language_score": -666.00905609,
+      "matches_of_24": 1,
+      "matrix": [
+        9,
+        10,
+        7,
+        7
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "GJSDACXFEXSRVPYLOJTWAXRENTYTJEMIEGCXUFGEZHEGOGHEEWFACHOFSIIIJOZOQBVENLXADRUSPFTOFAGNIEAODLKEOGYCL"
+    },
+    {
+      "blind_rank": 12,
+      "frozen_language_score": -667.11117649,
+      "matches_of_24": 2,
+      "matrix": [
+        21,
+        2,
+        25,
+        21
+      ],
+      "passes_all_24": false,
+      "raw_97_letter_plaintext": "GJUDCCNFIXIRLPMLCJTWKXPETTUTTECIEGWXIFOEBHEGMGHEUWRAGHYFMIEIDOVOGBNELLVAJRISRFLORAKNAEOODLMEMGQCL"
+    }
+  ],
+  "classification": "R57_AFTER_REMOTE_FREEZE_K4_CLUE_REJECT_ONLY",
+  "full_24_matches": 0,
+  "note": "Never re-ranked or altered candidate generation with published plaintext",
+  "raw_output_sha256": "a555bed143a22de4f9deb6d641e014c8fc93999d0883010979377de12629055c"
+}

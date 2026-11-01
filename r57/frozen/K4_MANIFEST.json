@@ -1,0 +1,13 @@
+{
+  "candidates_per_input": 12,
+  "classification": "R57_REMOTE_FROZEN_CIPHERTEXT_ONLY",
+  "input_sha256": "799958aca89b6136c220d99220f6956b959a09a0ed2d59aa2a07e0b967848ee0",
+  "inputs": 13,
+  "output_sha256": "a555bed143a22de4f9deb6d641e014c8fc93999d0883010979377de12629055c",
+  "phase": "target",
+  "protocol_sha256": "b109df4c0ab984f0d4a7f17174abc5d1894ae7c012c0a9549a369839ceb955dd",
+  "quad_sha256": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43",
+  "searched_per_input": 97344,
+  "source_sha256": "f480d5380aba0121d8ad3452a8449f2a9094ac8b3846b2bc72af4cab47ae635c",
+  "status": "FROZEN_WITHOUT_TRUTH"
+}
