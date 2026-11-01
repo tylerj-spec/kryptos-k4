@@ -36,3 +36,12 @@ Only independently fluent novel English, derived non-fitted key, exact complete 
 ## Limitations and interpretation
 
 The sculpture's 4/31/31/31 layout constrains a physical-route *hypothesis*; it is NOT proof K4 used a columnar route. The 20-per-family controls are closed-world; passing them does not prove K4 uses the family. Original 97-character length need not correspond to a plaintext row count. K1/K2 tableaux equations here are a proxy, not necessarily identical to historical encryption. If the combined test fails, document it and investigate the construction process / physical source instead of silently broadening keyspaces.
+
+## Amendment A (2026-11-01 UTC, BEFORE generating any controls or running R58A)
+
+The original paragraph specified **newly written natural-English messages**. To strengthen source diversity and allow exact independent reproduction without model-authored fixtures, replace that one source requirement with **120 nonoverlapping 97-letter natural-English windows selected from two pinned public-domain novels**:
+
+- Lewis Carroll, *Alice's Adventures in Wonderland*: GITenberg `GITenberg/Alice-s-Adventures-in-Wonderland_11`, immutable commit `7f18748e114b994d5d9454d5793581bc0b9cf9d7`, file `11-0.txt`, exact Git blob SHA-1 `0f25e9af379233267a09623e0c650472f9e463ea`.
+- Jane Austen, *Pride and Prejudice*: GITenberg `GITenberg/Pride-and-Prejudice_1342`, immutable commit `81db45c9c48c592f0b77f01fc59e677ad0a5634e`, file `1342-0.txt`, Git blob SHA-1 `20c3737a33af2501e4c0597285ad630ef42e8e46`.
+
+The preparation script verifies exact Git blob SHA-1 against source bytes, extracts the literary body rather than headers/licenses, strips non-ASCII A–Z, and samples nonoverlapping windows using the predeclared seed 580058, evenly split between books, ensuring distinctness. Both books are in the U.S. public domain. These are *fresh unseen controls for this project*, not newly authored writing. Only ciphertext and opaque IDs enter the blind process; full source books, selected offsets, keys, and plaintext remain outside its isolated filesystem. A 97-letter sample can start/end mid-sentence; this is declared, not a decryptor failure. **No key ranges, scores, route list, thresholds, recovery gates, K4 inputs, or candidate selection rules change.** No K4 decryption has yet run under R58.
