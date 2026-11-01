@@ -23,13 +23,10 @@ BOOK_BLOBS = {
 }
 SPECIAL_KEYS = ("KRYPTOS", "PALIMPSEST", "ABSCISSA")
 
-def git_blob_sha1(raw):
-    return hashlib.sha1(("blob " + str(len(raw)) + "\\0").encode("ascii").replace(b"\\0",b"\\x00") + raw).hexdigest()
-
 def read_book(name, path):
     content = Path(path).read_bytes()
     expected = BOOK_BLOBS[name]
-    actual = hashlib.sha1(b"blob " + str(len(content)).encode("ascii") + b"\\0" + content).hexdigest()
+    actual = hashlib.sha1(b"blob " + str(len(content)).encode("ascii") + bytes((0,)) + content).hexdigest()
     assert actual == expected, ("public-domain source changed",name,actual)
     text = content.decode("utf-8",errors="replace")
     # Source headers, transcribers and licenses are rejected by keeping only the central 80%.
@@ -135,7 +132,7 @@ def create(book_a,book_b,words_path,controls_path,truth_path):
             ct=route_write(plain,perm)
         assert len(ct)==97
         ident=f"CASE_{i:03d}"
-        lines.append(f"{ident}\\t{ct}\\n")
+        lines.append(ident + chr(9) + ct + chr(10))
         secret_info[ident]={"family":family,"plaintext":plain,"key":key,"route":route,
                             "book":book,"source_bin":book_bin}
         if family=="HILL":secret_info[ident]["matrix"]=matrix
@@ -146,7 +143,7 @@ def create(book_a,book_b,words_path,controls_path,truth_path):
     with inp.open("x",encoding="ascii") as f:f.write("".join(lines))
     with secret.open("x",encoding="utf-8") as f:
         json.dump(secret_info,f,sort_keys=True,indent=2)
-        f.write("\\n")
+        f.write(chr(10))
     print("R58 sealed controls generated: 120 hidden family+key texts, 20 per group, 2 pinned books")
 if __name__=="__main__":
     if len(sys.argv)!=6:
