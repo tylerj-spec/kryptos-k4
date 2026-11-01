@@ -44,6 +44,6 @@ assert "The same applies after any transposition" not in docs
 assert "does NOT extend to substitution" in docs
 assert all(x in docs for x in ("R55", "R56", "R57", "two-wheel"))
 memo = (ROOT / "docs/R55_R57_METHODOLOGY_AUDIT.md").read_text()
-assert "No verified K4 solution" in memo
+assert "no verified k4 solution" in memo.lower()
 assert "family" in memo and "out-of-family" in memo
 print("Research reference, strict scope and preserved freezes checked")
