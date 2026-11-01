@@ -1,0 +1,220 @@
+{
+  "dataset_id": "BERLIN_WELTZEITUHR_PRE1991_HISTORICAL_INVENTORY",
+  "status": "INCOMPLETE_SOURCE_NOT_ACQUIRED",
+  "note": "No authenticated 1986-1990 inscription inventory has been obtained. ALL rows deliberately null. Sanborn's account of writing plaintext in 1988 but mentioning the 1989 Berlin Wall collapse has unresolved chronology; do not fix a source year before independent evidence.",
+  "orientation": {
+    "direction": "clockwise zone_index order",
+    "orientation_source": null,
+    "date_line_zone_index": null,
+    "physical_north_azimuth_degrees": null
+  },
+  "panels": [
+    {
+      "zone_index": 0,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 1,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 2,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 3,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 4,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 5,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 6,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 7,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 8,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 9,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 10,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 11,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 12,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 13,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 14,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 15,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 16,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 17,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 18,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 19,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 20,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 21,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 22,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    },
+    {
+      "zone_index": 23,
+      "upper_lines": null,
+      "lower_lines": null,
+      "period_evidence_year": null,
+      "confidence": "unknown",
+      "evidence": []
+    }
+  ],
+  "secondary_context": [
+    {
+      "claim": "1969 initial 80 cities vs 146 today",
+      "source": "https://www.weltzeituhr-berlin.de/en/urania-worldtimeclock"
+    },
+    {
+      "claim": "names revised after reunification",
+      "source": "https://www.berlin.de/en/attractions-and-sights/3561749-3104052-world-clock.en.html"
+    },
+    {
+      "claim": "original plans reportedly in Kunsch family firm archive",
+      "source": "https://www.bz-berlin.de/berlin/mitte/weltzeituhr-reparatur"
+    }
+  ],
+  "candidate_era": "1969-1990"
+}

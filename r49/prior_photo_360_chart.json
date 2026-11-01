@@ -1,0 +1,241 @@
+{
+  "dataset_id": "KRYPTOS_R23_PHOTO_DERIVED_WORLD_CLOCK_360_COMPOSITE",
+  "last_reconstructed": "2026-10-25",
+  "source_repo_path": "archive/2026-10-26_chatgpt_starter/sources/world_clock_360.md",
+  "source_git_blob_sha": "999093b5a7a396c58a5c31d9cdad099ea0763e03",
+  "source_note": "Copied by exact cell extraction from Tyler + Claude 25 Oct R23 photo-derived chart, NOT a primary certified 1988 inscription registry. Rows are mixed-year snapshots, sometimes unknown or inferred; do not treat as verified 1988 letters.",
+  "original_photo_eras_mentioned": [
+    "1969-1970",
+    "1972",
+    "1980",
+    "1984",
+    "1989",
+    "1990"
+  ],
+  "orientation_estimates": {
+    "berlin_utc_plus1_deg": 177,
+    "utc_plus8_deg": 72,
+    "ene_deg": 67.5,
+    "tolerance_degrees": "roughly 5-8",
+    "status": "photographic estimate, not surveyed primary source"
+  },
+  "faces": [
+    {
+      "utc_offset": -11,
+      "berlin_noon_hour": 24,
+      "upper_original_chart_cell": "—",
+      "lower_original_chart_cell": "—",
+      "source_line": 28,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -10,
+      "berlin_noon_hour": 1,
+      "upper_original_chart_cell": "(small text, illegible) [1969–70]",
+      "lower_original_chart_cell": "—",
+      "source_line": 29,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -9,
+      "berlin_noon_hour": 2,
+      "upper_original_chart_cell": "(small text, illegible) [1969–70]",
+      "lower_original_chart_cell": "(small text, illegible)",
+      "source_line": 30,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -8,
+      "berlin_noon_hour": 3,
+      "upper_original_chart_cell": "VANCOUVER, SAN FRANCISCO [1969–70]",
+      "lower_original_chart_cell": "(blank) [1969–70]",
+      "source_line": 31,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -7,
+      "berlin_noon_hour": 4,
+      "upper_original_chart_cell": "EDMONTON, DENVER [1969–70]",
+      "lower_original_chart_cell": "(blank) [1969–70]",
+      "source_line": 32,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -6,
+      "berlin_noon_hour": 5,
+      "upper_original_chart_cell": "NEW ORLEANS, MEXICO CITY [1969–70; later \"Mexiko Stadt\", per press]",
+      "lower_original_chart_cell": "(blank) [1969–70]",
+      "source_line": 33,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -5,
+      "berlin_noon_hour": 6,
+      "upper_original_chart_cell": "MONTREAL, WASHINGTON, NEW YORK, HAVANNA [1969–70]",
+      "lower_original_chart_cell": "BOGOTA, LIMA, QUITO [1969–70]",
+      "source_line": 34,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -4,
+      "berlin_noon_hour": 7,
+      "upper_original_chart_cell": "THULE, HALIFAX [1969–70]",
+      "lower_original_chart_cell": "ASUNCION, CARACAS, LA PAZ, SANTIAGO DE CHILE [1969–70]",
+      "source_line": 35,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -3,
+      "berlin_noon_hour": 8,
+      "upper_original_chart_cell": "(blank?)",
+      "lower_original_chart_cell": "BUENOS AIRES, MONTEVIDEO, RIO DE JANEIRO, SAO PAULO [1969–70; the two photos disagree on order]",
+      "source_line": 36,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -2,
+      "berlin_noon_hour": 9,
+      "upper_original_chart_cell": "AZOREN? [1969–70]",
+      "lower_original_chart_cell": "(blank) [1969–70]",
+      "source_line": 37,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": -1,
+      "berlin_noon_hour": 10,
+      "upper_original_chart_cell": "REYKJAVIK, MADEIRA [1970?, 1980]",
+      "lower_original_chart_cell": "(blank) [1969–70]",
+      "source_line": 38,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 0,
+      "berlin_noon_hour": 11,
+      "upper_original_chart_cell": "DUBLIN, LISSABON, ALGIER [1970, 1980]",
+      "lower_original_chart_cell": "CASABLANCA, CONAKRY, DAKAR [1970]",
+      "source_line": 39,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 1,
+      "berlin_noon_hour": 12,
+      "upper_original_chart_cell": "**AMSTERDAM, BERLIN, BRÜSSEL, BUDAPEST, MADRID, PARIS, PRAG, STOCKHOLM, WARSCHAU** [1970, 1980; unchanged to 2015]",
+      "lower_original_chart_cell": "**KOPENHAGEN, LONDON, WIEN, ROM, BELGRAD, TUNIS** [1970; Bratislava must have been added later]",
+      "source_line": 40,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 2,
+      "berlin_noon_hour": 13,
+      "upper_original_chart_cell": "HELSINKI, BUKAREST, SOFIA, ATHEN, NIKOSIA [1980] (1970: BUKAREST, HELSINKI, SOFIA)",
+      "lower_original_chart_cell": "ANKARA, DAMASKUS, KAIRO [1970]",
+      "source_line": 41,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 3,
+      "berlin_noon_hour": 14,
+      "upper_original_chart_cell": "MURMANSK, LENINGRAD, MOSKAU, KIEW [1980] (1970: LENINGRAD, MOSKAU)",
+      "lower_original_chart_cell": "BAGDAD, TEHERAN +, ADDIS ABEBA; footnote \"+30\" [1970]",
+      "source_line": 42,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 4,
+      "berlin_noon_hour": 15,
+      "upper_original_chart_cell": "GORKI, WOLGOGRAD, BAKU, TBILISSI, JEREWAN [1980] (1970: BAKU)",
+      "lower_original_chart_cell": "KABUL +; footnote \"+30\" [1970]",
+      "source_line": 43,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 5,
+      "berlin_noon_hour": 16,
+      "upper_original_chart_cell": "SWERDLOWSK, ASCHCHABAD, … [1970, 1980, 1984]",
+      "lower_original_chart_cell": "KARATSCHI, DELHI +, COLOMBO +; footnote \"+30\" [1970]",
+      "source_line": 44,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 6,
+      "berlin_noon_hour": 17,
+      "upper_original_chart_cell": "OMSK, ALMA-ATA, TASCHKENT [1984]",
+      "lower_original_chart_cell": "RANGUN +, DACCA [1970, 1990]",
+      "source_line": 45,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 7,
+      "berlin_noon_hour": 18,
+      "upper_original_chart_cell": "KRASNOJARSK, NOWOSIBIRSK [1984]",
+      "lower_original_chart_cell": "HANOI, BANGKOK, PNOM PENH, SINGAPUR +, DJAKARTA [1990]",
+      "source_line": 46,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 8,
+      "berlin_noon_hour": 19,
+      "upper_original_chart_cell": "IRKUTSK, ULAN BATOR [1972, 1984]",
+      "lower_original_chart_cell": "PEKING, SHANGHAI, MANILA [1972, 1984, 1990]",
+      "source_line": 47,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 9,
+      "berlin_noon_hour": 20,
+      "upper_original_chart_cell": "JAKUTSK [1972, 1984]",
+      "lower_original_chart_cell": "PHOENGJANG, TOKIO [1972, 1984, 1990]",
+      "source_line": 48,
+      "uncertainty_present": false,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 10,
+      "berlin_noon_hour": 21,
+      "upper_original_chart_cell": "CHABAROWSK, WLADIWOSTOK [1984] (1972: WLADIWOSTOK alone; 1989: CHABAROWSK alone?)",
+      "lower_original_chart_cell": "SYDNEY, CANBERRA, MELBOURNE [1990] (1972: MELBOURNE, SYDNEY)",
+      "source_line": 49,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 11,
+      "berlin_noon_hour": 22,
+      "upper_original_chart_cell": "MAGADAN, SACHALIN [1972, 1989]",
+      "lower_original_chart_cell": "(blank) [1972]",
+      "source_line": 50,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    },
+    {
+      "utc_offset": 12,
+      "berlin_noon_hour": 23,
+      "upper_original_chart_cell": "KAMTSCHATKA [1989]",
+      "lower_original_chart_cell": "WELLINGTON? [1972]",
+      "source_line": 51,
+      "uncertainty_present": true,
+      "status": "PRIOR_PHOTO_DERIVED_COMPOSITE_NOT_YEAR_VERIFIED"
+    }
+  ],
+  "missing_information": "Chart identifies some 1969-1990 top/bottom panels but does not independently verify all 24 upper and lower panels in 1988-1990; 1997 restoration and pre-1997 revisions must not be conflated."
+}
