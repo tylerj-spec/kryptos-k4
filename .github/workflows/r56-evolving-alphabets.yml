@@ -1,0 +1,206 @@
+name: R56 evolving-alphabet hidden-key 20-control gate, then ciphertext-only K4
+on:
+  push:
+    branches: ["chatgpt/r56-evolving-alphabets"]
+    paths:
+      - ".github/workflows/r56-evolving-alphabets.yml"
+      - "r56/PREREGISTRATION.md"
+      - "r56/blind/**"
+      - "r56/sealed/**"
+      - "r56/after_reveal/**"
+      - "r56/tests/**"
+permissions:
+  contents: write
+concurrency:
+  group: r56-serialized-remote-freeze
+  cancel-in-progress: false
+
+jobs:
+  controls-blind-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Compile fixed method and test canonical Chaocipher vector and no-crib source
+        run: |
+          mkdir -p "$RUNNER_TEMP/r56/bin"
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror -static \
+            r56/blind/solve.cpp -o "$RUNNER_TEMP/r56/bin/solve"
+          python3 -I r56/tests/test_contract.py \
+            "$RUNNER_TEMP/r56/bin/solve" k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32
+      - name: Independently generate NEW synthetic control ciphertexts with hidden truths and keys
+        run: |
+          mkdir -p "$RUNNER_TEMP/r56/input" "$RUNNER_TEMP/r56/output" \
+            "$RUNNER_TEMP/r56/sealed" "$RUNNER_TEMP/r56/language"
+          python3 -I r56/sealed/prepare.py controls k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r56/input/controls.tsv" "$RUNNER_TEMP/r56/sealed/truth.json"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r56/language/words.tsv"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r56/language/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r56/input" "$RUNNER_TEMP/r56/language"
+          chmod 0777 "$RUNNER_TEMP/r56/output"
+      - name: Exhaustively search control ciphertexts with NO repository, truths, keys, known K4 letters or network
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --pids-limit 120 --memory 512m \
+            -v "$RUNNER_TEMP/r56/bin:/tool:ro" \
+            -v "$RUNNER_TEMP/r56/input:/input:ro" \
+            -v "$RUNNER_TEMP/r56/language:/language:ro" \
+            -v "$RUNNER_TEMP/r56/output:/output:rw" \
+            ubuntu:24.04 \
+            /tool/solve /input/controls.tsv /language/words.tsv /language/quad.f32 /output/results.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r56/output/results.jsonl")" -eq 20
+      - name: Commit and remote-freeze all 20 raw full 97-letter outputs BEFORE evaluating synthetic truth
+        run: |
+          mkdir -p r56/frozen
+          python3 -I r56/sealed/freeze.py controls \
+            "$RUNNER_TEMP/r56/input/controls.tsv" "$RUNNER_TEMP/r56/output/results.jsonl" \
+            r56/blind/solve.cpp k4kit/data/word_model_orth.tsv \
+            k4kit/data/quad_log10.f32 r56/PREREGISTRATION.md \
+            "$RUNNER_TEMP/r56/CONTROLS_MANIFEST.json"
+          cp "$RUNNER_TEMP/r56/input/controls.tsv" r56/frozen/CONTROLS_INPUT.tsv
+          cp "$RUNNER_TEMP/r56/output/results.jsonl" r56/frozen/CONTROLS_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r56/CONTROLS_MANIFEST.json" r56/frozen/CONTROLS_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r56/frozen/CONTROLS_INPUT.tsv r56/frozen/CONTROLS_RESULTS.jsonl r56/frozen/CONTROLS_MANIFEST.json
+          git commit -m "R56: remote-freeze blind control outputs before any revealed truth [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r56-evolving-alphabets
+          echo "R56: CONTROL OUTPUTS REMOTELY FROZEN; UNKNOWN KEYS/PLAINTEXT STILL SEALED"
+
+  controls-separate-reveal:
+    needs: controls-blind-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r56-evolving-alphabets
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Assert preexisting remote Git freeze and separately recreate control truth
+        run: |
+          git ls-tree -r --name-only HEAD r56/frozen/CONTROLS_RESULTS.jsonl | grep -q CONTROLS_RESULTS
+          mkdir -p "$RUNNER_TEMP/r56"
+          python3 -I r56/sealed/prepare.py controls k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r56/duplicate.tsv" "$RUNNER_TEMP/r56/truth.json"
+          cmp "$RUNNER_TEMP/r56/duplicate.tsv" r56/frozen/CONTROLS_INPUT.tsv
+      - name: Independently verify all 240 witnesses and full 97-letter recovery against hidden keys
+        run: |
+          set +e
+          python3 -I r56/sealed/verify_frozen.py controls \
+            r56/frozen/CONTROLS_INPUT.tsv r56/frozen/CONTROLS_RESULTS.jsonl \
+            r56/frozen/CONTROLS_MANIFEST.json r56/blind/solve.cpp \
+            k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32 \
+            r56/PREREGISTRATION.md "$RUNNER_TEMP/r56/CONTROLS_EVALUATION.json" \
+            "$RUNNER_TEMP/r56/truth.json"
+          code=$?
+          set -e
+          test -f "$RUNNER_TEMP/r56/CONTROLS_EVALUATION.json"
+          cp "$RUNNER_TEMP/r56/CONTROLS_EVALUATION.json" r56/frozen/CONTROLS_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r56/frozen/CONTROLS_EVALUATION.json
+          git commit -m "R56: sealed independent control result, pass or fail, after remote freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r56-evolving-alphabets
+          exit "$code"
+
+  target-blind-freeze:
+    needs: controls-separate-reveal
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r56-evolving-alphabets
+          fetch-depth: 0
+          persist-credentials: true
+      - name: HARD BLOCK K4 unless 16/20 unknown-key full-text recoveries independently passed
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path('r56/frozen/CONTROLS_EVALUATION.json').read_text())
+          assert j["gate_passed"] and j["top1_exact_plaintext"]>=16
+          assert j["all_forward_witnesses_valid"] and j["verified_witnesses"]==240
+          print("R56 strict synthetic unknown-key gate PASSED",j["top1_exact_plaintext"],"/20")
+          PY
+      - name: Recompile identical unmodified blind solver and prepare original ciphertext only
+        run: |
+          mkdir -p "$RUNNER_TEMP/r56/bin" "$RUNNER_TEMP/r56/input" \
+            "$RUNNER_TEMP/r56/output" "$RUNNER_TEMP/r56/language"
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror -static \
+            r56/blind/solve.cpp -o "$RUNNER_TEMP/r56/bin/solve"
+          python3 -I r56/sealed/prepare.py target \
+            r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r56/input/target.tsv"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r56/language/words.tsv"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r56/language/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r56/input" "$RUNNER_TEMP/r56/language"
+          chmod 0777 "$RUNNER_TEMP/r56/output"
+      - name: Search K4 and 12 nulls blindly with ONLY ciphertexts and generic language priors
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --pids-limit 120 --memory 512m \
+            -v "$RUNNER_TEMP/r56/bin:/tool:ro" \
+            -v "$RUNNER_TEMP/r56/input:/input:ro" \
+            -v "$RUNNER_TEMP/r56/language:/language:ro" \
+            -v "$RUNNER_TEMP/r56/output:/output:rw" \
+            ubuntu:24.04 \
+            /tool/solve /input/target.tsv /language/words.tsv /language/quad.f32 /output/results.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r56/output/results.jsonl")" -eq 13
+      - name: Commit all K4 and null raw candidate outputs BEFORE any published-character checker
+        run: |
+          mkdir -p r56/frozen
+          python3 -I r56/sealed/freeze.py target \
+            "$RUNNER_TEMP/r56/input/target.tsv" "$RUNNER_TEMP/r56/output/results.jsonl" \
+            r56/blind/solve.cpp k4kit/data/word_model_orth.tsv \
+            k4kit/data/quad_log10.f32 r56/PREREGISTRATION.md \
+            "$RUNNER_TEMP/r56/K4_MANIFEST.json"
+          cp "$RUNNER_TEMP/r56/input/target.tsv" r56/frozen/K4_INPUT.tsv
+          cp "$RUNNER_TEMP/r56/output/results.jsonl" r56/frozen/K4_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r56/K4_MANIFEST.json" r56/frozen/K4_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r56/frozen/K4_INPUT.tsv r56/frozen/K4_RESULTS.jsonl r56/frozen/K4_MANIFEST.json
+          git commit -m "R56: remote-freeze K4 complete ciphertext-only plaintexts before any clue check [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r56-evolving-alphabets
+          echo "R56: K4 ENTIRE BLIND OUTPUT REMOTELY FROZEN; NOW SEPARATE VALIDATION MAY START"
+
+  target-after-freeze:
+    needs: target-blind-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r56-evolving-alphabets
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Confirm Git committed remote freeze exists before any evaluation
+        run: |
+          git ls-tree -r --name-only HEAD r56/frozen/K4_RESULTS.jsonl | grep -q K4_RESULTS
+          git ls-tree -r --name-only HEAD r56/frozen/K4_MANIFEST.json | grep -q K4_MANIFEST
+      - name: Independently forward-encrypt all 156 K4/null witnesses with NO clue source
+        run: |
+          mkdir -p "$RUNNER_TEMP/r56"
+          python3 -I r56/sealed/verify_frozen.py target \
+            r56/frozen/K4_INPUT.tsv r56/frozen/K4_RESULTS.jsonl r56/frozen/K4_MANIFEST.json \
+            r56/blind/solve.cpp k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32 \
+            r56/PREREGISTRATION.md "$RUNNER_TEMP/r56/INDEPENDENT_FORWARD_AUDIT.json"
+      - name: ONLY NOW inspect known K4 letters in a completely separate script
+        run: |
+          python3 -I r56/after_reveal/check_clues.py \
+            r56/frozen/K4_RESULTS.jsonl r56/frozen/K4_MANIFEST.json \
+            "$RUNNER_TEMP/r56/INDEPENDENT_FORWARD_AUDIT.json" \
+            "$RUNNER_TEMP/r56/AFTER_REVEAL_EVALUATION.json"
+          cp "$RUNNER_TEMP/r56/INDEPENDENT_FORWARD_AUDIT.json" r56/frozen/INDEPENDENT_FORWARD_AUDIT.json
+          cp "$RUNNER_TEMP/r56/AFTER_REVEAL_EVALUATION.json" r56/frozen/AFTER_REVEAL_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r56/frozen/INDEPENDENT_FORWARD_AUDIT.json r56/frozen/AFTER_REVEAL_EVALUATION.json
+          git commit -m "R56: postfreeze independent verification and published K4 letter evaluation [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r56-evolving-alphabets
