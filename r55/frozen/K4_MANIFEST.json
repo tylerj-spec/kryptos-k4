@@ -1,0 +1,13 @@
+{
+  "blind_source_sha256": "da616bbc8144b56d755d72b54a6c9cb7e6c4955c878d68de1a8b2da22315c7c2",
+  "classification": "FROZEN_CIPHERTEXT_ONLY_SEARCH_NO_K4_CLUE_CHECK",
+  "full_plaintext_candidates_per_input": 12,
+  "input_count": 13,
+  "input_sha256": "ec33ac6ec098bfb376aaaa3bbc8652dd09efa992241ffa76848e17996302d66c",
+  "output_sha256": "09e1e33cb95f4af56b50b68e663efc596b89e4e5f771f0eefa6c936b59defc21",
+  "phase": "target",
+  "protocol_sha256": "2b6e79c30ff145ad00258e46c5749b41b7e52efded4f789adb442086b04d4073",
+  "quad_model_sha256": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43",
+  "searched_parameters_per_input": 29952,
+  "status": "FROZEN_NO_REVEAL"
+}
