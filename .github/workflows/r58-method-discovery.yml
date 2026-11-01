@@ -5,7 +5,9 @@ on:
     paths:
       - "r58/PREREGISTRATION.md"
       - "r58/blind/**"
-      - "r58/sealed/**"
+      - "r58/sealed/prepare.py"
+      - "r58/sealed/freeze.py"
+      - "r58/sealed/verify_frozen.py"
       - "r58/tests/**"
       - ".github/workflows/r58-method-discovery.yml"
 permissions:
