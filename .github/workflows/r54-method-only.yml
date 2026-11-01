@@ -1,0 +1,119 @@
+name: R54 ciphertext-only method fingerprints, no K4 clue access
+
+on:
+  push:
+    branches:
+      - "chatgpt/r54-method-fingerprints-no-crib"
+    paths:
+      - ".github/workflows/r54-method-only.yml"
+      - "r54/blind/**"
+      - "r54/tests/**"
+      - "r54/README.md"
+  pull_request:
+    paths:
+      - ".github/workflows/r54-method-only.yml"
+      - "r54/**"
+
+permissions:
+  contents: write
+
+jobs:
+  method-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Assert no known-K4-plaintext dependencies exist in method source
+        run: |
+          python3 -I r54/tests/test_method_contract.py
+          bash strictblind/tests/run_all.sh
+
+      - name: Isolate only original ciphertext and independent K1-K3 language reference
+        run: |
+          mkdir -p "$RUNNER_TEMP/r54/input" "$RUNNER_TEMP/r54/output"
+          cp r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r54/input/ciphertext.txt"
+          cp k4kit/data/k1k3_plaintext.txt "$RUNNER_TEMP/r54/input/reference.txt"
+          chmod 0555 "$RUNNER_TEMP/r54/input"
+          chmod 0777 "$RUNNER_TEMP/r54/output"
+          test "$(tr -d '\n' < "$RUNNER_TEMP/r54/input/ciphertext.txt" | wc -c)" -eq 97
+
+      - name: Run NO-NETWORK cipher-FAMILY fingerprints with zero published-plaintext access
+        run: |
+          docker run --rm --network none --read-only \
+            --cap-drop ALL --security-opt no-new-privileges \
+            --user 65534:65534 --pids-limit 160 --memory 1g \
+            -v "$PWD/r54/blind:/blind:ro" \
+            -v "$RUNNER_TEMP/r54/input:/input:ro" \
+            -v "$RUNNER_TEMP/r54/output:/out:rw" \
+            node:22-alpine \
+            node /blind/method_fingerprint.js /input/ciphertext.txt /input/reference.txt /out/METHOD_REPORT.json
+
+      - name: Compile the independent no-key column-periodogram as a static binary
+        run: |
+          mkdir -p "$RUNNER_TEMP/r54/build"
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror -static \
+            r54/blind/period_columns.cpp -o "$RUNNER_TEMP/r54/build/period_columns"
+          chmod 0755 "$RUNNER_TEMP/r54/build/period_columns"
+      - name: Run method-only column coincidence scan with NO network or clue mount
+        run: |
+          docker run --rm --network none --read-only \
+            --cap-drop ALL --security-opt no-new-privileges \
+            --user 65534:65534 --pids-limit 160 --memory 1g \
+            -v "$RUNNER_TEMP/r54/build:/tools:ro" \
+            -v "$RUNNER_TEMP/r54/input:/input:ro" \
+            -v "$RUNNER_TEMP/r54/output:/out:rw" \
+            node:22-alpine \
+            /tools/period_columns /input/ciphertext.txt /out/PERIOD_COLUMNS.json
+
+      - name: Independently check raw ciphertext statistics and full control scope
+        run: |
+          if test -f r54/METHOD_REPORT.json; then
+            cmp "$RUNNER_TEMP/r54/output/METHOD_REPORT.json" r54/METHOD_REPORT.json
+          else
+            cp "$RUNNER_TEMP/r54/output/METHOD_REPORT.json" r54/METHOD_REPORT.json
+          fi
+          if test -f r54/PERIOD_COLUMNS.json; then
+            cmp "$RUNNER_TEMP/r54/output/PERIOD_COLUMNS.json" r54/PERIOD_COLUMNS.json
+          else
+            cp "$RUNNER_TEMP/r54/output/PERIOD_COLUMNS.json" r54/PERIOD_COLUMNS.json
+          fi
+          python3 -I r54/tests/test_method_contract.py r54/METHOD_REPORT.json r54/PERIOD_COLUMNS.json
+          python3 - <<'PY'
+          import json
+          o=json.load(open("r54/METHOD_REPORT.json"))
+          print("R54 K4 IC:",o["original_ciphertext"]["index_of_coincidence"])
+          print("R54 K4 unique letters:",o["original_ciphertext"]["unique_letters"])
+          print("R54 independent English windows tested:",o["english_reference"]["windows"])
+          print("R54 corrected lag-family p:",o["shuffled_ciphertext_lag_null"]["familywise_p"])
+          print("R54 no plaintext revealed, no K4 keys attempted.")
+          PY
+
+      - name: Freeze method-fingerprint results and SHA256 on research review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r54/README.md r54/blind/method_fingerprint.js r54/blind/period_columns.cpp \
+            r54/METHOD_REPORT.json r54/PERIOD_COLUMNS.json \
+            r39/ic_gate/k4_ciphertext.txt k4kit/data/k1k3_plaintext.txt > r54/METHOD_REPORT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r54/METHOD_REPORT.json r54/PERIOD_COLUMNS.json r54/METHOD_REPORT.sha256
+          if git diff --cached --quiet; then
+            echo "Method report already frozen with identical bytes"
+          else
+            git commit -m "R54: freeze ciphertext-only method-family test and raw SHA256 [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r54-method-fingerprints-no-crib
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r54-ciphertext-only-method-family-IC-lag-english-controls
+          path: |
+            r54/METHOD_REPORT.json
+            r54/PERIOD_COLUMNS.json
+            r54/METHOD_REPORT.sha256
+          retention-days: 90
