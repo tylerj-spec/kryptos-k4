@@ -1,0 +1,36 @@
+name: R44 known-key archived holdout independent verification
+on:
+  push:
+    branches: ["chatgpt/r44-reviewed-known-key"]
+  pull_request:
+    paths:
+      - "r43/**"
+      - "r44/**"
+      - "CURRENT_STATUS.md"
+      - ".github/workflows/r44-reviewed-holdout.yml"
+permissions:
+  contents: read
+jobs:
+  verify-heldout-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify frozen hashes, exact recovered plaintext and independent re-encryption
+        run: python3 -I r44/tests/verify_frozen_holdout.py
+      - name: Check no known K4 plaintext occurs in R44 blind solver
+        run: python3 -I r44/tests/test_contract.py
+      - name: Independently replay graph controls and verify solver compiles
+        run: |
+          g++ -std=c++17 -O2 r43/blind/test_graph.cpp -o "$RUNNER_TEMP/r43_graph"
+          "$RUNNER_TEMP/r43_graph"
+          g++ -std=c++17 -O2 r44/audit/audit_edgegraph.cpp -o "$RUNNER_TEMP/r44_graph"
+          "$RUNNER_TEMP/r44_graph"
+          g++ -std=c++17 -O2 r44/blind/kwpa_solve.cpp -o "$RUNNER_TEMP/r44_kwpa"
+          g++ -std=c++17 -O2 r44/blind/polish.cpp -o "$RUNNER_TEMP/r44_polish"
+      - name: Run foundational strict-blind integrity tests
+        run: bash strictblind/tests/run_all.sh
+      - name: Verify earlier R32/R33 provenance archive
+        run: bash verify_all.sh
