@@ -1,0 +1,17 @@
+{
+  "blind_source_sha256": "75d759bfed1c3e25366d696d58c2270baf271202d0237efeeae846c13cfd5fa4",
+  "classification": "R59_STRICT_CIPHERTEXT_ONLY",
+  "feature_families": 4,
+  "input_sha256": "8d517d3662d74b8d2eec13fcb7dc9fbdec8c756cf4977821a2617468bdc46164",
+  "monogram_prior_sha256": "8b89009601fb4f8efb7090e69400489680b1cb2e7c17ddb2646bf506e91e790d",
+  "no_K4_known_letters_or_positions_supplied": true,
+  "no_candidate_plaintext_generated": true,
+  "omnibus_calibration_size": 4000,
+  "output_sha256": "5f81c4b75e61ceb252ce2353a01b01dbc153d813f5b556fd652f5f4fb58193f2",
+  "phase": "controls_plus_K4",
+  "protocol_sha256": "7b5b9995ad0afbe823217e40f279b11f21d4185e8b550a3041150447fc45a789",
+  "records": 91,
+  "sealed_generator_sha256": "e323d499be268e0c356432cec3149ea664bc0437e2a4a562549e1119458dbe97",
+  "status": "FROZEN_BEFORE_ANY_SEALED_TRUE_FAMILY_OR_KEY",
+  "uniform_calibration_size": 4000
+}
