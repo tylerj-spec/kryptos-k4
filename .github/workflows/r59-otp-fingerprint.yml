@@ -1,0 +1,164 @@
+name: R59 simulated OTP and masking fingerprint, frozen controls before reveal
+on:
+  push:
+    branches: ["chatgpt/r59-otp-masking-diagnostics"]
+    paths:
+      - ".github/workflows/r59-otp-fingerprint.yml"
+      - "r59/PREREGISTRATION.md"
+      - "r59/blind/**"
+      - "r59/sealed/prepare.py"
+      - "r59/sealed/freeze.py"
+      - "r59/sealed/verify_frozen.py"
+      - "r59/tests/**"
+      - "r59/data/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r59-serialized-remote-freeze
+  cancel-in-progress: false
+
+jobs:
+  controls-and-K4-ciphertext-only-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Build pinned NumPy statistical-only runtime (before isolated search)
+        run: |
+          mkdir -p "$RUNNER_TEMP/r59image"
+          cat > "$RUNNER_TEMP/r59image/Dockerfile" <<'DOCKER'
+          FROM python:3.12-slim
+          RUN python -m pip install --no-cache-dir numpy==2.1.3
+          DOCKER
+          docker build -t kryptos-r59-statistics:2026-11-01 "$RUNNER_TEMP/r59image"
+
+      - name: Independently verify tiny-pad perfect secrecy proof, four feature formulas, no K4 clues
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges \
+            --user 65534:65534 \
+            -e OPENBLAS_NUM_THREADS=1 \
+            -v "$GITHUB_WORKSPACE:/repo:ro" kryptos-r59-statistics:2026-11-01 \
+            python -I -B /repo/r59/tests/test_contract.py
+
+      - name: Download immutable public-domain control books OUTSIDE solver mounts
+        run: |
+          mkdir -p "$RUNNER_TEMP/r59/source" "$RUNNER_TEMP/r59/input" \
+            "$RUNNER_TEMP/r59/output" "$RUNNER_TEMP/r59/sealed" \
+            "$RUNNER_TEMP/r59/bin" "$RUNNER_TEMP/r59/prior"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://raw.githubusercontent.com/GITenberg/The-Time-Machine_35/154a5c628743bd7d35d1af0fc4bcc017f0e111e1/35-0.txt" \
+            -o "$RUNNER_TEMP/r59/source/wells.txt"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://raw.githubusercontent.com/GITenberg/The-Adventures-of-Sherlock-Holmes_1661/7e5dd2703fbf503c004063e96ab7c61262375e5f/1661-8.txt" \
+            -o "$RUNNER_TEMP/r59/source/sherlock.txt"
+          test "$(git hash-object "$RUNNER_TEMP/r59/source/wells.txt")" = "419c78ce03f41984ef14913739b48d9332bd2801"
+          test "$(git hash-object "$RUNNER_TEMP/r59/source/sherlock.txt")" = "ea9235417718bb0a438795c1dd7cbf65472b40fb"
+
+      - name: Generate 90 unknown-family/key synthetic controls OUTSIDE blind scanner; include unchanged original K4
+        run: |
+          python3 -I r59/sealed/prepare.py \
+            "$RUNNER_TEMP/r59/source/wells.txt" \
+            "$RUNNER_TEMP/r59/source/sherlock.txt" \
+            r39/ic_gate/k4_ciphertext.txt \
+            "$RUNNER_TEMP/r59/input/controls_plus_K4.tsv" \
+            "$RUNNER_TEMP/r59/sealed/truth.json"
+          cp r59/blind/fingerprint.py "$RUNNER_TEMP/r59/bin/fingerprint.py"
+          cp r59/data/english_monogram.tsv "$RUNNER_TEMP/r59/prior/freq.tsv"
+          chmod 0555 "$RUNNER_TEMP/r59/input" "$RUNNER_TEMP/r59/bin" "$RUNNER_TEMP/r59/prior"
+          chmod 0777 "$RUNNER_TEMP/r59/output"
+
+      - name: 4000+4000 uniform-null calibration and 91 fingerprints with NO keys/books/repo/known K4 letters mounted
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --memory 2g --pids-limit 64 \
+            -e OPENBLAS_NUM_THREADS=1 -e OMP_NUM_THREADS=1 \
+            -v "$RUNNER_TEMP/r59/input:/input:ro" \
+            -v "$RUNNER_TEMP/r59/bin:/tool:ro" \
+            -v "$RUNNER_TEMP/r59/prior:/prior:ro" \
+            -v "$RUNNER_TEMP/r59/output:/output:rw" \
+            kryptos-r59-statistics:2026-11-01 \
+            python -I -B /tool/fingerprint.py /input/controls_plus_K4.tsv \
+              /prior/freq.tsv /output/RAW_FEATURES.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r59/output/RAW_FEATURES.jsonl")" -eq 91
+
+      - name: REMOTE GIT FREEZE complete clue-free 91-row raw fingerprints BEFORE sealed family/key reveal
+        run: |
+          mkdir -p r59/frozen
+          test ! -e r59/frozen/RAW_FEATURES.jsonl || { echo "R59 already frozen; refuse rerun"; exit 1; }
+          python3 -I r59/sealed/freeze.py \
+            "$RUNNER_TEMP/r59/input/controls_plus_K4.tsv" \
+            "$RUNNER_TEMP/r59/output/RAW_FEATURES.jsonl" \
+            r59/blind/fingerprint.py r59/data/english_monogram.tsv \
+            r59/PREREGISTRATION.md r59/sealed/prepare.py \
+            "$RUNNER_TEMP/r59/MANIFEST.json"
+          cp "$RUNNER_TEMP/r59/input/controls_plus_K4.tsv" r59/frozen/INPUT.tsv
+          cp "$RUNNER_TEMP/r59/output/RAW_FEATURES.jsonl" r59/frozen/RAW_FEATURES.jsonl
+          cp "$RUNNER_TEMP/r59/MANIFEST.json" r59/frozen/MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r59/frozen/INPUT.tsv r59/frozen/RAW_FEATURES.jsonl r59/frozen/MANIFEST.json
+          git commit -m "R59 remote-freeze 91 original ciphertext-only fingerprint outputs before sealed truth [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r59-otp-masking-diagnostics
+          echo "R59 REMOTE FREEZE COMPLETE; NO SYNTHETIC PLAIN/KEY OR K4 CLUES READ BY SCANNER"
+
+  separate-after-remote-freeze-control-power-evaluation:
+    needs: controls-and-K4-ciphertext-only-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r59-otp-masking-diagnostics
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Confirm frozen raw 91-case fingerprints are already committed in REMOTE Git
+        run: |
+          git ls-tree -r --name-only HEAD r59/frozen/RAW_FEATURES.jsonl | grep -q RAW_FEATURES
+          git ls-tree -r --name-only HEAD r59/frozen/MANIFEST.json | grep -q MANIFEST
+
+      - name: Regenerate sealed plaintexts, full pad keys and hidden family labels ONLY after remote freeze
+        run: |
+          mkdir -p "$RUNNER_TEMP/r59/source" "$RUNNER_TEMP/r59/sealed"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://raw.githubusercontent.com/GITenberg/The-Time-Machine_35/154a5c628743bd7d35d1af0fc4bcc017f0e111e1/35-0.txt" \
+            -o "$RUNNER_TEMP/r59/source/wells.txt"
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://raw.githubusercontent.com/GITenberg/The-Adventures-of-Sherlock-Holmes_1661/7e5dd2703fbf503c004063e96ab7c61262375e5f/1661-8.txt" \
+            -o "$RUNNER_TEMP/r59/source/sherlock.txt"
+          python3 -I r59/sealed/prepare.py \
+            "$RUNNER_TEMP/r59/source/wells.txt" \
+            "$RUNNER_TEMP/r59/source/sherlock.txt" \
+            r39/ic_gate/k4_ciphertext.txt \
+            "$RUNNER_TEMP/r59/sealed/duplicate.tsv" \
+            "$RUNNER_TEMP/r59/sealed/truth.json"
+          cmp "$RUNNER_TEMP/r59/sealed/duplicate.tsv" r59/frozen/INPUT.tsv
+
+      - name: Independent 90 full encryptions, power/false-positive audit, and K4 statistical interpretation only
+        run: |
+          python3 -I r59/sealed/verify_frozen.py \
+            r59/frozen/INPUT.tsv r59/frozen/RAW_FEATURES.jsonl r59/frozen/MANIFEST.json \
+            r59/blind/fingerprint.py r59/data/english_monogram.tsv \
+            r59/PREREGISTRATION.md r59/sealed/prepare.py \
+            "$RUNNER_TEMP/r59/sealed/truth.json" \
+            "$RUNNER_TEMP/r59/EVALUATION.json"
+          if test -f r59/frozen/EVALUATION.json; then
+            cmp "$RUNNER_TEMP/r59/EVALUATION.json" r59/frozen/EVALUATION.json
+          else
+            cp "$RUNNER_TEMP/r59/EVALUATION.json" r59/frozen/EVALUATION.json
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r59/frozen/EVALUATION.json
+          if ! git diff --cached --quiet; then
+            git commit -m "R59 AFTER remote freeze: verify 90 independently encrypted pads and power, not K4 plaintext [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r59-otp-masking-diagnostics
+          fi
