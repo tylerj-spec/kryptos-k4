@@ -1,0 +1,13 @@
+{
+  "all_forward_witnesses_valid": true,
+  "classification": "R57_POST_REMOTE_FREEZE_INDEPENDENT_FORWARD_AUDIT",
+  "gate_passed": true,
+  "inputs": 20,
+  "limitation": "closed-world synthetic controls, not identification of a K4 method",
+  "phase": "controls",
+  "raw_output_sha256": "5344deee76c4638deda23b5bd176ad625cf96b083734b85d0513e789d22bed62",
+  "required_exact": 16,
+  "top1_exact_key": 20,
+  "top1_exact_plaintext": 20,
+  "verified_witnesses": 240
+}
