@@ -1,0 +1,11 @@
+{
+  "candidates_per_ciphertext": 26,
+  "ciphertexts": 21,
+  "classification": "HARD_BLIND_CAESAR_SMOKE_NOT_A_K4_SOLUTION",
+  "forward_encryption_valid": true,
+  "frozen_raw_sha256": "5af8b23e0cefd3b4e6cfb8ad8398f2bae86cc608e826a80f5d2f52bccd330f17",
+  "k4_caesar_candidates_matching_all_published_letters": [],
+  "k4_top1_known_letter_count_after_freeze": 1,
+  "synthetic_control_count": 20,
+  "warning": "Clue validation ran only AFTER raw ciphertext-only candidates were frozen. No K4 plaintext recovery is claimed. Synthetic smoke controls are not a genuine hidden-key unknown-cipher benchmark."
+}

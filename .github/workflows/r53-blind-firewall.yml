@@ -1,0 +1,170 @@
+name: R53 strict ciphertext-only input and freeze-before-reveal smoke test
+
+on:
+  push:
+    branches:
+      - "chatgpt/r53-hard-blind-output-first-contract"
+    paths:
+      - ".github/workflows/r53-blind-firewall.yml"
+      - "r53/blind/**"
+      - "r53/sealed/**"
+      - "r53/tests/**"
+      - "r53/BLIND_RULES.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r53-hardblind-branch
+  cancel-in-progress: false
+
+jobs:
+  blind-and-immutable-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Independently test ciphertext-only input and blind source
+        run: |
+          python3 -I r53/tests/test_contract.py
+          bash strictblind/tests/run_all.sh
+
+      - name: Construct independent ciphertext-only inputs outside isolated solver
+        run: |
+          mkdir -p "$RUNNER_TEMP/r53/input" "$RUNNER_TEMP/r53/sealed" "$RUNNER_TEMP/r53/output"
+          python3 -I r53/sealed/prepare.py "$RUNNER_TEMP/r53/input/ciphertexts.ndjson" "$RUNNER_TEMP/r53/sealed/truth.json"
+          chmod 0777 "$RUNNER_TEMP/r53/output"
+          chmod 0555 "$RUNNER_TEMP/r53/input"
+
+      - name: Execute solver with NO clue sources, network, repository mount or host privileges
+        run: |
+          docker run --rm \
+            --network none --read-only \
+            --cap-drop ALL --security-opt no-new-privileges \
+            --user 65534:65534 \
+            --pids-limit 120 \
+            --memory 256m \
+            -v "$PWD/r53/blind:/blind:ro" \
+            -v "$RUNNER_TEMP/r53/input:/input:ro" \
+            -v "$RUNNER_TEMP/r53/output:/out:rw" \
+            python:3.12-slim \
+            sh -c 'python3 -I /blind/solve.py < /input/ciphertexts.ndjson > /out/candidates.ndjson'
+          test "$(wc -l < "$RUNNER_TEMP/r53/output/candidates.ndjson")" -eq 21
+
+      - name: Freeze original full plaintext candidates in Git BEFORE sealed validator
+        run: |
+          mkdir -p r53/frozen
+          cp "$RUNNER_TEMP/r53/input/ciphertexts.ndjson" r53/frozen/BLIND_INPUT.ndjson
+          cp "$RUNNER_TEMP/r53/output/candidates.ndjson" r53/frozen/BLIND_RESULTS.ndjson
+          if test -f r53/frozen/MANIFEST.json; then
+            cp r53/frozen/MANIFEST.json "$RUNNER_TEMP/r53/previous_manifest.json"
+            rm r53/frozen/MANIFEST.json
+          fi
+          python3 -I r53/sealed/make_manifest.py \
+            r53/frozen/BLIND_INPUT.ndjson \
+            r53/frozen/BLIND_RESULTS.ndjson \
+            r53/blind/solve.py \
+            r53/frozen/MANIFEST.json
+          if test -f "$RUNNER_TEMP/r53/previous_manifest.json"; then
+            cmp "$RUNNER_TEMP/r53/previous_manifest.json" r53/frozen/MANIFEST.json
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r53/frozen/BLIND_INPUT.ndjson r53/frozen/BLIND_RESULTS.ndjson r53/frozen/MANIFEST.json
+          if git diff --cached --quiet; then
+            echo "Blind results already committed identically"
+          else
+            git commit -m "R53: freeze raw ciphertext-only candidates before any K4 clue reveal [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r53-hard-blind-output-first-contract
+          fi
+          echo "R53 FREEZE COMPLETE: no sealed K4 validation executed yet"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r53-pre-reveal-blind-frozen-input-output
+          path: |
+            r53/frozen/BLIND_INPUT.ndjson
+            r53/frozen/BLIND_RESULTS.ndjson
+            r53/frozen/MANIFEST.json
+          retention-days: 90
+
+  sealed-validation-after-freeze:
+    needs: blind-and-immutable-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r53-hard-blind-output-first-contract
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Confirm frozen outputs exist in REMOTE git commit before known-letter validator
+        run: |
+          test -f r53/frozen/BLIND_INPUT.ndjson
+          test -f r53/frozen/BLIND_RESULTS.ndjson
+          test -f r53/frozen/MANIFEST.json
+          git ls-tree -r HEAD r53/frozen/BLIND_RESULTS.ndjson | grep BLIND_RESULTS
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          m=json.loads(Path('r53/frozen/MANIFEST.json').read_text())
+          assert m['status']=='BLIND_FROZEN_NO_VALIDATION_YET'
+          for f,k in [('r53/frozen/BLIND_RESULTS.ndjson','candidates_sha256'),
+                      ('r53/frozen/BLIND_INPUT.ndjson','input_sha256'),
+                      ('r53/blind/solve.py','solver_sha256')]:
+              assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==m[k]
+          print("R53 REMOTE GIT FREEZE CHECK PASSED before reveal")
+          PY
+
+      - name: Regenerate synthetic truth OUTSIDE blind runtime
+        run: |
+          mkdir -p "$RUNNER_TEMP/r53/recheck"
+          python3 -I r53/sealed/prepare.py "$RUNNER_TEMP/r53/recheck/ciphertexts.ndjson" "$RUNNER_TEMP/r53/recheck/truth.json"
+          cmp "$RUNNER_TEMP/r53/recheck/ciphertexts.ndjson" r53/frozen/BLIND_INPUT.ndjson
+
+      - name: NOW verify independent encryption and published K4 letters
+        run: |
+          if test -f r53/frozen/AFTER_REVEAL_EVALUATION.json; then
+            echo "Existing completed evaluation will be compared byte-identically"
+            python3 -I r53/sealed/evaluate.py \
+              r53/frozen/BLIND_INPUT.ndjson \
+              r53/frozen/BLIND_RESULTS.ndjson \
+              r53/frozen/MANIFEST.json \
+              r53/blind/solve.py \
+              "$RUNNER_TEMP/r53/recheck/evaluation.json"
+            cmp "$RUNNER_TEMP/r53/recheck/evaluation.json" r53/frozen/AFTER_REVEAL_EVALUATION.json
+          else
+            python3 -I r53/sealed/evaluate.py \
+              r53/frozen/BLIND_INPUT.ndjson \
+              r53/frozen/BLIND_RESULTS.ndjson \
+              r53/frozen/MANIFEST.json \
+              r53/blind/solve.py \
+              r53/frozen/AFTER_REVEAL_EVALUATION.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open('r53/frozen/AFTER_REVEAL_EVALUATION.json'))
+          assert v['ciphertexts']==21 and v['candidates_per_ciphertext']==26
+          assert v['forward_encryption_valid'] is True
+          assert v['k4_caesar_candidates_matching_all_published_letters']==[]
+          print("R53 FINAL: K4 Caesar smoke failed (expected); strict blind/validation isolation PASS")
+          PY
+
+      - name: Preserve sealed evaluation in second Git commit AFTER blind commit
+        run: |
+          if test -e r53/frozen/AFTER_REVEAL_EVALUATION.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add r53/frozen/AFTER_REVEAL_EVALUATION.json
+            if git diff --cached --quiet; then
+              echo "Evaluation already persisted, exactly identical"
+            else
+              git commit -m "R53: postfreeze sealed ciphertext-only validation, Caesar FAIL as expected [skip ci]"
+              git push origin HEAD:refs/heads/chatgpt/r53-hard-blind-output-first-contract
+            fi
+          fi
