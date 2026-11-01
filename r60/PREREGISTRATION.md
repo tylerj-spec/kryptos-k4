@@ -35,15 +35,3 @@ Evidence that semantic codebook interpretation is independent of cryptographic r
 ## Amendment A — before generator, controls or test outputs
 
 To eliminate an accidental side channel, **shuffle all 40 cases** (20 coded covertexts, 20 IID uniform nulls) with seed `600060` before assigning the opaque labels `CASE_000..CASE_039`. The first 20 IDs must NOT reveal class. Five cases per supported V/T/VT/TV family remain unchanged. The separate independently seeded uniform null generator remains `random.Random(600061)`. The verifier must retrieve true family only from sealed truth after the remote freeze. No other protocol, prior, thresholds or pass rules change.
-
-## Pre-generator amendment: neutralize case-label leakage
-
-The 20 semantic-codebook covertexts and 20 iid-uniform ciphertext nulls
-will be **randomly interleaved**, all numbered CASE_000..CASE_039 in shuffled
-order. The first-20/last-20 indexing in the original protocol is superseded
-solely to avoid a class label being revealed by row number. Neither the blind
-solver nor its confidence rules use case IDs for ranking or decryption.
-The families V, T, VT, TV remain balanced at 5 each and the nulls at 20.
-This amendment is made before generating sealed controls or running any
-test; key choices, source messages, thresholds and the original K4 exclusion
-remain unchanged.
