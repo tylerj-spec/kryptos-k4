@@ -1,15 +1,9 @@
 name: R60 hidden-meaning codebook semantics versus ciphertext recovery
+# Original one-time blinded CI already completed at run 41324255974.
+# All raw outputs and true keys are now published; rerunning would not be blind.
+# Reproduction is manual and must not overwrite immutable frozen controls.
 on:
-  push:
-    branches: ["chatgpt/r60-codeword-semantic-ablation"]
-    paths:
-      - ".github/workflows/r60-semantic-masking.yml"
-      - "r60/PREREGISTRATION.md"
-      - "r60/sealed/prepare.py"
-      - "r60/sealed/freeze.py"
-      - "r60/sealed/verify_frozen.py"
-      - "r60/tests/**"
-      - "r60/statistics/english_ic.py"
+  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
