@@ -15,7 +15,7 @@ python3 -I r44/tests/test_contract.py
 python3 -I r44/tests/verify_frozen_holdout.py
 python3 -I r53/tests/test_contract.py
 ```
-CI: `strictblind-ci.yml`, `r44-reviewed-holdout.yml`, `r53-blind-firewall.yml`, `r54-method-only.yml`.
+CI: `strictblind-ci.yml`, `r44-reviewed-holdout.yml`, `r53-blind-firewall.yml`, `r54-method-only.yml`, `r55-feedback-mask.yml`, `r56-evolving-alphabets.yml`, `r57-hill-digraph.yml`.
 - **Extra R44/R52 replay tests** are on the unmerged PR #12: `r44/tests/test_r44_claude.py`,
   `r52_claude/tests/test_r52.py` and the `claude-r44-r52.yml` workflow.
 
@@ -100,6 +100,10 @@ CI: `strictblind-ci.yml`, `r44-reviewed-holdout.yml`, `r53-blind-firewall.yml`, 
 - `r49/`: World Clock provenance.
 - `r53/`: `BLIND_RULES.md` and its Docker firewall CI, the **current blind standard**.
 - `r54/`: `method_fingerprint.js`, ciphertext-only statistics.
+- `r55/`: 29,952 affine plaintext/ciphertext feedback settings; 20/20 synthetic hidden-key controls; K4 negative.
+- `r56/`: 51,324 restricted evolving-Chaocipher initial states; 20/20 synthetic hidden-key controls; K4 negative.
+- `r57/`: 97,344 Hill 2x2 matrices with nonstandard odd-length reversible padding; 20/20 hidden-key controls; K4 negative.
+  All three are merged with full remote-frozen output records and a separate public-letter evaluator; **not solves**.
 - `CURRENT_STATUS.md`: the owner's summary.
 
 **Not on `main`:**
