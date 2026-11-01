@@ -65,8 +65,7 @@ The dates are ~; the positions and letters are ✔ and used throughout the repo.
 **Facts that follow directly** (all ✔):
 - **Three plaintext E's but only two ciphertext E's:** not a pure transposition (L01).
 - **`QQ` (26–27) → `NO`:** not a single substitution alphabet (L02).
-- **Self-encryptions:** position 33 S→S and position 74 K→K. A cipher in which no letter can encrypt to itself
-  (Enigma-style) is excluded in place.
+- **Self-encryptions:** position 33 S→S and position 74 K→K. A strict no-self-encryption system is excluded in its **direct in-place form only**. An additional position permutation can make the final ciphertext appear to have such matches.
 - **Layout:** 21 unknown + 13 known + 29 unknown + 11 known + 23 unknown. 73 letters are unknown.
 
 ## 4. Solution history
@@ -91,9 +90,9 @@ The dates are ~; the positions and letters are ✔ and used throughout the repo.
     fall of the Berlin Wall, and described its theme as "delivering a message". ✔
     ([Scientific American](https://www.scientificamerican.com/article/cia-kryptos-puzzle-creator-releases-final-clues/);
     `r38/RESEARCH_NOTES.md`)
-- **As of 1 Nov 2026:** no plaintext or method has been published; the method remains unknown publicly. **This
-  project seeks an independently reproducible method.** It does not use leaked or archival plaintext, and we know of
-  none that is public.
+- **As of 1 Nov 2026:** the full K4 plaintext and encoding method have **not been publicly disclosed**. The private archive reportedly contains coding material. We seek an independent derivation from the 97-letter original ciphertext and will not use unpublished archival plaintext.
+- **Current stewardship (June 12, 2026):** Paradigm publicly identified itself as purchaser/steward of K4 and described a cryptographic answer-verification system. Its claims that its team cannot see the answer and that the system is cryptographically protected are **self-reported**, not independently audited here. [Paradigm's primary announcement](https://www.paradigm.xyz/writing/kryptos). No submissions to this service without the owner's explicit permission.
+- **Distinction:** a plaintext found in archival papers, a proposed plaintext accepted by a reference-answer checker, and a demonstrated reproducible ciphertext-to-plaintext **cryptanalysis** are separate accomplishments. This project seeks the third.
 
 ## 5. The Weltzeituhr (Urania World Clock), Alexanderplatz
 - **Design:** by **Erich John**, inaugurated in 1969 in East Berlin. ✔ (`r49/`, berlin.de)
