@@ -1,0 +1,68 @@
+name: R60 postfreeze integrity replay (NOT fresh hidden controls)
+on:
+  push:
+    branches: ["chatgpt/r60-codeword-semantic-ablation"]
+    paths:
+      - ".github/workflows/r60-frozen-integrity.yml"
+      - "r60/RESULT.md"
+      - "r60/SOURCE_ADDENDUM.md"
+permissions:
+  contents: read
+jobs:
+  verify-existing-frozen-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check existing frozen control bytes and protocol have not changed
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          m=json.loads(Path("r60/frozen/MANIFEST.json").read_text())
+          assert m["status"]=="FROZEN_BEFORE_ANY_SEMANTIC_TRUTH_REVEAL"
+          for field,path in (
+             ("raw_output_sha256","r60/frozen/RAW_RESULTS.jsonl"),
+             ("input_sha256","r60/frozen/INPUT.tsv"),
+             ("blind_solver_sha256","r58/blind/solve.py"),
+             ("generic_words_sha256","k4kit/data/word_model_orth.tsv"),
+             ("generic_quad_sha256","k4kit/data/quad_log10.f32"),
+             ("protocol_sha256","r60/PREREGISTRATION.md"),
+             ("sealed_generator_sha256","r60/sealed/prepare.py")):
+             got=hashlib.sha256(Path(path).read_bytes()).hexdigest()
+             assert got==m[field],(field,got,m[field])
+          print("R60 original frozen sources, complete 97-letter results and protocol hashes match")
+          PY
+      - name: Regenerate independent previously REVEALED control fixtures, NOT a new blind test
+        run: |
+          mkdir -p "$RUNNER_TEMP/r60"
+          python3 -I r60/sealed/prepare.py k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r60/duplicate.tsv" "$RUNNER_TEMP/r60/truth.json"
+          cmp "$RUNNER_TEMP/r60/duplicate.tsv" r60/frozen/INPUT.tsv
+      - name: Independently check all previously frozen forward witnesses and codebook ambiguity
+        run: |
+          python3 -I r60/sealed/verify_frozen.py \
+            r60/frozen/INPUT.tsv r60/frozen/RAW_RESULTS.jsonl r60/frozen/MANIFEST.json \
+            r58/blind/solve.py k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32 \
+            r60/PREREGISTRATION.md r60/sealed/prepare.py \
+            "$RUNNER_TEMP/r60/truth.json" "$RUNNER_TEMP/r60/replay_evaluation.json"
+          cmp "$RUNNER_TEMP/r60/replay_evaluation.json" r60/frozen/EVALUATION.json
+      - name: Reproduce original ciphertext-only K4 IC monogram comparison
+        run: |
+          python3 -I r60/statistics/english_ic.py \
+            r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r60/replay_ic.json"
+          cmp "$RUNNER_TEMP/r60/replay_ic.json" r60/frozen/IC_DIAGNOSTIC.json
+      - name: Assert original experimental conclusion and no K4 cipher solve
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path("r60/frozen/EVALUATION.json").read_text())
+          assert s["gate_passed"] and s["exact_keys_and_texts"]==20
+          assert s["independent_full_forward_witnesses"]==320
+          assert s["false_confidences_on_uniform_nulls"]==0
+          assert s["same_ciphertext_with_two_distinct_meaning_maps"]==20
+          x=json.loads(Path("r60/frozen/IC_DIAGNOSTIC.json").read_text())
+          assert x["simulated_English_IC_at_or_below_K4"]==0
+          print("R60 postfreeze review PASS; no new K4 plaintext/key or codebook discovered")
+          PY
