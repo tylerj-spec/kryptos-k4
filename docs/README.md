@@ -1,6 +1,6 @@
 # Reference library
 
-Background reading for anyone (human or AI) joining the K4 effort. Written by Claude Code, 1 Nov 2026.
+Background reading for anyone (human or AI) joining the K4 effort. Created by Claude Code on 1 Nov 2026; reviewed and updated after R55–R57 integration.
 
 | File | What's in it |
 |---|---|
@@ -11,6 +11,7 @@ Background reading for anyone (human or AI) joining the K4 effort. Written by Cl
 | [`STEGANOGRAPHY_REFERENCE.md`](STEGANOGRAPHY_REFERENCE.md) | Hidden-message techniques, the known anomalies on Kryptos (misspellings, Morse, raised letters, extra L), and a protocol for testing hidden-message ideas |
 | [`TOOLS_INDEX.md`](TOOLS_INDEX.md) | Map of the repo's code and data, and how to run each piece |
 | [`RESEARCH_LOG.md`](RESEARCH_LOG.md) | What was read to write these pages: repo files, ChatGPT branches with tip commits, web sources with what each said, and which facts still need checking |
+| [`R55_R57_METHODOLOGY_AUDIT.md`](R55_R57_METHODOLOGY_AUDIT.md) | Independent review of frozen R55–R57 tests, scope limitations, reference corrections, and next discriminating experiments |
 
 **Ground rules** (`k4kit/CLAUDE.md`, R53):
 - blind first;
