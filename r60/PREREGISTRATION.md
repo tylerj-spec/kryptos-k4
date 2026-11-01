@@ -1,0 +1,33 @@
+# R60 preregistered code-talker-style semantic-covertext ablation (stacked on R58)
+
+**This protocol was committed BEFORE any R60 source code, sealed controls or R60 K4 attempt. It is not a K4 solution.**
+
+## Historical motivation and limits
+- Ed Scheidt, [WIRED interview, 21 Jan 2005](https://www.wired.com/2005/01/inside-info-on-kryptos-codes/), said K4 disguised the *letter statistics* of English. In a different exchange explicitly prompted by **already decoded** K2 text about something buried, he offered the independent illustrative "cake" = meeting-on-Friday codeword. He did **not** verify that K4 uses that semantic codebook.
+- Sanborn, [WIRED, Apr 2009](https://www.wired.com/2009/04/ff-kryptos/), said he and Scheidt explored pencil-and-paper polyalphabetic substitution, matrix shifts and transposition; content and meanings were his.
+- Owner's current hypothesis is **not** English deliberately misspelled in German or Dutch. We test ordinary-looking English *covertext* whose words may be assigned hidden meanings, as in a private codebook, without suggesting the sculpture uses Navajo or translating K4 into Dutch/German.
+- Claude's L62–L69 and L108 foreign-language and unusual spelling experiments do NOT test an unobserved word-to-meaning codebook. R58 separately tested physical routes/tableau and failed to identify K4's encryption method.
+
+## Exact formal hypothesis and proof target
+Let C = E_K(P), where P is a 97-letter **visible covertext**, K is an independently selected reversible encryption key, and M is a privately assigned semantic codebook that maps words in P to meanings. E_K receives only P, **not** M. Two distinct meaning maps M1 and M2 used for the identical P and K necessarily produce **identical ciphertext C**. Recovering P from C is the cryptanalytic first task, while recovering the true semantic map M from C alone is unidentifiable without additional independent facts. This remains true if P is meaningful English but its *intended message* is hidden.
+
+The codebook test is a small mathematical identifiability control. Passing it does NOT imply K4 uses a semantic codebook.
+
+## Predeclared R60A ciphertext-only unknown-process controls
+- **20** fresh independently authored ordinary grammatical English covertext passages (all distinct, 97 uppercase A-Z letters after stripping punctuation). Each contains a preassigned visible coverword: CAKE, APPLE, RIVER, BRIDGE, GARDEN, LANTERN, WINDOW, MARKET, CLOCK, HORSE, TRAIN, FLOWER, BOOK, TABLE, BOTTLE, LETTER, HARBOR, FOREST, CANDLE, FARM. These words are *synthetic test ingredients*, NOT K4 plaintext words/crib candidates or K4 keys. They are not chosen as candidates from K4.
+- Independently assign *two distinct* private meaning maps to each coverword (e.g., time vs location). The encrypted covertext and cipher keys must be byte-identical under either meaning map. Never mount true meaning maps with solver.
+- Random seed 600060. Use the **unchanged** R58 ciphertext-only blind solver and its 67 fixed generic/K1-K2 keywords, exactly six physical routes, four families V, T, VT, TV and frozen full-English quadgrams/abstention rule. Exactly five unknown family+key configurations in each of the four families, shuffled under opaque IDs CASE_000..CASE_019. The actual family, keys, covertexts, hidden codebook meanings and labels are sealed and unavailable to the solver.
+- **20** full-length iid uniformly random ciphertext null controls, IDs CASE_020..CASE_039, seed 600061, completely opaque to solver.
+- R60 blind executable receives only 40 two-field ID/ciphertext rows, reviewed R58 solver source and the two unchanged generic word/quad files in a read-only no-network, unprivileged container. No original K4, previous K4 candidate rankings, published clue words/positions, generator, sealed truth or codebook mounted.
+- Freeze *all 40×8 complete candidate plaintexts, recovered keys, order, intermediates and scores* with source/model/input SHA256 to a REMOTE Git commit BEFORE a separate process regenerates true messages/keys/maps for independent evaluation.
+- Predeclared pass gate: at least **16/20** exact full 97-letter covertext + true method family + key/route recovered with original R58 confidence rule, at least **3/5** per class, <=1/20 confident false discoveries on random controls, all **320** stored candidates independently re-encrypting exactly. The separate evaluator must demonstrate that **40 out of 40** (20 pairs of two codebooks) produce identical ciphertexts despite different true semantic interpretations, not guessed K4 keys. If gate fails, preserve the negative and do not change solver thresholds on these revealed controls.
+
+## R60B linguistic-mask/statistical check
+- Fixed standard-English **monogram probabilities** declared below, not fitted using K4 or K4 clue positions:
+`A:8.167 B:1.492 C:2.782 D:4.253 E:12.702 F:2.228 G:2.015 H:6.094 I:6.966 J:0.153 K:0.772 L:4.025 M:2.406 N:6.749 O:7.507 P:1.929 Q:0.095 R:5.987 S:6.327 T:9.056 U:2.758 V:0.978 W:2.360 X:0.150 Y:1.974 Z:0.074` (normalized to sum 1).
+- With seed 600061 and 300,000 independent multinomial 97-letter draws under that generic English model, calculate the fraction with `IC <= IC(K4)`. Record exact binomial numerator/denominator and one-sided upper confidence bound when no events occur. This is a limited IID monogram illustration, NOT a p-value for all English prose or any specific K4 cipher.
+- A fixed monoalphabetic bijection and any permutation preserve IC exactly. So for typical English covertext, a purely *semantic* codebook plus those two layers cannot by itself account for an IC as low as K4's; however specially constructed English word choices can alter letter frequencies. This does NOT rule out semantic coding as a subsequent meaning layer.
+- K4 may be read **only as the original 97-letter ciphertext** for this independent language-frequency diagnostic. SHA256 canonical original input enforced, no published plaintext offsets/letters. The blind solver must NOT be run on K4 because **no new independently evidenced cipher family or key generation rule** is introduced by this semantic control.
+
+## Final claims permitted
+Evidence that semantic codebook interpretation is independent of cryptographic recovery; measurable ability of fixed blind cipher-family solver to recover ordinary covertext under hidden-key controls; quantitative mismatch between K4 and *generic IID English letter distribution*. Neither semantic aliasing nor monogram tests derive the K4 plaintext, an actual K4 cipher key, the true semantic map, or a new masking algorithm. No external checker, no merge to main without owner review.
