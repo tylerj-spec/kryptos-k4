@@ -1,0 +1,19 @@
+name: Claude documentation and R55-R57 evidence integrity
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+      - "README.md"
+      - ".github/workflows/docs-evidence-integrity.yml"
+permissions:
+  contents: read
+jobs:
+  verify-reference-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify referenced merged evidence and avoid false layered exclusions
+        run: python3 -I docs/tests/test_reference_integrity.py
+      - name: Verify strict blind regression baseline
+        run: python3 -I r53/tests/test_contract.py
