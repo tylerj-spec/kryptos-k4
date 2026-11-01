@@ -34,7 +34,7 @@ for round_, expected in (("r55", 29952), ("r56", 51324), ("r57", 97344)):
     audit = json.loads((base / "INDEPENDENT_FORWARD_AUDIT.json").read_text())
     assert audit["all_forward_witnesses_valid"] and audit["verified_witnesses"] == 156
     reveal = json.loads((base / "AFTER_REVEAL_EVALUATION.json").read_text())
-    assert reveal["full_24_matches"] == 0
+    assert reveal.get("full_24_matches", reveal.get("full_24_agreement")) == 0
     assert reveal.get("frozen_raw_output_sha256", reveal.get("raw_output_sha256")) == (
         json.loads((base / "K4_MANIFEST.json").read_text())["output_sha256"]
     )
