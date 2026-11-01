@@ -127,3 +127,15 @@ OTP. Even a significant deviation from uniform would weaken the true-OTP
 hypothesis, but not imply English plaintext, a specific key, or a cipher
 construction. Null insertion/semantic masking and non-in-place methods
 are outside R59's specific statistical scope.
+
+## Pre-control clarification: simulated OTP versus operationally secure OTP
+
+This clarification is committed **before generating any R59 controls**. Reproducible
+synthetic 97-symbol "OTP" controls will sample independent-seeming alphabet
+symbols using the predeclared `random.Random(590059)` PRNG, with no key reused.
+They simulate the **iid uniform-letter statistical null**, but are **NOT**
+cryptographically secure one-time pads, since a pseudorandom generator and
+reproducible seed allow key reconstruction. Their success or failure measures
+statistical calibration, not real-world perfect secrecy. The unconditional
+one-time-pad nonidentifiability argument above assumes truly independent,
+uniform, confidential key material, and does not rely on this simulation.
