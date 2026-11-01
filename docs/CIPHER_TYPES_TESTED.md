@@ -1,10 +1,10 @@
-# Cipher types tested on K4 so far (Claude Code and ChatGPT, rounds 1–54)
+# Cipher types tested on K4 so far (Claude Code and ChatGPT, rounds 1–57)
 
 Written 1 Nov 2026 by Claude Code. The canonical record is `LEDGER.md`: rows L01–L142 on `main`.
 
 **Where the newer rounds live:**
 - **L143,** Claude's crib-conditioned R52, is on the unmerged PR #12.
-- **ChatGPT's R49, R53 and R54** are on `main`.
+- **ChatGPT's R49, R53, R54, R55, R56 and R57** are on `main`.
 - **ChatGPT's R45–R48 and R50–R52** are on their own branches and PRs.
 
 This page explains, in plain words:
@@ -78,8 +78,7 @@ chance.** The most important open items are in §17.
 - **What it is:** each plaintext letter is always replaced by the same cipher letter.
 - **Result: EXCL (L02).** Ciphertext `QQ` at positions 26–27 decrypts to `NO`. One letter cannot stand for two
   letters.
-- **The same applies after any transposition.** Equal cipher letters would still have to be equal plaintext
-  letters, and the letter-count argument of §1 applies.
+- **The in-place contradiction does NOT extend to substitution followed by transposition.** The latter changes position alignment. Toy counterexample: plaintext `ABCA` -> fixed substitution `QRSQ` -> transpose `QQRS`; adjacent final `QQ` now occupies positions corresponding to *different* plaintext letters. A fixed substitution also relabels letter frequencies. Every layered hypothesis needs its own scoped proof or blind solver.
 
 ## 3. Periodic polyalphabetic: Vigenère, Beaufort, variant Beaufort, Quagmire I–IV, Gronsfeld, Porta
 - **What it is:** the key repeats with period *m*, so every *m*-th letter uses the same alphabet.
@@ -180,14 +179,15 @@ chance.** The most important open items are in §17.
   - keyword irregular columnar with KRYPTOS/PALIMPSEST/ABSCISSA (L118, L121);
   - 5,000 double rotations with widths 4–28 (L115, L124, L126);
   - the four 24×8 K3 rotations in both orders with keyword alphabets (R46, R50, R51; R52 on PR #12).
-- **Results:** **EXCL** or at chance level in every case.
+- **Results:** **EXCL** or at chance **only within the declared routes, keys, and operation orders**; not an exclusion of all layered ciphers.
   - The after-order high-check count was not significant under the pre-registered null (L56, p ≈ 0.07).
   - Decimation plus a summed periodic key gives a FEAS witness that is not a candidate (L55).
 
 ## 9. Polygraphic substitution (letters enciphered in groups)
 - **Hill cipher** (matrix multiplication mod 26):
   - direct, 2×2 to 5×5, with AZ or KRYPTOS numbering: **EXCL** (L11);
-  - Hill as a masking layer before or after transposition: **EXCL** within scope (L61).
+  - Hill as a masking layer before or after transposition: **EXCL** within enumerated scope (L61).
+  - **R57:** a separate, explicitly *nonstandard* pad-X/truncate convention for odd 97-letter input: 97,344 invertible 2x2 matrices, 20/20 synthetic hidden-key controls; K4 top 0/24, best 2/24, no readable output. Not an exclusion of all Hill variants.
 - **Playfair, two-square, four-square:** **EXCL** (L88).
   - These use 25-letter squares, but K4 has all 26 letters.
   - Playfair also cannot encrypt a doubled letter within a pair.
@@ -256,9 +256,7 @@ chance.** The most important open items are in §17.
 ## 15. Statistics of K4 itself (R54, L32, L89)
 - **Index of coincidence:** 0.0361, close to random (0.0385) and far below English (about 0.066).
   - No 97-letter window of K1–K3's plaintext is that flat (minimum 0.053).
-- **What that means:** this argues against a single substitution or a pure transposition of normal English. It is
-  what a long-period or non-repeating polyalphabetic key, a running key, a homophonic system or a two-layer system
-  would produce.
+- **What that means:** a single substitution or pure transposition of *typical* English is unlikely. Such flattening can also arise from long-period keys, running keys, homophonic systems and layered masks. The IC alone **cannot identify the algorithm**.
 - **Ruled-out key behaviour:** no significant periodicity at lags 1–48. The strongest, lag 7, has a family-wise
   p of about 0.15.
 
@@ -272,24 +270,20 @@ chance.** The most important open items are in §17.
 | Generated keys | progressive, linear recurrences, LFSR | **EXCL** (in place) | L13, L15, L49 |
 | Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed alphabets; keyword alphabets except one B26/b5 setting, WEAK/OPEN); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
 | Running key | K1–K3, Carter 1923, coordinates | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown book OPEN | L90, L106, L109, R47 |
-| Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN | L17, L27, L58, R51 |
-| Two-layer | substitution plus K3-style rotation or columnar | **EXCL** or chance for the routes tested | L47, L48, L115, L124, R46, R50 |
-| Polygraphic | Hill, Playfair, 2/4-square | **EXCL** | L11, L61, L88 |
+| Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN; R55 narrow affine feedback negative | L17, L27, L58, R51, R55 |
+| Two-layer | substitution plus K3-style rotation or columnar | **EXCL/chance only in enumerated scopes**, general combinations OPEN | L47, L48, L115, L124, R46, R50 |
+| Polygraphic | Hill, Playfair, 2/4-square | **EXCL only within tested variants**; R57 bounded Hill negative | L11, L61, L88, R57 |
 | Fractionation | Bifid, Trifid | **EXCL** | L12, L88, L91 |
 | Physical keys | World Clock, tableau, Morse, dates | **EXCL**/chance within reconstructed sources | L37–L42, L50, L96 |
 | Nulls/masking | periodic nulls, salt | no coherent result; general case OPEN | L26, L81–L83 |
 | Other languages | German, Dutch and others | no candidate | L62–L64, L108 |
 
-## 17. What has NOT been tested (candidates for future rounds)
+## 17. What remains insufficiently tested (candidates for future rounds)
 1. **Two fully free alphabets with an unknown key**, solved blind. The capability is missing (L138); this is the
    main technical gap.
 2. **Homophonic substitution** (several cipher letters per plaintext letter). It fits K4's flat letter counts. Not
    tested.
-3. **Chaocipher** (J. F. Byrne, 1918).
-   - Both alphabets change after every letter, which flattens frequencies.
-   - Byrne offered it to US agencies in the 1920s–30s, but the method was published only in 2010, so its use in
-     1990 is unlikely.
-   - Cheap to test, and not tested.
+3. **More general evolving alphabets.** R56 did test standard Chaocipher wheel updates with one word-keyed wheel, one standard wheel, and 26 phases: 51,324 states, 20/20 synthetic hidden-key controls; K4 top 0/24, best 3/24, no readable output. **Untested:** two arbitrary wheels, alternative mechanisms and transposition layers. The Chaocipher method was invented before 1990 but revealed publicly in 2010; this alone cannot prove whether Scheidt or Sanborn knew it.
 4. **Cylinder/wheel ciphers** (Jefferson wheel, M-94, M-138 strip cipher). Hand devices of the US government.
    Not tested.
 5. **Rotor-machine-style stepping** (alphabets that step like Enigma or Hebern). Only arithmetic "tableau stepping"
@@ -305,3 +299,10 @@ chance.** The most important open items are in §17.
     disk moves.
 
 See `CRYPTOGRAPHY_REFERENCE.md` for how each of these works and `CRYPTANALYSIS_METHODS.md` for how to test them.
+
+## 18. Merged R55–R57 method experiments (strict blind, all negative)
+- **R55 affine-feedback:** 29,952 reversible settings; 20/20 exact synthetic unknown-key controls; top K4 1/24, best 2/24; 2/12 shuffled null scores higher.
+- **R56 evolving two-wheel Chaocipher:** 51,324 initial states; 20/20 exact synthetic unknown-key controls; top K4 0/24, best 3/24; 4/12 nulls higher.
+- **R57 Hill 2x2 with nonstandard 97-letter convention:** 97,344 matrices; 20/20 synthetic unknown-key controls; top K4 0/24, best 2/24; 6/12 nulls higher.
+- Each experiment independently forward-reencrypted 240/240 synthetic and 156/156 K4/null witnesses, **froze full 97-letter raw outputs remotely in Git before any public-letter comparison**, and found no coherent K4 solution. Control passes mean the solver works for its *assumed, deliberately finite* model—not that the model matches K4.
+- See [R55–R57 methodological audit](R55_R57_METHODOLOGY_AUDIT.md) for evidence hierarchy and prioritized follow-up.
