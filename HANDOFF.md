@@ -24,8 +24,16 @@
   - transposition before or after the substitution.
   - **First do the cheap exact feasibility check** (as in `kw_exact_check.cpp`, pre-registered), and only run the
     blind solver on families that are still feasible.
+- **Owner review of PR #12 (1 Nov 2026), applied:**
+  - R52/R52b relabelled as **crib-conditioned exploratory** work.
+  - The exclusion narrowed to 46/47 families; one B26/b5 setting stays WEAK/OPEN (L143).
+  - R43 marked as a failed prototype (`r43/README.md`).
+  - CI added for R44/R52.
+  - **Current rule (R53):** discover method and key from the ciphertext alone, and freeze the full plaintext before
+    any comparison with the known letters.
 - **Checks before any push:** `bash strictblind/tests/run_all.sh`, `bash verify_all.sh`,
-  `python3 -I r44/tests/test_contract.py`.
+  `python3 -I r44/tests/test_contract.py`, `python3 -I r44/tests/test_r44_claude.py`,
+  `python3 -I r52_claude/tests/test_r52.py`.
 - **Rules:** `k4kit/CLAUDE.md`.
   - Pre-register, plant controls and nulls, freeze and commit before any reveal, report raw text.
   - Never `git stash` while jobs write tracked files.

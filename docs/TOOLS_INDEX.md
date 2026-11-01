@@ -12,7 +12,10 @@ Claude Code, 1 Nov 2026. The working rules are in `k4kit/CLAUDE.md`.
 bash strictblind/tests/run_all.sh
 bash verify_all.sh
 python3 -I r44/tests/test_contract.py
+python3 -I r44/tests/test_r44_claude.py
+python3 -I r52_claude/tests/test_r52.py
 ```
+CI: `.github/workflows/claude-r44-r52.yml` runs all of these.
 
 ## Data (`k4kit/data/`)
 
@@ -81,7 +84,7 @@ python3 -I r44/tests/test_contract.py
 | `r44/audit/kw_exact_check.cpp` | in-place Gromark × keyword alphabet (R45 replication) |
 | `r44/audit/rk_exact_check.cpp` | Carter + K1–K3 running keys (R47 replication) |
 | `r44/audit/rot_exact_check.cpp` | 24×8 rotations after substitution (R46 replication) |
-| `r52_claude/sealed/chain_screen.cpp` / `chain_screen_fast.cpp` | all chain-addition families × keyword alphabets × routes (R52; the fast version is byte-identical) |
+| `r52_claude/sealed/chain_screen.cpp` / `chain_screen_fast.cpp` | all chain-addition families × keyword alphabets × routes (R52, crib-conditioned exploratory; the fast version is byte-identical) |
 
 ## Older rounds
 - **`k4kit/r30/`, `k4kit/r32/`, `r33/`–`r39/`:** each has its own pre-registration, code and frozen outputs.

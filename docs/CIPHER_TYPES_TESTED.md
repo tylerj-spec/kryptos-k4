@@ -121,8 +121,12 @@ chance.** The most important open items are in §17.
   - Two free alphabets: 39 primers are mathematically feasible. Searched for English, none readable (L22, L72,
     L102, L105).
   - Ciphertext-only IC ranker: no Gromark signature in K4 (L132, L137).
-  - Keyword × free alphabet: **EXCL** (L141 = R45, R50, L143 = R52).
-  - R52's single survivor decrypted blind to gibberish (L143).
+  - Keyword × free alphabet:
+    - **EXCL** (crib-assisted) for base-10 5-digit keys, in place and with K3 rotations (R45 = L141; R46 = L142; R50).
+    - **EXCL** for 46 of R52's 47 chain families (L143).
+    - R52's B26/b5 family keeps one crib-selected setting. A single known-key heuristic solve of it gave gibberish,
+      which is negative evidence, not an exclusion (**WEAK/OPEN**).
+    - R52 as a whole is crib-conditioned exploratory work.
 
 ## 6. Running keys (the key is a long text)
 - **What it is:** a book or passage supplies one key letter per plaintext letter (Vigenère with a non-repeating
@@ -260,7 +264,7 @@ chance.** The most important open items are in §17.
 | Monoalphabetic | Caesar, Atbash, affine, keyword | **EXCL** | L02 |
 | Periodic polyalphabetic | Vigenère, Beaufort, Quagmire I–IV, Porta | **EXCL** for short periods; per-slot bijections partly OPEN | L03–L05, L21, L88, L89 |
 | Generated keys | progressive, linear recurrences, LFSR | **EXCL** (in place) | L13, L15, L49 |
-| Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed and keyword alphabets); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
+| Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed alphabets; keyword alphabets except one B26/b5 setting, WEAK/OPEN); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
 | Running key | K1–K3, Carter 1923, coordinates | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown book OPEN | L90, L106, L109, R47 |
 | Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN | L17, L27, L58, R51 |
 | Two-layer | substitution plus K3-style rotation or columnar | **EXCL** or chance for the routes tested | L47, L48, L115, L124, R46, R50 |

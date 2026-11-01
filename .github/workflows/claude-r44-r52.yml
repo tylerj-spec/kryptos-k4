@@ -1,0 +1,42 @@
+name: Claude R44/R52 reproducibility
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+  pull_request:
+    paths:
+      - '.github/workflows/claude-r44-r52.yml'
+      - 'r43/**'
+      - 'r43dev/**'
+      - 'r44/**'
+      - 'r52_claude/**'
+      - 'strictblind/**'
+      - 'k4kit/data/**'
+      - 'docs/**'
+      - 'LEDGER.md'
+      - 'HANDOFF.md'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # strictblind's legacy-freeze test reads older commits
+      - name: Compiler and test environment
+        run: |
+          python3 --version
+          g++ --version
+      - name: Existing strict-blind baselines
+        run: bash strictblind/tests/run_all.sh
+      - name: R44 blind-directory contract (no clue data in r44/blind)
+        run: python3 -I r44/tests/test_contract.py
+      - name: R44/R44b hashes, builds, EdgeGraph audit, holdout B replay (known-key benchmark)
+        run: python3 -I r44/tests/test_r44_claude.py
+      - name: R52 crib-conditioned screen and R52b replay (hashes, vocabulary/route contracts, plants, frozen rows)
+        run: python3 -I r52_claude/tests/test_r52.py
