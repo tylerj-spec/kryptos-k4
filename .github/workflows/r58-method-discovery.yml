@@ -1,0 +1,104 @@
+name: R58 hidden-family and hidden-key process-identification benchmark
+on:
+  push:
+    branches: ["chatgpt/r58-physical-process-discovery"]
+    paths:
+      - "r58/PREREGISTRATION.md"
+      - "r58/blind/**"
+      - "r58/sealed/**"
+      - "r58/tests/**"
+      - ".github/workflows/r58-method-discovery.yml"
+permissions:
+  contents: write
+concurrency:
+  group: r58-remote-freeze-serial
+  cancel-in-progress: false
+
+jobs:
+  blind-control-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Check all 6 physically grounded routes and four-layer reversibility without K4 clues
+        run: python3 -I r58/tests/test_contract.py
+
+      - name: Download EXACT immutable public-domain benchmark texts, outside blind container
+        run: |
+          mkdir -p "$RUNNER_TEMP/r58/source" "$RUNNER_TEMP/r58/sealed" "$RUNNER_TEMP/r58/input" "$RUNNER_TEMP/r58/output" "$RUNNER_TEMP/r58/bin" "$RUNNER_TEMP/r58/language"
+          curl --fail --location --silent --show-error --retry 3             "https://raw.githubusercontent.com/GITenberg/Alice-s-Adventures-in-Wonderland_11/7f18748e114b994d5d9454d5793581bc0b9cf9d7/11-0.txt"             -o "$RUNNER_TEMP/r58/source/alice.txt"
+          curl --fail --location --silent --show-error --retry 3             "https://raw.githubusercontent.com/GITenberg/Pride-and-Prejudice_1342/81db45c9c48c592f0b77f01fc59e677ad0a5634e/1342-0.txt"             -o "$RUNNER_TEMP/r58/source/pride.txt"
+          test "$(git hash-object "$RUNNER_TEMP/r58/source/alice.txt")" = "0f25e9af379233267a09623e0c650472f9e463ea"
+          test "$(git hash-object "$RUNNER_TEMP/r58/source/pride.txt")" = "20c3737a33af2501e4c0597285ad630ef42e8e46"
+
+      - name: Make 120 unknown-family, unknown-key ciphertexts and sealed truth WITHOUT exposing any K4 clue
+        run: |
+          python3 -I r58/sealed/prepare.py "$RUNNER_TEMP/r58/source/alice.txt"             "$RUNNER_TEMP/r58/source/pride.txt" k4kit/data/word_model_orth.tsv             "$RUNNER_TEMP/r58/input/controls.tsv" "$RUNNER_TEMP/r58/sealed/truth.json"
+          cp r58/blind/solve.py "$RUNNER_TEMP/r58/bin/solve.py"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r58/language/quad.f32"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r58/language/words.tsv"
+          chmod 0555 "$RUNNER_TEMP/r58/input" "$RUNNER_TEMP/r58/bin" "$RUNNER_TEMP/r58/language"
+          chmod 0777 "$RUNNER_TEMP/r58/output"
+
+      - name: FULL blind unknown-process search with NO truth, source books, repository, K4 clues or network mounted
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL             --security-opt no-new-privileges --user 65534:65534 --memory 2g --pids-limit 64             -v "$RUNNER_TEMP/r58/input:/input:ro"             -v "$RUNNER_TEMP/r58/bin:/tool:ro"             -v "$RUNNER_TEMP/r58/language:/language:ro"             -v "$RUNNER_TEMP/r58/output:/output:rw"             python:3.12-slim             python -I -B /tool/solve.py /input/controls.tsv /language/words.tsv               /language/quad.f32 /output/candidates.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r58/output/candidates.jsonl")" -eq 120
+
+      - name: REMOTE GIT FREEZE complete 120-case blind output before any secret truth evaluation
+        run: |
+          mkdir -p r58/frozen
+          python3 -I r58/sealed/freeze.py "$RUNNER_TEMP/r58/input/controls.tsv"             "$RUNNER_TEMP/r58/output/candidates.jsonl" r58/blind/solve.py             k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32             r58/PREREGISTRATION.md r58/sealed/prepare.py "$RUNNER_TEMP/r58/CONTROLS_MANIFEST.json"
+          cp "$RUNNER_TEMP/r58/input/controls.tsv" r58/frozen/CONTROLS_INPUT.tsv
+          cp "$RUNNER_TEMP/r58/output/candidates.jsonl" r58/frozen/CONTROLS_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r58/CONTROLS_MANIFEST.json" r58/frozen/CONTROLS_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r58/frozen/CONTROLS_INPUT.tsv r58/frozen/CONTROLS_RESULTS.jsonl r58/frozen/CONTROLS_MANIFEST.json
+          git commit -m "R58 remotely freeze full hidden-family and key search BEFORE any control reveal [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r58-physical-process-discovery
+          echo "RAW 120-CASE BLIND CANDIDATES REMOTELY FROZEN. SEALED TRUTH NOT READ."
+
+  separate-sealed-control-evaluation:
+    needs: blind-control-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r58-physical-process-discovery
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Verify independent remote Git freeze was committed BEFORE opening true family+key
+        run: |
+          git ls-tree -r --name-only HEAD r58/frozen/CONTROLS_INPUT.tsv | grep -q CONTROLS_INPUT
+          git ls-tree -r --name-only HEAD r58/frozen/CONTROLS_RESULTS.jsonl | grep -q CONTROLS_RESULTS
+          git ls-tree -r --name-only HEAD r58/frozen/CONTROLS_MANIFEST.json | grep -q CONTROLS_MANIFEST
+
+      - name: Reproduce sealed source, plaintext and family keys ONLY in separate evaluator job
+        run: |
+          mkdir -p "$RUNNER_TEMP/r58/source" "$RUNNER_TEMP/r58/sealed"
+          curl --fail --location --silent --show-error --retry 3             "https://raw.githubusercontent.com/GITenberg/Alice-s-Adventures-in-Wonderland_11/7f18748e114b994d5d9454d5793581bc0b9cf9d7/11-0.txt"             -o "$RUNNER_TEMP/r58/source/alice.txt"
+          curl --fail --location --silent --show-error --retry 3             "https://raw.githubusercontent.com/GITenberg/Pride-and-Prejudice_1342/81db45c9c48c592f0b77f01fc59e677ad0a5634e/1342-0.txt"             -o "$RUNNER_TEMP/r58/source/pride.txt"
+          python3 -I r58/sealed/prepare.py "$RUNNER_TEMP/r58/source/alice.txt"             "$RUNNER_TEMP/r58/source/pride.txt" k4kit/data/word_model_orth.tsv             "$RUNNER_TEMP/r58/sealed/duplicate.tsv" "$RUNNER_TEMP/r58/sealed/truth.json"
+          cmp "$RUNNER_TEMP/r58/sealed/duplicate.tsv" r58/frozen/CONTROLS_INPUT.tsv
+
+      - name: Independently reencrypt all 960 frozen candidates then assess hidden-process recovery and abstention
+        run: |
+          set +e
+          python3 -I r58/sealed/verify_frozen.py             r58/frozen/CONTROLS_INPUT.tsv r58/frozen/CONTROLS_RESULTS.jsonl             r58/frozen/CONTROLS_MANIFEST.json r58/blind/solve.py             k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32 r58/PREREGISTRATION.md             "$RUNNER_TEMP/r58/sealed/truth.json" "$RUNNER_TEMP/r58/sealed/EVALUATION.json"
+          result=$?
+          set -e
+          test -f "$RUNNER_TEMP/r58/sealed/EVALUATION.json"
+          cp "$RUNNER_TEMP/r58/sealed/EVALUATION.json" r58/frozen/CONTROLS_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r58/frozen/CONTROLS_EVALUATION.json
+          git commit -m "R58 sealed evaluation AFTER frozen raw control output; preserve pass or failure [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r58-physical-process-discovery
+          exit "$result"
