@@ -1,0 +1,2 @@
+R44 keyword alphabets 4749 from 5000 words
+R44 CTL_3 best -404.925 PA TODAYBCEFGHIJKLMNPQRSUVWXZ
