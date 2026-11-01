@@ -14,7 +14,10 @@ Searches that use the known words to fill in unknown alphabets are labelled **cr
 is never evidence.
 
 ## Where things are
-- **`LEDGER.md`:** the canonical record of every model tested (L01–L136).
+- **`docs/`:** the reference library. It covers cipher types tested on K4 and what is untested, Kryptos facts,
+  cryptography, cryptanalysis and steganography references, and a tools index. Start with
+  `docs/CIPHER_TYPES_TESTED.md`.
+- **`LEDGER.md`:** the canonical record of every model tested (L01–L143).
 - **`HANDOFF.md`:** the latest handoff (R40–R42, Claude Code). ChatGPT's R33 handoff and audit notes are in `r33/`;
   `AUDIT_NOTES.md` at the root is R33's copy.
 - **`k4kit/`:** the toolkit.

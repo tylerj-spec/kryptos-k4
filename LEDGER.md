@@ -308,3 +308,6 @@ Language caveat: SCORE/STAT depend on a stated text population. They are not EXC
 - R52/R52b (Claude Code, 31 Oct 2026): every chain-addition family (base 10 up to 8 digits; bases 5–26 up to
   5 digits) × keyword alphabet × in place and K3 rotations is excluded for K4. The one crib-feasible survivor
   decrypts blind to gibberish (L143).
+- Docs (Claude Code, 1 Nov 2026): reference library added in `docs/`. It holds the cipher types tested (rounds 1–54)
+  with untested candidates, Kryptos facts, cryptography, cryptanalysis and steganography references, and a tools
+  index. No new experiments.
