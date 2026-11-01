@@ -12,7 +12,7 @@ For a lag \(L\), source \(F\), multiplier \(a\), feedback sign \(s\), offset \(b
 
 Here `source` is either **previous plaintext** `p` or **previous ciphertext** `c`. Since `a` is coprime to 26, both modes invert exactly and are realistic low-parameter linear/frequency-masking transformations. `p` feedback uses already-decoded plaintext and `c` feedback uses the original ciphertext. The first L characters have NO separately fitted per-character key.
 
-Enumerate **all 14,976** parameter tuples:
+Enumerate **all 29,952** parameter tuples:
 - `source` = plaintext or ciphertext (2)
 - `L` = 1..8 (8)
 - `a` = 1,3,5,7,9,11,15,17,19,21,23,25 (12)
@@ -20,7 +20,7 @@ Enumerate **all 14,976** parameter tuples:
 - `b` = 0..25 (26)
 - `d` = -1,0,+1 (3).
 
-These fixed ranges are not derived from K4 known plaintext. A high ranking in this family is only a hypothesis until independent validation. No arbitrary 97-position shift streams or fitted substitutions are allowed.
+Arithmetic correction made before control generation: 2 × 8 × 12 × 2 × 26 × 3 = 29,952, not 14,976. All six dimensions are included exactly once. These fixed ranges are not derived from K4 known plaintext. A high ranking in this family is only a hypothesis until independent validation. No arbitrary 97-position shift streams or fitted substitutions are allowed.
 
 ## Immutable language model, scorer, and output
 
