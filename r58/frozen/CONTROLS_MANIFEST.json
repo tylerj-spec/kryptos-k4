@@ -1,0 +1,17 @@
+{
+  "blind_source_sha256": "fa538c1b9813050dc965073b9dfbdeb4e17ada8279273ed0c3efeb3111cda768",
+  "classification": "R58_CIPHERTEXT_ONLY_ALL_FAMILIES_UNKNOWN",
+  "full_candidates_per_input": 8,
+  "generator_sha256": "bf3f7d0a6ae247c935214caecd1db8461acf72eae23ec9fdf55958a2d15176b6",
+  "generic_quad_sha256": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43",
+  "generic_words_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "input_sha256": "33b08983891708310c3dd5286a377d5fb8f2e9aa949419a6dc6e2720da2a38f1",
+  "inputs": 120,
+  "known_plaintext_exposed_to_solver": false,
+  "output_sha256": "bac0d282256df71aefb71f69ddcae61e0a0526d60c1dc4bdb1e7be476220994a",
+  "phase": "controls",
+  "protocol_sha256": "bc89f4bfaa8e71cdb03f2127fce24c0a3f7e0d33c7cea97158575e364db5c3b0",
+  "published_K4_clues_supplied_to_solver": false,
+  "searched_settings_per_input": 877,
+  "status": "FROZEN_BLIND_R58"
+}

@@ -1,0 +1,16 @@
+{
+  "blind_source_sha256": "fa538c1b9813050dc965073b9dfbdeb4e17ada8279273ed0c3efeb3111cda768",
+  "classification": "R58B_REMOTE_FROZEN_ORIGINAL_K4_CIPHERTEXT_ONLY",
+  "full_candidates_per_input": 8,
+  "generic_quad_sha256": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43",
+  "generic_words_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "input_sha256": "f3ad0fe49e0dfd93355cf26b1c275df6b3e0de76e2482f6777bac93c02768074",
+  "inputs": 101,
+  "original_prereg_sha256": "bc89f4bfaa8e71cdb03f2127fce24c0a3f7e0d33c7cea97158575e364db5c3b0",
+  "output_sha256": "706c87a7d77b990bca0b8823d349b070e10015eed9c0f5c52f0eb7f70a4aa82c",
+  "phase": "target",
+  "searched_per_input": 877,
+  "status": "FROZEN_BEFORE_ANY_K4_CLUE",
+  "target_preparer_sha256": "780b2de8b666a1a345a527d9b733e30d3b62ee288ec68be111008dc812c4117b",
+  "target_protocol_sha256": "9157a56adccffdd51afed7e88254e3190a0ae9717b10d694020832de4e2c63c1"
+}

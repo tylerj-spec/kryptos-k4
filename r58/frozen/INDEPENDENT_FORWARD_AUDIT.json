@@ -1,0 +1,15 @@
+{
+  "all_forward_witnesses_valid": true,
+  "classification": "R58B_POST_REMOTE_FREEZE_INDEPENDENT_K4_AND_NULL_AUDIT_NO_K4_CLUES",
+  "empirical_upper_tail_rank_101": 0.07920792079207921,
+  "k4_blind_detected_family": "ABSTAIN",
+  "k4_blind_next_distinct_margin": 4.61801147,
+  "k4_blind_top_score": -677.07906103,
+  "limitation": "Descriptive frequency-preserving null distribution, not proof of cipher-family identification or a K4 solve.",
+  "null_confident_detections": 0,
+  "null_count": 100,
+  "raw_output_sha256": "706c87a7d77b990bca0b8823d349b070e10015eed9c0f5c52f0eb7f70a4aa82c",
+  "shuffled_null_scores_greater_or_equal_to_k4": 7,
+  "status": "VALIDATED_FORWARD_ONLY",
+  "verified_forward_witnesses": 808
+}

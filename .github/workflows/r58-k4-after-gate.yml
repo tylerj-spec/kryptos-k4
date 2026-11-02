@@ -1,0 +1,103 @@
+name: R58B original K4 ciphertext-only scan, 100 nulls, freeze before revealed letters
+on:
+  push:
+    branches: ["chatgpt/r58-physical-process-discovery"]
+    paths:
+      - "r58/TARGET_PROTOCOL.md"
+      - "r58/sealed/prepare_target.py"
+      - "r58/sealed/freeze_target.py"
+      - "r58/sealed/verify_target.py"
+      - "r58/after_reveal/**"
+      - ".github/workflows/r58-k4-after-gate.yml"
+permissions:
+  contents: write
+concurrency:
+  group: r58-original-target-frozen-sequence
+  cancel-in-progress: false
+jobs:
+  k4-blind-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Require completed 120-case R58A hidden-family and hidden-key gate BEFORE original K4
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          gate=json.loads(Path("r58/frozen/CONTROLS_EVALUATION.json").read_text())
+          assert gate["gate_passed"] and gate["all_forward_witnesses_valid"]
+          assert gate["verified_forward_witnesses"]==960
+          for cls in ("V","T","VT","TV"):
+              assert gate["counts"][cls]["exact_full_text_and_family"]>=16
+              assert gate["counts"][cls]["exact_settings_and_text"]>=16
+          for cls in ("HILL","SHUFFLE"):
+              assert gate["counts"][cls]["confident_false_positive"]<=1
+          print("R58A method+key gate PASSED before K4; full control output already Git-frozen")
+          PY
+
+      - name: Copy only immutable blind solver, generic models and original K4 ciphertext into isolated mounts
+        run: |
+          mkdir -p "$RUNNER_TEMP/r58/input" "$RUNNER_TEMP/r58/output"             "$RUNNER_TEMP/r58/bin" "$RUNNER_TEMP/r58/language"
+          python3 -I r58/sealed/prepare_target.py r39/ic_gate/k4_ciphertext.txt             "$RUNNER_TEMP/r58/input/target.tsv"
+          cp r58/blind/solve.py "$RUNNER_TEMP/r58/bin/solve.py"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r58/language/words.tsv"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r58/language/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r58/input" "$RUNNER_TEMP/r58/bin" "$RUNNER_TEMP/r58/language"
+          chmod 0777 "$RUNNER_TEMP/r58/output"
+
+      - name: Run original K4 and 100 frequency-preserving nulls with NEVER a released K4 plaintext letter
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL             --security-opt no-new-privileges --user 65534:65534             --memory 2g --pids-limit 64             -v "$RUNNER_TEMP/r58/input:/input:ro"             -v "$RUNNER_TEMP/r58/bin:/tool:ro"             -v "$RUNNER_TEMP/r58/language:/language:ro"             -v "$RUNNER_TEMP/r58/output:/output:rw"             python:3.12-slim             python -I -B /tool/solve.py /input/target.tsv /language/words.tsv               /language/quad.f32 /output/candidates.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r58/output/candidates.jsonl")" -eq 101
+
+      - name: Commit full 101x8 raw 97-letter outputs to REMOTE Git BEFORE independent clues/evaluation
+        run: |
+          mkdir -p r58/frozen
+          python3 -I r58/sealed/freeze_target.py "$RUNNER_TEMP/r58/input/target.tsv"             "$RUNNER_TEMP/r58/output/candidates.jsonl"             r58/blind/solve.py k4kit/data/word_model_orth.tsv             k4kit/data/quad_log10.f32 r58/PREREGISTRATION.md             r58/TARGET_PROTOCOL.md r58/sealed/prepare_target.py             "$RUNNER_TEMP/r58/K4_MANIFEST.json"
+          cp "$RUNNER_TEMP/r58/input/target.tsv" r58/frozen/K4_INPUT.tsv
+          cp "$RUNNER_TEMP/r58/output/candidates.jsonl" r58/frozen/K4_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r58/K4_MANIFEST.json" r58/frozen/K4_MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r58/frozen/K4_INPUT.tsv r58/frozen/K4_RESULTS.jsonl r58/frozen/K4_MANIFEST.json
+          git commit -m "R58B remote freeze 101 ciphertext-only K4/null outputs BEFORE any K4 clue reveal [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r58-physical-process-discovery
+          echo "R58B ORIGINAL K4 RAW FULL-LENGTH OUTPUTS NOW REMOTELY FROZEN; NO K4 CLUES READ"
+
+  k4-after-freeze-independent-validation:
+    needs: k4-blind-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r58-physical-process-discovery
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Prove K4 and all null candidates were committed in remote Git before known-letter evaluation
+        run: |
+          git ls-tree -r --name-only HEAD r58/frozen/K4_INPUT.tsv | grep -q K4_INPUT
+          git ls-tree -r --name-only HEAD r58/frozen/K4_RESULTS.jsonl | grep -q K4_RESULTS
+          git ls-tree -r --name-only HEAD r58/frozen/K4_MANIFEST.json | grep -q K4_MANIFEST
+
+      - name: Independent exact re-encryption of all 808 K4/null candidates, WITHOUT known K4 plaintext
+        run: |
+          mkdir -p "$RUNNER_TEMP/r58"
+          python3 -I r58/sealed/verify_target.py             r58/frozen/K4_INPUT.tsv r58/frozen/K4_RESULTS.jsonl r58/frozen/K4_MANIFEST.json             r58/blind/solve.py k4kit/data/word_model_orth.tsv k4kit/data/quad_log10.f32             r58/PREREGISTRATION.md r58/TARGET_PROTOCOL.md r58/sealed/prepare_target.py             "$RUNNER_TEMP/r58/INDEPENDENT_FORWARD_AUDIT.json"
+
+      - name: ONLY NOW compare complete immutable K4 outputs to 24 released letters (rejection-only)
+        run: |
+          python3 -I r58/after_reveal/check_clues.py             r58/frozen/K4_RESULTS.jsonl r58/frozen/K4_MANIFEST.json             "$RUNNER_TEMP/r58/INDEPENDENT_FORWARD_AUDIT.json"             "$RUNNER_TEMP/r58/AFTER_REVEAL_EVALUATION.json"
+          cp "$RUNNER_TEMP/r58/INDEPENDENT_FORWARD_AUDIT.json" r58/frozen/INDEPENDENT_FORWARD_AUDIT.json
+          cp "$RUNNER_TEMP/r58/AFTER_REVEAL_EVALUATION.json" r58/frozen/AFTER_REVEAL_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r58/frozen/INDEPENDENT_FORWARD_AUDIT.json r58/frozen/AFTER_REVEAL_EVALUATION.json
+          git commit -m "R58B independent forward and published K4 clue comparison only AFTER raw Git freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r58-physical-process-discovery

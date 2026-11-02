@@ -1,0 +1,35 @@
+name: R60 exploratory phonetic sound-out sensitivity check (not blind K4 solve)
+on:
+  push:
+    branches: ["chatgpt/r60-codeword-semantic-ablation"]
+    paths:
+      - ".github/workflows/r60-phonetic-posthoc.yml"
+      - "r60/statistics/phonetic_soundout_screen.py"
+permissions:
+  contents: write
+jobs:
+  phonetic-frequency-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Compute 20 English and 2000 synthetic phonetic direct-reading controls without any K4 plaintext
+        run: |
+          python3 -I r60/statistics/phonetic_soundout_screen.py > r60/statistics/PHONETIC_RESULTS.json
+          python3 - <<'PY'
+          import json
+          x=json.load(open("r60/statistics/PHONETIC_RESULTS.json"))
+          assert x["English_covertext_samples"]==20 and x["toy_phonetic_samples"]==2000
+          assert x["classification"].startswith("POSTHOC_EXPLORATORY")
+          assert x["toy_phonetic_IC_leq_K4"]==0
+          print("R60 posthoc phonetic screen",x["toy_phonetic_IC_median"],"min",x["toy_phonetic_IC_min"],"n",x["toy_phonetic_samples"])
+          PY
+      - name: Preserve actual exploratory output, clearly separate from R60 frozen blind experiment
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r60/statistics/PHONETIC_RESULTS.json
+          git commit -m "R60 preserve clearly posthoc toy phonetic IC results, not K4 decryptor [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r60-codeword-semantic-ablation

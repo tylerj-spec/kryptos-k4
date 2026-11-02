@@ -1,0 +1,52 @@
+{
+  "classification": "R60_AFTER_REMOTE_FREEZE_SEMANTIC_COVER_TEXT_HOLDOUT",
+  "exact_keys_and_texts": 20,
+  "false_confidences_on_uniform_nulls": 0,
+  "frozen_full_candidates": 320,
+  "gate_passed": true,
+  "independent_full_forward_witnesses": 320,
+  "limitation": "The private meaning dictionary cannot be inferred from ciphertext when the visible covertext and encryption key are unchanged. No K4 plaintext tested or recovered.",
+  "per_family": {
+    "T": {
+      "abstain": 0,
+      "correct_key_route": 5,
+      "exact": 5,
+      "false_confidence": 0,
+      "n": 5
+    },
+    "TV": {
+      "abstain": 0,
+      "correct_key_route": 5,
+      "exact": 5,
+      "false_confidence": 0,
+      "n": 5
+    },
+    "UNIFORM_NULL": {
+      "abstain": 20,
+      "correct_key_route": 0,
+      "exact": 0,
+      "false_confidence": 0,
+      "n": 20
+    },
+    "V": {
+      "abstain": 0,
+      "correct_key_route": 5,
+      "exact": 5,
+      "false_confidence": 0,
+      "n": 5
+    },
+    "VT": {
+      "abstain": 0,
+      "correct_key_route": 5,
+      "exact": 5,
+      "false_confidence": 0,
+      "n": 5
+    }
+  },
+  "raw_output_sha256": "ed751dea8bb8a8f962be1dc334fff1a3f1700a65f3086ea7b4e26556c76bfd71",
+  "same_ciphertext_with_two_distinct_meaning_maps": 20,
+  "semantic_codebook_pair_checks": 40,
+  "status": "PASS",
+  "total_true_covertexts_recovered": 20,
+  "true_controls_forward_reencryption": 20
+}
