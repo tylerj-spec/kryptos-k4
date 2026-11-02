@@ -150,8 +150,12 @@ chance.** The most important open items are in §17.
   - **EXCL** with K1–K3 as key and two free alphabets (L90).
   - Carter with two free alphabets: 585 feasible windows, none readable (L106).
   - Keyword alphabet × free alphabet: **EXCL** (R47, replicated in L142).
-  - An *unknown* English running key is only **STAT** (L31). This is still a live idea, but unmeasurable without
-    the source.
+  - An *unknown* English running key was only **STAT** (L31) until **R59** (L149).
+    - **R59 setup:** a pre-registered blind solver (gate passed: 16/20 detected, 20/20 tableau identified, median 72/97
+      letter pairs correct), under AZ or KRYPTOS × Vigenère / Beaufort, in place.
+    - **R59 result:** K4 scored like its own shuffled copies (46/100 as high; below all 20 test messages). **STAT, no
+      signal**, with about 80% power.
+    - **Still open:** running key plus transposition, other alphabets, non-English keys.
 
 ## 7. Autokey (the message keys itself)
 - **Ciphertext autokey:** `k_i` comes from `c_{i−L}`.
@@ -269,7 +273,7 @@ chance.** The most important open items are in §17.
 | Periodic polyalphabetic | Vigenère, Beaufort, Quagmire I–IV, Porta | **EXCL** for short periods; per-slot bijections partly OPEN | L03–L05, L21, L88, L89 |
 | Generated keys | progressive, linear recurrences, LFSR | **EXCL** (in place) | L13, L15, L49 |
 | Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed alphabets; keyword alphabets except one B26/b5 setting, WEAK/OPEN); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
-| Running key | K1–K3, Carter 1923, coordinates | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown book OPEN | L90, L106, L109, R47 |
+| Running key | K1–K3, Carter 1923, coordinates; unknown English text (R59) | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown English key in place **STAT, no signal** (R59); with transposition OPEN | L90, L106, L109, R47, L149 |
 | Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN; R55 narrow affine feedback negative | L17, L27, L58, R51, R55 |
 | Two-layer | substitution plus K3-style rotation or columnar | **EXCL/chance only in enumerated scopes**, general combinations OPEN | L47, L48, L115, L124, R46, R50 |
 | Polygraphic | Hill, Playfair, 2/4-square | **EXCL only within tested variants**; R57 bounded Hill negative | L11, L61, L88, R57 |
