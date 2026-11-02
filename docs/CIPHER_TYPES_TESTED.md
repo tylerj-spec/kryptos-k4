@@ -155,7 +155,10 @@ chance.** The most important open items are in §17.
       letter pairs correct), under AZ or KRYPTOS × Vigenère / Beaufort, in place.
     - **R59 result:** K4 scored like its own shuffled copies (46/100 as high; below all 20 test messages). **STAT, no
       signal**, with about 80% power.
-    - **Still open:** running key plus transposition, other alphabets, non-English keys.
+    - **R61** (L150) added K3's 24×8 rotations and the R58 engraving routes **after** the substitution. Gate passed
+      (18/20 detected, 15/20 route identified). K4: 5/100 shuffled copies score as high, 2/24 letters. **STAT, no
+      signal** (about 65% power).
+    - **Still open:** transposition before substitution, other routes, other alphabets, non-English keys.
 
 ## 7. Autokey (the message keys itself)
 - **Ciphertext autokey:** `k_i` comes from `c_{i−L}`.
@@ -273,7 +276,7 @@ chance.** The most important open items are in §17.
 | Periodic polyalphabetic | Vigenère, Beaufort, Quagmire I–IV, Porta | **EXCL** for short periods; per-slot bijections partly OPEN | L03–L05, L21, L88, L89 |
 | Generated keys | progressive, linear recurrences, LFSR | **EXCL** (in place) | L13, L15, L49 |
 | Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed alphabets; keyword alphabets except one B26/b5 setting, WEAK/OPEN); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
-| Running key | K1–K3, Carter 1923, coordinates; unknown English text (R59) | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown English key in place **STAT, no signal** (R59); with transposition OPEN | L90, L106, L109, R47, L149 |
+| Running key | K1–K3, Carter 1923, coordinates; unknown English text (R59) | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown English key in place **STAT, no signal** (R59) and after K3/engraving routes (R61); other routes OPEN | L90, L106, L109, R47, L149, L150 |
 | Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN; R55 narrow affine feedback negative | L17, L27, L58, R51, R55 |
 | Two-layer | substitution plus K3-style rotation or columnar | **EXCL/chance only in enumerated scopes**, general combinations OPEN | L47, L48, L115, L124, R46, R50 |
 | Polygraphic | Hill, Playfair, 2/4-square | **EXCL only within tested variants**; R57 bounded Hill negative | L11, L61, L88, R57 |
