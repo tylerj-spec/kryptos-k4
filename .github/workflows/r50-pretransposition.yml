@@ -1,0 +1,83 @@
+name: R50 T_then_S four K3 routes exact feasibility (postfreeze, not decryption)
+
+on:
+  push:
+    branches:
+      - "chatgpt/r50-pretransposition-keyword-feasibility"
+    paths:
+      - ".github/workflows/r50-pretransposition.yml"
+      - "r50/**"
+  pull_request:
+    paths:
+      - ".github/workflows/r50-pretransposition.yml"
+      - "r50/**"
+
+permissions:
+  contents: write
+
+jobs:
+  exact-order-screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Preserve original strictblind and R44 algorithms
+        run: |
+          bash strictblind/tests/run_all.sh
+          python3 -I r44/tests/test_contract.py
+      - name: Check frozen scientific scope and previous tests
+        run: |
+          sha256sum -c r50/PROTOCOL.sha256
+          sha256sum -c r45/R45_RESULT.sha256
+          sha256sum -c r46/PROTOCOL.sha256
+          test -f r44/holdout_b/FROZEN.sha256
+          test -f r39/ic_gate/FROZEN.sha256
+      - name: Execute complete preregistered T_then_S K4 and two-null exact checks
+        run: |
+          if test -e r50/R50_EXACT_RESULT.json; then
+            python3 -I r50/sealed/pretransposition_exact.py /tmp/r50_replay.json
+            cmp /tmp/r50_replay.json r50/R50_EXACT_RESULT.json
+          else
+            python3 -I r50/sealed/pretransposition_exact.py r50/R50_EXACT_RESULT.json
+          fi
+          python3 - <<'PY'
+          import json
+          v=json.load(open("r50/R50_EXACT_RESULT.json"))
+          assert v["T_then_S"] is True
+          assert v["primer_count_each"]==100000
+          assert v["keyword_class_counts"]["COMMON"]==4749
+          assert v["positive_controls"]["counts"]==dict(KW_PA=10,KW_CA=10,plus=10,minus=10)
+          assert v["positive_controls"]["wrong_order_true_keyword_rejected"]>=1
+          assert len(v["K4_routes"])==4 and len(v["nulls"])==2
+          for k,x in v["K4_routes"].items():
+              assert x["two_free_count"]==len(x["free_both_primers"])
+              assert sum(x["keyword_counts"].values())==len(x["all_settings"])
+              print("R50 K4", k, "2-free", x["two_free_count"], "keyword", x["keyword_counts"])
+          assert v["K4_total_keyword_feasible"]==sum(len(x["all_settings"]) for x in v["K4_routes"].values())
+          print("R50 RESULT:",v["classification"])
+          PY
+      - name: Freeze raw exact results to research review branch
+        if: github.event_name == 'push'
+        run: |
+          sha256sum r50/PREREGISTRATION.md r50/sealed/pretransposition_exact.py r50/R50_EXACT_RESULT.json r39/ic_gate/k4_ciphertext.txt k4kit/data/word_model_orth.tsv > r50/R50_RESULT.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r50/R50_EXACT_RESULT.json r50/R50_RESULT.sha256
+          if git diff --cached --quiet; then
+            echo "Identical previously frozen report, no new commit"
+          else
+            git commit -m "R50 freeze T_then_S exact preregistered outcomes [skip ci]"
+            git push origin HEAD:refs/heads/chatgpt/r50-pretransposition-keyword-feasibility
+          fi
+      - name: Preserve raw report even on failure
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r50-t-then-s-finite-family-known-letter-exact
+          path: |
+            r50/R50_EXACT_RESULT.json
+            r50/R50_RESULT.sha256
+          retention-days: 90
