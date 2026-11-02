@@ -1,0 +1,65 @@
+{
+  "English_IC_leq_K4": 0,
+  "English_IC_median": 0.06819158075601375,
+  "English_IC_min": 0.0625,
+  "English_covertext_samples": 20,
+  "K4_original_ciphertext_IC": 0.03608247422680412,
+  "classification": "POSTHOC_EXPLORATORY_DIRECT_GERMANIC_GRAPHEME_SCREEN_NOT_K4_DECRYPTION",
+  "limitations": [
+    "These are convenience spellings, not independently evidenced real K4 rules.",
+    "The 2,000 draws share only 20 source sentences and are not independent.",
+    "The screen measures letter-frequency effects without an encryption layer.",
+    "It cannot reject layered phonetic masking and is not a formal K4 p-value."
+  ],
+  "rules": [
+    [
+      "TH",
+      "D"
+    ],
+    [
+      "W",
+      "V"
+    ],
+    [
+      "SH",
+      "SJ"
+    ],
+    [
+      "CH",
+      "TSJ"
+    ],
+    [
+      "OO",
+      "OE"
+    ],
+    [
+      "EA",
+      "EE"
+    ],
+    [
+      "PH",
+      "F"
+    ],
+    [
+      "QU",
+      "KW"
+    ],
+    [
+      "CK",
+      "K"
+    ],
+    [
+      "Y",
+      "IJ"
+    ]
+  ],
+  "seed": 600061,
+  "toy_phonetic_IC_5pct_95pct": [
+    0.06421821305841924,
+    0.08655498281786941
+  ],
+  "toy_phonetic_IC_leq_K4": 0,
+  "toy_phonetic_IC_median": 0.07152061855670103,
+  "toy_phonetic_IC_min": 0.060352233676975946,
+  "toy_phonetic_samples": 2000
+}
