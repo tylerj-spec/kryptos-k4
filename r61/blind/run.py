@@ -8,7 +8,8 @@ For each ciphertext:
            (beam 100000, TOPN 2000, LAMBDA 1, POLISH_M 3, POLISH_WORDS 20000);
   answer   the best stage-2 total (route, convention, plaintext and key in plaintext order).
 Usage: python3 -I r61/blind/run.py IN.tsv OUTDIR LM.bin SOLVER [PROCS=4] [B1=30000] [TOP_ROUTES=2]
-Writes OUTDIR/RESULTS.jsonl, OUTDIR/work/, OUTDIR/FROZEN.sha256. Refuses to overwrite."""
+Writes OUTDIR/RESULTS.jsonl, OUTDIR/work/, OUTDIR/FROZEN.sha256. Refuses to overwrite RESULTS.jsonl. Finished
+ciphertexts are cached in work/ (id + ciphertext checked), so an interrupted run resumes where it stopped."""
 import hashlib
 import json
 import subprocess
@@ -57,6 +58,11 @@ def one(args):
     rid, ct, work, solver, lm, b1, top = args
     routes = load_routes()
     safe = rid.replace("/", "_")
+    done = work / f"{safe}.result.json"
+    if done.exists():   # resume after an interrupted run (the solver is deterministic, so this changes nothing)
+        r = json.loads(done.read_text())
+        if r.get("id") == rid and r.get("ct") == ct:
+            return rid, r["result"]
     s1 = work / f"{safe}.s1.tsv"
     s1.write_text("".join(f"{rid}__{i}\t{unroute(ct, p)}\n" for i, (_, p) in enumerate(routes)))
     r1 = solve(solver, lm, s1, work / f"{safe}.s1.jsonl", [str(b1), "2000", "1", CONVS, "0", "20000"], work / f"{safe}.s1.log")
@@ -71,7 +77,9 @@ def one(args):
         i = int(r["id"].rsplit("__", 1)[1])
         st2.append({"route": routes[i][0], **r["best"]})
     st2.sort(key=lambda d: -d["total"])
-    return rid, {"id": rid, "best": st2[0], "stage2": st2, "stage1": [{k: v for k, v in d.items() if k != "idx"} for d in st1]}
+    result = {"id": rid, "best": st2[0], "stage2": st2, "stage1": [{k: v for k, v in d.items() if k != "idx"} for d in st1]}
+    done.write_text(json.dumps({"id": rid, "ct": ct, "result": result}))
+    return rid, result
 
 
 def main():
