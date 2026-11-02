@@ -1,0 +1,62 @@
+{
+  "all_forward_witnesses_valid": true,
+  "classification": "R58_POST_REMOTE_FREEZE_HIDDEN_FAMILY_AND_KEY_EVALUATION",
+  "counts": {
+    "HILL": {
+      "abstentions": 20,
+      "confident_false_positive": 0,
+      "correct_family": 0,
+      "exact_full_text_and_family": 0,
+      "exact_settings_and_text": 0,
+      "n": 20
+    },
+    "SHUFFLE": {
+      "abstentions": 20,
+      "confident_false_positive": 0,
+      "correct_family": 0,
+      "exact_full_text_and_family": 0,
+      "exact_settings_and_text": 0,
+      "n": 20
+    },
+    "T": {
+      "abstentions": 2,
+      "confident_false_positive": 0,
+      "correct_family": 18,
+      "exact_full_text_and_family": 18,
+      "exact_settings_and_text": 18,
+      "n": 20
+    },
+    "TV": {
+      "abstentions": 3,
+      "confident_false_positive": 0,
+      "correct_family": 17,
+      "exact_full_text_and_family": 17,
+      "exact_settings_and_text": 17,
+      "n": 20
+    },
+    "V": {
+      "abstentions": 0,
+      "confident_false_positive": 0,
+      "correct_family": 20,
+      "exact_full_text_and_family": 20,
+      "exact_settings_and_text": 20,
+      "n": 20
+    },
+    "VT": {
+      "abstentions": 0,
+      "confident_false_positive": 0,
+      "correct_family": 20,
+      "exact_full_text_and_family": 20,
+      "exact_settings_and_text": 20,
+      "n": 20
+    }
+  },
+  "frozen_output_sha256": "bac0d282256df71aefb71f69ddcae61e0a0526d60c1dc4bdb1e7be476220994a",
+  "gate_passed": true,
+  "required_max_false_positives_per_other_family": 1,
+  "required_min_exact_per_known_family": 16,
+  "status": "PASSED",
+  "total_cases": 120,
+  "verified_forward_witnesses": 960,
+  "warning": "Closed-world controlled models; matching ciphertext with an arbitrary fitted key is not K4 recovery."
+}

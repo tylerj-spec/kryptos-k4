@@ -1,0 +1,125 @@
+name: R60 hidden-meaning codebook semantics versus ciphertext recovery
+# Original one-time blinded CI already completed at run 41324255974.
+# All raw outputs and true keys are now published; rerunning would not be blind.
+# Reproduction is manual and must not overwrite immutable frozen controls.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r60-semantic-hidden-controls-remote-freeze
+  cancel-in-progress: false
+
+jobs:
+  blind-full-covertext-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Validate strict ciphertext-only source firewall and independent semantic codebook fixtures
+        run: |
+          python3 -I r60/tests/test_contract.py
+          python3 -I r58/tests/test_contract.py
+
+      - name: Create fresh 40-case opaque hidden-family+key+meaning fixtures OUTSIDE blind container
+        run: |
+          mkdir -p "$RUNNER_TEMP/r60/input" "$RUNNER_TEMP/r60/output" \
+            "$RUNNER_TEMP/r60/sealed" "$RUNNER_TEMP/r60/tool" "$RUNNER_TEMP/r60/model"
+          python3 -I r60/sealed/prepare.py k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r60/input/controls.tsv" "$RUNNER_TEMP/r60/sealed/TRUTH.json"
+          cp r58/blind/solve.py "$RUNNER_TEMP/r60/tool/solve.py"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r60/model/words.tsv"
+          cp k4kit/data/quad_log10.f32 "$RUNNER_TEMP/r60/model/quad.f32"
+          chmod 0555 "$RUNNER_TEMP/r60/input" "$RUNNER_TEMP/r60/tool" "$RUNNER_TEMP/r60/model"
+          chmod 0777 "$RUNNER_TEMP/r60/output"
+
+      - name: Run UNCHANGED R58 ciphertext-only 4-family process identifier on 40 mixed codebook/null ciphertexts
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --memory 1g --pids-limit 64 \
+            -v "$RUNNER_TEMP/r60/input:/input:ro" \
+            -v "$RUNNER_TEMP/r60/output:/output:rw" \
+            -v "$RUNNER_TEMP/r60/tool:/tool:ro" \
+            -v "$RUNNER_TEMP/r60/model:/model:ro" \
+            python:3.12-slim \
+            python -I -B /tool/solve.py /input/controls.tsv \
+              /model/words.tsv /model/quad.f32 /output/RAW.jsonl
+          test "$(wc -l < "$RUNNER_TEMP/r60/output/RAW.jsonl")" -eq 40
+
+      - name: Freeze all 320 full blind outputs to REMOTE Git before any codebook or key truth reveal
+        run: |
+          mkdir -p r60/frozen
+          test ! -f r60/frozen/RAW_RESULTS.jsonl
+          python3 -I r60/sealed/freeze.py \
+            "$RUNNER_TEMP/r60/input/controls.tsv" \
+            "$RUNNER_TEMP/r60/output/RAW.jsonl" \
+            r58/blind/solve.py k4kit/data/word_model_orth.tsv \
+            k4kit/data/quad_log10.f32 r60/PREREGISTRATION.md \
+            r60/sealed/prepare.py "$RUNNER_TEMP/r60/MANIFEST.json"
+          cp "$RUNNER_TEMP/r60/input/controls.tsv" r60/frozen/INPUT.tsv
+          cp "$RUNNER_TEMP/r60/output/RAW.jsonl" r60/frozen/RAW_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r60/MANIFEST.json" r60/frozen/MANIFEST.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r60/frozen/INPUT.tsv r60/frozen/RAW_RESULTS.jsonl r60/frozen/MANIFEST.json
+          git commit -m "R60 freeze 40x8 full cipher outputs before private meaning+key control reveal [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r60-codeword-semantic-ablation
+          echo "R60 remote SHA-frozen, no codebook meanings or true keys read by solver"
+
+  separate-postfreeze-semantic-and-IC-evaluation:
+    needs: blind-full-covertext-freeze
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r60-codeword-semantic-ablation
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Verify frozen 40x8 raw outputs already committed in Git before truth access
+        run: |
+          git ls-tree -r --name-only HEAD r60/frozen/RAW_RESULTS.jsonl | grep -q RAW_RESULTS
+          git ls-tree -r --name-only HEAD r60/frozen/MANIFEST.json | grep -q MANIFEST
+
+      - name: Recreate hidden source covers and meaning maps SEPARATELY and compare identical ciphertext input
+        run: |
+          mkdir -p "$RUNNER_TEMP/r60/sealed"
+          python3 -I r60/sealed/prepare.py k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r60/sealed/DUPLICATE.tsv" "$RUNNER_TEMP/r60/sealed/TRUTH.json"
+          cmp "$RUNNER_TEMP/r60/sealed/DUPLICATE.tsv" r60/frozen/INPUT.tsv
+
+      - name: Independent all 320 forward ciphertext witnesses and 40 paired distinct meaning checks
+        run: |
+          set +e
+          python3 -I r60/sealed/verify_frozen.py \
+            r60/frozen/INPUT.tsv r60/frozen/RAW_RESULTS.jsonl r60/frozen/MANIFEST.json \
+            r58/blind/solve.py k4kit/data/word_model_orth.tsv \
+            k4kit/data/quad_log10.f32 r60/PREREGISTRATION.md \
+            r60/sealed/prepare.py "$RUNNER_TEMP/r60/sealed/TRUTH.json" \
+            "$RUNNER_TEMP/r60/sealed/EVALUATION.json"
+          result=$?
+          set -e
+          test -f "$RUNNER_TEMP/r60/sealed/EVALUATION.json"
+          cp "$RUNNER_TEMP/r60/sealed/EVALUATION.json" r60/frozen/EVALUATION.json
+          echo "$result" > "$RUNNER_TEMP/r60/sealed/EXIT_CODE.txt"
+
+      - name: Independent preregistered 300k-sample ordinary-English monogram IC check, original K4 only
+        run: |
+          python3 -I r60/statistics/english_ic.py \
+            r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r60/sealed/IC_DIAGNOSTIC.json"
+          cp "$RUNNER_TEMP/r60/sealed/IC_DIAGNOSTIC.json" r60/frozen/IC_DIAGNOSTIC.json
+
+      - name: Preserve independent outcome and raw monogram statistics regardless of a research gate failure
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r60/frozen/EVALUATION.json r60/frozen/IC_DIAGNOSTIC.json
+          git commit -m "R60 separately evaluate hidden ciphertext covertexts, private meaning ambiguity and original K4 IC after remote freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r60-codeword-semantic-ablation
+          exit "$(cat "$RUNNER_TEMP/r60/sealed/EXIT_CODE.txt")"
