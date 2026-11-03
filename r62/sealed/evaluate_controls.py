@@ -24,7 +24,7 @@ def fwd(plain,key,name):
     return "".join(seq)
 
 def main():
-    if len(sys.argv)!=12:
+    if len(sys.argv)!=13:
         raise SystemExit("evaluate_controls.py INPUT RESULTS MANIFEST TRUTH PROVENANCE SOLVER LM WORDS RUNNER PROTOCOL MODERN OUT")
     _,inp,raw,manifest,truth_path,provenance,solver,lm,words,runner,protocol,modern,out=sys.argv
     assert not Path(out).exists()
