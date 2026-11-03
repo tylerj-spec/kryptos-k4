@@ -32,3 +32,6 @@ Source grounding: [Ed Scheidt, WIRED (2005)](https://www.wired.com/2005/01/insid
 
 ## Reporting
 Create review PR targeting main; update canonical `LEDGER.md` only with completed, reproducible evidence in L151, never overwrite L149/L150. Report exactly which jobs/commits succeeded; no fabricated completion. No merges, no external Kryptos checker, no plaintext/key fitting to K4. K5 issue #35 stays blocked until first-party authenticated 97-character ciphertext is publicly released; a planned release is not a release.
+
+## Amendment A (before any R62 control generation)
+The displayed labels `CTRL_000..039` and `NULL_000..039` suggested above risk revealing the class. **Replace all blind visible labels with `CASE_000..079`**, assigned only AFTER the plants and nulls are mixed using `random.Random(620624)`. The postfreeze sealed truth retains role (`plant`/`shuffle`), originating cohort, true key, convention, source index, and null partner. This is exclusively a blinding improvement: sample counts, texts, models, source hashes, seeds, thresholds and all other rules are unchanged. The blind solver receives exactly `id<TAB>ciphertext` and cannot determine case type from ID. No ciphertexts have been generated or scored yet.
