@@ -1,0 +1,81 @@
+{
+  "classification": "R62_READ_ONLY_INDEPENDENT_OUTPUT_REENCRYPT_AND_RECOUNT",
+  "no_new_k4_candidates": true,
+  "canonical_main_ref": "a0d87b893b4b3272d789fc29be6a6ec619360dc5",
+  "datasets": {
+    "r59holdplants": {
+      "records": 20,
+      "full_forward_witnesses": 260,
+      "all_valid": true
+    },
+    "r59holdnull": {
+      "records": 20,
+      "full_forward_witnesses": 260,
+      "all_valid": true
+    },
+    "r59k4": {
+      "records": 101,
+      "full_forward_witnesses": 1313,
+      "all_valid": true
+    },
+    "r61hold": {
+      "records": 40,
+      "full_forward_witnesses": 120,
+      "all_valid": true
+    },
+    "r61k4": {
+      "records": 101,
+      "full_forward_witnesses": 303,
+      "all_valid": true
+    }
+  },
+  "invalid": [],
+  "reveal": {
+    "r59_gate": {
+      "plant_count": 20,
+      "max_null_total": -309.2514,
+      "detected": 16,
+      "conventions_identified": 20,
+      "pair_correct_ge60": 18,
+      "median_pair_correct": 72,
+      "route_correct": null
+    },
+    "r61_gate": {
+      "plant_count": 20,
+      "max_null_total": -308.7952,
+      "detected": 18,
+      "conventions_identified": 19,
+      "pair_correct_ge60": 11,
+      "median_pair_correct": 64,
+      "route_correct": 15
+    },
+    "r59_k4": {
+      "best_score": -325.9061,
+      "nulls_ge": 46,
+      "plus1_tail": 0.46534653465346537,
+      "frozen_clue_hits_best": [
+        3,
+        0
+      ]
+    },
+    "r61_k4": {
+      "best_score": -310.012,
+      "nulls_ge": 5,
+      "plus1_tail": 0.0594059405940594,
+      "frozen_clue_hits_best": [
+        2,
+        0
+      ],
+      "first_route": "COL_LT",
+      "stage1_gap": 21.213099999999997,
+      "old_null_stage1_gaps_ge_k4": 0,
+      "old_null_stage1_gap_max": 19.95150000000001
+    }
+  },
+  "matches_published_aggregate_reports": true,
+  "report_mismatches": [],
+  "limits": [
+    "Only text files and frozen outputs re-verified by this calculation; original language model and solver binary hashes require reconstruction, and no byte hash/commit-order claims are made by this calculation.",
+    "The only clue words/positions read are for AFTER-REMOTE-FREEZE check of already frozen R59/R61 K4 outputs; no new K4 candidate generated."
+  ]
+}
