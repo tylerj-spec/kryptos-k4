@@ -5,7 +5,7 @@ from pathlib import Path
 AZ=set("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 def h(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
-    if len(sys.argv)!=10:raise SystemExit("freeze_b.py INPUT RAW SOLVER LM WORDS RUNNER PROTOCOL GENERATOR MODERN OUT_MANIFEST")
+    if len(sys.argv)!=11:raise SystemExit("freeze_b.py INPUT RAW SOLVER LM WORDS RUNNER PROTOCOL GENERATOR MODERN OUT_MANIFEST")
     _,inp,out,solver,lm,words,runner,protocol,gen,modern,manifest=sys.argv
     assert not Path(manifest).exists()
     src=Path(inp).read_text(encoding="ascii").splitlines()
