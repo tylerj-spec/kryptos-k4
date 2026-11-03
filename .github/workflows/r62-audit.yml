@@ -1,4 +1,4 @@
-name: R62A independent R59/R61 history source-hash and forward-witness audit
+name: R62A independent R59 R61 audit - compiler-provenance qualification
 on:
   push:
     branches: ["chatgpt/r62-audit-checks-backup"]
@@ -46,7 +46,7 @@ jobs:
           g++ -O3 -std=c++17 r59/blind/rk_solve.cpp -o "$RUNNER_TEMP/r62audit/rk_solve"
           echo "R62 rebuilt model and solver SHA:"
           sha256sum "$RUNNER_TEMP/r62audit/lm6.v2.bin" "$RUNNER_TEMP/r62audit/rk_solve"
-      - name: Independent five complete freeze-manifest entry checks, six ancestry comparisons, and old witnesses
+      - name: Independently verify every frozen source/raw SHA and witness; explicitly report rebuilt historical binary mismatch
         shell: bash
         run: |
           set -euo pipefail
