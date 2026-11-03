@@ -1,0 +1,20 @@
+{
+  "cases": [
+    {
+      "id": "HOLD_00",
+      "identical_json_line_bytes": true,
+      "rebuilt_sha256": "de3251c2ea686c62fdd5a156c94c17b79ac45767963c1749378a457504fbe01f"
+    },
+    {
+      "id": "HOLD_07",
+      "identical_json_line_bytes": true,
+      "rebuilt_sha256": "b64388321d10d59e89a9cd1bef60a506b57aa4c25bb53604169912d4e48442ab"
+    },
+    {
+      "id": "HOLD_18",
+      "identical_json_line_bytes": true,
+      "rebuilt_sha256": "bc7079e9af6cdbb8828d74a54904a4286e291bb8b20ac4a8869a39298d6f491d"
+    }
+  ],
+  "all_identical": true
+}
