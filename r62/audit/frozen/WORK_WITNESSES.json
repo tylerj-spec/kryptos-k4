@@ -1,0 +1,62 @@
+{
+  "R59_DUPLICATE_RAW_LOG_SHARDS": [
+    {
+      "all_shard_json_identical_to_master": true,
+      "duplicate_raw_work_witnesses_verified": 260,
+      "original_rows": 20,
+      "prefix": "r59/holdout/plants_run",
+      "shard_logs_original_freeze_tree_count": 12
+    },
+    {
+      "all_shard_json_identical_to_master": true,
+      "duplicate_raw_work_witnesses_verified": 260,
+      "original_rows": 20,
+      "prefix": "r59/holdout/nulls_run",
+      "shard_logs_original_freeze_tree_count": 12
+    },
+    {
+      "all_shard_json_identical_to_master": true,
+      "duplicate_raw_work_witnesses_verified": 1313,
+      "original_rows": 101,
+      "prefix": "r59/k4/run",
+      "shard_logs_original_freeze_tree_count": 12
+    }
+  ],
+  "R61_HOLDOUT": {
+    "all_97_letter_input_routes_invert_exactly": true,
+    "all_original_case_ciphertexts_reencrypt_exactly": true,
+    "cases": 40,
+    "full_stage1_records": 400,
+    "full_stage2_records": 80,
+    "independent_full_forward_witnesses": 6240,
+    "old_freeze_tree_contains_all_work_files": true,
+    "old_freeze_work_files_count": 280,
+    "old_work_dir": "r61/holdout/run/work",
+    "original_results_exact": 40
+  },
+  "R61_K4_AND_100_NULLS": {
+    "all_97_letter_input_routes_invert_exactly": true,
+    "all_original_case_ciphertexts_reencrypt_exactly": true,
+    "cases": 101,
+    "full_stage1_records": 1010,
+    "full_stage2_records": 202,
+    "independent_full_forward_witnesses": 15756,
+    "old_freeze_tree_contains_all_work_files": true,
+    "old_freeze_work_files_count": 707,
+    "old_work_dir": "r61/k4/run/work",
+    "original_results_exact": 101
+  },
+  "all_frozen_sources_present_in_historical_freeze_trees": true,
+  "classification": "R62_HISTORICAL_ALL_STAGE_WORK_FILES_INDEPENDENT_FORWARD_REENCRYPTION",
+  "independent_R59_duplicate_raw_shard_witnesses": 1833,
+  "independent_R61_complete_stage1_stage2_forward_witnesses": 21996,
+  "limits": [
+    "Same frozen outputs recur in multiple stage and summary files; witness counts are not unique candidate plaintexts",
+    "A valid re-encryption witness confirms arithmetic, not a K4 key or cipher-family recovery",
+    "K3 contains training text from Howard Carter and A. C. Mace's 1923 account",
+    "This expands prior 2115 summary-level witness audit to the complete intermediate work-file outputs"
+  ],
+  "original_K4_new_solver_run": false,
+  "published_K4_plaintext_read": false,
+  "status": "PASS"
+}

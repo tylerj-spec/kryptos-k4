@@ -1,0 +1,144 @@
+name: R62A independent R59 R61 audit - compiler-provenance qualification
+on:
+  push:
+    branches: ["chatgpt/r62-audit-checks-backup"]
+    paths:
+      - ".github/workflows/r62-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r62a-history-one-time
+  cancel-in-progress: false
+
+jobs:
+  historical-hashes-witnesses-and-three-replays:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Get byte-pinned R59 model training sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/r62araw" "$RUNNER_TEMP/r62anltk" "$RUNNER_TEMP/r62acorpus" "$RUNNER_TEMP/r62audit"
+          python3 -I r59/corpus/build_corpus.py fetch "$RUNNER_TEMP/r62araw"
+          for n in brown webtext inaugural state_union gutenberg; do
+            curl -fLSs --retry 3 --max-time 180 \
+              "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/$n.zip" \
+              -o "$RUNNER_TEMP/r62anltk/$n.zip"
+          done
+          python3 -I r59/corpus/build_corpus.py build \
+            "$RUNNER_TEMP/r62araw" "$RUNNER_TEMP/r62acorpus" "$RUNNER_TEMP/r62anltk"
+      - name: Rebuild R59 6-gram model and exact original solver
+        shell: bash
+        run: |
+          set -euo pipefail
+          g++ -O3 -std=c++17 r59/blind/lm_build.cpp -o "$RUNNER_TEMP/r62a_lm_build"
+          "$RUNNER_TEMP/r62a_lm_build" \
+            "$RUNNER_TEMP/r62acorpus/train.txt" "$RUNNER_TEMP/r62audit/lm6.v2.bin" 6
+          expected="$(awk 'NR==1{print $1}' r59/blind/LM_SHA256)"
+          actual="$(sha256sum "$RUNNER_TEMP/r62audit/lm6.v2.bin" | awk '{print $1}')"
+          test "$actual" = "$expected"
+          g++ -O3 -std=c++17 r59/blind/rk_solve.cpp -o "$RUNNER_TEMP/r62audit/rk_solve"
+          echo "R62 rebuilt model and solver SHA:"
+          sha256sum "$RUNNER_TEMP/r62audit/lm6.v2.bin" "$RUNNER_TEMP/r62audit/rk_solve"
+      - name: Independently verify every frozen source/raw SHA and witness; explicitly report rebuilt historical binary mismatch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62/audit/verify_old.py \
+             "$RUNNER_TEMP/r62audit/lm6.v2.bin" "$RUNNER_TEMP/r62audit/rk_solve" \
+             "$RUNNER_TEMP/r62audit/OLD_AUDIT.json"
+      - name: Replay exactly three frozen unknown-key holdout plants using frozen R59 parameters (no K4 rerun)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - "$RUNNER_TEMP/r62audit/THREE.tsv" <<'PY'
+          import sys
+          from pathlib import Path
+          wanted={"HOLD_00","HOLD_07","HOLD_18"}
+          lines=Path("r59/holdout/blind.tsv").read_text().splitlines()
+          rows=[l for l in lines if l.split("\t")[0] in wanted]
+          assert len(rows)==3
+          Path(sys.argv[1]).write_text("id\tciphertext\n"+"\n".join(rows)+"\n")
+          PY
+          "$RUNNER_TEMP/r62audit/rk_solve" "$RUNNER_TEMP/r62audit/lm6.v2.bin" \
+            k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r62audit/THREE.tsv" \
+            "$RUNNER_TEMP/r62audit/THREE_RESULTS.jsonl" \
+            100000 2000 1 AZ_VIG,AZ_BEAU,KRY_VIG,KRY_BEAU 3 20000
+          python3 - "$RUNNER_TEMP/r62audit/THREE_RESULTS.jsonl" \
+                      "$RUNNER_TEMP/r62audit/REPLAY.json" <<'PY'
+          import hashlib,json,sys
+          from pathlib import Path
+          old={}
+          for line in Path("r59/holdout/plants_run/RESULTS.jsonl").read_text().splitlines():
+            j=json.loads(line);old[j["id"]]=line
+          current=Path(sys.argv[1]).read_text().splitlines()
+          assert len(current)==3
+          details=[]
+          for line in current:
+            j=json.loads(line);name=j["id"]
+            matched=line==old[name]
+            details.append({"id":name,"identical_json_line_bytes":matched,
+                            "rebuilt_sha256":hashlib.sha256(line.encode()).hexdigest()})
+          Path(sys.argv[2]).write_text(json.dumps({"cases":details,"all_identical":all(x["identical_json_line_bytes"] for x in details)},indent=2)+"\n")
+          print("Three original holdout replays",details)
+          if not all(x["identical_json_line_bytes"] for x in details):
+            raise SystemExit(2)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r62a-verified-source-audit-and-holdout-replay
+          path: |
+            /home/runner/work/_temp/r62audit/OLD_AUDIT.json
+            /home/runner/work/_temp/r62audit/REPLAY.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Copy verified pre-reveal report into a small safe tracked artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p r62/audit/frozen
+          cp "$RUNNER_TEMP/r62audit/OLD_AUDIT.json" r62/audit/frozen/OLD_AUDIT.json
+          cp "$RUNNER_TEMP/r62audit/REPLAY.json" r62/audit/frozen/REPLAY.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62/audit/frozen/OLD_AUDIT.json r62/audit/frozen/REPLAY.json
+          git commit -m "R62A independently verify five historical freeze chains, witness integrity and 3 replay controls [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62-audit-checks-backup
+
+  old-K4-clue-check-only-after-prior-remote-source-verification:
+    needs: historical-hashes-witnesses-and-three-replays
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r62-audit-checks-backup
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Require immutable historic raw outputs and new prior audit committed remotely before reading letters
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f r62/audit/frozen/OLD_AUDIT.json
+          test -f r62/audit/frozen/REPLAY.json
+          git ls-tree -r --name-only HEAD r62/audit/frozen/OLD_AUDIT.json | grep -q OLD_AUDIT
+          git ls-tree -r --name-only HEAD r59/k4/run/RESULTS.jsonl | grep -q RESULTS
+          git ls-tree -r --name-only HEAD r61/k4/run/RESULTS.jsonl | grep -q RESULTS
+      - name: Recompute only the OLD already frozen K4 24-letter matches, null ranks and COL_LT gap
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62/audit/afterfreeze_old.py \
+            r62/audit/frozen/OLD_AUDIT.json \
+            r62/audit/frozen/AFTER_REVEAL_OLD.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62/audit/frozen/AFTER_REVEAL_OLD.json
+          git commit -m "R62A old R59/R61 K4 postfreeze-only independent null ranks and public-letter rejection [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62-audit-checks-backup

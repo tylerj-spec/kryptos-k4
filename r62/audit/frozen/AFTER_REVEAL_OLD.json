@@ -1,0 +1,72 @@
+{
+  "R59": {
+    "K4_best_public_hits": [
+      3,
+      0
+    ],
+    "K4_score": -325.9061,
+    "empirical_plus_one_rank": 0.46534653465346537,
+    "null_max": -310.0826,
+    "null_median": -326.516,
+    "nulls_at_or_above": 46,
+    "old_report_reproduced": true,
+    "top8_public_hits": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "R61": {
+    "K4_best_public_hits": [
+      2,
+      0
+    ],
+    "K4_score": -310.012,
+    "empirical_plus_one_rank": 0.0594059405940594,
+    "null_max": -301.0067,
+    "null_median": -318.19285,
+    "nulls_at_or_above": 5,
+    "old_report_reproduced": true,
+    "stage1_null_gap_max": 19.95150000000001,
+    "stage1_null_gap_median": 4.064999999999998,
+    "stage1_null_gaps_at_or_above_original": 0,
+    "stage1_route_gap": 21.213099999999997
+  },
+  "classification": "R62_AFTER_HISTORICAL_REMOTE_FREEZE_ONLY_NO_SOLVER_REUSE",
+  "interpretation": "K4 output fixed before published-letter comparison. 21.2131 stage-one gap was posthoc selected, cannot be assigned 1/101 significance without new look-elsewhere calibration.",
+  "limitations": [
+    "No new K4 run",
+    "No original K4 key or method recovered",
+    "Separate frozen R59 and R61 old outputs only",
+    "Retrospective stage-1 gap statistic is posthoc and uncorrected"
+  ]
+}

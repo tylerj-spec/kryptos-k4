@@ -1,0 +1,21 @@
+{
+  "K3_fraction_covered": 0.8660714285714286,
+  "K3_positions_in_criterion": 291,
+  "K3_unduplicated_letters": 336,
+  "carter_clean_letters_compared_end_exclusive": 143000,
+  "carter_clean_letters_compared_start": 137000,
+  "classification": "R62_K3_PRETRAINED_CORPUS_OVERLAP_NOT_K4_DECRYPTION",
+  "confounding": "Carter & Mace 1923 is in R59 6-gram training corpus; K3-derived controls are not clean unseen writing; even K3's imperfect transcription has extensive verbatim 12+grams",
+  "criterion": "K3 character position belongs to >=1 exact contiguous >=12-character Carter-source match",
+  "first_k3_end_exclusive": 769,
+  "first_k3_start_in_k1k3_file": 433,
+  "limitations": "This only measures one 6000-letter Carter region and first unduplicated K3. It does not assert that all of K3 or any of K4 is in the corpus.",
+  "longest_exact_Carter_training_match": {
+    "carter_az_start": 138816,
+    "fragment": "THEREMAINSOFPASSAGEDEBRISTHATENCUMBEREDTHELOWERPARTOFTHEDOORWAYW",
+    "k3_start": 22,
+    "length": 64
+  },
+  "source_Carter_sha256": "6761a5075869325f708e1d81f8bd0efeeab5aaaad43206e1551ed53243f13ee0",
+  "source_K1K3_sha256": "bb6b5b03500084ccd45bd93ab7a63ab986026e83e6a84aa2b93cb8824d3281b5"
+}
