@@ -1,0 +1,246 @@
+[
+ {
+  "tag": "K4_PI",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -615.2810674,
+  "top_plaintext": "TAUTMUMOWETMEOULDWRIMJRMHESSKCUYNCVROCFOSWRWUPOUBCSWESATHSTXHMELLYXMBPUTOJULYEHYBADLIINVTBXWITUPC",
+  "kind": "K4",
+  "clue_matches_max": 3,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   2,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ]
+ },
+ {
+  "tag": "K4_E",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -616.3050632,
+  "top_plaintext": "XCERMHJKETILVAZRZUEGRONARRIOIMFFLDYTSPSTHARSSATDRDTEXLSCQWARCLYAZEWCURVYVWYDARLBOSGRLPESISWAUIPCP",
+  "kind": "K4",
+  "clue_matches_max": 5,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   2,
+   1,
+   1,
+   3,
+   0,
+   1,
+   1,
+   4,
+   1
+  ]
+ },
+ {
+  "tag": "K4_SQRT2",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -620.1993525,
+  "top_plaintext": "NATAHMJEINLYKAAUFGITRTVUNSMRWSINDRILURYLFITNRANQUCWSDJZTATTHOUENNRAYETBEFZMOHEBDSCLEVUIROOTTPGFPN",
+  "kind": "K4",
+  "clue_matches_max": 4,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   2,
+   2,
+   0,
+   0,
+   0,
+   1,
+   3,
+   0,
+   3,
+   2
+  ]
+ },
+ {
+  "tag": "K4_PHI",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -627.245779,
+  "top_plaintext": "FYAZWENORAETDVNACOWYNOUPBEFLAKMSHEZMAGYMWAKUEPAEGIUARETHEMZVONUPGOGEWRUYFEGMXIEOKNTNTMKSDEXTOLZCW",
+  "kind": "K4",
+  "clue_matches_max": 6,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   0,
+   3,
+   1,
+   0,
+   1,
+   2,
+   2,
+   3
+  ]
+ },
+ {
+  "tag": "K4_K2COORD",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -649.5806906,
+  "top_plaintext": "DSLFALVEORATKMGEENRMITONAUZZKCLIEFYKOKUGUPXXIXVIXHOFATEHAYWSYVQRFMFRCHEWFRQNOBSETETFLBTZWVTVEZAKM",
+  "kind": "K4",
+  "clue_matches_max": 0,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ {
+  "tag": "K4_DATE19901103",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -667.1099966,
+  "top_plaintext": "WACAYDJYNKKENSTTOKYDCANXRMBIVOCOHLTJOMVDIESGHBGGLQNOPKHCPDICNFIKDVANDDRXAMILNDCCDIZXEGMAERNOWESQR",
+  "kind": "K4",
+  "clue_matches_max": 0,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ {
+  "tag": "K4_DATE19891109",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -667.5622671,
+  "top_plaintext": "FODLIDPIXPXTGCJELEYKFORYGRJGSJRPFLZPKGRMLOWRAKZOLSCSENNBHIKOWYUQAEDWEHELEYTAYVOLUNYNKEKLMQRNDHWKZ",
+  "kind": "K4",
+  "clue_matches_max": 0,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ {
+  "tag": "K4_DATE1986",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -648.3525107,
+  "top_plaintext": "KGHCJQVCOVZOOLSCOHGEWERECEUSDXGKWCNIIRDVPEMINYFYKNOLFTCANPDTHKNDBVUAQKUDAUTTERINEKLIILGEBUBLIMPZJ",
+  "kind": "K4",
+  "clue_matches_max": 1,
+  "rows_with_all_24": 0,
+  "clue_matches_top10": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "tag": "PLANT_PI",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -389.6166482,
+  "top_plaintext": "AFTERTHERAINSWEHEADEDEASTNORTHEASTANDCROSSTHEBROADSQUARENEARTHEBERLINCLOCKANDKEEPTHATMAPOUTOFVIEW",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R24x7/CW/fwd",
+   "order": "T_then_S",
+   "key": "fwd/AZ/off3169",
+   "PA": "AZ",
+   "CA": "KRY",
+   "OP": "VIG"
+  }
+ },
+ {
+  "tag": "PLANT_E",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -376.8014927,
+  "top_plaintext": "AFTERTHERAINSWEHEADEDEASTNORTHEASTANDSEARCHTHEWIDESQUARENEARTHEBERLINCLOCKWITHOUTSPEAKINGTOANYONE",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R25x8/CCW/fwd",
+   "order": "S_then_T",
+   "key": "rev/AZ/off8075",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANT_SQRT2",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -380.73839,
+  "top_plaintext": "ALONGTHEWALLWEMARCHEDEASTNORTHEASTANDCROSSTHEBROADSQUARENEARTHEBERLINCLOCKAFTERTHEMINUTEHANDSTOPS",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "ID",
+   "order": "ID",
+   "key": "fwd/KRY/off2951",
+   "PA": "AZ",
+   "CA": "AZ",
+   "OP": "BEAU"
+  }
+ },
+ {
+  "tag": "PLANT_PHI",
+  "rows": 100,
+  "forward_check": "every row re-encrypts to its ciphertext",
+  "top_score": -390.7860315,
+  "top_plaintext": "ALONGTHEWALLWEMARCHEDEASTNORTHEASTTOFINDTHEBRASSMARKERBESIDETHEBERLINCLOCKWHILETHESHADOWGROWSLONG",
+  "kind": "PLANT",
+  "truth_rank": 1,
+  "planted_setting": {
+   "route": "R24x7/CW/inv",
+   "order": "S_then_T",
+   "key": "rev/KRY/off1945",
+   "PA": "KRY",
+   "CA": "KRY",
+   "OP": "VARB"
+  }
+ }
+]
