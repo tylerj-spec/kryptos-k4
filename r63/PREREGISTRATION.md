@@ -91,3 +91,22 @@ Written before any holdout or plant is generated and before any K4 run. Follows 
   - **Any 24/24 setting** is listed raw and checked for English.
 - **Overlap:** periodic keys such as repeated coordinates and dates were already excluded in place (L03, L04) and with
   these routes (L47). They are re-run here only for completeness.
+
+## Amendment 1 (3 Nov 2026; after the R62 review comment on PR #40, BEFORE the (A)/(B) holdout gate and BEFORE any (A)/(B) K4 run)
+- **Reclassification, prompted by the R62 review.** `r53/BLIND_RULES.md` requires key sources that are independent of
+  the known K4 plaintext. That excludes choosing keys or methods **because of** the published clues, not only feeding
+  the letters to a program.
+  - **(A) CLOCK** was chosen because Sanborn tied the published BERLINCLOCK clue to the Weltzeituhr.
+  - **(B) GERMAN** was partly motivated by "Berlin".
+  - Both are therefore **EXPLORATORY / SOURCE-DERIVED**, not R53-compliant blind key selection.
+- **What stays the same for (A)/(B):**
+  - the holdout gate still runs, as a **solver-capability benchmark**; it uses no K4 data;
+  - **no K4 run** for (A)/(B) will be described as candidate generation;
+  - whether to run K4 under (A)/(B) at all, as a clearly labelled exploratory check, is **Tyler's decision**;
+  - if run, the published letters can only reject outputs, never select variants;
+  - results will not be pooled with compliant blind tests.
+- **(C) numeric keys, already frozen and revealed (all EXCL, so no selection could occur):**
+  - π, e, √2, φ, the K2 coordinates (a K2 fact) and 19901103 (the dedication date) are independent of the K4 clues;
+  - **19891109** (Berlin Wall) and **1986** (Egypt trip) come from Sanborn's 2025 statements about K4, so they are
+    labelled **SOURCE-DERIVED** in the result.
+- Nothing else changes. `PROTOCOL.sha256` was re-hashed for this amendment.
