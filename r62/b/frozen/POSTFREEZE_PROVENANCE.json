@@ -1,0 +1,25 @@
+{
+  "classification": "R62_SEALED_PREPARED_NEVER_MOUNTED",
+  "input_sha256": "3ebd9dc5bed5046c8ec87916f079f3bf1d61e0453d8c0ed445df8ed27b0a0625",
+  "k1k3_sha256": "bb6b5b03500084ccd45bd93ab7a63ab986026e83e6a84aa2b93cb8824d3281b5",
+  "key_strata": 40,
+  "modern": 20,
+  "modern_sha256": "4284cba3e89542bc524026cf1fd099287b5a3c1648cd6c2a7944b7313dc9692f",
+  "nulls": 40,
+  "oz_blob": "4d978dfeb6b30ead21f73beca1eb51d8cb9686cc",
+  "oz_commit": "d19a4315b7c6f4471de8840a1a81609b34841dff",
+  "oz_sha256": "18274f31ae11aea07ea9b4f707998636c6f75d784c60d7e8fea0b4d5c2d77af6",
+  "plants": 40,
+  "raw_cases": 80,
+  "sanborn": {
+    "K1_K2": 12,
+    "K3": 8
+  },
+  "seeds": [
+    620621,
+    620622,
+    620623,
+    620624
+  ],
+  "truth_sha256": "84c6bf1ead652739c057b2671d625c3fe19ac7871475d121f504d7309f6bc024"
+}
