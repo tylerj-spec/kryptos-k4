@@ -14,9 +14,11 @@ commit and record its URL before invoking this postfreeze check).
 import argparse
 import importlib.util
 import json
+import sys
 from pathlib import Path
 
-from verify_frozen import audit, parse_jsonl, MODES
+sys.path.insert(0, str(Path(__file__).resolve().parent))   # also works under python3 -I (no script dir on sys.path)
+from verify_frozen import audit, parse_jsonl, MODES  # noqa: E402
 
 
 def examine(frozen, hit_checker):
