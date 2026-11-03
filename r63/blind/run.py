@@ -7,16 +7,19 @@ Usage: python3 -I r63/blind/run.py IN.tsv OUTDIR ENGLISH_LM KEYDIR SOLVER [PROCS
   KEYDIR holds lm6_clock.bin, clock_words.tsv, lm6_de.bin, de_words.tsv (r63/corpus/build_keys.py + lm_build);
   every model file's sha256 must match r63/blind/MODELS.sha256 (English LM: r59/blind/LM_SHA256).
 Parameters fixed (R63 pre-registration): BEAM 50000, TOPN 2000, LAMBDA 1, all 6 conventions, POLISH_M 2, WORDS 20000.
-Finished shards are reused after an interruption (the solver is deterministic)."""
+Work is split into chunks of CHUNK ciphertexts per model; finished chunks are reused after an interruption
+(the solver is deterministic)."""
 import hashlib
 import json
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 WORDS_EN = ROOT / "k4kit/data/word_model_orth.tsv"
 PARAMS = ["50000", "2000", "1", "all", "2", "20000"]
+CHUNK = 3   # ciphertexts per solver call: small chunks make an interrupted run cheap to resume
 MODELS = {"CLOCK": ("lm6_clock.bin", "clock_words.tsv"), "GERMAN": ("lm6_de.bin", "de_words.tsv")}
 
 
@@ -46,25 +49,30 @@ def main():
     ids = [r.split("\t")[0] for r in rows]
     if len(set(ids)) != len(ids):
         raise SystemExit("duplicate ids")
-    shards = [rows[i::procs] for i in range(procs)]
+    chunks = [rows[i:i + CHUNK] for i in range(0, len(rows), CHUNK)]
     res = {i: {"id": i, "models": {}} for i in ids}
+    jobs = []
     for m, (lmf, wf) in MODELS.items():
-        ps, outs = [], []
-        for s, sh in enumerate(shards):
-            if not sh:
-                continue
-            tsv, js = work / f"{m}_{s}.tsv", work / f"{m}_{s}.jsonl"
-            tsv.write_text("\n".join(sh) + "\n")
-            outs.append(js)
-            have = [l for l in js.read_text().splitlines() if l.strip()] if js.exists() else []
-            if len(have) == len(sh):
-                continue   # finished shard from an interrupted run
-            ps.append(subprocess.Popen([str(solver), str(lm_en), str(WORDS_EN), str(keydir / lmf), str(keydir / wf),
-                                        str(tsv), str(js)] + PARAMS, stderr=open(work / f"{m}_{s}.log", "w")))
-        for p in ps:
-            if p.wait() != 0:
-                raise SystemExit(f"solver failed ({m}); see logs")
-        for js in outs:
+        for c, ch in enumerate(chunks):
+            tsv, js = work / f"{m}_{c:03d}.tsv", work / f"{m}_{c:03d}.jsonl"
+            tsv.write_text("\n".join(ch) + "\n")
+            jobs.append((m, lmf, wf, tsv, js, len(ch)))
+
+    def run(job):
+        m, lmf, wf, tsv, js, n = job
+        have = [l for l in js.read_text().splitlines() if l.strip()] if js.exists() else []
+        if len(have) == n:
+            return js   # finished chunk from an interrupted run (the solver is deterministic)
+        with open(js.with_suffix(".log"), "w") as lg:
+            r = subprocess.run([str(solver), str(lm_en), str(WORDS_EN), str(keydir / lmf), str(keydir / wf),
+                                str(tsv), str(js)] + PARAMS, stderr=lg)
+        if r.returncode != 0:
+            raise RuntimeError(f"solver failed: {js}")
+        return js
+
+    with ThreadPoolExecutor(procs) as ex:
+        for js in ex.map(run, jobs):
+            m = js.name.split("_")[0]
             for line in js.read_text().splitlines():
                 if line.strip():
                     r = json.loads(line)
