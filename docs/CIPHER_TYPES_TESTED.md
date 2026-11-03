@@ -158,7 +158,11 @@ chance.** The most important open items are in §17.
     - **R61** (L150) added K3's 24×8 rotations and the R58 engraving routes **after** the substitution. Gate passed
       (18/20 detected, 15/20 route identified). K4: 5/100 shuffled copies score as high, 2/24 letters. **STAT, no
       signal** (about 65% power).
-    - **Still open:** transposition before substitution, other routes, other alphabets, non-English keys.
+    - **R63** (L152) tested **non-English keys** with English plaintext: World Clock city-name sequences and German
+      prose (gate 20/20 detected; K4 81/100 and 27/100 nulls as high: **no signal**), and π, e, √2, φ, the K2
+      coordinates and dates as number keys (**EXCL**, 0 of 92.9M settings).
+    - **Still open:** transposition before substitution, other routes, other alphabets, clock or German keys combined
+      with a transposition.
 
 ## 7. Autokey (the message keys itself)
 - **Ciphertext autokey:** `k_i` comes from `c_{i−L}`.
