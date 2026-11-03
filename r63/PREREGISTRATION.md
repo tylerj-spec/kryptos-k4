@@ -110,3 +110,15 @@ Written before any holdout or plant is generated and before any K4 run. Follows 
   - **19891109** (Berlin Wall) and **1986** (Egypt trip) come from Sanborn's 2025 statements about K4, so they are
     labelled **SOURCE-DERIVED** in the result.
 - Nothing else changes. `PROTOCOL.sha256` was re-hashed for this amendment.
+
+## Amendment 2 (3 Nov 2026; owner clarification, still BEFORE the (A)/(B) gate and any (A)/(B) K4 run)
+- **Owner clarification of R53.** Tyler, who set the rule, clarified it: *"Clue motivated ideas are fine. The issue I
+  had was that the known text was part of the algorithm instead of being a check. I only want the cypher text used for
+  the algorithm & then if we can produce solutions that depict the known characters in the right spots then we are on
+  to something."*
+- **What this means for R63:**
+  - Amendment 1's reclassification is **withdrawn**.
+  - (A) CLOCK, (B) GERMAN and all of (C) are ordinary R53-compliant blind tests. The algorithm reads only the ciphertext
+    and generic models; the published letters are used only as the after-freeze check.
+  - The K4 rule for (A)/(B) applies **as originally pre-registered**.
+- Nothing else changes. `PROTOCOL.sha256` was re-hashed.
