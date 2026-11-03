@@ -1,0 +1,124 @@
+{
+ "runs": [
+  {
+   "tag": "K4_PI",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_PI.txt"
+   ],
+   "label": "PI"
+  },
+  {
+   "tag": "K4_E",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_E.txt"
+   ],
+   "label": "E"
+  },
+  {
+   "tag": "K4_SQRT2",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_SQRT2.txt"
+   ],
+   "label": "SQRT2"
+  },
+  {
+   "tag": "K4_PHI",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_PHI.txt"
+   ],
+   "label": "PHI"
+  },
+  {
+   "tag": "K4_K2COORD",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_K2COORD.txt"
+   ],
+   "label": "K2COORD"
+  },
+  {
+   "tag": "K4_DATE19901103",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_DATE19901103.txt"
+   ],
+   "label": "DATE19901103"
+  },
+  {
+   "tag": "K4_DATE19891109",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_DATE19891109.txt"
+   ],
+   "label": "DATE19891109"
+  },
+  {
+   "tag": "K4_DATE1986",
+   "ct": "k4_ciphertext.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_DATE1986.txt"
+   ],
+   "label": "DATE1986"
+  },
+  {
+   "tag": "PLANT_PI",
+   "ct": "PLANT_PI_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_PI.txt"
+   ],
+   "label": "PI"
+  },
+  {
+   "tag": "PLANT_E",
+   "ct": "PLANT_E_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_E.txt"
+   ],
+   "label": "E"
+  },
+  {
+   "tag": "PLANT_SQRT2",
+   "ct": "PLANT_SQRT2_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_SQRT2.txt"
+   ],
+   "label": "SQRT2"
+  },
+  {
+   "tag": "PLANT_PHI",
+   "ct": "PLANT_PHI_ct.txt",
+   "routes": "routes.txt",
+   "key": [
+    "TEXT",
+    "key_PHI.txt"
+   ],
+   "label": "PHI"
+  }
+ ]
+}
