@@ -1,0 +1,62 @@
+name: R62A full intermediate work-file independent witness audit
+on:
+  push:
+    branches: ["chatgpt/r62-audit-checks-backup"]
+    paths:
+      - ".github/workflows/r62-audit-work.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r62-full-old-work-audit
+  cancel-in-progress: false
+jobs:
+  check-every-original-stage1-and-stage2-raw-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Require completed original historic source and freeze audit, no K4 clue or solve code
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f r62/audit/frozen/OLD_AUDIT.json
+          test -f r62/audit/frozen/AFTER_REVEAL_OLD.json
+          test ! -e r62/audit/frozen/WORK_WITNESSES.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          old=json.loads(Path("r62/audit/frozen/OLD_AUDIT.json").read_text())
+          assert old["all_historical_freeze_checks_pass"] and old["source_and_frozen_raw_byte_hashes_valid"]
+          assert old["all_original_forward_outputs_independently_valid"]
+          for word in ("EASTNORTHEAST","BERLINCLOCK","KNOWN_OFFSET"):
+              assert word not in Path("r62/audit/verify_work.py").read_text().upper()
+          print("R62A old frozen history passed, new full-work auditor source has no K4 clues")
+          PY
+      - name: Check all 21996 complete R61 stage1/2 witnesses plus all 1833 R59 shard duplicates in original frozen history
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62/audit/verify_work.py "$RUNNER_TEMP/R62_ALL_WORK_AUDIT.json"
+          python3 - "$RUNNER_TEMP/R62_ALL_WORK_AUDIT.json" <<'PY'
+          import json,sys
+          x=json.load(open(sys.argv[1]))
+          assert x["status"]=="PASS"
+          assert x["independent_R61_complete_stage1_stage2_forward_witnesses"]==21996
+          assert x["independent_R59_duplicate_raw_shard_witnesses"]==1833
+          assert x["all_frozen_sources_present_in_historical_freeze_trees"]
+          print("R62 R53 exact all-stage forward 23829 additional original historical witnesses PASS")
+          PY
+      - name: Preserve independent detailed R59 R61 original stage logs audit and immutable original freeze tree links
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp "$RUNNER_TEMP/R62_ALL_WORK_AUDIT.json" r62/audit/frozen/WORK_WITNESSES.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62/audit/frozen/WORK_WITNESSES.json
+          git commit -m "R62A audit 23829 additional original frozen candidate witnesses, 21996 R61 stage work and 1833 R59 raw shards [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62-audit-checks-backup
