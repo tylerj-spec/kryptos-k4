@@ -1,0 +1,43 @@
+{
+  "cached_chunks_verified": 68,
+  "familywise_bonferroni_upper_bound": 0.5544554455445545,
+  "full_length_forward_witnesses_passed": 202,
+  "interpretation_caveat": "Ranks require exchangeable shuffled nulls; familywise bound covers only two fixed models. No plaintext validation or correct-key claim.",
+  "kind": "R63 read-only postfreeze cryptographic and source audit",
+  "known_k4_plaintext_used": false,
+  "manifest": {
+    "entries_verified": 12,
+    "manifest_sha256": "4dce4d1b1176d9ea25dd3a3eed28f3c6d176506e34fd977a829d011a25bfdb0c",
+    "protocol_sha256": "47fdd1551086a6df32135832ce99fcbf40211de0ec1e7a5f347831d8d7e28bfe",
+    "raw_results_sha256": "1f4d56c2a4608895b90bf62b5a1f7aa91811b6f6e88d032d1fede6c742f8ae33"
+  },
+  "per_model_rank_only": {
+    "CLOCK": {
+      "k4_total": -396.461,
+      "nulls": 100,
+      "nulls_at_or_above": 81,
+      "plus_one_rank_p": 0.8118811881188119,
+      "strictly_above_all_nulls": false
+    },
+    "GERMAN": {
+      "k4_total": -330.3992,
+      "nulls": 100,
+      "nulls_at_or_above": 27,
+      "plus_one_rank_p": 0.27722772277227725,
+      "strictly_above_all_nulls": false
+    }
+  },
+  "raw_best_and_alternative_witnesses_passed": 3030,
+  "remote_git_freeze_caveat": "Separately verify a successful remote Git freeze commit before any reveal or claim.",
+  "rows_verified": 101,
+  "unique_frozen_k4_candidates_by_model": {
+    "CLOCK": 9,
+    "GERMAN": 9
+  },
+  "verified_remote_git_freeze": false,
+  "work_hash_caveat": "WORK_FREEZE.sha256 commits to raw alternatives locally. The remote Git commit must contain the manifest and ALL listed work/ files; verify remote provenance separately.",
+  "work_seal": {
+    "entries_verified": 138,
+    "work_seal_sha256": "4d0721434c8ed14917930aa3fac9e9c7443553d2a4f75cb9d9fe9c7a13a3473c"
+  }
+}
