@@ -299,8 +299,10 @@ chance.** The most important open items are in §17.
 ## 17. What remains insufficiently tested (candidates for future rounds)
 1. **Two fully free alphabets with an unknown key**, solved blind. The capability is missing (L138); this is the
    main technical gap.
-2. **Homophonic substitution** (several cipher letters per plaintext letter). It fits K4's flat letter counts. Not
-   tested.
+2. **Homophonic substitution** (several cipher letters per plaintext letter). It fits K4's flat letter counts.
+   **Tested in R66 (L155):** in place EXCL (QQ → NO); with the 10 R61 routes, blind, no signal (gate 14/20); exactly
+   EXCL on 2,538 explicit routes and all but 6 of 87.9M columnar orders (widths 2–11). Open: other transpositions,
+   position-dependent homophonic tables.
 3. **More general evolving alphabets.** R56 did test standard Chaocipher wheel updates with one word-keyed wheel, one standard wheel, and 26 phases: 51,324 states, 20/20 synthetic hidden-key controls; K4 top 0/24, best 3/24, no readable output. **Untested:** two arbitrary wheels, alternative mechanisms and transposition layers. The Chaocipher method was invented before 1990 but revealed publicly in 2010; this alone cannot prove whether Scheidt or Sanborn knew it.
 4. **Cylinder/wheel ciphers** (Jefferson wheel, M-94, M-138 strip cipher). Hand devices of the US government.
    Not tested.
