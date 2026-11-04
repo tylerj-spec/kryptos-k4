@@ -130,7 +130,7 @@ def main():
     control_manifest = json.loads((inp.parent / "MANIFEST.json").read_text())
     if control_manifest.get("blind_sha256") != sha(inp):
         problems.append("control blind manifest mismatch")
-    expected_prereg = (ROOT / "r67/PREREGISTRATION.sha256").read_text().split()[0]
+    expected_prereg = (ROOT / "r67/PROTOCOL.sha256").read_text().split()[0]
     if (control_manifest.get("preregistration_sha256") != expected_prereg
             or sha(ROOT / "r67/PREREGISTRATION.md") != expected_prereg):
         problems.append("R67 preregistration hash mismatch")
