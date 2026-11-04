@@ -1,0 +1,262 @@
+{
+ "summary": {
+  "plants": 20,
+  "detected": 17,
+  "recovered": 14,
+  "route_ok": 16,
+  "median_pt": 94,
+  "null_max": -192.121,
+  "null_totals": [
+   -210.0898,
+   -209.0467,
+   -207.8293,
+   -207.7738,
+   -207.5719,
+   -207.3802,
+   -206.6865,
+   -206.6766,
+   -206.0671,
+   -205.0393,
+   -204.7115,
+   -204.1954,
+   -204.1586,
+   -203.4284,
+   -203.2567,
+   -202.8784,
+   -202.3734,
+   -201.7122,
+   -195.0797,
+   -192.121
+  ],
+  "plant_ic_range": [
+   0.03802,
+   0.04854
+  ]
+ },
+ "pt_min": 60,
+ "bar_recovered": 14,
+ "all_witnesses_valid": true,
+ "gate_passed": true,
+ "rows": [
+  {
+   "id": "HOLD_00",
+   "total": -140.4908,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "true_route": "SNAKE_L",
+   "found_route": "SNAKE_L",
+   "route_ok": true,
+   "ic": 0.04296
+  },
+  {
+   "id": "HOLD_01",
+   "total": -165.5625,
+   "detected": true,
+   "pt_correct": 94,
+   "recovered": true,
+   "true_route": "SNAKE_R",
+   "found_route": "SNAKE_R",
+   "route_ok": true,
+   "ic": 0.04274
+  },
+  {
+   "id": "HOLD_02",
+   "total": -199.707,
+   "detected": false,
+   "pt_correct": 10,
+   "recovered": false,
+   "true_route": "COL_LT",
+   "found_route": "COL_LB",
+   "route_ok": false,
+   "ic": 0.04059
+  },
+  {
+   "id": "HOLD_03",
+   "total": -146.2999,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_RB",
+   "found_route": "COL_RB",
+   "route_ok": true,
+   "ic": 0.04854
+  },
+  {
+   "id": "HOLD_04",
+   "total": -187.8625,
+   "detected": true,
+   "pt_correct": 4,
+   "recovered": false,
+   "true_route": "R24x8/CW/fwd",
+   "found_route": "R24x8/CCW/fwd",
+   "route_ok": false,
+   "ic": 0.04038
+  },
+  {
+   "id": "HOLD_05",
+   "total": -142.9808,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "R24x8/CCW/inv",
+   "found_route": "R24x8/CCW/inv",
+   "route_ok": true,
+   "ic": 0.04381
+  },
+  {
+   "id": "HOLD_06",
+   "total": -165.888,
+   "detected": true,
+   "pt_correct": 83,
+   "recovered": true,
+   "true_route": "COL_RB",
+   "found_route": "COL_RB",
+   "route_ok": true,
+   "ic": 0.04704
+  },
+  {
+   "id": "HOLD_07",
+   "total": -142.4695,
+   "detected": true,
+   "pt_correct": 5,
+   "recovered": false,
+   "true_route": "R24x8/CCW/inv",
+   "found_route": "R24x8/CW/inv",
+   "route_ok": false,
+   "ic": 0.04167
+  },
+  {
+   "id": "HOLD_08",
+   "total": -146.8363,
+   "detected": true,
+   "pt_correct": 6,
+   "recovered": false,
+   "true_route": "R24x8/CCW/inv",
+   "found_route": "R24x8/CW/inv",
+   "route_ok": false,
+   "ic": 0.04317
+  },
+  {
+   "id": "HOLD_09",
+   "total": -196.7658,
+   "detected": false,
+   "pt_correct": 58,
+   "recovered": false,
+   "true_route": "R24x8/CW/inv",
+   "found_route": "R24x8/CW/inv",
+   "route_ok": true,
+   "ic": 0.04016
+  },
+  {
+   "id": "HOLD_10",
+   "total": -144.7913,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "SNAKE_L",
+   "found_route": "SNAKE_L",
+   "route_ok": true,
+   "ic": 0.04381
+  },
+  {
+   "id": "HOLD_11",
+   "total": -138.0593,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "R24x8/CW/inv",
+   "found_route": "R24x8/CW/inv",
+   "route_ok": true,
+   "ic": 0.03909
+  },
+  {
+   "id": "HOLD_12",
+   "total": -149.2191,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_LB",
+   "found_route": "COL_LB",
+   "route_ok": true,
+   "ic": 0.04167
+  },
+  {
+   "id": "HOLD_13",
+   "total": -195.214,
+   "detected": false,
+   "pt_correct": 20,
+   "recovered": false,
+   "true_route": "COL_LB",
+   "found_route": "COL_LB",
+   "route_ok": true,
+   "ic": 0.03973
+  },
+  {
+   "id": "HOLD_14",
+   "total": -162.7458,
+   "detected": true,
+   "pt_correct": 94,
+   "recovered": true,
+   "true_route": "COL_LT",
+   "found_route": "COL_LT",
+   "route_ok": true,
+   "ic": 0.04467
+  },
+  {
+   "id": "HOLD_15",
+   "total": -137.5372,
+   "detected": true,
+   "pt_correct": 93,
+   "recovered": true,
+   "true_route": "COL_RB",
+   "found_route": "COL_RB",
+   "route_ok": true,
+   "ic": 0.04231
+  },
+  {
+   "id": "HOLD_16",
+   "total": -167.7208,
+   "detected": true,
+   "pt_correct": 93,
+   "recovered": true,
+   "true_route": "R24x8/CCW/inv",
+   "found_route": "R24x8/CCW/inv",
+   "route_ok": true,
+   "ic": 0.03802
+  },
+  {
+   "id": "HOLD_17",
+   "total": -126.7707,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_LB",
+   "found_route": "COL_LB",
+   "route_ok": true,
+   "ic": 0.03973
+  },
+  {
+   "id": "HOLD_18",
+   "total": -134.7539,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "true_route": "SNAKE_L",
+   "found_route": "SNAKE_L",
+   "route_ok": true,
+   "ic": 0.03866
+  },
+  {
+   "id": "HOLD_19",
+   "total": -166.4301,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_RB",
+   "found_route": "COL_RB",
+   "route_ok": true,
+   "ic": 0.04102
+  }
+ ]
+}

@@ -125,3 +125,14 @@ check after everything is frozen and pushed.
 - The 6 in-place development homophonic plants had IC 0.042–0.053 (`r66/sealed/homophonic.py` tables, 20–22 distinct
   plaintext letters, so only 4–6 spare cipher letters).
 - A 26-letter homophonic system flattens only partly. K4's very flat counts are not specifically predicted by it.
+
+## Amendment 1 (4 Nov 2026; after the holdout gate, BEFORE the K4 target is made or run)
+- **What the gate showed:** passed with 14/20 recovered. Two of the six misses, HOLD_07 and HOLD_08, decoded the true
+  plaintext (96/97 and 97/97) **cyclically shifted by 13 letters**. They landed on a sister K3 rotation
+  (R24x8/CW/inv instead of CCW/inv, as R64 also found): the two rotations un-route to texts that are cyclic shifts of
+  each other. Counting by position scores them 5/97 and 6/97.
+- **Added secondary measure (exploratory; it does not change the primary rule):** for K4 and every null, the best
+  published-letter match over **all 97 cyclic rotations** of the frozen plaintext, at fixed and at rotated positions
+  alike. A shifted true decode would show its published letters at a rotated offset. The nulls receive the same search,
+  so this look is calibrated.
+- `r66/sealed/reveal_k4.py` gains this measure. Nothing else changes; `PROTOCOL.sha256` is re-hashed.
