@@ -50,9 +50,9 @@ with tempfile.TemporaryDirectory() as td:
     for i, t in json.loads((td / "out/sealed_truth.json").read_text()).items():
         if not witness_ok(cts[i], R[t["route"]], t["plaintext"], t["map"]):
             bad.append(f"plant witness {i}")
-        if runner.unroute(cts[i], R[t["route"]]) != H.encrypt(t["plaintext"], {a: t["map"][k] for k, a in enumerate(H.AZ)},
-                                                              random.Random(0)) and False:
-            pass
+        x = runner.unroute(cts[i], R[t["route"]])
+        if "".join(t["map"][ord(c) - 65] for c in x) != t["plaintext"]:
+            bad.append(f"runner un-routing does not invert the plant routing {i}")
     # exact checker self-test
     exe = td / "hom_feas"
     subprocess.run(["g++", "-O2", "-std=c++17", "-o", str(exe), str(ROOT / "r66/sealed/hom_feas.cpp")], check=True)
