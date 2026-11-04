@@ -199,6 +199,14 @@ def main():
     source_manifest = json.loads(source_manifest_path.read_text())
     if source_manifest.get('experiment') != 'R67':
         raise SystemExit('unrecognized corpus provenance manifest')
+    if ([e.get('sha256') for e in source_manifest.get('english_books', [])] != [
+            '7b3e855dbc4e9833b0281a0bc1d527379d85c14f8dfb389ef916022d6e4d888c',
+            'c8a61868388cafca2c76d1d82ee610d24b2bb09913ba6da936c4aca94eb1d1e4']
+            or source_manifest.get('german_archive_sha256') !=
+            'ad553e177baac263840c10980e6f3e76d5d15f7f7a078bd98520b36edb69b27c'
+            or source_manifest.get('builder_sha256') !=
+            sha_bytes((ROOT / 'r67/sealed/build_sources.py').read_bytes())):
+        raise SystemExit('source archive or builder provenance mismatch')
     english, en_hash = letterstream(en_path)
     german, de_hash = letterstream(de_path)
     for name, actual in (('hold_pt.txt', en_hash), ('de_hold.txt', de_hash)):
