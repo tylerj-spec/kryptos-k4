@@ -1,0 +1,96 @@
+{
+ "H1": {
+  "route": "SNAKE_L",
+  "language": "DE",
+  "T": -41.50247710943222,
+  "best_convention": "AZ_BEAU",
+  "fragments": {
+   "AZ_VIG": [
+    "BITVFNUBACOFV",
+    "MUYGSPITGYK"
+   ],
+   "AZ_BEAU": [
+    "JIDHFPCNOKOPH",
+    "OCGCIPMPICE"
+   ],
+   "AZ_VARB": [
+    "ZSHFVNGZAYMVF",
+    "OGCUILSHUCQ"
+   ],
+   "KRY_VIG": [
+    "RBERGPJLKYXMR",
+    "ELYDMJLQJXU"
+   ],
+   "KRY_BEAU": [
+    "WVWCZGMZYXFTC",
+    "RGTMVYCYKJU"
+   ],
+   "KRY_VARB": [
+    "ZMIZGWDCKXYBZ",
+    "ICXJBDCSDYO"
+   ]
+  },
+  "scores": {
+   "AZ_VIG": -46.71568685770035,
+   "AZ_BEAU": -41.50247710943222,
+   "AZ_VARB": -47.79478585720062,
+   "KRY_VIG": -54.77066767215729,
+   "KRY_BEAU": -51.21437704563141,
+   "KRY_VARB": -51.79993563890457
+  },
+  "null_n": 10000,
+  "null_ge": 399,
+  "p": 0.039996000399960006,
+  "null_median": -45.54916751384735,
+  "null_q99": -39.99735498428345,
+  "null_max": -36.25868767499924,
+  "outcome": "NOT_LANGUAGE_LIKE"
+ },
+ "H2": {
+  "route": "COL_LT",
+  "language": "EN",
+  "T": -46.335304975509644,
+  "best_convention": "KRY_BEAU",
+  "fragments": {
+   "AZ_VIG": [
+    "FUIUAHVWZVCSH",
+    "TQJZGTJDRUH"
+   ],
+   "AZ_BEAU": [
+    "NUSGAJDINDCCT",
+    "VYRVWTNZTYB"
+   ],
+   "AZ_VARB": [
+    "VGSGATFEBFYIT",
+    "HKRBUHRXJGT"
+   ],
+   "KRY_VIG": [
+    "OHRIKLLZZHYQP",
+    "GDSCJQBHAHR"
+   ],
+   "KRY_BEAU": [
+    "RYGWFRNARDJSE",
+    "PSBLQSKVLSR"
+   ],
+   "KRY_VARB": [
+    "UFZEKCCRRFXSW",
+    "GJQLDSMFNFZ"
+   ]
+  },
+  "scores": {
+   "AZ_VIG": -47.92010213434696,
+   "AZ_BEAU": -47.69066643714905,
+   "AZ_VARB": -46.67496311664581,
+   "KRY_VIG": -48.66934007406235,
+   "KRY_BEAU": -46.335304975509644,
+   "KRY_VARB": -49.43434250354767
+  },
+  "null_n": 10000,
+  "null_ge": 9046,
+  "p": 0.9046095390460954,
+  "null_median": -44.19275059364736,
+  "null_q99": -38.96609663963318,
+  "null_max": -31.72313117980957,
+  "outcome": "NOT_LANGUAGE_LIKE"
+ }
+}
