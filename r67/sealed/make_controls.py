@@ -205,7 +205,7 @@ def main():
         if source_manifest['normalized'][name]['sha256'] != actual:
             raise SystemExit('normalized source hash mismatch: ' + name)
     protocol = ROOT / 'r67/PREREGISTRATION.md'
-    declared = (ROOT / 'r67/PROTOCOL.sha256').read_text().split()
+    declared = (ROOT / 'r67/PREREGISTRATION.sha256').read_text().split()
     if not declared or sha_bytes(protocol.read_bytes()) != declared[0]:
         raise SystemExit('R67 frozen preregistration SHA-256 missing or mismatch')
     routes = load_routes()
