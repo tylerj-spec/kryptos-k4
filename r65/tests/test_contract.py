@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""R65 contract: no r65 code holds K4 plaintext words or clue positions (R65 is ciphertext-only end to end), and the
-runner uses R64's stage-1 parameters unchanged. Run: python3 -I r65/tests/test_contract.py"""
+"""R65 contract: no r65 code holds K4 plaintext words or clue positions (R65 is ciphertext-only end to end) except the
+R65b post-result check r65/sealed/implied_key_check.py, and the runner uses R64's stage-1 parameters unchanged. Run: python3 -I r65/tests/test_contract.py"""
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 bad = []
 for f in sorted(ROOT.glob("r65/**/*.py")):
-    if f.name == "test_contract.py":
+    if f.name in ("test_contract.py", "implied_key_check.py"):
         continue
     t = f.read_text()
     for w in ("EASTNORTHEAST", "NORTHEAST", "BERLINCLOCK", "CLUES"):
