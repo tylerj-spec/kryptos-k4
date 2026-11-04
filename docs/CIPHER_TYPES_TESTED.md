@@ -161,8 +161,12 @@ chance.** The most important open items are in §17.
     - **R63** (L152) tested **non-English keys** with English plaintext: World Clock city-name sequences and German
       prose (gate 20/20 detected; K4 81/100 and 27/100 nulls as high: **no signal**), and π, e, √2, φ, the K2
       coordinates and dates as number keys (**EXCL**, 0 of 92.9M settings).
-    - **Still open:** transposition before substitution, other routes, other alphabets, clock or German keys combined
-      with a transposition.
+    - **R64** (L153) combined the two: a World Clock or German key, **then** one of the same 10 routes. Gate passed
+      (clock keys 12/12 including walks around the clock ring, modern German 6/6; 1910s literary German only 2/6, low
+      power). K4: 35/100 and 6/100 shuffled copies score as high, 3/24 letters each: **STAT, no signal** (literary
+      German **WEAK**).
+    - **Still open:** transposition before substitution, other routes, other alphabets, clock hour/UTC-offset keys,
+      period (pre-1996) German key models, masking of the plaintext.
 
 ## 7. Autokey (the message keys itself)
 - **Ciphertext autokey:** `k_i` comes from `c_{i−L}`.
@@ -280,7 +284,7 @@ chance.** The most important open items are in §17.
 | Periodic polyalphabetic | Vigenère, Beaufort, Quagmire I–IV, Porta | **EXCL** for short periods; per-slot bijections partly OPEN | L03–L05, L21, L88, L89 |
 | Generated keys | progressive, linear recurrences, LFSR | **EXCL** (in place) | L13, L15, L49 |
 | Chain addition | Gromark, 4–8 digits, bases 3–26 | **EXCL** (fixed alphabets; keyword alphabets except one B26/b5 setting, WEAK/OPEN); two free alphabets FEAS/unreadable | L14, L22, L72, L141, L143 |
-| Running key | K1–K3, Carter 1923, coordinates; unknown English text (R59) | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown English key in place **STAT, no signal** (R59) and after K3/engraving routes (R61); other routes OPEN | L90, L106, L109, R47, L149, L150 |
+| Running key | K1–K3, Carter 1923, coordinates; unknown English text (R59) | **EXCL** (fixed/keyword); two free alphabets unreadable; unknown English key in place **STAT, no signal** (R59) and after K3/engraving routes (R61); World Clock / German keys in place (R63) and after those routes (R64) **STAT, no signal**; other routes OPEN | L90, L106, L109, R47, L149, L150, L152, L153 |
 | Autokey | ciphertext/plaintext feedback | partly EXCL; long lags OPEN; R55 narrow affine feedback negative | L17, L27, L58, R51, R55 |
 | Two-layer | substitution plus K3-style rotation or columnar | **EXCL/chance only in enumerated scopes**, general combinations OPEN | L47, L48, L115, L124, R46, R50 |
 | Polygraphic | Hill, Playfair, 2/4-square | **EXCL only within tested variants**; R57 bounded Hill negative | L11, L61, L88, R57 |
