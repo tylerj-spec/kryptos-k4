@@ -97,7 +97,7 @@ def main():
         or verified.get("work_manifest_sha256") != sha(work)
         or verified.get("input_sha256") != manifest.get("blind_sha256")):
         raise SystemExit("raw solver run not frozen and independently verified")
-    prereg_expected = (ROOT / "r67/PROTOCOL.sha256").read_text().split()[0]
+    prereg_expected = (ROOT / "r67/PREREGISTRATION.sha256").read_text().split()[0]
     if (manifest.get("preregistration_sha256") != prereg_expected
         or sha(ROOT / "r67/PREREGISTRATION.md") != prereg_expected
         or verified.get("preregistration_sha256") != prereg_expected):
