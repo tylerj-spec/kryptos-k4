@@ -1,0 +1,24 @@
+{
+ "r65b_null_q99": -39.99735498428345,
+ "k4_T": -41.50247710943222,
+ "n": 2000,
+ "seed": 7,
+ "sources": {
+  "europarl_file10_modern": {
+   "letters_sha256": "84794e5b2be090cef5d0e4379002280089b131f44ed8017b3290548b8050c7a6",
+   "median": -18.196931996179046,
+   "min": -35.2625152344699,
+   "max": -11.209566107943829,
+   "share_at_or_above_1pct_bar": 1.0,
+   "share_at_or_above_k4_T": 1.0
+  },
+  "mann_1912_old_spelling": {
+   "letters_sha256": "19c80d7ff6f64a97f9bf268f424b894e6cb27222cba73a86da21a7f2f5e226f3",
+   "median": -23.7546879760921,
+   "min": -36.995851600077,
+   "max": -13.430243362389774,
+   "share_at_or_above_1pct_bar": 1.0,
+   "share_at_or_above_k4_T": 1.0
+  }
+ }
+}
