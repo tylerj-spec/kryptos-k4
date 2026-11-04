@@ -1,0 +1,36 @@
+{
+ "k4_gap_rerun": 28.49789999999996,
+ "k4_gap_r64_frozen": 28.4979,
+ "k4_best_route_rerun": "SNAKE_L",
+ "reproduced": true,
+ "fresh_nulls": 300,
+ "fresh_nulls_ge": 0,
+ "p_primary": 0.0033222591362126247,
+ "fresh_nulls_ge_and_best_route_snake_l": 0,
+ "pooled_with_r64": {
+  "nulls": 400,
+  "ge": 0,
+  "p": 0.0024937655860349127
+ },
+ "fresh_null_gap_quantiles": {
+  "0.5": 5.158900000000017,
+  "0.9": 13.988699999999994,
+  "0.99": 20.449299999999994
+ },
+ "fresh_null_gap_max": 27.81479999999999,
+ "fresh_null_best_route_counts": {
+  "R24x8/CW/fwd": 27,
+  "R24x8/CW/inv": 35,
+  "R24x8/CCW/fwd": 31,
+  "R24x8/CCW/inv": 25,
+  "COL_LT": 30,
+  "COL_LB": 36,
+  "COL_RT": 35,
+  "COL_RB": 26,
+  "SNAKE_L": 22,
+  "SNAKE_R": 33
+ },
+ "witnesses_checked": 45150,
+ "problems": [],
+ "outcome": "REPLICATED"
+}
