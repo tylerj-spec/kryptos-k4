@@ -191,8 +191,23 @@ def main():
     k4_ct = raw_k4.decode().strip()
     if len(k4_ct) != 97 or not k4_ct.isupper():
         raise SystemExit('Invalid original K4 ciphertext')
+    # Both streams must be the normalized held-out corpus files produced
+    # exclusively by the SHA-256-pinned r67/sealed/build_sources.py.
+    if (en_path.name, de_path.name) != ('hold_pt.txt', 'de_hold.txt') or en_path.parent != de_path.parent:
+        raise SystemExit('expected hold_pt.txt and de_hold.txt in the same pinned source directory')
+    source_manifest_path = en_path.parent / 'SOURCE_MANIFEST.json'
+    source_manifest = json.loads(source_manifest_path.read_text())
+    if source_manifest.get('experiment') != 'R67':
+        raise SystemExit('unrecognized corpus provenance manifest')
     english, en_hash = letterstream(en_path)
     german, de_hash = letterstream(de_path)
+    for name, actual in (('hold_pt.txt', en_hash), ('de_hold.txt', de_hash)):
+        if source_manifest['normalized'][name]['sha256'] != actual:
+            raise SystemExit('normalized source hash mismatch: ' + name)
+    protocol = ROOT / 'r67/PREREGISTRATION.md'
+    declared = (ROOT / 'r67/PROTOCOL.sha256').read_text().split()
+    if not declared or sha_bytes(protocol.read_bytes()) != declared[0]:
+        raise SystemExit('R67 frozen preregistration SHA-256 missing or mismatch')
     routes = load_routes()
     rng = random.Random(SEED)
     records, counts = produce(english, german, routes, ic(k4_ct), rng)
@@ -205,7 +220,9 @@ def main():
         truth.append({'id': name, 'ciphertext': ct, **item})
     (output / 'BLIND.tsv').write_text('\n'.join(blind) + '\n')
     (output / 'SEALED_TRUTH.json').write_text(json.dumps(truth, indent=2) + '\n')
-    manifest = {'seed': SEED, 'en_source_sha256': en_hash, 'de_source_sha256': de_hash,
+    manifest = {'seed': SEED, 'preregistration_sha256': declared[0],
+                'source_manifest_sha256': sha_bytes(source_manifest_path.read_bytes()),
+                'en_source_sha256': en_hash, 'de_source_sha256': de_hash,
                 'k4_ciphertext_sha256': K4_HASH, 'k4_ct_ic': ic(k4_ct),
                 'k4_distinct': len(set(k4_ct)), 'family_counts': counts,
                 'blind_sha256': sha_bytes((output / 'BLIND.tsv').read_bytes()),
