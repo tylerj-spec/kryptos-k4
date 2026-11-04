@@ -1,4 +1,4 @@
-# R64 pre-registration (Claude Code, 3 Nov 2026): World Clock or German running key, THEN a transposition
+# R64 pre-registration (Claude Code, 3–4 Nov 2026): World Clock or German running key, THEN a transposition
 
 Written before the holdout plants are generated and before any K4 run. Follows `r53/BLIND_RULES.md` as clarified by
 Tyler (R63 Amendment 2): clue-motivated hypotheses are fine; the **algorithm reads only the ciphertext and generic
@@ -40,7 +40,41 @@ Built from ChatGPT's research (PR #46, `research/k4_2026-11-03/`, priority A1) a
   ciphertext, model, every model-file hash, the routes hash, the solver-binary hash and the parameters.
 - **No tuning after this file is committed.**
 
-DEVELOPMENT_RECORD_PLACEHOLDER
+## Development record (development sources only; K4 never run)
+- **Data:** 8 plants, `r64/sealed/make_plants.py dev_pt.txt de_dev.txt de_lit_dev.txt 8 64001 DEV`.
+  - Plaintext: *Tom Sawyer*, the R59 development book.
+  - Keys: 2 of each kind. Europarl file 9 for GERMAN_EP; Kafka, *Die Verwandlung*, for GERMAN_LIT.
+  - Route and convention random.
+  - Plus 8 shuffled nulls (seed 64002).
+- **Results** (score = the model total; "recovered" = above the maximum null **and** ≥ 60/97 plaintext letters):
+
+  | Key kind | Recovered | Route right | Convention right | Plaintext letters | Model totals |
+  |---|---|---|---|---|---|
+  | CLOCK_RAND | 2/2 | 2/2 | 2/2 | 97, 97 | −194, −190 |
+  | CLOCK_RING | 2/2 | 2/2 | 2/2 | 95, 94 | −221, −270 |
+  | GERMAN_EP | 2/2 | 2/2 | 2/2 | 77, 94 | −281, −265 |
+  | GERMAN_LIT | 0/2 | 1/2 | 2/2 | 63, 4 | −328, −310 |
+
+  - **Null maxima:** CLOCK −356.1; GERMAN −322.2.
+  - **Witnesses:** 5,760 raw witnesses over 16 ciphertexts, all valid (`verify.py`).
+  - **Runtime:** 41 minutes for 16 ciphertexts on 4 cores.
+- **What development showed:**
+  - The CLOCK model generalises to a walk around the clock ring.
+  - The GERMAN model does **not** generalise well to 1910s literary German.
+    - DEV_00 had the correct route and convention but scored −328, below the null maximum.
+    - DEV_07 scored **above** every null (−310), but on a wrong route (R24x8/CW/inv instead of CCW/inv) with a
+      spurious English/German pair: 4/97 plaintext letters. Those two K3 rotations un-route to texts that are cyclic
+      shifts of each other by 13 letters.
+- **Two design decisions, both made from development only:**
+  1. A plant counts as **recovered** only if it is above every null **and** ≥ 60/97 plaintext letters are correct.
+     A high score on a wrong decomposition is not power. The K4 SIGNAL rule likewise requires both the score and the
+     published letters.
+  2. Each model is gated on its **in-distribution** kind (CLOCK_RAND, GERMAN_EP). The out-of-distribution kinds
+     (CLOCK_RING, GERMAN_LIT) are reported and flagged **low power** if fewer than half are recovered. A weak literary
+     German result therefore cannot block the clock test, and a K4 negative for a low-power kind is reported as WEAK.
+- **Development files:** `r64/dev/` (inputs, sealed truth, results, gate and verify reports).
+- **Stage-1 beam:** B1 = 15,000 kept the true route in the top 2 in 7/8 plants. The miss (DEV_07) was a model
+  failure, not a beam failure: its true route was not competitive.
 
 ## Holdout gate (fixed now)
 - **Fresh sources, never used by R59–R63** (`r64/corpus/build_sources.py`, sha256-pinned GITenberg files):
@@ -56,13 +90,19 @@ DEVELOPMENT_RECORD_PLACEHOLDER
 - **Nulls:** 24 frequency-preserving shuffles of the plants, `r63/sealed/make_nulls.py BLIND.tsv 64101`.
 - **Run:** plants and nulls in one blind run, frozen and pushed, then `r64/sealed/verify.py`, then the sealed
   `r64/sealed/gate.py`.
-- **Pass (all of):** GATE_BARS_PLACEHOLDER
-- **Reported, not gated:** route identified, true route kept after stage 1, convention, and every count per key kind.
-  A key kind with fewer than half its plants detected is flagged **low power**. A K4 negative for that kind is then
-  reported as **WEAK**, not as evidence against it.
-- **If the gate fails:** record **INCONCLUSIVE** and do not run K4.
+- **Gate, per model** (`gate.py … 60 5 4`; recovered = above the maximum null for that model **and** ≥ 60/97 plaintext
+  letters):
+  - **CLOCK passes** if ≥ 5/6 CLOCK_RAND plants are recovered;
+  - **GERMAN passes** if ≥ 4/6 GERMAN_EP plants are recovered;
+  - **all** re-encryption witnesses must be valid (`gate.py` checks the final answers; `verify.py` checks every raw
+    witness).
+- **K4 runs if at least one model passes.** A model that fails is **INCONCLUSIVE** for K4.
+- **Reported, not gated:** route identified, true route kept after stage 1, convention, the out-of-distribution kinds
+  (CLOCK_RING, GERMAN_LIT), and every count per key kind. A key kind with fewer than half its plants recovered is
+  flagged **low power**. A K4 negative for that kind is then reported as **WEAK**, not as evidence against it.
+- **If both models fail:** record **INCONCLUSIVE** and do not run K4.
 
-## K4 test (only if the gate passes)
+## K4 test (only if at least one model passes the gate)
 - **Input:** `r64/sealed/prepare_k4.py` writes the unchanged K4 (sha256 2797de14… including the newline) plus 100
   frequency-preserving shuffles (seed 640070). It reads only the ciphertext file.
 - **Order:**
@@ -72,7 +112,7 @@ DEVELOPMENT_RECORD_PLACEHOLDER
   4. only then `r64/sealed/reveal_k4.py`, the only R64 code holding the published letters.
 - **Positions:** in this model the published positions are **plaintext** positions. They are compared with the frozen
   plaintext-order output.
-- **Decision, per key model m:**
+- **Decision, per key model m that passed the gate** (a model that failed is INCONCLUSIVE for K4):
 
   | Outcome | Condition |
   |---|---|
