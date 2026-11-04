@@ -34,7 +34,30 @@ check after everything is frozen and pushed.
 - **Cache:** a finished ciphertext is reused only if its digest (ciphertext, model, routes, binary, parameters) matches.
 - **No tuning after this file is committed.**
 
-DEVELOPMENT_RECORD_PLACEHOLDER
+## Development record (development sources only; K4 never run)
+- **The cap.** Without a cap, the letter model's smoothing rewards degenerate decodes: 97 × "A" scores −24.9, while
+  real English windows score −62 to −83, and the search found such strings. Real homophonic tables give each letter
+  only a few cipher letters (the plant tables here give at most 3). The cap of 4 is part of the cipher model.
+- **Search settings.** In-place tests on 6 homophonic plants from *Tom Sawyer* (seed 66001), with the run that
+  produced each conclusion:
+
+  | Annealing (restarts × moves, temperature) | Plants solved | What it showed |
+  |---|---|---|
+  | 20 × 20k–60k, start 0.3–2.0 | 0–2/6 | too cold and too short: found decodes scored below the true text (search failure, not model failure) |
+  | 10 × 1M, start 5, order 6 | 3/6, and 3/3 simple substitutions | longer, hotter runs on the full model work |
+  | **30 × 1M, start 5, order 6** | **6/6 (91–97/97)** | adopted |
+
+  - Annealing on order-4/5 models was worse.
+  - In-place shuffled copies scored −209 to −228, against plants at −132 to −177.
+- **Routed development run** (`r66/dev/`): 8 plants, `make_plants.py dev_pt.txt 8 66001 DEV`, plus 8 nulls
+  (seed 66002), through the full 10-route pipeline:
+  - **recovered 7/8**: median 95/97 letters, route right 7/8;
+  - recovered plants scored −134 to −186; the null maximum was −196.7;
+  - one plant (DEV_04) had IC 0.0363, as flat as K4, and was recovered (76/97);
+  - **the miss (DEV_06)** was a search failure on its true route: it scored −199.4 on a wrong route, below the null
+    maximum;
+  - all 1,437 raw witnesses valid.
+- **Runtime:** about 19 s per route, so about 3.2 min per ciphertext on one core.
 
 ## Holdout gate (fixed now)
 - **Plants:** 20, generated only after this file is pushed:
@@ -43,9 +66,9 @@ DEVELOPMENT_RECORD_PLACEHOLDER
     `r64/corpus/build_sources.py`, sha256-pinned). The R66 solver never saw them.
   - Homophone tables, cipher choices and routes random.
 - **Nulls:** 20 shuffles, `r63/sealed/make_nulls.py BLIND.tsv 66101`.
-- **Order:** one blind run → freeze and push → `r66/sealed/verify.py` → sealed `r66/sealed/gate.py … 60 BAR`.
-- **Pass:** GATE_BAR_PLACEHOLDER, and every witness valid. Recovered = above the maximum null **and** ≥ 60/97
-  plaintext letters correct.
+- **Order:** one blind run → freeze and push → `r66/sealed/verify.py` → sealed `r66/sealed/gate.py … 60 14`.
+- **Pass:** at least **14/20 plants recovered**, and every witness valid. Recovered = above the maximum null **and**
+  ≥ 60/97 plaintext letters correct.
 - **If the gate fails:** record **INCONCLUSIVE**, do not run Part A on K4, and still run Part B (which needs no power).
 
 ## K4, Part A (only if the gate passes)

@@ -1,0 +1,118 @@
+{
+ "summary": {
+  "plants": 8,
+  "detected": 7,
+  "recovered": 7,
+  "route_ok": 7,
+  "median_pt": 95,
+  "null_max": -196.6965,
+  "null_totals": [
+   -215.1137,
+   -208.85,
+   -208.5085,
+   -207.6442,
+   -206.8602,
+   -206.1084,
+   -204.9908,
+   -196.6965
+  ],
+  "plant_ic_range": [
+   0.0363,
+   0.05284
+  ]
+ },
+ "pt_min": 60,
+ "bar_recovered": 6,
+ "all_witnesses_valid": true,
+ "gate_passed": true,
+ "rows": [
+  {
+   "id": "DEV_00",
+   "total": -134.4124,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "true_route": "R24x8/CW/fwd",
+   "found_route": "R24x8/CW/fwd",
+   "route_ok": true,
+   "ic": 0.05284
+  },
+  {
+   "id": "DEV_01",
+   "total": -151.0755,
+   "detected": true,
+   "pt_correct": 96,
+   "recovered": true,
+   "true_route": "COL_RB",
+   "found_route": "COL_RB",
+   "route_ok": true,
+   "ic": 0.03909
+  },
+  {
+   "id": "DEV_02",
+   "total": -160.9447,
+   "detected": true,
+   "pt_correct": 87,
+   "recovered": true,
+   "true_route": "SNAKE_L",
+   "found_route": "SNAKE_L",
+   "route_ok": true,
+   "ic": 0.04317
+  },
+  {
+   "id": "DEV_03",
+   "total": -157.4453,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_RT",
+   "found_route": "COL_RT",
+   "route_ok": true,
+   "ic": 0.04596
+  },
+  {
+   "id": "DEV_04",
+   "total": -185.8813,
+   "detected": true,
+   "pt_correct": 76,
+   "recovered": true,
+   "true_route": "COL_RT",
+   "found_route": "COL_RT",
+   "route_ok": true,
+   "ic": 0.0363
+  },
+  {
+   "id": "DEV_05",
+   "total": -165.6207,
+   "detected": true,
+   "pt_correct": 93,
+   "recovered": true,
+   "true_route": "R24x8/CCW/inv",
+   "found_route": "R24x8/CCW/inv",
+   "route_ok": true,
+   "ic": 0.04296
+  },
+  {
+   "id": "DEV_06",
+   "total": -199.3768,
+   "detected": false,
+   "pt_correct": 3,
+   "recovered": false,
+   "true_route": "COL_RB",
+   "found_route": "R24x8/CCW/inv",
+   "route_ok": false,
+   "ic": 0.04038
+  },
+  {
+   "id": "DEV_07",
+   "total": -144.2883,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "true_route": "COL_LT",
+   "found_route": "COL_LT",
+   "route_ok": true,
+   "ic": 0.04081
+  }
+ ]
+}
