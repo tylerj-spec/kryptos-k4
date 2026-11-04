@@ -36,7 +36,7 @@
 | K4 target (K4 + 100 shuffles, seed 640070) | 3ef217e | — |
 | K4 freeze (all raw work files; container restart at 04:25 UTC, resumed from digest-checked cache) | efc5ad0 | — |
 | K4 verification (no published letters) | 9153b70 | 36,360 raw witnesses valid; manifests match |
-| Reveal (`r64/k4/REVEAL.json`) | this commit | **NO SIGNAL** under both models |
+| Reveal (`r64/k4/REVEAL.json`) | 7b6156d | **NO SIGNAL** under both models |
 
 ## Holdout gate
 "Recovered" = above the maximum null for that model **and** at least 60/97 plaintext letters correct.
