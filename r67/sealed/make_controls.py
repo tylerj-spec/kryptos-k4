@@ -35,7 +35,9 @@ def sha_bytes(b):
 
 def letterstream(path):
     raw = path.read_bytes()
-    s = ''.join(c for c in raw.decode('utf-8').upper() if c in AZ)
+    # Follow R63 G-DE1 normalisation for umlauts, before discarding nonletters.
+    text = raw.decode('utf-8').upper().replace('Ä', 'AE').replace('Ö', 'OE').replace('Ü', 'UE')
+    s = ''.join(c for c in text if c in AZ)
     if len(s) < 300:
         raise ValueError('source must contain at least 300 A-Z letters: ' + str(path))
     return s, sha_bytes(raw)
