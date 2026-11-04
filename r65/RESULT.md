@@ -66,11 +66,31 @@ H1 SNAKE_L  AZ_VIG   BITVFNUBACOFV MUYGSPITGYK      H2 COL_LT  AZ_VIG   FUIUAHVW
 
 ## What this means
 - **The SNAKE_L effect is a real property of K4's letter order** under that reading (STAT).
-- **Excluded, given the published letters:** a running key whose key text is German, combined with SNAKE_L, under any of
-  the 6 conventions, with ordinary English plaintext. The same for an English key with COL_LT.
-  - This is a strong check: it needs no solver and no key model beyond letter statistics.
+- **Rejected with high power (STAT, not an exact exclusion), given the published letters:** a running key whose key
+  text is German, combined with SNAKE_L, under any of the 6 conventions, with ordinary English plaintext. The same for
+  an English key with COL_LT.
+  - The check needs no solver, only letter statistics of the 24 implied key letters. Its power is measured below.
+  - *Correction (4 Nov 2026, after ChatGPT's R67 review on PR #50):* an earlier version said "Excluded" and the
+    ledger said "EXCLUDED". p = 0.040 is a statistical rejection, not a mathematical exclusion.
 - **Not explained:** what structure the German model is picking up. One possibility: K4's sequence is not a random
   arrangement of its letters, and SNAKE_L keeps more of whatever process made it than the K3-style rotations do.
   Shuffled copies are a weak null for any real, structured cipher.
 - **Suggested only, not run:** a structure-preserving null, e.g. ciphertexts from other known keyed systems of the same
   length, would show whether any real ciphertext shows such gaps.
+
+## Addendum (4 Nov 2026, post hoc): power of R65b (`r65/sealed/implied_key_power.py`, `r65/k4/IMPLIED_KEY_POWER.json`)
+- **Question:** if K4 really were a German running key on SNAKE_L, would R65b have passed it?
+- **Method:** real German key fragments at the published-position spacing (13 letters, then 11 starting 42 later),
+  scored exactly as R65b scores them. 2,000 random windows of each source, seed 7.
+
+| Key text | Median score | Lowest score | Share at or above R65b's 1% bar (−40.00) | Share at or above K4's −41.50 |
+|---|---|---|---|---|
+| Europarl file 10 (modern; unseen by the model's training) | −18.2 | −35.3 | 100% | 100% |
+| Thomas Mann, *Der Tod in Venedig* (1912, old spelling) | −23.8 | −37.0 | 100% | 100% |
+
+- **R65b has essentially full power against a German key**, modern or old-spelling.
+  - R64's low literary-German power (2/6) concerned its blind solver, which must reconstruct the whole key. R65b
+    only scores 24 key letters that the published plaintext forces.
+  - K4's best implied fragments (−41.50) score below every one of the 4,000 real German samples.
+- **Remaining caveats:** a German key text unlike either source (for example lists of names or numbers spelled out);
+  plaintext not ordinary English at the published positions; conventions outside the 6 tested.
