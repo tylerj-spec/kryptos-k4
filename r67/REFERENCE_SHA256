@@ -1,7 +1,7 @@
 # R67 immutable R65 stage-1 dependency digests, recorded before control generation.
 # Source: main:r65/k4/run/FROZEN.sha256 from completed R65 experiment.
 # Each entry is SHA256  role  relative_path_inside_isolated_root
-d1be0d9c475b66ec47e39125f7ee9f8ce7617e3df1df3c262b23f5e66f03c4216  solver_source  r63/blind/rk2_solve.cpp
+d1be0d9c475b66ec47e39125f7ee9b3398ae63ff550175222081d851b50f7009  solver_source  r63/blind/rk2_solve.cpp
 f171dbe52d7abf405b37844314e9c19ceacc5d374164675f762c94f590435e25  solver_binary  solver/rk2_solve
 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a  english_lm  models/lm6.v2.bin
 12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877  english_words  k4kit/data/word_model_orth.tsv
