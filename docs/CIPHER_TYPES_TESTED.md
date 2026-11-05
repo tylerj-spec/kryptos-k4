@@ -202,6 +202,16 @@ chance.** The most important open items are in §17.
   - The after-order high-check count was not significant under the pre-registered null (L56, p ≈ 0.07).
   - Decimation plus a summed periodic key gives a FEAS witness that is not a candidate (L55).
 
+- **Key advancing along a carved path (R68, L157).** Periodic, Gromark, ciphertext- and plaintext-autokey keys
+  stepping along the carved order or one of the 10 R61 routes. Two alignments:
+  - M1: substitute, then transpose;
+  - M2: each letter enciphered in place, key following the path, as in Sanborn's letter-for-letter clues.
+
+  Results across 12 conventions:
+  - blind gate 21/24; K4 no signal, best letter match 6/24 (shuffles' median);
+  - exactly **EXCL**: Gromark (all primers), periodic p ≤ 25 and ciphertext autokey L ≤ 71 on every path, model and
+    convention.
+
 ## 9. Polygraphic substitution (letters enciphered in groups)
 - **Hill cipher** (matrix multiplication mod 26):
   - direct, 2×2 to 5×5, with AZ or KRYPTOS numbering: **EXCL** (L11);
