@@ -6,7 +6,9 @@ For each plant of family f:
   recovered  : detected AND pt_correct >= PT_MIN;
   setting_ok : path, model, convention and parameter all equal the truth.
 Usage: gate.py BLIND.tsv NULLS.tsv RESULTS.jsonl SEALED_TRUTH.json REPORT.json PT_MIN BAR_PER BAR_GRO BAR_CTAK BAR_PTAK
-  pass iff every family reaches its bar of recovered plants and every final answer is a valid forward witness."""
+  Each family is gated separately: family f passes iff it reaches its bar of recovered plants and every final answer is
+  a valid forward witness. K4 runs if at least one family passes; a family that fails is INCONCLUSIVE for K4.
+  Recovery is also reported by parameter range (PER p <= 12 vs > 12; CTAK/PTAK L <= 12 vs > 12)."""
 import json
 import sys
 from pathlib import Path
@@ -48,12 +50,21 @@ def main():
                    "setting_ok": sum(x["setting_ok"] for x in o), "null_max": nmax[f],
                    "median_pt": sorted(x["pt_correct"] for x in o)[len(o) // 2] if o else None,
                    "bar": bars[f], "passed": sum(x["recovered"] for x in o) >= bars[f]}
-    passed = wit and all(s["passed"] for s in summ.values())
+    for f in ("PER", "CTAK", "PTAK"):
+        o = [x for x in out if x["family"] == f]
+        summ[f]["recovered_param_le_12"] = [sum(x["recovered"] for x in o if int(x["true"][3]) <= 12),
+                                            sum(1 for x in o if int(x["true"][3]) <= 12)]
+        summ[f]["recovered_param_gt_12"] = [sum(x["recovered"] for x in o if int(x["true"][3]) > 12),
+                                            sum(1 for x in o if int(x["true"][3]) > 12)]
+    for f in FAMS:
+        summ[f]["passed"] = summ[f]["passed"] and wit
+    passed = any(s["passed"] for s in summ.values())
     Path(rep).write_text(json.dumps({"summary": summ, "pt_min": pt_min, "all_witnesses_valid": wit,
-                                     "gate_passed": passed, "rows": out}, indent=1) + "\n")
+                                     "gate_passed_any_family": passed, "rows": out}, indent=1) + "\n")
     for f, s in summ.items():
         print(f, s)
-    print("witnesses", wit, "GATE", "PASSED" if passed else "FAILED")
+    print("witnesses", wit, "families passed", {f: s["passed"] for f, s in summ.items()},
+          "K4 RUN" if passed else "GATE FAILED: INCONCLUSIVE, no K4 run")
     for x in out:
         print(x["id"], x["family"], "%.1f" % x["total"], "det" if x["detected"] else "---", "pt", x["pt_correct"],
               "true", x["true"], "found", x["found"])

@@ -1,0 +1,82 @@
+{
+ "DEV_00": {
+  "plaintext": "TANDNOTASCLAMOROUSANDEFFUSIVEASITMIGHTHAVEBEENUNDERHAPPIERCIRCUMSTANCESHOWEVERTHEWIDOWMADEAPRETTY",
+  "family": "PER",
+  "convention": "KRY/AZ_VARB",
+  "param": "6",
+  "key": "ZVMGBS",
+  "path": "COL_RT",
+  "model": "M2",
+  "pt_offset": 291802
+ },
+ "DEV_01": {
+  "plaintext": "ECALLWENTECHOINGDOWNTHEEMPTYAISLESANDDIEDOUTINTHEDISTANCEINAFAINTSOUNDTHATRESEMBLEDARIPPLEOFMOCKI",
+  "family": "CTAK",
+  "convention": "KRY/AZ_VIG",
+  "param": "11",
+  "key": "APVNLFDMANL",
+  "path": "COL_LB",
+  "model": "M2",
+  "pt_offset": 262989
+ },
+ "DEV_02": {
+  "plaintext": "HEYSATDOWNONTHEGROUNDFACINGTHEDOORWITHTHEIRBACKSTOTHEWALLANDTHESPEAKERCONTINUEDHISREMARKSHISMANNE",
+  "family": "GRO",
+  "convention": "KRY/KRY_BEAU",
+  "param": "62233",
+  "key": "62233",
+  "path": "COL_LT",
+  "model": "M1",
+  "pt_offset": 220129
+ },
+ "DEV_03": {
+  "plaintext": "ADTOSTOPITMIGHTBETHREEFEETDEEPITMIGHTBEAHUNDREDTHEREWASNOPASSINGITATANYRATETOMGOTDOWNONHISBREASTA",
+  "family": "PER",
+  "convention": "KRY/KRY_BEAU",
+  "param": "6",
+  "key": "MMMKBU",
+  "path": "COL_LT",
+  "model": "M2",
+  "pt_offset": 269160
+ },
+ "DEV_04": {
+  "plaintext": "ANGUPTOOGAILYFORACORPSETHEBOYSDRESSEDTHEMSELVESHIDTHEIRACCOUTREMENTSANDWENTOFFGRIEVINGTHATTHEREWE",
+  "family": "PTAK",
+  "convention": "AZ/KRY_VARB",
+  "param": "24",
+  "key": "TBNOZSTOJXCAMIAXEJLKJOHC",
+  "path": "COL_RT",
+  "model": "M2",
+  "pt_offset": 84843
+ },
+ "DEV_05": {
+  "plaintext": "STILLNARROWERCREVICESBRANCHEDFROMITONEITHERHANDFORMCDOUGALSCAVEWASBUTAVASTLABYRINTHOFCROOKEDAISLE",
+  "family": "GRO",
+  "convention": "KRY/KRY_VIG",
+  "param": "62264",
+  "key": "62264",
+  "path": "SNAKE_R",
+  "model": "M2",
+  "pt_offset": 239317
+ },
+ "DEV_06": {
+  "plaintext": "HOUSANDVERSESWITHOUTSTOPPINGBUTTHESTRAINUPONHISMENTALFACULTIESWASTOOGREATANDHEWASLITTLEBETTERTHAN",
+  "family": "CTAK",
+  "convention": "KRY/KRY_VIG",
+  "param": "6",
+  "key": "BBJPST",
+  "path": "SNAKE_L",
+  "model": "M1",
+  "pt_offset": 38317
+ },
+ "DEV_07": {
+  "plaintext": "APALSYANDHEPUTHISFACEINHISHANDSANDBURSTINTOTEARSIDIDNTDOITFRIENDSHESOBBEDPONMYWORDANDHONORINEVERD",
+  "family": "PTAK",
+  "convention": "AZ/KRY_VIG",
+  "param": "15",
+  "key": "NWGXDHZPRKCFNLI",
+  "path": "R24x8/CCW/inv",
+  "model": "M2",
+  "pt_offset": 104672
+ }
+}

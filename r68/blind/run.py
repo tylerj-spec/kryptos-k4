@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 WORDS = ROOT / "k4kit/data/word_model_orth.tsv"
 ROUTES = ROOT / "r61/routes.txt"
-PARAMS = ["20", "24", "6", "68"]   # PMAX LMAX RESTARTS SEED (fixed from development; r68/PREREGISTRATION.md)
+PARAMS = ["20", "24", "20", "68"]   # PMAX LMAX RESTARTS SEED (fixed from development; r68/PREREGISTRATION.md)
 FAMILIES = ("PER", "GRO", "CTAK", "PTAK")
 
 

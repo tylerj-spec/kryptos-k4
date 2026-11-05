@@ -2,7 +2,7 @@
 """R68 SEALED plant maker (never read by r68/blind/). English 97-letter windows (non-overlapping) encrypted with one of
 the four keyed families, a random convention (12), a random path (ID or one of the 10 R61 routes) and, for routes, a
 random model (M1 or M2). Families are assigned in a seeded random order, N/4 each.
-  PER  period p uniform 3..14, random shift letters      GRO  random 5-digit primer
+  PER  period p uniform 2..20, random shift letters      GRO  random 5-digit primer
   CTAK lag L uniform 1..24, random primer                PTAK lag L uniform 1..24, random primer
 Usage: make_plants.py PT_LETTERS N SEED PREFIX OUTDIR   (writes blind.tsv and sealed_truth.json)"""
 import json
@@ -42,7 +42,7 @@ def main():
         path = names[rng.randrange(len(names))]
         model = "M1" if path == "ID" else ("M1", "M2")[rng.randrange(2)]
         if fam == "PER":
-            param = str(rng.randint(3, 14))
+            param = str(rng.randint(2, 20))
             key = "".join(rng.choice(AZ) for _ in range(int(param)))
         elif fam == "GRO":
             param = key = f"{rng.randrange(100000):05d}"
