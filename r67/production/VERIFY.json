@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "controls": 216,
+  "witnesses_checked": 32400,
+  "problem_count": 0,
+  "problems": [],
+  "input_sha256": "3f22941ed04ca116855d6aa2d1a46f8be1dde243bf90d3a529aca372683e680c",
+  "results_sha256": "f68a1e0e55ef0e4a73c1e66593d73529f49087072dc50a2f988f720ae293d475",
+  "work_manifest_sha256": "d8d7c6841bed4b2b0c85aa4d8861cc4a618fb6f26342861d5a4ef1e0ec67c2d1",
+  "freeze_manifest_sha256": "b3f7c43e82fd8c6cfc722d2b28935bf955223ee5ee1ea27f40b1dcdddfa9cc63",
+  "preregistration_sha256": "d1e7208ba7245067b19f3c0600729d4873bb9beabac3fee06cc5440d644f59a3"
+}
