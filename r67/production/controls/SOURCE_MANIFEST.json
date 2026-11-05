@@ -1,0 +1,38 @@
+{
+  "experiment": "R67",
+  "english_books": [
+    {
+      "title": "The Call of the Wild",
+      "filename": "215-0.txt",
+      "sha256": "7b3e855dbc4e9833b0281a0bc1d527379d85c14f8dfb389ef916022d6e4d888c",
+      "origin": "GITenberg raw text pinned by r64/corpus/build_sources.py"
+    },
+    {
+      "title": "The Hound of the Baskervilles",
+      "filename": "2852-0.txt",
+      "sha256": "c8a61868388cafca2c76d1d82ee610d24b2bb09913ba6da936c4aca94eb1d1e4",
+      "origin": "GITenberg raw text pinned by r64/corpus/build_sources.py"
+    }
+  ],
+  "german_archive_sha256": "ad553e177baac263840c10980e6f3e76d5d15f7f7a078bd98520b36edb69b27c",
+  "german_member": "europarl_raw/german/ep-00-02-16.de",
+  "german_training_split": "sorted members 0-7 train, 8 dev, 9 holdout",
+  "english_training_split": "R64 new holdout books, not R59 training/NTLK texts",
+  "normalization": {
+    "English": "r64/corpus/build_sources.py uppercase and A-Z only",
+    "German": "r63/corpus/build_keys.py G-DE1"
+  },
+  "normalized": {
+    "hold_pt.txt": {
+      "sha256": "17f61fafc0d0f69f5aa10c5b44fdc789da52321afb7e7959de2e4760d759fc9f",
+      "letters": 383829,
+      "role": "out_of_training"
+    },
+    "de_hold.txt": {
+      "sha256": "84794e5b2be090cef5d0e4379002280089b131f44ed8017b3290548b8050c7a6",
+      "letters": 512816,
+      "role": "out_of_training"
+    }
+  },
+  "builder_sha256": "45625c79888ac1caeccc2275fb59357a22eea583c92241af69af1da94e295b73"
+}

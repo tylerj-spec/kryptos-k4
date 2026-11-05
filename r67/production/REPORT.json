@@ -1,0 +1,252 @@
+{
+  "experiment": "R67: structured-cipher control calibration only, NOT K4 solution",
+  "k4_frozen_comparison": {
+    "best": -320.8593,
+    "second": -349.3572,
+    "snake_minus_mirror": 39.67779999999999,
+    "snake_total": -320.8593,
+    "mirror_total": -360.5371,
+    "gap": 28.49789999999996,
+    "route": "SNAKE_L"
+  },
+  "r65_legacy_shuffle_p": 0.0033222591362126247,
+  "nuisance_pooled": {
+    "n": 192,
+    "ge_k4_gap": 0,
+    "descriptive_plus_one_rate": 0.0051813471502590676,
+    "joint_best_snake_and_ge_k4_gap": 0,
+    "best_route_snake": 24,
+    "gap_median": 4.116700000000037,
+    "gap_max": 25.51569999999998,
+    "best_total_ge_k4": 0,
+    "second_best_total_ge_k4": 138,
+    "snake_minus_mirror_ge_k4": 1,
+    "snake_minus_mirror_median": 1.2947000000000344,
+    "best_total_median": -340.6715,
+    "second_best_total_median": -346.1446
+  },
+  "nuisance_by_family": {
+    "HOMOPHONIC_ROUTE": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 6,
+      "gap_median": 4.059799999999996,
+      "gap_max": 25.51569999999998,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 25,
+      "snake_minus_mirror_ge_k4": 1,
+      "snake_minus_mirror_median": 5.2642999999999915,
+      "best_total_median": -339.3238,
+      "second_best_total_median": -344.3316
+    },
+    "OTP": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 2,
+      "gap_median": 3.487799999999993,
+      "gap_max": 14.600600000000043,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 25,
+      "snake_minus_mirror_ge_k4": 0,
+      "snake_minus_mirror_median": -0.6245000000000118,
+      "best_total_median": -342.3219,
+      "second_best_total_median": -345.4519
+    },
+    "PERIODIC_VIG": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 4,
+      "gap_median": 5.5855999999999995,
+      "gap_max": 22.5351,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 23,
+      "snake_minus_mirror_ge_k4": 0,
+      "snake_minus_mirror_median": 0.08670000000000755,
+      "best_total_median": -338.4566,
+      "second_best_total_median": -345.3124
+    },
+    "PLAINTEXT_AUTOKEY": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 6,
+      "gap_median": 4.303899999999999,
+      "gap_max": 12.971699999999998,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 22,
+      "snake_minus_mirror_ge_k4": 0,
+      "snake_minus_mirror_median": -5.1188000000000216,
+      "best_total_median": -342.4983,
+      "second_best_total_median": -347.5391
+    },
+    "QUAG_III": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 4,
+      "gap_median": 5.811800000000005,
+      "gap_max": 17.331999999999994,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 21,
+      "snake_minus_mirror_ge_k4": 0,
+      "snake_minus_mirror_median": -0.7640999999999849,
+      "best_total_median": -340.6715,
+      "second_best_total_median": -347.2014
+    },
+    "QUAG_III_ROUTE": {
+      "n": 32,
+      "ge_k4_gap": 0,
+      "descriptive_plus_one_rate": 0.030303030303030304,
+      "joint_best_snake_and_ge_k4_gap": 0,
+      "best_route_snake": 2,
+      "gap_median": 3.541300000000035,
+      "gap_max": 15.282700000000034,
+      "best_total_ge_k4": 0,
+      "second_best_total_ge_k4": 22,
+      "snake_minus_mirror_ge_k4": 0,
+      "snake_minus_mirror_median": 3.688699999999983,
+      "best_total_median": -343.0659,
+      "second_best_total_median": -346.7071
+    }
+  },
+  "positive_controls": {
+    "overall": {
+      "n": 24,
+      "correct_route": 22,
+      "gap_ge_k4": 21,
+      "correct_route_and_gap_ge_k4": 21,
+      "median_gap": 73.47340000000003
+    },
+    "SNAKE_L": {
+      "n": 12,
+      "correct_route": 12,
+      "gap_ge_k4": 11,
+      "correct_route_and_gap_ge_k4": 11,
+      "median_gap": 81.26910000000001
+    },
+    "other_routes": {
+      "n": 12,
+      "correct_route": 10,
+      "gap_ge_k4": 10,
+      "correct_route_and_gap_ge_k4": 10,
+      "median_gap": 54.40549999999996
+    }
+  },
+  "ic_matching_selection": {
+    "accepted_vs_attempted_by_family": {
+      "OTP": {
+        "attempts": 55,
+        "accepted": 32
+      },
+      "PERIODIC_VIG": {
+        "attempts": 97,
+        "accepted": 32
+      },
+      "QUAG_III": {
+        "attempts": 79,
+        "accepted": 32
+      },
+      "PLAINTEXT_AUTOKEY": {
+        "attempts": 47,
+        "accepted": 32
+      },
+      "QUAG_III_ROUTE": {
+        "attempts": 70,
+        "accepted": 32
+      },
+      "HOMOPHONIC_ROUTE": {
+        "attempts": 871,
+        "accepted": 32
+      }
+    },
+    "period_lag_homophone_distributions": {
+      "PERIODIC_VIG_period": {
+        "6": 1,
+        "7": 3,
+        "8": 2,
+        "9": 1,
+        "11": 2,
+        "12": 3,
+        "13": 3,
+        "14": 5,
+        "15": 6,
+        "16": 4,
+        "18": 2
+      },
+      "QUAG_III_ROUTE_period": {
+        "5": 1,
+        "6": 1,
+        "7": 3,
+        "8": 2,
+        "9": 2,
+        "10": 1,
+        "11": 4,
+        "12": 1,
+        "13": 3,
+        "14": 3,
+        "15": 3,
+        "16": 4,
+        "17": 2,
+        "18": 2
+      },
+      "QUAG_III_period": {
+        "5": 1,
+        "6": 2,
+        "7": 4,
+        "8": 2,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 4,
+        "13": 2,
+        "14": 3,
+        "15": 2,
+        "16": 3,
+        "17": 3,
+        "18": 3
+      },
+      "autokey_lag": {
+        "6": 4,
+        "7": 2,
+        "8": 1,
+        "9": 3,
+        "11": 1,
+        "12": 4,
+        "13": 1,
+        "14": 3,
+        "16": 2,
+        "17": 4,
+        "18": 1,
+        "19": 2,
+        "21": 2,
+        "22": 1,
+        "24": 1
+      },
+      "homophone_map_size": {
+        "26": 32
+      },
+      "homophone_max_per_letter": {
+        "2": 14,
+        "3": 17,
+        "4": 1
+      }
+    },
+    "warning": "IC/coverage filtering selects distribution tails; no unmatched companion run."
+  },
+  "freeze_integrity": {
+    "preregistration_sha256": "d1e7208ba7245067b19f3c0600729d4873bb9beabac3fee06cc5440d644f59a3",
+    "result_sha256": "f68a1e0e55ef0e4a73c1e66593d73529f49087072dc50a2f988f720ae293d475",
+    "verification_sha256": "282bdf5a454d29a1279a16242f11f5c5de599bcee9af066944bf3b231b0488e6",
+    "control_blind_sha256": "3f22941ed04ca116855d6aa2d1a46f8be1dde243bf90d3a529aca372683e680c",
+    "control_truth_sha256": "ee3af82d39234a0c63964510857b0ce21d5af3e3ac4b5bc5e0d452dedcfc9455"
+  },
+  "interpretation": "Post-selection descriptive calibration only, not a newly independent p-value. A low hit rate only applies to these six IC-matched cipher families and does not identify a correct route, cipher, key or K4 plaintext."
+}
