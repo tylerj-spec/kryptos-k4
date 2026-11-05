@@ -1,0 +1,577 @@
+{
+ "summary": {
+  "PER": {
+   "plants": 6,
+   "detected": 5,
+   "recovered": 5,
+   "setting_ok": 4,
+   "null_max": -323.9605,
+   "median_pt": 97,
+   "bar": 3,
+   "passed": true,
+   "recovered_param_le_12": [
+    5,
+    5
+   ],
+   "recovered_param_gt_12": [
+    0,
+    1
+   ]
+  },
+  "GRO": {
+   "plants": 6,
+   "detected": 6,
+   "recovered": 6,
+   "setting_ok": 6,
+   "null_max": -475.953,
+   "median_pt": 97,
+   "bar": 5,
+   "passed": true
+  },
+  "CTAK": {
+   "plants": 6,
+   "detected": 6,
+   "recovered": 6,
+   "setting_ok": 6,
+   "null_max": -413.2866,
+   "median_pt": 90,
+   "bar": 5,
+   "passed": true,
+   "recovered_param_le_12": [
+    4,
+    4
+   ],
+   "recovered_param_gt_12": [
+    2,
+    2
+   ]
+  },
+  "PTAK": {
+   "plants": 6,
+   "detected": 4,
+   "recovered": 4,
+   "setting_ok": 4,
+   "null_max": -323.7765,
+   "median_pt": 97,
+   "bar": 2,
+   "passed": true,
+   "recovered_param_le_12": [
+    4,
+    4
+   ],
+   "recovered_param_gt_12": [
+    0,
+    2
+   ]
+  }
+ },
+ "pt_min": 60,
+ "all_witnesses_valid": true,
+ "gate_passed_any_family": true,
+ "rows": [
+  {
+   "id": "HOLD_00",
+   "family": "CTAK",
+   "true": [
+    "COL_LB",
+    "M1",
+    "KRY/KRY_BEAU",
+    "18"
+   ],
+   "found": [
+    "COL_LB",
+    "M1",
+    "KRY/KRY_BEAU",
+    "18"
+   ],
+   "total": -182.4856,
+   "detected": true,
+   "pt_correct": 80,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_01",
+   "family": "PER",
+   "true": [
+    "ID",
+    "M1",
+    "KRY/KRY_BEAU",
+    "6"
+   ],
+   "found": [
+    "ID",
+    "M1",
+    "KRY/KRY_BEAU",
+    "6"
+   ],
+   "total": -168.5357,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_02",
+   "family": "CTAK",
+   "true": [
+    "R24x8/CW/inv",
+    "M1",
+    "KRY/AZ_VARB",
+    "9"
+   ],
+   "found": [
+    "R24x8/CW/inv",
+    "M1",
+    "KRY/AZ_VARB",
+    "9"
+   ],
+   "total": -166.0269,
+   "detected": true,
+   "pt_correct": 90,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_03",
+   "family": "GRO",
+   "true": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY/KRY_BEAU",
+    "75431"
+   ],
+   "found": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY/KRY_BEAU",
+    "75431"
+   ],
+   "total": -137.5515,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_04",
+   "family": "CTAK",
+   "true": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY/AZ_VARB",
+    "16"
+   ],
+   "found": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY/AZ_VARB",
+    "16"
+   ],
+   "total": -181.4674,
+   "detected": true,
+   "pt_correct": 84,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_05",
+   "family": "PER",
+   "true": [
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ/AZ_BEAU",
+    "6"
+   ],
+   "found": [
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ/AZ_BEAU",
+    "6"
+   ],
+   "total": -145.8239,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_06",
+   "family": "CTAK",
+   "true": [
+    "COL_LT",
+    "M1",
+    "KRY/AZ_VARB",
+    "2"
+   ],
+   "found": [
+    "COL_LT",
+    "M1",
+    "KRY/AZ_VARB",
+    "2"
+   ],
+   "total": -180.7445,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_07",
+   "family": "GRO",
+   "true": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "AZ/KRY_VARB",
+    "76344"
+   ],
+   "found": [
+    "R24x8/CCW/fwd",
+    "M2",
+    "AZ/KRY_VARB",
+    "76344"
+   ],
+   "total": -138.2552,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_08",
+   "family": "PTAK",
+   "true": [
+    "COL_LB",
+    "M2",
+    "KRY/KRY_VIG",
+    "7"
+   ],
+   "found": [
+    "COL_LB",
+    "M2",
+    "KRY/KRY_VIG",
+    "7"
+   ],
+   "total": -145.3104,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_09",
+   "family": "PTAK",
+   "true": [
+    "COL_LT",
+    "M1",
+    "KRY/AZ_VARB",
+    "10"
+   ],
+   "found": [
+    "COL_LT",
+    "M1",
+    "KRY/AZ_VARB",
+    "10"
+   ],
+   "total": -139.2326,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_10",
+   "family": "GRO",
+   "true": [
+    "COL_LB",
+    "M1",
+    "KRY/AZ_BEAU",
+    "50092"
+   ],
+   "found": [
+    "COL_LB",
+    "M1",
+    "KRY/AZ_BEAU",
+    "50092"
+   ],
+   "total": -128.5248,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_11",
+   "family": "PER",
+   "true": [
+    "COL_LT",
+    "M1",
+    "AZ/AZ_BEAU",
+    "4"
+   ],
+   "found": [
+    "COL_LT",
+    "M1",
+    "AZ/AZ_BEAU",
+    "4"
+   ],
+   "total": -174.1933,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_12",
+   "family": "PER",
+   "true": [
+    "COL_RT",
+    "M1",
+    "KRY/AZ_BEAU",
+    "19"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M2",
+    "KRY/KRY_BEAU",
+    "20"
+   ],
+   "total": -361.6448,
+   "detected": false,
+   "pt_correct": 8,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_13",
+   "family": "PTAK",
+   "true": [
+    "R24x8/CW/fwd",
+    "M2",
+    "KRY/KRY_VIG",
+    "22"
+   ],
+   "found": [
+    "R24x8/CCW/inv",
+    "M2",
+    "KRY/KRY_VIG",
+    "23"
+   ],
+   "total": -330.4166,
+   "detected": false,
+   "pt_correct": 7,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_14",
+   "family": "PER",
+   "true": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_VARB",
+    "7"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_VARB",
+    "7"
+   ],
+   "total": -162.8908,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_15",
+   "family": "GRO",
+   "true": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_BEAU",
+    "07697"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_BEAU",
+    "07697"
+   ],
+   "total": -141.2284,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_16",
+   "family": "PTAK",
+   "true": [
+    "SNAKE_R",
+    "M2",
+    "KRY/AZ_VIG",
+    "10"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M2",
+    "KRY/AZ_VIG",
+    "10"
+   ],
+   "total": -143.5354,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_17",
+   "family": "PTAK",
+   "true": [
+    "COL_LB",
+    "M1",
+    "KRY/KRY_BEAU",
+    "20"
+   ],
+   "found": [
+    "COL_RB",
+    "M1",
+    "AZ/KRY_VARB",
+    "21"
+   ],
+   "total": -337.711,
+   "detected": false,
+   "pt_correct": 7,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_18",
+   "family": "PTAK",
+   "true": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "2"
+   ],
+   "found": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "2"
+   ],
+   "total": -177.7845,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_19",
+   "family": "CTAK",
+   "true": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "5"
+   ],
+   "found": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "5"
+   ],
+   "total": -202.6387,
+   "detected": true,
+   "pt_correct": 92,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_20",
+   "family": "GRO",
+   "true": [
+    "COL_RT",
+    "M1",
+    "KRY/KRY_BEAU",
+    "02720"
+   ],
+   "found": [
+    "COL_RT",
+    "M1",
+    "KRY/KRY_BEAU",
+    "02720"
+   ],
+   "total": -151.549,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_21",
+   "family": "PER",
+   "true": [
+    "R24x8/CW/inv",
+    "M2",
+    "KRY/AZ_VIG",
+    "11"
+   ],
+   "found": [
+    "R24x8/CW/inv",
+    "M2",
+    "KRY/AZ_VARB",
+    "11"
+   ],
+   "total": -150.0322,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_22",
+   "family": "GRO",
+   "true": [
+    "R24x8/CCW/inv",
+    "M1",
+    "AZ/KRY_BEAU",
+    "07926"
+   ],
+   "found": [
+    "R24x8/CCW/inv",
+    "M1",
+    "AZ/KRY_BEAU",
+    "07926"
+   ],
+   "total": -158.3123,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_23",
+   "family": "CTAK",
+   "true": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_VARB",
+    "10"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M1",
+    "AZ/KRY_VARB",
+    "10"
+   ],
+   "total": -204.9551,
+   "detected": true,
+   "pt_correct": 87,
+   "recovered": true,
+   "setting_ok": true
+  }
+ ]
+}

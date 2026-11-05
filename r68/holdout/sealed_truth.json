@@ -1,0 +1,242 @@
+{
+ "HOLD_00": {
+  "plaintext": "ONOFSOMEMILESACROSSTHEMOORTOAPLACEWHICHISSODISMALTHATITMIGHTHAVESUGGESTEDTHESTORYWEFOUNDASHORTVAL",
+  "family": "CTAK",
+  "convention": "KRY/KRY_BEAU",
+  "param": "18",
+  "key": "UGDPJZMZUSAHXFCQGP",
+  "path": "COL_LB",
+  "model": "M1",
+  "pt_offset": 246702
+ },
+ "HOLD_01": {
+  "plaintext": "ESSORRESILIENCYALMOSTCATLIKEANDAQUICKALERTNESSASOFONEWHOLIVEDINPERPETUALFEAROFTHINGSSEENANDUNSEEN",
+  "family": "PER",
+  "convention": "KRY/KRY_BEAU",
+  "param": "6",
+  "key": "BRWOFW",
+  "path": "ID",
+  "model": "M1",
+  "pt_offset": 61530
+ },
+ "HOLD_02": {
+  "plaintext": "AVENOHESITATIONINLIGHTINGONETHEMANDREWOUTPAPERANDTOBACCOANDTWIRLEDTHEONEUPINTHEOTHERWITHSURPRISIN",
+  "family": "CTAK",
+  "convention": "KRY/AZ_VARB",
+  "param": "9",
+  "key": "ZKHWJDUVG",
+  "path": "R24x8/CW/inv",
+  "model": "M1",
+  "pt_offset": 146801
+ },
+ "HOLD_03": {
+  "plaintext": "ONETHERESULTSMIGHTBEBETTERTHEMOREFORMALWEMADETHEVISITTHELESSINFORMATIONWEMIGHTOBTAINILEFTSIRHENRY",
+  "family": "GRO",
+  "convention": "KRY/KRY_BEAU",
+  "param": "75431",
+  "key": "75431",
+  "path": "R24x8/CCW/fwd",
+  "model": "M2",
+  "pt_offset": 297002
+ },
+ "HOLD_04": {
+  "plaintext": "ESCHOOLMASTERINGDAYSSOTHATHEMUSTHAVEBEENAWARETHATHISMASTERANDMISTRESSWEREREALLYHUSBANDANDWIFETHIS",
+  "family": "CTAK",
+  "convention": "KRY/AZ_VARB",
+  "param": "16",
+  "key": "CGJSROKQQSZUGSGK",
+  "path": "R24x8/CCW/fwd",
+  "model": "M2",
+  "pt_offset": 377257
+ },
+ "HOLD_05": {
+  "plaintext": "ISSUPREMACYTHREATENEDBYTHISSTRANGESOUTHLANDDOGANDSTRANGEBUCKWASTOHIMFOROFTHEMANYSOUTHLANDDOGSHEHA",
+  "family": "PER",
+  "convention": "AZ/AZ_BEAU",
+  "param": "6",
+  "key": "RRXGAL",
+  "path": "R24x8/CCW/inv",
+  "model": "M2",
+  "pt_offset": 40961
+ },
+ "HOLD_06": {
+  "plaintext": "AFTERHOLMESSVOICESANKASHEANSWEREDITISMURDERWATSONREFINEDCOLDBLOODEDDELIBERATEMURDERDONOTASKMEFORP",
+  "family": "CTAK",
+  "convention": "KRY/AZ_VARB",
+  "param": "2",
+  "key": "PT",
+  "path": "COL_LT",
+  "model": "M1",
+  "pt_offset": 322181
+ },
+ "HOLD_07": {
+  "plaintext": "FTHEWHITEMASKOFHISFACEWEREFULLOFHORRORANDASTONISHMENTASHEGAZEDFROMSIRHENRYTOMEWHATAREYOUDOINGHERE",
+  "family": "GRO",
+  "convention": "AZ/KRY_VARB",
+  "param": "76344",
+  "key": "76344",
+  "path": "R24x8/CCW/fwd",
+  "model": "M2",
+  "pt_offset": 268831
+ },
+ "HOLD_08": {
+  "plaintext": "VERTAKENBEFOREHECANREACHUSATALLCOSTSWEMUSTHOLDOURGROUNDWHEREWEAREHEDROPPEDONHISKNEESANDCLAPPEDHIS",
+  "family": "PTAK",
+  "convention": "KRY/KRY_VIG",
+  "param": "7",
+  "key": "PXPVSRT",
+  "path": "COL_LB",
+  "model": "M2",
+  "pt_offset": 354275
+ },
+ "HOLD_09": {
+  "plaintext": "ONGRELSWEREWITHOUTSPIRITATALLBONESWERETHEONLYTHINGSBREAKABLEABOUTTHEMWITHTHENEWCOMERSHOPELESSANDF",
+  "family": "PTAK",
+  "convention": "KRY/AZ_VARB",
+  "param": "10",
+  "key": "BECBBBFIKE",
+  "path": "COL_LT",
+  "model": "M1",
+  "pt_offset": 75816
+ },
+ "HOLD_10": {
+  "plaintext": "REGREATSTRETCHESOFFORESTANDMANYSTREAMSANDTHROUGHTHESEGREATSTRETCHESTHEYRANSTEADILYHOURAFTERHOURTH",
+  "family": "GRO",
+  "convention": "KRY/AZ_BEAU",
+  "param": "50092",
+  "key": "50092",
+  "path": "COL_LB",
+  "model": "M1",
+  "pt_offset": 119469
+ },
+ "HOLD_11": {
+  "plaintext": "NTHEMINAFRENZYTODESTROYHESPRANGATTHEFOREMOSTMANITWASTHECHIEFOFTHEYEEHATSRIPPINGTHETHROATWIDEOPENT",
+  "family": "PER",
+  "convention": "AZ/AZ_BEAU",
+  "param": "4",
+  "key": "YQEL",
+  "path": "COL_LT",
+  "model": "M1",
+  "pt_offset": 131568
+ },
+ "HOLD_12": {
+  "plaintext": "UBTANDWOULDLEADALONELYLIFEWITHOUTHERBUTITWOULDSEEMTHEHEIGHTOFSELFISHNESSIFHEWERETOSTANDINTHEWAYOF",
+  "family": "PER",
+  "convention": "KRY/AZ_BEAU",
+  "param": "19",
+  "key": "SPYITNKFPSHFHYNJKVG",
+  "path": "COL_RT",
+  "model": "M1",
+  "pt_offset": 248137
+ },
+ "HOLD_13": {
+  "plaintext": "NDEVINCEDNOINTENTIONOFGETTINGOUTOFTHEWAYHALDREWHISLONGHUNTINGKNIFEMERCEDESSCREAMEDCRIEDLAUGHEDAND",
+  "family": "PTAK",
+  "convention": "KRY/KRY_VIG",
+  "param": "22",
+  "key": "SBOKZLATHQIXBQJTGZJSZS",
+  "path": "R24x8/CW/fwd",
+  "model": "M2",
+  "pt_offset": 88925
+ },
+ "HOLD_14": {
+  "plaintext": "ZENOTHERDOGTEAMSHESTARTEDBACKOVERTHEWEARYTRAILTODAWSONITWASNOLIGHTRUNNINGNOWNORRECORDTIMEBUTHEAVY",
+  "family": "PER",
+  "convention": "AZ/KRY_VARB",
+  "param": "7",
+  "key": "JRYIGVA",
+  "path": "SNAKE_R",
+  "model": "M1",
+  "pt_offset": 58928
+ },
+ "HOLD_15": {
+  "plaintext": "SOSUPPOSETHATTHESAMEMANHADBEENTHELASTWHOHADSEENSIRCHARLESALIVEANDTHEFIRSTTODOGTHENEWHEIRWHENHERET",
+  "family": "GRO",
+  "convention": "AZ/KRY_BEAU",
+  "param": "07697",
+  "key": "07697",
+  "path": "SNAKE_R",
+  "model": "M1",
+  "pt_offset": 226086
+ },
+ "HOLD_16": {
+  "plaintext": "LLSEETHATIFTHEREISBLAMEINTHEMATTERITDOESNOTLIEWITHMYHUSBANDBUTWITHMEFORWHOSESAKEHEHASDONEALLTHATH",
+  "family": "PTAK",
+  "convention": "KRY/AZ_VIG",
+  "param": "10",
+  "key": "HKDBGYXBUE",
+  "path": "SNAKE_R",
+  "model": "M2",
+  "pt_offset": 272662
+ },
+ "HOLD_17": {
+  "plaintext": "TIONAFTERALLIMOUNTEDAHILLFROMWHICHICOULDCOMMANDAVIEWTHESAMEHILLWHICHISCUTINTOTHEDARKQUARRYTHENCEI",
+  "family": "PTAK",
+  "convention": "KRY/KRY_BEAU",
+  "param": "20",
+  "key": "NHXZPVXQVSYYJGEZAQQX",
+  "path": "COL_LB",
+  "model": "M1",
+  "pt_offset": 259423
+ },
+ "HOLD_18": {
+  "plaintext": "DECAYANDAHEAVYMIASMATICVAPOURONTOOURFACESWHILEAFALSESTEPPLUNGEDUSMORETHANONCETHIGHDEEPINTOTHEDARK",
+  "family": "PTAK",
+  "convention": "KRY/AZ_VIG",
+  "param": "2",
+  "key": "VL",
+  "path": "COL_LB",
+  "model": "M2",
+  "pt_offset": 362992
+ },
+ "HOLD_19": {
+  "plaintext": "WOLARGERBUILDINGSWHICHPROVEDTOBETHEINNANDTHEHOUSEOFDRMORTIMERSTOODHIGHABOVETHERESTTHEPOSTMASTERWH",
+  "family": "CTAK",
+  "convention": "KRY/AZ_VIG",
+  "param": "5",
+  "key": "SWTNM",
+  "path": "COL_LB",
+  "model": "M2",
+  "pt_offset": 225220
+ },
+ "HOLD_20": {
+  "plaintext": "EANDSTBERNARDINTELLIGENCEANDALLTHISPLUSANEXPERIENCEGAINEDINTHEFIERCESTOFSCHOOLSMADEHIMASFORMIDABL",
+  "family": "GRO",
+  "convention": "KRY/KRY_BEAU",
+  "param": "02720",
+  "key": "02720",
+  "path": "COL_RT",
+  "model": "M1",
+  "pt_offset": 122866
+ },
+ "HOLD_21": {
+  "plaintext": "EVENINGHESATLOSTINTOBACCOANDTHOUGHTJUSTBEFOREDINNERTWOTELEGRAMSWEREHANDEDINTHEFIRSTRANHAVEJUSTHEA",
+  "family": "PER",
+  "convention": "KRY/AZ_VIG",
+  "param": "11",
+  "key": "CVWQAVDFUPJ",
+  "path": "R24x8/CW/inv",
+  "model": "M2",
+  "pt_offset": 203501
+ },
+ "HOLD_22": {
+  "plaintext": "RAHUNDREDYARDSJOHNTHORNTONSAIDCOOLLYWELLMATTHEWSONSAIDSLOWLYANDDELIBERATELYSOTHATALLCOULDHEARIVEG",
+  "family": "GRO",
+  "convention": "AZ/KRY_BEAU",
+  "param": "07926",
+  "key": "07926",
+  "path": "R24x8/CCW/inv",
+  "model": "M1",
+  "pt_offset": 104317
+ },
+ "HOLD_23": {
+  "plaintext": "EHADCOMETOAPOINTWHEREANARROWGRASSYPATHSTRUCKOFFFROMTHEROADANDWOUNDAWAYACROSSTHEMOORASTEEPBOULDERS",
+  "family": "CTAK",
+  "convention": "AZ/KRY_VARB",
+  "param": "10",
+  "key": "ZPSWDDODNF",
+  "path": "SNAKE_R",
+  "model": "M1",
+  "pt_offset": 230150
+ }
+}
