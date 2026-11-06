@@ -1,0 +1,40 @@
+{
+  "seed": 670001,
+  "preregistration_sha256": "d1e7208ba7245067b19f3c0600729d4873bb9beabac3fee06cc5440d644f59a3",
+  "source_manifest_sha256": "c5bb54b96f8d9ef0b8a2a28f3c872e328e9f2b4be58c553f723b3c045d1485aa",
+  "en_source_sha256": "17f61fafc0d0f69f5aa10c5b44fdc789da52321afb7e7959de2e4760d759fc9f",
+  "de_source_sha256": "84794e5b2be090cef5d0e4379002280089b131f44ed8017b3290548b8050c7a6",
+  "k4_ciphertext_sha256": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "k4_ct_ic": 0.03608247422680412,
+  "k4_distinct": 26,
+  "family_counts": {
+    "OTP": {
+      "attempts": 55,
+      "accepted": 32
+    },
+    "PERIODIC_VIG": {
+      "attempts": 97,
+      "accepted": 32
+    },
+    "QUAG_III": {
+      "attempts": 79,
+      "accepted": 32
+    },
+    "PLAINTEXT_AUTOKEY": {
+      "attempts": 47,
+      "accepted": 32
+    },
+    "QUAG_III_ROUTE": {
+      "attempts": 70,
+      "accepted": 32
+    },
+    "HOMOPHONIC_ROUTE": {
+      "attempts": 871,
+      "accepted": 32
+    }
+  },
+  "blind_sha256": "3f22941ed04ca116855d6aa2d1a46f8be1dde243bf90d3a529aca372683e680c",
+  "truth_sha256": "ee3af82d39234a0c63964510857b0ce21d5af3e3ac4b5bc5e0d452dedcfc9455",
+  "generator_sha256": "cca54daf611a83875ba918f8a2b6e56a4a4e7c274c680829e61a149d16c798c9",
+  "routes_sha256": "cc34991347c022852919d3a4c6aa01b5f6cb6233d0ee2cb9f4b2e4e6e42a42ce"
+}

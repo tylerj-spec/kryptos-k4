@@ -169,6 +169,9 @@ chance.** The most important open items are in §17.
       (p 0.0033), but the key letters implied at the published positions on that route are not German (p 0.04; this
       check passes 100% of real German key fragments, modern or 1912 spelling), so a German running key on SNAKE_L is
       **rejected with high power** (STAT); the same check rejects an English key on R61's COL_LT (p 0.90).
+    - **R67** (L156): the SNAKE_L gap is also beyond 192 real ciphertexts from six structured families matched to K4's
+      letter flatness (0/192; planted German-key positives 21/24), so it is not generic cipher structure. Still
+      unexplained; not a German running key.
     - **Still open:** transposition before substitution, other routes, other alphabets, clock hour/UTC-offset keys,
       period (pre-1996) German key models, masking of the plaintext.
 

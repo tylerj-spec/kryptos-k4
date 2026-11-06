@@ -1,0 +1,14 @@
+# R67 immutable R65 stage-1 dependency digests, recorded before control generation.
+# Source: main:r65/k4/run/FROZEN.sha256 from completed R65 experiment.
+# Each entry is SHA256  role  relative_path_inside_isolated_root
+d1be0d9c475b66ec47e39125f7ee9b3398ae63ff550175222081d851b50f7009  solver_source  r63/blind/rk2_solve.cpp
+f171dbe52d7abf405b37844314e9c19ceacc5d374164675f762c94f590435e25  solver_binary  solver/rk2_solve
+b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a  english_lm  models/lm6.v2.bin
+12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877  english_words  k4kit/data/word_model_orth.tsv
+cc34991347c022852919d3a4c6aa01b5f6cb6233d0ee2cb9f4b2e4e6e42a42ce  routes  r61/routes.txt
+5451a6ceb24e89293d1935e171cd9d16ca9162720834915ead77d019a096dcc3  key_model  models/lm6_de.bin
+4ccc34eeb35b2be08187a1915216320615048650462e217347aca04761608e9a  key_model  models/de_words.tsv
+fae34af5608a33d4fbf8cb12108184e7f9a601a3db5207690f486e414ea19714  runner  r65/blind/run.py
+33e8afe619f5c1801b1cb95afde84f7a74bbe6defc08396f28e8037463c3ce6e  r64_runner  r64/blind/run.py
+667b6e9ea447cec802c542dd3eacc31e0a42f6bfdbe1e04f840e23640d433b31  protocol  r65/PREREGISTRATION.md
+# Supporting allowlisted checksum registry files are pinned by content in the R67 protocol.
