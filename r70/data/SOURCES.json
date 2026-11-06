@@ -1,0 +1,57 @@
+{
+ "BERLIN_1912": {
+  "item": "berlinitsenviron00karl",
+  "file": "berlinitsenviron00karl_djvu.txt",
+  "url": "https://archive.org/stream/berlinitsenviron00karl/berlinitsenviron00karl_djvu.txt",
+  "metadata": "https://archive.org/metadata/berlinitsenviron00karl",
+  "sha1": "60695e5b6a42bbf271eb54b9bb6822691c76c319",
+  "sha256": "fe6df937cbcbca27d32a50dd1d3934759194c8597cf09d302e1300d664ef236c",
+  "bytes": 889998,
+  "bibliographic": "Karl Baedeker, Berlin and Its Environs: Handbook for Travellers, 5th English ed., Leipzig 1912",
+  "retrieved_utc": "2026-11-06T12:19:06Z"
+ },
+ "EGYPT_1908": {
+  "item": "00491772.5459.emory.edu",
+  "file": "00491772_5459_djvu.txt",
+  "url": "https://archive.org/stream/00491772.5459.emory.edu/00491772_5459_djvu.txt",
+  "metadata": "https://archive.org/metadata/00491772.5459.emory.edu",
+  "sha1": "05d0acc26ceed2417373ea5427725a87c1d93628",
+  "sha256": "8fd8fddbf59f400eadc8507e0a88ca0053b6d6ab223f84568f06141028a0b1aa",
+  "bytes": 2191787,
+  "bibliographic": "Karl Baedeker, Egypt and the Sudan: Handbook for Travellers, 6th ed., Leipzig 1908 (Emory scan)",
+  "retrieved_utc": "2026-11-06T12:19:14Z"
+ },
+ "MURRAY_1907": {
+  "item": "handbookforegyp00hallgoog",
+  "file": "handbookforegyp00hallgoog_djvu.txt",
+  "url": "https://archive.org/stream/handbookforegyp00hallgoog/handbookforegyp00hallgoog_djvu.txt",
+  "metadata": "https://archive.org/metadata/handbookforegyp00hallgoog",
+  "sha1": "5b02a6ef23129c27c196d2f3481661bc833045cd",
+  "sha256": "dc5427df433b202ae7937abdeb334d9e3dc4fd526b0f70e307f66ee414dc89c3",
+  "bytes": 3079122,
+  "bibliographic": "Handbook for Egypt and the Sudan (Murray's handbooks), London: Edward Stanford 1907 (Google scan)",
+  "retrieved_utc": "2026-11-06T12:19:15Z"
+ },
+ "COOK_1876": {
+  "item": "cookstouristsha07ltdgoog",
+  "file": "cookstouristsha07ltdgoog_djvu.txt",
+  "url": "https://archive.org/stream/cookstouristsha07ltdgoog/cookstouristsha07ltdgoog_djvu.txt",
+  "metadata": "https://archive.org/metadata/cookstouristsha07ltdgoog",
+  "sha1": "e83ff7f676cd95d4dc5bf6429c1d32b7ee341220",
+  "sha256": "6e2bdb04f30235b54f6a26e1514ceebe0224d469d4aa7c70baefe6d31851a841",
+  "bytes": 680932,
+  "bibliographic": "Cook's Tourists' Handbook for Egypt, the Nile, and the Desert, London 1876 (Google scan); substitute: the 1897 edition is only on Google Books, which this environment cannot reach",
+  "retrieved_utc": "2026-11-06T12:19:16Z"
+ },
+ "BUDGE_1898": {
+  "item": "bookdeadanengli00budggoog",
+  "file": "bookdeadanengli00budggoog_djvu.txt",
+  "url": "https://archive.org/stream/bookdeadanengli00budggoog/bookdeadanengli00budggoog_djvu.txt",
+  "metadata": "https://archive.org/metadata/bookdeadanengli00budggoog",
+  "sha1": "06eb6e349ef0a157079c73dd2ebe5f08c1ea76e1",
+  "sha256": "9a15aff7f04f2ce0920d875d402f8e7ce42ae0cd67b0832196fe19e12b736f86",
+  "bytes": 433811,
+  "bibliographic": "E. A. Wallis Budge, The Book of the Dead: An English Translation of the Chapters, Hymns, etc., of the Theban Recension, London: Kegan Paul 1898 (Google scan); substitute: the only full 1895 Papyrus of Ani text on archive.org is an access-restricted 1967 reprint",
+  "retrieved_utc": "2026-11-06T12:19:19Z"
+ }
+}
