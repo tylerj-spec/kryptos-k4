@@ -1,0 +1,37 @@
+{
+ "BERLIN_1912": {
+  "raw_sha256": "fe6df937cbcbca27d32a50dd1d3934759194c8597cf09d302e1300d664ef236c",
+  "raw_sha1": "60695e5b6a42bbf271eb54b9bb6822691c76c319",
+  "item": "berlinitsenviron00karl",
+  "norm_sha256": "0f4f4718ecf0fe6c4a8d800c1a25757c4e0a7eebf751c36981a8d680b9883f7d",
+  "letters": 517144
+ },
+ "EGYPT_1908": {
+  "raw_sha256": "8fd8fddbf59f400eadc8507e0a88ca0053b6d6ab223f84568f06141028a0b1aa",
+  "raw_sha1": "05d0acc26ceed2417373ea5427725a87c1d93628",
+  "item": "00491772.5459.emory.edu",
+  "norm_sha256": "c88ef5e1681fc60ea19808f94124f5bce840dcd979e5738355f35f36b04aa918",
+  "letters": 1386690
+ },
+ "MURRAY_1907": {
+  "raw_sha256": "dc5427df433b202ae7937abdeb334d9e3dc4fd526b0f70e307f66ee414dc89c3",
+  "raw_sha1": "5b02a6ef23129c27c196d2f3481661bc833045cd",
+  "item": "handbookforegyp00hallgoog",
+  "norm_sha256": "7aa620482cd7144fd2aed1b815443232aac816ed97556428fd027b4566b0184a",
+  "letters": 1977829
+ },
+ "COOK_1876": {
+  "raw_sha256": "6e2bdb04f30235b54f6a26e1514ceebe0224d469d4aa7c70baefe6d31851a841",
+  "raw_sha1": "e83ff7f676cd95d4dc5bf6429c1d32b7ee341220",
+  "item": "cookstouristsha07ltdgoog",
+  "norm_sha256": "bb3e3e3c1047e334d79f694c3b2ee07e78de93c4f3742f64eab2e6e0f12e830e",
+  "letters": 511251
+ },
+ "BUDGE_1898": {
+  "raw_sha256": "9a15aff7f04f2ce0920d875d402f8e7ce42ae0cd67b0832196fe19e12b736f86",
+  "raw_sha1": "06eb6e349ef0a157079c73dd2ebe5f08c1ea76e1",
+  "item": "bookdeadanengli00budggoog",
+  "norm_sha256": "373f57b9fef6f6b9c1a561a8ff51451c043eca11847748069474d4630cb44e61",
+  "letters": 120736
+ }
+}

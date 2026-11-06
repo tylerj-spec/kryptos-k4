@@ -1,0 +1,717 @@
+{
+ "null_max": -455.6773,
+ "summary": {
+  "CLEAN": {
+   "plants": 20,
+   "recovered": 20,
+   "setting_ok": 20,
+   "median_pt": 97
+  },
+  "NOISY_SUB": {
+   "plants": 5,
+   "recovered": 5,
+   "setting_ok": 5,
+   "median_pt": 95
+  },
+  "NOISY_DEL": {
+   "plants": 5,
+   "recovered": 3,
+   "setting_ok": 2,
+   "median_pt": 65
+  }
+ },
+ "verify_passed": true,
+ "gate_passed": true,
+ "rows": [
+  {
+   "id": "HOLD_00",
+   "kind": "CLEAN",
+   "true": [
+    "COOK_1876",
+    334375,
+    "COL_LT",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "COOK_1876",
+    334375,
+    "COL_LT",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "total": -150.0741,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_01",
+   "kind": "NOISY_DEL",
+   "true": [
+    "MURRAY_1907",
+    147534,
+    "SNAKE_L",
+    "M1",
+    "AZ_VARB"
+   ],
+   "found": [
+    "COOK_1876",
+    233695,
+    "R24x8/CW/fwd",
+    "M1",
+    "KRY_VARB"
+   ],
+   "total": -461.5668,
+   "detected": false,
+   "pt_correct": 3,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_02",
+   "kind": "NOISY_SUB",
+   "true": [
+    "COOK_1876",
+    129466,
+    "R24x8/CCW/inv",
+    "M2",
+    "KRY_VARB"
+   ],
+   "found": [
+    "COOK_1876",
+    129466,
+    "R24x8/CCW/inv",
+    "M2",
+    "KRY_VARB"
+   ],
+   "total": -186.5433,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_03",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    26782,
+    "COL_LT",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "EGYPT_1908",
+    26782,
+    "COL_LT",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "total": -136.8286,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_04",
+   "kind": "CLEAN",
+   "true": [
+    "MURRAY_1907",
+    220226,
+    "COL_LB",
+    "M2",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "MURRAY_1907",
+    220226,
+    "COL_LB",
+    "M2",
+    "AZ_BEAU"
+   ],
+   "total": -158.9261,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_05",
+   "kind": "CLEAN",
+   "true": [
+    "BUDGE_1898",
+    96559,
+    "R24x8/CW/fwd",
+    "M1",
+    "KRY_VIG"
+   ],
+   "found": [
+    "BUDGE_1898",
+    96559,
+    "R24x8/CW/fwd",
+    "M1",
+    "KRY_VIG"
+   ],
+   "total": -135.6041,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_06",
+   "kind": "CLEAN",
+   "true": [
+    "BUDGE_1898",
+    77915,
+    "COL_LT",
+    "M2",
+    "AZ_VARB"
+   ],
+   "found": [
+    "BUDGE_1898",
+    77915,
+    "COL_LT",
+    "M2",
+    "AZ_VARB"
+   ],
+   "total": -152.8751,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_07",
+   "kind": "CLEAN",
+   "true": [
+    "COOK_1876",
+    391739,
+    "R24x8/CCW/fwd",
+    "M2",
+    "AZ_VARB"
+   ],
+   "found": [
+    "COOK_1876",
+    391739,
+    "R24x8/CCW/fwd",
+    "M2",
+    "AZ_VARB"
+   ],
+   "total": -128.9137,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_08",
+   "kind": "CLEAN",
+   "true": [
+    "COOK_1876",
+    388965,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VIG"
+   ],
+   "found": [
+    "COOK_1876",
+    388965,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VIG"
+   ],
+   "total": -149.6822,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_09",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    593390,
+    "R24x8/CCW/fwd",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "EGYPT_1908",
+    593390,
+    "R24x8/CCW/fwd",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "total": -135.9283,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_10",
+   "kind": "NOISY_SUB",
+   "true": [
+    "BUDGE_1898",
+    100819,
+    "COL_RT",
+    "M1",
+    "AZ_VARB"
+   ],
+   "found": [
+    "BUDGE_1898",
+    100819,
+    "COL_RT",
+    "M1",
+    "AZ_VARB"
+   ],
+   "total": -167.145,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_11",
+   "kind": "NOISY_DEL",
+   "true": [
+    "BERLIN_1912",
+    322845,
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY_BEAU"
+   ],
+   "found": [
+    "BERLIN_1912",
+    322845,
+    "R24x8/CCW/fwd",
+    "M2",
+    "KRY_BEAU"
+   ],
+   "total": -300.6446,
+   "detected": true,
+   "pt_correct": 74,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_12",
+   "kind": "CLEAN",
+   "true": [
+    "BUDGE_1898",
+    11958,
+    "ID",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "found": [
+    "BUDGE_1898",
+    11958,
+    "ID",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "total": -145.4332,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_13",
+   "kind": "NOISY_SUB",
+   "true": [
+    "EGYPT_1908",
+    741921,
+    "COL_RB",
+    "M2",
+    "KRY_VARB"
+   ],
+   "found": [
+    "EGYPT_1908",
+    741921,
+    "COL_RB",
+    "M2",
+    "KRY_VARB"
+   ],
+   "total": -177.383,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_14",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    1334680,
+    "R24x8/CW/inv",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "EGYPT_1908",
+    1334680,
+    "R24x8/CW/inv",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "total": -128.0112,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_15",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    665090,
+    "R24x8/CW/inv",
+    "M2",
+    "KRY_VARB"
+   ],
+   "found": [
+    "EGYPT_1908",
+    665090,
+    "R24x8/CW/inv",
+    "M2",
+    "KRY_VARB"
+   ],
+   "total": -156.4537,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_16",
+   "kind": "NOISY_DEL",
+   "true": [
+    "COOK_1876",
+    236602,
+    "R24x8/CW/inv",
+    "M1",
+    "AZ_VIG"
+   ],
+   "found": [
+    "COOK_1876",
+    236616,
+    "R24x8/CCW/inv",
+    "M1",
+    "AZ_VIG"
+   ],
+   "total": -307.5887,
+   "detected": true,
+   "pt_correct": 5,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_17",
+   "kind": "NOISY_DEL",
+   "true": [
+    "BERLIN_1912",
+    430346,
+    "R24x8/CCW/fwd",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "found": [
+    "BERLIN_1912",
+    430347,
+    "R24x8/CCW/fwd",
+    "M1",
+    "AZ_BEAU"
+   ],
+   "total": -314.1162,
+   "detected": true,
+   "pt_correct": 65,
+   "recovered": true,
+   "setting_ok": false
+  },
+  {
+   "id": "HOLD_18",
+   "kind": "CLEAN",
+   "true": [
+    "MURRAY_1907",
+    1909186,
+    "COL_LT",
+    "M1",
+    "KRY_VARB"
+   ],
+   "found": [
+    "MURRAY_1907",
+    1909186,
+    "COL_LT",
+    "M1",
+    "KRY_VARB"
+   ],
+   "total": -153.9253,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_19",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    1150729,
+    "R24x8/CW/inv",
+    "M1",
+    "KRY_VARB"
+   ],
+   "found": [
+    "EGYPT_1908",
+    1150729,
+    "R24x8/CW/inv",
+    "M1",
+    "KRY_VARB"
+   ],
+   "total": -149.4291,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_20",
+   "kind": "CLEAN",
+   "true": [
+    "MURRAY_1907",
+    671385,
+    "ID",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "found": [
+    "MURRAY_1907",
+    671385,
+    "ID",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "total": -139.8446,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_21",
+   "kind": "CLEAN",
+   "true": [
+    "COOK_1876",
+    202026,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VARB"
+   ],
+   "found": [
+    "COOK_1876",
+    202026,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VARB"
+   ],
+   "total": -142.2387,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_22",
+   "kind": "NOISY_SUB",
+   "true": [
+    "EGYPT_1908",
+    390635,
+    "R24x8/CW/inv",
+    "M2",
+    "KRY_BEAU"
+   ],
+   "found": [
+    "EGYPT_1908",
+    390635,
+    "R24x8/CW/inv",
+    "M2",
+    "KRY_BEAU"
+   ],
+   "total": -165.6153,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_23",
+   "kind": "NOISY_DEL",
+   "true": [
+    "COOK_1876",
+    427413,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VARB"
+   ],
+   "found": [
+    "COOK_1876",
+    427413,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VARB"
+   ],
+   "total": -242.6246,
+   "detected": true,
+   "pt_correct": 90,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_24",
+   "kind": "NOISY_SUB",
+   "true": [
+    "COOK_1876",
+    144736,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VIG"
+   ],
+   "found": [
+    "COOK_1876",
+    144736,
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ_VIG"
+   ],
+   "total": -192.6604,
+   "detected": true,
+   "pt_correct": 95,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_25",
+   "kind": "CLEAN",
+   "true": [
+    "EGYPT_1908",
+    1326699,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VIG"
+   ],
+   "found": [
+    "EGYPT_1908",
+    1326699,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VIG"
+   ],
+   "total": -158.1489,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_26",
+   "kind": "CLEAN",
+   "true": [
+    "BERLIN_1912",
+    400055,
+    "COL_RB",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "found": [
+    "BERLIN_1912",
+    400055,
+    "COL_RB",
+    "M1",
+    "KRY_BEAU"
+   ],
+   "total": -137.7737,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_27",
+   "kind": "CLEAN",
+   "true": [
+    "MURRAY_1907",
+    978206,
+    "R24x8/CW/fwd",
+    "M1",
+    "AZ_VIG"
+   ],
+   "found": [
+    "MURRAY_1907",
+    978206,
+    "R24x8/CW/fwd",
+    "M1",
+    "AZ_VIG"
+   ],
+   "total": -169.9381,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_28",
+   "kind": "CLEAN",
+   "true": [
+    "BUDGE_1898",
+    51080,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VARB"
+   ],
+   "found": [
+    "BUDGE_1898",
+    51080,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VARB"
+   ],
+   "total": -140.0188,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "HOLD_29",
+   "kind": "CLEAN",
+   "true": [
+    "BUDGE_1898",
+    112834,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VARB"
+   ],
+   "found": [
+    "BUDGE_1898",
+    112834,
+    "R24x8/CCW/fwd",
+    "M1",
+    "KRY_VARB"
+   ],
+   "total": -144.6719,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  }
+ ]
+}
