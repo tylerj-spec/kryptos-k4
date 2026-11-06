@@ -169,8 +169,16 @@ chance.** The most important open items are in §17.
       (p 0.0033), but the key letters implied at the published positions on that route are not German (p 0.04; this
       check passes 100% of real German key fragments, modern or 1912 spelling), so a German running key on SNAKE_L is
       **rejected with high power** (STAT); the same check rejects an English key on R61's COL_LT (p 0.90).
+    - **R70** (L159) tested **five named, archive.org-pinned texts** as the key: Baedeker *Berlin* 1912, Baedeker
+      *Egypt* 1908, Murray *Egypt* 1907, Cook *Egypt* 1876 and Budge *Book of the Dead* 1898.
+      - **Scope:** every offset, in place or along the 10 R61 routes, both alignment models (M1, M2), 6 tableau
+        conventions; 5.7 × 10⁸ settings per ciphertext.
+      - **Gate:** blind recovery 20/20 exact on clean plants and 5/5 with two corrupted key letters.
+      - **K4:** −450, at the shuffles' level, 1/24 letters.
+      - **Exhaustive post-freeze block check: EXCL for all five** (no setting reproduces EASTNORTHEAST or BERLINCLOCK
+        exactly).
     - **Still open:** transposition before substitution, other routes, other alphabets, clock hour/UTC-offset keys,
-      period (pre-1996) German key models, masking of the plaintext.
+      period (pre-1996) German key models, masking of the plaintext, other named texts and editions.
 
 ## 7. Autokey (the message keys itself)
 - **Ciphertext autokey:** `k_i` comes from `c_{i−L}`.
@@ -320,8 +328,9 @@ chance.** The most important open items are in §17.
 5. **Rotor-machine-style stepping** (alphabets that step like Enigma or Hebern). Only arithmetic "tableau stepping"
    was tested (L20).
 6. **Interrupted or irregular keys** (the key restarts at markers). Not tested.
-7. **Running keys from other named texts** (Bible passages, *The Egyptian Book of the Dead*, the Berlin Wall
-   speeches of 1989, CIA documents, Sanborn's own texts), each with an edition hash.
+7. **Running keys from other named texts** (Bible passages, the Berlin Wall speeches of 1989, CIA documents,
+   Sanborn's own texts), each with an edition hash. R70 (L159) excluded five: two Baedekers, Murray, Cook, and Budge's
+   *Book of the Dead* (1898 translation).
 8. **Long-lag autokeys** (lags 73–96) and plaintext autokey with free alphabets.
 9. **Other transpositions combined with substitution:** turning grilles, AMSCO, Cadenus, and other grid sizes for
    double rotation with free alphabets.
