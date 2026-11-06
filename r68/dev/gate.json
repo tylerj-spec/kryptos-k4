@@ -1,0 +1,241 @@
+{
+ "summary": {
+  "PER": {
+   "plants": 2,
+   "detected": 2,
+   "recovered": 2,
+   "setting_ok": 2,
+   "null_max": -344.5285,
+   "median_pt": 97,
+   "bar": 1,
+   "passed": true,
+   "recovered_param_le_12": [
+    2,
+    2
+   ],
+   "recovered_param_gt_12": [
+    0,
+    0
+   ]
+  },
+  "GRO": {
+   "plants": 2,
+   "detected": 2,
+   "recovered": 2,
+   "setting_ok": 2,
+   "null_max": -467.3419,
+   "median_pt": 97,
+   "bar": 1,
+   "passed": true
+  },
+  "CTAK": {
+   "plants": 2,
+   "detected": 2,
+   "recovered": 2,
+   "setting_ok": 2,
+   "null_max": -421.3002,
+   "median_pt": 91,
+   "bar": 1,
+   "passed": true,
+   "recovered_param_le_12": [
+    2,
+    2
+   ],
+   "recovered_param_gt_12": [
+    0,
+    0
+   ]
+  },
+  "PTAK": {
+   "plants": 2,
+   "detected": 0,
+   "recovered": 0,
+   "setting_ok": 0,
+   "null_max": -322.8669,
+   "median_pt": 9,
+   "bar": 1,
+   "passed": false,
+   "recovered_param_le_12": [
+    0,
+    0
+   ],
+   "recovered_param_gt_12": [
+    0,
+    2
+   ]
+  }
+ },
+ "pt_min": 60,
+ "all_witnesses_valid": true,
+ "gate_passed_any_family": true,
+ "rows": [
+  {
+   "id": "DEV_00",
+   "family": "PER",
+   "true": [
+    "COL_RT",
+    "M2",
+    "KRY/AZ_VARB",
+    "6"
+   ],
+   "found": [
+    "COL_RT",
+    "M2",
+    "KRY/AZ_VARB",
+    "6"
+   ],
+   "total": -132.6139,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_01",
+   "family": "CTAK",
+   "true": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "11"
+   ],
+   "found": [
+    "COL_LB",
+    "M2",
+    "KRY/AZ_VIG",
+    "11"
+   ],
+   "total": -188.2559,
+   "detected": true,
+   "pt_correct": 91,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_02",
+   "family": "GRO",
+   "true": [
+    "COL_LT",
+    "M1",
+    "KRY/KRY_BEAU",
+    "62233"
+   ],
+   "found": [
+    "COL_LT",
+    "M1",
+    "KRY/KRY_BEAU",
+    "62233"
+   ],
+   "total": -121.6543,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_03",
+   "family": "PER",
+   "true": [
+    "COL_LT",
+    "M2",
+    "KRY/KRY_BEAU",
+    "6"
+   ],
+   "found": [
+    "COL_LT",
+    "M2",
+    "KRY/KRY_BEAU",
+    "6"
+   ],
+   "total": -150.024,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_04",
+   "family": "PTAK",
+   "true": [
+    "COL_RT",
+    "M2",
+    "AZ/KRY_VARB",
+    "24"
+   ],
+   "found": [
+    "COL_LB",
+    "M2",
+    "AZ/KRY_VARB",
+    "23"
+   ],
+   "total": -333.7121,
+   "detected": false,
+   "pt_correct": 9,
+   "recovered": false,
+   "setting_ok": false
+  },
+  {
+   "id": "DEV_05",
+   "family": "GRO",
+   "true": [
+    "SNAKE_R",
+    "M2",
+    "KRY/KRY_VIG",
+    "62264"
+   ],
+   "found": [
+    "SNAKE_R",
+    "M2",
+    "KRY/KRY_VIG",
+    "62264"
+   ],
+   "total": -209.3241,
+   "detected": true,
+   "pt_correct": 97,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_06",
+   "family": "CTAK",
+   "true": [
+    "SNAKE_L",
+    "M1",
+    "KRY/KRY_VIG",
+    "6"
+   ],
+   "found": [
+    "SNAKE_L",
+    "M1",
+    "KRY/KRY_VIG",
+    "6"
+   ],
+   "total": -131.6649,
+   "detected": true,
+   "pt_correct": 91,
+   "recovered": true,
+   "setting_ok": true
+  },
+  {
+   "id": "DEV_07",
+   "family": "PTAK",
+   "true": [
+    "R24x8/CCW/inv",
+    "M2",
+    "AZ/KRY_VIG",
+    "15"
+   ],
+   "found": [
+    "R24x8/CW/inv",
+    "M2",
+    "KRY/KRY_VARB",
+    "20"
+   ],
+   "total": -351.0839,
+   "detected": false,
+   "pt_correct": 5,
+   "recovered": false,
+   "setting_ok": false
+  }
+ ]
+}
