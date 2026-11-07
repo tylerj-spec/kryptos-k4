@@ -169,6 +169,9 @@ chance.** The most important open items are in §17.
       (p 0.0033), but the key letters implied at the published positions on that route are not German (p 0.04; this
       check passes 100% of real German key fragments, modern or 1912 spelling), so a German running key on SNAKE_L is
       **rejected with high power** (STAT); the same check rejects an English key on R61's COL_LT (p 0.90).
+    - **R69** (L158) attributed R65's SNAKE_L gap: over all 16 row-direction readings it is matched by 7/492 controls
+      (pre-registered **ARTIFACT**; SNAKE_L retired). The residue is carved row 4 read backwards (+17.6, beyond all
+      492 controls, reported only); row 2 contributes nothing.
     - **R70** (L159) tested **five named, archive.org-pinned texts** as the key: Baedeker *Berlin* 1912, Baedeker
       *Egypt* 1908, Murray *Egypt* 1907, Cook *Egypt* 1876 and Budge *Book of the Dead* 1898.
       - **Scope:** every offset, in place or along the 10 R61 routes, both alignment models (M1, M2), 6 tableau
