@@ -1,0 +1,61 @@
+name: R43 D0 word-constraint planted development
+on:
+  push:
+    branches:
+      - "chatgpt/r43-blind-word-constraints"
+    paths:
+      - ".github/workflows/r43-d0.yml"
+      - "r43/**"
+  pull_request:
+    paths:
+      - ".github/workflows/r43-d0.yml"
+      - "r43/**"
+
+permissions:
+  contents: read
+
+jobs:
+  development:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Protect existing strict-blind baselines
+        run: bash strictblind/tests/run_all.sh
+      - name: Compile prototype (no clues, masks or known K4 plaintext)
+        run: g++ -std=c++17 -O3 -Wall -Wextra -Werror r43/blind/word_constraint_beam.cpp -o /tmp/r43_word
+      - name: Check modular graph's full bijection witnesses
+        run: |
+          g++ -std=c++17 -O3 -Wall -Wextra -Werror r43/blind/test_graph.cpp -o /tmp/r43_graph_test
+          /tmp/r43_graph_test
+      - name: Create independent D0 controls
+        run: |
+          python3 -I r43/sealed/make_d0.py
+          head -n 3 r43/d0/blind.tsv > r43/d0/smoke.tsv
+      - name: Measure lexical coverage (sealed diagnostic only)
+        run: python3 -I r43/sealed/coverage.py r43/d0/sealed_truth.json k4kit/data/word_model_orth.tsv
+      - name: Compare small and larger two-control word-beam budgets
+        timeout-minutes: 15
+        run: |
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_low.jsonl 64 64 14 > r43/d0/low_stdout.log 2> r43/d0/low_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_low.jsonl r43/d0/sealed_truth.json r43/d0/LOW_REPORT.json
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_high.jsonl 384 512 18 > r43/d0/high_stdout.log 2> r43/d0/high_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_high.jsonl r43/d0/sealed_truth.json r43/d0/HIGH_REPORT.json
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_cycles.jsonl 384 512 18 3.258096538 > r43/d0/cycles_stdout.log 2> r43/d0/cycles_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_cycles.jsonl r43/d0/sealed_truth.json r43/d0/CYCLES_REPORT.json
+          cat r43/d0/low_stderr.log
+          cat r43/d0/high_stderr.log
+          /tmp/r43_word k4kit/data/word_model_orth.tsv r43/d0/smoke.tsv r43/d0/smoke_global.jsonl 384 512 18 3.258096538 75 r43/d0/BLIND_BEAM_TRACE.tsv > r43/d0/global_stdout.log 2> r43/d0/global_stderr.log
+          python3 -I r43/sealed/evaluate.py r43/d0/smoke.tsv r43/d0/smoke_global.jsonl r43/d0/sealed_truth.json r43/d0/GLOBAL_REPORT.json
+          python3 -I r43/sealed/trace_report.py r43/d0/BLIND_BEAM_TRACE.tsv r43/d0/sealed_truth.json r43/d0/TRACE_REPORT.json
+          cat r43/d0/cycles_stderr.log
+          cat r43/d0/global_stderr.log
+      - name: Preserve honest results, including failure
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r43-development-smoke
+          path: r43/d0/
+          retention-days: 30
