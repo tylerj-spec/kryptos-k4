@@ -1,0 +1,56 @@
+K4 {'T1': 2.9447115257756766, 'T2': 4.235748891008833, 'D': 6.0, 'A7': 5.0, 'R21': 11.0, 'IC': 0.03608247422680412, 'NDIST': 26.0}
+SHUF {'n': 1000000, 'joint': 82, 'q_joint': np.float64(8.2e-05), 'fixed_7_21': 1, 'T1_ge_k4': 6654, 'T2_ge_k4': 9919, 'IC_mean': 0.036082474226804113, 'q_lo': 6.055407216168435e-05, 'q_hi': 0.00010833864659007658} 119s
+OTP 160000 111733 {'joint': 12, 'q_joint': np.float64(0.00010739888842150484), 'fixed_7_21': 0} 151s
+RUNKEY 180000 100819 {'joint': 16, 'q_joint': np.float64(0.00015870024499350322), 'fixed_7_21': 0} 183s
+PERIODIC 240000 108941 {'joint': 15, 'q_joint': np.float64(0.00013768920791988324), 'fixed_7_21': 0} 221s
+HOMOPHONIC 360000 101735 {'joint': 50, 'q_joint': np.float64(0.00049147294441441), 'fixed_7_21': 0} 293s
+GROMARK 240000 106492 {'joint': 25, 'q_joint': np.float64(0.00023475941854787214), 'fixed_7_21': 0} 327s
+CTAK 160000 107775 {'joint': 44, 'q_joint': np.float64(0.00040825794479239154), 'fixed_7_21': 1} 358s
+PTAK 180000 101861 {'joint': 22, 'q_joint': np.float64(0.00021598060101510883), 'fixed_7_21': 1} 394s
+DECISION {
+ "q_shuf": 8.2e-05,
+ "baseline_max": "RUNKEY",
+ "candidates": {
+  "PERIODIC": {
+   "joint": 15,
+   "ratio": 0.8676055158296693,
+   "ratio_lower_bound": 0.21640574797319684,
+   "ratio_upper_bound": 3.444128489193305,
+   "status": "NOT_ENRICHED"
+  },
+  "HOMOPHONIC": {
+   "joint": 50,
+   "ratio": 3.096863173932275,
+   "ratio_lower_bound": 1.1317233553925485,
+   "ratio_upper_bound": 9.331873823257034,
+   "status": "NOT_ENRICHED"
+  },
+  "GROMARK": {
+   "joint": 25,
+   "ratio": 1.4792631136611198,
+   "ratio_lower_bound": 0.4494723380491753,
+   "ratio_upper_bound": 5.1290902300650005,
+   "status": "NOT_ENRICHED"
+  },
+  "CTAK": {
+   "joint": 44,
+   "ratio": 2.5725098585015074,
+   "ratio_lower_bound": 0.9136600765440772,
+   "ratio_upper_bound": 7.92932416443273,
+   "status": "NOT_ENRICHED"
+  },
+  "PTAK": {
+   "joint": 22,
+   "ratio": 1.360934263358891,
+   "ratio_lower_bound": 0.3959210068687075,
+   "ratio_upper_bound": 4.86762930102556,
+   "status": "NOT_ENRICHED"
+  }
+ },
+ "outcome": "NO_FAMILY",
+ "promising": []
+}
+
+real	6m34.289s
+user	6m31.910s
+sys	0m1.112s
