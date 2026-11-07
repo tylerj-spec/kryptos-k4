@@ -1,0 +1,174 @@
+name: R62C COL_LT 300 fresh nulls 20 route families stage1 only
+on:
+  push:
+    branches: ["chatgpt/r62c-col-lt-look-elsewhere"]
+    paths:
+      - ".github/workflows/r62c-col-lt.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r62c-strict-blind-one-time
+  cancel-in-progress: false
+jobs:
+  stage1-blind-shards:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Guard write-once freeze and forbidden plaintext dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          test ! -f r62c/frozen/ALL_RAW.jsonl
+          python3 - <<'PY'
+          from pathlib import Path
+          for p in ("r62c/sealed/prepare.py","r62c/blind/stage1.py","r59/blind/rk_solve.cpp"):
+              s=Path(p).read_text().upper()
+              for banned in ("EASTNORTHEAST","BERLINCLOCK","KNOWN_POSITION","CRIB_MASK"):
+                  assert banned not in s,(p,banned)
+          PY
+          mkdir -p "$RUNNER_TEMP/r62c/raw" "$RUNNER_TEMP/r62c/nltk" \
+            "$RUNNER_TEMP/r62c/corpus" "$RUNNER_TEMP/r62c/input" \
+            "$RUNNER_TEMP/r62c/tool" "$RUNNER_TEMP/r62c/model" "$RUNNER_TEMP/r62c/output"
+          chmod 0777 "$RUNNER_TEMP/r62c/output"
+      - name: Rebuild exact R59 6-gram model from 20 pinned books and five NLTK corpora
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r59/corpus/build_corpus.py fetch "$RUNNER_TEMP/r62c/raw"
+          for n in brown webtext inaugural state_union gutenberg; do
+            curl -fLSs --retry 3 --max-time 180 \
+              "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/$n.zip" \
+              -o "$RUNNER_TEMP/r62c/nltk/$n.zip"
+          done
+          python3 -I r59/corpus/build_corpus.py build \
+            "$RUNNER_TEMP/r62c/raw" "$RUNNER_TEMP/r62c/corpus" "$RUNNER_TEMP/r62c/nltk"
+          g++ -O3 -std=c++17 r59/blind/lm_build.cpp -o "$RUNNER_TEMP/r62c/lm_build"
+          "$RUNNER_TEMP/r62c/lm_build" \
+            "$RUNNER_TEMP/r62c/corpus/train.txt" "$RUNNER_TEMP/r62c/model/lm.bin" 6
+          test "$(sha256sum "$RUNNER_TEMP/r62c/model/lm.bin" | awk '{print $1}')" \
+               = "$(awk 'NR==1{print $1}' r59/blind/LM_SHA256)"
+          g++ -O3 -std=c++17 r59/blind/rk_solve.cpp -o "$RUNNER_TEMP/r62c/tool/rk_solve"
+          g++ --version | head -n 1
+          sha256sum "$RUNNER_TEMP/r62c/tool/rk_solve"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r62c/model/words.tsv"
+          cp r62c/blind/stage1.py "$RUNNER_TEMP/r62c/tool/stage1.py"
+      - name: Prepare pristine ciphertext, new shuffle nulls and unchanged R61 route table
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62c/sealed/prepare.py \
+             r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r62c/input/ALL.tsv"
+          cp r61/routes.txt "$RUNNER_TEMP/r62c/input/routes.txt"
+          chmod 0555 "$RUNNER_TEMP/r62c/input" "$RUNNER_TEMP/r62c/tool" "$RUNNER_TEMP/r62c/model"
+      - name: Only original R61 stage1 beam 30000 no polish in no-network read-only unprivileged container
+        shell: bash
+        run: |
+          set -euo pipefail
+          sid="$(printf '%02d' "${{ matrix.shard }}")"
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --memory 6g --pids-limit 160 \
+            -v "$RUNNER_TEMP/r62c/input:/input:ro" \
+            -v "$RUNNER_TEMP/r62c/tool:/tool:ro" \
+            -v "$RUNNER_TEMP/r62c/model:/model:ro" \
+            -v "$RUNNER_TEMP/r62c/output:/output:rw" \
+            python:3.12-slim \
+            python -I -B /tool/stage1.py /input/ALL.tsv "${{ matrix.shard }}" \
+              /input/routes.txt /tool/rk_solve /model/lm.bin /model/words.tsv \
+              "/output/shard_$sid.jsonl" /output/work "/output/shard_$sid.log"
+          test -s "$RUNNER_TEMP/r62c/output/shard_$sid.jsonl"
+          test -s "$RUNNER_TEMP/r62c/output/shard_$sid.manifest.json"
+          echo "R62C shard $sid complete: raw 97-letter texts and keys retained"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r62c-part-${{ matrix.shard }}
+          path: |
+            ${{ runner.temp }}/r62c/output/shard_*.jsonl
+            ${{ runner.temp }}/r62c/output/shard_*.manifest.json
+            ${{ runner.temp }}/r62c/output/shard_*.log
+          retention-days: 7
+          compression-level: 1
+          if-no-files-found: error
+  remote-freeze-all-41730-complete-candidates:
+    needs: stage1-blind-shards
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r62c-col-lt-look-elsewhere
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Refuse raw overwrite; create staging area
+        run: |
+          test ! -f r62c/frozen/ALL_RAW.jsonl
+          mkdir -p "$RUNNER_TEMP/r62c/aggregate"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: r62c-part-*
+          path: ${{ runner.temp }}/r62c/aggregate
+          merge-multiple: true
+      - name: Validate 321 unique cases and remote Git freeze every complete 97-letter text/key pair
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62c/sealed/prepare.py \
+            r39/ic_gate/k4_ciphertext.txt "$RUNNER_TEMP/r62c/ALL_INPUT.tsv"
+          python3 -I r62c/sealed/freeze.py \
+            "$RUNNER_TEMP/r62c/ALL_INPUT.tsv" "$RUNNER_TEMP/r62c/aggregate" \
+            r62c/blind/stage1.py r61/routes.txt r62c/PREREGISTRATION.md \
+            k4kit/data/word_model_orth.tsv \
+            "$RUNNER_TEMP/r62c/ALL_RAW.jsonl" "$RUNNER_TEMP/r62c/FROZEN.json"
+          mkdir -p r62c/frozen
+          cp "$RUNNER_TEMP/r62c/ALL_INPUT.tsv" r62c/frozen/ALL_INPUT.tsv
+          cp "$RUNNER_TEMP/r62c/ALL_RAW.jsonl" r62c/frozen/ALL_RAW.jsonl
+          cp "$RUNNER_TEMP/r62c/FROZEN.json" r62c/frozen/FROZEN.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62c/frozen/ALL_INPUT.tsv r62c/frozen/ALL_RAW.jsonl r62c/frozen/FROZEN.json
+          git commit -m "R62C REMOTE FREEZE 41730 full 97-letter candidate pairs before statistics [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62c-col-lt-look-elsewhere
+          echo "R62C ALL original-K4 and null full outputs NOW REMOTELY FROZEN"
+  independent-full-forward-witness-audit-and-statistics:
+    needs: remote-freeze-all-41730-complete-candidates
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r62c-col-lt-look-elsewhere
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Prove prior REMOTE Git commit contains complete original K4 raw output
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f r62c/frozen/ALL_INPUT.tsv
+          git ls-tree -r --name-only HEAD r62c/frozen/ALL_RAW.jsonl | grep -q ALL_RAW.jsonl
+          git ls-tree -r --name-only HEAD r62c/frozen/FROZEN.json | grep -q FROZEN.json
+      - name: Independently reencr all 41730 candidates, then compute G and predetermined null test
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62c/sealed/verify_frozen.py \
+            r62c/frozen/ALL_INPUT.tsv r62c/frozen/ALL_RAW.jsonl \
+            r62c/frozen/FROZEN.json r62c/blind/stage1.py \
+            r61/routes.txt k4kit/data/word_model_orth.tsv \
+            r62c/PREREGISTRATION.md r39/ic_gate/k4_ciphertext.txt \
+            "$RUNNER_TEMP/r62c_C_EVALUATION.json"
+          cp "$RUNNER_TEMP/r62c_C_EVALUATION.json" r62c/frozen/POSTFREEZE_EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62c/frozen/POSTFREEZE_EVALUATION.json
+          git commit -m "R62C INDEPENDENT 41730 witnesses and 300-null look-elsewhere gap stats postremote freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62c-col-lt-look-elsewhere
+          echo "No published K4 known plaintext checker or third-party checker invoked"
