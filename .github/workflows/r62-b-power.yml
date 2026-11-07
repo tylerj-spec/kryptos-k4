@@ -1,0 +1,211 @@
+name: R62B blind 1990-style running-key power with remote Git freeze
+on:
+  push:
+    branches: ["chatgpt/r62-r59-r61-independent-audit"]
+    paths:
+      - ".github/workflows/r62-b-power.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r62b-one-time-strict-blind-remote-freeze
+  cancel-in-progress: false
+
+jobs:
+  blind-controls-remote-freeze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Enforce first-run write-once preregistration and no K4 known-letter solver dependency
+        shell: bash
+        run: |
+          set -euo pipefail
+          test ! -f r62/b/frozen/RAW_RESULTS.jsonl
+          python3 - <<'PY'
+          from pathlib import Path
+          for p in ("r62/sealed/prepare_controls.py","r62/sealed/freeze_b.py",
+                    "r59/blind/rk_solve.cpp","r59/blind/run.py"):
+              code=Path(p).read_text().upper()
+              for banned in ("EASTNORTHEAST","BERLINCLOCK","KNOWN_K4_POSITION","CRIB_MASK"):
+                  assert banned not in code,(p,banned)
+          print("R62 no K4 published-letter text in blind generator, solver or freeze")
+          PY
+          mkdir -p "$RUNNER_TEMP/r62raw" "$RUNNER_TEMP/r62nltk" "$RUNNER_TEMP/r62corpus"
+          mkdir -p "$RUNNER_TEMP/r62sealed" "$RUNNER_TEMP/r62input"
+          mkdir -p "$RUNNER_TEMP/r62stage/r59/blind" "$RUNNER_TEMP/r62stage/k4kit/data"
+          mkdir -p "$RUNNER_TEMP/r62out" r62_artifacts
+          chmod 0777 "$RUNNER_TEMP/r62out"
+
+      - name: Download independently pinned English-key source (not a training book)
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fLSs --retry 3 --max-time 120 \
+            "https://raw.githubusercontent.com/GITenberg/The-Wonderful-Wizard-of-Oz_55/d19a4315b7c6f4471de8840a1a81609b34841dff/55.txt" \
+            -o "$RUNNER_TEMP/r62raw/OZ.txt"
+          test "$(git hash-object "$RUNNER_TEMP/r62raw/OZ.txt")" = "4d978dfeb6b30ead21f73beca1eb51d8cb9686cc"
+          echo "R62 Oz key-source pinned Git blob verified"
+
+      - name: Rebuild original R59 model from all 20 verified books plus 5 NLTK corpora
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r59/corpus/build_corpus.py fetch "$RUNNER_TEMP/r62raw"
+          for name in brown webtext inaugural state_union gutenberg; do
+            curl -fLSs --retry 3 --max-time 180 \
+              "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/$name.zip" \
+              -o "$RUNNER_TEMP/r62nltk/$name.zip"
+          done
+          python3 -I r59/corpus/build_corpus.py build \
+            "$RUNNER_TEMP/r62raw" "$RUNNER_TEMP/r62corpus" "$RUNNER_TEMP/r62nltk"
+          g++ -O3 -std=c++17 r59/blind/lm_build.cpp -o "$RUNNER_TEMP/r62_lm_build"
+          "$RUNNER_TEMP/r62_lm_build" \
+            "$RUNNER_TEMP/r62corpus/train.txt" "$RUNNER_TEMP/lm6.v2.bin" 6
+          expected="$(awk 'NR==1{print $1}' r59/blind/LM_SHA256)"
+          actual="$(sha256sum "$RUNNER_TEMP/lm6.v2.bin" | awk '{print $1}')"
+          test "$expected" = "$actual"
+          echo "Exact R59 independently rebuilt model hash $actual"
+          g++ -O3 -std=c++17 r59/blind/rk_solve.cpp -o "$RUNNER_TEMP/r62_rk_solve"
+          sha256sum "$RUNNER_TEMP/r62_rk_solve"
+          cp "$RUNNER_TEMP/lm6.v2.bin" r62_artifacts/lm6.v2.bin
+
+      - name: Generate unseen English plaintext, independent English book key and sealed truths OUTSIDE blind mount
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I r62/sealed/prepare_controls.py \
+            k4kit/data/k1k3_plaintext.txt r62/MODERN_MESSAGES.txt "$RUNNER_TEMP/r62raw/OZ.txt" \
+            "$RUNNER_TEMP/r62input/INPUT.tsv" "$RUNNER_TEMP/r62sealed/TRUTH.json" \
+            "$RUNNER_TEMP/r62sealed/PROVENANCE.json"
+          test "$(wc -l < "$RUNNER_TEMP/r62input/INPUT.tsv")" -eq 81
+          test ! -f r62/b/frozen/RAW_RESULTS.jsonl
+
+      - name: Stage ONLY frozen blind solver, plaintext-free ciphertext TSV, model and generic word data
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp r59/blind/run.py "$RUNNER_TEMP/r62stage/r59/blind/run.py"
+          cp r59/blind/rk_solve.cpp "$RUNNER_TEMP/r62stage/r59/blind/rk_solve.cpp"
+          cp r59/blind/LM_SHA256 "$RUNNER_TEMP/r62stage/r59/blind/LM_SHA256"
+          cp r59/PREREGISTRATION.md "$RUNNER_TEMP/r62stage/r59/PREREGISTRATION.md"
+          cp k4kit/data/word_model_orth.tsv "$RUNNER_TEMP/r62stage/k4kit/data/word_model_orth.tsv"
+          cp "$RUNNER_TEMP/r62_rk_solve" "$RUNNER_TEMP/r62stage/rk_solve"
+          cp "$RUNNER_TEMP/lm6.v2.bin" "$RUNNER_TEMP/r62stage/lm6.v2.bin"
+          cp "$RUNNER_TEMP/r62input/INPUT.tsv" "$RUNNER_TEMP/r62stage/INPUT.tsv"
+          chmod 0555 "$RUNNER_TEMP/r62stage" "$RUNNER_TEMP/r62stage/r59" \
+            "$RUNNER_TEMP/r62stage/r59/blind" "$RUNNER_TEMP/r62stage/k4kit" \
+            "$RUNNER_TEMP/r62stage/k4kit/data"
+
+      - name: Run UNCHANGED R59 process, unknown keys and messages in no-network nonroot container
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user 65534:65534 \
+            --memory 12g --pids-limit 160 \
+            -v "$RUNNER_TEMP/r62stage:/work:ro" \
+            -v "$RUNNER_TEMP/r62out:/output:rw" \
+            python:3.12-slim \
+            python -I -B /work/r59/blind/run.py /work/INPUT.tsv /output \
+            /work/lm6.v2.bin /work/rk_solve 4
+          test "$(wc -l < "$RUNNER_TEMP/r62out/RESULTS.jsonl")" -eq 80
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r62b-verified-original-r59-lm
+          path: r62_artifacts/lm6.v2.bin
+          compression-level: 1
+          retention-days: 2
+          if-no-files-found: error
+
+      - name: Freeze complete 80 x 13 full-length ciphertext-only outputs and key streams to REMOTE Git BEFORE truth
+        shell: bash
+        run: |
+          set -euo pipefail
+          test ! -e r62/b/frozen/RAW_RESULTS.jsonl
+          python3 -I r62/sealed/freeze_b.py \
+            "$RUNNER_TEMP/r62input/INPUT.tsv" "$RUNNER_TEMP/r62out/RESULTS.jsonl" \
+            r59/blind/rk_solve.cpp "$RUNNER_TEMP/lm6.v2.bin" \
+            k4kit/data/word_model_orth.tsv r59/blind/run.py \
+            r62/PREREGISTRATION.md r62/sealed/prepare_controls.py \
+            r62/MODERN_MESSAGES.txt "$RUNNER_TEMP/r62sealed/FROZEN.json"
+          mkdir -p r62/b/frozen
+          cp "$RUNNER_TEMP/r62input/INPUT.tsv" r62/b/frozen/INPUT.tsv
+          cp "$RUNNER_TEMP/r62out/RESULTS.jsonl" r62/b/frozen/RAW_RESULTS.jsonl
+          cp "$RUNNER_TEMP/r62sealed/FROZEN.json" r62/b/frozen/FROZEN.json
+          cp "$RUNNER_TEMP/r62out/FROZEN.sha256" r62/b/frozen/R59_ORIGINAL_MANIFEST.sha256
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62/b/frozen/INPUT.tsv r62/b/frozen/RAW_RESULTS.jsonl \
+                  r62/b/frozen/FROZEN.json r62/b/frozen/R59_ORIGINAL_MANIFEST.sha256
+          git commit -m "R62B REMOTE BLIND FREEZE 80 full output pairs before true keys, family and plaintext reveal [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62-r59-r61-independent-audit
+          echo "R62B REMOTE GIT FROZEN BEFORE TRUE LABEL OR KEY EVALUATION"
+
+  separate-postfreeze-power-evaluation:
+    needs: blind-controls-remote-freeze
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chatgpt/r62-r59-r61-independent-audit
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: r62b-verified-original-r59-lm
+          path: r62_artifacts
+      - name: Require raw complete blinded 97-letter results ALREADY COMMITTED on GitHub remote branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git ls-tree -r --name-only HEAD r62/b/frozen/RAW_RESULTS.jsonl | grep -q RAW_RESULTS
+          git ls-tree -r --name-only HEAD r62/b/frozen/FROZEN.json | grep -q FROZEN
+          test "$(sha256sum r62_artifacts/lm6.v2.bin | awk '{print $1}')" \
+               = "$(awk 'NR==1{print $1}' r59/blind/LM_SHA256)"
+      - name: Independently recreate unseen key source and hidden truth after immutable remote freeze
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/r62post/raw" "$RUNNER_TEMP/r62post/sealed"
+          curl -fLSs --retry 3 --max-time 120 \
+            "https://raw.githubusercontent.com/GITenberg/The-Wonderful-Wizard-of-Oz_55/d19a4315b7c6f4471de8840a1a81609b34841dff/55.txt" \
+            -o "$RUNNER_TEMP/r62post/raw/OZ.txt"
+          test "$(git hash-object "$RUNNER_TEMP/r62post/raw/OZ.txt")" \
+               = "4d978dfeb6b30ead21f73beca1eb51d8cb9686cc"
+          python3 -I r62/sealed/prepare_controls.py \
+            k4kit/data/k1k3_plaintext.txt r62/MODERN_MESSAGES.txt \
+            "$RUNNER_TEMP/r62post/raw/OZ.txt" \
+            "$RUNNER_TEMP/r62post/sealed/INPUT.tsv" \
+            "$RUNNER_TEMP/r62post/sealed/TRUTH.json" \
+            "$RUNNER_TEMP/r62post/sealed/PROVENANCE.json"
+          cmp "$RUNNER_TEMP/r62post/sealed/INPUT.tsv" r62/b/frozen/INPUT.tsv
+          python3 -I r62/sealed/evaluate_controls.py \
+            r62/b/frozen/INPUT.tsv r62/b/frozen/RAW_RESULTS.jsonl \
+            r62/b/frozen/FROZEN.json \
+            "$RUNNER_TEMP/r62post/sealed/TRUTH.json" \
+            "$RUNNER_TEMP/r62post/sealed/PROVENANCE.json" \
+            r59/blind/rk_solve.cpp r62_artifacts/lm6.v2.bin \
+            k4kit/data/word_model_orth.tsv r59/blind/run.py \
+            r62/PREREGISTRATION.md r62/MODERN_MESSAGES.txt \
+            "$RUNNER_TEMP/r62post/sealed/EVALUATION.json"
+      - name: Preserve independent results, hidden truth and full source provenance AFTER remote raw freeze
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp "$RUNNER_TEMP/r62post/sealed/TRUTH.json" r62/b/frozen/POSTFREEZE_TRUTH.json
+          cp "$RUNNER_TEMP/r62post/sealed/PROVENANCE.json" r62/b/frozen/POSTFREEZE_PROVENANCE.json
+          cp "$RUNNER_TEMP/r62post/sealed/EVALUATION.json" r62/b/frozen/EVALUATION.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add r62/b/frozen/POSTFREEZE_TRUTH.json \
+                  r62/b/frozen/POSTFREEZE_PROVENANCE.json \
+                  r62/b/frozen/EVALUATION.json
+          git commit -m "R62B independent full witness and modern/Sanborn power evaluation ONLY AFTER remote freeze [skip ci]"
+          git push origin HEAD:refs/heads/chatgpt/r62-r59-r61-independent-audit
