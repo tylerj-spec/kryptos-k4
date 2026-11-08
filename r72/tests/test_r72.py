@@ -2,7 +2,8 @@
 """R72 tests. Run: python3 -I r72/tests/test_r72.py
   1. no R72 code holds K4 plaintext words; 2. K3 is reproduced by the documented 42 -> 14 double turn and its inverse
   (multiply by 192 mod 337) decrypts it; 3. the turn = decimation lemma holds; 4. the 98-cell sheet has exactly 9
-  double-turn orderings, k in {4, 14, 25, 28, 46, 49, 92, 97, 98}; 5. the 14 x 31 panel puts K4 at 4 + 31 + 31 + 31."""
+  double-turn orderings, k in {4, 14, 25, 28, 46, 49, 92, 97, 98}; 5. the 14 x 31 panel puts K4 at 4 + 31 + 31 + 31;
+  6. exactly the reported 98-cell routes coincide with already-tested 97-letter routes (r72/novelty.py)."""
 import sys
 from pathlib import Path
 
@@ -39,7 +40,20 @@ k4 = R.K4_CT.read_text().strip()
 cells = ct3 + "?" + k4
 if len(cells) != 434 or divmod(cells.index("?" + k4), 31) != (10, 26):
     bad.append("panel layout")
+import novelty as V  # noqa: E402
+fams = V.catalog()
+labels = {}
+for w1 in (2, 7, 14, 49):
+    for w2 in (2, 7, 14, 49):
+        for cw in (True, False):
+            p = R.compose(R.turn(98, w1, cw), R.turn(98, w2, cw))
+            k = R.decimation(p)
+            for cell in (0, 97):
+                labels[(k, cell)] = fams.get(tuple(V.drop_cell(p, cell)))
+expect_tested = {(14, 97), (49, 97), (92, 97), (97, 97), (97, 0), (98, 0), (98, 97)}
+if {key for key, v in labels.items() if v is not None} != expect_tested:
+    bad.append(f"novelty overlap set {sorted(key for key, v in labels.items() if v is not None)}")
 if bad:
     print("R72 TEST FAIL:", bad)
     sys.exit(1)
-print("R72 TESTS OK: K3 reproduced both ways; turn = decimation lemma; 9 orderings on 98 cells; panel 4+31+31+31")
+print("R72 TESTS OK: K3 reproduced both ways; turn = decimation lemma; 9 orderings on 98 cells; panel 4+31+31+31; novelty overlaps as reported")

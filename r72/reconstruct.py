@@ -8,9 +8,10 @@
      1-based positions modulo n + 1: anticlockwise j -> w*j, clockwise j -> -w*j. Two turns multiply. Checked for every
      whole-grid sheet of 336 and of 98 cells.
   C. Fabrication: K3 (336) + separator (1) + K4 (97) = 434 = 14 x 31 places K4 at row 11 col 27 onward: 4 + 31+31+31.
-  D. The same documented procedure on a K4-sized whole sheet: 97 is prime, so no whole sheet holds K4 alone; with one
-     extra cell (the carved separator, or a blank) the sheet is 98 = 14 x 7 = 2 x 49 (14 rows, as K3's 14 x 24 sheet).
-     List every distinct double-turn ordering of a 98-cell sheet. Definitions only; nothing is applied to K4 here.
+  D. Analogy only (no document shows a K4 sheet): 97 is prime, so no fully filled rectangle larger than one row holds
+     K4 alone; a hypothetical extra cell would give 98 = 14 x 7 = 2 x 49. List the distinct two-turn same-direction
+     orderings of a complete 98-cell sheet (not all possible 98-cell readings). Definitions only; nothing is applied to
+     K4 here. r72/novelty.py checks which of them, as 97-letter routes, were already tested.
 Usage: python3 -I r72/reconstruct.py   (writes r72/data/K3_INDEX_MAP.tsv and r72/data/SHEET98_ORDERINGS.tsv)"""
 import hashlib
 import json
