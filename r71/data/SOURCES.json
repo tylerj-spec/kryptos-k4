@@ -1,0 +1,5 @@
+{
+ "2360.txt": {"title": "Erskine Childers, The Riddle of the Sands", "url": "https://raw.githubusercontent.com/GITenberg/The-Riddle-of-the-Sands_2360/master/2360.txt", "sha256": "cf90331a7e235cb117742f8aef111aa28ce76be458e9ce2bc09db55344431edd", "role": "plaintext"},
+ "974.txt": {"title": "Joseph Conrad, The Secret Agent", "url": "https://raw.githubusercontent.com/GITenberg/The-Secret-Agent--A-Simple-Tale_974/master/974.txt", "sha256": "a84841ca18ea01ca11ca2ea2bc38d312758ed1570cc91b5447a9356166c13cae", "role": "plaintext"},
+ "558.txt": {"title": "John Buchan, The Thirty-Nine Steps", "url": "https://raw.githubusercontent.com/GITenberg/The-Thirty-Nine-Steps_558/master/558.txt", "sha256": "3311ea0e2c85065d81299be5246c186696362aaa0cd4fa314166888cfed3857c", "role": "running key"}
+}
