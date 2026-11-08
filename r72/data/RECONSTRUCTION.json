@@ -1,0 +1,102 @@
+{
+ "K3": {
+  "reproduced": true,
+  "documented": "rows of 42 (42x8), clockwise turn, rows of 14 (14x24), clockwise turn",
+  "decimation_mod_337": 251,
+  "inverse_mod_337": 192,
+  "equivalent_width_pairs": [
+   [
+    7,
+    84,
+    "CW"
+   ],
+   [
+    7,
+    84,
+    "CCW"
+   ],
+   [
+    14,
+    42,
+    "CW"
+   ],
+   [
+    14,
+    42,
+    "CCW"
+   ],
+   [
+    21,
+    28,
+    "CW"
+   ],
+   [
+    21,
+    28,
+    "CCW"
+   ],
+   [
+    28,
+    21,
+    "CW"
+   ],
+   [
+    28,
+    21,
+    "CCW"
+   ],
+   [
+    42,
+    14,
+    "CW"
+   ],
+   [
+    42,
+    14,
+    "CCW"
+   ],
+   [
+    84,
+    7,
+    "CW"
+   ],
+   [
+    84,
+    7,
+    "CCW"
+   ]
+  ]
+ },
+ "lemma": {
+  "336": "checked: anticlockwise = x w, clockwise = x (-w) mod n+1, for every whole-grid width",
+  "98": "checked: anticlockwise = x w, clockwise = x (-w) mod n+1, for every whole-grid width"
+ },
+ "panel_14x31": {
+  "K4_start_row_col": [
+   10,
+   27
+  ],
+  "K4_cells_per_row": [
+   4,
+   31,
+   31,
+   31
+  ],
+  "row_11_text": "ECDMRIPFEIMEHNLSSTTRTVDOHW?OBKR"
+ },
+ "sheet98": {
+  "distinct_orderings": 9,
+  "k_mod_99": [
+   4,
+   14,
+   25,
+   28,
+   46,
+   49,
+   92,
+   97,
+   98
+  ],
+  "note": "every double turn of a 98-cell sheet is 'take every k-th cell mod 99'; inverses included"
+ }
+}
