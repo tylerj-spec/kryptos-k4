@@ -38,3 +38,26 @@ holdout is now spent.
   - It costs seconds of compute and needs Tyler's separate approval.
 - **R26 is not taken to K4.** It fits K4's flatness much better (22%). If wanted, the next step is R73b: fix the
   unknown-word handling on development data, then a fresh sealed holdout with the same gate.
+
+## K4 run, Family I only (pre-registered in `r73/K4_PREREGISTRATION.md`, 0025cd0; approved by Tyler)
+| Step | Commit | Result |
+|---|---|---|
+| Target: K4 + 100 shuffles (seed 730200) | badf076 | — |
+| Blind run (48 s) and freeze | b3f597c | all 70 settings per ciphertext kept |
+| Verify (no published letters) | this commit | **PASSED**: 7,070 decodes re-encrypt |
+| Sealed reveal | this commit | **NO_SIGNAL** |
+
+- **K4's best Family I decode:** −4.27 per letter (KRYPTOS / KRY / VARB).
+  - That is far below the −2.7 confidence cut. Real Family I messages scored −1.37 or better.
+  - 67 of 100 shuffled copies of K4 score higher; the best null scores −3.79.
+- **Published letters:** the decode matches 2 of 24. The best of all 18 Family I settings matches 4/24 (nulls: median
+  3, maximum 5).
+- **Contenders:** none, out of K4's 18 decodes.
+- **Raw decode** (unedited; mostly unknown-word fragments):
+  `O BR R US X OH HVN BA OM I F BC WG LY V QU PYU GR SA OO W TUB JU SA ERR ZX A T JR LVF I AX I NGDVSB VOS MK FT K WH DR ZZSN CE I GR UIW A U ERE AY`
+
+**Conclusion:**
+- K4 is not a word-restarted interrupted key with KRYPTOS, PALIMPSEST or ABSCISSA on an AZ or KRYPTOS tableau under
+  VIG, BEAU or VARB, with English plaintext.
+- The blind solver had 94/100 power on this family and finds nothing. K4 decodes worse than most of its own shuffles.
+- This is consistent with the flatness expectation: only 0.56% of Family I ciphertexts are as flat as K4.
