@@ -1,0 +1,1173 @@
+{
+ "n_pos": 12,
+ "exact_plaintext": 12,
+ "true_transform": 12,
+ "pos_best_per_letter_min": -0.926528308786465,
+ "pos_gap_min": 0.18301454860448224,
+ "pos_word_per_letter_min": -1.160447881380123,
+ "n_neg": 33,
+ "neg_best_per_letter_max": -1.804515481206406,
+ "neg_word_per_letter_max": -3.577628606876429,
+ "seconds_model_and_transform_setup": 0.8063600063323975,
+ "seconds_per_ciphertext_mean": 2.256722821129693,
+ "rows": [
+  {
+   "kind": "POS",
+   "best_per_letter": -0.6683727860059866,
+   "gap_to_next_text": 1.2204783753105115,
+   "best_route": "COL_LT^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 6,
+     "b": 4,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "COL_LT^-1"
+    }
+   ],
+   "best_text": "WASSMALLANDSOWASTHEHOUSEITWASONEOFTHOSEGRIMYBRICKHOUSESWHICHEXISTEDINLARGEQUANTITIESBEFORETHEERAO",
+   "best_word_per_letter": -0.8100561244424731,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 6,
+    "b": 4,
+    "op_a": "VIG",
+    "op_b": "BEAU",
+    "route": "COL_LT^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.558431800843256,
+   "gap_to_next_text": 1.1295109488333746,
+   "best_route": "COL_RT",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 4,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_RT"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 4,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_RT"
+    }
+   ],
+   "best_text": "HUMANITARIANHOPESWASONEOFTHEMOSTINFLUENTIALANDDISTINGUISHEDCONNECTIONSOFTHEASSISTANTCOMMISSIONERS",
+   "best_word_per_letter": -0.4939259191873054,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 7,
+    "b": 4,
+    "op_a": "VARB",
+    "op_b": "VIG",
+    "route": "COL_RT"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.797316034980541,
+   "gap_to_next_text": 0.3947317982048619,
+   "best_route": "R24x8/CW/fwd",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 3,
+     "b": 6,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "R24x8/CW/fwd"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 3,
+     "b": 6,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "R24x8/CW/fwd"
+    }
+   ],
+   "best_text": "BURSTOUTYESTHEEMBASSYPEOPLEAPRETTYLOTAINTTHEYBEFOREAWEEKSOUTILLMAKESOMEOFTHEMWISHTHEMSELVESTWENTY",
+   "best_word_per_letter": -0.7781844700548086,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 6,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "R24x8/CW/fwd"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.6902229938777308,
+   "gap_to_next_text": 1.2014447659939365,
+   "best_route": "COL_RB^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 3,
+     "b": 9,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_RB^-1"
+    },
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 3,
+     "b": 9,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_RB^-1"
+    }
+   ],
+   "best_text": "DREADEDANDADMIREDTHECALMSELFCONTAINEDCHARACTEROFHERDAUGHTERWINNIEWHOSEDISPLEASUREWASMADEREDOUBTAB",
+   "best_word_per_letter": -0.8022611689206697,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 3,
+    "b": 9,
+    "op_a": "VARB",
+    "op_b": "VIG",
+    "route": "COL_RB^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.7237341062486239,
+   "gap_to_next_text": 0.9316794926489069,
+   "best_route": "COL_RB",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 7,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "COL_RB"
+    }
+   ],
+   "best_text": "MYMANTURNEDUPTOTELLMETHATTHEFELLOWHADMARRIEDHISLANDLADYSDAUGHTERATAREGISTRARSOFFICETHATVERYDAYATA",
+   "best_word_per_letter": -0.8542698235743952,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 6,
+    "b": 7,
+    "op_a": "VARB",
+    "op_b": "VARB",
+    "route": "COL_RB"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.6681777152048995,
+   "gap_to_next_text": 0.2103651018102759,
+   "best_route": "R24x8/CW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 6,
+     "b": 5,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "R24x8/CW/fwd^-1"
+    }
+   ],
+   "best_text": "RIGHTTHINGTOSAYFORANOFFICEROFCHIEFINSPECTORHEATSREPUTATIONTHATITWASPERFECTLYDELIGHTFULTHEHIGHOFFI",
+   "best_word_per_letter": -0.720982858297393,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 6,
+    "b": 5,
+    "op_a": "VIG",
+    "op_b": "BEAU",
+    "route": "R24x8/CW/fwd^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.7952204432285819,
+   "gap_to_next_text": 1.1282076463885646,
+   "best_route": "COL_RT^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 2,
+     "op_a": "VIG",
+     "op_b": "VARB",
+     "route": "COL_RT^-1"
+    }
+   ],
+   "best_text": "ANDTHENTHEENDCAMEOURTOWROPEWASATTACHEDANDATHALFPASTSIXTHELITTLELAUNCHJUMPEDINTOTHECOLLARANDAMIDST",
+   "best_word_per_letter": -0.7868179787263522,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 1,
+    "b": 2,
+    "op_a": "VIG",
+    "op_b": "VARB",
+    "route": "COL_RT^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.7040186000024535,
+   "gap_to_next_text": 0.9966065827649105,
+   "best_route": "COL_LB",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 1,
+     "b": 6,
+     "op_a": "VIG",
+     "op_b": "VIG",
+     "route": "COL_LB"
+    }
+   ],
+   "best_text": "WHERETHELUCKCAMEINISPOKEOFONLYTWOCHANNELSTHATISROUNDTHEBANKONETOTHENORTHTHEOTHERTOTHESOUTHBUTLOOK",
+   "best_word_per_letter": -0.7085416668301786,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 1,
+    "b": 6,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "COL_LB"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.705147984680789,
+   "gap_to_next_text": 1.0400293155974012,
+   "best_route": "COL_RB",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 4,
+     "b": 2,
+     "op_a": "VIG",
+     "op_b": "VARB",
+     "route": "COL_RB"
+    }
+   ],
+   "best_text": "STRIPPEDOFFHISDRIPPINGOILSKINCOATTHREWITDOWNONTHECABINSKYLIGHTANDFOLLOWEDTHEMTHECOURSEHEHADSETWAS",
+   "best_word_per_letter": -0.7423584061658058,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 4,
+    "b": 2,
+    "op_a": "VIG",
+    "op_b": "VARB",
+    "route": "COL_RB"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.6929857948463868,
+   "gap_to_next_text": 1.1848626008281122,
+   "best_route": "COL_LB^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 3,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_LB^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 3,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_LB^-1"
+    }
+   ],
+   "best_text": "CARRUTHERSSAIDDAVIESFIRMLYIKNOWYOUMEANKINDLYBUTITSNOUSEIBELIEVEINHERITHOUGHTFORAMOMENTINTHATCASEI",
+   "best_word_per_letter": -0.9930870493575785,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 7,
+    "b": 3,
+    "op_a": "VARB",
+    "op_b": "VIG",
+    "route": "COL_LB^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.7855419574029979,
+   "gap_to_next_text": 0.18301454860448224,
+   "best_route": "R24x8/CCW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 3,
+     "b": 6,
+     "op_a": "BEAU",
+     "op_b": "VIG",
+     "route": "R24x8/CCW/fwd^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 3,
+     "b": 6,
+     "op_a": "VARB",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd^-1"
+    }
+   ],
+   "best_text": "WEDIMLYSAWTHESPIRESANDROOFSOFATOWNANDTWOLONGBLACKPIERSSTRETCHINGOUTSOUTHWARDSWEWERESCARCELYAMILEA",
+   "best_word_per_letter": -0.8682141106524802,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 6,
+    "op_a": "BEAU",
+    "op_b": "VIG",
+    "route": "R24x8/CCW/fwd^-1"
+   }
+  },
+  {
+   "kind": "POS",
+   "best_per_letter": -0.926528308786465,
+   "gap_to_next_text": 0.9516657458982232,
+   "best_route": "SNAKE_L",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 2,
+     "b": 9,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "SNAKE_L"
+    },
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 2,
+     "b": 9,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "SNAKE_L"
+    }
+   ],
+   "best_text": "BIGTRIANGULARBEACONMARKEDONTHEVERYPOINTOFMEMMERTYOULLPASSITALLRIGHTIMOFFGOODLUCKSAIDDAVIESFAINTLY",
+   "best_word_per_letter": -1.160447881380123,
+   "exact_plaintext": true,
+   "true_transform": true,
+   "true_setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 2,
+    "b": 9,
+    "op_a": "VARB",
+    "op_b": "VIG",
+    "route": "SNAKE_L"
+   }
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_per_letter": -1.9046927421670599,
+   "gap_to_next_text": 0.006399796872409349,
+   "best_route": "R24x8/CCW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 1,
+     "b": 6,
+     "op_a": "BEAU",
+     "op_b": "VARB",
+     "route": "R24x8/CCW/fwd"
+    }
+   ],
+   "best_text": "AKMEMINROTLSOSSXHHMSBJJFKIORFGOTBLEOJDZOWTUTMCYYTLLLJYIIKBAEBBSEMLOOKYUZGTELSNILTVMNFIYAAOEPCLBMI",
+   "best_word_per_letter": -4.0235761995910835
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_per_letter": -1.8812844224811829,
+   "gap_to_next_text": 0.0336330284162895,
+   "best_route": "SNAKE_R",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 5,
+     "b": 5,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "SNAKE_R"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 5,
+     "b": 5,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "SNAKE_R"
+    }
+   ],
+   "best_text": "HRCAPSPANDAUUUWBGRSRPXFNXUNUPWBNNARELUKKAMTBILTWTMGJDEXTNEVSRDHIRIETHJHTMOOJKMNCBWUCCMISXTNCXVPPS",
+   "best_word_per_letter": -4.019028425115084
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_per_letter": -1.9190299529390238,
+   "gap_to_next_text": 0.0007979559529687941,
+   "best_route": "R24x8/CW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 2,
+     "b": 7,
+     "op_a": "VIG",
+     "op_b": "VIG",
+     "route": "R24x8/CW/fwd"
+    }
+   ],
+   "best_text": "XXIZRBRLAXHOQRPABERVAVAVIEDLARMMBBPVWSUPDEGSTYKHHKSXLCSNKWNODDQWLYNYANKBOXKOAWMUEYEHMGGLFZYGILSHA",
+   "best_word_per_letter": -3.921297642297214
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_per_letter": -1.9310583996864938,
+   "gap_to_next_text": 0.0010023633997464918,
+   "best_route": "SNAKE_L",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 4,
+     "op_a": "VIG",
+     "op_b": "VARB",
+     "route": "SNAKE_L"
+    }
+   ],
+   "best_text": "JSKYLUEEKORFIWLDJRUPTCHAKIHDUHWRZCLLWHEKKKANTRYOEQENVYNYIQYAGSNLZREVJVACIZHGERFUKJQRVBRNJXEZFJYOU",
+   "best_word_per_letter": -4.353879833266461
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_per_letter": -1.8955392001062323,
+   "gap_to_next_text": 0.008343536137920065,
+   "best_route": "R24x8/CW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 0,
+     "b": 5,
+     "op_a": "BEAU",
+     "op_b": "VARB",
+     "route": "R24x8/CW/fwd"
+    }
+   ],
+   "best_text": "RFVTONVETPHFIJSNUKJICRUNEHZSZSPJAKLPUPAFAQENEOXCARGHSPUFITOCCNICMALFLBAXPQNANFBZUTWYMBXVGSFNXPFPS",
+   "best_word_per_letter": -4.339903483288904
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_per_letter": -1.8956996298481508,
+   "gap_to_next_text": 0.01002359644692276,
+   "best_route": "SNAKE_R",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 1,
+     "op_a": "BEAU",
+     "op_b": "VIG",
+     "route": "SNAKE_R"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 1,
+     "op_a": "VARB",
+     "op_b": "BEAU",
+     "route": "SNAKE_R"
+    }
+   ],
+   "best_text": "QFZROYDIMENCVISUEDSCHTNTHJFSETSOULJUNTXRZNUGAGIZRGZZISSXVACHKRUOXDIKABKUOOOMQEYTTRLPWUCKHIVMHAZLQ",
+   "best_word_per_letter": -4.133708918926315
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_per_letter": -1.929505291985367,
+   "gap_to_next_text": 0.011059789308682852,
+   "best_route": "COL_LB",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 1,
+     "b": 0,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "COL_LB"
+    }
+   ],
+   "best_text": "YJRORIONAIAQDPQATKTRCXDBARIYVVOHLNBEITVUNRXGFXMWIRUIONUUOQLMWVTGFBMLPVDFBKKLNGEQULPIPSVBOHRAMECHA",
+   "best_word_per_letter": -4.594977629511128
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_per_letter": -1.9178888416973894,
+   "gap_to_next_text": 0.008522480630229428,
+   "best_route": "COL_LT^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 4,
+     "b": 7,
+     "op_a": "BEAU",
+     "op_b": "VARB",
+     "route": "COL_LT^-1"
+    }
+   ],
+   "best_text": "SUISINVNSNTOMJOYCGAFALBBBOCBQNNNJKTUZLAZDPEUETMIQDUIHLXZHHKHRUDZGYOFXFIFABBGBIRKAPLESEEIKBTDRVDUL",
+   "best_word_per_letter": -4.343376436123855
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_per_letter": -1.8785001685478024,
+   "gap_to_next_text": 0.05029225095952909,
+   "best_route": "COL_LT^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 0,
+     "b": 4,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "COL_LT^-1"
+    }
+   ],
+   "best_text": "JTNEACMOIFQUHBATAASYVPKFCLQUEHNMSXOFNUHFROHOIRAZWACMWQPPOIWOVZMKNEWPUPQFOCYLBLAZIMIWFDQYJQTEITYKE",
+   "best_word_per_letter": -3.836314688996219
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_per_letter": -1.8942407605420684,
+   "gap_to_next_text": 0.013562675219835695,
+   "best_route": "SNAKE_L",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 7,
+     "b": 6,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "SNAKE_L"
+    }
+   ],
+   "best_text": "HEJSSHBYJIRJYALRSUZZNOMNXKQBRNXIFMSXSDOGULPUUDMODUVDPENCABZEGYZMDERKIJOOYUEVWLIFIGTHGMILWHOPAASAL",
+   "best_word_per_letter": -3.8836135520614814
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_per_letter": -1.8948590724738603,
+   "gap_to_next_text": 0.02232570562166037,
+   "best_route": "R24x8/CW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 5,
+     "b": 7,
+     "op_a": "BEAU",
+     "op_b": "VARB",
+     "route": "R24x8/CW/fwd^-1"
+    }
+   ],
+   "best_text": "XJBGGOITOHFURTZDYBQUOBGWIEWRFJCKRUSEWVIINJAWMLHDLLXDNQOKUPDRAHISWUIWEIMEGYPQCQEHHGRAKGIKEAETBRCWU",
+   "best_word_per_letter": -3.755088207703069
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_per_letter": -1.8730063246390254,
+   "gap_to_next_text": 0.04830059885364218,
+   "best_route": "COL_LB^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 6,
+     "b": 0,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_LB^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 6,
+     "b": 0,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_LB^-1"
+    }
+   ],
+   "best_text": "OZQXUPUNNKQXOPIAKCDYAZVIAVFQLAPIOYMEIMLIANLADNAXOCQTRUNDHOBJRQGAZNIYVOTIIFHISOUTPVELIBOPYNFWDEBLR",
+   "best_word_per_letter": -3.577628606876429
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_per_letter": -1.910365024485539,
+   "gap_to_next_text": 0.010290175522725606,
+   "best_route": "R24x8/CW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 1,
+     "op_a": "BEAU",
+     "op_b": "VARB",
+     "route": "R24x8/CW/fwd"
+    }
+   ],
+   "best_text": "ZSUHNVBFKEGOFETZGYPLEGTPTWHMIMUSORSPOGXXMULUILHTEQQUEDZYTTKOHPRBNTTXFEWTEMYIEUFUCGHLFHNEKTRQRDYJO",
+   "best_word_per_letter": -4.4617948660419025
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_per_letter": -1.9175868376359804,
+   "gap_to_next_text": 0.02009127609738984,
+   "best_route": "R24x8/CCW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 4,
+     "b": 0,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd"
+    },
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 4,
+     "b": 0,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "R24x8/CCW/fwd"
+    }
+   ],
+   "best_text": "WEEZIISFMNEPCVLYGIOIDVAYFMGTDNSYNUDEGTDMOOALMSLBOMAZNEPCUMUTIOOAHNKCYHWMSBIZPGYIISLECTHILLERCFBIZ",
+   "best_word_per_letter": -3.9398181787246225
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_per_letter": -1.878743089044217,
+   "gap_to_next_text": 0.006644028997451989,
+   "best_route": "COL_RB^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 2,
+     "b": 2,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_RB^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 2,
+     "b": 2,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_RB^-1"
+    }
+   ],
+   "best_text": "OEPTXGFRIVIUZJEWJOHNAPNELLYKHLERVEYCKEFIXLHDJISALLMRGBAGUCQQJIFUUDOAJASYLGEMYWTIXCUOPOELYOAGYOPWR",
+   "best_word_per_letter": -3.893002537924315
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_per_letter": -1.8958433412553108,
+   "gap_to_next_text": 0.0032971298763739693,
+   "best_route": "COL_RT",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 0,
+     "b": 1,
+     "op_a": "BEAU",
+     "op_b": "VIG",
+     "route": "COL_RT"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 0,
+     "b": 1,
+     "op_a": "VARB",
+     "op_b": "BEAU",
+     "route": "COL_RT"
+    }
+   ],
+   "best_text": "CVMITRNDPDPPIAREYDYREFINBFWCNOJPFFKXTHSSPTAAGFKOLMNYPEMODOLSAEAGLIMPMBYSARGEKTHJPISUWUFBICMSAOMSL",
+   "best_word_per_letter": -4.093214694170376
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_per_letter": -1.8943302563785278,
+   "gap_to_next_text": 0.004602271026557254,
+   "best_route": "R24x8/CW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 0,
+     "b": 6,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "R24x8/CW/fwd^-1"
+    }
+   ],
+   "best_text": "JTZOWJOYBOESATUUFXWUNKGJPZPRBBIRCGWFLNCYSMZUSXDRAEHAMNOZREUAYPKNYSCATEGYOEMINOWOOSQJVECCTSJWPUSHH",
+   "best_word_per_letter": -4.2562162926374185
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_per_letter": -1.9134623308608443,
+   "gap_to_next_text": 0.0043404214324179995,
+   "best_route": "COL_RT^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 6,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "COL_RT^-1"
+    }
+   ],
+   "best_text": "DUKMKNEERYXBAIPBEFERFNKYCOSTQUEBWRRDTZQOLCHUDGMBTIXUMITGZCPNPXFURTAEANKEMJKYUCCJMSJJVJQQUOGFESTEK",
+   "best_word_per_letter": -4.318581375292196
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_per_letter": -1.8929150039234113,
+   "gap_to_next_text": 0.010509221516933637,
+   "best_route": "COL_RB^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 4,
+     "b": 7,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "COL_RB^-1"
+    }
+   ],
+   "best_text": "SRTKZWJWOVLCLKNOBWIFIKBQJEBWTHGEWRATDWSNAKYLUKEDNICERONCCYVUVPPCIRKPIUDVEVRGJOOWGWYZIYUWCCQHQUYOC",
+   "best_word_per_letter": -4.71925884190513
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_per_letter": -1.913112588802871,
+   "gap_to_next_text": 0.006960462010705594,
+   "best_route": "COL_LB",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 2,
+     "b": 3,
+     "op_a": "VIG",
+     "op_b": "VIG",
+     "route": "COL_LB"
+    }
+   ],
+   "best_text": "MOAGYAMKQCWKIPOCRPIMTWHUIQHUGMLVEBLVDNLBQVWMGBEJREWJOCAFETGFHJPSANCKJKEHIDBEXBUFHONVGJCOIFKRAKNOB",
+   "best_word_per_letter": -4.08244252937871
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_per_letter": -1.8970323607479174,
+   "gap_to_next_text": 0.03676913619118253,
+   "best_route": "COL_RT^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 5,
+     "b": 3,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_RT^-1"
+    },
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 5,
+     "b": 3,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_RT^-1"
+    }
+   ],
+   "best_text": "LYALFHWTKUYVWICOSKCJIRNFYUALAIRUBYJARIUERUGHLFMQFCYTXKNDJTHUHSORSUDRFUJOVUESXVGTFXPZTBVPGHITGOBYI",
+   "best_word_per_letter": -4.312136601616644
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.9113513309623777,
+   "gap_to_next_text": 0.016457397759575203,
+   "best_route": "COL_LB^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 8,
+     "b": 6,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_LB^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 8,
+     "b": 6,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_LB^-1"
+    }
+   ],
+   "best_text": "HCOSXZQFOXZYGUJUHRQNJELNDKYPGKINHDONXPYLTYNYBYRHBZMMXLVIKKAUSHINZTTCYGMKMRIVXXLRUHJCKWEHAWWIUMDLY",
+   "best_word_per_letter": -4.377712871818037
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.887960603115024,
+   "gap_to_next_text": 0.014164257429770588,
+   "best_route": "COL_LB^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 0,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "COL_LB^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 0,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "COL_LB^-1"
+    }
+   ],
+   "best_text": "QCVYAXTALAORYSFLRLAAOCMQSRYVRAYRIEUDNFMDCROXNBVATNETHEENEXTAHSNSYUWTYVNGARWLMMJRYBVNTIGMPXPOBVRUA",
+   "best_word_per_letter": -4.363885451704636
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.891246666306073,
+   "gap_to_next_text": 0.0008646870396800877,
+   "best_route": "R24x8/CCW/fwd",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 1,
+     "b": 3,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "R24x8/CCW/fwd"
+    }
+   ],
+   "best_text": "STUYAJAXQDNVCTARZMOMILZOONGZLILGIGCPJDYUBQOCWEQAIXLXVILLDLLIGGEGPTXFRAUGWSAFEJFOUFMMXNGLMICTRPDFS",
+   "best_word_per_letter": -4.298628883767194
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.880280499298548,
+   "gap_to_next_text": 0.02474080168248452,
+   "best_route": "SNAKE_R",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 3,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "SNAKE_R"
+    }
+   ],
+   "best_text": "KERENVWINFBWNOSWDIYYKAJECTPDNFROMFLAOFZLTERORSCMKRAAMKJBZYJRHMPGDAINZTSSTUDSUVOFZPODVEFLLNCJRLMSY",
+   "best_word_per_letter": -3.9144811824670036
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.804515481206406,
+   "gap_to_next_text": 0.10064359372193665,
+   "best_route": "COL_LT^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 7,
+     "b": 1,
+     "op_a": "VARB",
+     "op_b": "VARB",
+     "route": "COL_LT^-1"
+    }
+   ],
+   "best_text": "CDBHIALLUDEPOETKUHSQNGXDCUDUVHHMNSJYHARLBYONSCELOWWRASLJBXHHPASRHAQQCTHYHGAPJASYLPHHJANYOHEBURDFF",
+   "best_word_per_letter": -3.8563961359935632
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.822736012682165,
+   "gap_to_next_text": 0.037703279367427234,
+   "best_route": "R24x8/CW/fwd",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 9,
+     "b": 2,
+     "op_a": "VIG",
+     "op_b": "VARB",
+     "route": "R24x8/CW/fwd"
+    }
+   ],
+   "best_text": "GMEULIWVYIMJECAYQXLTTVAJYILSTAOPNIATICOFESCAPESLCAILMUBOFHOWWWOOMPMMUVXWWYMVOYXGOQPDFUFHJCIIWEPON",
+   "best_word_per_letter": -3.7735816044937858
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.9107378522299,
+   "gap_to_next_text": 0.012308500092668631,
+   "best_route": "R24x8/CCW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 1,
+     "b": 6,
+     "op_a": "VIG",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd^-1"
+    }
+   ],
+   "best_text": "TXZWEVAZILWEAKLCMEPLPMAYNYGCFGGLDENEYEUZYBPHDGVXZEXJRKHHMAWVFIZKSNFAIGAMACZFHHFELLIFUKRUPONMUHJES",
+   "best_word_per_letter": -4.111877814176272
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.8988511805835457,
+   "gap_to_next_text": 0.01078172727036722,
+   "best_route": "R24x8/CCW/fwd",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 2,
+     "b": 4,
+     "op_a": "BEAU",
+     "op_b": "VIG",
+     "route": "R24x8/CCW/fwd"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 2,
+     "b": 4,
+     "op_a": "VARB",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd"
+    }
+   ],
+   "best_text": "YWRQUEWUFAUCQSPAJOZAWERJBJHQCYFTUVVYZINLLNRKAAARIHOGJZHZEXTISATRIAQAQVRAYDNLNNBUBMITNLWDBCUNCULWI",
+   "best_word_per_letter": -4.181589990421123
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.9291807136584802,
+   "gap_to_next_text": 0.0020066602635629397,
+   "best_route": "R24x8/CCW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 0,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd^-1"
+    },
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 6,
+     "b": 0,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "R24x8/CCW/fwd^-1"
+    }
+   ],
+   "best_text": "ZNXOZNOGVKSHNTXXSGHXCAYSUDLTOYGEPVEQEQPOHXRIOQAJUGOAMICONOCLVBVOWTCNYEJWSJCAMMGIAPDWJKXVENMLVUICK",
+   "best_word_per_letter": -4.648647572709121
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.8913499573149632,
+   "gap_to_next_text": 0.021337294086967547,
+   "best_route": "R24x8/CCW/fwd^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 8,
+     "b": 3,
+     "op_a": "BEAU",
+     "op_b": "BEAU",
+     "route": "R24x8/CCW/fwd^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 8,
+     "b": 3,
+     "op_a": "VARB",
+     "op_b": "VIG",
+     "route": "R24x8/CCW/fwd^-1"
+    }
+   ],
+   "best_text": "VYERWTMTETACDNCVIBILTPKHILDGHXVFYOSORSPNGTRUGIXSQDKKWASVORKDHTSBAGBRAFOBGUSPOVAAUDIIXJTMRMIBMSISI",
+   "best_word_per_letter": -3.8839639449436087
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.906496646545213,
+   "gap_to_next_text": 0.018451974573593165,
+   "best_route": "COL_LT^-1",
+   "best_labels": [
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 5,
+     "b": 7,
+     "op_a": "BEAU",
+     "op_b": "VIG",
+     "route": "COL_LT^-1"
+    },
+    {
+     "ka": "PALIMPSEST",
+     "kb": "ABSCISSA",
+     "a": 5,
+     "b": 7,
+     "op_a": "VARB",
+     "op_b": "BEAU",
+     "route": "COL_LT^-1"
+    }
+   ],
+   "best_text": "XWMOTCJOEHOKJOLBDQIBMPEQULEGUOCFBRYAYIXSNPXTUBIGGCRDOIPJAOUZOAFDEDWFREPGELOEXILNQIAQNWSLUNUOWZUID",
+   "best_word_per_letter": -4.074427435743722
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_per_letter": -1.8931426003421705,
+   "gap_to_next_text": 0.014943145906802305,
+   "best_route": "SNAKE_L",
+   "best_labels": [
+    {
+     "ka": "ABSCISSA",
+     "kb": "PALIMPSEST",
+     "a": 5,
+     "b": 3,
+     "op_a": "VIG",
+     "op_b": "VIG",
+     "route": "SNAKE_L"
+    }
+   ],
+   "best_text": "DIBRABFLYHASMZFESCBUMKUFESKGIIFMRREKAPACTFOSDSZWEJNYUKYHBRKCMCGHGZAJUIIDTUGWJICBMFUXEZKIBIJNNLQTX",
+   "best_word_per_letter": -4.277911139065838
+  }
+ ]
+}
