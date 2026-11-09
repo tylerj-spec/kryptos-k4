@@ -60,3 +60,38 @@ class Scanner:
 
     def text(self, row):
         return "".join(chr(65 + int(x)) for x in row)
+
+
+def word_score(pt, vocab, maxlen=18, oov=7.0):
+    """Second, independent scorer: best segmentation into R59 word-model words (log10), -7 per unknown letter;
+    per letter."""
+    best = [0.0] + [-1e18] * len(pt)
+    for i in range(len(pt)):
+        for L in range(1, min(maxlen, len(pt) - i) + 1):
+            v = max(vocab.get(pt[i:i + L], -1e18), -oov * L)
+            if best[i] + v > best[i + L]:
+                best[i + L] = best[i] + v
+    return best[-1] / len(pt)
+
+
+def entry(sc, P, s, k, vocab=None):
+    """One decode as a plain dict: transform index, route, the first raw setting realising it, scores, text."""
+    t = sc.text(P[k])
+    e = {"t": int(k), "route": sc.route_name[k], "setting": sc.labels[k][0], "lm_per_letter": float(s[k]) / S.N,
+         "text": t}
+    if vocab is not None:
+        e["word_per_letter"] = word_score(t, vocab)
+    return e
+
+
+def top_distinct(sc, P, s, order, n, vocab=None):
+    out, seen = [], set()
+    for k in order:
+        t = sc.text(P[int(k)])
+        if t in seen:
+            continue
+        seen.add(t)
+        out.append(entry(sc, P, s, int(k), vocab))
+        if len(out) == n:
+            break
+    return out
