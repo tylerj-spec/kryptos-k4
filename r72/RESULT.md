@@ -83,7 +83,7 @@ Outputs are in `r72/data/`.
 | Intel Today (2020), "Analysis of Sanborn K3 worksheet" | Proposed a 7 × 14 (98-cell) K4 layout | Idea only |
 | Rondeau, experiment 86, "the question mark as the 98th cell" | 98-cell K3-like rotations with periodic and autokey keys | Checked against the published letters, i.e. **crib-assisted**, not R53-blind evidence |
 | This project, L47 | 97-letter K3 double turns, widths 2–48, and mod-97 decimations, with summed periodic keys | Crib-assisted, pre-R53 |
-| This project, R61–R69 | 97-letter routes with blind solvers | None of the 11 new routes is among them |
+| This project, R32–R69 (committed route artifacts) | 97-letter routes run on K4 | None of the 36 directed 98-cell routes is among them |
 
 ## Photo and source evidence (from the reviewer's direct inspection on PR #60; not re-inspected here, because this environment cannot reach the image hosts)
 - **"TOP #4"** (NOVA frames 16–17) is bold writing in the translucent, hole-punched margin below a letter grid.
