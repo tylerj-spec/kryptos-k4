@@ -1,0 +1,145 @@
+{
+ "vectors": {
+  "K1_exact_63_of_63": true,
+  "K2_first_mismatch": 361,
+  "K2_tail_decrypt": "SFORTYFOURSECONDSWESTIDBYROWS",
+  "K2_tail_reference": "SFORTYFOURSECONDSWESTXLAYERTW",
+  "K2_note": "the last 8 letters decrypt to IDBYROWS: the documented carving anomaly (a letter omitted; Sanborn's intended ending XLAYERTWO), not a tableau error"
+ },
+ "routes": 14,
+ "route_names": [
+  "R24x8/CW/fwd",
+  "R24x8/CW/fwd^-1",
+  "R24x8/CCW/fwd",
+  "R24x8/CCW/fwd^-1",
+  "COL_LT",
+  "COL_LT^-1",
+  "COL_LB",
+  "COL_LB^-1",
+  "COL_RT",
+  "COL_RT^-1",
+  "COL_RB",
+  "COL_RB^-1",
+  "SNAKE_L",
+  "SNAKE_R"
+ ],
+ "raw_settings": 20160,
+ "composite_mismatches": 0,
+ "distinct_transforms": 15680,
+ "max_labels_per_transform": 2,
+ "operation_pair_classes": {
+  "(1, 1, 1)": [
+   "VIG/VIG"
+  ],
+  "(-1, -1, 1)": [
+   "VIG/BEAU"
+  ],
+  "(1, 1, -1)": [
+   "VIG/VARB"
+  ],
+  "(-1, 1, 1)": [
+   "BEAU/VIG",
+   "VARB/BEAU"
+  ],
+  "(1, -1, 1)": [
+   "BEAU/BEAU",
+   "VARB/VIG"
+  ],
+  "(-1, 1, -1)": [
+   "BEAU/VARB"
+  ],
+  "(1, -1, -1)": [
+   "VARB/VARB"
+  ]
+ },
+ "periods_by_route": {
+  "R24x8/CW/fwd": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 77,
+   "first_stage_term_min_period_in_ciphertext_order": 85
+  },
+  "R24x8/CW/fwd^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 85,
+   "first_stage_term_min_period_in_ciphertext_order": 77
+  },
+  "R24x8/CCW/fwd": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 16,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  },
+  "R24x8/CCW/fwd^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 16
+  },
+  "COL_LT": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 94
+  },
+  "COL_LT^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 94,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  },
+  "COL_LB": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 95
+  },
+  "COL_LB^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 95,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  },
+  "COL_RT": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 95
+  },
+  "COL_RT^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 95,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  },
+  "COL_RB": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 94
+  },
+  "COL_RB^-1": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 94,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  },
+  "SNAKE_L": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 97,
+   "first_stage_term_min_period_in_ciphertext_order": 97
+  },
+  "SNAKE_R": {
+   "identity": false,
+   "second_stage_term_min_period_in_plaintext_order": 96,
+   "first_stage_term_min_period_in_ciphertext_order": 96
+  }
+ },
+ "composite_min_period_ciphertext_order": 80,
+ "composite_min_period_plaintext_order": 80,
+ "transforms_by_route": {
+  "R24x8/CW/fwd": 1120,
+  "R24x8/CW/fwd^-1": 1120,
+  "R24x8/CCW/fwd": 1120,
+  "R24x8/CCW/fwd^-1": 1120,
+  "COL_LT": 1120,
+  "COL_LT^-1": 1120,
+  "COL_LB": 1120,
+  "COL_LB^-1": 1120,
+  "COL_RT": 1120,
+  "COL_RT^-1": 1120,
+  "COL_RB": 1120,
+  "COL_RB^-1": 1120,
+  "SNAKE_L": 1120,
+  "SNAKE_R": 1120
+ }
+}
