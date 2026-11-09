@@ -24,13 +24,15 @@ Outputs are in `r72/data/`.
   - This was checked for every whole-grid sheet of 336 and of 98 cells.
   - Twelve width pairs give K3's exact ciphertext, so only the worksheets, not the ciphertext, show that Sanborn used
     42 × 8 and 14 × 24.
-- **The 14 × 31 sheet looks like an output or transcription layout.**
+- **The 14 × 31 sheet is geometrically consistent with an output or transcription layout.**
   - K3's ciphertext, the separator and K4's ciphertext fill it exactly: 336 + 1 + 97 = 434 = 14 × 31.
-  - That puts K4 at row 11, column 28 (1-based) onward: 4 + 31 + 31 + 31.
-  - That explains the carved row structure without any K4 route.
-  - The reviewer adds Sanborn's 2006 NPR account of adjusting line lengths for the panel's look.
-  - It does **not** prove the sheet was never used in K4's encryption. The earlier wording "not an encryption sheet"
-    was stronger than the evidence.
+  - That puts K4 at row 11, column 28 (1-based) onward: 4 + 31 + 31 + 31, explaining the carved row structure without
+    any K4 route.
+  - `reconstruct.py` builds this grid from the carved ciphertext. It does **not** transcribe the 434 cells of the NOVA
+    sheet, which the kryptools catalog says differs slightly from the final sculpture. A cell-by-cell comparison needs a
+    high-resolution first-generation image.
+  - Sanborn's 2006 NPR account of adjusting line lengths (cited by the reviewer) fits an output layout.
+  - Nothing here proves the sheet was unused in K4's encryption.
 - **A K4-sized whole sheet is an analogy, not a document.**
   - 97 is prime, so no fully filled rectangle larger than one row holds K4 alone.
   - With one extra cell, 98 = 14 × 7 = 2 × 49. Nothing shows that such a cell existed, where it was, or that the
@@ -42,33 +44,38 @@ Outputs are in `r72/data/`.
   - Inverse pairs: (4, 25), (14, 92), (28, 46), (49, 97); 98 is its own inverse.
   - These are not all possible 98-cell readings; they are this one documented operation's orderings.
 
-## Novelty check (`r72/novelty.py` → `r72/data/NOVELTY.json`)
+## Novelty and provenance check (`r72/novelty.py` → `r72/data/NOVELTY.json`)
 **Method:**
-- Each ordering becomes a 97-letter route by removing the extra cell (first or last), in both directions.
-- Each route is compared as an exact tuple with 26,701 routes this project has already run on K4:
-  - ragged single turns of every width;
-  - K3-style double turns, widths 2–48, same and mixed direction (L47, L115, L124, R35);
-  - all mod-97 decimations (L07, L47);
-  - complete columnars, widths 2–10 (L06);
-  - the R61 routes and the R69 readings.
-- L47's original generator is not in the repository, so its catalog is rebuilt from its ledger description.
+- Each ordering becomes a 97-letter route by removing the extra cell (first or last).
+- A route and its inverse are counted separately. They are different trials in a layered cipher, giving 36 directed
+  routes.
+- Each is compared as an exact tuple and placed in one tier:
+  - **CONFIRMED_EXECUTED:** identical to a route in a committed run artifact. 5,069 routes across the R32, R34, R35, R41,
+    R61, R63, R66 Part B and R69 route files.
+  - **LEDGER_DOCUMENTED:** identical to a member of a family the ledger says was run, with no artifact in the repo. These
+    are L06 columnars of widths 2–10, L07/L47 decimations mod 97, and L47 same-direction double turns of widths 2–48,
+    rebuilt from the ledger because L47's generator is absent.
+  - **GENERATED_ONLY:** identical only to a member of a larger generated set never documented as run (single ragged turns
+    of every width; mixed-direction double turns beyond R35's 4–28). This is equivalence, not a run.
+  - **NEW:** none of the above.
 
 **Results:**
 
 | Ordering | Extra cell first | Extra cell last |
 |---|---|---|
-| k = 4, 25, 28, 46 | new | new |
-| k = 14 | new | = single quarter turn, width 14, CCW (tested) |
-| k = 92 | new | = single quarter turn, width 7, CW (tested) |
-| k = 49 | new | = single quarter turn, width 49, CCW (tested) |
-| k = 97 | = decimation 48i+96 mod 97 (tested) | = single quarter turn, width 2, CW (tested) |
-| k = 98 | = reversal (tested) | = reversal (tested) |
+| k = 4, 25, 28, 46 | NEW | NEW |
+| k = 14 | NEW | GENERATED_ONLY (= single ragged turn, width 14, CCW) |
+| k = 49 | NEW | GENERATED_ONLY (= single ragged turn, width 49, CCW) |
+| k = 92 | NEW | LEDGER_DOCUMENTED (= columnar width 7, read bottom-up; L06/L47) |
+| k = 97 | LEDGER_DOCUMENTED (= decimation 48i+96 mod 97) | LEDGER_DOCUMENTED (= decimation 48i+48 mod 97) |
+| k = 98 | LEDGER_DOCUMENTED (reversal) | LEDGER_DOCUMENTED (reversal) |
 
-**Eleven genuinely new 97-letter routes**, counting a route and its inverse once:
-- k = 4, 25, 28 and 46 with the cell first or last (8 routes);
-- k = 14, 49 and 92 with the cell first (3 routes).
-
-My earlier count of "8 untested orderings" overcounted. This table replaces it.
+- **Directed counts:** 0 confirmed executed, 10 ledger-documented, 4 generated-only, 22 new.
+- **No documented run:** 13 route classes, i.e. 26 directed routes (NEW + GENERATED_ONLY).
+- **Corrections:**
+  - My earlier "8 untested orderings" and then "11 genuinely new routes" both overstated what was known.
+  - Calling a generated equivalent "tested" was wrong; only an artifact proves a run.
+  - None of the 36 matches a committed run artifact.
 
 ## Prior work
 | Work | What it did | Standing here |
@@ -78,24 +85,35 @@ My earlier count of "8 untested orderings" overcounted. This table replaces it.
 | This project, L47 | 97-letter K3 double turns, widths 2–48, and mod-97 decimations, with summed periodic keys | Crib-assisted, pre-R53 |
 | This project, R61–R69 | 97-letter routes with blind solvers | None of the 11 new routes is among them |
 
-## Photo evidence (from the reviewer's inspection of the NOVA stills on thekryptosproject.com; not re-inspected here, because this environment cannot reach the image hosts)
-- **"TOP #4"** is plainly visible in the margin below the letter grid, next to a translucent or punched edge.
-  - A still frame does not establish whether the ink is on the paper or on the sleeve.
-  - It does not show that a fourth cipher-operation sheet existed.
-  - A 2014 interpretation calls the layer uncertain.
-- **Several sheets:** folds and a flexible sheet (still 19) and another gridded sheet in the background (still 3) show
-  several physical sheets being handled. They do not show a two-layer encryption mechanism.
-- **K3 step 2 and the 14 × 31 layout:** the step-2 still and the 14 × 31 reconstruction agree with the known K3
-  process and panel alignment. The red fold lines on the reconstruction are later researcher annotations.
-- **No K4 sheet:** no photographed standalone 97- or 98-cell K4 encryption sheet was found.
-- **Still open from the checklist:** sheet sizes other than 42 × 8, 14 × 24 and 14 × 31; reading-direction arrows; the
-  fold-to-grid coordinates.
+## Photo and source evidence (from the reviewer's direct inspection on PR #60; not re-inspected here, because this environment cannot reach the image hosts)
+- **"TOP #4"** (NOVA frames 16–17) is bold writing in the translucent, hole-punched margin below a letter grid.
+  - It is more consistent with a sleeve or organizational marking than with an instruction to perform a K4 operation.
+  - One still frame cannot assign the ink to paper or plastic.
+- **Frames 3, 19 and 20:** several sheets, handling and folds are real. None shows two encryption layers being aligned,
+  or a K4-only 97- or 98-cell worksheet.
+- **The 2014 "K3 Method" page** is secondary researcher inference, not Sanborn's statement. It speculates about the
+  sleeve, swapping sheets into it, and a possible "Bottom #4". The photographs do not confirm such a sheet.
+- **Kryptools catalog:** #1 42 × 8 and #2 14 × 24 (K3), and output #3 14 × 31. The source says the photographed 14 × 31
+  sheet differs slightly from the sculpture.
+- **PBS transcript, broadcast 24 July 2007:**
+  - Sanborn demonstrates grid transposition for K3.
+  - Scheidt says the first challenge for K4 is determining its *masking technique*.
+  - The narrator's examples (vowel removal, phonetic spelling) are illustrations, not testimony about Sanborn's method.
+
+**Priority sources to acquire:**
+- the full 2007 NOVA *moving* footage around the two sheet-handling sequences;
+- higher-resolution first-generation scans of the K3/K4 worksheets, especially the "TOP #4" sleeve and the full
+  14 × 31 grid, for a cell-by-cell comparison.
+- Do not read any confidential K4 plaintext.
 
 ## Gate decision for R73: on hold
 - **The photographic gate for a K4 98-cell sheet has not passed.** No such sheet is shown, and the 98-cell model is
   speculation by analogy.
 - **R73 is therefore not proposed as a supported experiment.**
-- **If Tyler wants it anyway**, it would be an explicitly *exploratory* blind run of the 11 new routes only:
+- **If Tyler wants it anyway**, it would be an explicitly *exploratory* blind run of the 26 directed routes with no
+  documented run:
+  - exact orientation, extra-cell insertion and removal, and substitution-before or after-transposition semantics frozen
+    first and validated on synthetic plants;
   - separately pre-registered;
   - costed first with a synthetic-only pilot under a hard core-hour cap;
   - gated on hidden-key, hidden-method recovery and null false-positive rates;

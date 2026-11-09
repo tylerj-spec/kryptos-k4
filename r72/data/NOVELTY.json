@@ -1,304 +1,329 @@
 {
- "catalog_size_routes": 26701,
+ "artifact_routes": 5069,
+ "ledger_family_routes": 17862,
+ "generated_superset_routes": 9051,
+ "directed_route_counts": {
+  "NEW": 22,
+  "GENERATED_ONLY": 4,
+  "LEDGER_DOCUMENTED": 10
+ },
  "rows": [
   {
    "k_mod_99": 4,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "38914c422cc6fe6b",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "38914c422cc6fe6b"
   },
   {
    "k_mod_99": 4,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "8370d8958588c430",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "8370d8958588c430"
   },
   {
    "k_mod_99": 4,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "e3235b686114a798",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "e3235b686114a798"
   },
   {
    "k_mod_99": 4,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "a4a33c32423fa86a",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "a4a33c32423fa86a"
   },
   {
    "k_mod_99": 14,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "6c5683253dacee33",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "6c5683253dacee33"
   },
   {
    "k_mod_99": 14,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "9f1e8fb2bd037cc2",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "9f1e8fb2bd037cc2"
   },
   {
    "k_mod_99": 14,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "48f7973414563aca",
-   "already_tested_as": "single turn w14 CCW"
+   "status": "GENERATED_ONLY",
+   "matches": [
+    "single ragged turn w14 CCW"
+   ],
+   "sha256": "48f7973414563aca"
   },
   {
    "k_mod_99": 14,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "63e38436f3d289d9",
-   "already_tested_as": "single turn w14 CCW"
+   "status": "GENERATED_ONLY",
+   "matches": [
+    "single ragged turn w14 CCW"
+   ],
+   "sha256": "63e38436f3d289d9"
   },
   {
    "k_mod_99": 25,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "134a10f693d81197",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "134a10f693d81197"
   },
   {
    "k_mod_99": 25,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "050dd31ab9a1f82b",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "050dd31ab9a1f82b"
   },
   {
    "k_mod_99": 25,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "1f0998f201259e93",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "1f0998f201259e93"
   },
   {
    "k_mod_99": 25,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "9d9b5251c9675008",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "9d9b5251c9675008"
   },
   {
    "k_mod_99": 28,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "2467a0d0cceb45da",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "2467a0d0cceb45da"
   },
   {
    "k_mod_99": 28,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "028acf21afcc4e9a",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "028acf21afcc4e9a"
   },
   {
    "k_mod_99": 28,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "aa0a2c1d8cf05b79",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "aa0a2c1d8cf05b79"
   },
   {
    "k_mod_99": 28,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "b00141f10311da1e",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "b00141f10311da1e"
   },
   {
    "k_mod_99": 46,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "c7b00cc69fa38661",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "c7b00cc69fa38661"
   },
   {
    "k_mod_99": 46,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "862a1371db290907",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "862a1371db290907"
   },
   {
    "k_mod_99": 46,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "433e24a705bc9adb",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "433e24a705bc9adb"
   },
   {
    "k_mod_99": 46,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "44078dc23104908e",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "44078dc23104908e"
   },
   {
    "k_mod_99": 49,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "e47945b0b5aaada9",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "e47945b0b5aaada9"
   },
   {
    "k_mod_99": 49,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "62a05bf10600c564",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "62a05bf10600c564"
   },
   {
    "k_mod_99": 49,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "71c8942e17d892c2",
-   "already_tested_as": "single turn w49 CCW"
+   "status": "GENERATED_ONLY",
+   "matches": [
+    "single ragged turn w49 CCW"
+   ],
+   "sha256": "71c8942e17d892c2"
   },
   {
    "k_mod_99": 49,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "b2f030f28821d204",
-   "already_tested_as": "single turn w49 CCW"
+   "status": "GENERATED_ONLY",
+   "matches": [
+    "single ragged turn w49 CCW"
+   ],
+   "sha256": "b2f030f28821d204"
   },
   {
    "k_mod_99": 92,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "35dc919ab7fd6e59",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "35dc919ab7fd6e59"
   },
   {
    "k_mod_99": 92,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "ea89b27b27788e03",
-   "already_tested_as": null
+   "status": "NEW",
+   "matches": [],
+   "sha256": "ea89b27b27788e03"
   },
   {
    "k_mod_99": 92,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "39bc4c375ed97386",
-   "already_tested_as": "single turn w7 CW"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L06/L47 columnar w7 revfill=False snake=False revread=True"
+   ],
+   "sha256": "39bc4c375ed97386"
   },
   {
    "k_mod_99": 92,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "432540d13eb19ff5",
-   "already_tested_as": "single turn w7 CW"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L06/L47 columnar w7 revfill=False snake=False revread=True"
+   ],
+   "sha256": "432540d13eb19ff5"
   },
   {
    "k_mod_99": 97,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "98edfabf5b9bb5ee",
-   "already_tested_as": "decimation 48i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 48i+96 mod 97"
+   ],
+   "sha256": "98edfabf5b9bb5ee"
   },
   {
    "k_mod_99": 97,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "60c02f540a96cb92",
-   "already_tested_as": "decimation 48i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 48i+96 mod 97"
+   ],
+   "sha256": "60c02f540a96cb92"
   },
   {
    "k_mod_99": 97,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "e0302738148a5842",
-   "already_tested_as": "single turn w2 CW"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 48i+48 mod 97"
+   ],
+   "sha256": "e0302738148a5842"
   },
   {
    "k_mod_99": 97,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "1d1f74cbee722cb5",
-   "already_tested_as": "single turn w2 CW"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 48i+48 mod 97"
+   ],
+   "sha256": "1d1f74cbee722cb5"
   },
   {
    "k_mod_99": 98,
    "extra_cell": "extra cell first",
    "direction": "forward",
-   "sha256": "fab3b3143e3fe3d5",
-   "already_tested_as": "decimation 96i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 96i+96 mod 97"
+   ],
+   "sha256": "fab3b3143e3fe3d5"
   },
   {
    "k_mod_99": 98,
    "extra_cell": "extra cell first",
    "direction": "inverse",
-   "sha256": "fab3b3143e3fe3d5",
-   "already_tested_as": "decimation 96i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 96i+96 mod 97"
+   ],
+   "sha256": "fab3b3143e3fe3d5"
   },
   {
    "k_mod_99": 98,
    "extra_cell": "extra cell last",
    "direction": "forward",
-   "sha256": "fab3b3143e3fe3d5",
-   "already_tested_as": "decimation 96i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 96i+96 mod 97"
+   ],
+   "sha256": "fab3b3143e3fe3d5"
   },
   {
    "k_mod_99": 98,
    "extra_cell": "extra cell last",
    "direction": "inverse",
-   "sha256": "fab3b3143e3fe3d5",
-   "already_tested_as": "decimation 96i+96 mod 97"
+   "status": "LEDGER_DOCUMENTED",
+   "matches": [
+    "L07/L47 decimation 96i+96 mod 97"
+   ],
+   "sha256": "fab3b3143e3fe3d5"
   }
  ],
- "new_routes_up_to_inversion": 11,
- "new_route_labels": [
-  [
-   "k=4 extra cell first forward",
-   "k=4 extra cell first inverse"
-  ],
-  [
-   "k=4 extra cell last forward",
-   "k=4 extra cell last inverse"
-  ],
-  [
-   "k=14 extra cell first forward",
-   "k=14 extra cell first inverse"
-  ],
-  [
-   "k=25 extra cell first forward",
-   "k=25 extra cell first inverse"
-  ],
-  [
-   "k=25 extra cell last forward",
-   "k=25 extra cell last inverse"
-  ],
-  [
-   "k=28 extra cell first forward",
-   "k=28 extra cell first inverse"
-  ],
-  [
-   "k=28 extra cell last forward",
-   "k=28 extra cell last inverse"
-  ],
-  [
-   "k=46 extra cell first forward",
-   "k=46 extra cell first inverse"
-  ],
-  [
-   "k=46 extra cell last forward",
-   "k=46 extra cell last inverse"
-  ],
-  [
-   "k=49 extra cell first forward",
-   "k=49 extra cell first inverse"
-  ],
-  [
-   "k=92 extra cell first forward",
-   "k=92 extra cell first inverse"
-  ]
- ]
+ "note": "36 directed rows = 9 orderings x 2 extra-cell placements x 2 directions; a route and its inverse are distinct trials in a layered cipher. Only CONFIRMED_EXECUTED rows are proven to have been run."
 }
