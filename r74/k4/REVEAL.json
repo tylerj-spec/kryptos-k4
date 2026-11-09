@@ -1,0 +1,481 @@
+{
+ "outcome": "NO_SIGNAL",
+ "cut_lm": -1.45,
+ "cut_word": -2.5,
+ "k4_best": {
+  "t": 11200,
+  "route": "R24x8/CW/fwd",
+  "setting": {
+   "ka": "ABSCISSA",
+   "kb": "PALIMPSEST",
+   "a": 3,
+   "b": 4,
+   "op_a": "VIG",
+   "op_b": "VARB",
+   "route": "R24x8/CW/fwd"
+  },
+  "lm_per_letter": -1.9005828837662475,
+  "text": "YOXAAVSXCWBUQYQUWWGKITHLOIKOUBVOBYEMOMITZJIVTVPELSYITBCGPAWAXCKRCXTEJVJONQSCJDARSSLOMMERCNIXTACCO",
+  "word_per_letter": -4.128989735428923
+ },
+ "k4_best_hits": 1,
+ "nulls_best_lm_sorted_top10": [
+  -1.8476425907526588,
+  -1.847505050029644,
+  -1.8433912676019766,
+  -1.8432008114057719,
+  -1.8427877203398144,
+  -1.838654456679354,
+  -1.8331608282229335,
+  -1.831243709171402,
+  -1.8301425130903413,
+  -1.8261055289047587
+ ],
+ "null_best_lm_median": -1.907588772533327,
+ "nulls_at_or_above_k4": 344,
+ "n_nulls": 1000,
+ "r74x_crib_assisted": {
+  "verdict": "EXCLUDED",
+  "k4_max_hits": 6,
+  "k4_hits_histogram": {
+   "0": 6102,
+   "1": 5829,
+   "2": 2691,
+   "3": 831,
+   "4": 185,
+   "5": 36,
+   "6": 6
+  },
+  "consistent_ge_20": [],
+  "null_max_hits_median": 6,
+  "null_max_hits_max": 9,
+  "nulls_ge_k4_max": 971
+ },
+ "packet": [
+  {
+   "t": 11200,
+   "route": "R24x8/CW/fwd",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 3,
+    "b": 4,
+    "op_a": "VIG",
+    "op_b": "VARB",
+    "route": "R24x8/CW/fwd"
+   },
+   "lm_per_letter": -1.9005828837662475,
+   "text": "YOXAAVSXCWBUQYQUWWGKITHLOIKOUBVOBYEMOMITZJIVTVPELSYITBCGPAWAXCKRCXTEJVJONQSCJDARSSLOMMERCNIXTACCO",
+   "word_per_letter": -4.128989735428923,
+   "hits": 1
+  },
+  {
+   "t": 15062,
+   "route": "SNAKE_L",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 7,
+    "b": 3,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "SNAKE_L"
+   },
+   "lm_per_letter": -1.9223801247852366,
+   "text": "WWORPICHOCYSZPLRURJWDXLLRAGOIFFBRSMTYJNUBCESCCRYWWWTSKJDMEXTGCENXTOAACHCZEIXOVDDGOWGRFFGNRBKNJPAZ",
+   "word_per_letter": -4.343474433832134,
+   "hits": 1
+  },
+  {
+   "t": 14372,
+   "route": "COL_RT",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 6,
+    "b": 6,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "COL_RT"
+   },
+   "lm_per_letter": -1.9332376591784437,
+   "text": "BYZAFNEFCYKTZXHAEDRFHEZUBVJULHGBLOTBERXFTMRCMOLMTQOMHMLPSWDOWSLUGRLTAIREGGTWEXYXXFFRSFUBGUKCVNUVP",
+   "word_per_letter": -4.408482074325114,
+   "hits": 4
+  },
+  {
+   "t": 8833,
+   "route": "SNAKE_R",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 1,
+    "b": 0,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "SNAKE_R"
+   },
+   "lm_per_letter": -1.936448234411859,
+   "text": "TPMGWVEGZTCUEESARUNIHZNOVEOPICPFAETETXDXBOBAPRVURPMHEBFJEESXAVAFCUATMBIXTOVUXCFGNPCSLTGPKEUZHODWG",
+   "word_per_letter": -4.360739720170345,
+   "hits": 1
+  },
+  {
+   "t": 5488,
+   "route": "R24x8/CW/fwd",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 7,
+    "b": 0,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "R24x8/CW/fwd"
+   },
+   "lm_per_letter": -1.9454440936907051,
+   "text": "NYYFDIDHOMMFEVTIVKTHGQUUCPPBJWCHMNJUECCAXRUEAPCIOQDUUKLLDOJEVGCLOTOFEERFENGHVRPSWCUMUZIPOIZSUZNIT",
+   "word_per_letter": -4.16216573240366,
+   "hits": 0
+  },
+  {
+   "t": 2882,
+   "route": "SNAKE_L",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 5,
+    "op_a": "VIG",
+    "op_b": "VARB",
+    "route": "SNAKE_L"
+   },
+   "lm_per_letter": -1.9470560241913057,
+   "text": "VVTYRSBFIBQMXQLDVIXXKKMKPSFUUPTYTOMORAVTABDABKTEVVVOOLNNLDWOFKHYWPPNEITDEUCTOJJKRTAAWKHLWIQCOMROZ",
+   "word_per_letter": -4.455355998790647,
+   "hits": 0
+  },
+  {
+   "t": 15430,
+   "route": "R24x8/CCW/fwd",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 7,
+    "b": 7,
+    "op_a": "BEAU",
+    "op_b": "VIG",
+    "route": "R24x8/CCW/fwd"
+   },
+   "lm_per_letter": -1.9473008499624802,
+   "text": "KLXTKMYZTMSDUKRUATLUWNXXQKDRSOTGGISDVABEVEPJSMLACRUMPPQOOUPZIPSEALDYSCYXVXXFRKVSQHZMURMDCWFGAHFFU",
+   "word_per_letter": -3.958347537071657,
+   "hits": 2
+  },
+  {
+   "t": 6907,
+   "route": "COL_LT^-1",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 8,
+    "b": 6,
+    "op_a": "BEAU",
+    "op_b": "VIG",
+    "route": "COL_LT^-1"
+   },
+   "lm_per_letter": -1.9506616950342335,
+   "text": "LBHEKNCBBFRUVAABBWMXCUTHILYSRSJGZVAXCDVSIFYANIUQIPTRCOIACBKAJKMQBKOPXJJJBKLOOJBBROCHKHMJFMABYHNNW",
+   "word_per_letter": -4.440038492127302,
+   "hits": 1
+  },
+  {
+   "t": 13393,
+   "route": "COL_RT^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 5,
+    "b": 6,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "COL_RT^-1"
+   },
+   "lm_per_letter": -1.9529456993968217,
+   "text": "PBPLYBBIPSVGAUEEGAFWUJMRAQFZEXOYTFKDLPRULNNBYFKQCEOFXDAFEROLIJLKBZKCJFELKFAPWISKJAYDRVETGUNOHURFE",
+   "word_per_letter": -4.639957029209764,
+   "hits": 0
+  },
+  {
+   "t": 8026,
+   "route": "COL_LT",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 0,
+    "b": 1,
+    "op_a": "VARB",
+    "op_b": "VARB",
+    "route": "COL_LT"
+   },
+   "lm_per_letter": -1.9566890560474592,
+   "text": "HRTRRZIXTOMFHIKOILRIJGTQANGTAZCOMVMBGLBOANFCQWHLTSJNTVADFMFRDABBNUUQSHHZEREODJTMUGLMIXPJIESIKXXAN",
+   "word_per_letter": -4.366605295220412,
+   "hits": 2
+  },
+  {
+   "t": 5571,
+   "route": "SNAKE_R",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 7,
+    "b": 0,
+    "op_a": "BEAU",
+    "op_b": "VARB",
+    "route": "SNAKE_R"
+   },
+   "lm_per_letter": -1.960586896108598,
+   "text": "RKHLWSESCDDSALVNNXIIZHAUTIISGAMZLIVSSMIHPBRHEKHUHARLKWYEIPLTHNTNUTGODBSGQUTUJFXRKBIDPXCJBPXYTWMPA",
+   "word_per_letter": -4.273378488631222,
+   "hits": 2
+  },
+  {
+   "t": 9273,
+   "route": "COL_LT^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 1,
+    "b": 4,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "COL_LT^-1"
+   },
+   "lm_per_letter": -1.9625669318376129,
+   "text": "WSYJKPYTUTFMYWHSSIFSPQAVDRKDEISPINOBMXIFHIKAMZNQGNFXKOMGLVXXVFTWQQKIPYGGMSXNAXYJGNSLUEAIEKTECVSSS",
+   "word_per_letter": -4.819301238817063,
+   "hits": 2
+  },
+  {
+   "t": 2717,
+   "route": "R24x8/CW/fwd^-1",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 3,
+    "op_a": "BEAU",
+    "op_b": "VARB",
+    "route": "R24x8/CW/fwd^-1"
+   },
+   "lm_per_letter": -1.9636048265953654,
+   "text": "BZIOHNAKVOBUNINNAUEYYEFPZZNRVRIIOPTVXVIOJJZUVEVPYMETONVOBWOEROVORODGYGBZHHFVFTHVNYODIRWLXOTBBKEWU",
+   "word_per_letter": -4.348346236314842,
+   "hits": 2
+  },
+  {
+   "t": 2354,
+   "route": "R24x8/CCW/fwd",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 0,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "R24x8/CCW/fwd"
+   },
+   "lm_per_letter": -1.9655893739965773,
+   "text": "PBJWCHMNJUECCAXRUEAPCIOQDUUKLLDOJEVGCLOTOFEERFENGHVRPSWCUMUZIPOIZSUZNITFOKTEYVZLCEICHOYBEJOSWNGDJ",
+   "word_per_letter": -4.420798721225022,
+   "hits": 2
+  },
+  {
+   "t": 15001,
+   "route": "COL_LB^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 7,
+    "b": 3,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "COL_LB^-1"
+   },
+   "lm_per_letter": -1.96820845285949,
+   "text": "ELYUDDLUGQOVRKKHQJMVWOWNONWRLEKHGJGOCAORCYADMCCEZLKXHOXOAKYIGIOFTAZXAIDQELFWUGYHLGWYACAWCQCQHBLHH",
+   "word_per_letter": -4.80892705408186,
+   "hits": 2
+  },
+  {
+   "t": 6745,
+   "route": "COL_RB^-1",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 8,
+    "b": 4,
+    "op_a": "BEAU",
+    "op_b": "VARB",
+    "route": "COL_RB^-1"
+   },
+   "lm_per_letter": -1.9686129958051997,
+   "text": "JUMZRXSWLCEJUNBUKCGCSPJECHINPXSKZAEVABORDOSJDUPSYIVIDQPBSERPYVXAKAACHWPLHROLKPOJRDXMIIMIUZYNZQITJ",
+   "word_per_letter": -4.728723203184818,
+   "hits": 0
+  },
+  {
+   "t": 13891,
+   "route": "R24x8/CCW/fwd^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 6,
+    "b": 1,
+    "op_a": "BEAU",
+    "op_b": "VARB",
+    "route": "R24x8/CCW/fwd^-1"
+   },
+   "lm_per_letter": -1.9719476093029238,
+   "text": "QANJULLUPFAJKRBRCASBBQTOVNFEBRAEFYYCKOPSXDOLWEKQNIUDOJGZORHJPHOWUTIUJKBVRRCWWZOBIEXBGSTHCCZLUXVAQ",
+   "word_per_letter": -4.665960246300619,
+   "hits": 1
+  },
+  {
+   "t": 2468,
+   "route": "COL_LT",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 3,
+    "b": 1,
+    "op_a": "VIG",
+    "op_b": "BEAU",
+    "route": "COL_LT"
+   },
+   "lm_per_letter": -1.9728356019123314,
+   "text": "RRBKMBOILZFYCSCQOXVIVACNYBCEXENBTVGMAZACTIGSQRKZEMNAPLRHYBRIALYSCQOXHAGYSKTAXBSUSJYCBQUKUTWHRECIP",
+   "word_per_letter": -4.138841406770307,
+   "hits": 1
+  },
+  {
+   "t": 10650,
+   "route": "COL_RB",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 2,
+    "b": 8,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "COL_RB"
+   },
+   "lm_per_letter": -1.9730967356986606,
+   "text": "BVLKIKBKTUBTSHEQNGNMWMDPEBVSEICVUIFXHLIETSUHTUFFPNGYKWUWCLLKWJSEVGAWHOGUXYBALIXPPOVOJBUTRHPPPFHFO",
+   "word_per_letter": -4.3434124428442455,
+   "hits": 0
+  },
+  {
+   "t": 13577,
+   "route": "COL_RB^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 5,
+    "b": 8,
+    "op_a": "BEAU",
+    "op_b": "VIG",
+    "route": "COL_RB^-1"
+   },
+   "lm_per_letter": -1.9732833974754687,
+   "text": "WMNGJUDMHQTPIRGJXXKJUXBEEVJAKYAWCRZFPBOUBVNTEXPPIQCDDDAYIWHEECYGHUNCHAPJRGTQBJQAVPHFRZUGBORSPJOKY",
+   "word_per_letter": -4.798846154741514,
+   "hits": 0
+  },
+  {
+   "t": 7009,
+   "route": "COL_RT^-1",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 8,
+    "b": 7,
+    "op_a": "BEAU",
+    "op_b": "VIG",
+    "route": "COL_RT^-1"
+   },
+   "lm_per_letter": -1.9738624724223441,
+   "text": "EAAGZJWYOFNROGITESTAVIEXMMPIQEZLUMYEXBLGUYWDKETNOCDUPAQDYEXMGNDVMTLFTTATHVNVOJDTWXWAXJTKHVEHICOLT",
+   "word_per_letter": -3.915377972291831,
+   "hits": 1
+  },
+  {
+   "t": 5678,
+   "route": "COL_RT",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 7,
+    "b": 1,
+    "op_a": "VARB",
+    "op_b": "VARB",
+    "route": "COL_RT"
+   },
+   "lm_per_letter": -1.9769682073101555,
+   "text": "ZROJWREEUERFDVLCUCCNLRYGUXVMRPBMXHUOSNDOWFDVLKTVKPXFUPBDPLSHHXJAFKXXNBSYDOMIQMYNGECCVTMTWXIXURGPO",
+   "word_per_letter": -5.2113696769610405,
+   "hits": 1
+  },
+  {
+   "t": 1382,
+   "route": "COL_RB",
+   "setting": {
+    "ka": "PALIMPSEST",
+    "kb": "ABSCISSA",
+    "a": 1,
+    "b": 6,
+    "op_a": "VIG",
+    "op_b": "VIG",
+    "route": "COL_RB"
+   },
+   "lm_per_letter": -1.9791653873686939,
+   "text": "TMDRMEICOSPHBLFAYQYODKDBHNGIFKQZZLJUQBAZLKRHUJBROOJYJUYJITCMDHBINUCATRURIRAJEWFRGCUSAIGHLDUCQDTCH",
+   "word_per_letter": -4.521718337069673,
+   "hits": 1
+  },
+  {
+   "t": 13091,
+   "route": "R24x8/CW/fwd^-1",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 5,
+    "b": 3,
+    "op_a": "BEAU",
+    "op_b": "BEAU",
+    "route": "R24x8/CW/fwd^-1"
+   },
+   "lm_per_letter": -1.9792884198046221,
+   "text": "RKXJNSBFBOYWOTLAGYEGWXIRSJTZZEGOLJTVXRCMANKRETPOLQIBNKHUFKLTXAPMDXHESGSVKKBBONPGDDMOXYPIBUBOBHEIQ",
+   "word_per_letter": -4.5535074369620805,
+   "hits": 1
+  },
+  {
+   "t": 15462,
+   "route": "COL_LB",
+   "setting": {
+    "ka": "ABSCISSA",
+    "kb": "PALIMPSEST",
+    "a": 7,
+    "b": 7,
+    "op_a": "BEAU",
+    "op_b": "VARB",
+    "route": "COL_LB"
+   },
+   "lm_per_letter": -1.9804979019711928,
+   "text": "EJNJONJCUPKYKJVEDAJIQUYEUGRHOWLNQSDMAMKWPNGUOCQDSXQNOHSHXEXPDENLILMYVUQXVIOEESQQWJBDAJYDVCRYANYOT",
+   "word_per_letter": -4.293313299763801,
+   "hits": 0
+  }
+ ]
+}
