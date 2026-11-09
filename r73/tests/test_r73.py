@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """R73 tests. Run: python3 -I r73/tests/test_r73.py
-  1. no R73 code holds K4 plaintext words or reads the K4 ciphertext;
+  1. no R73 code holds K4 plaintext words or reads the K4 ciphertext (except sealed/prepare_k4.py, which reads it, and
+     sealed/reveal_k4.py, the post-freeze reveal, which holds the published letters);
   2. for every setting of both families, a planted message encrypts and the blind solver returns that family, that
      setting (or one that decodes identically) and the exact words."""
 import sys
@@ -12,7 +13,7 @@ import wordkey as W  # noqa: E402
 
 bad = []
 for f in sorted((ROOT / "r73").rglob("*.py")):
-    if f.name == "test_r73.py":
+    if f.name in ("test_r73.py", "reveal_k4.py", "prepare_k4.py"):   # post-freeze reveal and target maker only
         continue
     t = f.read_text()
     for w in ("EASTNORTHEAST", "NORTHEAST", "BERLINCLOCK", "BERLIN", "CLOCK", "k4_ciphertext"):
