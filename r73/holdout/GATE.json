@@ -1,0 +1,6249 @@
+{
+ "cut_per_letter": -2.7,
+ "verify": {
+  "witnesses": 35000,
+  "problems": [],
+  "passed": true
+ },
+ "summary": {
+  "I": {
+   "n": 100,
+   "recovered_and_confident": 94,
+   "recovered": 94,
+   "exact": 63,
+   "setting_exact": 100,
+   "letters_right_sorted_low5": [
+    82,
+    84,
+    84,
+    86,
+    86
+   ],
+   "per_letter_min": -1.366494417294127,
+   "passed": true
+  },
+  "R26": {
+   "n": 100,
+   "recovered_and_confident": 88,
+   "recovered": 88,
+   "exact": 61,
+   "setting_exact": 93,
+   "letters_right_sorted_low5": [
+    67,
+    79,
+    80,
+    82,
+    83
+   ],
+   "per_letter_min": -1.806611809627267,
+   "passed": false
+  },
+  "negatives": {
+   "n": 300,
+   "confident": 0,
+   "per_letter_max": -3.116392605565423
+  }
+ },
+ "rows": [
+  {
+   "id": "H_000",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3037857845955116,
+   "confident": false
+  },
+  {
+   "id": "H_001",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5194741490894654,
+   "confident": false
+  },
+  {
+   "id": "H_002",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     18
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.0773167111792463,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_003",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6982575981451036,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_004",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5579358813606987,
+   "confident": false
+  },
+  {
+   "id": "H_005",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5003345520233835,
+   "confident": false
+  },
+  {
+   "id": "H_006",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.683631250352516,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_007",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.607334470552646,
+   "confident": false
+  },
+  {
+   "id": "H_008",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.0665434963679343,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_009",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.53355669111546,
+   "confident": false
+  },
+  {
+   "id": "H_010",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6194475626219669,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_011",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.6695759856916483,
+   "confident": false
+  },
+  {
+   "id": "H_012",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.541133196393098,
+   "confident": false
+  },
+  {
+   "id": "H_013",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.553500887848984,
+   "confident": false
+  },
+  {
+   "id": "H_014",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.2474206640298973,
+   "confident": false
+  },
+  {
+   "id": "H_015",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5896446541796885,
+   "confident": false
+  },
+  {
+   "id": "H_016",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     2
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6981886755288561,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_017",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.2889773393801107,
+   "confident": false
+  },
+  {
+   "id": "H_018",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     2
+    ]
+   ],
+   "letters_right": 80,
+   "exact": false,
+   "per_letter": -1.3780109782671828,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_019",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4976448837758523,
+   "confident": false
+  },
+  {
+   "id": "H_020",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5264515826995173,
+   "confident": false
+  },
+  {
+   "id": "H_021",
+   "kind": "NEG_OTP",
+   "per_letter": -3.3574183526240517,
+   "confident": false
+  },
+  {
+   "id": "H_022",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3941850505192295,
+   "confident": false
+  },
+  {
+   "id": "H_023",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.469178427669148,
+   "confident": false
+  },
+  {
+   "id": "H_024",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5468398049413246,
+   "confident": false
+  },
+  {
+   "id": "H_025",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 86,
+   "exact": false,
+   "per_letter": -1.300642733976616,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_026",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4656381713439477,
+   "confident": false
+  },
+  {
+   "id": "H_027",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5286870443173277,
+   "confident": false
+  },
+  {
+   "id": "H_028",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    22
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     10
+    ]
+   ],
+   "letters_right": 67,
+   "exact": false,
+   "per_letter": -1.5671515456933436,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_029",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5924435516524122,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_030",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.510796111506471,
+   "confident": false
+  },
+  {
+   "id": "H_031",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7444548048165132,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_032",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.585823995645442,
+   "confident": false
+  },
+  {
+   "id": "H_033",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.3514260770796067,
+   "confident": false
+  },
+  {
+   "id": "H_034",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.583596591721458,
+   "confident": false
+  },
+  {
+   "id": "H_035",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5234942323712453,
+   "confident": false
+  },
+  {
+   "id": "H_036",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -0.9403918706654549,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_037",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.2743469108874486,
+   "confident": false
+  },
+  {
+   "id": "H_038",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4219934836557013,
+   "confident": false
+  },
+  {
+   "id": "H_039",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4205655319816906,
+   "confident": false
+  },
+  {
+   "id": "H_040",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.6324096617222748,
+   "confident": false
+  },
+  {
+   "id": "H_041",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6582060193717535,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_042",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.463579506682097,
+   "confident": false
+  },
+  {
+   "id": "H_043",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    23
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     23
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6714394889053664,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_044",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 88,
+   "exact": false,
+   "per_letter": -1.0786304424372306,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_045",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.586104231360386,
+   "confident": false
+  },
+  {
+   "id": "H_046",
+   "kind": "NEG_OTP",
+   "per_letter": -3.340808816752393,
+   "confident": false
+  },
+  {
+   "id": "H_047",
+   "kind": "NEG_OTP",
+   "per_letter": -3.3628455901225878,
+   "confident": false
+  },
+  {
+   "id": "H_048",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.467213950475927,
+   "confident": false
+  },
+  {
+   "id": "H_049",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.744058238142768,
+   "confident": false
+  },
+  {
+   "id": "H_050",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.446607880961037,
+   "confident": false
+  },
+  {
+   "id": "H_051",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3626491232110522,
+   "confident": false
+  },
+  {
+   "id": "H_052",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.663193320463306,
+   "confident": false
+  },
+  {
+   "id": "H_053",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4896459480757467,
+   "confident": false
+  },
+  {
+   "id": "H_054",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.468641495901995,
+   "confident": false
+  },
+  {
+   "id": "H_055",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5129799876804113,
+   "confident": false
+  },
+  {
+   "id": "H_056",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     5
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6669276991703582,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_057",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.263005765684958,
+   "confident": false
+  },
+  {
+   "id": "H_058",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    10
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     10
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.5882948017365015,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_059",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5198095662030933,
+   "confident": false
+  },
+  {
+   "id": "H_060",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5541234089970186,
+   "confident": false
+  },
+  {
+   "id": "H_061",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.513339242679621,
+   "confident": false
+  },
+  {
+   "id": "H_062",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5105959216219453,
+   "confident": false
+  },
+  {
+   "id": "H_063",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    14
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     14
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6402603329123162,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_064",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.6190861375753096,
+   "confident": false
+  },
+  {
+   "id": "H_065",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.627804267586998,
+   "confident": false
+  },
+  {
+   "id": "H_066",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    9
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     9
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.0602300650280425,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_067",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3405226861360315,
+   "confident": false
+  },
+  {
+   "id": "H_068",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4700952186625047,
+   "confident": false
+  },
+  {
+   "id": "H_069",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4691184184883594,
+   "confident": false
+  },
+  {
+   "id": "H_070",
+   "kind": "NEG_OTP",
+   "per_letter": -3.6128393882946415,
+   "confident": false
+  },
+  {
+   "id": "H_071",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.631421744326032,
+   "confident": false
+  },
+  {
+   "id": "H_072",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    10
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     10
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.836353161621294,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_073",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.9348482134271046,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_074",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.497624505567835,
+   "confident": false
+  },
+  {
+   "id": "H_075",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.6417645843612956,
+   "confident": false
+  },
+  {
+   "id": "H_076",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    14
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     14
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6753583024735186,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_077",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4662501208796304,
+   "confident": false
+  },
+  {
+   "id": "H_078",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5289308116586104,
+   "confident": false
+  },
+  {
+   "id": "H_079",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.6945139260614,
+   "confident": false
+  },
+  {
+   "id": "H_080",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 96,
+   "exact": false,
+   "per_letter": -0.8078899762070528,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_081",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.3386545716441227,
+   "confident": false
+  },
+  {
+   "id": "H_082",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    19
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     19
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6590902754784103,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_083",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.498456481959425,
+   "confident": false
+  },
+  {
+   "id": "H_084",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.515728887792736,
+   "confident": false
+  },
+  {
+   "id": "H_085",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.116392605565423,
+   "confident": false
+  },
+  {
+   "id": "H_086",
+   "kind": "NEG_OTP",
+   "per_letter": -3.2385653087411916,
+   "confident": false
+  },
+  {
+   "id": "H_087",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    4
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     4
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9646091190391811,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_088",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4347527957764488,
+   "confident": false
+  },
+  {
+   "id": "H_089",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.482222388651058,
+   "confident": false
+  },
+  {
+   "id": "H_090",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7290379812171516,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_091",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.3479923273729795,
+   "confident": false
+  },
+  {
+   "id": "H_092",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -1.0163291417868896,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_093",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.328853007869613,
+   "confident": false
+  },
+  {
+   "id": "H_094",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     5
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -1.1631714202135832,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_095",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    19
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     19
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.9851030894109973,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_096",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6993152472000526,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_097",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.45729623608311,
+   "confident": false
+  },
+  {
+   "id": "H_098",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.3808780849392917,
+   "confident": false
+  },
+  {
+   "id": "H_099",
+   "kind": "NEG_OTP",
+   "per_letter": -3.377222065559232,
+   "confident": false
+  },
+  {
+   "id": "H_100",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5200677187937295,
+   "confident": false
+  },
+  {
+   "id": "H_101",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.1797688093285266,
+   "confident": false
+  },
+  {
+   "id": "H_102",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 96,
+   "exact": false,
+   "per_letter": -0.7370392626415297,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_103",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    8
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     8
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.678900131117859,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_104",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    16
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     16
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.8026784266192621,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_105",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.8634386242900484,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_106",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3897056698848376,
+   "confident": false
+  },
+  {
+   "id": "H_107",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4412678477945398,
+   "confident": false
+  },
+  {
+   "id": "H_108",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 82,
+   "exact": false,
+   "per_letter": -1.1206893738707737,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_109",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6317390691124495,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_110",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    15
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     15
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -1.0867922831450638,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_111",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.3829069533560903,
+   "confident": false
+  },
+  {
+   "id": "H_112",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5267337068594484,
+   "confident": false
+  },
+  {
+   "id": "H_113",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.444841346223163,
+   "confident": false
+  },
+  {
+   "id": "H_114",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     18
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7276493255394108,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_115",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.311696397572849,
+   "confident": false
+  },
+  {
+   "id": "H_116",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    24
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     24
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -1.060618454250395,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_117",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.550326775974253,
+   "confident": false
+  },
+  {
+   "id": "H_118",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9726041522702751,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_119",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    14
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 79,
+   "exact": false,
+   "per_letter": -1.1370229463098196,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_120",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    1
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     24
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.0257614850718293,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_121",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    0
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     0
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -1.215409062779306,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_122",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.583030450430208,
+   "confident": false
+  },
+  {
+   "id": "H_123",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    11
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     11
+    ]
+   ],
+   "letters_right": 86,
+   "exact": false,
+   "per_letter": -1.4208053293162464,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_124",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.473950602009865,
+   "confident": false
+  },
+  {
+   "id": "H_125",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6585222364790533,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_126",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -0.8557044265790331,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_127",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     14
+    ]
+   ],
+   "letters_right": 87,
+   "exact": false,
+   "per_letter": -1.1553364102413777,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_128",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     5
+    ]
+   ],
+   "letters_right": 89,
+   "exact": false,
+   "per_letter": -0.8367440911507682,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_129",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5212090882298135,
+   "confident": false
+  },
+  {
+   "id": "H_130",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.390603436233279,
+   "confident": false
+  },
+  {
+   "id": "H_131",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4422579939692484,
+   "confident": false
+  },
+  {
+   "id": "H_132",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.506684836579021,
+   "confident": false
+  },
+  {
+   "id": "H_133",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.454012208930508,
+   "confident": false
+  },
+  {
+   "id": "H_134",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.3615508865272274,
+   "confident": false
+  },
+  {
+   "id": "H_135",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    7
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     7
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.691946267956966,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_136",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.483616164457736,
+   "confident": false
+  },
+  {
+   "id": "H_137",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5000982847200373,
+   "confident": false
+  },
+  {
+   "id": "H_138",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.380167098897615,
+   "confident": false
+  },
+  {
+   "id": "H_139",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.619443409209422,
+   "confident": false
+  },
+  {
+   "id": "H_140",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    10
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     7
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -0.8937360500149384,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_141",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.374994742006219,
+   "confident": false
+  },
+  {
+   "id": "H_142",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    1
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     1
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.9248738403815842,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_143",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4013873210337087,
+   "confident": false
+  },
+  {
+   "id": "H_144",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.9319518173392043,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_145",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -0.7305924206667045,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_146",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6385786028672694,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_147",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    17
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     17
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7306090996577572,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_148",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7944962881420984,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_149",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5579528328599475,
+   "confident": false
+  },
+  {
+   "id": "H_150",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.8320075423383437,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_151",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5177022016969484,
+   "confident": false
+  },
+  {
+   "id": "H_152",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.608858570501606,
+   "confident": false
+  },
+  {
+   "id": "H_153",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.374077393779905,
+   "confident": false
+  },
+  {
+   "id": "H_154",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5783067664071306,
+   "confident": false
+  },
+  {
+   "id": "H_155",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    4
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     4
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.8195783875764673,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_156",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.647549363872333,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_157",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.649223338967365,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_158",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     2
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6398836997033924,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_159",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     5
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.079848553883609,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_160",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.393945984913444,
+   "confident": false
+  },
+  {
+   "id": "H_161",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7429870831644872,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_162",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3627818866943526,
+   "confident": false
+  },
+  {
+   "id": "H_163",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.3732146202753013,
+   "confident": false
+  },
+  {
+   "id": "H_164",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.657672408656307,
+   "confident": false
+  },
+  {
+   "id": "H_165",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.780181118574318,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_166",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6568770226825911,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_167",
+   "kind": "NEG_OTP",
+   "per_letter": -3.7078939597090392,
+   "confident": false
+  },
+  {
+   "id": "H_168",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.554691478429452,
+   "confident": false
+  },
+  {
+   "id": "H_169",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.6358248352099163,
+   "confident": false
+  },
+  {
+   "id": "H_170",
+   "kind": "NEG_OTP",
+   "per_letter": -3.3254625842362424,
+   "confident": false
+  },
+  {
+   "id": "H_171",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5519517846642104,
+   "confident": false
+  },
+  {
+   "id": "H_172",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7958718096257494,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_173",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    4
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     4
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6697635896271087,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_174",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7155626600617467,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_175",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5378659635994856,
+   "confident": false
+  },
+  {
+   "id": "H_176",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.376498836209491,
+   "confident": false
+  },
+  {
+   "id": "H_177",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    23
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     23
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5932898068550989,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_178",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7956881131362118,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_179",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.393206486044957,
+   "confident": false
+  },
+  {
+   "id": "H_180",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6705021911354081,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_181",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.589235648859299,
+   "confident": false
+  },
+  {
+   "id": "H_182",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.630820549297656,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_183",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7156677954366988,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_184",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.6344107125999234,
+   "confident": false
+  },
+  {
+   "id": "H_185",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5027279488276637,
+   "confident": false
+  },
+  {
+   "id": "H_186",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.4776412098419702,
+   "confident": false
+  },
+  {
+   "id": "H_187",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4430308343984284,
+   "confident": false
+  },
+  {
+   "id": "H_188",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    14
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     14
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -0.9671490434263744,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_189",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.2690922675911414,
+   "confident": false
+  },
+  {
+   "id": "H_190",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5205717415849045,
+   "confident": false
+  },
+  {
+   "id": "H_191",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.3934846400671157,
+   "confident": false
+  },
+  {
+   "id": "H_192",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.631386811891209,
+   "confident": false
+  },
+  {
+   "id": "H_193",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5438029032163523,
+   "confident": false
+  },
+  {
+   "id": "H_194",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     2
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6809144645730466,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_195",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5166950292964594,
+   "confident": false
+  },
+  {
+   "id": "H_196",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5024212635265926,
+   "confident": false
+  },
+  {
+   "id": "H_197",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5545413935632104,
+   "confident": false
+  },
+  {
+   "id": "H_198",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5708210774364013,
+   "confident": false
+  },
+  {
+   "id": "H_199",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.462038914794804,
+   "confident": false
+  },
+  {
+   "id": "H_200",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5435341343121465,
+   "confident": false
+  },
+  {
+   "id": "H_201",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.611112734265762,
+   "confident": false
+  },
+  {
+   "id": "H_202",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.492354607710959,
+   "confident": false
+  },
+  {
+   "id": "H_203",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5431439280846426,
+   "confident": false
+  },
+  {
+   "id": "H_204",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.026329893984754,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_205",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5761765543600245,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_206",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.6086599141061315,
+   "confident": false
+  },
+  {
+   "id": "H_207",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.500820325918044,
+   "confident": false
+  },
+  {
+   "id": "H_208",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.438143012020948,
+   "confident": false
+  },
+  {
+   "id": "H_209",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4207135408250426,
+   "confident": false
+  },
+  {
+   "id": "H_210",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4824364425751,
+   "confident": false
+  },
+  {
+   "id": "H_211",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 88,
+   "exact": false,
+   "per_letter": -1.806611809627267,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_212",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4372262866630345,
+   "confident": false
+  },
+  {
+   "id": "H_213",
+   "kind": "NEG_OTP",
+   "per_letter": -3.6306966188085923,
+   "confident": false
+  },
+  {
+   "id": "H_214",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    1
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     1
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.1000374051644248,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_215",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4113366375762926,
+   "confident": false
+  },
+  {
+   "id": "H_216",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     5
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5652562896618585,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_217",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    0
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     0
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -1.194079097512239,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_218",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    24
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     24
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.0810474297218764,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_219",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.580088600948206,
+   "confident": false
+  },
+  {
+   "id": "H_220",
+   "kind": "NEG_OTP",
+   "per_letter": -3.6121939288068594,
+   "confident": false
+  },
+  {
+   "id": "H_221",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.483229436879754,
+   "confident": false
+  },
+  {
+   "id": "H_222",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5065111761254895,
+   "confident": false
+  },
+  {
+   "id": "H_223",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.410075848139079,
+   "confident": false
+  },
+  {
+   "id": "H_224",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.738629197073449,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_225",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6208410178532598,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_226",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6811916789306709,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_227",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.6152747096874163,
+   "confident": false
+  },
+  {
+   "id": "H_228",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5343313726950147,
+   "confident": false
+  },
+  {
+   "id": "H_229",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.426343210741581,
+   "confident": false
+  },
+  {
+   "id": "H_230",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    21
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     21
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.2245194911646098,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_231",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.553788134356943,
+   "confident": false
+  },
+  {
+   "id": "H_232",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 96,
+   "exact": false,
+   "per_letter": -0.7199008556340797,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_233",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    22
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     22
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.9345458708544209,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_234",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4699138410086054,
+   "confident": false
+  },
+  {
+   "id": "H_235",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5838443221333756,
+   "confident": false
+  },
+  {
+   "id": "H_236",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.7550106790226103,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_237",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.358976316867924,
+   "confident": false
+  },
+  {
+   "id": "H_238",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    22
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     22
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7602167902422737,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_239",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5242017523600713,
+   "confident": false
+  },
+  {
+   "id": "H_240",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4169356039188945,
+   "confident": false
+  },
+  {
+   "id": "H_241",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.607931085200855,
+   "confident": false
+  },
+  {
+   "id": "H_242",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.353361527672494,
+   "confident": false
+  },
+  {
+   "id": "H_243",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     2
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6038327665580753,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_244",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6499995531542159,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_245",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5337850657394814,
+   "confident": false
+  },
+  {
+   "id": "H_246",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.476076838471666,
+   "confident": false
+  },
+  {
+   "id": "H_247",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7803529249102678,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_248",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.640033153256257,
+   "confident": false
+  },
+  {
+   "id": "H_249",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5383883909219955,
+   "confident": false
+  },
+  {
+   "id": "H_250",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    19
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     19
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6180502864137309,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_251",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    25
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     25
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.0604193268909519,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_252",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    0
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     0
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -1.0452374589129458,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_253",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.552844869676725,
+   "confident": false
+  },
+  {
+   "id": "H_254",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.637493578790404,
+   "confident": false
+  },
+  {
+   "id": "H_255",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4340507295826996,
+   "confident": false
+  },
+  {
+   "id": "H_256",
+   "kind": "NEG_OTP",
+   "per_letter": -3.603027543183002,
+   "confident": false
+  },
+  {
+   "id": "H_257",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    21
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     21
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6549106972626757,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_258",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5016890397969935,
+   "confident": false
+  },
+  {
+   "id": "H_259",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5769464138121454,
+   "confident": false
+  },
+  {
+   "id": "H_260",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     18
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.9490303251636321,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_261",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -0.7990658581204526,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_262",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7314677736909808,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_263",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4080978960502044,
+   "confident": false
+  },
+  {
+   "id": "H_264",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6278132448604771,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_265",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.402102049601964,
+   "confident": false
+  },
+  {
+   "id": "H_266",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7083049222217325,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_267",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7012545353034615,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_268",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5853557203319926,
+   "confident": false
+  },
+  {
+   "id": "H_269",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    12
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     12
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -1.0963984190009495,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_270",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    3
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     3
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.408068984622322,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_271",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.492011221423879,
+   "confident": false
+  },
+  {
+   "id": "H_272",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3460250939870053,
+   "confident": false
+  },
+  {
+   "id": "H_273",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6335018990836305,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_274",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.648363444542797,
+   "confident": false
+  },
+  {
+   "id": "H_275",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9836560866144997,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_276",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.656173441312496,
+   "confident": false
+  },
+  {
+   "id": "H_277",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    14
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     14
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.67665518264139,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_278",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6553146896048889,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_279",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    17
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     17
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.035159916379464,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_280",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.2659744793809757,
+   "confident": false
+  },
+  {
+   "id": "H_281",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.1223541121258718,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_282",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6165696363119074,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_283",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    24
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     24
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5719105300449822,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_284",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5484032045193468,
+   "confident": false
+  },
+  {
+   "id": "H_285",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5016327217920193,
+   "confident": false
+  },
+  {
+   "id": "H_286",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     5
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5961653927657272,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_287",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.590004294104521,
+   "confident": false
+  },
+  {
+   "id": "H_288",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5483786599815015,
+   "confident": false
+  },
+  {
+   "id": "H_289",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6957467425768822,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_290",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.607941994721894,
+   "confident": false
+  },
+  {
+   "id": "H_291",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     24
+    ]
+   ],
+   "letters_right": 82,
+   "exact": false,
+   "per_letter": -1.212805129012908,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_292",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.603445904292902,
+   "confident": false
+  },
+  {
+   "id": "H_293",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.389358273819834,
+   "confident": false
+  },
+  {
+   "id": "H_294",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.9691197025001438,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_295",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    8
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     8
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7184993683511384,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_296",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9882886156649727,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_297",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4759779502724455,
+   "confident": false
+  },
+  {
+   "id": "H_298",
+   "kind": "NEG_OTP",
+   "per_letter": -3.467341657208182,
+   "confident": false
+  },
+  {
+   "id": "H_299",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7191499965968097,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_300",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.519797252858459,
+   "confident": false
+  },
+  {
+   "id": "H_301",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.663857584731885,
+   "confident": false
+  },
+  {
+   "id": "H_302",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4913579961787136,
+   "confident": false
+  },
+  {
+   "id": "H_303",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": false,
+   "per_letter": -0.7656416096068266,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_304",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4335273106796578,
+   "confident": false
+  },
+  {
+   "id": "H_305",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.494280484741273,
+   "confident": false
+  },
+  {
+   "id": "H_306",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.696262480909427,
+   "confident": false
+  },
+  {
+   "id": "H_307",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4201576827405678,
+   "confident": false
+  },
+  {
+   "id": "H_308",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.2862383950847516,
+   "confident": false
+  },
+  {
+   "id": "H_309",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.436266573261519,
+   "confident": false
+  },
+  {
+   "id": "H_310",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6291701090839105,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_311",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7145337375282401,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_312",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    21
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     21
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7132101557087261,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_313",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.6585517813432276,
+   "confident": false
+  },
+  {
+   "id": "H_314",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.6075873149877586,
+   "confident": false
+  },
+  {
+   "id": "H_315",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.687736174127819,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_316",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.8915796985256508,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_317",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     5
+    ]
+   ],
+   "letters_right": 84,
+   "exact": false,
+   "per_letter": -1.32197594175778,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_318",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4889955058557054,
+   "confident": false
+  },
+  {
+   "id": "H_319",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.6210869269383137,
+   "confident": false
+  },
+  {
+   "id": "H_320",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4286232459987733,
+   "confident": false
+  },
+  {
+   "id": "H_321",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 84,
+   "exact": false,
+   "per_letter": -1.327146676398589,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_322",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5953361768098984,
+   "confident": false
+  },
+  {
+   "id": "H_323",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7774253204441518,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_324",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5186715234683046,
+   "confident": false
+  },
+  {
+   "id": "H_325",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    25
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     25
+    ]
+   ],
+   "letters_right": 83,
+   "exact": false,
+   "per_letter": -1.486432803164309,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_326",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.493664657685605,
+   "confident": false
+  },
+  {
+   "id": "H_327",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7283343870875351,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_328",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.0033493670316032,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_329",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.574932267127462,
+   "confident": false
+  },
+  {
+   "id": "H_330",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4428663937812924,
+   "confident": false
+  },
+  {
+   "id": "H_331",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.370624379347995,
+   "confident": false
+  },
+  {
+   "id": "H_332",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5863435120541176,
+   "confident": false
+  },
+  {
+   "id": "H_333",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.533734618460402,
+   "confident": false
+  },
+  {
+   "id": "H_334",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    16
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     16
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6226222665863423,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_335",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5408902347991273,
+   "confident": false
+  },
+  {
+   "id": "H_336",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5068300116167,
+   "confident": false
+  },
+  {
+   "id": "H_337",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    21
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     21
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9381109979046799,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_338",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    8
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     8
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6919342571429753,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_339",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.981487884150394,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_340",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4363488788331895,
+   "confident": false
+  },
+  {
+   "id": "H_341",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    11
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     11
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7689882268490605,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_342",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6748698175646233,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_343",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5442105531407595,
+   "confident": false
+  },
+  {
+   "id": "H_344",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5573836282248847,
+   "confident": false
+  },
+  {
+   "id": "H_345",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4779781734426756,
+   "confident": false
+  },
+  {
+   "id": "H_346",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    25
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     25
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.233968104521249,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_347",
+   "kind": "NEG_OTP",
+   "per_letter": -3.590893996360938,
+   "confident": false
+  },
+  {
+   "id": "H_348",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.4731500230122667,
+   "confident": false
+  },
+  {
+   "id": "H_349",
+   "kind": "NEG_OTP",
+   "per_letter": -3.516229353333516,
+   "confident": false
+  },
+  {
+   "id": "H_350",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.8197284106680958,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_351",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    8
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     8
+    ]
+   ],
+   "letters_right": 89,
+   "exact": false,
+   "per_letter": -1.645862296356298,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_352",
+   "kind": "NEG_OTP",
+   "per_letter": -3.54237370737656,
+   "confident": false
+  },
+  {
+   "id": "H_353",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    5
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     5
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -1.606530490375601,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_354",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.6560806573940856,
+   "confident": false
+  },
+  {
+   "id": "H_355",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5454015360134576,
+   "confident": false
+  },
+  {
+   "id": "H_356",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.440990981444291,
+   "confident": false
+  },
+  {
+   "id": "H_357",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.412013001594203,
+   "confident": false
+  },
+  {
+   "id": "H_358",
+   "kind": "NEG_OTP",
+   "per_letter": -3.6406132393556976,
+   "confident": false
+  },
+  {
+   "id": "H_359",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.44207333346023,
+   "confident": false
+  },
+  {
+   "id": "H_360",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.692630628673562,
+   "confident": false
+  },
+  {
+   "id": "H_361",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.4497240246091683,
+   "confident": false
+  },
+  {
+   "id": "H_362",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.5523178011225607,
+   "confident": false
+  },
+  {
+   "id": "H_363",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.793777746341878,
+   "confident": false
+  },
+  {
+   "id": "H_364",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    20
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     20
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.671244078547117,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_365",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.7585244393863368,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_366",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    13
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     13
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.5529841081247833,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_367",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.3955247460451785,
+   "confident": false
+  },
+  {
+   "id": "H_368",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.64007437286409,
+   "confident": false
+  },
+  {
+   "id": "H_369",
+   "kind": "NEG_OTP",
+   "per_letter": -3.517604462386463,
+   "confident": false
+  },
+  {
+   "id": "H_370",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4696384708709713,
+   "confident": false
+  },
+  {
+   "id": "H_371",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.6639755772235754,
+   "confident": false
+  },
+  {
+   "id": "H_372",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.493847932185864,
+   "confident": false
+  },
+  {
+   "id": "H_373",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.4802917499137442,
+   "confident": false
+  },
+  {
+   "id": "H_374",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.389453313493925,
+   "confident": false
+  },
+  {
+   "id": "H_375",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.340241608209936,
+   "confident": false
+  },
+  {
+   "id": "H_376",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.610246927065752,
+   "confident": false
+  },
+  {
+   "id": "H_377",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    17
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     17
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6227933563660135,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_378",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -0.9895426854243354,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_379",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4521171461526117,
+   "confident": false
+  },
+  {
+   "id": "H_380",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.54649243532111,
+   "confident": false
+  },
+  {
+   "id": "H_381",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 93,
+   "exact": false,
+   "per_letter": -0.830281774122374,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_382",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    11
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     11
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.8555135818198177,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_383",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6783218201868144,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_384",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.0951289775689959,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_385",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.564567502088706,
+   "confident": false
+  },
+  {
+   "id": "H_386",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    4
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     4
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6876370362712895,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_387",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    25
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     25
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6101342434872756,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_388",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    12
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     12
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -1.0976917603806224,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_389",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5968512132586903,
+   "confident": false
+  },
+  {
+   "id": "H_390",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.61939504607671,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_391",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     18
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.3445615238891238,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_392",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4096379064529696,
+   "confident": false
+  },
+  {
+   "id": "H_393",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4011187136497125,
+   "confident": false
+  },
+  {
+   "id": "H_394",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    12
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     12
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6369039657023904,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_395",
+   "kind": "NEG_OTP",
+   "per_letter": -3.240032732777189,
+   "confident": false
+  },
+  {
+   "id": "H_396",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5350085950717185,
+   "confident": false
+  },
+  {
+   "id": "H_397",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4789381061874716,
+   "confident": false
+  },
+  {
+   "id": "H_398",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5002325492368653,
+   "confident": false
+  },
+  {
+   "id": "H_399",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -0.9637491768219127,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_400",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4927972669724268,
+   "confident": false
+  },
+  {
+   "id": "H_401",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.3066588588534698,
+   "confident": false
+  },
+  {
+   "id": "H_402",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.6056383592472327,
+   "confident": false
+  },
+  {
+   "id": "H_403",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 84,
+   "exact": false,
+   "per_letter": -1.366494417294127,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_404",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     6
+    ]
+   ],
+   "letters_right": 87,
+   "exact": false,
+   "per_letter": -1.3316795435328213,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_405",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4547405793572716,
+   "confident": false
+  },
+  {
+   "id": "H_406",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.445381659425313,
+   "confident": false
+  },
+  {
+   "id": "H_407",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    19
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     19
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.591060009248717,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_408",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.489161879642433,
+   "confident": false
+  },
+  {
+   "id": "H_409",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.5340522385697675,
+   "confident": false
+  },
+  {
+   "id": "H_410",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.434344309436689,
+   "confident": false
+  },
+  {
+   "id": "H_411",
+   "kind": "NEG_OTP",
+   "per_letter": -3.470732627779382,
+   "confident": false
+  },
+  {
+   "id": "H_412",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.575048228642969,
+   "confident": false
+  },
+  {
+   "id": "H_413",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7376993019585837,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_414",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6593997826330138,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_415",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.4053134294810823,
+   "confident": false
+  },
+  {
+   "id": "H_416",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.8411306937282779,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_417",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.8467348802315672,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_418",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    20
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     20
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.996253530436154,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_419",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4816554128345487,
+   "confident": false
+  },
+  {
+   "id": "H_420",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6404521519528025,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_421",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.417110767523833,
+   "confident": false
+  },
+  {
+   "id": "H_422",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    7
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     7
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7104436270894028,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_423",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.6183046506425067,
+   "confident": false
+  },
+  {
+   "id": "H_424",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5948159445706,
+   "confident": false
+  },
+  {
+   "id": "H_425",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.6473873270842976,
+   "confident": false
+  },
+  {
+   "id": "H_426",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -1.0614660160291327,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_427",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.8543723998047107,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_428",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.4263359786837597,
+   "confident": false
+  },
+  {
+   "id": "H_429",
+   "kind": "NEG_OTP",
+   "per_letter": -3.3782076591943775,
+   "confident": false
+  },
+  {
+   "id": "H_430",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    24
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     24
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.162785933045841,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_431",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.646729291156417,
+   "confident": false
+  },
+  {
+   "id": "H_432",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.418620848064374,
+   "confident": false
+  },
+  {
+   "id": "H_433",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.448336800488908,
+   "confident": false
+  },
+  {
+   "id": "H_434",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 92,
+   "exact": false,
+   "per_letter": -1.220421496873169,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_435",
+   "kind": "NEG_OTP",
+   "per_letter": -3.703976645849788,
+   "confident": false
+  },
+  {
+   "id": "H_436",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    10
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     10
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -1.1018903817791272,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_437",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    22
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     22
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7194190298033439,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_438",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    12
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     12
+    ]
+   ],
+   "letters_right": 91,
+   "exact": false,
+   "per_letter": -1.0659883012955487,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_439",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.7549863175991818,
+   "confident": false
+  },
+  {
+   "id": "H_440",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6220364428601173,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_441",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5846820630542426,
+   "confident": false
+  },
+  {
+   "id": "H_442",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.8167560615072622,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_443",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4012414895792187,
+   "confident": false
+  },
+  {
+   "id": "H_444",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    23
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     23
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.656181871649104,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_445",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.6783474078829514,
+   "confident": false
+  },
+  {
+   "id": "H_446",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5895694350531766,
+   "confident": false
+  },
+  {
+   "id": "H_447",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.508930954862444,
+   "confident": false
+  },
+  {
+   "id": "H_448",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.4650159875386746,
+   "confident": false
+  },
+  {
+   "id": "H_449",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5799873874875736,
+   "confident": false
+  },
+  {
+   "id": "H_450",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6040474420693629,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_451",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.5913130882827295,
+   "confident": false
+  },
+  {
+   "id": "H_452",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    0
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     0
+    ]
+   ],
+   "letters_right": 90,
+   "exact": false,
+   "per_letter": -1.2744079257646086,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_453",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6234677798990599,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_454",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.4869819342663044,
+   "confident": false
+  },
+  {
+   "id": "H_455",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5731898803672064,
+   "confident": false
+  },
+  {
+   "id": "H_456",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6981356407769402,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_457",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.688790111853108,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_458",
+   "kind": "NEG_OTP",
+   "per_letter": -3.616104771248321,
+   "confident": false
+  },
+  {
+   "id": "H_459",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.5725927838197746,
+   "confident": false
+  },
+  {
+   "id": "H_460",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.4847767384801642,
+   "confident": false
+  },
+  {
+   "id": "H_461",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    2
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     2
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7659047482081699,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_462",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6570834351570803,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_463",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.609865816940435,
+   "confident": false
+  },
+  {
+   "id": "H_464",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6632829553381124,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_465",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.3264019920555676,
+   "confident": false
+  },
+  {
+   "id": "H_466",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.469820276473786,
+   "confident": false
+  },
+  {
+   "id": "H_467",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4555157342688396,
+   "confident": false
+  },
+  {
+   "id": "H_468",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5773437984670196,
+   "confident": false
+  },
+  {
+   "id": "H_469",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.4551879384412345,
+   "confident": false
+  },
+  {
+   "id": "H_470",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "AZ",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "AZ",
+     "VARB"
+    ]
+   ],
+   "letters_right": 86,
+   "exact": false,
+   "per_letter": -1.0538428645525484,
+   "recovered": false,
+   "confident": true,
+   "ok": false
+  },
+  {
+   "id": "H_471",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5969637134255006,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_472",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 96,
+   "exact": false,
+   "per_letter": -0.6613515203954541,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_473",
+   "kind": "NEG_SHUFFLE",
+   "per_letter": -3.4132999915422535,
+   "confident": false
+  },
+  {
+   "id": "H_474",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7611361868943003,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_475",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    0
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     0
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6474000080400756,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_476",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.7383806335553835,
+   "confident": false
+  },
+  {
+   "id": "H_477",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7215651384528826,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_478",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.6343959061549644,
+   "confident": false
+  },
+  {
+   "id": "H_479",
+   "kind": "NEG_OTP",
+   "per_letter": -3.535252047180922,
+   "confident": false
+  },
+  {
+   "id": "H_480",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6017076437733644,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_481",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.7577340744951793,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_482",
+   "kind": "NEG_RUNKEY",
+   "per_letter": -3.5120802796664794,
+   "confident": false
+  },
+  {
+   "id": "H_483",
+   "kind": "NEG_HOMOPHONIC",
+   "per_letter": -3.3868718458786655,
+   "confident": false
+  },
+  {
+   "id": "H_484",
+   "kind": "NEG_PTAK",
+   "per_letter": -3.512224264442636,
+   "confident": false
+  },
+  {
+   "id": "H_485",
+   "kind": "NEG_OTP",
+   "per_letter": -3.4874987020787693,
+   "confident": false
+  },
+  {
+   "id": "H_486",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.523522657396243,
+   "confident": false
+  },
+  {
+   "id": "H_487",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.3150218707569237,
+   "confident": false
+  },
+  {
+   "id": "H_488",
+   "kind": "I",
+   "true_setting": [
+    "KRYPTOS",
+    "KRY",
+    "BEAU"
+   ],
+   "found": [
+    "I",
+    [
+     "KRYPTOS",
+     "KRY",
+     "BEAU"
+    ]
+   ],
+   "letters_right": 94,
+   "exact": false,
+   "per_letter": -0.9870456545967149,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_489",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.4680072036285403,
+   "confident": false
+  },
+  {
+   "id": "H_490",
+   "kind": "R26",
+   "true_setting": [
+    "KRY",
+    18
+   ],
+   "found": [
+    "R26",
+    [
+     "KRY",
+     18
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6787999497808515,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_491",
+   "kind": "R26",
+   "true_setting": [
+    "AZ",
+    6
+   ],
+   "found": [
+    "R26",
+    [
+     "AZ",
+     6
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.6885531172110088,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_492",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.5086364673751183,
+   "confident": false
+  },
+  {
+   "id": "H_493",
+   "kind": "I",
+   "true_setting": [
+    "PALIMPSEST",
+    "KRY",
+    "VARB"
+   ],
+   "found": [
+    "I",
+    [
+     "PALIMPSEST",
+     "KRY",
+     "VARB"
+    ]
+   ],
+   "letters_right": 95,
+   "exact": false,
+   "per_letter": -0.8222668006404765,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_494",
+   "kind": "NEG_GROMARK",
+   "per_letter": -3.467150146191784,
+   "confident": false
+  },
+  {
+   "id": "H_495",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "KRY",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "KRY",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.5425870449613279,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_496",
+   "kind": "NEG_OTP",
+   "per_letter": -3.5743272910996264,
+   "confident": false
+  },
+  {
+   "id": "H_497",
+   "kind": "NEG_CTAK",
+   "per_letter": -3.446782664802672,
+   "confident": false
+  },
+  {
+   "id": "H_498",
+   "kind": "I",
+   "true_setting": [
+    "ABSCISSA",
+    "AZ",
+    "VIG"
+   ],
+   "found": [
+    "I",
+    [
+     "ABSCISSA",
+     "AZ",
+     "VIG"
+    ]
+   ],
+   "letters_right": 97,
+   "exact": true,
+   "per_letter": -0.567560907051038,
+   "recovered": true,
+   "confident": true,
+   "ok": true
+  },
+  {
+   "id": "H_499",
+   "kind": "NEG_PERIODIC",
+   "per_letter": -3.325488907051144,
+   "confident": false
+  }
+ ]
+}
