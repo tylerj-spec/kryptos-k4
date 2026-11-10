@@ -1,0 +1,257 @@
+{
+ "classes": [
+  "RANDOM",
+  "RUNKEY",
+  "HELD",
+  "FEWVALUES",
+  "PT_AUTOKEY",
+  "CT_AUTOKEY",
+  "PROGRESSIVE",
+  "DIGITS",
+  "PERIODIC",
+  "TWO_LAYER"
+ ],
+ "n_train_per_class": 1500,
+ "n_test_per_class": 500,
+ "k": 25,
+ "features": [
+  "T1_total_coincidences",
+  "T2_near_repeats",
+  "T3_step_coincidences",
+  "T4_best_cross_block_lag",
+  "T5_neighbour_feedback",
+  "T6_small_values"
+ ],
+ "verdict_labels": [
+  "HELD",
+  "FEWVALUES",
+  "PT_AUTOKEY",
+  "CT_AUTOKEY",
+  "PROGRESSIVE",
+  "DIGITS",
+  "PERIODIC",
+  "NO_VISIBLE_STRUCTURE",
+  "MIXED"
+ ],
+ "confusion_rows_true_cols_verdict": {
+  "RANDOM": [
+   0,
+   0,
+   0,
+   0,
+   6,
+   2,
+   0,
+   488,
+   4
+  ],
+  "RUNKEY": [
+   0,
+   7,
+   0,
+   0,
+   3,
+   24,
+   0,
+   444,
+   22
+  ],
+  "HELD": [
+   500,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "FEWVALUES": [
+   1,
+   447,
+   0,
+   0,
+   0,
+   37,
+   0,
+   1,
+   14
+  ],
+  "PT_AUTOKEY": [
+   0,
+   0,
+   499,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "CT_AUTOKEY": [
+   0,
+   0,
+   1,
+   499,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "PROGRESSIVE": [
+   1,
+   0,
+   0,
+   0,
+   415,
+   4,
+   7,
+   55,
+   18
+  ],
+  "DIGITS": [
+   1,
+   54,
+   0,
+   0,
+   1,
+   352,
+   0,
+   58,
+   34
+  ],
+  "PERIODIC": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   4,
+   298,
+   184,
+   12
+  ],
+  "TWO_LAYER": [
+   0,
+   2,
+   0,
+   0,
+   5,
+   10,
+   22,
+   452,
+   9
+  ]
+ },
+ "structured_recall": {
+  "HELD": 1.0,
+  "FEWVALUES": 0.894,
+  "PT_AUTOKEY": 0.998,
+  "CT_AUTOKEY": 0.998,
+  "PROGRESSIVE": 0.83,
+  "DIGITS": 0.704,
+  "PERIODIC": 0.596
+ },
+ "unstructured_called_structured": {
+  "RANDOM": 0.016,
+  "RUNKEY": 0.068,
+  "TWO_LAYER": 0.078
+ },
+ "neighbour_distance_p95": {
+  "RANDOM": 1.3998767588960503,
+  "RUNKEY": 1.5336793070982613,
+  "HELD": 3.990615831647476,
+  "FEWVALUES": 3.3047467602378306,
+  "PT_AUTOKEY": 2.166371465653382,
+  "CT_AUTOKEY": 1.703444851332778,
+  "PROGRESSIVE": 3.5292879479139896,
+  "DIGITS": 2.0292922255003027,
+  "PERIODIC": 2.6457676354586535,
+  "TWO_LAYER": 1.8028997442869634
+ },
+ "class_mean_features": {
+  "RANDOM": [
+   1.47,
+   1.45,
+   1.55,
+   1.34,
+   1.59,
+   1.48
+  ],
+  "RUNKEY": [
+   2.41,
+   1.41,
+   1.58,
+   1.82,
+   1.59,
+   1.54
+  ],
+  "HELD": [
+   6.29,
+   14.68,
+   26.59,
+   1.52,
+   1.66,
+   1.8
+  ],
+  "FEWVALUES": [
+   10.41,
+   4.16,
+   2.83,
+   3.27,
+   1.67,
+   2.01
+  ],
+  "PT_AUTOKEY": [
+   2.62,
+   1.44,
+   1.64,
+   1.91,
+   22.76,
+   1.62
+  ],
+  "CT_AUTOKEY": [
+   1.47,
+   1.5,
+   1.85,
+   1.36,
+   28.62,
+   1.47
+  ],
+  "PROGRESSIVE": [
+   2.6,
+   1.86,
+   42.27,
+   5.28,
+   1.77,
+   1.42
+  ],
+  "DIGITS": [
+   5.44,
+   2.66,
+   2.54,
+   2.28,
+   1.65,
+   2.71
+  ],
+  "PERIODIC": [
+   2.48,
+   1.5,
+   2.39,
+   7.81,
+   1.67,
+   1.6
+  ],
+  "TWO_LAYER": [
+   1.98,
+   1.44,
+   1.67,
+   3.0,
+   1.62,
+   1.6
+  ]
+ },
+ "model_sha256": "f153eb46d876deab1a7a6bf993590899db2bdf3e948f823ec2c5e500e4a6083e"
+}
