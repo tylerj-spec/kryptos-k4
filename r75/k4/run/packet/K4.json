@@ -1,0 +1,638 @@
+[
+ {
+  "text": "BRENERSYUDDEDNDVHONEBDUROWEMYDULTYSOTPIOTHSMXECYKOOEPHMCITPFOIRMFYHYRDHOISGUFMYYRDFIVERVEPEXMHNBF",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 4
+   },
+   "s2": {
+    "pa": "ABS",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 7
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.484347084735302,
+  "lm_per_letter": -1.9588922682841137,
+  "word_per_letter": -3.8550832361828262
+ },
+ {
+  "text": "TRANQWNEDWCDHESTOUSSNVNKPGSSAWQIWINJLXZOBWOADOHFORNTIDOSEYURYKINUNPBOWSRRIBMSYITRARDFPAIWKKXYSTPS",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "SLOWLY",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "ABSENCE",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.743593033323896,
+  "lm_per_letter": -1.911402141948989,
+  "word_per_letter": -3.6185262976884305
+ },
+ {
+  "text": "ITUBAGSIWWSIRRINYNKRAWNHODEGFMMJKRIFTBERQHTXULTOCSALLLDKYKOXIWTMYEADEMANELAVKURTCNRKYMJBQDOFULKTG",
+  "setting": {
+   "family": "F2",
+   "tier": "A",
+   "pa": "KRY",
+   "ca": "ABS",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "KRYPTOS",
+   "phase": 4,
+   "trigger": "P",
+   "letter": "F",
+   "action": "SKIP"
+  },
+  "sub": "F2A",
+  "quad": -6.850461112692001,
+  "lm_per_letter": -1.9666780299439872,
+  "word_per_letter": -3.9690524443946003
+ },
+ {
+  "text": "EVTEOSSPPYHOFDESYZFNOQBFIDRAKYPOFIEHJGRDSEFIRONNAMYXASHWNMOWDKUACATBJANZKYOUKONLTREMORTHMFCCROVQY",
+  "setting": {
+   "family": "F2",
+   "tier": "B",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "POSSIBLE",
+   "phase": 0,
+   "trigger": "C",
+   "letter": "S",
+   "action": "RESTART"
+  },
+  "sub": "F2B",
+  "quad": -6.595292129415147,
+  "lm_per_letter": -1.9747153709536975,
+  "word_per_letter": -3.5457660118751746
+ },
+ {
+  "text": "OBKRUOXOGHTKARNKHNJJENTZTOONPLECKKGLOLYARYAAMSHHEIBRKLUDIAWINFBNYPUSSLYEOSEOLSHFRHABGEIMZMSMWCKIZ",
+  "setting": {
+   "family": "F3",
+   "tier": "A",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "VIG",
+   "word": "ABSCISSA",
+   "phase": 53,
+   "hold": 7
+  },
+  "sub": "F3A",
+  "quad": -6.687833403019195,
+  "lm_per_letter": -1.9691612751213545,
+  "word_per_letter": -4.410734629733298
+ },
+ {
+  "text": "KGRBRUISLMSWMCUMKWFFBLYBYWBAYXMVCCUKHERPUYCCELLLAEOURYRDKMANZLMTOVGETWELSRPGUYDBOUNQIGYFMOFSURCAC",
+  "setting": {
+   "family": "F3",
+   "tier": "B",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "FLAME",
+   "phase": 0,
+   "hold": 2
+  },
+  "sub": "F3B",
+  "quad": -6.80754225558423,
+  "lm_per_letter": -1.9415095552955706,
+  "word_per_letter": -3.799838201361167
+ },
+ {
+  "text": "JSADZJVFVMSIIIHUKDILRWIBOXORBYLETTPESBOTHRIIQTDWTJBRXXTHKOTXWWSKEAAYERPWRASLUXSABRALXLENUTESCAMEF",
+  "setting": {
+   "family": "F2",
+   "tier": "B",
+   "pa": "KRY",
+   "ca": "KRY",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "EXACT",
+   "phase": 0,
+   "trigger": "C",
+   "letter": "S",
+   "action": "STALL"
+  },
+  "sub": "F2B",
+  "quad": -6.836115575851278,
+  "lm_per_letter": -1.7752253373451148,
+  "word_per_letter": -3.641183043629958
+ },
+ {
+  "text": "ZOTEELICALPEPYAGIAJOSXORFAHDUJYEUSRHWHAILQNREFERLEGCORUPDWRMCOLLVJJHYMSVUBNHEDXGWECIPXHGTUKUCAITG",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "AZ",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "DEBRIS",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "DESPERATELY",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.955397106231527,
+  "lm_per_letter": -1.8600286514661515,
+  "word_per_letter": -3.82320726135251
+ },
+ {
+  "text": "TCDKAYBYUUMBAFLFHDODIANKIFSTLDXHKAZABUNGWBURYAGUDATLSIIXHHGISABJBXELYVNSMYDORLJUJIQMEDNETHAPEPUHK",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 2
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "BEAU",
+    "word": "ABSCISSA",
+    "phase": 3
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.881188012183981,
+  "lm_per_letter": -1.8663484395779286,
+  "word_per_letter": -4.042635743992461
+ },
+ {
+  "text": "QUITOAXLLWLVCFNOBBCBRIALUZIOTPISBAMFUETOTFDCDAVNPHESAWTHEANXAFPTPOMBBEZGZIMFIPXQFVCHCILLTEANEJGKN",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "ABSCISSA",
+    "phase": 3
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "KRYPTOS",
+    "phase": 1
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.832611527848751,
+  "lm_per_letter": -1.8688873331225717,
+  "word_per_letter": -3.882559595357161
+ },
+ {
+  "text": "JJCEEZNHDPGPKTITJNHOEFQEDYTYVINCNTIKOSWSMANTRBLESWRICAEHJOSUKFKHAPPSITAFRICFCJOBRIJOUFWDCEYYMIGOS",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "PALIMPSEST",
+    "phase": 3
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.836878474722517,
+  "lm_per_letter": -1.8735697077414424,
+  "word_per_letter": -3.99478076568521
+ },
+ {
+  "text": "MNQLROSUPSPGVAPELSEYBEBATBBDNPCBPUJIORIWECLAMDALSAHMAHYITFOWLWBRYBWROEWRGCRSEUCOHMYKDMEMLINYDWVSP",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "FORCES",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "FLAME",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.752099960408312,
+  "lm_per_letter": -1.876871353725797,
+  "word_per_letter": -3.9248521555132876
+ },
+ {
+  "text": "NERDKNXMDACCAYADYTKXIDVMZTHKQTFRTYONLEJODHOPLINOISNOYLRAYAJEODBYRLGFXPINREFDESNUMTHSQCQKROWGHELOM",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "ABSCISSA",
+    "phase": 5
+   },
+   "s2": {
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "PALIMPSEST",
+    "phase": 0
+   }
+  },
+  "sub": "F1A",
+  "quad": -7.000611140372905,
+  "lm_per_letter": -1.878778790695036,
+  "word_per_letter": -3.7856614177504566
+ },
+ {
+  "text": "QJINYRISMNGFFILSVUEBTOXNAJAONTOMSILFGJFIRWSINDONOYERIZYNVPOSKOFHIADJACYOOGSPSAWPERGEHPKIPOAADGTBF",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "ABS",
+    "ca": "ABS",
+    "ka": "KRY",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 1
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 0
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.612564160468731,
+  "lm_per_letter": -1.8814618873227502,
+  "word_per_letter": -3.4242147977335993
+ },
+ {
+  "text": "GQFFBNESDXARWUHAARDGFDOQPGCCOGONGAJEIBXVOJLLATGIXAKAHLUNABIRADLIBTEDRFDTDRBUYSIGFESPPBHEYFUSBYSOE",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "FIELD",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "MAGNETIC",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.878004211060544,
+  "lm_per_letter": -1.8824846056318774,
+  "word_per_letter": -3.39442106488502
+ },
+ {
+  "text": "RJJJJPAYINNJMAXEQIBCHAGISFGIDAIRMAYLUHHUFEALSMSENUMWOVANQLOFCANBDQAOTVQNYUIVYPPLLKLMFSRBUTBLSUODG",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "PALIMPSEST",
+    "phase": 4
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "ABSCISSA",
+    "phase": 1
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.99135004966817,
+  "lm_per_letter": -1.8842216763914246,
+  "word_per_letter": -3.9850696586917014
+ },
+ {
+  "text": "TUKSJYGYOMLFOBOTMYJOYRSRRNVBOINVYWPIDCKCSEBITDDRENTOAWRVESWHOQEFFVHVNUAABSTNOCDDIRRGNOORWDYHCALKD",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU",
+    "word": "PRESENTLY",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "FIELD",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.964625792300447,
+  "lm_per_letter": -1.8842774606549864,
+  "word_per_letter": -4.202361237829148
+ },
+ {
+  "text": "IMIPASOIDLYREZINKCIESSNERNOYYAPAUGECSNOULDMGQABXSQUJARTHNJBHEMJGWSRJFKVVSAOIHTZGEXDHNDIYVTARFINZH",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "KRYPTOS",
+    "phase": 6
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.940025783599691,
+  "lm_per_letter": -1.8849302002603245,
+  "word_per_letter": -3.9468161173493153
+ },
+ {
+  "text": "VOFZHOMLIDACHUEOMIECWAINCOZSKBUQSXIULNOLYANIQLGABTAEWNFGUECAWIDCLEROHRAFQWJRMCCOCVRYRRIALORJRRTIO",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "IQLUSION",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VARB",
+    "word": "CARNARVON",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.9633786171040635,
+  "lm_per_letter": -1.8892087850374044,
+  "word_per_letter": -4.036009436463059
+ },
+ {
+  "text": "IHVLIOGIORSARKITTRPRSLTDCCDFSWQENPJHAFBNBADFOEFNSEDUEAEOOGSVSWMUIECKMYANEEEXOBSCHZTOOOVSWELWMVOOJ",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "ABS",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 1
+   },
+   "s2": {
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 0
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.836559815609709,
+  "lm_per_letter": -1.8900830280227758,
+  "word_per_letter": -3.654334238376134
+ },
+ {
+  "text": "XSLLYOXGJVZGTOFHSCHELPRAIMLCZRMHHNDPPCIVYUNRCETVCLDZINZWICGIVYBLYFIMMYTACTWESCWKGUFHICKSCHOUNEUDP",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "PAL",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 3
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "BEAU",
+    "word": "PALIMPSEST",
+    "phase": 2
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.979761179457319,
+  "lm_per_letter": -1.8939839890322734,
+  "word_per_letter": -4.353610089705608
+ },
+ {
+  "text": "HUGSGXTMJRDBIMBLJYTTDJIASFWPCINVBUSSONGVFILMYCEBUYSBEJANUNHRSQSWCASNZIBUNTGNRANASBPMFMFEAHFRPAYWR",
+  "setting": {
+   "family": "F1",
+   "tier": "B",
+   "s1": {
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VIG",
+    "word": "DESPARATLY",
+    "phase": 0
+   },
+   "s2": {
+    "pa": "AZ",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "BEAU",
+    "word": "CANDLE",
+    "phase": 0
+   }
+  },
+  "sub": "F1B",
+  "quad": -6.818580049149533,
+  "lm_per_letter": -1.8943237897354304,
+  "word_per_letter": -3.3434813189366137
+ },
+ {
+  "text": "WCAYMYYBDJINIIAMGHLICKLATSRZSPFNAVUDYKYMLIEXIMVICGBHKOVHMSDHPHEATYDSCRYEVOFHFQROBOOFMELAHTMPCLIIA",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "ABS",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "KRYPTOS",
+    "phase": 6
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "word": "ABSCISSA",
+    "phase": 2
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.94929645923858,
+  "lm_per_letter": -1.8987282640540724,
+  "word_per_letter": -3.8473526427397036
+ },
+ {
+  "text": "QINXKJLIPDECTKLEYROFLOWOMEXSVGTRUIDUOMMYINESIRNPMUDYDSCYYQWBJOLUCICULKENBOIGARURTOFUBYPMZAIIKQPRJ",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "AZ",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG",
+    "word": "ABSCISSA",
+    "phase": 2
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "ABS",
+    "ka": "KRY",
+    "op": "VIG",
+    "word": "PALIMPSEST",
+    "phase": 1
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.83471731936678,
+  "lm_per_letter": -1.899380879611084,
+  "word_per_letter": -4.132644841899576
+ },
+ {
+  "text": "QIOPYOKWTXYGHBULHGHIYGIYMLOEOPUSHDANKEYLOWGHGOZEKYDSOFYHLDENOCHBITUIIFNWDWUXGUEREHHHNSPYOUROETBMW",
+  "setting": {
+   "family": "F1",
+   "tier": "A",
+   "s1": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "VIG",
+    "word": "ABSCISSA",
+    "phase": 3
+   },
+   "s2": {
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "KRY",
+    "op": "BEAU",
+    "word": "KRYPTOS",
+    "phase": 6
+   }
+  },
+  "sub": "F1A",
+  "quad": -6.872052180006149,
+  "lm_per_letter": -1.9000827731545438,
+  "word_per_letter": -4.094593244065879
+ }
+]
