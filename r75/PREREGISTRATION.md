@@ -151,3 +151,43 @@ C3 becomes a record only.
 
 **Prior expectation** (stated before the run): NO_SIGNAL; all exact checks NO_SOLUTION; key class MIXED or a weak
 FEWVALUES/DIGITS.
+
+## Amendment 1 (10 Nov 2026, before any R75 data was generated: no holdout, no K4 target, no run)
+Written after reviewing ChatGPT's latest handoff (PR #40 comment of 10 Nov, summarising its R62 audit, PRs #41–#43).
+
+**1. The open point is settled.**
+- That handoff restates Tyler's rule: "clue-*motivated* selection of methods/key-source hypotheses is permitted, but
+  known letters/positions must never be inputs to algorithm, candidate generation, scoring, tuning, training,
+  filtering or key choice".
+- The "What follows" table stands as written. Part C3 may steer which *method class* the next round tests. That
+  round's algorithm still never sees the published letters.
+
+**2. R62's findings change nothing in Parts A–C1.**
+- Carter & Mace 1923 is in the letter model's training text (R62A). R75's six books are not, so the holdout stays
+  independent.
+- R62B's power check supports the letter model on modern English. R75 already uses it with the same cuts.
+
+**3. Added: Part C2b, grid keys (`r75/sealed/gridx.py`; hypothesis H4 of `r76/HYPOTHESES.md`).**
+- **Why now:** several ciphertext-only features point to a grid layout, and this check is cheap and decisive:
+  - K4's joint width-7 / width-21 fingerprints (R71, rare at 8 × 10⁻⁵ against shuffles);
+  - R61's COL_LT route gap (R62C: 2 of 300 fresh shuffles reach it; noticed after the fact);
+  - the SNAKE_L / row-4 effects (R65, R69).
+- **Disclosure:** both published strings also start at a multiple of 21 plus 1. That is noticed from the published
+  letters; it motivated the choice of family, not any setting.
+- **Definition:** the message in rows of w letters starting at column o (w 2–48, every o). One key repeats along every
+  row (one letter per column); a second key changes once per row; each key on its own stage.
+  - The 1,024 two-stage configurations of F1X, in both orientations (column key first or row key first).
+  - That includes the plain additive form, key = column letter + row letter.
+- **Decision:**
+  - A setting is checked when it has ≥ 5 independent checks.
+  - It is decoded when it has at most 26 key solutions. Unpinned rows or columns are completed blind by coordinate
+    ascent on quadgrams.
+  - **CONSISTENT** iff some full decode clears both cuts (letter model ≥ −1.45, word model ≥ −2.50); else
+    **NO_SOLUTION**.
+  - The same check runs on the first 20 shuffles of the K4 target. If any shuffle is also CONSISTENT, a K4 CONSISTENT
+    is reported as a calibration failure, not a lead.
+- **Synthetic validation** (`gridx.py --selftest`, `r75/results/GRIDX_SELFTEST.json`; random keys):
+  - 6/6 grid-key plants (widths 7, 7, 21, 21, 11, 4) gave a readable decode with 72–97 of 97 letters right. The
+    misses are rows that no published letter pins.
+  - 0/6 random ciphertexts gave a readable decode; their best was −1.60 per letter.
+- **Runbook:** step C runs `gridx.py K4 $LM r75/k4/TARGET.tsv r75/k4/GRIDX.json 20` after `exact.py`.

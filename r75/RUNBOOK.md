@@ -73,10 +73,11 @@ Commit `VERIFY.json`: *"R75 K4 verified after the freeze (no published letters)"
 ```bash
 python3 -I r75/sealed/reveal_k4.py r75/k4/TARGET.tsv r75/k4/run r75/k4/REVEAL.json       # C1b, about 3 minutes
 python3 -I r75/sealed/exact.py K4 $LM r75/k4/TARGET.tsv r75/k4/EXACT.json 20             # C2, about 5 minutes
+python3 -I r75/sealed/gridx.py K4 $LM r75/k4/TARGET.tsv r75/k4/GRIDX.json 20             # C2b (Amendment 1)
 python3 -I r75/sealed/keyshape.py r75/k4/KEYSHAPE.json                                   # C3a, about 3 minutes
 python3 -I r75/sealed/keyclass.py r75/results/KEYCLASS_MODEL.npz r75/k4/KEYCLASS.json    # C3b, seconds
 ```
-Commit the four JSON files with the four verdicts in the message. Push.
+Commit the five JSON files with the five verdicts in the message. Push.
 
 ## D. Write up
 1. **`r75/RESULT.md`**, in the format of `r74/RESULT.md`:
