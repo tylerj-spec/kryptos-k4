@@ -1,0 +1,419 @@
+[
+ {
+  "text": "OROTEOYINNYJNVAXIAGFCERTFWDJHUSISVAAALDIUPSVLVCTAJAHOYEHIRAHDENCIRWLOTGEBAGSEECAAHUPPSSMPONSMATNH",
+  "setting": {
+   "family": "B1",
+   "pa": "DOORWAY",
+   "ca": "DEBRIS",
+   "ka": "AZ",
+   "op": "VIG",
+   "word": "PALIMPSEST",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.469128098893673,
+  "lm_per_letter": -1.8599504060351972,
+  "word_per_letter": -3.594479178283655
+ },
+ {
+  "text": "WMENDITXDACAMADICUYMEOILKNKIOHZSMDIPFNKOSNOONHTOEPQUHAROCUTTHBUHSIDPMFHUYGEVAHITCGNARDENSRUNMDZLL",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "PALIMPSEST",
+   "phase": 8,
+   "route": "rot2:R37x21/CCW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.632688877430368,
+  "lm_per_letter": -1.8923932080800385,
+  "word_per_letter": -3.343543365721435
+ },
+ {
+  "text": "ZOPAIRHPESISFCCFSNALUPAFFSRVBASMEOJJYPNURFIUFLBPXKYIUZRCEALBERIYSUSWSTSHEMIIFPHYINCDHGNQUUDRSSWXU",
+  "setting": {
+   "family": "B3",
+   "ka": "PALIMPSEST",
+   "kb": "ABSCISSA",
+   "a": 8,
+   "b": 1,
+   "op_a": "VIG",
+   "op_b": "VARB",
+   "route": "sheet36:S98x97/drop97/fwd"
+  },
+  "sub": "B3",
+  "quad": -7.006400488792582,
+  "lm_per_letter": -1.9566407486335518,
+  "word_per_letter": -4.009638611937811
+ },
+ {
+  "text": "LDRLKXMLWUJAECLAGWDEOTALIOVUFGVRIFVEJKMISTSISRCMOWLTRARADSFGGDBAEOILTWIXORJAAOCEKUNADWRJVRICHRYSU",
+  "setting": {
+   "family": "B1",
+   "pa": "SHADING",
+   "ca": "INVISIBLE",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "PASSAGE",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.9027262976829045,
+  "lm_per_letter": -1.8390003072539556,
+  "word_per_letter": -4.181852065057173
+ },
+ {
+  "text": "KWFMPJSIABOFVSOLIFBAVEKQUOONPLEHPPLQTPMOFMONZFUURUNDEFUDIAWINEBMXOURSLXENHUEAIXTRGYAFBHRCRWOAGWWN",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "KRYPTOS",
+   "phase": 0,
+   "route": "rot2:R35x41/CCW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.858197706810971,
+  "lm_per_letter": -1.858889100132222,
+  "word_per_letter": -3.7769599863539574
+ },
+ {
+  "text": "FTVEVDYTEDRATIUJPBOWLPAHGDQESSERIXBEATRELIVINRCFXJTLOGRUXFAGNBOCPUMIEYUTPMPNLOQARHMOCERRRJFGAYRGJ",
+  "setting": {
+   "family": "B1",
+   "pa": "UNDERGROUND",
+   "ca": "ABSCISSA",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "UNDERGROUND",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.978824039723011,
+  "lm_per_letter": -1.8589150735282713,
+  "word_per_letter": -4.007458395616543
+ },
+ {
+  "text": "HBOYOHDRMZTFENGXQHAPOMGYFKYSYNESINGVINXMAYINSBNWWTVROCOIQBWWFMETKJWNBERMSRHELOEJVRCKWESDOOZAARUZZ",
+  "setting": {
+   "family": "B1",
+   "pa": "WIDENING",
+   "ca": "SUBTLE",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "NORTH",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.929897838450493,
+  "lm_per_letter": -1.8597728928032609,
+  "word_per_letter": -4.35704274160345
+ },
+ {
+  "text": "MOVMGNDURKGUOHMUKPAANDTLHNNKINKOHHMGEHLIXLIIYVAAFBIZOTUPACGRNRONCLEGHUBYLWERPVACGZSOXCOUKICIPVTSM",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "ABSCISSA",
+   "phase": 5,
+   "route": "rot2:R8x45/CW-CCW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.97973234095472,
+  "lm_per_letter": -1.8700056801137237,
+  "word_per_letter": -4.241499763381456
+ },
+ {
+  "text": "PHBILMSNEECUSZRMXSPYEDAFJLRHILWOKENZAGHZSHEWHRABUSEBOULKZEDZTXOLOLJDHSTRINDXKONHGCRPVEOFTUMLYWIPI",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "PALIMPSEST",
+   "phase": 1,
+   "route": "rot2:R24x44/CCW-CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.702710430672828,
+  "lm_per_letter": -1.8702588891706515,
+  "word_per_letter": -4.098280066988558
+ },
+ {
+  "text": "DVCIIBUCKOLORIDEYOURUPSENGDIHASAHMGILIGHPHIFTAUZUVNBSSNRAKUOCOXCXHLHMDQTGOJRWOZVITRZPOBIRMWHYAKWI",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "KRYPTOS",
+   "phase": 4,
+   "route": "rot2:R11x5/CCW-CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.796281677611331,
+  "lm_per_letter": -1.8721467617937584,
+  "word_per_letter": -3.5355728121213863
+ },
+ {
+  "text": "NJORCMSMOZDMPENSAGHLARKIJJHHJTRAWKIGAGUHUGEIGONNASMWNNCTCTNDJRHOBIBMGOJGMANOPNAHHBYKZEVUECSCAVYPJ",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "PALIMPSEST",
+   "phase": 0,
+   "route": "rot2:R6x18/CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.856508031804511,
+  "lm_per_letter": -1.874829837572329,
+  "word_per_letter": -3.7411836821780238
+ },
+ {
+  "text": "EHSJDHOEUVYXIIEXURWLTMSCPRRFARNSUIFDPFPGWPFILAHOTGEXSXRNUGPUBNIZBEPENROMCIFULSOSFWINUNSRPTHRLBLHB",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "KRY",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "ABSCISSA",
+   "phase": 7,
+   "route": "rot2:R7x26/CW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.9764798499168235,
+  "lm_per_letter": -1.8761740395242406,
+  "word_per_letter": -4.232922494889083
+ },
+ {
+  "text": "HVEKNIPHASOWSMHECZUMNZDIOKKALYYELKHEQNBJCKMLYETSQSNBBFFWTUPBEYTESJPEMGRZIBPAWESOLAWUCAENAMSMVENUC",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "ABSCISSA",
+   "phase": 5,
+   "route": "rot2:R5x30/CCW-CW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.938556513887771,
+  "lm_per_letter": -1.8775386120547954,
+  "word_per_letter": -3.5678351274422107
+ },
+ {
+  "text": "HJMOOHNDYMOVFDSMNGJNPFKSDORKYGYMSPHADATHOFADEUAHTBRLLMRDVEVTONFUSIUNNKAQWLASMULIERDEVLMJZREOIUDBZ",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "VIG",
+   "word": "PALIMPSEST",
+   "phase": 9,
+   "route": "rot2:R28x7/CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.842323823178068,
+  "lm_per_letter": -1.8838011647008128,
+  "word_per_letter": -4.037595008185392
+ },
+ {
+  "text": "JEPTREGENUGCFWVYMIEHPRWAPFFAMDXPCCEDFDKGBFDDYEDYKDDOIWYLAERSTWEVOCENDZSTATHXUPYRDOILALLSLXGDLAREM",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "KRY",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "PALIMPSEST",
+   "phase": 4,
+   "route": "rot2:R2x35/CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.925385624804395,
+  "lm_per_letter": -1.8843730751079382,
+  "word_per_letter": -3.606306178290778
+ },
+ {
+  "text": "KJATYAUASRVGQBDILNOOOOHBDYYATELESSEWTWBGPIAWKJUUSYRBAHYOGYCHEMSEVEXWWYUNDOSIMASUVBIPHJFXREYYOERTC",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "BEAU",
+   "word": "KRYPTOS",
+   "phase": 6,
+   "route": "rot2:R7x41/CCW-CW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.984054606011573,
+  "lm_per_letter": -1.8853131195664714,
+  "word_per_letter": -4.12451858235952
+ },
+ {
+  "text": "TDEYPUFTFVBYDMTYOSDDGMYGASSLBWHLBBNPLTFBRKABILIIGDQMLYPARAPPWORUJWAQQQHOWLLFAYINCRVARFEBMPENGETAC",
+  "setting": {
+   "family": "B1",
+   "pa": "REMOVED",
+   "ca": "DEGREES",
+   "ka": "KRY",
+   "op": "BEAU",
+   "word": "DEGREES",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.9267028012174245,
+  "lm_per_letter": -1.88653035031766,
+  "word_per_letter": -3.7423685522345105
+ },
+ {
+  "text": "YFLCIGTIINUENPGKWHEFTEEMSNRPEBBLFWISATGUDCWHAKYOYWAIYOSHNATUMUBOXFQHAYGHPOTBZWVBSJGZFAWROTLUSHYON",
+  "setting": {
+   "family": "B1",
+   "pa": "CANDLE",
+   "ca": "SOMEWHERE",
+   "ka": "KRY",
+   "op": "VIG",
+   "word": "PRESENTLY",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.906390230706397,
+  "lm_per_letter": -1.887111774055268,
+  "word_per_letter": -4.093411996986156
+ },
+ {
+  "text": "JRDFOHNJIBAEREJERVRRIDEVIKKZYAMYLLYXQUELFROLWYVVISWCYEOTANOLACHIUGIWWGWCGYQITHVPDFSTAIDADOPPYDTNX",
+  "setting": {
+   "family": "B1",
+   "pa": "REMAINS",
+   "ca": "TREMBLING",
+   "ka": "AZ",
+   "op": "VIG",
+   "word": "DEGREES",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.832798255250809,
+  "lm_per_letter": -1.88953970647273,
+  "word_per_letter": -3.916840485780399
+ },
+ {
+  "text": "FIABRESGUVPWHFEWURILSUKDECCMARNSFFEEFDKFVRIGMASSTHEWASPMWIOXKMHZBCYGGRBUMIFYZABTDVIJUNSRQRIRMAJHB",
+  "setting": {
+   "family": "B2",
+   "pa": "KRY",
+   "ca": "KRY",
+   "ka": "KRY",
+   "op": "VARB",
+   "word": "ABSCISSA",
+   "phase": 3,
+   "route": "rot2:R24x26/CW-CCW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.901144935729656,
+  "lm_per_letter": -1.889780524004366,
+  "word_per_letter": -3.8969596249894574
+ },
+ {
+  "text": "DXFHUENESIVERSEZHOOSOFZAYZDZAXLOBBAVOYIZKYAWNOZZSSVJOEEMKSWCCTOGMDPYWDUODAVEMJPWRIPOLIJUKEREKEMSH",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "BEAU",
+   "word": "KRYPTOS",
+   "phase": 0,
+   "route": "rot2:R4x9/CW-CCW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.817667750602073,
+  "lm_per_letter": -1.890918751199221,
+  "word_per_letter": -3.854305482805379
+ },
+ {
+  "text": "GESORNOONBJJAJNBWAHHVWYREGKIDSYSYGNEWOVCKSNMBLUTSIEZTYUILIVDHZDLCIMAPAJAPPLFFTBOADZBAFPREUMFEERBD",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "KRY",
+   "ka": "AZ",
+   "op": "BEAU",
+   "word": "PALIMPSEST",
+   "phase": 1,
+   "route": "rot2:R7x29/CCW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.950904237463119,
+  "lm_per_letter": -1.8914146636871947,
+  "word_per_letter": -4.058969785789451
+ },
+ {
+  "text": "JJTJTNMKFKPAQIMCJDLCSGTNWEUOXRETEJOUSOEJCZILIOSTNIPUPADEDRRAACJAILWGLAZYVOUGOTLRODJOZESWFPIWESPHO",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "KRY",
+   "ka": "AZ",
+   "op": "BEAU",
+   "word": "KRYPTOS",
+   "phase": 2,
+   "route": "rot2:R5x17/CW/fwd"
+  },
+  "sub": "B2",
+  "quad": -6.9742335867374505,
+  "lm_per_letter": -1.8932811630140876,
+  "word_per_letter": -3.6526845738697213
+ },
+ {
+  "text": "OCCJMPPOGZMDTUGLANTDEFLSDIQPROOCKTOBELITBSKAWLRBOATLLLMDICEANXJPGHVULEBGPLOYVKRXLLUDAISUZWAWMCCBZ",
+  "setting": {
+   "family": "B2",
+   "pa": "AZ",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "VARB",
+   "word": "ABSCISSA",
+   "phase": 4,
+   "route": "rot2:R9x31/CW/inv"
+  },
+  "sub": "B2",
+  "quad": -6.871172958231987,
+  "lm_per_letter": -1.8932955526199537,
+  "word_per_letter": -3.9861770224571544
+ },
+ {
+  "text": "DYOGEDYHNCYJSUWXPAJICERGFRZIDFSIQUWAALZHUNQUTVCTAEAHOYEKPVANJESSIOWLOTGEYAGSHECAAHTTXSSMEOISUASID",
+  "setting": {
+   "family": "B1",
+   "pa": "DOORWAY",
+   "ca": "HANDS",
+   "ka": "AZ",
+   "op": "VIG",
+   "word": "PALIMPSEST",
+   "phase": 0
+  },
+  "sub": "B1",
+  "quad": -6.807621253297684,
+  "lm_per_letter": -1.8935162757941013,
+  "word_per_letter": -3.9677912669505337
+ }
+]
