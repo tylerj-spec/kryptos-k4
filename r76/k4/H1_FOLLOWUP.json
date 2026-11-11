@@ -1,0 +1,186 @@
+{
+ "K4": [
+  {
+   "setting": {
+    "m": 37,
+    "shift": 0,
+    "tier": "large",
+    "pa": "PLAITING/asc",
+    "ca": "MANDATORIES/aca",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 21,
+   "best_lm": -1.3690101287601344,
+   "word": -1.963006725020272,
+   "decode": "IOLETSHASPUELIEDRIGSBEASTNORTHEASTRYDELACKYARDUPOONFUSLYORFLJOUBERLINCLOCKADEFECTIONONEURHELLASWH"
+  }
+ ],
+ "NULL_003": [
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "ADMINISTRATION/asc",
+    "ca": "BORACIC/desc",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.2452465223974174,
+   "word": -1.719570202588852,
+   "decode": "HFESNOTALISATVALUEPHUEASTNORTHEASTEEPARALSOWEVENFINDIACKTHEANEMBERLINCLOCKGAXIPLACKTOFTENWORKOKDU"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "ENFORCED/desc",
+    "ca": "DEHYDRATE/aca",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.2879997226960187,
+   "word": -1.82199774520027,
+   "decode": "RDSHONORBEFIRSTRORYHTEASTNORTHEASTEDASTHEWARCOMPASTTHENTRATTERSBERLINCLOCKXUSUEATEREEDIDALSAILEIW"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "MAGNITUDE/asc",
+    "ca": "TRENT/desc",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.2940190682168473,
+   "word": -2.0738579549722025,
+   "decode": "CISAPPENCORADITCORQPDEASTNORTHEASTANOLDENCONSONEDONSESUNDOCTHENBERLINCLOCKVAZELDEDTOTHERCURYKINCH"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "MAGNITUDE/asc",
+    "ca": "TROD/desc",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.297384489448285,
+   "word": -1.8616446271833544,
+   "decode": "VOANDBEFALLORBENBEQFDEASTNORTHEASTANOFFITCOSTALLBUTSOFTINGLESAYBERLINCLOCKVAZXLDEDASONERAPICTURGH"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "MAGNITUDE/asc",
+    "ca": "TROTTER/desc",
+    "s": 1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.342941139654866,
+   "word": -1.7786464682577094,
+   "decode": "NDPAPHENTERPAGEOLDQQDEASTNORTHEASTCYOFLESEANGBUTDOESELYEXCEEDDOBERLINCLOCKVAZXLONDAYSQUICKHAVINTH"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "ADMINISTRATION/asc",
+    "ca": "INNER/asc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.3100802106518759,
+   "word": -1.6125072329965058,
+   "decode": "NORNSOFTONSTIMESCUPQUEASTNORTHEASTREADDOWNINTERVENPRELELEEPERITBERLINCLOCKGSXUPGAPLASTITFLYIARLDA"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "ANIMATED/asc",
+    "ca": "DOROTHY/asc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.3012886660499978,
+   "word": -1.8908256730977224,
+   "decode": "WHEANCESSTOTHEELFIQAEEASTNORTHEASTFINESOMEINSIGREATRAISERSHEDISBERLINCLOCKSZYYKOFSANINNECTEDFIUNF"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "ANIMATED/asc",
+    "ca": "EARTHLY/asc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.3437786293744118,
+   "word": -1.6071493014404419,
+   "decode": "GISAGESTRAINDRAINSQFEEASTNORTHEASTESISSESTOLOANDEFIEDNONDLYATONBERLINCLOCKSZYMKHATONINEREASBYIMYW"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "IRRITATING/desc",
+    "ca": "ERRATIC/desc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.2181774084552277,
+   "word": -1.6555846795494418,
+   "decode": "ETLAMEMIESAYSHESPOOLPEASTNORTHEASTATISUDSANDTOADDLINESENTANEVERBERLINCLOCKSXGBMEEYEARATROLAYSINNA"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "IRRITATING/desc",
+    "ca": "RETIRED/desc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.1930856616944363,
+   "word": -1.5762144749397446,
+   "decode": "ETLARETTESTASTANDTOOPEASTNORTHEASTAKEINDEVANDOANDTIMESEALASATAMBERLINCLOCKSRGDMESAVERQUIESAYSIONO"
+  },
+  {
+   "setting": {
+    "m": 45,
+    "shift": 0,
+    "tier": "large",
+    "pa": "MAGNITUDE/asc",
+    "ca": "NARRATE/asc",
+    "s": -1,
+    "pairs": 8
+   },
+   "free_slots": 29,
+   "best_lm": -1.3262694458832447,
+   "word": -1.8768605430642975,
+   "decode": "CDATOLOURISINGATONQKDEASTNORTHEASTGILLDURIBAROULFLAGENSICHEADTOBERLINCLOCKVAZTLEBUTONGTHETRAVEGES"
+  }
+ ]
+}

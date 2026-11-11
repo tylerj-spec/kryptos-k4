@@ -1,0 +1,1467 @@
+{
+ "cut_lm": -1.45,
+ "cut_word": -2.5,
+ "bar": 54,
+ "verify": {
+  "witnesses": 1280,
+  "problems": [],
+  "passed": true
+ },
+ "summary": {
+  "positives": {
+   "n": 60,
+   "recovered_and_confident": 59,
+   "recovered": 59,
+   "same_setting": 59,
+   "ok_by_sub": {
+    "B1": [
+     20,
+     20
+    ],
+    "B2": [
+     20,
+     20
+    ],
+    "B3": [
+     19,
+     20
+    ]
+   },
+   "misspelled_ok": [
+    12,
+    12
+   ],
+   "lm_min": -0.9687434792878363,
+   "word_min": -1.173905967989794
+  },
+  "negatives": {
+   "n": 100,
+   "confident": 0,
+   "lm_max": -1.7628528288344747,
+   "word_max": -3.1746822120564504
+  },
+  "passed": true
+ },
+ "rows": [
+  {
+   "id": "H_000",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8346761164361054,
+   "word_per_letter": -3.82009447818279,
+   "confident": false
+  },
+  {
+   "id": "H_001",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.827360957035238,
+   "word_per_letter": -3.7934824962750873,
+   "confident": false
+  },
+  {
+   "id": "H_002",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8395692306311475,
+   "word_per_letter": -3.856215781097868,
+   "confident": false
+  },
+  {
+   "id": "H_003",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.836574570304647,
+   "word_per_letter": -3.5083290284816107,
+   "confident": false
+  },
+  {
+   "id": "H_004",
+   "kind": "POS",
+   "lm_per_letter": -0.6907161063440278,
+   "word_per_letter": -0.8596774086454393,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_005",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8330926357470836,
+   "word_per_letter": -4.053189864458121,
+   "confident": false
+  },
+  {
+   "id": "H_006",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8272523229855688,
+   "word_per_letter": -4.048996699928417,
+   "confident": false
+  },
+  {
+   "id": "H_007",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8175352990012807,
+   "word_per_letter": -3.764951477743463,
+   "confident": false
+  },
+  {
+   "id": "H_008",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8345748862040412,
+   "word_per_letter": -3.9846820754695305,
+   "confident": false
+  },
+  {
+   "id": "H_009",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.9322487779795336,
+   "word_per_letter": -1.1270642966319804,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_010",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.812014171719244,
+   "word_per_letter": -3.624463368182616,
+   "confident": false
+  },
+  {
+   "id": "H_011",
+   "kind": "POS",
+   "lm_per_letter": -0.8675447515837281,
+   "word_per_letter": -0.954482881932347,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_012",
+   "kind": "POS",
+   "lm_per_letter": -0.7294359286137215,
+   "word_per_letter": -0.7999357663366055,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_013",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.803335666579684,
+   "word_per_letter": -3.9796819651412423,
+   "confident": false
+  },
+  {
+   "id": "H_014",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.7899818769896154,
+   "word_per_letter": -3.60832138077058,
+   "confident": false
+  },
+  {
+   "id": "H_015",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8615360896141488,
+   "word_per_letter": -3.9945545226275567,
+   "confident": false
+  },
+  {
+   "id": "H_016",
+   "kind": "POS",
+   "lm_per_letter": -0.7081917728677037,
+   "word_per_letter": -0.7024507472805518,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_017",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8269003840528197,
+   "word_per_letter": -3.4513541952135562,
+   "confident": false
+  },
+  {
+   "id": "H_018",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.799592837674505,
+   "word_per_letter": -3.4125369227986164,
+   "confident": false
+  },
+  {
+   "id": "H_019",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8323373788410855,
+   "word_per_letter": -3.6493625853950618,
+   "confident": false
+  },
+  {
+   "id": "H_020",
+   "kind": "POS",
+   "lm_per_letter": -0.6930052014082584,
+   "word_per_letter": -0.7007957453817105,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_021",
+   "kind": "POS",
+   "lm_per_letter": -0.6287923744289308,
+   "word_per_letter": -0.6843071208649623,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_022",
+   "kind": "POS",
+   "lm_per_letter": -0.5759387861174818,
+   "word_per_letter": -0.7096136425943362,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_023",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8383329133551145,
+   "word_per_letter": -3.7871629765317802,
+   "confident": false
+  },
+  {
+   "id": "H_024",
+   "kind": "POS",
+   "lm_per_letter": -0.6231837845083383,
+   "word_per_letter": -0.7687365557090559,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_025",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8461120700098805,
+   "word_per_letter": -3.6334084037172536,
+   "confident": false
+  },
+  {
+   "id": "H_026",
+   "kind": "POS",
+   "lm_per_letter": -0.6610933414280994,
+   "word_per_letter": -0.8517817150333978,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_027",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8295709543006937,
+   "word_per_letter": -3.557823523792106,
+   "confident": false
+  },
+  {
+   "id": "H_028",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8396498911159556,
+   "word_per_letter": -4.182173212794014,
+   "confident": false
+  },
+  {
+   "id": "H_029",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.7628528288344747,
+   "word_per_letter": -3.9677476665497204,
+   "confident": false
+  },
+  {
+   "id": "H_030",
+   "kind": "POS",
+   "lm_per_letter": -0.5992673741146054,
+   "word_per_letter": -0.7110942290309467,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_031",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8400900474912727,
+   "word_per_letter": -3.741318405692563,
+   "confident": false
+  },
+  {
+   "id": "H_032",
+   "kind": "POS",
+   "lm_per_letter": -0.7800896791871019,
+   "word_per_letter": -0.8698328754975168,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_033",
+   "kind": "POS",
+   "lm_per_letter": -0.675084788207032,
+   "word_per_letter": -0.7555605229948531,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_034",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.796496751535799,
+   "word_per_letter": -4.157057230644572,
+   "confident": false
+  },
+  {
+   "id": "H_035",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.845617133010294,
+   "word_per_letter": -4.112539812495755,
+   "confident": false
+  },
+  {
+   "id": "H_036",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8307474799377401,
+   "word_per_letter": -3.325956581125739,
+   "confident": false
+  },
+  {
+   "id": "H_037",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8219545012743203,
+   "word_per_letter": -3.7407605791748253,
+   "confident": false
+  },
+  {
+   "id": "H_038",
+   "kind": "POS",
+   "lm_per_letter": -0.6766748042505945,
+   "word_per_letter": -0.6374467051872599,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_039",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8168631918037061,
+   "word_per_letter": -3.9141303414963398,
+   "confident": false
+  },
+  {
+   "id": "H_040",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.7964026681771599,
+   "word_per_letter": -3.389262461899056,
+   "confident": false
+  },
+  {
+   "id": "H_041",
+   "kind": "POS",
+   "lm_per_letter": -0.7209044311888806,
+   "word_per_letter": -0.7831869297775075,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_042",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8615634584242535,
+   "word_per_letter": -4.256037819032004,
+   "confident": false
+  },
+  {
+   "id": "H_043",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.85568011252536,
+   "word_per_letter": -3.1746822120564504,
+   "confident": false
+  },
+  {
+   "id": "H_044",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8132817832364212,
+   "word_per_letter": -3.8297687486196392,
+   "confident": false
+  },
+  {
+   "id": "H_045",
+   "kind": "POS",
+   "lm_per_letter": -0.6853106240766662,
+   "word_per_letter": -0.7435437782190536,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_046",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8383192678087765,
+   "word_per_letter": -3.7967995231184255,
+   "confident": false
+  },
+  {
+   "id": "H_047",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.856583589745551,
+   "word_per_letter": -3.790639317645307,
+   "confident": false
+  },
+  {
+   "id": "H_048",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8373577736471731,
+   "word_per_letter": -3.9584560660787758,
+   "confident": false
+  },
+  {
+   "id": "H_049",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.792027075208493,
+   "word_per_letter": -3.5111882368918037,
+   "confident": false
+  },
+  {
+   "id": "H_050",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8274305774686264,
+   "word_per_letter": -3.45139855822132,
+   "confident": false
+  },
+  {
+   "id": "H_051",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8378849972001057,
+   "word_per_letter": -3.4940910380830053,
+   "confident": false
+  },
+  {
+   "id": "H_052",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8189265841675788,
+   "word_per_letter": -3.9440026572039497,
+   "confident": false
+  },
+  {
+   "id": "H_053",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.9687434792878363,
+   "word_per_letter": -1.149642030691972,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_054",
+   "kind": "POS",
+   "lm_per_letter": -0.6324613230779542,
+   "word_per_letter": -0.7086391264920986,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_055",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.845461443066597,
+   "word_per_letter": -3.575657530472846,
+   "confident": false
+  },
+  {
+   "id": "H_056",
+   "kind": "POS",
+   "lm_per_letter": -0.6899080398431682,
+   "word_per_letter": -0.854471339352975,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_057",
+   "kind": "POS",
+   "lm_per_letter": -0.6984013947602827,
+   "word_per_letter": -0.7980768897172429,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_058",
+   "kind": "POS",
+   "lm_per_letter": -0.6421385632487558,
+   "word_per_letter": -0.8458258627221474,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_059",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8358163280537372,
+   "word_per_letter": -4.057946348306989,
+   "confident": false
+  },
+  {
+   "id": "H_060",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.7630096357891853,
+   "word_per_letter": -3.4815536419839046,
+   "confident": false
+  },
+  {
+   "id": "H_061",
+   "kind": "POS",
+   "lm_per_letter": -0.5951024901803591,
+   "word_per_letter": -0.8454782590179929,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_062",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.7933492693598814,
+   "word_per_letter": -3.533064774294054,
+   "confident": false
+  },
+  {
+   "id": "H_063",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.802939560917235,
+   "word_per_letter": -3.362153419789213,
+   "confident": false
+  },
+  {
+   "id": "H_064",
+   "kind": "POS",
+   "lm_per_letter": -0.7064530317276745,
+   "word_per_letter": -0.8611687704377661,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_065",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8181785318193977,
+   "word_per_letter": -3.532980607780222,
+   "confident": false
+  },
+  {
+   "id": "H_066",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.794350213764869,
+   "word_per_letter": -3.5702140392317854,
+   "confident": false
+  },
+  {
+   "id": "H_067",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8255808065386163,
+   "word_per_letter": -3.913634885828327,
+   "confident": false
+  },
+  {
+   "id": "H_068",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.821782220423836,
+   "word_per_letter": -3.6411750101076628,
+   "confident": false
+  },
+  {
+   "id": "H_069",
+   "kind": "POS",
+   "lm_per_letter": -0.7441099503884073,
+   "word_per_letter": -0.7244193698147273,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_070",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.802638379338476,
+   "word_per_letter": -3.98366927429275,
+   "confident": false
+  },
+  {
+   "id": "H_071",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8539378823161596,
+   "word_per_letter": -4.683913254934245,
+   "confident": false
+  },
+  {
+   "id": "H_072",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8146125128895967,
+   "word_per_letter": -3.6080408616424435,
+   "confident": false
+  },
+  {
+   "id": "H_073",
+   "kind": "POS",
+   "lm_per_letter": -0.6752980349369535,
+   "word_per_letter": -0.7195895557896612,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_074",
+   "kind": "POS",
+   "lm_per_letter": -0.5982572751266152,
+   "word_per_letter": -0.6614682924509604,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_075",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.859169096100269,
+   "word_per_letter": -3.4555736521334377,
+   "confident": false
+  },
+  {
+   "id": "H_076",
+   "kind": "POS",
+   "lm_per_letter": -0.737889670489916,
+   "word_per_letter": -0.8483169045362186,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_077",
+   "kind": "POS",
+   "lm_per_letter": -0.6392717717320845,
+   "word_per_letter": -0.7562373105915767,
+   "confident": true,
+   "sub": "B3",
+   "recovered": false,
+   "ok": false,
+   "same_setting": false,
+   "letters_right": 7
+  },
+  {
+   "id": "H_078",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8364208073921733,
+   "word_per_letter": -4.20346672983418,
+   "confident": false
+  },
+  {
+   "id": "H_079",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.832402767133467,
+   "word_per_letter": -3.944487389880008,
+   "confident": false
+  },
+  {
+   "id": "H_080",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.7841965812462074,
+   "word_per_letter": -1.025233487221357,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_081",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8337703865002264,
+   "word_per_letter": -4.200545311987704,
+   "confident": false
+  },
+  {
+   "id": "H_082",
+   "kind": "POS",
+   "lm_per_letter": -0.7492456696083499,
+   "word_per_letter": -0.7340838006420434,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_083",
+   "kind": "POS",
+   "lm_per_letter": -0.7105008488534181,
+   "word_per_letter": -0.7593689675077839,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_084",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.702431581664792,
+   "word_per_letter": -0.830912099886687,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_085",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.805668408718421,
+   "word_per_letter": -3.7656358204737264,
+   "confident": false
+  },
+  {
+   "id": "H_086",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8384721101520909,
+   "word_per_letter": -3.655235437735068,
+   "confident": false
+  },
+  {
+   "id": "H_087",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.818991709164507,
+   "word_per_letter": -3.810447613073461,
+   "confident": false
+  },
+  {
+   "id": "H_088",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8372423596987404,
+   "word_per_letter": -3.922692227418228,
+   "confident": false
+  },
+  {
+   "id": "H_089",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8206262530125294,
+   "word_per_letter": -3.545501391650217,
+   "confident": false
+  },
+  {
+   "id": "H_090",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8536561139926468,
+   "word_per_letter": -3.6895853504203435,
+   "confident": false
+  },
+  {
+   "id": "H_091",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.7835248042205252,
+   "word_per_letter": -3.4120911921909762,
+   "confident": false
+  },
+  {
+   "id": "H_092",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.7964554682623632,
+   "word_per_letter": -3.7699822637724028,
+   "confident": false
+  },
+  {
+   "id": "H_093",
+   "kind": "POS",
+   "lm_per_letter": -0.7559530112895615,
+   "word_per_letter": -0.8135292117812822,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_094",
+   "kind": "POS",
+   "lm_per_letter": -0.8572449768698696,
+   "word_per_letter": -0.9275940274831358,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_095",
+   "kind": "POS",
+   "lm_per_letter": -0.6898143379542855,
+   "word_per_letter": -0.7810075004592473,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_096",
+   "kind": "POS",
+   "lm_per_letter": -0.6224246264905513,
+   "word_per_letter": -0.7398108055957447,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_097",
+   "kind": "POS",
+   "lm_per_letter": -0.7031843674115023,
+   "word_per_letter": -0.7666310850718535,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_098",
+   "kind": "POS",
+   "lm_per_letter": -0.689339923262224,
+   "word_per_letter": -0.7400830813042025,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_099",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.7661306301957553,
+   "word_per_letter": -3.4381512405535166,
+   "confident": false
+  },
+  {
+   "id": "H_100",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8343748906147235,
+   "word_per_letter": -3.927966968954527,
+   "confident": false
+  },
+  {
+   "id": "H_101",
+   "kind": "POS",
+   "lm_per_letter": -0.6844021081616898,
+   "word_per_letter": -0.8026642003279745,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_102",
+   "kind": "POS",
+   "lm_per_letter": -0.6593432601141628,
+   "word_per_letter": -0.7813959023779223,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_103",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.7856593058281338,
+   "word_per_letter": -3.7582944131948524,
+   "confident": false
+  },
+  {
+   "id": "H_104",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8264063769644223,
+   "word_per_letter": -3.571592311256182,
+   "confident": false
+  },
+  {
+   "id": "H_105",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.8728491188532137,
+   "word_per_letter": -1.005452442459572,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_106",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.848153688243984,
+   "word_per_letter": -3.7016348877545155,
+   "confident": false
+  },
+  {
+   "id": "H_107",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8151482273008406,
+   "word_per_letter": -3.5203271194371997,
+   "confident": false
+  },
+  {
+   "id": "H_108",
+   "kind": "POS",
+   "lm_per_letter": -0.5904766674470874,
+   "word_per_letter": -0.6945167128167462,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_109",
+   "kind": "POS",
+   "lm_per_letter": -0.614795519348188,
+   "word_per_letter": -0.6977467128830153,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_110",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8491570143432348,
+   "word_per_letter": -3.3895662671045095,
+   "confident": false
+  },
+  {
+   "id": "H_111",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.822004846407619,
+   "word_per_letter": -3.7865221475573305,
+   "confident": false
+  },
+  {
+   "id": "H_112",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8325457581386124,
+   "word_per_letter": -3.700755028308047,
+   "confident": false
+  },
+  {
+   "id": "H_113",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8161140741761197,
+   "word_per_letter": -3.870815626739997,
+   "confident": false
+  },
+  {
+   "id": "H_114",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8466969897068037,
+   "word_per_letter": -3.63699331870198,
+   "confident": false
+  },
+  {
+   "id": "H_115",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8155915245699419,
+   "word_per_letter": -3.7010880891267917,
+   "confident": false
+  },
+  {
+   "id": "H_116",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.8161192003755467,
+   "word_per_letter": -0.9592662612134447,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_117",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.85186299312975,
+   "word_per_letter": -3.5780955809403205,
+   "confident": false
+  },
+  {
+   "id": "H_118",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.827044362874375,
+   "word_per_letter": -3.9339646555838246,
+   "confident": false
+  },
+  {
+   "id": "H_119",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8446905802666527,
+   "word_per_letter": -3.995056217576549,
+   "confident": false
+  },
+  {
+   "id": "H_120",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8039028821417045,
+   "word_per_letter": -3.57662901862384,
+   "confident": false
+  },
+  {
+   "id": "H_121",
+   "kind": "POS",
+   "lm_per_letter": -0.7064870459010486,
+   "word_per_letter": -0.6881736730924977,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_122",
+   "kind": "POS",
+   "lm_per_letter": -0.8164786550497064,
+   "word_per_letter": -0.9684222909990774,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_123",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.9274288417300997,
+   "word_per_letter": -1.0878460825190746,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_124",
+   "kind": "POS",
+   "lm_per_letter": -0.6832146653776494,
+   "word_per_letter": -0.7482343965800936,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_125",
+   "kind": "NEG_RUNKEY",
+   "lm_per_letter": -1.8165516686846608,
+   "word_per_letter": -3.7465525021000556,
+   "confident": false
+  },
+  {
+   "id": "H_126",
+   "kind": "POS",
+   "lm_per_letter": -0.6039681559055473,
+   "word_per_letter": -0.7309943072253429,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_127",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8053952242756628,
+   "word_per_letter": -3.8809994478943763,
+   "confident": false
+  },
+  {
+   "id": "H_128",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8337345748525304,
+   "word_per_letter": -3.6470494316053252,
+   "confident": false
+  },
+  {
+   "id": "H_129",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8304382028615045,
+   "word_per_letter": -3.8088230604263233,
+   "confident": false
+  },
+  {
+   "id": "H_130",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.8447958805934963,
+   "word_per_letter": -0.9491476222512976,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_131",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.849721667385593,
+   "word_per_letter": -3.6108037659913688,
+   "confident": false
+  },
+  {
+   "id": "H_132",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.7492977489822918,
+   "word_per_letter": -0.9365420452080113,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_133",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8408121319545299,
+   "word_per_letter": -3.707188005226988,
+   "confident": false
+  },
+  {
+   "id": "H_134",
+   "kind": "NEG_SHUFFLE",
+   "lm_per_letter": -1.8239533764348586,
+   "word_per_letter": -3.4280864921533944,
+   "confident": false
+  },
+  {
+   "id": "H_135",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8268198117460173,
+   "word_per_letter": -3.8224022995497524,
+   "confident": false
+  },
+  {
+   "id": "H_136",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.9329899432976669,
+   "word_per_letter": -1.1604299001918277,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_137",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.852557337564445,
+   "word_per_letter": -3.6474766273939268,
+   "confident": false
+  },
+  {
+   "id": "H_138",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.7043021248581934,
+   "word_per_letter": -0.9161944932209745,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_139",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8545465228176607,
+   "word_per_letter": -3.9225382391266588,
+   "confident": false
+  },
+  {
+   "id": "H_140",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8242637242392166,
+   "word_per_letter": -3.4674568433068678,
+   "confident": false
+  },
+  {
+   "id": "H_141",
+   "kind": "POS_MISSPELLED",
+   "lm_per_letter": -0.8351623387671239,
+   "word_per_letter": -1.173905967989794,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_142",
+   "kind": "POS",
+   "lm_per_letter": -0.5423230152174331,
+   "word_per_letter": -0.6775517817811032,
+   "confident": true,
+   "sub": "B3",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_143",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8153404197847642,
+   "word_per_letter": -3.655771194803362,
+   "confident": false
+  },
+  {
+   "id": "H_144",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.8452151663524587,
+   "word_per_letter": -3.6119959309646053,
+   "confident": false
+  },
+  {
+   "id": "H_145",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8459086985778563,
+   "word_per_letter": -3.7981524183205204,
+   "confident": false
+  },
+  {
+   "id": "H_146",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8123763725929654,
+   "word_per_letter": -3.564664123669626,
+   "confident": false
+  },
+  {
+   "id": "H_147",
+   "kind": "NEG_PERIODIC",
+   "lm_per_letter": -1.8568283390906668,
+   "word_per_letter": -3.641340802516118,
+   "confident": false
+  },
+  {
+   "id": "H_148",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.845217615015536,
+   "word_per_letter": -3.872617339975109,
+   "confident": false
+  },
+  {
+   "id": "H_149",
+   "kind": "POS",
+   "lm_per_letter": -0.8070240759368915,
+   "word_per_letter": -0.7167381392829245,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_150",
+   "kind": "NEG_OTP",
+   "lm_per_letter": -1.8184983058995807,
+   "word_per_letter": -3.842505379018929,
+   "confident": false
+  },
+  {
+   "id": "H_151",
+   "kind": "NEG_GROMARK",
+   "lm_per_letter": -1.8022757855042355,
+   "word_per_letter": -3.750278852634003,
+   "confident": false
+  },
+  {
+   "id": "H_152",
+   "kind": "POS",
+   "lm_per_letter": -0.6922822013073097,
+   "word_per_letter": -0.7475708852989089,
+   "confident": true,
+   "sub": "B2",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_153",
+   "kind": "POS",
+   "lm_per_letter": -0.6506110962725439,
+   "word_per_letter": -0.8460559020593199,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_154",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8334722284650065,
+   "word_per_letter": -3.757947216409893,
+   "confident": false
+  },
+  {
+   "id": "H_155",
+   "kind": "NEG_HOMOPHONIC",
+   "lm_per_letter": -1.8381691148754247,
+   "word_per_letter": -3.5499642984136153,
+   "confident": false
+  },
+  {
+   "id": "H_156",
+   "kind": "POS",
+   "lm_per_letter": -0.6746628558926719,
+   "word_per_letter": -0.744601167358874,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_157",
+   "kind": "POS",
+   "lm_per_letter": -0.5957206408418023,
+   "word_per_letter": -0.8009932277510831,
+   "confident": true,
+   "sub": "B1",
+   "recovered": true,
+   "ok": true,
+   "same_setting": true,
+   "letters_right": 97
+  },
+  {
+   "id": "H_158",
+   "kind": "NEG_CTAK",
+   "lm_per_letter": -1.816822581452836,
+   "word_per_letter": -3.7522488752643666,
+   "confident": false
+  },
+  {
+   "id": "H_159",
+   "kind": "NEG_PTAK",
+   "lm_per_letter": -1.8364742955903417,
+   "word_per_letter": -3.8702636285359495,
+   "confident": false
+  }
+ ]
+}
