@@ -1,0 +1,50 @@
+{
+ "HELD_KEY_AZ_BEAUFORT": {
+  "verdicts": [
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED"
+  ],
+  "top_cells": [
+   "AZ/AZ/SUM T2_near_repeats p=0.00000 fw=0.0000",
+   "AZ/AZ/SUM T1_total_coincidences p=0.00000 fw=0.0000",
+   "AZ/AZ/SUM T2_near_repeats p=0.00000 fw=0.0000",
+   "AZ/AZ/SUM T2_near_repeats p=0.00000 fw=0.0000",
+   "AZ/AZ/SUM T1_total_coincidences p=0.00000 fw=0.0000"
+  ]
+ },
+ "PERIOD_40_KRY_VIG": {
+  "verdicts": [
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED",
+   "SHAPE_CONFIRMED"
+  ],
+  "top_cells": [
+   "KRY/KRY/DIFF T4_best_cross_block_lag p=0.00000 fw=0.0000",
+   "KRY/KRY/DIFF T4_best_cross_block_lag p=0.00000 fw=0.0000",
+   "KRY/KRY/DIFF T4_best_cross_block_lag p=0.00000 fw=0.0000",
+   "KRY/KRY/DIFF T4_best_cross_block_lag p=0.00000 fw=0.0000",
+   "KRY/KRY/DIFF T4_best_cross_block_lag p=0.00000 fw=0.0000"
+  ]
+ },
+ "RANDOM_KEY": {
+  "verdicts": [
+   "SUGGESTIVE",
+   "NO_SHAPE",
+   "SHAPE_CONFIRMED",
+   "NO_SHAPE",
+   "NO_SHAPE"
+  ],
+  "top_cells": [
+   "AZ/KRY/DIFF T2_near_repeats p=0.00715 fw=0.1950",
+   "AZ/KRY/DIFF T4_best_cross_block_lag p=0.05055 fw=0.7467",
+   "KRY/KRY/SUM T6_small_values p=0.00030 fw=0.0088",
+   "AZ/KRY/DIFF T2_near_repeats p=0.02145 fw=0.3688",
+   "KRY/KRY/DIFF T3_step_coincidences p=0.02500 fw=0.4495"
+  ]
+ }
+}

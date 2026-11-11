@@ -1,0 +1,162 @@
+{
+ "K4": {
+  "settings_with_checks": {
+   "0": 288768,
+   "1": 69632,
+   "2": 114688,
+   "3": 86016,
+   "4": 223232,
+   "5": 233472,
+   "6": 266240,
+   "7": 221184,
+   "8": 241664,
+   "9": 284672,
+   "10": 272384,
+   "11": 30720,
+   "12": 22528,
+   "13": 32768,
+   "14": 18432
+  },
+  "feasible_by_checks": {
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0,
+   "9": 0,
+   "10": 0,
+   "11": 0,
+   "12": 0,
+   "13": 0,
+   "14": 0
+  },
+  "feasible_ge_5_checks": 0,
+  "full_decodes": 0,
+  "best_decode_lm": null,
+  "verdict": "NO_SOLUTION",
+  "readable": [],
+  "top_decodes": [],
+  "feasible_list": []
+ },
+ "shuffles": {
+  "NULL_000": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_001": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_002": {
+   "feasible": 4,
+   "full_decodes": 4,
+   "best_decode_lm": -1.5761467948287111,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_003": {
+   "feasible": 1,
+   "full_decodes": 1,
+   "best_decode_lm": -1.7061519515460606,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_004": {
+   "feasible": 2,
+   "full_decodes": 2,
+   "best_decode_lm": -1.7470690083219527,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_005": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_006": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_007": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_008": {
+   "feasible": 1,
+   "full_decodes": 1,
+   "best_decode_lm": -1.8597469861551965,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_009": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_010": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_011": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_012": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_013": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_014": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_015": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_016": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_017": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_018": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  },
+  "NULL_019": {
+   "feasible": 0,
+   "full_decodes": 0,
+   "best_decode_lm": null,
+   "verdict": "NO_SOLUTION"
+  }
+ }
+}

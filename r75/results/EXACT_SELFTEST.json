@@ -1,0 +1,362 @@
+{
+ "F1X": [
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 1938,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2475,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 13,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2650,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 6,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2615,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  }
+ ],
+ "F2X": [
+  {
+   "F0X": {
+    "feasible": 4,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 3673,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 4871,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 1,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 3772,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 10545,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 1971,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 2422,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 1,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2596,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 4940,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  }
+ ],
+ "F3X": [
+  {
+   "F0X": {
+    "feasible": 2,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2329,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 4897,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 228,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 2,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F1X": {
+    "feasible": 2970,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 2837,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 81,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 1,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2350,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 7897,
+    "verdict": "CONSISTENT",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 311,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 2,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F1X": {
+    "feasible": 3614,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F2X": {
+    "feasible": 6038,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   },
+   "F3X": {
+    "feasible": 74,
+    "verdict": "CONSISTENT",
+    "plant_decoded": true
+   }
+  }
+ ],
+ "RANDOM": [
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2377,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 27,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2300,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 1919,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 6,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  },
+  {
+   "F0X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F1X": {
+    "feasible": 2518,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F2X": {
+    "feasible": 6,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   },
+   "F3X": {
+    "feasible": 0,
+    "verdict": "NO_SOLUTION",
+    "plant_decoded": false
+   }
+  }
+ ]
+}
