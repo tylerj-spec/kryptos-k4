@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "r73" / "sealed"))
 import families as F  # noqa: E402
 from reveal_k4 import CLUES  # noqa: E402
 
-CUT_LM, CUT_WORD = -1.45, -2.50
+CUT_LM, CUT_WORD = -1.30, -2.50      # fixed in r79/PREREGISTRATION.md (dev check: negatives reach -1.53)
 POS = [o + i for o, t in CLUES for i in range(len(t))]
 WANT = [c for _, t in CLUES for c in t]
 
