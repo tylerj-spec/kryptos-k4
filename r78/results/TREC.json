@@ -1,0 +1,17 @@
+{
+ "theorem_violations_in_plants": 0,
+ "K4_repeat_positions": 71,
+ "A_K4": 0.04386317907444668,
+ "A_null_mean": 0.04094084507042253,
+ "A_null_p999": 0.06076498993963791,
+ "K4_pct_of_shuffles": 78.81,
+ "A_plants_p01": 0.053989939637826966,
+ "A_plants_median": 0.07115677321156773,
+ "A_plants_min": 0.04909456740442656,
+ "B_K4": 0.03608247422680412,
+ "B_plants_p01": 0.0390893470790378,
+ "B_plants_median": 0.04768041237113402,
+ "B_plants_min": 0.03651202749140894,
+ "verdict_A": "DISFAVOURED",
+ "verdict_B": "DISFAVOURED"
+}

@@ -13,13 +13,13 @@ where an earlier, crib-derived note in the repo bears on a point is marked (§3.
 |---|---|---|
 | 1 | H11 (a rearranged copy of the message is its own key) is solved as a mathematical problem. Each cycle of the rearrangement gives one closed-form condition on the ciphertext and a small, exactly known set of decryptions (Part 1) | Proof |
 | 2 | **A new invariant decides half of H11 for every possible rearrangement at once.** If the plaintext and key use the same alphabet, the ciphertext letter numbers must sum to 0 mod 26 (Beaufort, variant) or to an even number (Vigenère). K4 gives 7, 12, 7, 14 in the four alphabets. So Beaufort and variant are **excluded for all 97! rearrangements**; Vigenère is excluded when the ciphertext alphabet is A–Z or PALIMPSEST and survives for KRYPTOS and ABSCISSA (§1.4) | Proof + one number per alphabet |
-| 3 | H11 can never be decrypted uniquely, whatever alphabets are used (§1.5). The intended reader would have to guess a letter per cycle and test it. A professional designer is unlikely to have chosen that | Proof |
+| 3 | H11's encryption map is never one-to-one, whatever alphabets are used (§1.5). With one alphabet every ciphertext has at least two decryptions; with two alphabets a particular ciphertext can have exactly one. The reader must try start letters per cycle. *(Corrected after review, Part 8.)* | Proof |
 | 4 | Given the route, 97 letters are enough: the true message is always among the candidates, and wrong routes give only gibberish. A counting theorem (§2.1) turns this into an acceptance rule with a proven false-alarm rate | Proof |
 | 5 | The same theorem explains R76's caveat. With 45 free key letters no decode can be certified from 97 letters, however readable it looks | Proof |
 | 6 | r77 said K4's letter counts are too flat for an English-keyed cipher. That is wrong. The expected index of coincidence is 0.0397, not 0.043, and K4's 0.0361 is at the 12th–15th percentile. Letter counts cannot separate "English key" from "random key" at 97 letters (§2.3) | Run, first look |
 | 7 | H7 (keyword plus feedback) reduces exactly to a repeating-key cipher on a transformed ciphertext. It is the best next build (Part 3) | Proof + judgment |
 | 8 | A new mechanism, the **walking key**: the place in the keyword moves by the value of the letter just written. It is in the standard textbook family of "ways to hide the period", it is not in the ledger, and it has a real blind solver (Part 4) | New hypothesis |
-| 9 | H11, H7 and the walking key all reduce to one solver, `SLOTSOLVE` (§2.2). Build it once | Design |
+| 9 | One solver core, `SLOTSOLVE`, covers every case whose slot map is known from the ciphertext (§2.2). Mixed-alphabet H11 and the plaintext-driven cases need their own modules. *(Corrected after review, Part 8.)* | Design |
 
 ## 1. H11: the message keyed by a rearranged copy of itself
 
@@ -97,7 +97,7 @@ S = 0 at rate 0.039 and even S at rate 0.50):
   the K1/K2 tableau itself), and every mixed case. Theorem 2 has no mixed version: there the sum depends on the
   plaintext's letter counts.
 
-### 1.5 The cipher can never be decrypted uniquely
+### 1.5 The encryption map is never one-to-one
 **Theorem 3.** For every permutation π, every pair of alphabets pa, ka (equal or not), every ca and all three
 operations, the map plaintext → ciphertext is not one-to-one.
 
@@ -107,12 +107,16 @@ rotation-fixed vectors, the constant ones, onto themselves, so `h = f + g` would
 `Σ h = Σ f + Σ g ≡ 13 + 13 ≡ 0 (mod 26)`, while a bijection of Z26 sums to 325 ≡ 13. Contradiction. (This is the
 classical fact that a cyclic group of even order has no complete mapping.) ∎
 
-Consequences:
-- Some ciphertexts have several decryptions and, by counting, some have none.
-- **The legitimate reader cannot decrypt mechanically.** With the route in hand they must still try up to 26 start
-  letters per cycle and see which walks close and read as English.
-- K1–K3 all decrypt mechanically. A professional who "designed the system" for Sanborn would not normally hand him
-  one that does not. I put H11 at **0.2% or less**, lower than r77's 0.5–1%.
+Consequences (corrected after ChatGPT's review; see Part 8):
+- Some ciphertexts have several decryptions and, by counting, some have none. The theorem does **not** say that
+  every ciphertext is ambiguous.
+  - Same alphabet: every reachable ciphertext has at least 2 decryptions (§1.3; 97 is odd, so some cycle is odd).
+  - Mixed alphabets: a particular ciphertext can have exactly one. Example (ChatGPT): identity route, Vigenère,
+    A–Z plaintext numbers, KRYPTOS key numbers; the cipher letter A has the single plaintext letter Y.
+- The reader's procedure is trial, not look-up: up to 26 start letters per cycle, keep the walks that close, read.
+  It is laborious but well defined, and when the closing walk is unique it gives the message.
+- K1–K3 decrypt by straight look-up, so this is still a mark against H11, but not a disqualification. I put H11 at
+  **about 0.3%** and withdraw "0.2% or less".
 
 ### 1.6 Number of candidates, and accidental survivors
 **Lemma (average count).** For any map E on Z26^97, a uniformly random ciphertext has on average exactly one
@@ -123,8 +127,8 @@ Chance that one setting passes the cycle conditions on a random ciphertext, for 
 
 | Case | Passes with probability | Candidates when it passes | Average over uniformly random routes of 97 |
 |---|---|---|---|
-| Beaufort / variant, same alphabet | `26^{−m}` | `26^m` | 4.9 × 10⁻⁴ (all-or-nothing through S; **0 for K4**) |
-| Vigenère, same alphabet | `26^{−m_e}·2^{−m_o}` | `26^{m_e}·2^{m_o}` | 1.3% (2.6% given S even) |
+| Beaufort / variant, same alphabet | `26^{−m}` | `26^m` | 4.83 × 10⁻⁴ (all-or-nothing through S; **0 for K4**) |
+| Vigenère, same alphabet | `26^{−m_e}·2^{−m_o}` | `26^{m_e}·2^{m_o}` | 1.29% (2.6% given S even) |
 | Mixed | about `0.63^m` (heuristic) | about `1.6^m` | about 13%, with about 8 candidates each |
 
 - The averages use the cycle-count generating functions `(1−z)^{−1/26}`, `(1+z)^{3/13}(1−z)^{−7/26}` and
@@ -136,7 +140,8 @@ Chance that one setting passes the cycle conditions on a random ciphertext, for 
   - same alphabet: 0 of 3,000 random cases depart from the table of §1.3, and the true text is always a candidate;
   - mixed, AZ against KRY: mean fixed points 0.97–1.03 at every length; a cycle has none 36–39% of the time at
     length 5–30, 42% at length 3, and 51–53% at length 1–2;
-  - 200,000 random routes: the three averages are 4.95 × 10⁻⁴, 1.30% and 13.1%; mean 5.16 cycles.
+  - 200,000 random routes: the three averages are 4.95 × 10⁻⁴, 1.30% and 13.1%; mean 5.16 cycles. The exact
+    coefficients (Wolfram, 11 Nov) are 4.827 × 10⁻⁴, 1.2935% and 13.07%.
 - **Unrelated cipher families.** The figures above hold for any ciphertext whose letters are close to uniform and
   independent, which covers every polyalphabetic cipher with a non-repeating key. They do not hold for a ciphertext
   that is itself a near miss of H11, such as an ordinary plaintext autokey of lag L: that is H11 with the cyclic
@@ -232,9 +237,17 @@ For n = 97, `26^97 = 10^{137.25}`. With λ the letter-model score per letter (lo
   a second, empirical check.
 - **Against shuffles of K4** the denominator is the number of arrangements of K4's letters, `10^{116.9}` instead of
   `10^{137.25}`. Every cut becomes stricter by 0.21: for 10⁶ settings it is λ ≥ −1.08 instead of −1.29.
-- **Other spellings or languages.** Score with a fixed mixture of j models (English; English with K1–K3-style
-  misspellings; German). The theorem holds with B raised by log10 j. This is the clean way to allow nonstandard
-  orthography without fitting anything to K4.
+- **Other spellings or languages** (corrected after review). Two different things:
+  - a fixed, normalised mixture `M = (M₁ + … + M_j)/j` is itself a probability model, so the theorem applies to
+    the mixture's own score with no adjustment;
+  - taking the best of j separate model scores is a multiple test: raise B by log10 j.
+  Either is a clean way to allow nonstandard orthography without fitting anything to K4.
+- **Scope of the theorem** (added after review). It assumes the family of settings and the model were fixed
+  without looking at the ciphertext, and a uniformly random ciphertext. K4's families were chosen after many
+  rounds of looking at K4, which the theorem does not cover. Shuffles and plants of unrelated families stay
+  mandatory; the cut is an extra bar, not a replacement.
+- **Every free quantity counts as a setting** (added after review): key letters, phases, and unknown starting
+  letters of a feedback. Leaving L opening letters unscored costs the same factor 26^L.
 - **Reading of R76.** At period 45 the cut is −0.60, which ordinary English does not reach. No decode with that many
   free key letters can be certified from 97 letters. That is a limit of information, not of the solver.
 - The repo's cut of −1.45 is looser than uniform (−1.415) and is justified only by the shuffles. Keep the shuffles,
@@ -297,7 +310,8 @@ the feedback makes it harder.
   −1.00. English clears these. Beyond about period 20 a blind claim cannot be certified.
 - Solvable in practice: m ≤ 10 reliably, 11–15 often. The gate must report recovery by m.
 - The first L positions carry no feedback. If the designer used starting letters there instead, those L letters
-  are free. Leave them unscored for L ≤ 3 and say so.
+  are free parameters: count 26^L more settings in the Theorem K cut, whether or not they are scored (corrected
+  after review).
 - A key-free detector exists (index of coincidence of the columns of u). At 97 letters it reaches about 3.8
   standard deviations for m = 7 against a search maximum near 4.2, so it cannot stand alone. Use SLOTSOLVE.
 
@@ -458,3 +472,18 @@ Theorem K cut, and the validator finds no feasible setting. A failed gate closes
 | H11 conventions | Skip Beaufort and variant with pa = ka entirely, and Vigenère with pa = ka when ca is AZ (Theorem 2) |
 | H11 odds 0.5–1% | 0.2% or less (Theorem 3) |
 | Acceptance by the −1.45 cut and shuffles only | Add the Theorem K cut as the bar for any claim (§2.1) |
+
+## 8. Errata after ChatGPT's independent review (11 Nov 2026)
+ChatGPT reviewed PR #72 and confirmed the cycle equations, the sum invariant, the Theorem 3 proof, Theorem K under
+its conditions and the H7 reduction. It asked for four corrections. I checked each and agree; the text above is
+changed where marked.
+
+| # | Correction | What changed |
+|---|---|---|
+| 1 | Theorem 3 proves the map is not one-to-one. It does not prove every ciphertext is ambiguous | §0 row 3, §1.5 heading and consequences. I verified the counter-example: A–Z number + KRYPTOS number is 0 mod 26 for Y only. H11's odds go from "0.2% or less" to about 0.3% |
+| 2 | Theorem K needs families and model fixed in advance and a uniform null; mixtures and best-of-several are different; every free quantity counts | §2.1 (three bullets), §3.2 |
+| 3 | SLOTSOLVE covers known slot maps only | §0 row 9. Separate modules: the mixed-alphabet H11 cycle enumerator (§1.8) and sequential search for plaintext feedback and the plaintext-driven walking key (§3.3, §4.2) |
+| 4 | Friedman's *Military Cryptanalysis* Part III supports irregular key movement in general (restarting, omitting, reversing, autokey, long keys, transposed key sequences), not the walking-key rule itself | §4.1 and §4.2 already call the rule a new hypothesis; it stays that. "Reversing the key's direction" and "omitting key elements" are added to the state-rule library of `r78/FABLE_MASKING.md` §4 |
+
+Also corrected: the Beaufort average in §1.6 is 4.83 × 10⁻⁴ (exact), not 4.9 × 10⁻⁴.
+
