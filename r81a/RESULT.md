@@ -25,7 +25,9 @@ Pre-registered in `r81a/PREREGISTRATION.md` (commit 9f69f61, `r81a/PROTOCOL.sha2
 | Check of the frozen blind work, exact and drop-one (`r81a/k4/VALIDATE.json`) | 2075f6b | 0 consistent settings in all eight families, on K4 and on 10 shuffles |
 | Power control for that check (`r81a/k4/CONTROL_VALIDATE.json`; added after it) | 2075f6b | 48/48 |
 | G5X exclusion check (`r81a/k4/G5X.json`) | d7ffec0 | 0 consistent in both modes, on K4 and on 10 shuffles |
-| Power control for G5X (`r81a/k4/CONTROL_G5X.json`; script committed before it ran, d1f1009) | this PR | 12/12 |
+| Power control for G5X (`r81a/k4/CONTROL_G5X.json`; script committed before it ran, d1f1009) | 9ccd8d5 | 12/12 |
+| After review: cross-check of G5X against the explicit cipher (`r81a/k4/CROSSCHECK_G5X.json`) | this PR | 36/36 plants; both methods find the same 780 settings in 248,832 pairs |
+| After review: CI (`.github/workflows/r81a-postfreeze-audit.yml`) | this PR | Re-runs the tests, both controls, the cross-check, the K4 validator counts and G5X on K4, and compares each with the committed file |
 
 ## Sealed gate (fresh books: *Silas Marner*, *Main Street*; negatives from *The Secret Garden*, *Howards End*)
 | Family | Settings per ciphertext | Recovered and confident (bar 18/20) | Exact | ≥ 95 letters | Misspelled | Nonstandard spelling | STRETCH (11–12 letters) | Best negative (letter model) |
@@ -86,6 +88,9 @@ Every setting of the four R81a families and of R79's four keyword families, keyw
 - So no setting was flagged, and there was no flagged blind decode to replay.
 - **Exact, crib-assisted exclusion** of every setting of these eight families as defined, also allowing any one
   published letter to be wrong (G6).
+  - **G6 here means one wrong published plaintext letter at its stated position.** It does not test a ciphertext
+    transcription error, a shifted clue position or a different physical reading order. Those remain separate
+    hypotheses.
   - It assumes the published letters sit at those plaintext positions, the cipher works in place, and the carving is
     correct (the ledger's standing assumptions).
   - It does not rest on the solver: it holds for any keyword letters.
@@ -93,6 +98,8 @@ Every setting of the four R81a families and of R79's four keyword families, keyw
   reported, not pre-registered). Three plants per family, keyword 2–12:
   - the planted setting is flagged exactly in 24/24;
   - with one published letter wrong, it is flagged by drop-one at that position in 24/24.
+- **Zero on the 10 shuffles is expected.** With at least 12 checks per setting, chance consistency is far below one
+  setting, for any ciphertext. The shuffles are a sanity check on the code, not evidence about K4's method.
 
 ## G5X: one unknown keyword alphabet (after the reveal; crib-assisted exclusion check)
 R79's H7CT, H7TXT and LIB families, keyword 1–12 letters, with one keyword alphabet free over R76's 77,229
@@ -109,6 +116,8 @@ large-tier orderings. The other two alphabets are A–Z or KRYPTOS.
   passes expected over each mode).
 - **Exact, crib-assisted exclusion** of this scope, under the ledger's standing assumptions. It does not rest on the
   solver or on any scoring.
+- **What G5X is not.** The 3.7 × 10¹⁰ pairs are algebraic consistency checks against the published letters. They are
+  not ciphertext-only decryption attempts, and G5X cannot find a plaintext by itself.
 - **Power control** (`r81a/sealed/control_g5x.py`, seed 810600; synthetic only; the script was committed before it
   ran). Six plants, one per family and mode, each with a random large-tier alphabet and K1–K3 plaintext:
   - the true setting is found in 6/6;
@@ -122,6 +131,25 @@ large-tier orderings. The other two alphabets are A–Z or KRYPTOS.
       - 7 large-tier alphabets that place the involved ciphertext letters the same way up to a shift. Reversed
         alphabets pair with the opposite operation.
     - H7TXT with a 2-letter keyword: 6, the same keyword written out to 2, 4, 6, 8, 10 and 12 letters.
+- **Cross-check against the explicit cipher** (`r81a/sealed/crosscheck_g5x.py`, seed 810700; synthetic only; added after
+  review of PR #76). It decides consistency a second way, through R79's explicit decrypt, without the difference
+  equations: one decrypt per key letter gives each position's plaintext under that letter, and one decrypt with a
+  different letter in each slot gives each position's slot.
+  - 36 plants: H7CT, H7TXT and LIB × keyword lengths 1–12 × both modes × all three operations, with and without
+    ciphertext feedback.
+  - Each plant has its own 27 alphabets: the planted one, its reverse, 3 rotations, 16 two-letter swaps and 6 random
+    orderings.
+  - Domain per plant, checked exhaustively: the plant's family, every keyword length (LIB: the plant's rule and 11
+    random rules), the plant's stream and one other, and every convention G5X runs. 248,832 setting-alphabet pairs in
+    all.
+  - **36/36 agree.** With the plants' letters, both methods find the same 780 consistent settings. With letters
+    from another stretch of text, both find none. The true setting is found in 36/36 and never with the wrong
+    letters.
+  - The comparison discriminates. Rotations are consistent in every plant (the same ordering shifted); the reverse
+    in 25/36 (with the opposite operation); 110 of the 576 swaps stay consistent and 466 do not; random orderings
+    never.
+  - It does not re-run the full 77,229-alphabet tier, but the hash join treats each alphabet row the same way. The
+    full tier is exercised by the 12-run control above and by CI's re-run of G5X on K4.
 
 ## What follows (pre-registered row)
 "Everything negative": the four R81a families are closed in the stated scope.
@@ -129,7 +157,8 @@ large-tier orderings. The other two alphabets are A–Z or KRYPTOS.
 **Closed scope:**
 - H7CT_A, LIB_A, LIB_G4 and PROG_A: blind, STAT (gate passed).
 - The same four families and R79's four keyword families: excluded exactly, crib-assisted, for keywords of 1–12
-  letters with these alphabets, streams and rules, **also with any one published letter wrong** (G6).
+  letters with these alphabets, streams and rules, **also with any one published plaintext letter wrong** (G6; not a
+  ciphertext error, a shifted clue position or another reading order).
 - R79's H7CT, H7TXT and LIB with one unknown keyword alphabet among R76's 77,229 orderings on the plaintext or the
   ciphertext side (G5X): excluded exactly.
 
@@ -142,12 +171,13 @@ large-tier orderings. The other two alphabets are A–Z or KRYPTOS.
 - plaintext-driven variants (G2), the self-progressing keyword (G3) and the rest of r77 H7 (R81b);
 - two keyword stages on different tableaux (R80, after its synthetic gate R80a).
 
-**Next (Tyler's call):** R80a, the synthetic gate of the two-stage solver (`r80/FABLE_IDENTIFIABILITY.md`), or
-R81b.
+**Next** (recommended in the review of PR #76): R80a, the synthetic gate of the two-stage solver
+(`r80/FABLE_IDENTIFIABILITY.md`), then R81b.
 
 **Limitations.**
 - The recovered bar was lowered from R79's 95 letters to 85, before the holdout existed, because R81a's rules overlap
   (`r81a/PREREGISTRATION.md`). The gate also reports 95 letters: 78/80.
 - The plants use random keywords. A real keyword would only be easier to read.
-- The two power controls were added after the K4 checks returned zero. They use no K4 ciphertext and change no frozen
-  result.
+- The two power controls were added after the K4 checks returned zero, and the cross-check and CI after review. They
+  use no K4 ciphertext (CI's re-runs of the validator and G5X on K4 only reproduce the committed files) and change no
+  frozen result.
