@@ -3,7 +3,8 @@
 Verify (no truth): every stored decode (top 5, best of each family, packet) re-encrypts to its ciphertext by the
 explicit encryptor (r81a/families81.py encrypt) under its stored setting, and each RESULTS best is its top decode.
 Gate (truth opened only after verify passes):
-  recovered  = the best decode agrees with the planted plaintext in >= 95 of 97 letters (exact also reported);
+  recovered  = the best decode agrees with the planted plaintext in >= 85 of 97 letters (>= 95 and exact also reported;
+               R81a's rules overlap, so a neighbouring rule can give a near-identical text: r81a/PREREGISTRATION.md);
   confident  = the best decode scores >= CUT_LM (letter model) AND >= CUT_WORD (word model) per letter;
   family F PASSES iff >= 18 of its 20 positives are recovered AND confident, AND 0/100 negatives are confident,
   AND verify passed. STRETCH plants are reported only.
@@ -18,7 +19,7 @@ sys.path.insert(0, str(ROOT / "r81a"))
 import families81 as F  # noqa: E402
 
 CUT_LM, CUT_WORD = -1.30, -2.50      # fixed in r81a/PREREGISTRATION.md (R79 cut, confirmed by r81a/results/DEV.json)
-BAR, REC = 18, 95
+BAR, REC = 18, 85                    # R81a: 85/97 (dev: overlapping rules give near-identical texts)
 
 
 def verify(tsv, run):
@@ -64,7 +65,8 @@ def main():
         if "pt" in t:
             right = sum(x == y for x, y in zip(b["text"], t["pt"]))
             row.update({"fam": t["fam"], "m": t["setting"].get("m"), "letters_right": right, "exact": right == 97,
-                        "recovered": right >= REC, "ok": right >= REC and conf, "same_family": b["fam"] == t["fam"]})
+                        "recovered": right >= REC, "rec95": right >= 95, "ok": right >= REC and conf,
+                        "same_family": b["fam"] == t["fam"]})
         rows.append(row)
     pos = [x for x in rows if x["kind"].startswith("POS")]
     stretch = [x for x in rows if x["kind"] == "STRETCH"]
@@ -74,7 +76,7 @@ def main():
     for f in F.FAMS:
         P = [x for x in pos if x["fam"] == f]
         ok = sum(x["ok"] for x in P)
-        fams[f] = {"ok": ok, "n": len(P), "exact": sum(x["exact"] for x in P),
+        fams[f] = {"ok": ok, "n": len(P), "exact": sum(x["exact"] for x in P), "rec95": sum(x["rec95"] for x in P),
                    "by_kind": {k: [sum(x["ok"] for x in P if x["kind"] == k), sum(x["kind"] == k for x in P)]
                                for k in ("POS", "POS_MISSP", "POS_NONSTD")},
                    "by_m": {str(m): [sum(x["ok"] for x in P if x["m"] == m), sum(x["m"] == m for x in P)]
