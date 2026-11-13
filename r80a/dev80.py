@@ -6,7 +6,8 @@ runner's own per-ciphertext function as the gate, at reduced size: per book 3 pl
 Reports recovery (>= 95 of 97 letters, and exact) and the score ranges the confidence cuts must separate (R79's:
 letter model -1.30, word model -2.50 per letter), and, for each positive, the true setting's pass-0 rank among all
 settings of its family at its free-key length (diagnostic: is a miss the filter's or the solver's?).
-Usage: python3 -I r80a/dev80.py LM BOOK_A BOOK_B NEG_PT NEG_KEY OUT.json"""
+Each finished ciphertext is cached in CACHE_DIR (one JSON file per item), so a restarted run resumes.
+Usage: python3 -I r80a/dev80.py LM BOOK_A BOOK_B NEG_PT NEG_KEY OUT.json CACHE_DIR"""
 import importlib.util
 import json
 import math
@@ -39,16 +40,27 @@ def rank0(it):
     return int((S > S[ci, wi]).sum()) + 1
 
 
+def _cached(job):
+    kind, i, payload, cache = job
+    p = Path(cache) / f"{kind}_{i:03d}.json"
+    if p.exists():
+        return json.loads(p.read_text())
+    r = RUN.process((str(i), payload)) if kind == "run" else rank0(payload)
+    p.write_text(json.dumps(r))
+    return r
+
+
 def main():
-    lm, book_a, book_b, neg_pt, neg_key, out = sys.argv[1:7]
+    lm, book_a, book_b, neg_pt, neg_key, out, cache = sys.argv[1:8]
+    Path(cache).mkdir(parents=True, exist_ok=True)
     rng = random.Random(800201)
     pos = I.positives(book_a, 3, 1, 1, 1, rng) + I.positives(book_b, 3, 1, 1, 1, rng)
     items = pos + I.negatives(neg_pt, neg_key, 3, np.random.default_rng(800202), 2, rng) + I.shuffles(
         [x for x in pos if x["kind"] != "STRETCH"], 5, rng)
     t0 = time.time()
     with Pool(4, initializer=RUN.init, initargs=(lm, T.FAMS)) as pool:
-        res = pool.map(RUN.process, [(str(i), it["ct"]) for i, it in enumerate(items)], chunksize=1)
-        ranks = pool.map(rank0, pos, chunksize=1)
+        res = pool.map(_cached, [("run", i, it["ct"], cache) for i, it in enumerate(items)], chunksize=1)
+        ranks = pool.map(_cached, [("rank", i, it, cache) for i, it in enumerate(pos)], chunksize=1)
     rows = []
     for it, r in zip(items, res):
         b = r["best"]
