@@ -50,10 +50,30 @@ excluded exactly where there are 3 or more checks.
 - the solver reaches the truth's score on 12 of 12 plants, all exact.
 
 ## Development check (`r80a/dev80.py`, `r80a/results/DEV.json`; spent R81a gate books)
-DEV_TABLE
+Books: *Silas Marner* (550) and *Main Street* (543) for positives, *The Secret Garden* (113) and *Howards End* (2946)
+for negatives, all spent in R81a's gate. 60 items: 24 positives (3 per family per book: 1 plain, 1 with 2 letters changed, 1 in
+nonstandard spelling; free key 1–10 letters), 8 STRETCH plants (free key 11–12), 28 negatives (3 per R79 wrong-family
+generator, 2 NEG_TWO_RANDOM, 5 shuffles). Run time 5,490 s on 4 cores.
 
-## Cuts: letter model ≥ CUT_LM and word model ≥ CUT_WORD per letter
-CUT_TEXT
+| | Result |
+|---|---|
+| Positives recovered and confident | **24/24** (6/6 per family); all 24 exact |
+| By kind | plain 8/8, 2 letters changed 8/8, nonstandard spelling 8/8 |
+| By lcm of the two key lengths | ≤ 24: 22/22; 25–48: 1/1; ≥ 49: 1/1 |
+| By gcd | 1: 14/14; 2: 6/6; 3: 3/3; 4: 1/1 |
+| True setting's pass-0 rank, positives | 1 for 23 of 24; worst 221 (X2, free key 9). K0 is 4,000 |
+| Positives' lowest scores | letter model −1.076, word model −1.514 |
+| Negatives confident | **0/28** |
+| Negatives' highest scores | letter model −1.519 (GROMARK), word model −2.120 |
+| STRETCH (reported only) | 7/8 exact and confident. Miss: L1, listed key 10 letters, free key 11; the true setting ranked 406,041 in pass 0, so the filter lost it, and the best decode had 8 letters right at −1.528 |
+
+Six X positives were decoded exactly under another family's label (L1, L2 or X1). A key of 1–3 letters that is also a
+listed word, or an equivalent setting, gives the same plaintext; recovery is judged on the text, not the label.
+
+## Confidence cuts
+Kept at R79's values, letter model ≥ **−1.30** and word model ≥ **−2.50** per letter, both required. In development
+the cut sits 0.22 below the lowest positive (−1.076) and 0.22 above the highest negative (−1.519) on the letter model.
+The word cut alone would not exclude the highest negative (−2.120); the two cuts are applied together, as in R79.
 
 ## Sealed synthetic gate (`r80a/sealed/make_holdout80.py`, seed 800300)
 Four GITenberg books never used in this project and not in the letter model's training text:
