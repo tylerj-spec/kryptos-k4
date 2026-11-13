@@ -1,0 +1,4433 @@
+{
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "bar": 18,
+ "recovered_letters": 95,
+ "verify": {
+  "witnesses": 2160,
+  "problems": [],
+  "passed": true
+ },
+ "summary": {
+  "families": {
+   "H7CT": {
+    "ok": 19,
+    "n": 20,
+    "exact": 19,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      5,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "by_m": {
+     "2": [
+      4,
+      4
+     ],
+     "3": [
+      1,
+      1
+     ],
+     "4": [
+      1,
+      1
+     ],
+     "5": [
+      3,
+      3
+     ],
+     "6": [
+      2,
+      3
+     ],
+     "8": [
+      3,
+      3
+     ],
+     "9": [
+      2,
+      2
+     ],
+     "10": [
+      3,
+      3
+     ]
+    },
+    "stretch": [
+     [
+      12,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ],
+     [
+      12,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.5630755846955113,
+    "passed": true
+   },
+   "H7TXT": {
+    "ok": 20,
+    "n": 20,
+    "exact": 20,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "by_m": {
+     "3": [
+      3,
+      3
+     ],
+     "4": [
+      1,
+      1
+     ],
+     "5": [
+      2,
+      2
+     ],
+     "6": [
+      3,
+      3
+     ],
+     "7": [
+      3,
+      3
+     ],
+     "8": [
+      1,
+      1
+     ],
+     "9": [
+      6,
+      6
+     ],
+     "10": [
+      1,
+      1
+     ]
+    },
+    "stretch": [
+     [
+      11,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ],
+     [
+      12,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.5313367960379296,
+    "passed": true
+   },
+   "LIB": {
+    "ok": 20,
+    "n": 20,
+    "exact": 19,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "by_m": {
+     "4": [
+      3,
+      3
+     ],
+     "5": [
+      3,
+      3
+     ],
+     "6": [
+      4,
+      4
+     ],
+     "7": [
+      2,
+      2
+     ],
+     "8": [
+      3,
+      3
+     ],
+     "9": [
+      5,
+      5
+     ]
+    },
+    "stretch": [
+     [
+      12,
+      true,
+      96
+     ],
+     [
+      12,
+      true,
+      97
+     ],
+     [
+      12,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.5508248205344701,
+    "passed": true
+   },
+   "PROG": {
+    "ok": 20,
+    "n": 20,
+    "exact": 20,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "by_m": {
+     "2": [
+      1,
+      1
+     ],
+     "3": [
+      2,
+      2
+     ],
+     "4": [
+      6,
+      6
+     ],
+     "5": [
+      1,
+      1
+     ],
+     "6": [
+      1,
+      1
+     ],
+     "7": [
+      3,
+      3
+     ],
+     "8": [
+      2,
+      2
+     ],
+     "9": [
+      2,
+      2
+     ],
+     "10": [
+      2,
+      2
+     ]
+    },
+    "stretch": [
+     [
+      11,
+      true,
+      97
+     ],
+     [
+      12,
+      false,
+      3
+     ],
+     [
+      12,
+      true,
+      97
+     ],
+     [
+      11,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.526857439466973,
+    "passed": true
+   },
+   "H11": {
+    "ok": 19,
+    "n": 20,
+    "exact": 14,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      5,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "by_m": {},
+    "stretch": [],
+    "neg_lm_max": -1.8212752950560187,
+    "passed": true
+   }
+  },
+  "passed_families": [
+   "H7CT",
+   "H7TXT",
+   "LIB",
+   "PROG",
+   "H11"
+  ],
+  "positives": {
+   "n": 100,
+   "ok": 98,
+   "lm_min_ok": -1.1270922981117841,
+   "word_min_ok": -1.8149780842933385
+  },
+  "negatives": {
+   "n": 100,
+   "confident": 0,
+   "lm_max": -1.526857439466973,
+   "word_max": -2.1335725783023802,
+   "by_kind_lm_max": {
+    "NEG_CTAK": -1.5508248205344701,
+    "NEG_GROMARK": -1.5313367960379296,
+    "NEG_HOMOPHONIC": -1.5514511336313235,
+    "NEG_OTP": -1.5388252953758712,
+    "NEG_PERIODIC": -1.5571160771147128,
+    "NEG_PTAK": -1.5428813362551719,
+    "NEG_RUNKEY": -1.526857439466973,
+    "NEG_SHUFFLE": -1.5443232298028156
+   }
+  },
+  "theorem_k_log10_settings": {
+   "H7CT": 20.05816599403579,
+   "H7TXT": 21.80667703666261,
+   "LIB": 21.17639360216606,
+   "PROG": 21.49086810896704,
+   "H11": 6.070625891163728,
+   "ALL": 22.04607292126597
+  }
+ },
+ "rows": [
+  {
+   "id": "H_000",
+   "kind": "NEG_OTP",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5677316202686082,
+   "word_per_letter": -3.019717717021229,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5677316202686082,
+    "H7CT": -1.587726142295857,
+    "LIB": -1.607961388208817,
+    "H7TXT": -1.6363846812128406,
+    "H11": -1.8743894292214482
+   }
+  },
+  {
+   "id": "H_001",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.778513892776451,
+   "word_per_letter": -1.229936660589932,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.778513892776451,
+    "PROG": -1.629574939131061,
+    "H7CT": -1.629662887462098,
+    "H7TXT": -1.640041101325907,
+    "H11": -1.8522034111557548
+   },
+   "fam": "LIB",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_002",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7076794855011828,
+   "word_per_letter": -0.8947837921427295,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7076794855011828,
+    "PROG": -1.6026999708073042,
+    "H7TXT": -1.606392066301682,
+    "LIB": -1.6275166738586329,
+    "H7CT": -1.6453665178845223
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_003",
+   "kind": "NEG_GROMARK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.580247321233307,
+   "word_per_letter": -2.8945403805410908,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.580247321233307,
+    "H7TXT": -1.6008534820500724,
+    "PROG": -1.6197701976682568,
+    "H7CT": -1.6451942979060497,
+    "H11": -1.9094701003782528
+   }
+  },
+  {
+   "id": "H_004",
+   "kind": "STRETCH",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.6360051813394936,
+   "word_per_letter": -0.7421166118541226,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.6360051813394936,
+    "H7TXT": -1.6097951032912607,
+    "LIB": -1.6106194488550585,
+    "H7CT": -1.6212510615779259,
+    "H11": -1.907253035872253
+   },
+   "fam": "PROG",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_005",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7748540298375233,
+   "word_per_letter": -1.0881893855893738,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7748540298375233,
+    "PROG": -1.6028485533963774,
+    "LIB": -1.610615082679811,
+    "H7CT": -1.646664798797406,
+    "H11": -1.8913913688708826
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_006",
+   "kind": "NEG_CTAK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5837175814127646,
+   "word_per_letter": -2.5773326791062394,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5837175814127646,
+    "H7TXT": -1.622829076142732,
+    "LIB": -1.6321435915210198,
+    "H7CT": -1.6636115870721753,
+    "H11": -1.879002716584304
+   }
+  },
+  {
+   "id": "H_007",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.6253957367434944,
+   "word_per_letter": -2.32921300731957,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.6253957367434944,
+    "H7TXT": -1.6262079984640951,
+    "H7CT": -1.6446827828653694,
+    "LIB": -1.64948941959241,
+    "H11": -1.8822068341614044
+   }
+  },
+  {
+   "id": "H_008",
+   "kind": "STRETCH",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.7253182106784696,
+   "word_per_letter": -0.8334511724695228,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.7253182106784696,
+    "LIB": -1.0098098972072884,
+    "PROG": -1.6271631898953742,
+    "H7TXT": -1.638611765607193,
+    "H11": -1.8665180925625502
+   },
+   "fam": "H7CT",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_009",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.924954552622272,
+   "word_per_letter": -1.3072302222244696,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.924954552622272,
+    "H7TXT": -1.5947381034997512,
+    "LIB": -1.618092047338633,
+    "H7CT": -1.6446809707996772,
+    "H11": -1.8548350212807507
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_010",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5793069768316723,
+   "word_per_letter": -2.5549677577962195,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5793069768316723,
+    "H7TXT": -1.583810258099867,
+    "H7CT": -1.6363250676580925,
+    "LIB": -1.667716700391671,
+    "H11": -1.8714701554056294
+   }
+  },
+  {
+   "id": "H_011",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.8750792878905561,
+   "word_per_letter": -0.8568937008331421,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.8750792878905561,
+    "H7TXT": -1.613656306975358,
+    "LIB": -1.6241626096961386,
+    "H7CT": -1.66320477873711,
+    "H11": -1.902327801148916
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_012",
+   "kind": "STRETCH",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.6470711013983784,
+   "word_per_letter": -0.8481778260412415,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.6470711013983784,
+    "PROG": -1.6210911221903197,
+    "H7CT": -1.6243515184797832,
+    "LIB": -1.642508030225632,
+    "H11": -1.871474271659384
+   },
+   "fam": "H7TXT",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_013",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5893387355524855,
+   "word_per_letter": -2.5424951922878107,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5893387355524855,
+    "PROG": -1.5908531577316756,
+    "LIB": -1.6086287282829739,
+    "H7CT": -1.6497944061903609,
+    "H11": -1.8847656096379781
+   }
+  },
+  {
+   "id": "H_014",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7423563309457911,
+   "word_per_letter": -0.803610413913013,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7423563309457911,
+    "PROG": -1.5634711025685994,
+    "H7TXT": -1.6174237793863548,
+    "LIB": -1.6363568223410372,
+    "H7CT": -1.6493252390592368
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_015",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7016240859610633,
+   "word_per_letter": -0.7820860946881566,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7016240859610633,
+    "H7TXT": -1.5921942915709824,
+    "LIB": -1.6144344976229459,
+    "H7CT": -1.6446887536800092,
+    "H11": -1.8764742440784101
+   },
+   "fam": "PROG",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_016",
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6757872490405546,
+   "word_per_letter": -0.986292344362109,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6757872490405546,
+    "PROG": -1.5935431536786335,
+    "H7TXT": -1.6010429317506087,
+    "LIB": -1.6270662107740135,
+    "H11": -1.837371869800017
+   },
+   "fam": "H7CT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_017",
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.8497980723186629,
+   "word_per_letter": -1.007404623129895,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.8497980723186629,
+    "PROG": -1.5684450473072316,
+    "H7TXT": -1.599087666667345,
+    "H7CT": -1.6178233239454092,
+    "H11": -1.8912625567814738
+   },
+   "fam": "LIB",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_018",
+   "kind": "STRETCH",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.8805464358725639,
+   "word_per_letter": -1.0577176810894509,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.8805464358725639,
+    "PROG": -1.5671733412555582,
+    "H7CT": -1.6317956271110214,
+    "H7TXT": -1.6460529749771369,
+    "H11": -1.873562209653793
+   },
+   "fam": "LIB",
+   "m": 12,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_019",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.583438575018159,
+   "word_per_letter": -2.4943608965900417,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.583438575018159,
+    "H7TXT": -1.5965471589534552,
+    "LIB": -1.6069173981368388,
+    "H7CT": -1.6494578603155834,
+    "H11": -1.8834360712543898
+   }
+  },
+  {
+   "id": "H_020",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.608644692961741,
+   "word_per_letter": -2.532850158147721,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.608644692961741,
+    "PROG": -1.6148931505446582,
+    "LIB": -1.6196026924371085,
+    "H7CT": -1.6280621509259738,
+    "H11": -1.8775542046605926
+   }
+  },
+  {
+   "id": "H_021",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.8629198063032332,
+   "word_per_letter": -0.844498192937575,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.8629198063032332,
+    "H7TXT": -1.6088401583820273,
+    "LIB": -1.6671806662967525,
+    "H7CT": -1.7001565676662571,
+    "H11": -1.8925128138249683
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_022",
+   "kind": "NEG_PTAK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5428813362551719,
+   "word_per_letter": -2.607524107979552,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5428813362551719,
+    "H7CT": -1.608218065086457,
+    "H7TXT": -1.6134977349147355,
+    "LIB": -1.6475194086579932,
+    "H11": -1.8212752950560187
+   }
+  },
+  {
+   "id": "H_023",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8985228432093677,
+   "word_per_letter": -0.9901473368773315,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8985228432093677,
+    "LIB": -1.5944633895588904,
+    "PROG": -1.6012902357375498,
+    "H7CT": -1.6358443419881088,
+    "H11": -1.895621260109636
+   },
+   "fam": "H7TXT",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_024",
+   "kind": "NEG_PTAK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.589345160833339,
+   "word_per_letter": -2.7628131677302927,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.589345160833339,
+    "H7CT": -1.6210444611833268,
+    "LIB": -1.622179736949734,
+    "H7TXT": -1.6301021241035658,
+    "H11": -1.8907966372585787
+   }
+  },
+  {
+   "id": "H_025",
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.0143328048239315,
+   "word_per_letter": -1.1643028843275096,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -1.0143328048239315,
+    "H7CT": -1.5521422035262449,
+    "LIB": -1.5972781884532,
+    "H7TXT": -1.600496117217639,
+    "H11": -1.8799814595936883
+   },
+   "fam": "PROG",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_026",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5842180954503644,
+   "word_per_letter": -2.304613525663677,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5842180954503644,
+    "PROG": -1.5968410873728007,
+    "LIB": -1.6171182641452275,
+    "H7CT": -1.6686399884752392,
+    "H11": -1.894097686658815
+   }
+  },
+  {
+   "id": "H_027",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5694955480621033,
+   "word_per_letter": -2.4628164066533516,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5694955480621033,
+    "H7TXT": -1.5738585875513627,
+    "PROG": -1.5966722139531804,
+    "H7CT": -1.6487523428711695,
+    "H11": -1.8691692898030747
+   }
+  },
+  {
+   "id": "H_028",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -1.0658057851155203,
+   "word_per_letter": -1.4235335875109216,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -1.0658057851155203,
+    "H7TXT": -1.5508110907526456,
+    "PROG": -1.5731728455608653,
+    "LIB": -1.629434922458028,
+    "H7CT": -1.6681780043182914
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 85,
+   "exact": false,
+   "recovered": false,
+   "ok": false,
+   "same_family": true
+  },
+  {
+   "id": "H_029",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5913005265186435,
+   "word_per_letter": -2.6536459214071217,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5913005265186435,
+    "H7CT": -1.6104969305860013,
+    "LIB": -1.6175912715609848,
+    "PROG": -1.6289302092429596,
+    "H11": -1.8909054029848158
+   }
+  },
+  {
+   "id": "H_030",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8064367355412465,
+   "word_per_letter": -0.8819986516384614,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8064367355412465,
+    "H7CT": -1.5936571952848475,
+    "PROG": -1.5992619013029736,
+    "LIB": -1.6350128623013644,
+    "H11": -1.8756907949435342
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_031",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7621788053991472,
+   "word_per_letter": -0.7890937655174836,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7621788053991472,
+    "H7CT": -1.5836736260188418,
+    "H7TXT": -1.5915948858715057,
+    "PROG": -1.5989682370431952,
+    "H11": -1.8926726229412039
+   },
+   "fam": "LIB",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_032",
+   "kind": "NEG_CTAK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5951698001704573,
+   "word_per_letter": -2.6217630383277832,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5951698001704573,
+    "H7TXT": -1.61826683471421,
+    "LIB": -1.6290143603823848,
+    "H7CT": -1.6368521067839519,
+    "H11": -1.8976911144023858
+   }
+  },
+  {
+   "id": "H_033",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7534659561367062,
+   "word_per_letter": -0.9135984408725173,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7534659561367062,
+    "PROG": -1.6268774112782527,
+    "LIB": -1.6301772356218112,
+    "H7CT": -1.6733670861738705,
+    "H11": -1.8804846252362752
+   },
+   "fam": "H7TXT",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_034",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.8079342320033339,
+   "word_per_letter": -0.9817013165148067,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.8079342320033339,
+    "LIB": -1.4711371377043272,
+    "PROG": -1.580392721464339,
+    "H7TXT": -1.6124149773596335,
+    "H11": -1.8837601964736415
+   },
+   "fam": "H7CT",
+   "m": 2,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_035",
+   "kind": "NEG_PTAK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5984557598598839,
+   "word_per_letter": -2.3503232447520865,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5984557598598839,
+    "H7TXT": -1.6039524250441037,
+    "PROG": -1.6316494845122713,
+    "H7CT": -1.6668521039399136,
+    "H11": -1.8823571598022868
+   }
+  },
+  {
+   "id": "H_036",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7024934621945296,
+   "word_per_letter": -0.7714972361658786,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7024934621945296,
+    "LIB": -1.5856445921757787,
+    "PROG": -1.6140388037874986,
+    "H7CT": -1.6236504496449662,
+    "H11": -1.8756693944181364
+   },
+   "fam": "H7TXT",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_037",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.575726420954638,
+   "word_per_letter": -2.298339250458622,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.575726420954638,
+    "H7TXT": -1.6265085238660926,
+    "LIB": -1.6367741047414308,
+    "H7CT": -1.6679782217660497,
+    "H11": -1.8751225317876363
+   }
+  },
+  {
+   "id": "H_038",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5752167030400837,
+   "word_per_letter": -2.2319794626674545,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5752167030400837,
+    "LIB": -1.5777665784716914,
+    "H7TXT": -1.6327412681865323,
+    "H7CT": -1.6560668630463062,
+    "H11": -1.8949046639591147
+   }
+  },
+  {
+   "id": "H_039",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.8157776544325428,
+   "word_per_letter": -1.0670198610716222,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.8157776544325428,
+    "H7CT": -1.1144848999287693,
+    "H7TXT": -1.5970617011957562,
+    "PROG": -1.633592141091286,
+    "H11": -1.8828206602676012
+   },
+   "fam": "LIB",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_040",
+   "kind": "STRETCH",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5866712561242051,
+   "word_per_letter": -2.8122813942270812,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5866712561242051,
+    "LIB": -1.624143573580329,
+    "H7CT": -1.646925188417993,
+    "PROG": -1.654996155463543,
+    "H11": -1.8157439472288202
+   },
+   "fam": "PROG",
+   "m": 12,
+   "letters_right": 3,
+   "exact": false,
+   "recovered": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_041",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5975215093799167,
+   "word_per_letter": -2.4765716898417227,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5975215093799167,
+    "LIB": -1.6225365225883372,
+    "PROG": -1.6407354832962924,
+    "H7CT": -1.6637844087705425,
+    "H11": -1.8709534622354376
+   }
+  },
+  {
+   "id": "H_042",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5671417771540965,
+   "word_per_letter": -2.3547871918563574,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5671417771540965,
+    "H7TXT": -1.5900037084398888,
+    "LIB": -1.6133884888948853,
+    "H7CT": -1.6594146185160912,
+    "H11": -1.9187670755632145
+   }
+  },
+  {
+   "id": "H_043",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5875044293730451,
+   "word_per_letter": -2.581593851980725,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5875044293730451,
+    "H7TXT": -1.6147385116368915,
+    "H7CT": -1.616766432338615,
+    "PROG": -1.6382293559841274,
+    "H11": -1.8843862608089543
+   }
+  },
+  {
+   "id": "H_044",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.8587746307084015,
+   "word_per_letter": -0.9573927123211483,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.8587746307084015,
+    "H7TXT": -1.5593770948219468,
+    "LIB": -1.6280647291965091,
+    "H7CT": -1.6684439342622597,
+    "H11": -1.8670117783830644
+   },
+   "fam": "PROG",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_045",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.9195165332684596,
+   "word_per_letter": -1.034570874248871,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.9195165332684596,
+    "PROG": -1.6146380988660163,
+    "LIB": -1.644158517116124,
+    "H7CT": -1.6628048040990515,
+    "H11": -1.8965169062895566
+   },
+   "fam": "H7TXT",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_046",
+   "kind": "NEG_GROMARK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5313367960379296,
+   "word_per_letter": -2.4310359021216903,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5313367960379296,
+    "PROG": -1.5939871602566893,
+    "LIB": -1.6036548154025347,
+    "H7CT": -1.6290213292003752,
+    "H11": -1.9119871384704237
+   }
+  },
+  {
+   "id": "H_047",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5955385228105312,
+   "word_per_letter": -2.3396401283312542,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5955385228105312,
+    "PROG": -1.6045494673716039,
+    "LIB": -1.6374619135671515,
+    "H7CT": -1.6627903956267023,
+    "H11": -1.861200031277138
+   }
+  },
+  {
+   "id": "H_048",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.662730076504492,
+   "word_per_letter": -0.7321576823185424,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.662730076504492,
+    "LIB": -1.6153323533044668,
+    "H7TXT": -1.6214283824581461,
+    "H7CT": -1.6368500691329695,
+    "H11": -1.8680003744732474
+   },
+   "fam": "PROG",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_049",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.6083107937857049,
+   "word_per_letter": -2.601671458834224,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.6083107937857049,
+    "H7TXT": -1.6201312735523146,
+    "PROG": -1.6292015552261518,
+    "H7CT": -1.6531778566655402,
+    "H11": -1.8664512833215527
+   }
+  },
+  {
+   "id": "H_050",
+   "kind": "STRETCH",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7672627701357454,
+   "word_per_letter": -0.7851932003094239,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7672627701357454,
+    "H7TXT": -1.5545154701265478,
+    "PROG": -1.6149375528750038,
+    "H7CT": -1.6163217670178598,
+    "H11": -1.8642300065875668
+   },
+   "fam": "LIB",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_051",
+   "kind": "STRETCH",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.597895494052245,
+   "word_per_letter": -0.7580199161000755,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.597895494052245,
+    "PROG": -1.6369982906377192,
+    "H7CT": -1.639036016749967,
+    "LIB": -1.6447100594793398,
+    "H11": -1.887455143572129
+   },
+   "fam": "H7TXT",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_052",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.553621866000989,
+   "word_per_letter": -2.3770948801354206,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.553621866000989,
+    "PROG": -1.598992471381561,
+    "LIB": -1.6319054052732962,
+    "H7CT": -1.689045886710747,
+    "H11": -1.8794406228842808
+   }
+  },
+  {
+   "id": "H_053",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.6553726924761548,
+   "word_per_letter": -0.6328512008166349,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.6553726924761548,
+    "H7TXT": -1.5560642246483374,
+    "LIB": -1.6365136734735624,
+    "H7CT": -1.6560251912697381,
+    "H11": -1.874226041061362
+   },
+   "fam": "PROG",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_054",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5870854751370156,
+   "word_per_letter": -2.6020593292180947,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5870854751370156,
+    "LIB": -1.6062469634505891,
+    "PROG": -1.6117729818275601,
+    "H7CT": -1.6407890955619897,
+    "H11": -1.8617027882755417
+   }
+  },
+  {
+   "id": "H_055",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7709741631571381,
+   "word_per_letter": -0.7964602067730707,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7709741631571381,
+    "PROG": -1.5845062965431165,
+    "LIB": -1.6112183521540124,
+    "H7CT": -1.6432398123685847,
+    "H11": -1.8737991634449087
+   },
+   "fam": "H7TXT",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_056",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5836668552965234,
+   "word_per_letter": -2.445083484211775,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5836668552965234,
+    "LIB": -1.6030075567169595,
+    "PROG": -1.6070591638071137,
+    "H7CT": -1.6449630505107726,
+    "H11": -1.8778882211880739
+   }
+  },
+  {
+   "id": "H_057",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7532261076380893,
+   "word_per_letter": -0.7509639817845459,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7532261076380893,
+    "LIB": -1.6124750245938595,
+    "H7TXT": -1.6266695709595127,
+    "PROG": -1.628761851286381,
+    "H7CT": -1.6545472170811952
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_058",
+   "kind": "STRETCH",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.652278998651849,
+   "word_per_letter": -0.9589187022931743,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.652278998651849,
+    "H7TXT": -1.5676461538208706,
+    "H7CT": -1.6353878806700413,
+    "PROG": -1.6505642405797525,
+    "H11": -1.9056266484801303
+   },
+   "fam": "LIB",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_059",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.7485970948422543,
+   "word_per_letter": -1.013878371191518,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.7485970948422543,
+    "PROG": -1.5919508048976512,
+    "H7TXT": -1.6044188840314746,
+    "LIB": -1.6111409964132033,
+    "H11": -1.8995783855159258
+   },
+   "fam": "H7CT",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_060",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5934774692352747,
+   "word_per_letter": -2.4853544764636695,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5934774692352747,
+    "PROG": -1.5962767377495766,
+    "H7CT": -1.6029294025316143,
+    "LIB": -1.6152246524531817,
+    "H11": -1.8736023535740745
+   }
+  },
+  {
+   "id": "H_061",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5700553204503016,
+   "word_per_letter": -2.616447935521431,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5700553204503016,
+    "LIB": -1.6103314373049777,
+    "H7CT": -1.6132899996027659,
+    "PROG": -1.6392012697370895,
+    "H11": -1.88389113683676
+   }
+  },
+  {
+   "id": "H_062",
+   "kind": "NEG_OTP",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5673809504693317,
+   "word_per_letter": -2.4598913180179665,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5673809504693317,
+    "H7CT": -1.5957882287576026,
+    "PROG": -1.6149880465206488,
+    "H7TXT": -1.6194403643441415,
+    "H11": -1.8607186566577436
+   }
+  },
+  {
+   "id": "H_063",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -0.930093746058662,
+   "word_per_letter": -1.1839709202376398,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.930093746058662,
+    "LIB": -1.5698287218194646,
+    "H7TXT": -1.6050855764979977,
+    "PROG": -1.6266628217381742,
+    "H7CT": -1.6461484547753664
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_064",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5829807492645132,
+   "word_per_letter": -2.42817797075204,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5829807492645132,
+    "H7TXT": -1.6065999555411106,
+    "LIB": -1.6191367528391714,
+    "H7CT": -1.6549451957005508,
+    "H11": -1.8758261671155383
+   }
+  },
+  {
+   "id": "H_065",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.6139201646689902,
+   "word_per_letter": -2.7093672616825417,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT": -1.6139201646689902,
+    "H7TXT": -1.6229242583539951,
+    "PROG": -1.6332649227337355,
+    "LIB": -1.6514490702640765,
+    "H11": -1.879235761067302
+   }
+  },
+  {
+   "id": "H_066",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -0.8730701534245547,
+   "word_per_letter": -1.3331679518786588,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.8730701534245547,
+    "PROG": -1.5794891627198182,
+    "H7TXT": -1.6035356223679234,
+    "LIB": -1.6479488901563526,
+    "H7CT": -1.6645552749747348
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_067",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5936242775588305,
+   "word_per_letter": -2.5174440425018387,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5936242775588305,
+    "H7TXT": -1.6045845429768268,
+    "PROG": -1.6115082966298173,
+    "H7CT": -1.6502382299795593,
+    "H11": -1.8588790682326888
+   }
+  },
+  {
+   "id": "H_068",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.6736532844319224,
+   "word_per_letter": -0.8657842803094985,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.6736532844319224,
+    "H7TXT": -1.6071322271504354,
+    "PROG": -1.6421695466204294,
+    "H7CT": -1.6507460496282762,
+    "H11": -1.8544982517205333
+   },
+   "fam": "LIB",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_069",
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5990737511478748,
+   "word_per_letter": -2.4782810141742653,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5990737511478748,
+    "H7CT": -1.6090498035101546,
+    "H7TXT": -1.6188607902203678,
+    "LIB": -1.6496446913818723,
+    "H11": -1.9018347643546223
+   }
+  },
+  {
+   "id": "H_070",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.741072718873464,
+   "word_per_letter": -0.9381665195510328,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.741072718873464,
+    "H7TXT": -1.576449101579558,
+    "LIB": -1.6006894423482345,
+    "PROG": -1.6019630035980768,
+    "H7CT": -1.6588506342209492
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_071",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7364003606166567,
+   "word_per_letter": -0.8464309217001921,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7364003606166567,
+    "H7TXT": -1.604312781417339,
+    "PROG": -1.6186394179143857,
+    "H7CT": -1.6477808298293464,
+    "H11": -1.8872576496914448
+   },
+   "fam": "LIB",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_072",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6852849565660005,
+   "word_per_letter": -0.8535476600646724,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6852849565660005,
+    "PROG": -1.5682478094300658,
+    "LIB": -1.6191116525871396,
+    "H7TXT": -1.6273849452317684,
+    "H11": -1.8520146659047334
+   },
+   "fam": "H7CT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_073",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.6148710008902647,
+   "word_per_letter": -3.0591376461624016,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.6148710008902647,
+    "H7TXT": -1.6316423294585698,
+    "LIB": -1.6350912447135473,
+    "H7CT": -1.6396019302942242,
+    "H11": -1.8931099855408227
+   }
+  },
+  {
+   "id": "H_074",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5514511336313235,
+   "word_per_letter": -2.7114866285378505,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5514511336313235,
+    "H7CT": -1.6032461533034892,
+    "LIB": -1.6119205886402082,
+    "H7TXT": -1.624511783174479,
+    "H11": -1.8783673488909436
+   }
+  },
+  {
+   "id": "H_075",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.812257812966919,
+   "word_per_letter": -1.0341680415024177,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.812257812966919,
+    "LIB": -1.5995590144230687,
+    "H7CT": -1.6178756553785318,
+    "PROG": -1.6182068947164976,
+    "H11": -1.9236373211996458
+   },
+   "fam": "H7TXT",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_076",
+   "kind": "POS_NONSTD",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7483411182937528,
+   "word_per_letter": -1.1016312188251538,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7483411182937528,
+    "PROG": -1.5693595793443857,
+    "H7TXT": -1.6049560219740744,
+    "LIB": -1.6239569497093098,
+    "H7CT": -1.6537212706218982
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_077",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5776057163080603,
+   "word_per_letter": -2.734048702166076,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5776057163080603,
+    "PROG": -1.5863631022133933,
+    "H7CT": -1.60062065613024,
+    "LIB": -1.6226990335841769,
+    "H11": -1.900251942849958
+   }
+  },
+  {
+   "id": "H_078",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5885229230541544,
+   "word_per_letter": -2.7952655144082215,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5885229230541544,
+    "H7TXT": -1.606783770332017,
+    "LIB": -1.6358828661656104,
+    "H7CT": -1.649973059821989,
+    "H11": -1.8609874054943163
+   }
+  },
+  {
+   "id": "H_079",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.6016264450688338,
+   "word_per_letter": -2.6509983509347563,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT": -1.6016264450688338,
+    "H7TXT": -1.6027308419135582,
+    "PROG": -1.6232352221058202,
+    "LIB": -1.659242349897617,
+    "H11": -1.8499288209089912
+   }
+  },
+  {
+   "id": "H_080",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5771015053086905,
+   "word_per_letter": -2.3434767712988975,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5771015053086905,
+    "H7TXT": -1.6023933623254913,
+    "LIB": -1.6288659863183563,
+    "H7CT": -1.6308973857451268,
+    "H11": -1.9233388214578526
+   }
+  },
+  {
+   "id": "H_081",
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.8639199752431092,
+   "word_per_letter": -0.8874790390208684,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.8639199752431092,
+    "H7TXT": -1.5963754673325217,
+    "PROG": -1.6050208361876994,
+    "H7CT": -1.656725339514693,
+    "H11": -1.8726066286224372
+   },
+   "fam": "LIB",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_082",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6805131723764725,
+   "word_per_letter": -0.7740284126571875,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6805131723764725,
+    "PROG": -1.5736389974103377,
+    "H7TXT": -1.6374519792260582,
+    "LIB": -1.6414250723883201,
+    "H11": -1.8718521101880319
+   },
+   "fam": "H7CT",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_083",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.970194152150819,
+   "word_per_letter": -1.2612103721367303,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.970194152150819,
+    "H7TXT": -1.5948568171600706,
+    "PROG": -1.5969557265376615,
+    "LIB": -1.6156957654148032,
+    "H11": -1.8946441339920563
+   },
+   "fam": "H7CT",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_084",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.6031686392103888,
+   "word_per_letter": -2.481477718761504,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.6031686392103888,
+    "LIB": -1.6231297415863608,
+    "PROG": -1.6300530292132158,
+    "H7CT": -1.6613529759492802,
+    "H11": -1.8587602405357606
+   }
+  },
+  {
+   "id": "H_085",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7775699588197013,
+   "word_per_letter": -0.8238203155571306,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7775699588197013,
+    "PROG": -1.562585040734908,
+    "LIB": -1.5736123821842147,
+    "H7CT": -1.6452702245838249,
+    "H11": -1.8596843500746434
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_086",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5820873415039987,
+   "word_per_letter": -2.4844972137059247,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5820873415039987,
+    "PROG": -1.6146989767391657,
+    "LIB": -1.6406399760126453,
+    "H7CT": -1.6626570505694938,
+    "H11": -1.8653854233856053
+   }
+  },
+  {
+   "id": "H_087",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7807413593722812,
+   "word_per_letter": -1.0089958098222942,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7807413593722812,
+    "PROG": -1.5995941902942878,
+    "H7CT": -1.6372233632257083,
+    "LIB": -1.641967807233948,
+    "H11": -1.873352325761441
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_088",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -0.848361653042057,
+   "word_per_letter": -1.1832009236918735,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.848361653042057,
+    "LIB": -1.583432360254612,
+    "PROG": -1.6224924146207338,
+    "H7TXT": -1.625627180292588,
+    "H7CT": -1.6313315118019729
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_089",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.6271076007414916,
+   "word_per_letter": -0.6666986933297364,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.6271076007414916,
+    "H7TXT": -1.5482103735899801,
+    "PROG": -1.6030307290403498,
+    "LIB": -1.611937243990677,
+    "H7CT": -1.6239912672443604
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_090",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.595941331141542,
+   "word_per_letter": -2.6904215320305305,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.595941331141542,
+    "LIB": -1.6036081771875166,
+    "PROG": -1.6131949135937642,
+    "H7CT": -1.6625178095298945,
+    "H11": -1.8739383810574246
+   }
+  },
+  {
+   "id": "H_091",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5388252953758712,
+   "word_per_letter": -2.264040689551651,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5388252953758712,
+    "LIB": -1.587424884175824,
+    "PROG": -1.6094249413857602,
+    "H7CT": -1.6430243236401607,
+    "H11": -1.8965028772879506
+   }
+  },
+  {
+   "id": "H_092",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5898102031847865,
+   "word_per_letter": -2.4983269031773827,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5898102031847865,
+    "LIB": -1.6026178500471042,
+    "H7CT": -1.6073174299576234,
+    "PROG": -1.611984588589865,
+    "H11": -1.8340872738164724
+   }
+  },
+  {
+   "id": "H_093",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7567712742210901,
+   "word_per_letter": -1.0589034824312886,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7567712742210901,
+    "LIB": -1.6201706201884627,
+    "H7CT": -1.6391612441883874,
+    "H7TXT": -1.6442624414245899,
+    "H11": -1.8542575542250956
+   },
+   "fam": "PROG",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_094",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.6006820950676333,
+   "word_per_letter": -2.3796427163988194,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.6006820950676333,
+    "LIB": -1.6163698820992536,
+    "PROG": -1.6244102941499543,
+    "H7CT": -1.636911923881889,
+    "H11": -1.8617848892055318
+   }
+  },
+  {
+   "id": "H_095",
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7609942437476027,
+   "word_per_letter": -0.7935529309878376,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7609942437476027,
+    "H7TXT": -1.5701463557593764,
+    "LIB": -1.6071392741563164,
+    "H7CT": -1.6186232111349548,
+    "H11": -1.8719986251641794
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_096",
+   "kind": "STRETCH",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.7555362701205388,
+   "word_per_letter": -0.8360587341155468,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.7555362701205388,
+    "H7TXT": -1.4229637569335012,
+    "LIB": -1.5597077779011013,
+    "PROG": -1.5856879332016425,
+    "H11": -1.9015945339786637
+   },
+   "fam": "H7CT",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_097",
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.0000111047033289,
+   "word_per_letter": -1.0523826630868602,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -1.0000111047033289,
+    "PROG": -1.6017594768992174,
+    "H7TXT": -1.6032476501212907,
+    "H7CT": -1.630412088803102,
+    "H11": -1.8821415494779095
+   },
+   "fam": "LIB",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_098",
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.6123723308987838,
+   "word_per_letter": -2.391244388945532,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.6123723308987838,
+    "H7CT": -1.6180443180984212,
+    "H7TXT": -1.6411022916244171,
+    "LIB": -1.6473780289921218,
+    "H11": -1.8861519556070112
+   }
+  },
+  {
+   "id": "H_099",
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7933096161279312,
+   "word_per_letter": -0.8598258752244572,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7933096161279312,
+    "H7TXT": -1.6003439523166851,
+    "H7CT": -1.6414401586522762,
+    "LIB": -1.6446400456821795,
+    "H11": -1.8813370904049922
+   },
+   "fam": "PROG",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_100",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5884665028796983,
+   "word_per_letter": -2.5321441806849676,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5884665028796983,
+    "LIB": -1.6172329429753087,
+    "PROG": -1.6423979942928688,
+    "H7CT": -1.6689883775471412,
+    "H11": -1.875406375711726
+   }
+  },
+  {
+   "id": "H_101",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.576511879893231,
+   "word_per_letter": -2.201930091800241,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.576511879893231,
+    "PROG": -1.6223613213094854,
+    "LIB": -1.6328358992396557,
+    "H7CT": -1.6507533441499336,
+    "H11": -1.8669446581571372
+   }
+  },
+  {
+   "id": "H_102",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.6422128918048076,
+   "word_per_letter": -0.756561538713904,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.6422128918048076,
+    "LIB": -1.5690013316414049,
+    "PROG": -1.59893600998888,
+    "H7TXT": -1.623741836891961,
+    "H7CT": -1.6691753530164355
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_103",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5662118405926992,
+   "word_per_letter": -2.7351650478642866,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5662118405926992,
+    "H7TXT": -1.5851590787204577,
+    "LIB": -1.637245243357629,
+    "H7CT": -1.639177054273608,
+    "H11": -1.86925644481305
+   }
+  },
+  {
+   "id": "H_104",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.567230959259665,
+   "word_per_letter": -2.6053947494985237,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT": -1.567230959259665,
+    "LIB": -1.5882459662759558,
+    "PROG": -1.591522591630208,
+    "H7TXT": -1.6145897095725323,
+    "H11": -1.8604530458549786
+   }
+  },
+  {
+   "id": "H_105",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7275752913448797,
+   "word_per_letter": -0.8274150824176684,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7275752913448797,
+    "H7TXT": -1.583397341373655,
+    "H7CT": -1.6200546769949742,
+    "PROG": -1.625894042653675,
+    "H11": -1.9171720283086766
+   },
+   "fam": "LIB",
+   "m": 9,
+   "letters_right": 95,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_106",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7784840592720843,
+   "word_per_letter": -0.743187593962692,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7784840592720843,
+    "H7CT": -0.971013976088197,
+    "H7TXT": -1.5907674192417336,
+    "PROG": -1.60526966814798,
+    "H11": -1.8883607684029746
+   },
+   "fam": "LIB",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_107",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.5948688624513387,
+   "word_per_letter": -0.88466056662135,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.5948688624513387,
+    "PROG": -1.5695533441672505,
+    "H7TXT": -1.5861312986745202,
+    "H7CT": -1.644516914775691,
+    "H11": -1.8951046543637502
+   },
+   "fam": "LIB",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_108",
+   "kind": "STRETCH",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7868441905370439,
+   "word_per_letter": -0.8709523255179175,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7868441905370439,
+    "LIB": -1.5812648367280735,
+    "PROG": -1.661226011956706,
+    "H7CT": -1.6613711761598735,
+    "H11": -1.887069189689016
+   },
+   "fam": "H7TXT",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_109",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.584163524172048,
+   "word_per_letter": -2.5779388664176217,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.584163524172048,
+    "H7CT": -1.5876410017462121,
+    "H7TXT": -1.5992211546633661,
+    "LIB": -1.6175206064525032,
+    "H11": -1.8765372494139623
+   }
+  },
+  {
+   "id": "H_110",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.571804303061409,
+   "word_per_letter": -2.5258133165340824,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.571804303061409,
+    "PROG": -1.5875794078300218,
+    "H7TXT": -1.600477637089405,
+    "H7CT": -1.6531238354473692,
+    "H11": -1.87320259513007
+   }
+  },
+  {
+   "id": "H_111",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.6199512907121445,
+   "word_per_letter": -2.602896930315274,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.6199512907121445,
+    "PROG": -1.625322120192163,
+    "H7CT": -1.6411588174223746,
+    "LIB": -1.6544083601113446,
+    "H11": -1.8893644846591753
+   }
+  },
+  {
+   "id": "H_112",
+   "kind": "NEG_PTAK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.6236531244004002,
+   "word_per_letter": -2.518430161906967,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.6236531244004002,
+    "PROG": -1.6306624408888142,
+    "H7TXT": -1.6389536932614852,
+    "H7CT": -1.646114526767783,
+    "H11": -1.8900215656486983
+   }
+  },
+  {
+   "id": "H_113",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.9067469452640261,
+   "word_per_letter": -1.6494694169376594,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.9067469452640261,
+    "LIB": -1.6089392321414708,
+    "H7TXT": -1.6103477110875022,
+    "PROG": -1.611631012588893,
+    "H11": -1.8592061616057896
+   },
+   "fam": "H7CT",
+   "m": 2,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_114",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.558533778511943,
+   "word_per_letter": -2.360789440236017,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.558533778511943,
+    "PROG": -1.6142308102133347,
+    "LIB": -1.6359252578089225,
+    "H7CT": -1.6565072273777932,
+    "H11": -1.8741983511705989
+   }
+  },
+  {
+   "id": "H_115",
+   "kind": "STRETCH",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7509053557982623,
+   "word_per_letter": -1.0079513660741581,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7509053557982623,
+    "H7TXT": -1.5680495235245655,
+    "H7CT": -1.61203075866647,
+    "PROG": -1.620373615207746,
+    "H11": -1.9167631002738303
+   },
+   "fam": "LIB",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_116",
+   "kind": "POS_NONSTD",
+   "best_fam": "H11",
+   "lm_per_letter": -0.930025645068453,
+   "word_per_letter": -1.173740480408125,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.930025645068453,
+    "H7TXT": -1.5862653000453084,
+    "PROG": -1.6115920897765257,
+    "LIB": -1.6122196807343627,
+    "H7CT": -1.7131487666869287
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 96,
+   "exact": false,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_117",
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.994547068302822,
+   "word_per_letter": -1.2803774746106102,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.994547068302822,
+    "H7TXT": -1.5669739987393938,
+    "LIB": -1.6181729239190823,
+    "PROG": -1.633503544435971,
+    "H11": -1.837765146776573
+   },
+   "fam": "H7CT",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_118",
+   "kind": "STRETCH",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.5834555781513006,
+   "word_per_letter": -0.753330550838459,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.5834555781513006,
+    "H7TXT": -1.5695093042149986,
+    "H7CT": -1.6049558902567387,
+    "LIB": -1.6128229693384821,
+    "H11": -1.8958483289965649
+   },
+   "fam": "PROG",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_119",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.021135691004657,
+   "word_per_letter": -1.3045928459221514,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -1.021135691004657,
+    "PROG": -1.5729431524469526,
+    "H7TXT": -1.579795264264511,
+    "H7CT": -1.6301881824572062,
+    "H11": -1.876981245872286
+   },
+   "fam": "LIB",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_120",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5918030706138264,
+   "word_per_letter": -2.552833333491983,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5918030706138264,
+    "PROG": -1.6061717739482362,
+    "LIB": -1.6264587857414843,
+    "H7CT": -1.627558736341823,
+    "H11": -1.9084424442544425
+   }
+  },
+  {
+   "id": "H_121",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5571160771147128,
+   "word_per_letter": -2.6690241917340503,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5571160771147128,
+    "LIB": -1.6033274199448757,
+    "PROG": -1.6532307577501868,
+    "H7CT": -1.6593689118156727,
+    "H11": -1.8371060298582942
+   }
+  },
+  {
+   "id": "H_122",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7265345350718881,
+   "word_per_letter": -0.9234756731261953,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7265345350718881,
+    "H7TXT": -1.5882296218085534,
+    "PROG": -1.6240562919488888,
+    "H7CT": -1.6484590556050085,
+    "H11": -1.918800016346666
+   },
+   "fam": "LIB",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_123",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7935923369144634,
+   "word_per_letter": -0.9895164467468917,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7935923369144634,
+    "H7TXT": -1.5986968305000324,
+    "PROG": -1.619874583960501,
+    "H7CT": -1.6516730045382482,
+    "H11": -1.908158121534537
+   },
+   "fam": "LIB",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_124",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8341830232721926,
+   "word_per_letter": -0.8687936289499808,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8341830232721926,
+    "PROG": -1.5146751356954427,
+    "H7CT": -1.6308877152323569,
+    "LIB": -1.6719064389921956,
+    "H11": -1.9089471659786308
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_125",
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.7274040598452293,
+   "word_per_letter": -0.8556650037806343,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.7274040598452293,
+    "H7TXT": -1.599501104199702,
+    "PROG": -1.640394146698191,
+    "LIB": -1.6491701013034152,
+    "H11": -1.866925153612476
+   },
+   "fam": "H7CT",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_126",
+   "kind": "NEG_GROMARK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5906681175818955,
+   "word_per_letter": -2.6704284012068613,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5906681175818955,
+    "H7TXT": -1.6156929384955425,
+    "PROG": -1.6271281658681398,
+    "H7CT": -1.6452532534093893,
+    "H11": -1.9019177292579228
+   }
+  },
+  {
+   "id": "H_127",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5711116882175515,
+   "word_per_letter": -2.9758901921802625,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5711116882175515,
+    "PROG": -1.6050065508515565,
+    "LIB": -1.6059327848008402,
+    "H7CT": -1.6472791820649326,
+    "H11": -1.8820700461102515
+   }
+  },
+  {
+   "id": "H_128",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8436642926898617,
+   "word_per_letter": -0.9553188347906053,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8436642926898617,
+    "PROG": -1.6048192555065621,
+    "LIB": -1.627438379470835,
+    "H7CT": -1.6536476971082312,
+    "H11": -1.8958764064327343
+   },
+   "fam": "H7TXT",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_129",
+   "kind": "NEG_GROMARK",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.5630755846955113,
+   "word_per_letter": -2.63094405063609,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT": -1.5630755846955113,
+    "LIB": -1.5663835947190594,
+    "PROG": -1.5775694776009577,
+    "H7TXT": -1.6199884235705297,
+    "H11": -1.842172790664373
+   }
+  },
+  {
+   "id": "H_130",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.8183799728937217,
+   "word_per_letter": -0.947217316391475,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.8183799728937217,
+    "H7TXT": -1.5955981612685568,
+    "PROG": -1.6103542622229199,
+    "LIB": -1.6499782370537828,
+    "H7CT": -1.6612047183989864
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_131",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7044360449480027,
+   "word_per_letter": -0.916385271409939,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7044360449480027,
+    "PROG": -1.576773263629257,
+    "LIB": -1.610413451982991,
+    "H7CT": -1.6292328730071943,
+    "H11": -1.891577329755444
+   },
+   "fam": "H7TXT",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_132",
+   "kind": "NEG_GROMARK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.563199162959678,
+   "word_per_letter": -2.644431897612973,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.563199162959678,
+    "H7TXT": -1.6059286403901798,
+    "H7CT": -1.6291945731344144,
+    "PROG": -1.6305961194112129,
+    "H11": -1.8610411299411784
+   }
+  },
+  {
+   "id": "H_133",
+   "kind": "NEG_OTP",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.6178037320964576,
+   "word_per_letter": -2.6623597645080492,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.6178037320964576,
+    "H7TXT": -1.6232994703633576,
+    "PROG": -1.6239134101485162,
+    "H7CT": -1.6504247809193797,
+    "H11": -1.8782979298440605
+   }
+  },
+  {
+   "id": "H_134",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.5858328456884807,
+   "word_per_letter": -2.5913280868836845,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT": -1.5858328456884807,
+    "LIB": -1.5882315664733602,
+    "H7TXT": -1.6043143040305856,
+    "PROG": -1.6244534982233931,
+    "H11": -1.9069802759541679
+   }
+  },
+  {
+   "id": "H_135",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7659702209547101,
+   "word_per_letter": -1.2701989593215612,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7659702209547101,
+    "H7TXT": -1.569590204616183,
+    "PROG": -1.594355400968535,
+    "H7CT": -1.629177242287041,
+    "H11": -1.8475977786883866
+   },
+   "fam": "LIB",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_136",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5817792638368213,
+   "word_per_letter": -2.6766876235751966,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5817792638368213,
+    "PROG": -1.6052412025860905,
+    "LIB": -1.6486798643528187,
+    "H7CT": -1.6605220245936714,
+    "H11": -1.909370302693131
+   }
+  },
+  {
+   "id": "H_137",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7108219130301203,
+   "word_per_letter": -0.7924423892662352,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7108219130301203,
+    "LIB": -1.560322235347991,
+    "H7TXT": -1.6035775200178193,
+    "PROG": -1.607332806304558,
+    "H7CT": -1.6673703258665107
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_138",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -0.9576189139475038,
+   "word_per_letter": -1.067507805496951,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.9576189139475038,
+    "PROG": -1.5784832708676797,
+    "H7TXT": -1.6005676618786817,
+    "LIB": -1.653094037992822,
+    "H7CT": -1.659026179885127
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_139",
+   "kind": "NEG_CTAK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5508248205344701,
+   "word_per_letter": -2.513320265872599,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5508248205344701,
+    "H7TXT": -1.5829485607592715,
+    "H7CT": -1.626020143480645,
+    "PROG": -1.6270575113402508,
+    "H11": -1.8673561728876276
+   }
+  },
+  {
+   "id": "H_140",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5956037660494216,
+   "word_per_letter": -2.4248196487977967,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5956037660494216,
+    "PROG": -1.6128214230933755,
+    "LIB": -1.6157916054974513,
+    "H7CT": -1.67908777918705,
+    "H11": -1.8809808978100413
+   }
+  },
+  {
+   "id": "H_141",
+   "kind": "NEG_GROMARK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.576089882819923,
+   "word_per_letter": -2.8217058889035522,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.576089882819923,
+    "PROG": -1.6129737776348885,
+    "LIB": -1.656812898046577,
+    "H7CT": -1.6623717594685359,
+    "H11": -1.8926397686075305
+   }
+  },
+  {
+   "id": "H_142",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5652099065482616,
+   "word_per_letter": -2.1335725783023802,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5652099065482616,
+    "H7TXT": -1.6052506876660548,
+    "LIB": -1.6259395786820305,
+    "H7CT": -1.6443516995431375,
+    "H11": -1.8645481733009988
+   }
+  },
+  {
+   "id": "H_143",
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7264680603671952,
+   "word_per_letter": -0.7746231689443266,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7264680603671952,
+    "H7TXT": -1.6194147180919487,
+    "PROG": -1.6414658692041315,
+    "H7CT": -1.6621009574833412,
+    "H11": -1.7967525602308745
+   },
+   "fam": "LIB",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_144",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.8186358529738313,
+   "word_per_letter": -1.0703648469443703,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.8186358529738313,
+    "PROG": -1.5775410561371095,
+    "LIB": -1.6321421955740942,
+    "H7TXT": -1.6424413602607153,
+    "H11": -1.8920865692294289
+   },
+   "fam": "H7CT",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_145",
+   "kind": "STRETCH",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.7520282967124584,
+   "word_per_letter": -1.0670176739441446,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.7520282967124584,
+    "LIB": -1.062938347439187,
+    "PROG": -1.5712590768702865,
+    "H7TXT": -1.6133704910573272,
+    "H11": -1.8588471234459238
+   },
+   "fam": "H7CT",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_146",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.761639189136517,
+   "word_per_letter": -0.8943282458910933,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.761639189136517,
+    "PROG": -1.575057499341129,
+    "H7TXT": -1.596326575652917,
+    "LIB": -1.6058408150583814,
+    "H11": -1.8667449105492573
+   },
+   "fam": "H7CT",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_147",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6591637597314908,
+   "word_per_letter": -0.7663545888630784,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6591637597314908,
+    "PROG": -1.5727083851612105,
+    "H7TXT": -1.5961109596909475,
+    "LIB": -1.6110185442952025,
+    "H11": -1.838471378708623
+   },
+   "fam": "H7CT",
+   "m": 2,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_148",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5827961228673884,
+   "word_per_letter": -2.6901461200957764,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5827961228673884,
+    "LIB": -1.597459074263413,
+    "PROG": -1.6183175897782611,
+    "H7CT": -1.6446338005594372,
+    "H11": -1.9005031458188577
+   }
+  },
+  {
+   "id": "H_149",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5532924125604715,
+   "word_per_letter": -2.815340970122044,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5532924125604715,
+    "LIB": -1.6018007078121619,
+    "H7TXT": -1.6117060393402256,
+    "H7CT": -1.6247596228231205,
+    "H11": -1.844015222034398
+   }
+  },
+  {
+   "id": "H_150",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6537551882391143,
+   "word_per_letter": -0.8120845939365902,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6537551882391143,
+    "PROG": -1.5864493693273092,
+    "H7TXT": -1.588665080285564,
+    "LIB": -1.6211898975151102,
+    "H11": -1.8263299492831082
+   },
+   "fam": "H7CT",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_151",
+   "kind": "NEG_OTP",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.6025993507787508,
+   "word_per_letter": -2.536458421042551,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.6025993507787508,
+    "H7TXT": -1.6060266487261992,
+    "H7CT": -1.6064163235582642,
+    "LIB": -1.608690048241081,
+    "H11": -1.8662386206980823
+   }
+  },
+  {
+   "id": "H_152",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.596819439038788,
+   "word_per_letter": -2.7541093054440884,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.596819439038788,
+    "LIB": -1.6166574588314313,
+    "H7TXT": -1.6204229840653535,
+    "H7CT": -1.6228086792566265,
+    "H11": -1.8829228904136677
+   }
+  },
+  {
+   "id": "H_153",
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.9156796277075233,
+   "word_per_letter": -1.1307425965499072,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.9156796277075233,
+    "LIB": -1.5877482457489698,
+    "PROG": -1.6121713552508772,
+    "H7TXT": -1.6132012899849832,
+    "H11": -1.8257756342285687
+   },
+   "fam": "H7CT",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_154",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7433394064606433,
+   "word_per_letter": -0.94056426816618,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7433394064606433,
+    "H7TXT": -1.569590550396092,
+    "LIB": -1.5717099908392482,
+    "H7CT": -1.6445815977352412,
+    "H11": -1.8913045896735696
+   },
+   "fam": "PROG",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_155",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.9114139831874558,
+   "word_per_letter": -0.8892264988953262,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.9114139831874558,
+    "H7TXT": -1.550241660948401,
+    "PROG": -1.5956621501479566,
+    "H7CT": -1.6392793929607599,
+    "H11": -1.8671195128879787
+   },
+   "fam": "LIB",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_156",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6283180779637498,
+   "word_per_letter": -0.7131911669312767,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6283180779637498,
+    "LIB": -1.589788191174109,
+    "PROG": -1.6107352475453283,
+    "H7TXT": -1.6325950962107283,
+    "H11": -1.8989574347920333
+   },
+   "fam": "H7CT",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_157",
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.553686217222478,
+   "word_per_letter": -2.8326270102816915,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.553686217222478,
+    "H7TXT": -1.5811755960595977,
+    "LIB": -1.5852515246987957,
+    "H7CT": -1.6418879557516157,
+    "H11": -1.8874160865532983
+   }
+  },
+  {
+   "id": "H_158",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.9735484718470823,
+   "word_per_letter": -1.046866923779629,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.9735484718470823,
+    "H7TXT": -1.5925523822109418,
+    "H7CT": -1.6246662170340584,
+    "PROG": -1.6549920644803144,
+    "H11": -1.857586683993487
+   },
+   "fam": "LIB",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_159",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.640307485574818,
+   "word_per_letter": -0.6945663214724579,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.640307485574818,
+    "PROG": -1.5924583284049918,
+    "LIB": -1.6267113168675875,
+    "H7CT": -1.6270738245592904,
+    "H11": -1.8677459270069279
+   },
+   "fam": "H7TXT",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_160",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8215950960634707,
+   "word_per_letter": -0.8617858771554061,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8215950960634707,
+    "PROG": -1.6188743697844215,
+    "LIB": -1.6319228159839805,
+    "H7CT": -1.650361220438763,
+    "H11": -1.870890307672245
+   },
+   "fam": "H7TXT",
+   "m": 5,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_161",
+   "kind": "NEG_GROMARK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.542926280692066,
+   "word_per_letter": -2.605207908294744,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.542926280692066,
+    "PROG": -1.6078795166206115,
+    "LIB": -1.6136106469274796,
+    "H7CT": -1.6470079107651698,
+    "H11": -1.8895797448247171
+   }
+  },
+  {
+   "id": "H_162",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7068284414110035,
+   "word_per_letter": -0.8373518394188599,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7068284414110035,
+    "H7TXT": -1.566948876172525,
+    "H7CT": -1.5988435731797488,
+    "PROG": -1.6257350542990625,
+    "H11": -1.8928203829708172
+   },
+   "fam": "LIB",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_163",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.683858186425026,
+   "word_per_letter": -0.8957232551447911,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.683858186425026,
+    "H7TXT": -1.6025156301551873,
+    "LIB": -1.6206038283933069,
+    "H7CT": -1.6440674372247814,
+    "H11": -1.8894684279395133
+   },
+   "fam": "PROG",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_164",
+   "kind": "NEG_PTAK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.587581414327304,
+   "word_per_letter": -2.780393883637256,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.587581414327304,
+    "LIB": -1.6064815775193657,
+    "H7TXT": -1.615885061394308,
+    "H7CT": -1.6427255386544257,
+    "H11": -1.8728594094630062
+   }
+  },
+  {
+   "id": "H_165",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5573125116757511,
+   "word_per_letter": -2.7442420114807273,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5573125116757511,
+    "LIB": -1.583726579803474,
+    "H7TXT": -1.6101418266495324,
+    "H7CT": -1.6669639746092029,
+    "H11": -1.8870652806513089
+   }
+  },
+  {
+   "id": "H_166",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.526857439466973,
+   "word_per_letter": -2.8776163007999265,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.526857439466973,
+    "H7TXT": -1.5494358348228114,
+    "LIB": -1.5985457399840821,
+    "H7CT": -1.6261241013516035,
+    "H11": -1.8575036102310591
+   }
+  },
+  {
+   "id": "H_167",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5875458022934799,
+   "word_per_letter": -3.0520864493812097,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5875458022934799,
+    "H7TXT": -1.5988254908414692,
+    "H7CT": -1.5994618114554466,
+    "PROG": -1.635083317142172,
+    "H11": -1.882656371470579
+   }
+  },
+  {
+   "id": "H_168",
+   "kind": "STRETCH",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7000936956424506,
+   "word_per_letter": -0.8014649815676951,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7000936956424506,
+    "H7CT": -1.6213234679523818,
+    "H7TXT": -1.6364047913668083,
+    "LIB": -1.6599320063425094,
+    "H11": -1.9034332563889396
+   },
+   "fam": "PROG",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_169",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.808924229296234,
+   "word_per_letter": -0.8592511003094732,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.808924229296234,
+    "H7TXT": -1.62391658553604,
+    "LIB": -1.644693329554656,
+    "H7CT": -1.6477104115501506,
+    "H11": -1.8980012622681541
+   },
+   "fam": "PROG",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_170",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5443232298028156,
+   "word_per_letter": -2.8130832809316098,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5443232298028156,
+    "PROG": -1.6079556122230194,
+    "LIB": -1.6122685548148512,
+    "H7CT": -1.6590372599318106,
+    "H11": -1.9007027619278307
+   }
+  },
+  {
+   "id": "H_171",
+   "kind": "POS_NONSTD",
+   "best_fam": "H11",
+   "lm_per_letter": -0.8598192432342405,
+   "word_per_letter": -1.056740029451272,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.8598192432342405,
+    "PROG": -1.6274788133780826,
+    "H7CT": -1.6369071103171589,
+    "H7TXT": -1.651000878130345,
+    "LIB": -1.6517483336255723
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_172",
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5604043256529827,
+   "word_per_letter": -2.303681031669283,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5604043256529827,
+    "H7TXT": -1.5984674719037468,
+    "H7CT": -1.6252297014382082,
+    "LIB": -1.6456533951841452,
+    "H11": -1.845023190007382
+   }
+  },
+  {
+   "id": "H_173",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5712545200721504,
+   "word_per_letter": -2.826385447988428,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5712545200721504,
+    "LIB": -1.5894828269560581,
+    "PROG": -1.625872319751448,
+    "H7CT": -1.6409508338889356,
+    "H11": -1.8799319589875407
+   }
+  },
+  {
+   "id": "H_174",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.795094160612711,
+   "word_per_letter": -0.812235385516861,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.795094160612711,
+    "H7CT": -1.6071492526272178,
+    "PROG": -1.6260324980602743,
+    "LIB": -1.6582319459196218,
+    "H11": -1.84582293832425
+   },
+   "fam": "H7TXT",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_175",
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.8763371723774249,
+   "word_per_letter": -1.087736859582842,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.8763371723774249,
+    "PROG": -1.5441457664782479,
+    "LIB": -1.5804683143637843,
+    "H7TXT": -1.5870896750657828,
+    "H11": -1.841855453279292
+   },
+   "fam": "H7CT",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_176",
+   "kind": "STRETCH",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7488119566642689,
+   "word_per_letter": -0.7734499803267941,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7488119566642689,
+    "H7CT": -1.6037806626985367,
+    "PROG": -1.6310228147764796,
+    "LIB": -1.6419102240776278,
+    "H11": -1.8854083287608858
+   },
+   "fam": "H7TXT",
+   "m": 11,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_177",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.9743261843644918,
+   "word_per_letter": -0.9779911048828234,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.9743261843644918,
+    "H7TXT": -1.5817159507447642,
+    "PROG": -1.5973085677347232,
+    "LIB": -1.623757286942996,
+    "H7CT": -1.6436518009694427
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_178",
+   "kind": "NEG_CTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5968946772426507,
+   "word_per_letter": -2.4872378867664606,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5968946772426507,
+    "LIB": -1.6161218247473594,
+    "PROG": -1.6431862016006844,
+    "H7CT": -1.6449745927274841,
+    "H11": -1.875195942511878
+   }
+  },
+  {
+   "id": "H_179",
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5865331014099808,
+   "word_per_letter": -2.7538497155533226,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5865331014099808,
+    "H7TXT": -1.6029549468039852,
+    "H7CT": -1.6255028255538266,
+    "LIB": -1.6256277033502293,
+    "H11": -1.8671201317734325
+   }
+  },
+  {
+   "id": "H_180",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5714061402118065,
+   "word_per_letter": -2.976218393468643,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5714061402118065,
+    "PROG": -1.6347848668540876,
+    "H7CT": -1.6394148241421305,
+    "LIB": -1.6630453559637224,
+    "H11": -1.8557596069174944
+   }
+  },
+  {
+   "id": "H_181",
+   "kind": "STRETCH",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.8023052045101235,
+   "word_per_letter": -0.9221059336181467,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.8023052045101235,
+    "PROG": -1.5027443225850765,
+    "H7TXT": -1.6062761643882264,
+    "LIB": -1.6221038103103638,
+    "H11": -1.853071446501717
+   },
+   "fam": "H7CT",
+   "m": 12,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_182",
+   "kind": "POS",
+   "best_fam": "H11",
+   "lm_per_letter": -0.7815050451678413,
+   "word_per_letter": -0.9609228207973033,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.7815050451678413,
+    "LIB": -1.595894596016169,
+    "H7TXT": -1.6206671163106257,
+    "PROG": -1.63371629989946,
+    "H7CT": -1.6395422364057033
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_183",
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.0217547200382544,
+   "word_per_letter": -1.3416555691172511,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -1.0217547200382544,
+    "H7TXT": -1.5969482102652186,
+    "H7CT": -1.630525172832086,
+    "LIB": -1.6317700874484948,
+    "H11": -1.8850281681318182
+   },
+   "fam": "PROG",
+   "m": 2,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_184",
+   "kind": "POS_NONSTD",
+   "best_fam": "H11",
+   "lm_per_letter": -0.8324639526935121,
+   "word_per_letter": -0.7991587303872906,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.8324639526935121,
+    "PROG": -1.5929692763278318,
+    "H7TXT": -1.5933728330248376,
+    "H7CT": -1.5984320177399005,
+    "LIB": -1.6113013796605524
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_185",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.6122542426143724,
+   "word_per_letter": -2.643445050930015,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.6122542426143724,
+    "H7CT": -1.6278243657086313,
+    "PROG": -1.6309026585809032,
+    "LIB": -1.650267579506353,
+    "H11": -1.8445082647898763
+   }
+  },
+  {
+   "id": "H_186",
+   "kind": "NEG_OTP",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5870946214831982,
+   "word_per_letter": -2.5301306158996573,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5870946214831982,
+    "LIB": -1.6114168320350426,
+    "H7TXT": -1.6151543821870666,
+    "H7CT": -1.6595636932659394,
+    "H11": -1.861233593185538
+   }
+  },
+  {
+   "id": "H_187",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.6061104908777573,
+   "word_per_letter": -2.5750303692964187,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.6061104908777573,
+    "PROG": -1.6062299648741472,
+    "LIB": -1.6273682781101502,
+    "H7CT": -1.6637675306308515,
+    "H11": -1.8973315150774632
+   }
+  },
+  {
+   "id": "H_188",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.7555918710848758,
+   "word_per_letter": -0.7854128316057691,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.7555918710848758,
+    "H7TXT": -1.5830525566929394,
+    "H7CT": -1.6005163332083612,
+    "LIB": -1.6111927100087602,
+    "H11": -1.8749569244874813
+   },
+   "fam": "PROG",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_189",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5856035904152939,
+   "word_per_letter": -2.7688656721121383,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5856035904152939,
+    "PROG": -1.6106142237369625,
+    "H7CT": -1.6338116686752777,
+    "LIB": -1.6602135973492849,
+    "H11": -1.8692782332294995
+   }
+  },
+  {
+   "id": "H_190",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5815381547196086,
+   "word_per_letter": -2.694390321019593,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5815381547196086,
+    "LIB": -1.5885767018045636,
+    "H7TXT": -1.6363789926177448,
+    "H7CT": -1.6389082388318692,
+    "H11": -1.8491257225576134
+   }
+  },
+  {
+   "id": "H_191",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5738858524828456,
+   "word_per_letter": -2.5583097872132154,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5738858524828456,
+    "H7TXT": -1.611803130467528,
+    "PROG": -1.6290000582632331,
+    "H7CT": -1.6662458435622687,
+    "H11": -1.8793369970985294
+   }
+  },
+  {
+   "id": "H_192",
+   "kind": "POS_MISSP",
+   "best_fam": "H11",
+   "lm_per_letter": -0.9621460635481179,
+   "word_per_letter": -1.1668752389323287,
+   "confident": true,
+   "fam_best_lm": {
+    "H11": -0.9621460635481179,
+    "H7TXT": -1.576506281425197,
+    "PROG": -1.5876742011877065,
+    "LIB": -1.6135260159649032,
+    "H7CT": -1.65003194877657
+   },
+   "fam": "H11",
+   "m": null,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_193",
+   "kind": "NEG_CTAK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5621289445720996,
+   "word_per_letter": -2.3816042476336237,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5621289445720996,
+    "H7CT": -1.6269809036448444,
+    "PROG": -1.631533086055064,
+    "H7TXT": -1.6396197133371126,
+    "H11": -1.8938874799719791
+   }
+  },
+  {
+   "id": "H_194",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.570227925425645,
+   "word_per_letter": -2.8716981824429846,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.570227925425645,
+    "H7TXT": -1.5853007851341336,
+    "H7CT": -1.587195151783142,
+    "PROG": -1.610250411996829,
+    "H11": -1.8763001026182444
+   }
+  },
+  {
+   "id": "H_195",
+   "kind": "POS_MISSP",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.1229102392248886,
+   "word_per_letter": -1.4960943919852312,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -1.1229102392248886,
+    "H7CT": -1.1384989607349498,
+    "PROG": -1.5957881928040207,
+    "H7TXT": -1.6126526220864856,
+    "H11": -1.875850500826983
+   },
+   "fam": "H7CT",
+   "m": 6,
+   "letters_right": 94,
+   "exact": false,
+   "recovered": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_196",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.8392177192858934,
+   "word_per_letter": -0.8806872636394569,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.8392177192858934,
+    "PROG": -1.6103095538222914,
+    "H7CT": -1.634121095550429,
+    "LIB": -1.6425137866475048,
+    "H11": -1.8152863120986629
+   },
+   "fam": "H7TXT",
+   "m": 3,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_197",
+   "kind": "NEG_CTAK",
+   "best_fam": "LIB",
+   "lm_per_letter": -1.5980913451171874,
+   "word_per_letter": -2.5070870517837673,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB": -1.5980913451171874,
+    "H7CT": -1.615681357451321,
+    "PROG": -1.620198885804599,
+    "H7TXT": -1.6269648397922247,
+    "H11": -1.921701000254486
+   }
+  },
+  {
+   "id": "H_198",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5861988548458237,
+   "word_per_letter": -2.813797136867931,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5861988548458237,
+    "H7TXT": -1.607796257918643,
+    "LIB": -1.6311141848564148,
+    "H7CT": -1.6491117870108676,
+    "H11": -1.849240757371347
+   }
+  },
+  {
+   "id": "H_199",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5973654902280914,
+   "word_per_letter": -2.6857673077612483,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5973654902280914,
+    "LIB": -1.6178624854643935,
+    "H7CT": -1.6438663610324418,
+    "PROG": -1.649437785311842,
+    "H11": -1.8935586398793864
+   }
+  },
+  {
+   "id": "H_200",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.568831840645253,
+   "word_per_letter": -2.5856184930540405,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.568831840645253,
+    "H7CT": -1.5745156733799226,
+    "PROG": -1.6244056192562752,
+    "LIB": -1.659331486383681,
+    "H11": -1.8811798967497866
+   }
+  },
+  {
+   "id": "H_201",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -1.1270922981117841,
+   "word_per_letter": -1.8149780842933385,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -1.1270922981117841,
+    "H7TXT": -1.5735340635604274,
+    "LIB": -1.6234815804234983,
+    "PROG": -1.6371474118576836,
+    "H11": -1.872055864825691
+   },
+   "fam": "H7CT",
+   "m": 2,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_202",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.9372286196641241,
+   "word_per_letter": -1.0993037651646342,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.9372286196641241,
+    "PROG": -1.6060131614734947,
+    "LIB": -1.6351485141773814,
+    "H7CT": -1.6641201595055688,
+    "H11": -1.870916424722401
+   },
+   "fam": "H7TXT",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_203",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.573667423396381,
+   "word_per_letter": -2.8315136103475504,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.573667423396381,
+    "LIB": -1.5922455899561418,
+    "H7CT": -1.6399535331683062,
+    "H7TXT": -1.6463321040278858,
+    "H11": -1.8847875000582528
+   }
+  },
+  {
+   "id": "H_204",
+   "kind": "POS",
+   "best_fam": "LIB",
+   "lm_per_letter": -0.7580535332614541,
+   "word_per_letter": -0.8125824886047265,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB": -0.7580535332614541,
+    "PROG": -1.6062063955769097,
+    "H7TXT": -1.6081947900124431,
+    "H7CT": -1.6537659813448327,
+    "H11": -1.90623659909386
+   },
+   "fam": "LIB",
+   "m": 7,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_205",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.751548503919507,
+   "word_per_letter": -0.8652890471497664,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.751548503919507,
+    "H7TXT": -1.59840091271806,
+    "LIB": -1.6220805191233294,
+    "H7CT": -1.6474599304810627,
+    "H11": -1.89309505407324
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_206",
+   "kind": "NEG_OTP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.558930413063001,
+   "word_per_letter": -2.5785562517054976,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.558930413063001,
+    "LIB": -1.6016666808540059,
+    "PROG": -1.6144559624960129,
+    "H7CT": -1.6512923284587402,
+    "H11": -1.873545836926121
+   }
+  },
+  {
+   "id": "H_207",
+   "kind": "POS",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.6652725547421292,
+   "word_per_letter": -0.7982498040879542,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.6652725547421292,
+    "H7TXT": -1.5890125261197232,
+    "PROG": -1.6013196880362697,
+    "LIB": -1.622224661281582,
+    "H11": -1.8548752596390616
+   },
+   "fam": "H7CT",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_208",
+   "kind": "POS",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.6333244303094306,
+   "word_per_letter": -0.7363145276001487,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.6333244303094306,
+    "H7TXT": -1.6343612044944054,
+    "LIB": -1.6415867539381934,
+    "H7CT": -1.6450102839273275,
+    "H11": -1.865783196441906
+   },
+   "fam": "PROG",
+   "m": 6,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_209",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.8563285941766939,
+   "word_per_letter": -1.013996845956476,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.8563285941766939,
+    "H7TXT": -1.569911003492043,
+    "H7CT": -1.634161329207721,
+    "LIB": -1.649389459300287,
+    "H11": -1.8713765803378881
+   },
+   "fam": "PROG",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_210",
+   "kind": "POS",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7498284776037386,
+   "word_per_letter": -0.8701828552903529,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7498284776037386,
+    "LIB": -1.584777358400914,
+    "PROG": -1.6410766145473672,
+    "H7CT": -1.6743601532172911,
+    "H11": -1.9000742436223423
+   },
+   "fam": "H7TXT",
+   "m": 4,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_211",
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT",
+   "lm_per_letter": -0.9508197046276278,
+   "word_per_letter": -1.265720593926603,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT": -0.9508197046276278,
+    "LIB": -1.5370940906907786,
+    "PROG": -1.6118968880360889,
+    "H7TXT": -1.629226354661292,
+    "H11": -1.8718648827106683
+   },
+   "fam": "H7CT",
+   "m": 8,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_212",
+   "kind": "NEG_PTAK",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -1.5944292729662866,
+   "word_per_letter": -2.7525113708244504,
+   "confident": false,
+   "fam_best_lm": {
+    "H7TXT": -1.5944292729662866,
+    "PROG": -1.5995969043410931,
+    "H7CT": -1.647463681481145,
+    "LIB": -1.649328098584389,
+    "H11": -1.8795240082077145
+   }
+  },
+  {
+   "id": "H_213",
+   "kind": "POS_MISSP",
+   "best_fam": "PROG",
+   "lm_per_letter": -0.77358893690674,
+   "word_per_letter": -1.0110218747296154,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG": -0.77358893690674,
+    "H7TXT": -1.618282189554314,
+    "LIB": -1.649006404155462,
+    "H7CT": -1.6674016543577628,
+    "H11": -1.855187051113426
+   },
+   "fam": "PROG",
+   "m": 10,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_214",
+   "kind": "NEG_OTP",
+   "best_fam": "PROG",
+   "lm_per_letter": -1.5750160224774141,
+   "word_per_letter": -2.6254363914548353,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG": -1.5750160224774141,
+    "LIB": -1.6082763593144638,
+    "H7TXT": -1.6223519978823966,
+    "H7CT": -1.631930952181214,
+    "H11": -1.838893164525327
+   }
+  },
+  {
+   "id": "H_215",
+   "kind": "POS_MISSP",
+   "best_fam": "H7TXT",
+   "lm_per_letter": -0.7517989803352825,
+   "word_per_letter": -1.2737132680129981,
+   "confident": true,
+   "fam_best_lm": {
+    "H7TXT": -0.7517989803352825,
+    "PROG": -1.5760157754231898,
+    "LIB": -1.6005952635530345,
+    "H7CT": -1.6327129093949329,
+    "H11": -1.888856461060416
+   },
+   "fam": "H7TXT",
+   "m": 9,
+   "letters_right": 97,
+   "exact": true,
+   "recovered": true,
+   "ok": true,
+   "same_family": true
+  }
+ ]
+}
