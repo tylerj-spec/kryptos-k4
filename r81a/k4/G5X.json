@@ -1,0 +1,130 @@
+{
+ "label": "CRIB-ASSISTED EXCLUSION CHECK (post-freeze; a pass is a lead needing independent proof)",
+ "alphabets": 77229,
+ "rows": {
+  "K4": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": {
+    "PA-free": [],
+    "CA-free": []
+   }
+  },
+  "NULL_000": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_001": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_002": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_003": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_004": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_005": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_006": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_007": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_008": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  },
+  "NULL_009": {
+   "settings_x_alphabets": {
+    "PA-free": 37123053552,
+    "CA-free": 37123053552
+   },
+   "feasible": {
+    "PA-free": 0,
+    "CA-free": 0
+   },
+   "feasible_list": null
+  }
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "label": "post-freeze power control for g5x (synthetic only)",
+ "seed": 810600,
+ "all_ok": true,
+ "rows": [
+  {
+   "which": "plant",
+   "spec": [
+    "H7CT",
+    "PA-free",
+    "KRY",
+    "AZ",
+    "BEAU",
+    "lag"
+   ],
+   "alphabet": "OMELET/desc",
+   "setting": {
+    "fam": "H7CT",
+    "m": 7,
+    "L": 39,
+    "pa": "X1",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 1,
+   "found_CA_free": 0,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "H7CT",
+    "PA-free",
+    "KRY",
+    "AZ",
+    "BEAU",
+    "lag"
+   ],
+   "alphabet": "OMELET/desc",
+   "setting": {
+    "fam": "H7CT",
+    "m": 7,
+    "L": 39,
+    "pa": "X1",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  },
+  {
+   "which": "plant",
+   "spec": [
+    "H7CT",
+    "CA-free",
+    "AZ",
+    "KRY",
+    "VIG",
+    "lag"
+   ],
+   "alphabet": "DECIDES/desc",
+   "setting": {
+    "fam": "H7CT",
+    "m": 11,
+    "L": 9,
+    "pa": "AZ",
+    "ca": "X1",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 1,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "H7CT",
+    "CA-free",
+    "AZ",
+    "KRY",
+    "VIG",
+    "lag"
+   ],
+   "alphabet": "DECIDES/desc",
+   "setting": {
+    "fam": "H7CT",
+    "m": 11,
+    "L": 9,
+    "pa": "AZ",
+    "ca": "X1",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  },
+  {
+   "which": "plant",
+   "spec": [
+    "H7TXT",
+    "PA-free",
+    "AZ",
+    "KRY",
+    "VARB",
+    "text"
+   ],
+   "alphabet": "RUBBING/desc",
+   "setting": {
+    "fam": "H7TXT",
+    "m": 2,
+    "text": "K13PT",
+    "d": -1,
+    "o": 564,
+    "pa": "X1",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB"
+   },
+   "found_PA_free": 6,
+   "found_CA_free": 0,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "H7TXT",
+    "PA-free",
+    "AZ",
+    "KRY",
+    "VARB",
+    "text"
+   ],
+   "alphabet": "RUBBING/desc",
+   "setting": {
+    "fam": "H7TXT",
+    "m": 2,
+    "text": "K13PT",
+    "d": -1,
+    "o": 564,
+    "pa": "X1",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  },
+  {
+   "which": "plant",
+   "spec": [
+    "H7TXT",
+    "CA-free",
+    "KRY",
+    "AZ",
+    "BEAU",
+    "text"
+   ],
+   "alphabet": "NEWNESS/asc",
+   "setting": {
+    "fam": "H7TXT",
+    "m": 11,
+    "text": "K13PT",
+    "d": -1,
+    "o": 495,
+    "pa": "KRY",
+    "ca": "X1",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 1,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "H7TXT",
+    "CA-free",
+    "KRY",
+    "AZ",
+    "BEAU",
+    "text"
+   ],
+   "alphabet": "NEWNESS/asc",
+   "setting": {
+    "fam": "H7TXT",
+    "m": 11,
+    "text": "K13PT",
+    "d": -1,
+    "o": 495,
+    "pa": "KRY",
+    "ca": "X1",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  },
+  {
+   "which": "plant",
+   "spec": [
+    "LIB",
+    "PA-free",
+    "AZ",
+    "KRY",
+    "VIG",
+    "lag"
+   ],
+   "alphabet": "HOGARTH/aca",
+   "setting": {
+    "fam": "LIB",
+    "rule": "WK",
+    "rp": [
+     "AZ",
+     1,
+     -1
+    ],
+    "m": 11,
+    "L": 1,
+    "control": false,
+    "pa": "X1",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "found_PA_free": 2,
+   "found_CA_free": 0,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "LIB",
+    "PA-free",
+    "AZ",
+    "KRY",
+    "VIG",
+    "lag"
+   ],
+   "alphabet": "HOGARTH/aca",
+   "setting": {
+    "fam": "LIB",
+    "rule": "WK",
+    "rp": [
+     "AZ",
+     1,
+     -1
+    ],
+    "m": 11,
+    "L": 1,
+    "control": false,
+    "pa": "X1",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  },
+  {
+   "which": "plant",
+   "spec": [
+    "LIB",
+    "CA-free",
+    "AZ",
+    "AZ",
+    "BEAU",
+    "none"
+   ],
+   "alphabet": "REITERATED/asc",
+   "setting": {
+    "fam": "LIB",
+    "rule": "WK",
+    "rp": [
+     "KRY",
+     1,
+     -1
+    ],
+    "m": 5,
+    "L": 0,
+    "control": false,
+    "pa": "AZ",
+    "ca": "X1",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 28,
+   "true_found": true,
+   "ok": true
+  },
+  {
+   "which": "wrong",
+   "spec": [
+    "LIB",
+    "CA-free",
+    "AZ",
+    "AZ",
+    "BEAU",
+    "none"
+   ],
+   "alphabet": "REITERATED/asc",
+   "setting": {
+    "fam": "LIB",
+    "rule": "WK",
+    "rp": [
+     "KRY",
+     1,
+     -1
+    ],
+    "m": 5,
+    "L": 0,
+    "control": false,
+    "pa": "AZ",
+    "ca": "X1",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "found_PA_free": 0,
+   "found_CA_free": 0,
+   "true_found": false,
+   "ok": true
+  }
+ ]
+}

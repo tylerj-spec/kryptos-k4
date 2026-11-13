@@ -1,0 +1,1051 @@
+{
+ "seconds": 2224,
+ "n_pos": 24,
+ "recovered_and_confident_by_fam": {
+  "H7CT_A": [
+   5,
+   6
+  ],
+  "LIB_A": [
+   5,
+   6
+  ],
+  "LIB_G4": [
+   5,
+   6
+  ],
+  "PROG_A": [
+   6,
+   6
+  ]
+ },
+ "by_kind": {
+  "POS": [
+   8,
+   8
+  ],
+  "POS_MISSP": [
+   7,
+   8
+  ],
+  "POS_NONSTD": [
+   6,
+   8
+  ]
+ },
+ "stretch": [
+  [
+   "H7CT_A",
+   12,
+   true,
+   true
+  ],
+  [
+   "LIB_A",
+   11,
+   true,
+   true
+  ],
+  [
+   "LIB_G4",
+   12,
+   true,
+   true
+  ],
+  [
+   "PROG_A",
+   12,
+   true,
+   true
+  ],
+  [
+   "H7CT_A",
+   12,
+   true,
+   true
+  ],
+  [
+   "LIB_A",
+   12,
+   true,
+   true
+  ],
+  [
+   "LIB_G4",
+   11,
+   true,
+   true
+  ],
+  [
+   "PROG_A",
+   12,
+   true,
+   true
+  ]
+ ],
+ "pos_lm_min": -0.9978769683571935,
+ "pos_word_min": -1.5816031598152598,
+ "n_neg": 26,
+ "neg_confident": 0,
+ "neg_lm_max": -1.5005349435545887,
+ "neg_word_max": -2.118302970898039,
+ "neg_lm_top5": [
+  -1.5517540901404874,
+  -1.52980981557525,
+  -1.5255299422212758,
+  -1.5193053753422476,
+  -1.5005349435545887
+ ],
+ "neg_fam_lm_max": {
+  "H7CT_A": -1.5517540901404874,
+  "LIB_A": -1.5601421273169445,
+  "LIB_G4": -1.5005349435545887,
+  "PROG_A": -1.5615677108469697
+ },
+ "theorem_k": {
+  "H7CT_A": 20.535287248755452,
+  "LIB_A": 21.65351485688572,
+  "LIB_G4": 21.278099621661212,
+  "PROG_A": 21.9679893636867,
+  "ALL": 22.205006824452557
+ },
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "misses": [
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_A",
+   "lm": -0.905784922153581,
+   "word": -1.1076017059580565,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.905784922153581,
+    "H7CT_A": -0.9063078908489167,
+    "LIB_G4": -1.5679026054045588,
+    "PROG_A": -1.5898402944548036
+   },
+   "fam": "H7CT_A",
+   "letters_right": 94,
+   "m": 3,
+   "recovered": false
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_G4",
+   "lm": -0.8330653071734747,
+   "word": -0.9845420509713465,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.8330653071734747,
+    "LIB_A": -0.9256696755912025,
+    "PROG_A": -1.6217380786391418,
+    "H7CT_A": -1.635300462921486
+   },
+   "fam": "LIB_A",
+   "letters_right": 85,
+   "m": 2,
+   "recovered": false
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_G4",
+   "lm": -0.6839849785292151,
+   "word": -0.8691491693486555,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.6839849785292151,
+    "LIB_A": -0.7091795525902665,
+    "PROG_A": -1.6240666427255905,
+    "H7CT_A": -1.6390124449091448
+   },
+   "fam": "LIB_G4",
+   "letters_right": 86,
+   "m": 6,
+   "recovered": false
+  }
+ ],
+ "rows": [
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_A",
+   "lm": -0.905784922153581,
+   "word": -1.1076017059580565,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.905784922153581,
+    "H7CT_A": -0.9063078908489167,
+    "LIB_G4": -1.5679026054045588,
+    "PROG_A": -1.5898402944548036
+   },
+   "fam": "H7CT_A",
+   "letters_right": 94,
+   "m": 3,
+   "recovered": false
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT_A",
+   "lm": -0.7576765828323108,
+   "word": -0.8210213409955786,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.7576765828323108,
+    "LIB_A": -1.6122236927295892,
+    "LIB_G4": -1.634642000127699,
+    "PROG_A": -1.660057793611411
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 10,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "H7CT_A",
+   "lm": -0.6999734890804453,
+   "word": -0.7561023866153892,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.6999734890804453,
+    "LIB_A": -0.7525273059325571,
+    "LIB_G4": -1.511544969508943,
+    "PROG_A": -1.5807844371986144
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 9,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "H7CT_A",
+   "lm": -0.6950249154888907,
+   "word": -0.6632140124186796,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.6950249154888907,
+    "LIB_G4": -1.583897800540033,
+    "PROG_A": -1.5874035247726386,
+    "LIB_A": -1.5936425464976693
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_A",
+   "lm": -0.8628439530244183,
+   "word": -1.1285491980607711,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.8628439530244183,
+    "PROG_A": -1.6157585795315885,
+    "LIB_G4": -1.6268711094600485,
+    "H7CT_A": -1.627678010459106
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 9,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_A",
+   "lm": -0.9559894276233198,
+   "word": -1.2558400698019223,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.9559894276233198,
+    "H7CT_A": -1.0367893770843573,
+    "PROG_A": -1.5408604392570626,
+    "LIB_G4": -1.62607271085042
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 10,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "LIB_A",
+   "lm": -0.617868474801296,
+   "word": -0.710818235108852,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.617868474801296,
+    "PROG_A": -1.5733895909178284,
+    "H7CT_A": -1.5936340042917998,
+    "LIB_G4": -1.6238911439539845
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 3,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "LIB_A",
+   "lm": -0.7195147863253343,
+   "word": -0.728922076170753,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.7195147863253343,
+    "H7CT_A": -1.6104756813765186,
+    "PROG_A": -1.613411571283239,
+    "LIB_G4": -1.62431158759564
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 11,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_A",
+   "lm": -0.8180753025178289,
+   "word": -1.0255401949229053,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.8180753025178289,
+    "LIB_G4": -0.9164236659836984,
+    "PROG_A": -1.5804691712285595,
+    "H7CT_A": -1.6416633369823552
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 8,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_G4",
+   "lm": -0.8430761170257216,
+   "word": -1.0849351869599644,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.8430761170257216,
+    "PROG_A": -1.5801719196942472,
+    "LIB_A": -1.6200006904522168,
+    "H7CT_A": -1.6307605289729292
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 9,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "LIB_G4",
+   "lm": -0.6494081289330688,
+   "word": -0.7940513645104003,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.6494081289330688,
+    "LIB_A": -1.0686334389820238,
+    "PROG_A": -1.6030054675299943,
+    "H7CT_A": -1.6188699486329383
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 8,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "LIB_G4",
+   "lm": -0.7516456956547005,
+   "word": -0.8554338000928803,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.7516456956547005,
+    "PROG_A": -1.6044886984295912,
+    "LIB_A": -1.6520121646917125,
+    "H7CT_A": -1.668256324173441
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "PROG_A",
+   "lm": -0.7994987209588112,
+   "word": -0.7907140412730866,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.7994987209588112,
+    "LIB_A": -1.5608868290161348,
+    "LIB_G4": -1.6268762512151729,
+    "H7CT_A": -1.6468367873470193
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 7,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG_A",
+   "lm": -0.9978769683571935,
+   "word": -1.5816031598152598,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.9978769683571935,
+    "LIB_A": -1.5686870822394938,
+    "LIB_G4": -1.6100900437414032,
+    "H7CT_A": -1.6134645640466017
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 8,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "PROG_A",
+   "lm": -0.6713984706583472,
+   "word": -0.7037836283398871,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.6713984706583472,
+    "H7CT_A": -1.5982872960493737,
+    "LIB_A": -1.6035604897800104,
+    "LIB_G4": -1.6325315017368376
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 6,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "PROG_A",
+   "lm": -0.6763062702129432,
+   "word": -0.8532448315902501,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.6763062702129432,
+    "H7CT_A": -1.5985591935627546,
+    "LIB_G4": -1.6155363448425053,
+    "LIB_A": -1.6523641565833818
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "H7CT_A",
+   "lm": -0.9488913410585662,
+   "word": -1.2845125888548443,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.9488913410585662,
+    "LIB_A": -1.5821408670558834,
+    "PROG_A": -1.6016165414996404,
+    "LIB_G4": -1.6331819055467536
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 9,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "H7CT_A",
+   "lm": -0.8142625616648692,
+   "word": -0.9088522835011704,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.8142625616648692,
+    "LIB_G4": -1.3448427470672315,
+    "PROG_A": -1.586260701266847,
+    "LIB_A": -1.6290335706675176
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 2,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "H7CT_A",
+   "lm": -0.797890967118592,
+   "word": -0.8123659012090558,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.797890967118592,
+    "LIB_A": -1.5348495690094441,
+    "PROG_A": -1.6169007111379166,
+    "LIB_G4": -1.6245070845843974
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 10,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "H7CT_A",
+   "lm": -0.697088633117693,
+   "word": -0.7041274656204565,
+   "confident": true,
+   "fam_best_lm": {
+    "H7CT_A": -0.697088633117693,
+    "LIB_G4": -1.5862376204855049,
+    "LIB_A": -1.6068267845308657,
+    "PROG_A": -1.6094909630831062
+   },
+   "fam": "H7CT_A",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_A",
+   "lm": -0.8099693389112591,
+   "word": -1.073187165294969,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.8099693389112591,
+    "PROG_A": -1.6058525604981395,
+    "LIB_G4": -1.6207314926324432,
+    "H7CT_A": -1.64951691031456
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 8,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_G4",
+   "lm": -0.8330653071734747,
+   "word": -0.9845420509713465,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.8330653071734747,
+    "LIB_A": -0.9256696755912025,
+    "PROG_A": -1.6217380786391418,
+    "H7CT_A": -1.635300462921486
+   },
+   "fam": "LIB_A",
+   "letters_right": 85,
+   "m": 2,
+   "recovered": false
+  },
+  {
+   "kind": "POS",
+   "best_fam": "LIB_A",
+   "lm": -0.64904023150411,
+   "word": -0.6930286665061886,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.64904023150411,
+    "PROG_A": -1.565547671399473,
+    "LIB_G4": -1.6090969368023318,
+    "H7CT_A": -1.6751323546638195
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 5,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "LIB_A",
+   "lm": -0.7569638157224619,
+   "word": -0.936333495548704,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_A": -0.7569638157224619,
+    "H7CT_A": -1.5886287605629985,
+    "LIB_G4": -1.5962381090446178,
+    "PROG_A": -1.6160577672735317
+   },
+   "fam": "LIB_A",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "LIB_G4",
+   "lm": -0.9423578960272561,
+   "word": -1.127362953724744,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.9423578960272561,
+    "LIB_A": -1.59840181779078,
+    "PROG_A": -1.604830087114548,
+    "H7CT_A": -1.6428415141711683
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 10,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "LIB_G4",
+   "lm": -0.6839849785292151,
+   "word": -0.8691491693486555,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.6839849785292151,
+    "LIB_A": -0.7091795525902665,
+    "PROG_A": -1.6240666427255905,
+    "H7CT_A": -1.6390124449091448
+   },
+   "fam": "LIB_G4",
+   "letters_right": 86,
+   "m": 6,
+   "recovered": false
+  },
+  {
+   "kind": "POS",
+   "best_fam": "LIB_G4",
+   "lm": -0.7718876493849373,
+   "word": -0.8297548699873672,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.7718876493849373,
+    "PROG_A": -1.5575717989166,
+    "LIB_A": -1.6030569608856147,
+    "H7CT_A": -1.628604662854863
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 8,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "LIB_G4",
+   "lm": -0.6345641029645813,
+   "word": -0.8572982261817492,
+   "confident": true,
+   "fam_best_lm": {
+    "LIB_G4": -0.6345641029645813,
+    "PROG_A": -1.5989436399690884,
+    "LIB_A": -1.6028877182566013,
+    "H7CT_A": -1.6427070310281724
+   },
+   "fam": "LIB_G4",
+   "letters_right": 97,
+   "m": 11,
+   "recovered": true
+  },
+  {
+   "kind": "POS_MISSP",
+   "best_fam": "PROG_A",
+   "lm": -0.9040544917160398,
+   "word": -1.3405418218999101,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.9040544917160398,
+    "LIB_A": -1.5786922261426128,
+    "LIB_G4": -1.5988371984879535,
+    "H7CT_A": -1.6250883787582369
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 6,
+   "recovered": true
+  },
+  {
+   "kind": "POS_NONSTD",
+   "best_fam": "PROG_A",
+   "lm": -0.7556061747089508,
+   "word": -0.9229045701417818,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.7556061747089508,
+    "LIB_G4": -1.5839819853564907,
+    "H7CT_A": -1.6163763007168304,
+    "LIB_A": -1.6270020358461272
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 9,
+   "recovered": true
+  },
+  {
+   "kind": "POS",
+   "best_fam": "PROG_A",
+   "lm": -0.7468124826889684,
+   "word": -0.9505102668710878,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.7468124826889684,
+    "H7CT_A": -1.5847317759600497,
+    "LIB_A": -1.616379397090755,
+    "LIB_G4": -1.6679496522416775
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 10,
+   "recovered": true
+  },
+  {
+   "kind": "STRETCH",
+   "best_fam": "PROG_A",
+   "lm": -0.680595105161834,
+   "word": -0.698836117862122,
+   "confident": true,
+   "fam_best_lm": {
+    "PROG_A": -0.680595105161834,
+    "LIB_A": -1.5340016643090963,
+    "LIB_G4": -1.6376795516416585,
+    "H7CT_A": -1.668174302147836
+   },
+   "fam": "PROG_A",
+   "letters_right": 97,
+   "m": 12,
+   "recovered": true
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_fam": "LIB_A",
+   "lm": -1.5790593957470864,
+   "word": -2.6508675121920793,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5790593957470864,
+    "PROG_A": -1.5854495133359714,
+    "LIB_G4": -1.5931433610541303,
+    "H7CT_A": -1.6105428106852413
+   }
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_fam": "LIB_G4",
+   "lm": -1.52980981557525,
+   "word": -2.5466201455300483,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_G4": -1.52980981557525,
+    "PROG_A": -1.5844332908673846,
+    "H7CT_A": -1.617281119771225,
+    "LIB_A": -1.6364081660237586
+   }
+  },
+  {
+   "kind": "NEG_OTP",
+   "best_fam": "H7CT_A",
+   "lm": -1.5819598346571775,
+   "word": -2.5506045166851066,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT_A": -1.5819598346571775,
+    "PROG_A": -1.594984038704142,
+    "LIB_A": -1.620715330710116,
+    "LIB_G4": -1.6300969835870045
+   }
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_fam": "PROG_A",
+   "lm": -1.57198347543011,
+   "word": -2.5832233835827263,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.57198347543011,
+    "LIB_A": -1.6252300885803614,
+    "LIB_G4": -1.6272753506860476,
+    "H7CT_A": -1.6415010150714018
+   }
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_fam": "LIB_A",
+   "lm": -1.6031541794912947,
+   "word": -2.287980316789328,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.6031541794912947,
+    "PROG_A": -1.6069161350521999,
+    "LIB_G4": -1.64015783603812,
+    "H7CT_A": -1.6619940073680632
+   }
+  },
+  {
+   "kind": "NEG_RUNKEY",
+   "best_fam": "LIB_A",
+   "lm": -1.5601565304893963,
+   "word": -2.5596692762463404,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5601565304893963,
+    "H7CT_A": -1.5843546648447393,
+    "PROG_A": -1.5950932517916578,
+    "LIB_G4": -1.6351360627810096
+   }
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "LIB_A",
+   "lm": -1.579957448253312,
+   "word": -2.4704327989518267,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.579957448253312,
+    "LIB_G4": -1.5919866754779035,
+    "PROG_A": -1.6204602838753117,
+    "H7CT_A": -1.64525444744174
+   }
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG_A",
+   "lm": -1.5888403386595304,
+   "word": -2.506168866744882,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5888403386595304,
+    "H7CT_A": -1.6259725402618193,
+    "LIB_A": -1.6328817158841442,
+    "LIB_G4": -1.6470367602773548
+   }
+  },
+  {
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "PROG_A",
+   "lm": -1.5657174380165502,
+   "word": -2.5735080838181643,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5657174380165502,
+    "LIB_A": -1.5866335495039052,
+    "LIB_G4": -1.5963407056310128,
+    "H7CT_A": -1.661775371923889
+   }
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_fam": "PROG_A",
+   "lm": -1.5668457519147814,
+   "word": -2.669917636929655,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5668457519147814,
+    "LIB_G4": -1.6103531418643657,
+    "LIB_A": -1.6265332196483906,
+    "H7CT_A": -1.6469260307830595
+   }
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_fam": "LIB_G4",
+   "lm": -1.5255299422212758,
+   "word": -2.7172326241300415,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_G4": -1.5255299422212758,
+    "LIB_A": -1.5647253276823454,
+    "PROG_A": -1.5692879202362804,
+    "H7CT_A": -1.6377029096726905
+   }
+  },
+  {
+   "kind": "NEG_GROMARK",
+   "best_fam": "LIB_A",
+   "lm": -1.5910858684747489,
+   "word": -2.577171343331576,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5910858684747489,
+    "LIB_G4": -1.5951346264979274,
+    "H7CT_A": -1.6013699726191992,
+    "PROG_A": -1.622579730663103
+   }
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_fam": "H7CT_A",
+   "lm": -1.5517540901404874,
+   "word": -2.850574414928305,
+   "confident": false,
+   "fam_best_lm": {
+    "H7CT_A": -1.5517540901404874,
+    "LIB_A": -1.565355272848428,
+    "PROG_A": -1.5865533833497578,
+    "LIB_G4": -1.629776805639267
+   }
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_fam": "LIB_A",
+   "lm": -1.575813884366803,
+   "word": -2.5241286954012234,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.575813884366803,
+    "PROG_A": -1.589091102621751,
+    "H7CT_A": -1.6049376479590063,
+    "LIB_G4": -1.6339503503979884
+   }
+  },
+  {
+   "kind": "NEG_PERIODIC",
+   "best_fam": "LIB_A",
+   "lm": -1.573316352038654,
+   "word": -2.5028421310986997,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.573316352038654,
+    "PROG_A": -1.579212261812123,
+    "H7CT_A": -1.640298941998368,
+    "LIB_G4": -1.6506869397078132
+   }
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_fam": "PROG_A",
+   "lm": -1.5903409988302546,
+   "word": -2.3215882859719357,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5903409988302546,
+    "H7CT_A": -1.5985972979058003,
+    "LIB_A": -1.599808243420167,
+    "LIB_G4": -1.6231597803302646
+   }
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_fam": "LIB_A",
+   "lm": -1.5944810442088806,
+   "word": -2.818565328645718,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5944810442088806,
+    "LIB_G4": -1.6074396556569743,
+    "PROG_A": -1.6403199112446039,
+    "H7CT_A": -1.6495305529421138
+   }
+  },
+  {
+   "kind": "NEG_CTAK",
+   "best_fam": "PROG_A",
+   "lm": -1.5694136448281328,
+   "word": -2.396614670433569,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5694136448281328,
+    "LIB_G4": -1.5824815121661757,
+    "LIB_A": -1.6005246044549437,
+    "H7CT_A": -1.640176042439128
+   }
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_fam": "LIB_A",
+   "lm": -1.5601421273169445,
+   "word": -2.4152055995228796,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5601421273169445,
+    "LIB_G4": -1.5900151968847231,
+    "PROG_A": -1.5901967882341945,
+    "H7CT_A": -1.5955685787911038
+   }
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_fam": "LIB_G4",
+   "lm": -1.5193053753422476,
+   "word": -2.6956127324764374,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_G4": -1.5193053753422476,
+    "LIB_A": -1.6161684777933298,
+    "PROG_A": -1.6291347150642848,
+    "H7CT_A": -1.6314268334874926
+   }
+  },
+  {
+   "kind": "NEG_PTAK",
+   "best_fam": "PROG_A",
+   "lm": -1.5791254089281117,
+   "word": -2.6412898749331313,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5791254089281117,
+    "LIB_G4": -1.6306981677861558,
+    "LIB_A": -1.637442989370872,
+    "H7CT_A": -1.6507856550328817
+   }
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG_A",
+   "lm": -1.5691339145185002,
+   "word": -2.8893384086050395,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5691339145185002,
+    "LIB_G4": -1.588073684075444,
+    "H7CT_A": -1.6116833467727776,
+    "LIB_A": -1.6170512266917942
+   }
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "PROG_A",
+   "lm": -1.5615677108469697,
+   "word": -2.5083078007081414,
+   "confident": false,
+   "fam_best_lm": {
+    "PROG_A": -1.5615677108469697,
+    "LIB_A": -1.5975105202349968,
+    "LIB_G4": -1.6328803935693097,
+    "H7CT_A": -1.6536033851737828
+   }
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "LIB_A",
+   "lm": -1.586709668955852,
+   "word": -2.905803255528182,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.586709668955852,
+    "PROG_A": -1.6088750652354402,
+    "LIB_G4": -1.6156234429361893,
+    "H7CT_A": -1.6203119151831902
+   }
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "LIB_A",
+   "lm": -1.5684460473424495,
+   "word": -2.3218209781240087,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_A": -1.5684460473424495,
+    "PROG_A": -1.6018705817573156,
+    "H7CT_A": -1.6276623226855833,
+    "LIB_G4": -1.6291779784003235
+   }
+  },
+  {
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "LIB_G4",
+   "lm": -1.5005349435545887,
+   "word": -2.118302970898039,
+   "confident": false,
+   "fam_best_lm": {
+    "LIB_G4": -1.5005349435545887,
+    "PROG_A": -1.596473100259132,
+    "H7CT_A": -1.5972601192206453,
+    "LIB_A": -1.6100072281473536
+   }
+  }
+ ]
+}

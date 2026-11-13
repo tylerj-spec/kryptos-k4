@@ -1,0 +1,557 @@
+{
+ "label": "CRIB-ASSISTED CHECK of frozen blind work (post-freeze; nothing fitted to the published letters)",
+ "reveal_outcome": "NO_SIGNAL",
+ "rows": {
+  "K4": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_000": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_001": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_002": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_003": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_004": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_005": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_006": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_007": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_008": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  },
+  "NULL_009": {
+   "R81a:H7CT_A": {
+    "settings": 41472,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_A": {
+    "settings": 512448,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:LIB_G4": {
+    "settings": 168000,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R81a:PROG_A": {
+    "settings": 1123200,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7CT": {
+    "settings": 13824,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:H7TXT": {
+    "settings": 774720,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:LIB": {
+    "settings": 170816,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   },
+   "R79:PROG": {
+    "settings": 374400,
+    "exact_feasible": 0,
+    "drop_one_feasible": 0,
+    "drop_one_by_position": {}
+   }
+  }
+ },
+ "k4_flagged": []
+}
