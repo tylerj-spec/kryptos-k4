@@ -1,0 +1,1737 @@
+{
+ "label": "post-freeze cross-check of g5x.py against the explicit cipher (synthetic only)",
+ "seed": 810700,
+ "all_ok": true,
+ "summary": {
+  "plants": 36,
+  "ok": 36,
+  "pairs_checked": 248832,
+  "consistent_found_plant": 780,
+  "consistent_found_wrong": 0
+ },
+ "rows": [
+  {
+   "family": "H7CT",
+   "m": 1,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 11,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "BLOWING/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 84,
+    "hash_join": 84,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT13",
+     "ROT2",
+     "ROT24",
+     "SWAPCV",
+     "SWAPKJ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 2,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 12,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "SLIGHTED/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 42,
+    "hash_join": 42,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT23",
+     "ROT5",
+     "ROT6",
+     "SWAPAV",
+     "SWAPJW"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 3,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 13,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "DRESDEN/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 36,
+    "hash_join": 36,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT10",
+     "ROT12",
+     "ROT15",
+     "SWAPBQ",
+     "SWAPGX",
+     "SWAPOQ",
+     "SWAPUQ",
+     "SWAPYF"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 4,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 37,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "DEGENERATING/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 21,
+    "hash_join": 21,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT11",
+     "ROT14",
+     "ROT2",
+     "SWAPAQ",
+     "SWAPCF",
+     "SWAPCZ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 5,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": 14,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "CORPS/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 22,
+    "hash_join": 22,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT13",
+     "ROT14",
+     "ROT21",
+     "SWAPAY",
+     "SWAPCX",
+     "SWAPFK",
+     "SWAPGV",
+     "SWAPGX",
+     "SWAPZX"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 6,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": 24,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "FILM/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 14,
+    "hash_join": 14,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT17",
+     "ROT20",
+     "ROT24",
+     "SWAPRM",
+     "SWAPYM"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 7,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 7,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "RANCHING/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 54,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT4",
+     "ROT5",
+     "SWAPKQ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 8,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 19,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "ADJOURNMENT/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT23",
+     "ROT4",
+     "ROT6",
+     "SWAPJQ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 9,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 17,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "LANGUISHED/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 9,
+    "hash_join": 9,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT12",
+     "ROT20",
+     "ROT24",
+     "SWAPAY",
+     "SWAPCJ",
+     "SWAPCV",
+     "SWAPHK",
+     "SWAPQJ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 10,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": 34,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "MENU/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT19",
+     "ROT4",
+     "ROT7",
+     "SWAPJX",
+     "SWAPWU"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 11,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 1,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "GRUMPY/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 120,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT12",
+     "ROT6",
+     "SWAPGZ",
+     "SWAPUJ",
+     "SWAPUV"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7CT",
+   "m": 12,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 12,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "DEBIT/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT10",
+     "ROT16",
+     "ROT25",
+     "SWAPYQ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 1,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": [
+    "K13CT",
+    -1,
+    116
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "INDUSTRIALLY/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 96,
+    "hash_join": 96,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT21",
+     "ROT24",
+     "SWAPAL",
+     "SWAPJZ",
+     "SWAPPC"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 2,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": [
+    "K13PT",
+    1,
+    299
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "COUNTENANCE/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 54,
+    "hash_join": 54,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT13",
+     "ROT23",
+     "ROT5",
+     "SWAPAH",
+     "SWAPNA",
+     "SWAPUE",
+     "SWAPZD"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 3,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": [
+    "K13CT",
+    -1,
+    637
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "REHABILITATION/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 44,
+    "hash_join": 44,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT25",
+     "ROT4",
+     "ROT9",
+     "SWAPAR",
+     "SWAPCP",
+     "SWAPKR",
+     "SWAPQP",
+     "SWAPXK",
+     "SWAPXP",
+     "SWAPZC"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 4,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": [
+    "K13CT",
+    -1,
+    121
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "DICTIONARIES/aca",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 15,
+    "hash_join": 15,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT11",
+     "ROT14",
+     "ROT24",
+     "SWAPIN"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 5,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": [
+    "K13PT",
+    1,
+    330
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "PARENT/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 20,
+    "hash_join": 20,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT14",
+     "ROT15",
+     "ROT8",
+     "SWAPFB",
+     "SWAPUQ",
+     "SWAPVG",
+     "SWAPZL",
+     "SWAPZQ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 6,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": [
+    "K13PT",
+    1,
+    269
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "WAGES/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 12,
+    "hash_join": 12,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT21",
+     "ROT23",
+     "ROT9",
+     "SWAPAN",
+     "SWAPNI"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 7,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": [
+    "K13PT",
+    1,
+    182
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "ASCERTAINING/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 5,
+    "hash_join": 5,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT12",
+     "ROT19",
+     "ROT2"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 8,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": [
+    "K13PT",
+    -1,
+    423
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "ODOUR/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT15",
+     "ROT18",
+     "ROT21",
+     "SWAPGF",
+     "SWAPUE",
+     "SWAPUG"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 9,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": [
+    "K13CT",
+    1,
+    567
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "DRAG/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 7,
+    "hash_join": 7,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT12",
+     "ROT23",
+     "ROT4",
+     "SWAPKC",
+     "SWAPMK",
+     "SWAPYC"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 10,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": [
+    "K13CT",
+    -1,
+    282
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "POWHATAN/desc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT14",
+     "ROT18",
+     "ROT9",
+     "SWAPOU",
+     "SWAPQI",
+     "SWAPQL",
+     "SWAPSI"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 11,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": [
+    "K13CT",
+    1,
+    583
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "SATIRE/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT16",
+     "ROT18",
+     "ROT20",
+     "SWAPAQ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "H7TXT",
+   "m": 12,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": [
+    "K13CT",
+    1,
+    282
+   ],
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "FORAYS/asc",
+   "domain_settings": 288,
+   "domain_pairs": 7776,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT22",
+     "ROT4",
+     "ROT7",
+     "SWAPEK",
+     "SWAPFE",
+     "SWAPFT"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 1,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 0,
+   "rule": [
+    "REP",
+    []
+   ],
+   "plant_alphabet": "MATER/desc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 110,
+    "hash_join": 110,
+    "hash_join_outside_domain": 8862,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT21",
+     "ROT23",
+     "SWAPEK",
+     "SWAPLF",
+     "SWAPVU",
+     "SWAPZK",
+     "SWAPZL",
+     "SWAPZY"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 2,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 0,
+   "rule": [
+    "REV",
+    [
+     "Q"
+    ]
+   ],
+   "plant_alphabet": "SCEPTER/desc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 44,
+    "hash_join": 44,
+    "hash_join_outside_domain": 2474,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT10",
+     "ROT24",
+     "SWAPEF",
+     "SWAPFA",
+     "SWAPHG",
+     "SWAPMB",
+     "SWAPND",
+     "SWAPTA",
+     "SWAPWH"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 3,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 2,
+   "rule": [
+    "REV",
+    [
+     "K"
+    ]
+   ],
+   "plant_alphabet": "CHEMICAL/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 7,
+    "hash_join": 7,
+    "hash_join_outside_domain": 25,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT17",
+     "ROT20",
+     "ROT25",
+     "SWAPVX",
+     "SWAPWJ",
+     "SWAPXW"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 4,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 4,
+   "rule": [
+    "WK",
+    [
+     "AZ",
+     0,
+     1
+    ]
+   ],
+   "plant_alphabet": "OUTLIVE/desc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 16,
+    "hash_join": 16,
+    "hash_join_outside_domain": 32,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT1",
+     "ROT19",
+     "ROT5",
+     "SWAPIV",
+     "SWAPSQ",
+     "SWAPTY",
+     "SWAPYJ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 5,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 0,
+   "rule": [
+    "IKN",
+    [
+     "LUCID"
+    ]
+   ],
+   "plant_alphabet": "PARTIE/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT10",
+     "ROT6",
+     "ROT8",
+     "SWAPKP",
+     "SWAPKV",
+     "SWAPPU"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 6,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "AZ",
+   "stream": 1,
+   "rule": [
+    "REV",
+    [
+     "M"
+    ]
+   ],
+   "plant_alphabet": "BRAIN/asc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 9,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT10",
+     "ROT19",
+     "ROT20",
+     "SWAPDP",
+     "SWAPFZ",
+     "SWAPNH"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 7,
+   "mode": "PA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 5,
+   "rule": [
+    "WK",
+    [
+     "ABS",
+     1,
+     -1
+    ]
+   ],
+   "plant_alphabet": "MATHESON/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 11,
+    "hash_join": 11,
+    "hash_join_outside_domain": 11,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT1",
+     "ROT2",
+     "ROT8",
+     "SWAPBK",
+     "SWAPBX",
+     "SWAPCB",
+     "SWAPKJ",
+     "SWAPPB",
+     "SWAPZF"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 8,
+   "mode": "CA-free",
+   "op": "BEAU",
+   "ka": "AZ",
+   "fixed": "KRY",
+   "stream": 2,
+   "rule": [
+    "IKN",
+    [
+     "MAGNETIC"
+    ]
+   ],
+   "plant_alphabet": "FACTIOUS/desc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT19",
+     "ROT24",
+     "ROT7",
+     "SWAPFC"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 9,
+   "mode": "PA-free",
+   "op": "VARB",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 6,
+   "rule": [
+    "WK",
+    [
+     "AZ",
+     0,
+     1
+    ]
+   ],
+   "plant_alphabet": "SEEK/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 8,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "ROT15",
+     "ROT2",
+     "ROT4",
+     "SWAPBC",
+     "SWAPBL",
+     "SWAPKY",
+     "SWAPWL"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 10,
+   "mode": "CA-free",
+   "op": "VIG",
+   "ka": "AZ",
+   "fixed": "AZ",
+   "stream": 0,
+   "rule": [
+    "REV",
+    [
+     "B"
+    ]
+   ],
+   "plant_alphabet": "HUNDWED/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 8,
+    "hash_join": 8,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT10",
+     "ROT21",
+     "ROT6",
+     "SWAPFK",
+     "SWAPHL",
+     "SWAPHR"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 11,
+   "mode": "PA-free",
+   "op": "BEAU",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 2,
+   "rule": [
+    "REV",
+    [
+     "S"
+    ]
+   ],
+   "plant_alphabet": "UPWARD/aca",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 5,
+    "hash_join": 5,
+    "hash_join_outside_domain": 5,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT16",
+     "ROT22",
+     "ROT7"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  },
+  {
+   "family": "LIB",
+   "m": 12,
+   "mode": "CA-free",
+   "op": "VARB",
+   "ka": "KRY",
+   "fixed": "KRY",
+   "stream": 5,
+   "rule": [
+    "REV",
+    [
+     "Q"
+    ]
+   ],
+   "plant_alphabet": "GRUMBLED/asc",
+   "domain_settings": 192,
+   "domain_pairs": 5184,
+   "plant": {
+    "explicit": 6,
+    "hash_join": 6,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": true,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": [
+     "PLANT",
+     "REV",
+     "ROT20",
+     "ROT5",
+     "ROT6",
+     "SWAPNZ"
+    ]
+   },
+   "wrong": {
+    "explicit": 0,
+    "hash_join": 0,
+    "hash_join_outside_domain": 0,
+    "agree": true,
+    "true_found": false,
+    "only_explicit": [],
+    "only_hash_join": [],
+    "alphabets_found": []
+   },
+   "ok": true
+  }
+ ]
+}

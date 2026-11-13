@@ -1,0 +1,695 @@
+{
+ "outcome": "NO_SIGNAL",
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "families": [
+  "H7CT_A",
+  "LIB_A",
+  "LIB_G4",
+  "PROG_A"
+ ],
+ "k4_best": {
+  "text": "PUITYMONSBEENCHABUOISXSETSIZERISTWORESREMCHUGIENWWREMITELERIMPENGMOSHSUDMOUINEAGEFULADSSXIRRUFFCC",
+  "setting": {
+   "fam": "PROG_A",
+   "base": "PROG",
+   "where": "outer",
+   "A1": "KRY",
+   "a": 16,
+   "b": 24,
+   "m": 12,
+   "pa": "PAL",
+   "ca": "AZ",
+   "ka": "AZ",
+   "op": "BEAU",
+   "key": "AKYHCSSPQGTF"
+  },
+  "fam": "PROG_A",
+  "quad": -5.44398832321167,
+  "lm_per_letter": -1.5872871862417184,
+  "word_per_letter": -3.16204531437696
+ },
+ "k4_best_hits": 1,
+ "k4_best_by_fam": {
+  "PROG_A": {
+   "text": "PUITYMONSBEENCHABUOISXSETSIZERISTWORESREMCHUGIENWWREMITELERIMPENGMOSHSUDMOUINEAGEFULADSSXIRRUFFCC",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "KRY",
+    "a": 16,
+    "b": 24,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "AKYHCSSPQGTF"
+   },
+   "fam": "PROG_A",
+   "quad": -5.44398832321167,
+   "lm_per_letter": -1.5872871862417184,
+   "word_per_letter": -3.16204531437696,
+   "hits": 1
+  },
+  "LIB_G4": {
+   "text": "FKTHAPPICLAMBSASTHATGOWHENTLLECWAVEINNDISKSAARADNUKYTENVOHANFILMDRKHBUWISMARENADONSORGCMIRHEYRNUL",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ROT",
+    "rp": [
+     5
+    ],
+    "m": 12,
+    "L": 3,
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "BEAU",
+    "key": "FNNOGUGHEYJL"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.54617977142334,
+   "lm_per_letter": -1.5986824720790707,
+   "word_per_letter": -2.6251573115180826,
+   "hits": 2
+  },
+  "H7CT_A": {
+   "text": "NCDACONMONDASIANDCEELEFTMEWEDOYDEJPOLKARDXTHDDCWOREBHICEBEEDMADERJOASORTUMIMBEHONORTRIKEAUNLWTPHX",
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "ABS",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "L": 11,
+    "m": 12,
+    "key": "ACVJJBRZJHLB"
+   },
+   "fam": "H7CT_A",
+   "quad": -5.6091814041137695,
+   "lm_per_letter": -1.6093873523233324,
+   "word_per_letter": -2.7413742422510117,
+   "hits": 1
+  },
+  "LIB_A": {
+   "text": "GSRLETWEWASOURNRUBSSICAIAECMLKAIRCUTECCATHGRNTKNEVASSMOOPENIMOSOFINCAPERSIXWEBBYASATELIKASABNRAYQ",
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "TRIG",
+    "rp": [
+     "V"
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "VTCDYITTEJMA"
+   },
+   "fam": "LIB_A",
+   "quad": -5.446608543395996,
+   "lm_per_letter": -1.6182042830383654,
+   "word_per_letter": -2.569823616768937,
+   "hits": 1
+  }
+ },
+ "null_best_lm_median": -1.5811368048517513,
+ "null_best_lm_max": -1.5249833729449351,
+ "nulls_at_or_above_k4": 64,
+ "n_nulls": 100,
+ "null_best_hits_max": 5,
+ "theorem_k": {
+  "log10_settings": 22.205006824452557,
+  "cut_uniform_null": -1.1242000817393485,
+  "cut_shuffle_null": -0.9144741564489428,
+  "k4_clears_uniform_cut": false
+ },
+ "packet": [
+  {
+   "text": "PUITYMONSBEENCHABUOISXSETSIZERISTWORESREMCHUGIENWWREMITELERIMPENGMOSHSUDMOUINEAGEFULADSSXIRRUFFCC",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "KRY",
+    "a": 16,
+    "b": 24,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "AKYHCSSPQGTF"
+   },
+   "fam": "PROG_A",
+   "quad": -5.44398832321167,
+   "lm_per_letter": -1.5872871862417184,
+   "word_per_letter": -3.16204531437696,
+   "hits": 1
+  },
+  {
+   "text": "FKTHAPPICLAMBSASTHATGOWHENTLLECWAVEINNDISKSAARADNUKYTENVOHANFILMDRKHBUWISMARENADONSORGCMIRHEYRNUL",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ROT",
+    "rp": [
+     5
+    ],
+    "m": 12,
+    "L": 3,
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "BEAU",
+    "key": "FNNOGUGHEYJL"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.54617977142334,
+   "lm_per_letter": -1.5986824720790707,
+   "word_per_letter": -2.6251573115180826,
+   "hits": 2
+  },
+  {
+   "text": "NCDACONMONDASIANDCEELEFTMEWEDOYDEJPOLKARDXTHDDCWOREBHICEBEEDMADERJOASORTUMIMBEHONORTRIKEAUNLWTPHX",
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "ABS",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "L": 11,
+    "m": 12,
+    "key": "ACVJJBRZJHLB"
+   },
+   "fam": "H7CT_A",
+   "quad": -5.6091814041137695,
+   "lm_per_letter": -1.6093873523233324,
+   "word_per_letter": -2.7413742422510117,
+   "hits": 1
+  },
+  {
+   "text": "GSRLETWEWASOURNRUBSSICAIAECMLKAIRCUTECCATHGRNTKNEVASSMOOPENIMOSOFINCAPERSIXWEBBYASATELIKASABNRAYQ",
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "TRIG",
+    "rp": [
+     "V"
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "VTCDYITTEJMA"
+   },
+   "fam": "LIB_A",
+   "quad": -5.446608543395996,
+   "lm_per_letter": -1.6182042830383654,
+   "word_per_letter": -2.569823616768937,
+   "hits": 1
+  },
+  {
+   "text": "TZSSUBLEUNCTRIFYINSJJHABTSATNOANIGORIOSTRAANOMATAUOSGAPINWERGETROMGMISKOWOFACLOBAPAIANOLONALIGSCE",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "inner",
+    "A1": "AZ",
+    "a": 18,
+    "b": 4,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "LWWPZHEUKEAB"
+   },
+   "fam": "PROG_A",
+   "quad": -5.388394832611084,
+   "lm_per_letter": -1.6189848188426077,
+   "word_per_letter": -2.82664383873055,
+   "hits": 3
+  },
+  {
+   "text": "RNPACAGEIDSBRILDTEVESUDALTOACTPMYMINNYEANUEHKAAFERVIDTHPIMDIGHOOSVILESIRAMAILLURROUTIOMIROBSUSTEE",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "ABS",
+    "a": 1,
+    "b": 7,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG",
+    "key": "NDSFYBXVQJXM"
+   },
+   "fam": "PROG_A",
+   "quad": -5.426848888397217,
+   "lm_per_letter": -1.6248384917265322,
+   "word_per_letter": -2.8279449992655223,
+   "hits": 1
+  },
+  {
+   "text": "DFCHFIVEALONAIDTSAOUNDIMGENOTHONGVPROUTHIMLABGFEWOVTSDOMPISEECHCAMECPTEAZCIERIEFINGDHEDOTRUSCLARG",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "PAL",
+    "a": 22,
+    "b": 23,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "FLMVZTXDXFDO"
+   },
+   "fam": "PROG_A",
+   "quad": -5.462008476257324,
+   "lm_per_letter": -1.6265062314467793,
+   "word_per_letter": -2.845100429117721,
+   "hits": 2
+  },
+  {
+   "text": "CKMARNEBLPTINUSSXAROLLERSEUSUSLIZEWIRCULDYETUPUTIEENTHETNIGHTIDALSTDDGROWHOFUNATHNXTXYOFASPENPOPE",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ROT",
+    "rp": [
+     9
+    ],
+    "m": 12,
+    "L": 1,
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG",
+    "key": "IUWCCEYMHEJT"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.464791297912598,
+   "lm_per_letter": -1.6320187020806844,
+   "word_per_letter": -2.6422463399533904,
+   "hits": 1
+  },
+  {
+   "text": "ODSTSSOPUTYGEUNDQRZAYSMOKEDASROITHLPDUENTONEARCHEWPELOOPFEELBKEOEDGNEWAVIDOVEDESLBURRSINMODEFINAR",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "inner",
+    "A1": "PAL",
+    "a": 9,
+    "b": 12,
+    "m": 12,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "XTNMUSPMXFQD"
+   },
+   "fam": "PROG_A",
+   "quad": -5.475342273712158,
+   "lm_per_letter": -1.6352108405499728,
+   "word_per_letter": -2.455883518811429,
+   "hits": 1
+  },
+  {
+   "text": "ZCGERSFAMEDUNBCKHABOYGLOTMAGTTUESLINSKAUBQANODESALOSEITSCOHNIEGORESENBEKGALUKJOANEAMSDWIGANDADARE",
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "TRIG",
+    "rp": [
+     "E"
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "ODRWLHCPUNXG"
+   },
+   "fam": "LIB_A",
+   "quad": -5.502512454986572,
+   "lm_per_letter": -1.6354098849997079,
+   "word_per_letter": -2.68258354656734,
+   "hits": 4
+  },
+  {
+   "text": "ZCHSRSFAMEDUNBDYHABOYGLOTMBUTTUESLINSKBIBQANODETOLOSEITSCOHOWEGORESENBELUALUKJOANEANGDWIGANDADASS",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "RESTART",
+    "rp": [
+     45
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "ODSKLHCPUNXG"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.507281303405762,
+   "lm_per_letter": -1.6463237811340807,
+   "word_per_letter": -2.7257172603400974,
+   "hits": 4
+  },
+  {
+   "text": "XNDPNTOTHENWERBOTHENIBBSRETROMNYINYHEENNALXBLENVEGATPQBISUROGLPSOUTEAONCLYGCSSINATEDZARALPARLEERC",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "SPLIT",
+    "rp": [
+     29,
+     6
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "PAL",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "OYZTKYUCNIVP"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.526960372924805,
+   "lm_per_letter": -1.6508751460111017,
+   "word_per_letter": -3.1714547361882466,
+   "hits": 2
+  },
+  {
+   "text": "DMCTPLAZAREERTTYOBNBOVYKEUEPAIGABACASSEVEARFTOALSFOGSOMEDSMSFANDWRICELANGCMBCCOMSDODNGARRETTECORP",
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "TRIG",
+    "rp": [
+     "Z"
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "PAL",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "BMYAUTYQNGAI"
+   },
+   "fam": "LIB_A",
+   "quad": -5.526766300201416,
+   "lm_per_letter": -1.6584746395909833,
+   "word_per_letter": -3.2886180927482784,
+   "hits": 2
+  },
+  {
+   "text": "ZETLYREADNOBSCODSFACEOLMWITFAGIMEBANTHANDBATEGAVAKFOONSGAHEYBDEHORREHYBOGLUETMEECLYHGJRINGICONTUX",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ALT",
+    "rp": [
+     8,
+     4
+    ],
+    "m": 12,
+    "L": 7,
+    "pa": "ABS",
+    "ca": "ABS",
+    "ka": "KRY",
+    "op": "VARB",
+    "key": "DBTCIQVUOQPS"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.521109104156494,
+   "lm_per_letter": -1.6597822501333719,
+   "word_per_letter": -2.8944635547337514,
+   "hits": 2
+  },
+  {
+   "text": "IWPROCENIGBTANAHIRKBIAIKALISYIWSIZESTSTOWNSEXAMACINAOTEONAMLARBILCOONEMBOFCONGMIOYWMOUTFEETSRANOS",
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "OMIT",
+    "rp": [
+     "skip"
+    ],
+    "m": 12,
+    "L": 7,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "BEAU",
+    "key": "WLWDDEWPZRNR"
+   },
+   "fam": "LIB_A",
+   "quad": -5.505021095275879,
+   "lm_per_letter": -1.6632296758675085,
+   "word_per_letter": -2.5025733400769474,
+   "hits": 1
+  },
+  {
+   "text": "JAWFAPSTOUSIPAYPYAMEDTDLAYUAIONACINGHTWERERCEWALGOLDDINONANNFLUYIRWAUIAFEGHOMISAWAREROLAUDZHILFEG",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ROT",
+    "rp": [
+     5
+    ],
+    "m": 12,
+    "L": 6,
+    "pa": "AZ",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VARB",
+    "key": "ESWEFKGNRPDD"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.563936710357666,
+   "lm_per_letter": -1.6637601627747423,
+   "word_per_letter": -3.1458080208443704,
+   "hits": 2
+  },
+  {
+   "text": "LUENUNIDZSHWORKINVNGHADECEAPASTARUTHIPATOCLEREMCHNLYLLETTOECKLEYIAKCULTNHTPACCAUTACHEDASSINWAFTWG",
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VIG",
+    "L": 44,
+    "m": 12,
+    "key": "NHQGRLQKHFFU"
+   },
+   "fam": "H7CT_A",
+   "quad": -5.477189064025879,
+   "lm_per_letter": -1.6670973075880218,
+   "word_per_letter": -2.9765213053992627,
+   "hits": 1
+  },
+  {
+   "text": "AYWASEUROFASHELESYCHEATAXORMAENQUAIMFNININUNEAISVSCURATTOTAVERIENWATYPHMICOETMITZUCRADEZVIVUNCEIE",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "KRY",
+    "a": 19,
+    "b": 16,
+    "m": 12,
+    "pa": "KRY",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "LBUJGISIXPDR"
+   },
+   "fam": "PROG_A",
+   "quad": -5.4518938064575195,
+   "lm_per_letter": -1.667726360760706,
+   "word_per_letter": -2.469996389655442,
+   "hits": 0
+  },
+  {
+   "text": "ORCAUSDEGALEANDUPASCEGRLIOZSNHYPURNIGILTBATONAROBHRFEDYONFANWIREXPELSROFONANSEORYIPACTOPSMYTORATR",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "KRY",
+    "a": 22,
+    "b": 24,
+    "m": 12,
+    "pa": "KRY",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "VIG",
+    "key": "VIWXNMNSHEPV"
+   },
+   "fam": "PROG_A",
+   "quad": -5.455185890197754,
+   "lm_per_letter": -1.6685049075479668,
+   "word_per_letter": -2.4396027369529745,
+   "hits": 1
+  },
+  {
+   "text": "NULMUSTDIGUDERNVDMEUSECUREOTTRIBBYRISTOYOURMRDEBIISCUEGROPBFCSTEDCHOSSENMWHAPRLESCOMPTAISWNBRDODF",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "SPLIT",
+    "rp": [
+     41,
+     6
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "AZ",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG",
+    "key": "EOEHAZYOTPMV"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.546637058258057,
+   "lm_per_letter": -1.6725555765850604,
+   "word_per_letter": -2.992560920225058,
+   "hits": 3
+  },
+  {
+   "text": "IMITENEIYNGSPULOWOLMINSTERFORICRESDEZEVLECKLYIBMWKINRESEASSEDSUITETIRMETONGKAYKNOFDHIXORDADONBAYQ",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "PAL",
+    "a": 15,
+    "b": 11,
+    "m": 12,
+    "pa": "AZ",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "ONYEEQUKFKRT"
+   },
+   "fam": "PROG_A",
+   "quad": -5.396994113922119,
+   "lm_per_letter": -1.6755714190682185,
+   "word_per_letter": -3.097106027627826,
+   "hits": 1
+  },
+  {
+   "text": "SWIGITHUEEPROLYALZKEEDWEHEOFGGLASSIDEKAMMARCOSANNDDINAALFETAEDWAHSHKLONDEVABONWORONRWANESSEDDIVES",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "PAL",
+    "a": 16,
+    "b": 21,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG",
+    "key": "RBGZENQPLGVO"
+   },
+   "fam": "PROG_A",
+   "quad": -5.431426048278809,
+   "lm_per_letter": -1.6764205519839661,
+   "word_per_letter": -2.519758776274923,
+   "hits": 3
+  },
+  {
+   "text": "LWETEDERAPORTSADWNAHLOHUDBOSHEYOUMENCOISFOGSTOHEPFFIEDEUKILYFATEWSDOIPHODYCMMESRISEALSUTHROTTOEDB",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "RESTART",
+    "rp": [
+     38
+    ],
+    "m": 12,
+    "L": 0,
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "FYVVFYIPNKZM"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.486004829406738,
+   "lm_per_letter": -1.6785038798932255,
+   "word_per_letter": -2.603030992657022,
+   "hits": 2
+  },
+  {
+   "text": "IDGETGUACHGOTEDOAWOLLLDHAVILYNAHEISGATEYVIROFTASSOITWVELALONPENTOPFEADICOSDNGACSSHSHOHWRIESHOBIGO",
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "inner",
+    "A1": "ABS",
+    "a": 2,
+    "b": 11,
+    "m": 12,
+    "pa": "PAL",
+    "ca": "ABS",
+    "ka": "AZ",
+    "op": "BEAU",
+    "key": "GUIPWYPOLLYI"
+   },
+   "fam": "PROG_A",
+   "quad": -5.450092792510986,
+   "lm_per_letter": -1.6787656339787946,
+   "word_per_letter": -2.8583069523275704,
+   "hits": 0
+  },
+  {
+   "text": "ERTMOFAWORDSHEAIKVAMRPETSSAJWOYHSDIEDMYOFYOCTCAINRHESORANIDBUMBASSFNBALSOKYWESENFOUGHWAYALOURNIDA",
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "ROT",
+    "rp": [
+     3
+    ],
+    "m": 12,
+    "L": 2,
+    "pa": "ABS",
+    "ca": "ABS",
+    "ka": "KRY",
+    "op": "VIG",
+    "key": "CCGWOAYHUFYV"
+   },
+   "fam": "LIB_G4",
+   "quad": -5.527915000915527,
+   "lm_per_letter": -1.6796164112909668,
+   "word_per_letter": -2.320946690251185,
+   "hits": 3
+  }
+ ]
+}

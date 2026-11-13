@@ -1,0 +1,885 @@
+{
+ "label": "post-freeze power control for validate81 (synthetic only)",
+ "seed": 810500,
+ "all_ok": true,
+ "rows": [
+  {
+   "family": "R81a:H7CT_A",
+   "m": 10,
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "BEAU",
+    "L": 16,
+    "m": 10
+   },
+   "plant": {
+    "settings": 41472,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 66,
+   "one_off": {
+    "settings": 41472,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     26,
+     66
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:H7CT_A",
+   "m": 2,
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "PAL",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "BEAU",
+    "L": 14,
+    "m": 2
+   },
+   "plant": {
+    "settings": 41472,
+    "exact": 6,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 24,
+   "one_off": {
+    "settings": 41472,
+    "exact": 0,
+    "drop_one": 8,
+    "planted_flagged": true,
+    "planted_dropped": [
+     24
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:H7CT_A",
+   "m": 3,
+   "setting": {
+    "fam": "H7CT_A",
+    "base": "H7CT",
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "L": 27,
+    "m": 3
+   },
+   "plant": {
+    "settings": 41472,
+    "exact": 4,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 30,
+   "one_off": {
+    "settings": 41472,
+    "exact": 0,
+    "drop_one": 5,
+    "planted_flagged": true,
+    "planted_dropped": [
+     30
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_A",
+   "m": 5,
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "REV",
+    "rp": [
+     "KRYPTOS"
+    ],
+    "m": 5,
+    "L": 5,
+    "pa": "ABS",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "plant": {
+    "settings": 512448,
+    "exact": 2,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 33,
+   "one_off": {
+    "settings": 512448,
+    "exact": 0,
+    "drop_one": 3,
+    "planted_flagged": true,
+    "planted_dropped": [
+     33
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_A",
+   "m": 5,
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "REV",
+    "rp": [
+     "S"
+    ],
+    "m": 5,
+    "L": 4,
+    "pa": "PAL",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 512448,
+    "exact": 24,
+    "drop_one": 3,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 31,
+   "one_off": {
+    "settings": 512448,
+    "exact": 0,
+    "drop_one": 3,
+    "planted_flagged": true,
+    "planted_dropped": [
+     31
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_A",
+   "m": 3,
+   "setting": {
+    "fam": "LIB_A",
+    "base": "LIB",
+    "rule": "REV",
+    "rp": [
+     "D"
+    ],
+    "m": 3,
+    "L": 2,
+    "pa": "PAL",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 512448,
+    "exact": 4,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 65,
+   "one_off": {
+    "settings": 512448,
+    "exact": 0,
+    "drop_one": 11,
+    "planted_flagged": true,
+    "planted_dropped": [
+     65
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_G4",
+   "m": 7,
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "SPLIT",
+    "rp": [
+     32,
+     4
+    ],
+    "m": 7,
+    "L": 0,
+    "pa": "PAL",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 168000,
+    "exact": 2,
+    "drop_one": 4,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 65,
+   "one_off": {
+    "settings": 168000,
+    "exact": 0,
+    "drop_one": 3,
+    "planted_flagged": true,
+    "planted_dropped": [
+     65
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_G4",
+   "m": 2,
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "RESTART",
+    "rp": [
+     38
+    ],
+    "m": 2,
+    "L": 0,
+    "pa": "KRY",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 168000,
+    "exact": 1278,
+    "drop_one": 30,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 68,
+   "one_off": {
+    "settings": 168000,
+    "exact": 111,
+    "drop_one": 1374,
+    "planted_flagged": true,
+    "planted_dropped": [
+     68
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:LIB_G4",
+   "m": 9,
+   "setting": {
+    "fam": "LIB_G4",
+    "base": "LIB",
+    "rule": "SPLIT",
+    "rp": [
+     65,
+     6
+    ],
+    "m": 9,
+    "L": 0,
+    "pa": "ABS",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 168000,
+    "exact": 2,
+    "drop_one": 5,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 26,
+   "one_off": {
+    "settings": 168000,
+    "exact": 0,
+    "drop_one": 4,
+    "planted_flagged": true,
+    "planted_dropped": [
+     26,
+     32
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:PROG_A",
+   "m": 11,
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "outer",
+    "A1": "AZ",
+    "a": 1,
+    "b": 5,
+    "m": 11,
+    "pa": "PAL",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 1123200,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 31,
+   "one_off": {
+    "settings": 1123200,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     31,
+     64
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:PROG_A",
+   "m": 6,
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "inner",
+    "A1": "KRY",
+    "a": 13,
+    "b": 6,
+    "m": 6,
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 1123200,
+    "exact": 2,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 70,
+   "one_off": {
+    "settings": 1123200,
+    "exact": 0,
+    "drop_one": 3,
+    "planted_flagged": true,
+    "planted_dropped": [
+     70
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R81a:PROG_A",
+   "m": 7,
+   "setting": {
+    "fam": "PROG_A",
+    "base": "PROG",
+    "where": "inner",
+    "A1": "AZ",
+    "a": 24,
+    "b": 11,
+    "m": 7,
+    "pa": "ABS",
+    "ca": "PAL",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 1123200,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 28,
+   "one_off": {
+    "settings": 1123200,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     28
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7CT",
+   "m": 9,
+   "setting": {
+    "fam": "H7CT",
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VARB",
+    "m": 9,
+    "L": 9
+   },
+   "plant": {
+    "settings": 13824,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 66,
+   "one_off": {
+    "settings": 13824,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     66
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7CT",
+   "m": 10,
+   "setting": {
+    "fam": "H7CT",
+    "pa": "KRY",
+    "ca": "KRY",
+    "ka": "KRY",
+    "op": "VARB",
+    "m": 10,
+    "L": 47
+   },
+   "plant": {
+    "settings": 13824,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 21,
+   "one_off": {
+    "settings": 13824,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     21
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7CT",
+   "m": 12,
+   "setting": {
+    "fam": "H7CT",
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB",
+    "m": 12,
+    "L": 26
+   },
+   "plant": {
+    "settings": 13824,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 25,
+   "one_off": {
+    "settings": 13824,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     25,
+     73
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7TXT",
+   "m": 11,
+   "setting": {
+    "fam": "H7TXT",
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VIG",
+    "m": 11,
+    "text": "K13CT",
+    "d": -1,
+    "o": 562
+   },
+   "plant": {
+    "settings": 774720,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 33,
+   "one_off": {
+    "settings": 774720,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     33
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7TXT",
+   "m": 10,
+   "setting": {
+    "fam": "H7TXT",
+    "pa": "AZ",
+    "ca": "KRY",
+    "ka": "AZ",
+    "op": "VIG",
+    "m": 10,
+    "text": "K13PT",
+    "d": -1,
+    "o": 509
+   },
+   "plant": {
+    "settings": 774720,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 22,
+   "one_off": {
+    "settings": 774720,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     22
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:H7TXT",
+   "m": 7,
+   "setting": {
+    "fam": "H7TXT",
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG",
+    "m": 7,
+    "text": "K13CT",
+    "d": 1,
+    "o": 163
+   },
+   "plant": {
+    "settings": 774720,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 71,
+   "one_off": {
+    "settings": 774720,
+    "exact": 0,
+    "drop_one": 1,
+    "planted_flagged": true,
+    "planted_dropped": [
+     71
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:LIB",
+   "m": 11,
+   "setting": {
+    "fam": "LIB",
+    "rule": "REV",
+    "rp": [
+     "ABSCISSA"
+    ],
+    "m": 11,
+    "L": 0,
+    "control": false,
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "plant": {
+    "settings": 170816,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 27,
+   "one_off": {
+    "settings": 170816,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     27,
+     67
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:LIB",
+   "m": 2,
+   "setting": {
+    "fam": "LIB",
+    "rule": "CLS",
+    "rp": [
+     "KRYH",
+     0
+    ],
+    "m": 2,
+    "L": 5,
+    "control": false,
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VARB"
+   },
+   "plant": {
+    "settings": 170816,
+    "exact": 6,
+    "drop_one": 4,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 28,
+   "one_off": {
+    "settings": 170816,
+    "exact": 0,
+    "drop_one": 7,
+    "planted_flagged": true,
+    "planted_dropped": [
+     28
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:LIB",
+   "m": 12,
+   "setting": {
+    "fam": "LIB",
+    "rule": "WK",
+    "rp": [
+     "AZ",
+     1,
+     1
+    ],
+    "m": 12,
+    "L": 6,
+    "control": false,
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "KRY",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 170816,
+    "exact": 2,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 27,
+   "one_off": {
+    "settings": 170816,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     27
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:PROG",
+   "m": 2,
+   "setting": {
+    "fam": "PROG",
+    "where": "outer",
+    "A1": "ABS",
+    "a": 13,
+    "b": 11,
+    "m": 2,
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "plant": {
+    "settings": 374400,
+    "exact": 6,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 68,
+   "one_off": {
+    "settings": 374400,
+    "exact": 0,
+    "drop_one": 9,
+    "planted_flagged": true,
+    "planted_dropped": [
+     68
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:PROG",
+   "m": 3,
+   "setting": {
+    "fam": "PROG",
+    "where": "outer",
+    "A1": "KRY",
+    "a": 5,
+    "b": 23,
+    "m": 3,
+    "pa": "AZ",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "VIG"
+   },
+   "plant": {
+    "settings": 374400,
+    "exact": 4,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 25,
+   "one_off": {
+    "settings": 374400,
+    "exact": 0,
+    "drop_one": 6,
+    "planted_flagged": true,
+    "planted_dropped": [
+     25
+    ],
+    "ok": true
+   },
+   "ok": true
+  },
+  {
+   "family": "R79:PROG",
+   "m": 11,
+   "setting": {
+    "fam": "PROG",
+    "where": "inner",
+    "A1": "PAL",
+    "a": 7,
+    "b": 22,
+    "m": 11,
+    "pa": "KRY",
+    "ca": "AZ",
+    "ka": "AZ",
+    "op": "BEAU"
+   },
+   "plant": {
+    "settings": 374400,
+    "exact": 1,
+    "drop_one": 0,
+    "planted_flagged": true,
+    "planted_dropped": [],
+    "ok": true
+   },
+   "one_off_position": 68,
+   "one_off": {
+    "settings": 374400,
+    "exact": 0,
+    "drop_one": 2,
+    "planted_flagged": true,
+    "planted_dropped": [
+     24,
+     68
+    ],
+    "ok": true
+   },
+   "ok": true
+  }
+ ]
+}

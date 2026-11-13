@@ -1,0 +1,78 @@
+name: R81a post-freeze audit
+on:
+  pull_request:
+    paths:
+      - "r81a/**"
+      - ".github/workflows/r81a-postfreeze-audit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression-and-validator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numeric dependency
+        run: python3 -m pip install numpy
+      - name: Original synthetic regression
+        run: python3 -I r81a/tests/test_r81a.py
+      - name: Validator power control (regenerate and compare with the committed file)
+        run: |
+          python3 -I r81a/sealed/control_validate81.py "$RUNNER_TEMP/CONTROL_VALIDATE.json" 3
+          python3 -I r81a/sealed/same_json.py "$RUNNER_TEMP/CONTROL_VALIDATE.json" r81a/k4/CONTROL_VALIDATE.json
+      - name: Reproduce the K4 and shuffle validator counts (exact and drop-one, eight families)
+        run: python3 -I r81a/sealed/repro_validate81.py r81a/k4/TARGET.tsv r81a/k4/VALIDATE.json
+      - name: Cross-check the G5X hash join against the explicit cipher (36 synthetic plants)
+        run: |
+          python3 -I -u r81a/sealed/crosscheck_g5x.py "$RUNNER_TEMP/CROSSCHECK_G5X.json" "$(nproc)"
+          python3 -I r81a/sealed/same_json.py "$RUNNER_TEMP/CROSSCHECK_G5X.json" r81a/k4/CROSSCHECK_G5X.json
+      - name: Save outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r81a-regression-and-validator
+          path: ${{ runner.temp }}/*.json
+  g5x-control:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numeric dependency
+        run: python3 -m pip install numpy
+      - name: G5X power control on the full 77,229-alphabet tier (regenerate and compare)
+        run: |
+          python3 -I -u r81a/sealed/control_g5x.py "$RUNNER_TEMP/CONTROL_G5X.json"
+          python3 -I r81a/sealed/same_json.py "$RUNNER_TEMP/CONTROL_G5X.json" r81a/k4/CONTROL_G5X.json
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r81a-g5x-control
+          path: ${{ runner.temp }}/CONTROL_G5X.json
+  g5x-k4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numeric dependency
+        run: python3 -m pip install numpy
+      - name: Reproduce G5X on K4 and 10 shuffles (regenerate and compare)
+        run: |
+          python3 -I -u r81a/sealed/g5x.py r81a/k4/TARGET.tsv "$RUNNER_TEMP/G5X.json" 10
+          python3 -I r81a/sealed/same_json.py "$RUNNER_TEMP/G5X.json" r81a/k4/G5X.json
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r81a-g5x-k4
+          path: ${{ runner.temp }}/G5X.json
