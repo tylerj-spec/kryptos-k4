@@ -1,0 +1,501 @@
+{
+ "label": "CRIB-ASSISTED (post-freeze validator; never a blind discovery)",
+ "families": [
+  "H7CT",
+  "H7TXT",
+  "LIB",
+  "PROG",
+  "H11"
+ ],
+ "rows": {
+  "K4": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {
+      "3": 1
+     },
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_000": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_001": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {
+      "3": 1
+     },
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {
+      "3": 1
+     },
+     "KRY/AZ/KRY/BEAU": {
+      "3": 1
+     },
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_002": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_003": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {
+      "3": 1
+     },
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {
+      "3": 1
+     },
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_004": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_005": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {
+      "3": 2
+     },
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_006": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {
+      "3": 1
+     }
+    }
+   }
+  },
+  "NULL_007": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_008": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  },
+  "NULL_009": {
+   "H7CT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H7TXT": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "LIB": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "PROG": {
+    "feasible_by_checks": {},
+    "feasible_ge5": 0,
+    "completions": []
+   },
+   "H11": {
+    "routes_with_ge3_checks": 72862,
+    "feasible_by_checks": {
+     "AZ/AZ/KRY/VIG": {},
+     "AZ/AZ/ABS/VIG": {},
+     "KRY/KRY/KRY/VIG": {},
+     "KRY/KRY/ABS/VIG": {},
+     "AZ/KRY/AZ/VIG": {},
+     "AZ/KRY/AZ/BEAU": {},
+     "AZ/KRY/AZ/VARB": {},
+     "AZ/KRY/KRY/VIG": {},
+     "AZ/KRY/KRY/BEAU": {},
+     "AZ/KRY/KRY/VARB": {},
+     "KRY/AZ/AZ/VIG": {},
+     "KRY/AZ/AZ/BEAU": {},
+     "KRY/AZ/AZ/VARB": {},
+     "KRY/AZ/KRY/VIG": {},
+     "KRY/AZ/KRY/BEAU": {},
+     "KRY/AZ/KRY/VARB": {}
+    }
+   }
+  }
+ }
+}
