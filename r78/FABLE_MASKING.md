@@ -282,7 +282,8 @@ alphabets from the four, CA₁ ≠ PA₂, m₁ and m₂ in 2..12, both orders of
 | 20 | λ ≥ −1.01 |
 
 **Gate and rejection.** Plants with random keywords, recovery reported by (m₁, m₂). I expect good recovery to a
-total of about 14 and little above 18. Closed in scope when the gate passes for a pair of lengths and no K4 decode
+total of about 14 and little above 18. *(Corrected 13 Nov 2026: plain ascent over both keys recovered 0 of 48
+plants. One key must be listed or very short; see `r80/FABLE_IDENTIFIABILITY.md` §1.4–1.5.)* Closed in scope when the gate passes for a pair of lengths and no K4 decode
 clears the cut; lengths the gate does not reach stay open and are reported as such.
 
 **Odds.** 0.5–1%. The evenness table (§B2) is neutral to favourable; the crib check's thousands of feasible
