@@ -10,7 +10,8 @@ For each ciphertext and each family (L1, L2, X1, X2):
   pass 2  the family's TOP1 best settings again with 6 starts;
   keep    the family's KEEP best distinct decodes, re-derived by the explicit decryptor (two80.decrypt).
 All kept decodes are re-scored by the letter model; the 5 best, and the best of each family, are stored with word
-scores. Writes OUT/RESULTS.jsonl and OUT/FROZEN.sha256.
+scores. Writes OUT/RESULTS.jsonl and OUT/FROZEN.sha256. Each finished ciphertext is kept in OUT/.partial/ until the
+run completes, so a restarted run resumes (results are deterministic per ciphertext); .partial is removed at the end.
 Usage: python3 -I r80a/blind/run.py LM.bin IN.tsv OUTDIR [PROCS=4] [--fams F1,F2,...]"""
 import hashlib
 import json
@@ -149,12 +150,28 @@ def main():
     for _, ct in rows:
         if len(ct) != 97 or not ct.isalpha() or not ct.isupper():
             raise SystemExit("bad ciphertext")
+    part = out / ".partial"
+    part.mkdir(exist_ok=True)
     res = {}
-    with Pool(procs, initializer=init, initargs=(str(lm), fams)) as pool:
-        for k, r in enumerate(pool.imap_unordered(process, rows, chunksize=1)):
+    for p in part.glob("*.json"):
+        r = json.loads(p.read_text())
+        if r.get("families") == fams:
             res[r["id"]] = r
-            print(f"{k + 1}/{len(rows)} done", flush=True)
+    todo = [r for r in rows if r[0] not in res]
+    print(f"resuming: {len(res)} already done, {len(todo)} to run", flush=True)
+    with Pool(procs, initializer=init, initargs=(str(lm), fams)) as pool:
+        for k, r in enumerate(pool.imap_unordered(process, todo, chunksize=1)):
+            r["families"] = fams
+            (part / f"{r['id']}.json.tmp").write_text(json.dumps(r))
+            (part / f"{r['id']}.json.tmp").replace(part / f"{r['id']}.json")
+            res[r["id"]] = r
+            print(f"{len(res)}/{len(rows)} done", flush=True)
+    for r in res.values():
+        r.pop("families", None)
     (out / "RESULTS.jsonl").write_text("".join(json.dumps(res[r[0]]) + "\n" for r in rows))
+    for p in part.glob("*"):
+        p.unlink()
+    part.rmdir()
     man = [(inp, "input"), (out / "RESULTS.jsonl", "results"),
            (ROOT / "r75/core.py", "core"), (ROOT / "r80a/two80.py", "families"), (ROOT / "r80a/twostage.c", "pass0_c"),
            (ROOT / "r79/solver.py", "solver"), (ROOT / "r79/slotsolve.c", "solver_c"), (Path(__file__), "runner"),
