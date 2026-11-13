@@ -39,7 +39,7 @@ def find_row(st, ct):
 
 
 def main():
-    assert not set(F.NEW192) & set(F.F79.CONV24) and len(F.NEW192) == 168 and len(F.NEW32) == 24
+    assert not set(F.NEWK) & set(F.F79.CONV24) and len(F.NEWK) == 72 and len(F.NEW32) == 24
     assert len(F.PROG_NEW) == 24
     print("1 ok:", len(F.g4defs()), "G4 rules;", {k: round(v, 2) for k, v in F.log10_settings().items()})
     for fam in F.FAMS:

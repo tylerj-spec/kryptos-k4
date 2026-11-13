@@ -1,9 +1,9 @@
 """R81a families (r80/FABLE_IDENTIFIABILITY.md §2.2 G4, G5-blind; no K4 data, no published letters).
 R79's keyword families extended in two ways, solved by the same C solver (r79/slotsolve.c):
-  G5  the PALIMPSEST and ABSCISSA alphabets on the main sides (plaintext, ciphertext and key alphabet each any of
-      AZ / KRY / PAL / ABS); only conventions R79 did not run:
-        H7CT_A  keyword + ciphertext feedback lag 1..48                       (168 new conventions)
-        LIB_A   R79's 982 slot rules, stream none (24 new) or feedback lag 1..7 (168 new)
+  G5  the PALIMPSEST and ABSCISSA alphabets on the main sides (plaintext and ciphertext alphabet each any of
+      AZ / KRY / PAL / ABS; key alphabet AZ or KRY); only conventions R79 did not run:
+        H7CT_A  keyword + ciphertext feedback lag 1..48                       (72 new conventions)
+        LIB_A   R79's 982 slot rules, stream none (24 new) or feedback lag 1..7 (72 new)
         PROG_A  progressive mask, plaintext or ciphertext alphabet PAL or ABS (24 new pa/ca/sign combinations)
   G4  new position rules, every convention (R79's and the new ones):
         LIB_G4  ROT  keyword rotated by d places after each pass: slot = (i + d*(i div m)) mod m
@@ -33,9 +33,9 @@ IDX = {k: v.astype(np.int64) for k, v in core.IDX.items()}
 LET = {k: v.astype(np.int64) for k, v in core.LET.items()}
 MKEY = 12
 FAMS = ("H7CT_A", "LIB_A", "LIB_G4", "PROG_A")
-CONV192 = [(pa, ca, ka, op) for pa in A4 for ca in A4 for ka in A4 for op in ("VIG", "BEAU", "VARB")]
+CONVK = [(pa, ca, ka, op) for pa in A4 for ca in A4 for ka in ("AZ", "KRY") for op in ("VIG", "BEAU", "VARB")]
 CONV32 = [(pa, ca, "AZ", op) for pa in A4 for ca in A4 for op in ("VIG", "BEAU")]
-NEW192 = [c for c in CONV192 if c not in F79.CONV24]
+NEWK = [c for c in CONVK if c not in F79.CONV24]
 NEW32 = [c for c in CONV32 if c not in F79.CONV8]
 PROG_NEW = [(pa, ca, op) for pa in A4 for ca in A4 for op in ("VIG", "BEAU") if "PAL" in (pa, ca) or "ABS" in (pa, ca)]
 
@@ -211,21 +211,21 @@ def chunks(fam, ct):
     mm = np.arange(1, MKEY + 1)
     if fam == "H7CT_A":
         Zs, info = [], []
-        for ci, (pa, ca, ka, op) in enumerate(NEW192):
+        for ci, (pa, ca, ka, op) in enumerate(NEWK):
             for L in range(1, 49):
                 Zs.append(_z(Y, c, ca, ka, op, L))
                 info.append((ci, L))
         Z = np.repeat(np.stack(Zs), MKEY, axis=0)
         M = np.tile(mm, len(Zs))
-        OI = np.repeat([A4.index(NEW192[ci][0]) for ci, _ in info], MKEY)
+        OI = np.repeat([A4.index(NEWK[ci][0]) for ci, _ in info], MKEY)
         yield Z, REPMAP[M], M, OI, ("H7CT_A", info)
     elif fam in ("LIB_A", "LIB_G4"):
         if fam == "LIB_A":
             defs = [(r, p, m, r != "REP") for r, p, m, _ in F79.mapdefs()]
-            convs = {0: NEW32, **{L: NEW192 for L in range(1, 8)}}
+            convs = {0: NEW32, **{L: NEWK for L in range(1, 8)}}
         else:
             defs = g4defs()
-            convs = {0: CONV32, **{L: CONV192 for L in range(1, 8)}}
+            convs = {0: CONV32, **{L: CONVK for L in range(1, 8)}}
         R = np.array([slot_any(r, p, m, ct) for r, p, m, _ in defs], dtype=np.uint8)
         M = np.array([m for _, _, m, _ in defs])
         ok = np.array([d[3] for d in defs])
@@ -257,15 +257,15 @@ def setting(info, row, delta):
     fam = info[0]
     if fam == "H7CT_A":
         ci, L = info[1][row // MKEY]
-        pa, ca, ka, op = NEW192[ci]
+        pa, ca, ka, op = NEWK[ci]
         st = {"fam": fam, "base": "H7CT", "pa": pa, "ca": ca, "ka": ka, "op": op, "L": L, "m": row % MKEY + 1}
     elif fam in ("LIB_A", "LIB_G4"):
         _, L, ci, rows = info
         if fam == "LIB_A":
-            conv = (NEW32 if L == 0 else NEW192)[ci]
+            conv = (NEW32 if L == 0 else NEWK)[ci]
             r, p, m, _ = F79.mapdefs()[int(rows[row])]
         else:
-            conv = (CONV32 if L == 0 else CONV192)[ci]
+            conv = (CONV32 if L == 0 else CONVK)[ci]
             r, p, m, _ = g4defs()[int(rows[row])]
         pa, ca, ka, op = conv
         st = {"fam": fam, "base": "LIB", "rule": r, "rp": list(p), "m": m, "L": L, "pa": pa, "ca": ca, "ka": ka,
@@ -284,7 +284,7 @@ def setting(info, row, delta):
 # ------------------------------------------------------------------------------------------------ plants, counts
 def random_setting(rng, fam, mlo=2, mhi=10):
     if fam == "H7CT_A":
-        pa, ca, ka, op = rng.choice(NEW192)
+        pa, ca, ka, op = rng.choice(NEWK)
         st = {"fam": fam, "base": "H7CT", "pa": pa, "ca": ca, "ka": ka, "op": op, "L": rng.randint(1, 48),
               "m": rng.randint(mlo, mhi)}
     elif fam in ("LIB_A", "LIB_G4"):
@@ -294,7 +294,7 @@ def random_setting(rng, fam, mlo=2, mhi=10):
             defs = [d for d in g4defs() if mlo <= d[2] <= mhi]
         r, p, m, stream_ok = defs[rng.randrange(len(defs))]
         L = rng.randint(1, 7) if stream_ok and rng.random() < 0.5 else 0
-        pool = (NEW32 if L == 0 else NEW192) if fam == "LIB_A" else (CONV32 if L == 0 else CONV192)
+        pool = (NEW32 if L == 0 else NEWK) if fam == "LIB_A" else (CONV32 if L == 0 else CONVK)
         pa, ca, ka, op = rng.choice(pool)
         st = {"fam": fam, "base": "LIB", "rule": r, "rp": list(p), "m": m, "L": L, "pa": pa, "ca": ca, "ka": ka,
               "op": op}
@@ -318,9 +318,9 @@ def log10_settings():
     m12 = list(range(1, MKEY + 1))
     r79 = [d[2] for d in F79.mapdefs()]
     g4 = g4defs()
-    out = {"H7CT_A": lsum(m12 * (len(NEW192) * 48)),
-           "LIB_A": lsum(r79 * len(NEW32) + [m for r, _, m, _ in F79.mapdefs() if r != "REP"] * (7 * len(NEW192))),
-           "LIB_G4": lsum([d[2] for d in g4] * len(CONV32) + [d[2] for d in g4 if d[3]] * (7 * len(CONV192))),
+    out = {"H7CT_A": lsum(m12 * (len(NEWK) * 48)),
+           "LIB_A": lsum(r79 * len(NEW32) + [m for r, _, m, _ in F79.mapdefs() if r != "REP"] * (7 * len(NEWK))),
+           "LIB_G4": lsum([d[2] for d in g4] * len(CONV32) + [d[2] for d in g4 if d[3]] * (7 * len(CONVK))),
            "PROG_A": lsum(m12 * (len(PROG_NEW) * 2 * 3 * 650))}
     top = max(out.values())
     out["ALL"] = float(top + np.log10(sum(10 ** (v - top) for v in out.values())))
