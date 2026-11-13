@@ -1,0 +1,41 @@
+name: R79 post-freeze crib audit
+on:
+  push:
+    branches:
+      - claude/r79-slot-solver
+    paths:
+      - "r79/sealed/validate79_postfreeze.py"
+      - "r79/tests/test_validator79_postfreeze.py"
+      - ".github/workflows/r79-postfreeze-audit.yml"
+  pull_request:
+    paths:
+      - "r79/sealed/validate79_postfreeze.py"
+      - "r79/tests/test_validator79_postfreeze.py"
+      - ".github/workflows/r79-postfreeze-audit.yml"
+permissions:
+  contents: read
+jobs:
+  synthetic-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numeric dependency
+        run: python3 -m pip install numpy
+      - name: Original synthetic regression
+        run: python3 -I r79/tests/test_r79.py
+      - name: New synthetic consistency and H11 cycle regression
+        run: python3 -I r79/tests/test_validator79_postfreeze.py
+      - name: Reproduce K4 keyword exclusions and intersect H11 with cycle closure
+        run: |
+          python3 -I r79/sealed/validate79_postfreeze.py \
+            r79/k4/TARGET.tsv r79/k4/VALIDATE.json \
+            r79/k4/VALIDATE_POSTFREEZE.json
+      - name: Save independent post-freeze audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: r79-postfreeze-crib-audit
+          path: r79/k4/VALIDATE_POSTFREEZE.json

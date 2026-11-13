@@ -107,6 +107,12 @@ Best decode of each family, raw:
 **Next:** LAYERSOLVE, two keyword stages on different tableaux with unknown keywords (`r78/FABLE_MASKING.md` §B7),
 with its own pre-registration and gate.
 
+## Post-freeze audit and scope correction (independent follow-up; not part of the pre-registered gate)
+- The original `r79/sealed/validate79.py`, `r79/PREREGISTRATION.md`, `r79/PROTOCOL.sha256`, blind outputs, and all frozen hashes remain unchanged. The new `r79/sealed/validate79_postfreeze.py` independently rechecks keyword-slot constraints using a sorting algorithm, and intersects H11's **anchor-only** matches with full ciphertext-cycle closure **and** all 24 published letters. Its output is a separate `VALIDATE_POSTFREEZE.json` artifact; the original H11 count of one at three checks is not, by itself, a full-cipher witness.
+- `r79/tests/test_validator79_postfreeze.py` adds synthetic planted-positive and deliberately contradictory known-letter tests for all four keyword families. H11 controls include a true complete cycle and an anchor-compatible but globally impossible cycle. These tests use no K4 letters. The new GitHub Actions job runs the tests and creates the post-freeze audit artifact.
+- **Scope correction for R77 H7:** R79 is **not** an exclusion of all H7 variants proposed in `r77/HYPOTHESES.md`. It fixes the stream alphabet to the key alphabet, fixes the stream sign via the operation, uses ciphertext-feedback lags 1–48 (not 49–96), and tests only the named K1–K3 streams. R77 also proposed independent stream signs/alphabets, plaintext feedback, longer keywords, and a two-tableau H7b composition; these remain outside R79. With arbitrary unknown keyword letters, a separate starting phase is redundant, but these other freedoms are not.
+- This is a post hoc validation improvement, not a retroactive change to the sealed K4 outcome or to the preregistered confidence cut.
+
 **Limitations.**
 - The R79 letter-model cut (−1.30) was set from the development check, before the holdout existed, because these
   families raise the negatives' ceiling to about −1.53. The holdout confirmed it: the best negative was −1.53 and
