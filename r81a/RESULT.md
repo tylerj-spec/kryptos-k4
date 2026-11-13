@@ -2,7 +2,7 @@
 
 **Outcome: NO_SIGNAL.** No family gives a readable K4 decode. The check of the frozen blind work finds no setting
 consistent with the published letters, exactly or with one letter set aside, in the four R81a families or R79's four
-keyword families. G5X_SUMMARY
+keyword families. G5X, with one keyword alphabet free over 77,229 orderings, also finds none.
 
 Pre-registered in `r81a/PREREGISTRATION.md` (commit 9f69f61, `r81a/PROTOCOL.sha256`).
 - Candidates came from the ciphertext only. The blind run was frozen and pushed before any published letter was read.
@@ -24,7 +24,8 @@ Pre-registered in `r81a/PREREGISTRATION.md` (commit 9f69f61, `r81a/PROTOCOL.sha2
 | Sealed reveal (`r81a/k4/REVEAL.json`) | 81c99bf | **NO_SIGNAL** |
 | Check of the frozen blind work, exact and drop-one (`r81a/k4/VALIDATE.json`) | 2075f6b | 0 consistent settings in all eight families, on K4 and on 10 shuffles |
 | Power control for that check (`r81a/k4/CONTROL_VALIDATE.json`; added after it) | 2075f6b | 48/48 |
-| G5X exclusion check (`r81a/k4/G5X.json`) and its power control (`r81a/k4/CONTROL_G5X.json`) | this PR | G5X_STEP |
+| G5X exclusion check (`r81a/k4/G5X.json`) | d7ffec0 | 0 consistent in both modes, on K4 and on 10 shuffles |
+| Power control for G5X (`r81a/k4/CONTROL_G5X.json`; script committed before it ran, d1f1009) | this PR | 12/12 |
 
 ## Sealed gate (fresh books: *Silas Marner*, *Main Street*; negatives from *The Secret Garden*, *Howards End*)
 | Family | Settings per ciphertext | Recovered and confident (bar 18/20) | Exact | ≥ 95 letters | Misspelled | Nonstandard spelling | STRETCH (11–12 letters) | Best negative (letter model) |
@@ -94,15 +95,48 @@ Every setting of the four R81a families and of R79's four keyword families, keyw
   - with one published letter wrong, it is flagged by drop-one at that position in 24/24.
 
 ## G5X: one unknown keyword alphabet (after the reveal; crib-assisted exclusion check)
-G5X_SECTION
+R79's H7CT, H7TXT and LIB families, keyword 1–12 letters, with one keyword alphabet free over R76's 77,229
+large-tier orderings. The other two alphabets are A–Z or KRYPTOS.
+
+| Mode | Free alphabet | Settings × alphabets | K4 consistent | 10 shuffles |
+|---|---|---|---|---|
+| PA-free | plaintext side | 480,688 × 77,229 = 3.71 × 10¹⁰ | **0** | 0 each |
+| CA-free | ciphertext side | 480,688 × 77,229 = 3.71 × 10¹⁰ | **0** | 0 each |
+
+- The settings per mode: H7CT 6,912; H7TXT 387,360; LIB 86,416.
+- Method: an exact hash join. Published letters in the same slot must imply one shift; every setting has at least 12
+  such checks, so a random setting passes for a given alphabet with probability about 26⁻¹² (about 4 × 10⁻⁷ false
+  passes expected over each mode).
+- **Exact, crib-assisted exclusion** of this scope, under the ledger's standing assumptions. It does not rest on the
+  solver or on any scoring.
+- **Power control** (`r81a/sealed/control_g5x.py`, seed 810600; synthetic only; the script was committed before it
+  ran). Six plants, one per family and mode, each with a random large-tier alphabet and K1–K3 plaintext:
+  - the true setting is found in 6/6;
+  - with the "published letters" taken from a different stretch of text, it is found in 0/6, and nothing else is
+    found.
+  - Some plants also return equivalent settings (listed by a re-run of those plants):
+    - LIB with feedback (walking key, 11 slots): 2, the walking key stepping +1 or −1. Both give the same slots.
+    - LIB without a stream (walking key, 5 slots): 28 = 2 × 2 × 7.
+      - 2 directions, as above.
+      - 2 key lengths: 10 slots split each of the 5 further, so they stay consistent.
+      - 7 large-tier alphabets that place the involved ciphertext letters the same way up to a shift. Reversed
+        alphabets pair with the opposite operation.
+    - H7TXT with a 2-letter keyword: 6, the same keyword written out to 2, 4, 6, 8, 10 and 12 letters.
 
 ## What follows (pre-registered row)
-G5X_FOLLOWS
+"Everything negative": the four R81a families are closed in the stated scope.
+
+**Closed scope:**
+- H7CT_A, LIB_A, LIB_G4 and PROG_A: blind, STAT (gate passed).
+- The same four families and R79's four keyword families: excluded exactly, crib-assisted, for keywords of 1–12
+  letters with these alphabets, streams and rules, **also with any one published letter wrong** (G6).
+- R79's H7CT, H7TXT and LIB with one unknown keyword alphabet among R76's 77,229 orderings on the plaintext or the
+  ciphertext side (G5X): excluded exactly.
 
 **Not covered:**
 - keywords of 13 or more letters;
-- two unknown alphabets at once, or an unknown key-numbering alphabet with PAL or ABS on the main sides (R81a ran
-  those sides with ka AZ or KRY only);
+- two unknown alphabets at once;
+- a PALIMPSEST or ABSCISSA key-numbering alphabet (R81a numbered the key by A–Z or KRYPTOS throughout);
 - PROG_A's progressive mask on alphabets other than the four named;
 - rules outside R79's library and R81a's ROT, ALT, RESTART and SPLIT;
 - plaintext-driven variants (G2), the self-progressing keyword (G3) and the rest of r77 H7 (R81b);
