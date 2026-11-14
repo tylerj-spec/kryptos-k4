@@ -23,11 +23,13 @@ jobs:
           python-version: "3.11"
       - name: Synthetic reversibility and mathematical-invariant regressions
         run: python3 -I r82/tests/test_models.py
+      - name: Exact E1/E2/E3 coordinate equivalence and conservation checks
+        run: python3 -I r82/tests/test_equivalences.py
       - name: Assert no archived K4 material enters the synthetic model
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py")]:
+          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py"), Path("r82/tests/test_equivalences.py")]:
               s = path.read_text()
               for forbidden in ("reveal_k4", "k4/TARGET.tsv", "r73/sealed",
                                 "k4kit", "r81a/k4", "CLUES ="):
