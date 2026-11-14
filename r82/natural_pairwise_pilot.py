@@ -16,6 +16,8 @@ Run with repo available: python3 -I r82/natural_pairwise_pilot.py
 from pathlib import Path
 import json
 import numpy as np
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import models as M
 import linked_key as LK
 import pairwise_pilot as P
