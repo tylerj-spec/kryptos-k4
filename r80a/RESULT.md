@@ -135,6 +135,16 @@ more letters, each slot's best single-letter start is too noisy to rank the true
 - **What R80 would run:** K4 plus 100 shuffles, blind, with these four families exactly as gated (about 2.2 hours on
   4 cores). Then freeze, verify, reveal, and check the frozen work. R80 gets its own pre-registration with these
   numbers and runs only on Tyler's go.
+- **Correction, added after the gate (14 Nov): R75's F1X already decides most of R80's K4 range.**
+  - F1X (`r75/sealed/exact.py`, L165) is the exact check for two stacked periodic stages with *any* keys, periods
+    1–26 each, on all four alphabets. These four families are a subset of it.
+  - From K4's published positions alone, 171 of the 180 (listed length 1–15, free length 1–12) cells give F1X
+    ≥ 3 checks. F1X found no readable decode at ≥ 3 checks (best −1.68).
+  - So a blind R80 run would mainly re-test settings already excluded. Its own new ground is the 9 low-check cells
+    (listed words of 11–15 letters against free keys of 8–12), feasible settings F1X could not complete, and a blind
+    rather than crib-assisted decode.
+  - `r80/FABLE_IDENTIFIABILITY.md` §2.2 (row G1) omitted F1X; that omission is mine. Details and the cell table:
+    `r83/DESIGN.md` §2. R80 is therefore optional.
 
 ## Not covered by R80a
 - Listed keys at other phases (mode L+).
