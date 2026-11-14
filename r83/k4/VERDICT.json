@@ -1,0 +1,4375 @@
+{
+ "label": "CRIB-ASSISTED exclusion-only checks (R83a); no decryption",
+ "summary": {
+  "CHANCE": [
+   "EXACT:none:LX",
+   "DROP:none:LX",
+   "DROP:none:PFX",
+   "SHIFT:run1-2:LX",
+   "SHIFT:run1+1:LX",
+   "SHIFT:run2-2:LX",
+   "SHIFT:run2-1:LX",
+   "SHIFT:run2+1:LX",
+   "SHIFT:run2+1:PFX",
+   "F1XD:none:F1X"
+  ],
+  "EXCL": [
+   "EXACT:none:PFX",
+   "EXACT:none:SLX",
+   "EXACT:none:SLX-A",
+   "EXACT:none:SSX",
+   "EXACT:none:WPX",
+   "DROP:none:SLX",
+   "DROP:none:SLX-A",
+   "DROP:none:SSX",
+   "DROP:none:WPX",
+   "SHIFT:run1-2:PFX",
+   "SHIFT:run1-2:SLX",
+   "SHIFT:run1-2:SLX-A",
+   "SHIFT:run1-2:SSX",
+   "SHIFT:run1-2:WPX",
+   "SHIFT:run1-1:LX",
+   "SHIFT:run1-1:PFX",
+   "SHIFT:run1-1:SLX",
+   "SHIFT:run1-1:SLX-A",
+   "SHIFT:run1-1:SSX",
+   "SHIFT:run1-1:WPX",
+   "SHIFT:run1+1:PFX",
+   "SHIFT:run1+1:SLX",
+   "SHIFT:run1+1:SLX-A",
+   "SHIFT:run1+1:SSX",
+   "SHIFT:run1+1:WPX",
+   "SHIFT:run1+2:LX",
+   "SHIFT:run1+2:PFX",
+   "SHIFT:run1+2:SLX",
+   "SHIFT:run1+2:SLX-A",
+   "SHIFT:run1+2:SSX",
+   "SHIFT:run1+2:WPX",
+   "SHIFT:run2-2:PFX",
+   "SHIFT:run2-2:SLX",
+   "SHIFT:run2-2:SLX-A",
+   "SHIFT:run2-2:SSX",
+   "SHIFT:run2-2:WPX",
+   "SHIFT:run2-1:PFX",
+   "SHIFT:run2-1:SLX",
+   "SHIFT:run2-1:SLX-A",
+   "SHIFT:run2-1:SSX",
+   "SHIFT:run2-1:WPX",
+   "SHIFT:run2+1:SLX",
+   "SHIFT:run2+1:SLX-A",
+   "SHIFT:run2+1:SSX",
+   "SHIFT:run2+1:WPX",
+   "SHIFT:run2+2:LX",
+   "SHIFT:run2+2:PFX",
+   "SHIFT:run2+2:SLX",
+   "SHIFT:run2+2:SLX-A",
+   "SHIFT:run2+2:SSX",
+   "SHIFT:run2+2:WPX"
+  ]
+ },
+ "rows": [
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 1,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    1,
+    16,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      "PAL",
+      "ABS",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "PFX",
+   "settings_ge3": 39424,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "SLX-A",
+   "settings_ge3": 800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "SSX",
+   "settings_ge3": 3200,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "EXACT",
+   "variant": "none",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 250,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    229,
+    250,
+    243,
+    248,
+    213
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "AZ",
+      "AZ",
+      "AZ",
+      "AZ",
+      1,
+      1,
+      -1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 19,
+     "w": 3,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      28,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "KRY",
+      "KRY",
+      "AZ",
+      1,
+      1,
+      -1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 19,
+     "w": 3,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      28,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      "PAL",
+      "AZ",
+      1,
+      1,
+      -1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 19,
+     "w": 3,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      28,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "ABS",
+      "AZ",
+      1,
+      1,
+      -1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 19,
+     "w": 3,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      28,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      "PAL",
+      "KRY",
+      -1,
+      -1,
+      -1,
+      "PAL",
+      "KRY"
+     ],
+     "m": 19,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      22,
+      29,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "ABS",
+      "AZ",
+      "KRY",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "KRY"
+     ],
+     "m": 19,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      26
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "AZ",
+      "KRY",
+      1,
+      -1,
+      -1,
+      "KRY",
+      "ABS"
+     ],
+     "m": 19,
+     "w": 11,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      66
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "KRY",
+      "AZ",
+      "PAL",
+      1,
+      1,
+      1,
+      "KRY",
+      "PAL"
+     ],
+     "m": 19,
+     "w": 13,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      64
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "KRY",
+      "AZ",
+      "PAL",
+      1,
+      -1,
+      1,
+      "PAL",
+      "AZ"
+     ],
+     "m": 19,
+     "w": 15,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      65
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "KRY",
+      "ABS",
+      "ABS",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "KRY"
+     ],
+     "m": 19,
+     "w": 16,
+     "d": 1,
+     "rot": 2,
+     "checks": 6,
+     "eff": 5,
+     "dropped": [
+      66
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "AZ",
+      "AZ",
+      "ABS",
+      1,
+      1,
+      1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      69
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "KRY",
+      "KRY",
+      "ABS",
+      1,
+      1,
+      1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      69
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      "PAL",
+      "ABS",
+      1,
+      1,
+      1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      69
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "AZ",
+      "ABS",
+      -1,
+      -1,
+      1,
+      "PAL",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      63
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "ABS",
+      "ABS",
+      1,
+      1,
+      1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      69
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "AZ",
+      "AZ",
+      -1,
+      1,
+      1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      33,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "KRY",
+      "KRY",
+      -1,
+      -1,
+      1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      64
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "KRY",
+      "PAL",
+      "AZ",
+      -1,
+      1,
+      1,
+      "KRY",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      66
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "PAL",
+      "ABS",
+      "PAL",
+      1,
+      -1,
+      1,
+      "AZ",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      33,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "ABS",
+      "KRY",
+      "ABS",
+      -1,
+      1,
+      1,
+      "KRY",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      65,
+      67
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "AZ",
+      "ABS",
+      "AZ",
+      1,
+      -1,
+      1,
+      "ABS",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      66
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "PAL",
+      "AZ",
+      "ABS",
+      -1,
+      1,
+      -1,
+      "AZ",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      33,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "ABS",
+      "AZ",
+      "AZ",
+      -1,
+      -1,
+      -1,
+      "AZ",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      64
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "ABS",
+      "KRY",
+      "KRY",
+      1,
+      1,
+      1,
+      "ABS",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      64
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      "KRY",
+      "KRY",
+      1,
+      1,
+      1,
+      "PAL",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      33,
+      65,
+      69,
+      70
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "AZ",
+      1,
+      -1,
+      1,
+      "ABS",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      23,
+      24
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      "ABS",
+      "ABS",
+      1,
+      -1,
+      -1,
+      "KRY",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      71,
+      72
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "KRY",
+      "AZ",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      33,
+      65,
+      69,
+      70
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      "KRY",
+      "ABS",
+      1,
+      1,
+      -1,
+      "AZ",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      33,
+      65,
+      69,
+      70
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "ABS",
+      "KRY",
+      "ABS",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      27,
+      28,
+      67
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "PAL",
+      "KRY",
+      "KRY",
+      -1,
+      -1,
+      1,
+      "ABS",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 4,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      32
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "KRY",
+      "AZ",
+      "AZ",
+      -1,
+      1,
+      -1,
+      "ABS",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      28
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      "AZ",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      64
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      "PAL",
+      "AZ",
+      1,
+      -1,
+      1,
+      "AZ",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      25
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "AZ",
+      "AZ",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      64
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "AZ",
+      "AZ",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      70
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      "KRY",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      64
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      "KRY",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      70
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "PAL",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      64
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "PAL",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      70
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "ABS",
+      "PAL",
+      1,
+      1,
+      -1,
+      "ABS",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      24
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      "ABS",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      30,
+      64
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      "ABS",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      70
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "AZ",
+      "AZ",
+      "ABS",
+      -1,
+      1,
+      1,
+      "KRY",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      72
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "AZ",
+      "ABS",
+      "ABS",
+      1,
+      1,
+      -1,
+      "KRY",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      27,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "KRY",
+      "KRY",
+      "ABS",
+      -1,
+      1,
+      1,
+      "KRY",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      72
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "PAL",
+      "AZ",
+      "ABS",
+      -1,
+      -1,
+      1,
+      "AZ",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      70
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "PAL",
+      "PAL",
+      "ABS",
+      -1,
+      1,
+      1,
+      "KRY",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      72
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "ABS",
+      "ABS",
+      "ABS",
+      -1,
+      1,
+      1,
+      "KRY",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      72
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "AZ",
+      "KRY",
+      "AZ",
+      -1,
+      1,
+      1,
+      "ABS",
+      "KRY"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": 1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      72
+     ]
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "PFX",
+   "settings_ge3": 39424,
+   "k4_ge3": 17,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    35,
+    19,
+    15,
+    14,
+    20,
+    24,
+    34,
+    29,
+    23,
+    14,
+    23,
+    25,
+    35,
+    12,
+    18,
+    35,
+    28,
+    22,
+    30,
+    39
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "ABS",
+      "KRY",
+      -1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 2,
+     "m": 17,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      31,
+      65
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "KRY",
+      -1
+     ],
+     "beta": "PAL",
+     "f": 1,
+     "L": 2,
+     "m": 17,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      33,
+      67
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      -1
+     ],
+     "beta": "ABS",
+     "f": 1,
+     "L": 2,
+     "m": 24,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "KRY",
+      -1
+     ],
+     "beta": "ABS",
+     "f": 1,
+     "L": 3,
+     "m": 23,
+     "checks": 4,
+     "eff": 4,
+     "dropped": [
+      25,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "KRY",
+      1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 4,
+     "m": 15,
+     "checks": 4,
+     "eff": 4,
+     "dropped": [
+      27,
+      72
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "ABS",
+      -1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 4,
+     "m": 18,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      32,
+      68
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "AZ",
+      1
+     ],
+     "beta": "PAL",
+     "f": -1,
+     "L": 4,
+     "m": 23,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      26,
+      72
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      -1
+     ],
+     "beta": "AZ",
+     "f": 1,
+     "L": 4,
+     "m": 23,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      27,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 5,
+     "m": 15,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      27,
+      72
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      -1
+     ],
+     "beta": "AZ",
+     "f": 1,
+     "L": 5,
+     "m": 15,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      26,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 5,
+     "m": 15,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      28,
+      73
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "ABS",
+      -1
+     ],
+     "beta": "AZ",
+     "f": 1,
+     "L": 6,
+     "m": 19,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      31,
+      69
+     ]
+    },
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      1
+     ],
+     "beta": "ABS",
+     "f": -1,
+     "L": 6,
+     "m": 19,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      33,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "ABS",
+      "PAL",
+      1
+     ],
+     "beta": "AZ",
+     "f": -1,
+     "L": 6,
+     "m": 19,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      33,
+      71
+     ]
+    },
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      1
+     ],
+     "beta": "PAL",
+     "f": -1,
+     "L": 7,
+     "m": 13,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      33,
+      72
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "PAL",
+      -1
+     ],
+     "beta": "ABS",
+     "f": 1,
+     "L": 10,
+     "m": 1,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      73
+     ]
+    },
+    {
+     "conv": [
+      "PAL",
+      "ABS",
+      1
+     ],
+     "beta": "ABS",
+     "f": -1,
+     "L": 10,
+     "m": 1,
+     "checks": 3,
+     "eff": 3,
+     "dropped": [
+      31
+     ]
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "SLX-A",
+   "settings_ge3": 800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "SSX",
+   "settings_ge3": 3200,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "DROP",
+   "variant": "none",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 2,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    2,
+    1,
+    2,
+    1,
+    0
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "KRY",
+      "PAL",
+      "KRY",
+      "PAL",
+      -1,
+      -1,
+      -1,
+      "KRY",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 3,
+     "d": -1,
+     "rot": 1,
+     "checks": 5,
+     "eff": 4
+    },
+    {
+     "conv": [
+      "ABS",
+      "KRY",
+      "ABS",
+      "AZ",
+      -1,
+      1,
+      1,
+      "KRY",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 13,
+     "d": 1,
+     "rot": 1,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "PFX",
+   "settings_ge3": 40192,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "SLX-A",
+   "settings_ge3": 832,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "SSX",
+   "settings_ge3": 3328,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-2",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 0,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    1,
+    1,
+    0,
+    1,
+    2
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "PFX",
+   "settings_ge3": 39680,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "SLX-A",
+   "settings_ge3": 800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "SSX",
+   "settings_ge3": 3200,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1-1",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 2,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    0,
+    1,
+    1,
+    2,
+    0
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "AZ",
+      "PAL",
+      "ABS",
+      "AZ",
+      -1,
+      1,
+      1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 5,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4
+    },
+    {
+     "conv": [
+      "ABS",
+      "ABS",
+      "AZ",
+      "ABS",
+      -1,
+      -1,
+      -1,
+      "KRY",
+      "AZ"
+     ],
+     "m": 20,
+     "w": 7,
+     "d": -1,
+     "rot": 1,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "PFX",
+   "settings_ge3": 38400,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "SLX-A",
+   "settings_ge3": 768,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "SSX",
+   "settings_ge3": 3072,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+1",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 0,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "PFX",
+   "settings_ge3": 37888,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "SLX-A",
+   "settings_ge3": 768,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "SSX",
+   "settings_ge3": 3072,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run1+2",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 1,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    0,
+    10,
+    0,
+    0,
+    1
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "AZ",
+      "AZ",
+      "KRY",
+      "KRY",
+      -1,
+      1,
+      1,
+      "AZ",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 7,
+     "d": -1,
+     "rot": 1,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "PFX",
+   "settings_ge3": 37888,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "SLX-A",
+   "settings_ge3": 768,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "SSX",
+   "settings_ge3": 3072,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-2",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 1,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      "PAL",
+      "PAL",
+      1,
+      -1,
+      -1,
+      "PAL",
+      "ABS"
+     ],
+     "m": 20,
+     "w": 7,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "PFX",
+   "settings_ge3": 38400,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "SLX-A",
+   "settings_ge3": 768,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "SSX",
+   "settings_ge3": 3072,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2-1",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 1,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    0,
+    2,
+    1,
+    0,
+    0
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "KRY",
+      "KRY",
+      "AZ",
+      "ABS",
+      -1,
+      -1,
+      -1,
+      "ABS",
+      "PAL"
+     ],
+     "m": 20,
+     "w": 6,
+     "d": -1,
+     "rot": 2,
+     "checks": 5,
+     "eff": 4
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "PFX",
+   "settings_ge3": 39680,
+   "k4_ge3": 1,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "conv": [
+      "PAL",
+      "PAL",
+      -1
+     ],
+     "beta": "ABS",
+     "f": 1,
+     "L": 10,
+     "m": 1,
+     "checks": 3,
+     "eff": 3
+    }
+   ],
+   "leads": []
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "SLX-A",
+   "settings_ge3": 800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "SSX",
+   "settings_ge3": 3200,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+1",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "LX",
+   "settings_ge3": 96112640,
+   "k4_ge3": 0,
+   "shuffles": 5,
+   "shuffles_ge3": [
+    2,
+    0,
+    1,
+    0,
+    2
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "PFX",
+   "settings_ge3": 40192,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    4,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "SLX",
+   "settings_ge3": 320,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "SLX-A",
+   "settings_ge3": 832,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "SSX",
+   "settings_ge3": 3328,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "SHIFT",
+   "variant": "run2+2",
+   "family": "WPX",
+   "settings_ge3": 12800,
+   "k4_ge3": 0,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "verdict": "EXCL"
+  },
+  {
+   "step": "F1XD",
+   "variant": "none",
+   "family": "F1X",
+   "settings_ge3": 386048,
+   "k4_ge3": 4491,
+   "shuffles": 20,
+   "shuffles_ge3": [
+    4819,
+    4964,
+    3879,
+    4393,
+    4413,
+    3706,
+    4415,
+    3964,
+    4593,
+    4611,
+    4849,
+    4387,
+    4608,
+    4772,
+    4510,
+    4720,
+    2914,
+    5331,
+    3846,
+    4670
+   ],
+   "verdict": "CHANCE",
+   "k4_settings": [
+    {
+     "cfg": [
+      "AZ",
+      "AZ",
+      "ABS",
+      "PAL",
+      -1,
+      1
+     ],
+     "m1": 3,
+     "m2": 23,
+     "checks": 5,
+     "eff": 4,
+     "dropped": [
+      24,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "PAL",
+      "AZ",
+      "KRY",
+      1,
+      1
+     ],
+     "m1": 2,
+     "m2": 24,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "AZ",
+      "KRY",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 4,
+     "m2": 23,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      67
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "AZ",
+      1,
+      -1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "ABS",
+      "KRY",
+      "KRY",
+      -1,
+      1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "AZ",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "PAL",
+      "AZ",
+      "AZ",
+      -1,
+      -1
+     ],
+     "m1": 6,
+     "m2": 15,
+     "checks": 6,
+     "eff": 3,
+     "dropped": [
+      21,
+      66
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "AZ",
+      "KRY",
+      "ABS",
+      1,
+      -1
+     ],
+     "m1": 6,
+     "m2": 22,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "ABS",
+      "PAL",
+      "PAL",
+      -1,
+      1
+     ],
+     "m1": 10,
+     "m2": 11,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "PAL",
+      "AZ",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 13,
+     "m2": 8,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      73
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "PAL",
+      "AZ",
+      "AZ",
+      -1,
+      -1
+     ],
+     "m1": 13,
+     "m2": 8,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      73
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 16,
+     "m2": 5,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "ABS",
+      "ABS",
+      1,
+      1
+     ],
+     "m1": 16,
+     "m2": 5,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "AZ",
+      "ABS",
+      "PAL",
+      1,
+      -1
+     ],
+     "m1": 17,
+     "m2": 4,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      21,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "AZ",
+      "KRY",
+      "PAL",
+      1,
+      -1
+     ],
+     "m1": 23,
+     "m2": 4,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      67
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "KRY",
+      "AZ",
+      "PAL",
+      -1,
+      1
+     ],
+     "m1": 23,
+     "m2": 4,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      67
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 24,
+     "m2": 2,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      21,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "AZ",
+      "PAL",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      22,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "PAL",
+      "AZ",
+      "ABS",
+      1,
+      1
+     ],
+     "m1": 6,
+     "m2": 15,
+     "checks": 6,
+     "eff": 3,
+     "dropped": [
+      22,
+      25,
+      67,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "KRY",
+      "AZ",
+      "ABS",
+      1,
+      -1
+     ],
+     "m1": 6,
+     "m2": 22,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      24,
+      26,
+      66,
+      68,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "PAL",
+      "AZ",
+      "AZ",
+      -1,
+      1
+     ],
+     "m1": 6,
+     "m2": 22,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      28,
+      66,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "PAL",
+      "KRY",
+      -1,
+      1
+     ],
+     "m1": 6,
+     "m2": 22,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      24,
+      26,
+      66,
+      68,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "KRY",
+      "AZ",
+      "KRY",
+      -1,
+      -1
+     ],
+     "m1": 8,
+     "m2": 14,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      64
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "PAL",
+      "ABS",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 14,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      30,
+      64,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "KRY",
+      "AZ",
+      "KRY",
+      -1,
+      -1
+     ],
+     "m1": 8,
+     "m2": 21,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      64
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "PAL",
+      "ABS",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 21,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      30,
+      64,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "PAL",
+      "AZ",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 17,
+     "m2": 4,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      22,
+      73
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "PAL",
+      "ABS",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 23,
+     "m2": 4,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      24,
+      26,
+      68,
+      70,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "ABS",
+      "AZ",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 24,
+     "m2": 2,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      22,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "PAL",
+      "KRY",
+      "ABS",
+      1,
+      -1
+     ],
+     "m1": 2,
+     "m2": 24,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "PAL",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 4,
+     "m2": 23,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      69
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "ABS",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 14,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "ABS",
+      "AZ",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 8,
+     "m2": 14,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "AZ",
+      "PAL",
+      "AZ",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 14,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "KRY",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 21,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "ABS",
+      "AZ",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 8,
+     "m2": 21,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "AZ",
+      "PAL",
+      "AZ",
+      -1,
+      1
+     ],
+     "m1": 8,
+     "m2": 21,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      65
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "PAL",
+      "KRY",
+      "AZ",
+      1,
+      1
+     ],
+     "m1": 10,
+     "m2": 11,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      23,
+      27,
+      67,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "PAL",
+      "PAL",
+      1,
+      1
+     ],
+     "m1": 16,
+     "m2": 5,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "KRY",
+      "ABS",
+      "ABS",
+      -1,
+      1
+     ],
+     "m1": 16,
+     "m2": 5,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "AZ",
+      "KRY",
+      "KRY",
+      1,
+      1
+     ],
+     "m1": 16,
+     "m2": 5,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "ABS",
+      "KRY",
+      "PAL",
+      1,
+      -1
+     ],
+     "m1": 24,
+     "m2": 2,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      23,
+      71
+     ]
+    },
+    {
+     "cfg": [
+      "ABS",
+      "KRY",
+      "ABS",
+      "PAL",
+      -1,
+      -1
+     ],
+     "m1": 2,
+     "m2": 24,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      24,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "AZ",
+      "KRY",
+      "KRY",
+      1,
+      -1
+     ],
+     "m1": 4,
+     "m2": 23,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      24,
+      70
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "ABS",
+      "PAL",
+      "AZ",
+      -1,
+      1
+     ],
+     "m1": 5,
+     "m2": 16,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      24,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "PAL",
+      "KRY",
+      "PAL",
+      "ABS",
+      1,
+      1
+     ],
+     "m1": 6,
+     "m2": 22,
+     "checks": 5,
+     "eff": 3,
+     "dropped": [
+      24,
+      26,
+      28,
+      68,
+      70,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "ABS",
+      "AZ",
+      "PAL",
+      -1,
+      -1
+     ],
+     "m1": 8,
+     "m2": 13,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      24,
+      63
+     ]
+    },
+    {
+     "cfg": [
+      "AZ",
+      "ABS",
+      "PAL",
+      "AZ",
+      1,
+      1
+     ],
+     "m1": 10,
+     "m2": 11,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      24,
+      28,
+      31,
+      64,
+      68,
+      72
+     ]
+    },
+    {
+     "cfg": [
+      "KRY",
+      "PAL",
+      "AZ",
+      "PAL",
+      -1,
+      1
+     ],
+     "m1": 10,
+     "m2": 11,
+     "checks": 4,
+     "eff": 3,
+     "dropped": [
+      24,
+      28,
+      31,
+      64,
+      68,
+      72
+     ]
+    }
+   ],
+   "leads": []
+  }
+ ]
+}
