@@ -1,0 +1,36 @@
+name: R82 synthetic-only method models
+on:
+  pull_request:
+    paths:
+      - "r82/**"
+      - ".github/workflows/r82-synthetic-models.yml"
+  push:
+    branches:
+      - "chatgpt/r82-method-fingerprint"
+    paths:
+      - "r82/**"
+      - ".github/workflows/r82-synthetic-models.yml"
+permissions:
+  contents: read
+jobs:
+  synthetic-reference-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Synthetic reversibility and mathematical-invariant regressions
+        run: python3 -I r82/tests/test_models.py
+      - name: Assert no archived K4 material enters the synthetic model
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py")]:
+              s = path.read_text()
+              for forbidden in ("reveal_k4", "k4/TARGET.tsv", "r73/sealed",
+                                "k4kit", "r81a/k4", "CLUES ="):
+                  assert forbidden not in s, (path, forbidden)
+          print("R82 synthetic-only source guard PASS")
+          PY
