@@ -27,11 +27,27 @@ jobs:
         run: python3 -I r82/tests/test_equivalences.py
       - name: Linked-key synthetic round-trips, schedule and competing-family controls
         run: python3 -I r82/tests/test_linked_key.py
+      - name: Pairwise-key synthetic solver pilot (separate from real K4)
+        run: |
+          python3 -m pip install numpy
+          python3 -I r82/pairwise_pilot.py > /tmp/r82_pairwise_iid.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open("/tmp/r82_pairwise_iid.json"))
+          assert r["seed"] == 8223 and len(r["results"]) == 8
+          assert all(v["plants"] == 16 for v in r["results"])
+          print("Pairwise iid benchmark:", [(v["m"],v["w"],v["exact_key"]) for v in r["results"]])
+          PY
+      - name: Upload synthetic benchmark (never contains K4)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r82-pairwise-iid-benchmark
+          path: /tmp/r82_pairwise_iid.json
       - name: Assert no archived K4 material enters the synthetic model
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py"), Path("r82/tests/test_equivalences.py"), Path("r82/linked_key.py"), Path("r82/tests/test_linked_key.py")]:
+          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py"), Path("r82/tests/test_equivalences.py"), Path("r82/linked_key.py"), Path("r82/tests/test_linked_key.py"), Path("r82/pairwise_pilot.py")]:
               s = path.read_text()
               for forbidden in ("reveal_k4", "k4/TARGET.tsv", "r73/sealed",
                                 "k4kit", "r81a/k4", "CLUES ="):
