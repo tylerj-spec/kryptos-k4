@@ -49,6 +49,7 @@ jobs:
           r=json.load(open("/tmp/r82_natural_pilot.json"))
           assert len(r["rows"]) == 8
           print("Natural English benchmark:", [(v["m"],v["w"],v["key_exact"],v["plain_97"]) for v in r["rows"]])
+          print("Linked versus ordinary-Vigenere wrong-family controls:", [(v["m"],v["w"],round(v["linked_model_score_per_char_mean"],3),round(v["wrong_single_vigenere_score_per_char_mean"],3),v["linkeds_at_or_below_max_wrong"],v["wrong_family_exact_plaintext_count"]) for v in r["rows"]])
           PY
       - name: Upload natural-prose benchmark (spent R81a controls, K4-free)
         uses: actions/upload-artifact@v4
