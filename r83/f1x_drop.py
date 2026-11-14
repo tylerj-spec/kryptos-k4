@@ -24,20 +24,66 @@ from core import AZ, IDX, LET, N  # noqa: E402
 
 
 def feasible_set(c, pos, pk):
+    """{(cfg, m1, m2): checks} for every F1X setting with >= 3 checks that is feasible."""
     col = R75.Collector(None)
     R75.f1x(c, pos, pk, col)
-    return {(tuple(r["setting"]["cfg"]), r["setting"]["m1"], r["setting"]["m2"]) for r in col.rows}, col
+    return {(tuple(r["setting"]["cfg"]), r["setting"]["m1"], r["setting"]["m2"]): r["checks"] for r in col.rows}, col
 
 
 def drop_one(c, pos, pk):
+    """Exact feasible counts by checks, and the settings (>= 3 checks with all 24 letters) infeasible as they stand but
+    feasible once one published letter is set aside, by checks, with the positions whose removal frees them."""
     base, col = feasible_set(c, pos, pk)
-    out = {"exact_feasible_ge3": len(base), "by_position": {}}
+    full = {}
     for a in range(len(pos)):
         keep = np.array([b for b in range(len(pos)) if b != a])
         s, _ = feasible_set(c, pos[keep], pk[keep])
-        new = sorted(s - base)
-        out["by_position"][int(pos[a])] = {"newly_feasible": len(new), "first": [list(x) for x in new[:20]]}
-    return out
+        for k in s:
+            if k not in base:
+                full.setdefault(k, []).append(int(pos[a]))
+    # a setting's checks are counted with all 24 letters (as in exact83), from F1X's own tally of the full check
+    chk, eff = _checks_all(pos)
+    by, bye, fe = {}, {}, {}
+    for k in full:
+        c, e = chk[(k[1], k[2])], eff[(k[1], k[2])]
+        by[c] = by.get(c, 0) + 1
+        bye[e] = bye.get(e, 0) + 1
+    for k in base:
+        e = eff[(k[1], k[2])]
+        fe[e] = fe.get(e, 0) + 1
+    rows = sorted(({"cfg": list(k[0]), "m1": k[1], "m2": k[2], "checks": chk[(k[1], k[2])],
+                    "eff": eff[(k[1], k[2])], "dropped": v}
+                   for k, v in full.items() if chk[(k[1], k[2])] >= R75.MIN_CHECKS), key=lambda r: -r["eff"])
+    return {"feasible_by_checks": dict(sorted(col.feasible["F1X"].items())),
+            "tested_by_checks": dict(sorted(col.tested["F1X"].items())),
+            "feasible_by_eff": dict(sorted(fe.items())),
+            "drop_one_feasible_by_checks": dict(sorted(by.items())), "drop_one_feasible_by_eff": dict(sorted(bye.items())),
+            "drop_one_list": rows[:300],
+            "feasible_list": [{"cfg": list(k[0]), "m1": k[1], "m2": k[2], "checks": v, "eff": eff[(k[1], k[2])]}
+                              for k, v in sorted(base.items(), key=lambda kv: -eff[(kv[0][1], kv[0][2])])][:300]}
+
+
+def _checks_all(pos):
+    """F1X checks (E - V + components, R75's count) and effective strength (E - V) per (m1, m2), all positions."""
+    out, eff = {}, {}
+    for m1 in range(1, 27):
+        for m2 in range(1, 27):
+            par = {}
+
+            def f(x):
+                while par[x] != x:
+                    par[x] = par[par[x]]
+                    x = par[x]
+                return x
+            ends = [(("L", int(p) % m1), ("R", int(p) % m2)) for p in pos]
+            for u, v in ends:
+                par.setdefault(u, u)
+                par.setdefault(v, v)
+            for u, v in ends:
+                par[f(u)] = f(v)
+            out[(m1, m2)] = len(ends) - len(par) + len({f(x) for x in par})
+            eff[(m1, m2)] = len(ends) - len(par)
+    return out, eff
 
 
 def encrypt_f1x(pt, cfg, k1, k2):
@@ -90,8 +136,7 @@ def main():
         res = {}
         for rid, ct in [r for r in rows if r[0] == "K4"] + [r for r in rows if r[0] != "K4"][:n]:
             res[rid] = drop_one(np.array([AZ.index(x) for x in ct]), pos, pk)
-            print(rid, res[rid]["exact_feasible_ge3"], sum(v["newly_feasible"] for v in res[rid]["by_position"].values()),
-                  flush=True)
+            print(rid, res[rid]["drop_one_feasible_by_checks"], flush=True)
         Path(out).write_text(json.dumps(res, indent=1) + "\n")
         return
     raise SystemExit(__doc__)
