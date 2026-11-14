@@ -14,7 +14,7 @@ Reviewed: PR #75 (the R80 design study), #76 (R81a, merged), #78 (R80a, draft) a
 | 2 | Four keyword families in the review queue have no fixed period ≤ 26, so neither F1X nor any other ledger row covers them: the **linked key** (PR #77 ticket L), **keyword + plaintext autokey** (G2 / B1), the **walking key stepped by the plaintext** (WK-P / B1-WALK) and the **per-slot progressive key** (G3 / B2) | Each has a cheap exact check for any key letters, of the same kind as F1X and G5X (§3) |
 | 3 | Those checks are decisive over most of each family's range at K4's published positions: linked key ≥ 5 checks up to keyword length 20 at every row width; walking key ≥ 3 up to ring length 21; per-slot progression ≥ 4 up to keyword length 10 (≥ 3 up to 25 when the keyword re-enciphers itself); plaintext autokey ≥ 3 for lag ≤ 6 with keyword ≤ 12 (§3.2) | The blind solvers that remain to be built are needed only where the checks are weak: long lags, long progressive keywords (§4) |
 | 4 | Code written and tested here: reference ciphers for the four families (`r83/models83.py`) and their exact checks with drop-one (`r83/exact83.py`). Each check equals exhaustive key search on small keys, finds 20/20 plants, and runs in minutes per ciphertext (§5) | R83a is ready to pre-register |
-| 5 | R80b (a better first pass for R80a's long free keys): measured on R80a's spent misses (§4.3) | Decides whether R80b is worth a new gate |
+| 5 | R80b: one quadgram sweep in pass 0 would have kept all 9 of R80a's misses (8 at rank 1, one at 606; ranks were 7,849 to 1.8 million). It makes pass 0 about 8× slower (§4.3) | A real solver fix, but low value for K4 given F1X; not worth a 25-hour gate now |
 
 ## 2. F1X and R80: what is already decided
 R75's F1X (`r75/sealed/exact.py`, L165) checks every pair of periodic stages in place:
@@ -130,7 +130,34 @@ These checks can only exclude; a feasible setting is reported as a count and a s
 ### 4.3 R80b: a better first pass for long free keys
 R80a's 9 misses were all lost by pass 0: the true setting ranked 7,849 to 1.8 million, outside the 4,000 kept. Pass 0 starts each slot at its best single-letter fit and scores the decode by quadgrams, with no ascent.
 
-**Measured here, on the spent misses (`r83/dev/r80b_sweeps.py`):** R80B_RESULT
+**Measured here, on the spent misses (`r83/dev/r80b_sweeps.py`, `r83/results/R80B_SWEEPS.json`).** Each miss's
+true setting was ranked among every setting of its family at its free length, with one quadgram ascent sweep per
+setting added to pass 0:
+
+| Item | Family | Kind | Listed / free length | Rank, pass 0 as gated | Rank, pass 0 + 1 sweep |
+|---|---|---|---|---|---|
+| H_071 | L1 | nonstandard spelling | 5 / 10 | 850,995 | 606 |
+| H_103 | X2 | nonstandard spelling | 3 / 9 | 23,843 | **1** |
+| H_112 | X1 | plain | 3 / 10 | 7,849 | **1** |
+| H_116 | L2 | plain | 9 / 8 | 29,164 | **1** |
+| H_182 | L2 | 2 letters changed | 7 / 8 | 60,536 | **1** |
+| H_000 | L1 | STRETCH | 10 / 11 | 1,810,698 | **1** |
+| H_014 | X2 | STRETCH | 3 / 12 | 11,787 | **1** |
+| H_076 | X1 | STRETCH | 3 / 11 | 51,351 | **1** |
+| H_185 | L1 | STRETCH | 11 / 12 | 772,615 | **1** |
+
+- **All 9 would have been kept** (K0 = 4,000), 8 of them at rank 1. One sweep fixes the noisy single-letter start
+  that loses long free keys.
+- **Cost:** one sweep makes pass 0 about 8× slower through the current slow path: 690–1,200 s per family scan,
+  against about 90–150 s. Applied only to free lengths 8–12, where every miss was, pass 0 goes from about 5 to about
+  30 core-minutes per ciphertext: about 25 hours on 4 cores for a 196-item holdout, 13 hours for K4 and 100
+  shuffles.
+  - Before any gate, the sweep path should get the same per-key table speed-up as the no-sweep path (a change to
+    `r80a/twostage.c` `two_scan`, tested against `two_scan_ref`).
+- **This is development evidence on 9 spent items, not a gate.** R80b would need a fresh sealed holdout. Its
+  negatives also gain from the sweep; only the letter-model cut decides confidence, and the gate would measure it.
+- **Value for K4 is small.** By §2, F1X already decides nearly all of R80's range exactly. R80b matters mainly as a
+  better solver for future two-stage blind work outside F1X's reach. I would not spend a 25-hour gate on it now.
 
 ## 5. Code in this PR
 | File | What | Tested by |
@@ -140,7 +167,7 @@ R80a's 9 misses were all lost by pass 0: the true setting ranked 7,849 to 1.8 mi
 | `r83/tests/test_r83.py` | (1) round trip; (2) every check equals exhaustive search over all keys on small keys, run through the explicit encryptor, on planted ciphertexts and on the same ciphertexts with one published letter changed (92 comparisons); (3) 20/20 plants feasible under their own setting; (4) check table equals the engine | All pass |
 | `r83/results/CHECKS.json` | Checks per cell, from the published positions only | — |
 | `r83/results/SELFTEST.json` | 20 plants; 4 random ciphertexts through every check at full size | 20/20 plants feasible; chance level in §3.2 |
-| `r83/dev/r80b_sweeps.py`, `r83/results/R80B_SWEEPS.json` | §4.3 | — |
+| `r83/dev/r80b_sweeps.py`, `r83/results/R80B_SWEEPS.json` | §4.3: one-sweep ranks of R80a's 9 spent misses | — |
 
 **Run time per ciphertext:** LX 3,610 graph cells about 3 minutes; the other four checks under 2 seconds together. K4 with drop-one plus 20 shuffles is about 1.5 hours on one core.
 
@@ -152,7 +179,7 @@ R80a's 9 misses were all lost by pass 0: the true setting ranked 7,849 to 1.8 mi
 | **R83a** | LX, PFX, WPX, SLX, SLX-A, SSX with drop-one on K4 and 20 shuffles. Then the same with each published run shifted by ±1 and ±2. Also F1X drop-one, the G6 robustness F1X never had, by calling `r75/sealed/exact.py` f1x() with one position removed | about 2 hours | Pre-registration (`r83/PREREGISTRATION.md`, `PROTOCOL.sha256`); **Tyler's go for an exclusion-only check without a blind run first**, as for G5X |
 | R83b | Blind solvers (§4.2) for the cells R83a leaves open, or for any family R83a flags; each with a sealed gate | days | R83a's result |
 | R80 | R80a's families on K4 + 100 shuffles, blind | 2.2 hours | Tyler's go. Optional given F1X (§2) |
-| R80b | A better pass 0, only if §4.3 shows it rescues the long-key misses | a dev check and a new gate | §4.3 |
+| R80b | Pass 0 + 1 sweep for free lengths 8–12 (rescued 9/9 spent misses, §4.3); first speed up the sweep path | a code change, a dev check and a 25-hour gate | Deferred: little K4 value given F1X |
 | R82-F | PR #77's 2 × 13 fractionation | — | Lower priority, agreeing with PR #77's own marginal screen (K4 below all 40 English controls on all four charts). A pre-registered version would need fresh controls and the maximum over charts |
 
 **Not covered by any of this:**
