@@ -1,0 +1,74 @@
+name: R82 synthetic-only method models
+on:
+  pull_request:
+    paths:
+      - "r82/**"
+      - ".github/workflows/r82-synthetic-models.yml"
+  push:
+    branches:
+      - "chatgpt/r82-method-fingerprint"
+    paths:
+      - "r82/**"
+      - ".github/workflows/r82-synthetic-models.yml"
+permissions:
+  contents: read
+jobs:
+  synthetic-reference-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Synthetic reversibility and mathematical-invariant regressions
+        run: python3 -I r82/tests/test_models.py
+      - name: Exact E1/E2/E3 coordinate equivalence and conservation checks
+        run: python3 -I r82/tests/test_equivalences.py
+      - name: Linked-key synthetic round-trips, schedule and competing-family controls
+        run: python3 -I r82/tests/test_linked_key.py
+      - name: Stage-zero masking absorbs into tableau or loses invertibility
+        run: python3 -I r82/tests/test_mask_absorption.py
+      - name: Pairwise-key synthetic solver pilot (separate from real K4)
+        run: |
+          python3 -m pip install numpy
+          python3 -I r82/pairwise_pilot.py > /tmp/r82_pairwise_iid.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open("/tmp/r82_pairwise_iid.json"))
+          assert r["seed"] == 8223 and len(r["results"]) == 8
+          assert all(v["plants"] == 16 for v in r["results"])
+          print("Pairwise iid benchmark:", [(v["m"],v["w"],v["exact_key"]) for v in r["results"]])
+          PY
+      - name: Natural English developer pilot and old-family challenge (K4-free)
+        run: |
+          python3 -I r82/natural_pairwise_pilot.py > /tmp/r82_natural_pilot.log
+          grep "JSON_RESULT=" /tmp/r82_natural_pilot.log | sed 's/^JSON_RESULT=//' > /tmp/r82_natural_pilot.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open("/tmp/r82_natural_pilot.json"))
+          assert len(r["rows"]) == 8
+          print("Natural English benchmark:", [(v["m"],v["w"],v["key_exact"],v["plain_97"]) for v in r["rows"]])
+          print("Linked versus ordinary-Vigenere wrong-family controls:", [(v["m"],v["w"],round(v["linked_model_score_per_char_mean"],3),round(v["wrong_single_vigenere_score_per_char_mean"],3),v["linkeds_at_or_below_max_wrong"],v["wrong_family_exact_plaintext_count"]) for v in r["rows"]])
+          PY
+      - name: Upload natural-prose benchmark (spent R81a controls, K4-free)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r82-natural-prose-developer-benchmark
+          path: /tmp/r82_natural_pilot.json
+      - name: Upload synthetic benchmark (never contains K4)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r82-pairwise-iid-benchmark
+          path: /tmp/r82_pairwise_iid.json
+      - name: Assert no archived K4 material enters the synthetic model
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for path in [Path("r82/models.py"), Path("r82/tests/test_models.py"), Path("r82/tests/test_equivalences.py"), Path("r82/linked_key.py"), Path("r82/tests/test_linked_key.py"), Path("r82/pairwise_pilot.py"), Path("r82/natural_pairwise_pilot.py"), Path("r82/tests/test_mask_absorption.py")]:
+              s = path.read_text()
+              for forbidden in ("reveal_k4", "k4/TARGET.tsv", "r73/sealed",
+                                "k4kit", "r81a/k4", "CLUES ="):
+                  assert forbidden not in s, (path, forbidden)
+          print("R82 synthetic-only source guard PASS")
+          PY
