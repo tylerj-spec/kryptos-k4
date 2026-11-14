@@ -1,0 +1,4249 @@
+{
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "bar": 18,
+ "recovered_letters": 95,
+ "verify": {
+  "witnesses": 1762,
+  "problems": [],
+  "passed": true
+ },
+ "summary": {
+  "families": {
+   "L1": {
+    "ok": 19,
+    "n": 20,
+    "exact": 19,
+    "rec95": 19,
+    "rec85": 19,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      3,
+      4
+     ]
+    },
+    "stretch": [
+     [
+      10,
+      11,
+      false,
+      4
+     ],
+     [
+      6,
+      11,
+      true,
+      97
+     ],
+     [
+      6,
+      11,
+      true,
+      97
+     ],
+     [
+      11,
+      12,
+      false,
+      2
+     ]
+    ],
+    "neg_lm_max": -1.4854306725151454,
+    "passed": true
+   },
+   "L2": {
+    "ok": 18,
+    "n": 20,
+    "exact": 18,
+    "rec95": 18,
+    "rec85": 18,
+    "by_kind": {
+     "POS": [
+      9,
+      10
+     ],
+     "POS_MISSP": [
+      5,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "stretch": [
+     [
+      5,
+      11,
+      true,
+      97
+     ],
+     [
+      8,
+      11,
+      true,
+      97
+     ],
+     [
+      11,
+      11,
+      true,
+      97
+     ],
+     [
+      9,
+      12,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.500512130029221,
+    "passed": true
+   },
+   "X1": {
+    "ok": 19,
+    "n": 20,
+    "exact": 19,
+    "rec95": 19,
+    "rec85": 19,
+    "by_kind": {
+     "POS": [
+      9,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      4,
+      4
+     ]
+    },
+    "stretch": [
+     [
+      1,
+      11,
+      true,
+      97
+     ],
+     [
+      3,
+      11,
+      false,
+      3
+     ],
+     [
+      3,
+      12,
+      true,
+      97
+     ],
+     [
+      3,
+      12,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.5147515847635715,
+    "passed": true
+   },
+   "X2": {
+    "ok": 19,
+    "n": 20,
+    "exact": 19,
+    "rec95": 19,
+    "rec85": 19,
+    "by_kind": {
+     "POS": [
+      10,
+      10
+     ],
+     "POS_MISSP": [
+      6,
+      6
+     ],
+     "POS_NONSTD": [
+      3,
+      4
+     ]
+    },
+    "stretch": [
+     [
+      3,
+      12,
+      false,
+      4
+     ],
+     [
+      1,
+      12,
+      true,
+      97
+     ],
+     [
+      3,
+      11,
+      true,
+      97
+     ],
+     [
+      3,
+      12,
+      true,
+      97
+     ]
+    ],
+    "neg_lm_max": -1.5154350509809464,
+    "passed": true
+   }
+  },
+  "passed_families": [
+   "L1",
+   "L2",
+   "X1",
+   "X2"
+  ],
+  "positives": {
+   "n": 80,
+   "ok": 75,
+   "exact": 75,
+   "rec95": 75,
+   "rec85": 75,
+   "lm_min_ok": -0.9606099197897249,
+   "word_min_ok": -1.453229289393188
+  },
+  "by_free_length": {
+   "1": {
+    "ok": 12,
+    "exact": 12,
+    "n": 12
+   },
+   "2": {
+    "ok": 6,
+    "exact": 6,
+    "n": 6
+   },
+   "3": {
+    "ok": 9,
+    "exact": 9,
+    "n": 9
+   },
+   "4": {
+    "ok": 6,
+    "exact": 6,
+    "n": 6
+   },
+   "5": {
+    "ok": 4,
+    "exact": 4,
+    "n": 4
+   },
+   "6": {
+    "ok": 7,
+    "exact": 7,
+    "n": 7
+   },
+   "7": {
+    "ok": 9,
+    "exact": 9,
+    "n": 9
+   },
+   "8": {
+    "ok": 8,
+    "exact": 8,
+    "n": 10
+   },
+   "9": {
+    "ok": 6,
+    "exact": 6,
+    "n": 7
+   },
+   "10": {
+    "ok": 8,
+    "exact": 8,
+    "n": 10
+   },
+   "11": {
+    "ok": 7,
+    "exact": 7,
+    "n": 9
+   },
+   "12": {
+    "ok": 5,
+    "exact": 5,
+    "n": 7
+   }
+  },
+  "by_listed_length": {
+   "1": {
+    "ok": 19,
+    "exact": 19,
+    "n": 19
+   },
+   "2": {
+    "ok": 12,
+    "exact": 12,
+    "n": 12
+   },
+   "3": {
+    "ok": 16,
+    "exact": 16,
+    "n": 20
+   },
+   "4": {
+    "ok": 7,
+    "exact": 7,
+    "n": 7
+   },
+   "5": {
+    "ok": 4,
+    "exact": 4,
+    "n": 5
+   },
+   "6": {
+    "ok": 8,
+    "exact": 8,
+    "n": 8
+   },
+   "7": {
+    "ok": 0,
+    "exact": 0,
+    "n": 1
+   },
+   "8": {
+    "ok": 3,
+    "exact": 3,
+    "n": 3
+   },
+   "9": {
+    "ok": 2,
+    "exact": 2,
+    "n": 3
+   },
+   "10": {
+    "ok": 3,
+    "exact": 3,
+    "n": 4
+   },
+   "11": {
+    "ok": 7,
+    "exact": 7,
+    "n": 8
+   },
+   "12": {
+    "ok": 6,
+    "exact": 6,
+    "n": 6
+   }
+  },
+  "by_gcd": {
+   "1": {
+    "ok": 61,
+    "exact": 61,
+    "n": 67
+   },
+   "2": {
+    "ok": 12,
+    "exact": 12,
+    "n": 12
+   },
+   "3": {
+    "ok": 8,
+    "exact": 8,
+    "n": 10
+   },
+   "4": {
+    "ok": 2,
+    "exact": 2,
+    "n": 2
+   },
+   "5": {
+    "ok": 0,
+    "exact": 0,
+    "n": 1
+   },
+   "6": {
+    "ok": 2,
+    "exact": 2,
+    "n": 2
+   },
+   "10": {
+    "ok": 1,
+    "exact": 1,
+    "n": 1
+   },
+   "11": {
+    "ok": 1,
+    "exact": 1,
+    "n": 1
+   }
+  },
+  "by_lcm": {
+   "<=24": {
+    "ok": 66,
+    "exact": 66,
+    "n": 69
+   },
+   ">=49": {
+    "ok": 7,
+    "exact": 7,
+    "n": 11
+   },
+   "25-48": {
+    "ok": 14,
+    "exact": 14,
+    "n": 16
+   }
+  },
+  "by_kind": {
+   "POS": {
+    "ok": 38,
+    "exact": 38,
+    "n": 40
+   },
+   "POS_MISSP": {
+    "ok": 23,
+    "exact": 23,
+    "n": 24
+   },
+   "POS_NONSTD": {
+    "ok": 14,
+    "exact": 14,
+    "n": 16
+   }
+  },
+  "negatives": {
+   "n": 100,
+   "confident": 0,
+   "lm_max": -1.4854306725151454,
+   "word_max": -1.9613989130879101,
+   "by_kind_lm_max": {
+    "NEG_CTAK": -1.500512130029221,
+    "NEG_GROMARK": -1.53426880442739,
+    "NEG_HOMOPHONIC": -1.5223251174098438,
+    "NEG_OTP": -1.4854306725151454,
+    "NEG_PERIODIC": -1.5224493647128652,
+    "NEG_PTAK": -1.524700554146566,
+    "NEG_RUNKEY": -1.5154350509809464,
+    "NEG_SHUFFLE": -1.534004114549031,
+    "NEG_TWO_RANDOM": -1.5340216997459926
+   }
+  },
+  "theorem_k_log10_settings": {
+   "L1": 23.440528292598415,
+   "L2": 23.440528292598415,
+   "X1": 23.240913420978806,
+   "X2": 23.240913420978806
+  }
+ },
+ "rows": [
+  {
+   "id": "H_000",
+   "kind": "STRETCH",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5283249276444153,
+   "word_per_letter": -2.131234218354558,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5283249276444153,
+    "X2": -1.588926021893,
+    "L2": -1.6060336562468833,
+    "X1": -1.6083524796107218
+   },
+   "fam": "L1",
+   "lw": 10,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 110,
+   "letters_right": 4,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": true
+  },
+  {
+   "id": "H_001",
+   "kind": "NEG_OTP",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5775503831502704,
+   "word_per_letter": -2.4336088904552073,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5775503831502704,
+    "L1": -1.5906549603822304,
+    "X1": -1.5934482034026962,
+    "L2": -1.6076987718673634
+   }
+  },
+  {
+   "id": "H_002",
+   "kind": "NEG_PTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5434682970271283,
+   "word_per_letter": -3.15369359969656,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5434682970271283,
+    "L2": -1.5676878389888012,
+    "L1": -1.5982569125048893,
+    "X2": -1.611179593220814
+   }
+  },
+  {
+   "id": "H_003",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.590130413834428,
+   "word_per_letter": -3.025563373466288,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.590130413834428,
+    "L2": -1.606103200110194,
+    "X2": -1.6150715118370105,
+    "X1": -1.6213402149709153
+   }
+  },
+  {
+   "id": "H_004",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8072096451346765,
+   "word_per_letter": -1.1248701480142322,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8072096451346765,
+    "L1": -1.5788736971402444,
+    "X2": -1.592107553567891,
+    "X1": -1.5949762169386923
+   },
+   "fam": "L2",
+   "lw": 5,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 35,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_005",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5827599853738068,
+   "word_per_letter": -2.556539776819643,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5827599853738068,
+    "L2": -1.5934813041816052,
+    "X2": -1.6253898406938947,
+    "X1": -1.6261058786173457
+   }
+  },
+  {
+   "id": "H_006",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6078657074940941,
+   "word_per_letter": -0.6082361822337753,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6078657074940941,
+    "X2": -1.5610472795111847,
+    "X1": -1.5704893332368397,
+    "L2": -1.6041214592831652
+   },
+   "fam": "L1",
+   "lw": 4,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 4,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_007",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8471041663520437,
+   "word_per_letter": -0.9091777918545494,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8471041663520437,
+    "X1": -1.2308949421573379,
+    "X2": -1.551371433158866,
+    "L2": -1.5580513380160652
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 3,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_008",
+   "kind": "NEG_CTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5437701082471567,
+   "word_per_letter": -2.605883388345068,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5437701082471567,
+    "L1": -1.5700804896115028,
+    "L2": -1.6097082669375502,
+    "X2": -1.6167885667750055
+   }
+  },
+  {
+   "id": "H_009",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5318787990920437,
+   "word_per_letter": -2.65148144917437,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5318787990920437,
+    "L2": -1.5604439525020106,
+    "L1": -1.592706680398665,
+    "X2": -1.603604780001201
+   }
+  },
+  {
+   "id": "H_010",
+   "kind": "NEG_CTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5147515847635715,
+   "word_per_letter": -2.8077160831582946,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5147515847635715,
+    "X2": -1.584126071553178,
+    "L2": -1.5966052299163775,
+    "L1": -1.6026066344496301
+   }
+  },
+  {
+   "id": "H_011",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7030464104803089,
+   "word_per_letter": -0.8367427881247036,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7030464104803089,
+    "X1": -1.5236573481269795,
+    "L1": -1.5708972645789077,
+    "X2": -1.6049235533423645
+   },
+   "fam": "L2",
+   "lw": 6,
+   "m": 10,
+   "gcd": 2,
+   "lcm": 30,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_012",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.9331854810023419,
+   "word_per_letter": -1.1831235164371112,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.9331854810023419,
+    "L2": -1.6074495096018864,
+    "X2": -1.6150137950311,
+    "X1": -1.6180425835677337
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 10,
+   "gcd": 1,
+   "lcm": 10,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_013",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6219030725600364,
+   "word_per_letter": -0.7216861958313598,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6219030725600364,
+    "X1": -1.4476176523363466,
+    "L1": -1.5194432102623827,
+    "X2": -1.543525487386451
+   },
+   "fam": "L2",
+   "lw": 4,
+   "m": 6,
+   "gcd": 2,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_014",
+   "kind": "STRETCH",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5251171118819837,
+   "word_per_letter": -2.3213651961210826,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5251171118819837,
+    "L1": -1.5503249780572568,
+    "X1": -1.5749615063295537,
+    "L2": -1.5964777987911223
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 12,
+   "gcd": 3,
+   "lcm": 12,
+   "letters_right": 4,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": true
+  },
+  {
+   "id": "H_015",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.580430259332829,
+   "word_per_letter": -2.6441840097984612,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.580430259332829,
+    "X2": -1.5974502253067708,
+    "L1": -1.6176437615733785,
+    "X1": -1.6343024811256177
+   }
+  },
+  {
+   "id": "H_016",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7552696594935865,
+   "word_per_letter": -0.8613399494256903,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7552696594935865,
+    "L1": -1.35637906214886,
+    "X1": -1.3617707681214597,
+    "X2": -1.604016381901564
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 3,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_017",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7181655654838079,
+   "word_per_letter": -0.9418668250105222,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7181655654838079,
+    "L1": -1.5500383742691315,
+    "X1": -1.5855758598208736,
+    "X2": -1.6152343072726862
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 7,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_018",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5154350509809464,
+   "word_per_letter": -2.5715209329872666,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5154350509809464,
+    "L2": -1.5713553396389657,
+    "L1": -1.6050054427505154,
+    "X1": -1.6327576725695705
+   }
+  },
+  {
+   "id": "H_019",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8648301724972521,
+   "word_per_letter": -0.9169694111593415,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8648301724972521,
+    "X1": -1.5556922715886967,
+    "L1": -1.6066045814971488,
+    "X2": -1.6138734334753346
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_020",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7972537701132039,
+   "word_per_letter": -0.7751421156352567,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7972537701132039,
+    "L1": -1.5721882965041267,
+    "X1": -1.589266986307717,
+    "X2": -1.6351257324333965
+   },
+   "fam": "L2",
+   "lw": 11,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 11,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_021",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5457233757683144,
+   "word_per_letter": -2.482113881259532,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5457233757683144,
+    "X1": -1.564914079440623,
+    "L2": -1.5893265547365258,
+    "X2": -1.6142806307863944
+   }
+  },
+  {
+   "id": "H_022",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8578736710058497,
+   "word_per_letter": -0.9315170439098982,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8578736710058497,
+    "L2": -1.6020069798243415,
+    "X1": -1.6041737634054933,
+    "X2": -1.613092928971212
+   },
+   "fam": "L2",
+   "lw": 10,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 30,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_023",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5527501463813265,
+   "word_per_letter": -2.6131930076262546,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5527501463813265,
+    "X1": -1.5712079826228442,
+    "L1": -1.6184651844885163,
+    "X2": -1.620247925114434
+   }
+  },
+  {
+   "id": "H_024",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5878381776364194,
+   "word_per_letter": -2.5483172335478668,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5878381776364194,
+    "X2": -1.5892031417641135,
+    "L2": -1.5940945302808331,
+    "X1": -1.6404658976519846
+   }
+  },
+  {
+   "id": "H_025",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5442693374628567,
+   "word_per_letter": -2.3877376673114648,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5442693374628567,
+    "L2": -1.5672181283613456,
+    "X2": -1.6182251442799862,
+    "X1": -1.625554135395694
+   }
+  },
+  {
+   "id": "H_026",
+   "kind": "NEG_CTAK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5807723424450817,
+   "word_per_letter": -2.699721614357578,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5807723424450817,
+    "L2": -1.6031891594355272,
+    "L1": -1.6083516099096573,
+    "X1": -1.6216437316658072
+   }
+  },
+  {
+   "id": "H_027",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6876190253446787,
+   "word_per_letter": -0.8755881312629052,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6876190253446787,
+    "X2": -1.3610630640231995,
+    "X1": -1.5693000759881413,
+    "L1": -1.5732267821056423
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 4,
+   "gcd": 1,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_028",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8535979174271936,
+   "word_per_letter": -1.248342784746174,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8535979174271936,
+    "X2": -1.531547413226793,
+    "L2": -1.5395813710440296,
+    "X1": -1.5700599206299473
+   },
+   "fam": "L1",
+   "lw": 4,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 4,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_029",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5651229426802433,
+   "word_per_letter": -2.6558441318434105,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5651229426802433,
+    "X1": -1.5746782362249863,
+    "X2": -1.5997793984013735,
+    "L1": -1.601193869006388
+   }
+  },
+  {
+   "id": "H_030",
+   "kind": "NEG_OTP",
+   "best_fam": "L2",
+   "lm_per_letter": -1.588866700322281,
+   "word_per_letter": -2.5359336784795365,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.588866700322281,
+    "X1": -1.6074945852544504,
+    "L1": -1.6138781011104584,
+    "X2": -1.6175199031599403
+   }
+  },
+  {
+   "id": "H_031",
+   "kind": "NEG_CTAK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.590860008742161,
+   "word_per_letter": -2.334053571897881,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.590860008742161,
+    "L2": -1.594490148127079,
+    "X2": -1.6171263331432164,
+    "X1": -1.6214386584122003
+   }
+  },
+  {
+   "id": "H_032",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8475678161743154,
+   "word_per_letter": -1.0872416148550614,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8475678161743154,
+    "X1": -1.531207309642173,
+    "L1": -1.5788406842609042,
+    "X2": -1.603745538011654
+   },
+   "fam": "L2",
+   "lw": 6,
+   "m": 10,
+   "gcd": 2,
+   "lcm": 30,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_033",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5630738884594637,
+   "word_per_letter": -2.6590429089177348,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5630738884594637,
+    "L2": -1.5713355550446462,
+    "X1": -1.5902241445386534,
+    "X2": -1.6097522990996518
+   }
+  },
+  {
+   "id": "H_034",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5573243305720772,
+   "word_per_letter": -2.646314900704406,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5573243305720772,
+    "L2": -1.6083447065002756,
+    "L1": -1.6155762233838593,
+    "X1": -1.6285141525962918
+   }
+  },
+  {
+   "id": "H_035",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.5901539294341982,
+   "word_per_letter": -0.6557909793251375,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.5901539294341982,
+    "X2": -1.433272254250022,
+    "L1": -1.535546820255515,
+    "X1": -1.6266837405789758
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 12,
+   "gcd": 1,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_036",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5820270318864393,
+   "word_per_letter": -2.5780682066583083,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5820270318864393,
+    "L2": -1.6010929676152037,
+    "X2": -1.6064088756084134,
+    "X1": -1.6315589383551754
+   }
+  },
+  {
+   "id": "H_037",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.795660232649753,
+   "word_per_letter": -0.9247055653217959,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.795660232649753,
+    "X1": -1.42833378475121,
+    "L2": -1.565384031094601,
+    "X2": -1.582486726506403
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_038",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8249913457026177,
+   "word_per_letter": -0.9635634491860676,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8249913457026177,
+    "L2": -1.585363446898067,
+    "X2": -1.5984276257378538,
+    "X1": -1.6283024846739376
+   },
+   "fam": "L1",
+   "lw": 12,
+   "m": 8,
+   "gcd": 4,
+   "lcm": 24,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_039",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.661734614741194,
+   "word_per_letter": -0.7628368083229143,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.661734614741194,
+    "L2": -1.2499309164539734,
+    "X1": -1.2922694650859712,
+    "X2": -1.6109893948276144
+   },
+   "fam": "L2",
+   "lw": 9,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 9,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_040",
+   "kind": "NEG_GROMARK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5633790207085843,
+   "word_per_letter": -2.979338120368217,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5633790207085843,
+    "X1": -1.6077216742368243,
+    "X2": -1.6308037295323057,
+    "L2": -1.6352707753822053
+   }
+  },
+  {
+   "id": "H_041",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "X1",
+   "lm_per_letter": -1.550375653296402,
+   "word_per_letter": -2.770665474223101,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.550375653296402,
+    "L1": -1.5688296513843167,
+    "X2": -1.6048814299487577,
+    "L2": -1.6055207235508204
+   }
+  },
+  {
+   "id": "H_042",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7030620460774145,
+   "word_per_letter": -0.8048205306207978,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7030620460774145,
+    "X1": -1.6064252218942052,
+    "X2": -1.6090030777700168,
+    "L2": -1.622422135086999
+   },
+   "fam": "L1",
+   "lw": 6,
+   "m": 5,
+   "gcd": 1,
+   "lcm": 30,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_043",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7693764005289314,
+   "word_per_letter": -0.9200379747247784,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7693764005289314,
+    "L1": -1.5438772058978523,
+    "X1": -1.5557709825213173,
+    "X2": -1.614756980764478
+   },
+   "fam": "L2",
+   "lw": 12,
+   "m": 6,
+   "gcd": 6,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_044",
+   "kind": "NEG_OTP",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5451149315832509,
+   "word_per_letter": -2.5099599281916856,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5451149315832509,
+    "L1": -1.5788199019032656,
+    "X2": -1.5859960460478497,
+    "X1": -1.622414909672837
+   }
+  },
+  {
+   "id": "H_045",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -0.628203318179189,
+   "word_per_letter": -0.7801492821028834,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.628203318179189,
+    "L2": -1.5915183686392056,
+    "X2": -1.6088703619604259,
+    "X1": -1.6089843520030533
+   },
+   "fam": "L1",
+   "lw": 12,
+   "m": 3,
+   "gcd": 3,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_046",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5617403943744517,
+   "word_per_letter": -2.254768967102733,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5617403943744517,
+    "L1": -1.5671496508440805,
+    "L2": -1.604865494693063,
+    "X2": -1.6352990166238464
+   }
+  },
+  {
+   "id": "H_047",
+   "kind": "STRETCH",
+   "best_fam": "X2",
+   "lm_per_letter": -0.688670880801571,
+   "word_per_letter": -0.7870322179128468,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.688670880801571,
+    "X1": -1.5899033776590044,
+    "L1": -1.5942279850468808,
+    "L2": -1.6033386132420646
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 33,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_048",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.6633026893946736,
+   "word_per_letter": -0.7102523658739702,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.6633026893946736,
+    "L1": -1.25832094134014,
+    "L2": -1.57100228658042,
+    "X2": -1.6035051719122326
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 8,
+   "gcd": 2,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_049",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7509390512667656,
+   "word_per_letter": -0.8517090646870659,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7509390512667656,
+    "L1": -1.5882220047036397,
+    "X1": -1.5893528984365122,
+    "X2": -1.5965966917382381
+   },
+   "fam": "L2",
+   "lw": 11,
+   "m": 4,
+   "gcd": 1,
+   "lcm": 44,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_050",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5641108242814075,
+   "word_per_letter": -2.3252040333365622,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5641108242814075,
+    "L2": -1.6163354032083663,
+    "X2": -1.6304967457562993,
+    "X1": -1.6324440315365791
+   }
+  },
+  {
+   "id": "H_051",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5673021406508962,
+   "word_per_letter": -2.779129307885719,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5673021406508962,
+    "L1": -1.6282619355035197,
+    "X2": -1.643564798629161,
+    "X1": -1.6485259198804492
+   }
+  },
+  {
+   "id": "H_052",
+   "kind": "POS",
+   "best_fam": "X2",
+   "lm_per_letter": -0.813122033085671,
+   "word_per_letter": -0.8637616143825453,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.813122033085671,
+    "L1": -1.557179591320839,
+    "L2": -1.5908757179361028,
+    "X1": -1.5944877339085353
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_053",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5655298719576263,
+   "word_per_letter": -2.4679088023791973,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5655298719576263,
+    "L1": -1.580506094491359,
+    "X1": -1.6020310367505575,
+    "L2": -1.6072547000823254
+   }
+  },
+  {
+   "id": "H_054",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L1",
+   "lm_per_letter": -1.534004114549031,
+   "word_per_letter": -2.4177472869169168,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.534004114549031,
+    "L2": -1.5530665601344453,
+    "X2": -1.5822894150948095,
+    "X1": -1.5846522709873228
+   }
+  },
+  {
+   "id": "H_055",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.803608954955615,
+   "word_per_letter": -0.9563399774582367,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.803608954955615,
+    "X1": -1.6003206696207684,
+    "L1": -1.6005461140698993,
+    "X2": -1.614809226897574
+   },
+   "fam": "L2",
+   "lw": 11,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 11,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_056",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5553927878205924,
+   "word_per_letter": -2.7036088142013948,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5553927878205924,
+    "L2": -1.5929539784328224,
+    "X2": -1.5970882086572957,
+    "X1": -1.6102754025595243
+   }
+  },
+  {
+   "id": "H_057",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5727625764308129,
+   "word_per_letter": -3.190614923090016,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5727625764308129,
+    "X1": -1.5889703656940424,
+    "X2": -1.5916564346665574,
+    "L1": -1.6089939184663289
+   }
+  },
+  {
+   "id": "H_058",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5225583549166464,
+   "word_per_letter": -2.706777082925118,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5225583549166464,
+    "L1": -1.5761836231830193,
+    "L2": -1.617392469427942,
+    "X2": -1.6419094281712758
+   }
+  },
+  {
+   "id": "H_059",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5777501331200612,
+   "word_per_letter": -2.8360478431401286,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5777501331200612,
+    "L2": -1.5959813011157298,
+    "X2": -1.6023707960314626,
+    "X1": -1.604521703023041
+   }
+  },
+  {
+   "id": "H_060",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.572327541245013,
+   "word_per_letter": -2.7867483142656453,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.572327541245013,
+    "L2": -1.5872573763055284,
+    "X1": -1.6184159061036159,
+    "X2": -1.6199879066384946
+   }
+  },
+  {
+   "id": "H_061",
+   "kind": "STRETCH",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6759342952175654,
+   "word_per_letter": -0.9583073047463704,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6759342952175654,
+    "L2": -1.5712086099689615,
+    "X2": -1.6220690815147858,
+    "X1": -1.641722758175786
+   },
+   "fam": "L1",
+   "lw": 6,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 66,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_062",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5707973771279715,
+   "word_per_letter": -2.3949958234633018,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5707973771279715,
+    "X1": -1.5926843577439023,
+    "L2": -1.6068427777685916,
+    "X2": -1.634753450146425
+   }
+  },
+  {
+   "id": "H_063",
+   "kind": "STRETCH",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6845933697068269,
+   "word_per_letter": -0.975053167350585,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6845933697068269,
+    "L2": -1.574105244887496,
+    "X1": -1.58294786902663,
+    "X2": -1.5950171629485397
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 11,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_064",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7428911378003025,
+   "word_per_letter": -0.7805847648380482,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7428911378003025,
+    "X1": -1.5917926225679226,
+    "L2": -1.5923813769267392,
+    "X2": -1.5962709768137597
+   },
+   "fam": "L1",
+   "lw": 3,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 21,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_065",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.8700122661185307,
+   "word_per_letter": -1.0040941277181878,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.8700122661185307,
+    "X2": -1.3304821183345732,
+    "L1": -1.3986243178585507,
+    "L2": -1.5725346055726723
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 3,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_066",
+   "kind": "NEG_PTAK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.524700554146566,
+   "word_per_letter": -2.613336507618811,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.524700554146566,
+    "L2": -1.555368267268557,
+    "X1": -1.6059206097012328,
+    "L1": -1.628231977064585
+   }
+  },
+  {
+   "id": "H_067",
+   "kind": "NEG_OTP",
+   "best_fam": "L2",
+   "lm_per_letter": -1.588970667202525,
+   "word_per_letter": -2.4670146436839384,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.588970667202525,
+    "L1": -1.6000059156765027,
+    "X1": -1.6077559938289456,
+    "X2": -1.6466396003385488
+   }
+  },
+  {
+   "id": "H_068",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6460090215831272,
+   "word_per_letter": -0.6838576951901943,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6460090215831272,
+    "X2": -1.3744148702790346,
+    "X1": -1.5698205603457047,
+    "L1": -1.578533954534334
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 6,
+   "gcd": 1,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_069",
+   "kind": "POS_NONSTD",
+   "best_fam": "X1",
+   "lm_per_letter": -0.800501927433982,
+   "word_per_letter": -1.005950169690688,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.800501927433982,
+    "L2": -1.5178015808930103,
+    "L1": -1.5609519175390627,
+    "X2": -1.622742749164937
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 9,
+   "gcd": 3,
+   "lcm": 9,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_070",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8890888100192672,
+   "word_per_letter": -1.2382139054862533,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8890888100192672,
+    "L2": -1.577566714611711,
+    "X1": -1.5844105020088632,
+    "X2": -1.6207644969666588
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 10,
+   "gcd": 1,
+   "lcm": 10,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_071",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -1.54861091588355,
+   "word_per_letter": -2.4893473989087136,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.54861091588355,
+    "X2": -1.574113442208774,
+    "X1": -1.5804888245255984,
+    "L2": -1.5820273123297495
+   },
+   "fam": "L1",
+   "lw": 5,
+   "m": 10,
+   "gcd": 5,
+   "lcm": 10,
+   "letters_right": 7,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": true
+  },
+  {
+   "id": "H_072",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.534657543313872,
+   "word_per_letter": -2.3881464509500656,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.534657543313872,
+    "X2": -1.5699366100862162,
+    "X1": -1.5942381166459358,
+    "L1": -1.5967700705892338
+   }
+  },
+  {
+   "id": "H_073",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7987076883917175,
+   "word_per_letter": -0.8711023654035362,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7987076883917175,
+    "X1": -1.5276761986603289,
+    "L1": -1.5341326350576638,
+    "X2": -1.594395209295848
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 12,
+   "gcd": 3,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_074",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5746220774641357,
+   "word_per_letter": -2.292260187554978,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5746220774641357,
+    "L2": -1.5752680433587622,
+    "X1": -1.5795621805507498,
+    "X2": -1.6082504367090993
+   }
+  },
+  {
+   "id": "H_075",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7258582317648988,
+   "word_per_letter": -0.7989920890453258,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7258582317648988,
+    "L2": -1.5043382853864855,
+    "X2": -1.5970047755339711,
+    "X1": -1.605126456731988
+   },
+   "fam": "L1",
+   "lw": 5,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 5,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_076",
+   "kind": "STRETCH",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5885908044298593,
+   "word_per_letter": -2.4065930517708067,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5885908044298593,
+    "L1": -1.599280820679419,
+    "L2": -1.6002597511774792,
+    "X1": -1.6195379339792217
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 33,
+   "letters_right": 3,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_077",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5617314722657818,
+   "word_per_letter": -2.7190542672330826,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5617314722657818,
+    "L1": -1.5972190998235392,
+    "L2": -1.6069824263338268,
+    "X2": -1.613952485556455
+   }
+  },
+  {
+   "id": "H_078",
+   "kind": "POS_NONSTD",
+   "best_fam": "X2",
+   "lm_per_letter": -0.8614114791779843,
+   "word_per_letter": -1.453229289393188,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.8614114791779843,
+    "X1": -1.523394717114795,
+    "L2": -1.5740561689797443,
+    "L1": -1.598517109284696
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 9,
+   "gcd": 1,
+   "lcm": 18,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_079",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "X2",
+   "lm_per_letter": -1.546911912288555,
+   "word_per_letter": -2.552008007214058,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.546911912288555,
+    "L2": -1.6016231468631454,
+    "L1": -1.6053626529737999,
+    "X1": -1.6234528031008146
+   }
+  },
+  {
+   "id": "H_080",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.57362673325901,
+   "word_per_letter": -2.541492178116008,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.57362673325901,
+    "L2": -1.599068834244744,
+    "X1": -1.6040454388586516,
+    "X2": -1.6467905056845282
+   }
+  },
+  {
+   "id": "H_081",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7549673335323082,
+   "word_per_letter": -0.8692363677948461,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7549673335323082,
+    "L1": -1.603702056077645,
+    "X2": -1.6286854925997478,
+    "X1": -1.649022571425693
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 7,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_082",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8443766316114241,
+   "word_per_letter": -1.0757580879455175,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8443766316114241,
+    "X2": -1.1985042119618041,
+    "L1": -1.5571417898400544,
+    "X1": -1.6027379059640825
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 6,
+   "gcd": 1,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_083",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.5491594053749668,
+   "word_per_letter": -0.7098769694859958,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.5491594053749668,
+    "L2": -1.5489379713484615,
+    "X2": -1.5890723249140513,
+    "L1": -1.6115339692806845
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 5,
+   "gcd": 1,
+   "lcm": 10,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_084",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.5445509476326292,
+   "word_per_letter": -0.6080852412351878,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.5445509476326292,
+    "X1": -1.5003573145602167,
+    "L2": -1.5367137972528317,
+    "X2": -1.5638011085810428
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_085",
+   "kind": "NEG_PTAK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5804537230929763,
+   "word_per_letter": -2.3625411722793506,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5804537230929763,
+    "X1": -1.6136259362101555,
+    "X2": -1.6184761870428008,
+    "L2": -1.6255693400048257
+   }
+  },
+  {
+   "id": "H_086",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5574785645321472,
+   "word_per_letter": -2.575715625195138,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5574785645321472,
+    "X2": -1.578305976119699,
+    "L2": -1.5938128979550195,
+    "X1": -1.6543071869875967
+   }
+  },
+  {
+   "id": "H_087",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5706950434454785,
+   "word_per_letter": -2.247919909523695,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5706950434454785,
+    "L1": -1.5848067042168192,
+    "X1": -1.5903850457890285,
+    "X2": -1.6159972921781933
+   }
+  },
+  {
+   "id": "H_088",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6114106307797987,
+   "word_per_letter": -0.734838699518851,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6114106307797987,
+    "X1": -1.1564185884430886,
+    "L2": -1.4238144266296846
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 1,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_089",
+   "kind": "POS_MISSP",
+   "best_fam": "X2",
+   "lm_per_letter": -0.8465140282431881,
+   "word_per_letter": -1.1826053497221234,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.8465140282431881,
+    "X1": -1.4862112238638334,
+    "L1": -1.5699357218733154,
+    "L2": -1.6015823375596905
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 6,
+   "gcd": 2,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_090",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5732234619142602,
+   "word_per_letter": -2.3277058104894635,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5732234619142602,
+    "L2": -1.595508621064658,
+    "X1": -1.5993558254438578,
+    "X2": -1.6215845436942715
+   }
+  },
+  {
+   "id": "H_091",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -0.844329178451648,
+   "word_per_letter": -1.059161277547014,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.844329178451648,
+    "L2": -1.5664166531851995,
+    "X1": -1.6072426480193114,
+    "X2": -1.6211930709823812
+   },
+   "fam": "L1",
+   "lw": 11,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 33,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_092",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7248223772587116,
+   "word_per_letter": -0.8858531105916794,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7248223772587116,
+    "X1": -1.5709569359956712,
+    "L2": -1.5897099549819707,
+    "X2": -1.6388350372231497
+   },
+   "fam": "L1",
+   "lw": 10,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 70,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_093",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8956006993239591,
+   "word_per_letter": -1.1081059410213738,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8956006993239591,
+    "L1": -1.5919002090993615,
+    "X2": -1.5963399124514197,
+    "X1": -1.6129479201644967
+   },
+   "fam": "L2",
+   "lw": 6,
+   "m": 4,
+   "gcd": 2,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_094",
+   "kind": "NEG_GROMARK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5826976504464894,
+   "word_per_letter": -2.156256114079095,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5826976504464894,
+    "L1": -1.5902033034404837,
+    "X2": -1.5958607925897819,
+    "X1": -1.6261606066458927
+   }
+  },
+  {
+   "id": "H_095",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6971819463590869,
+   "word_per_letter": -0.7551224663384402,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6971819463590869,
+    "X2": -1.4656379712894367,
+    "X1": -1.5935362020565063,
+    "L1": -1.6011216623574187
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 4,
+   "gcd": 1,
+   "lcm": 4,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_096",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7361875586471872,
+   "word_per_letter": -1.0296428381129186,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7361875586471872,
+    "L1": -1.5452520976169515,
+    "X1": -1.5601154216901236,
+    "X2": -1.5900469418499887
+   },
+   "fam": "L2",
+   "lw": 5,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 55,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_097",
+   "kind": "NEG_GROMARK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5624609130156255,
+   "word_per_letter": -2.2456772647209973,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5624609130156255,
+    "X2": -1.5799322383017422,
+    "X1": -1.6124671739094036,
+    "L1": -1.6178243458271027
+   }
+  },
+  {
+   "id": "H_098",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5549642611703038,
+   "word_per_letter": -2.587394116980535,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5549642611703038,
+    "X2": -1.5889988910891693,
+    "L1": -1.601832001710061,
+    "X1": -1.6218887195855225
+   }
+  },
+  {
+   "id": "H_099",
+   "kind": "STRETCH",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6500250536787321,
+   "word_per_letter": -0.6955535466642977,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6500250536787321,
+    "L2": -1.56972068840681,
+    "X1": -1.5844886123212343,
+    "X2": -1.6165358190683974
+   },
+   "fam": "L1",
+   "lw": 6,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 66,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_100",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.7120884187170304,
+   "word_per_letter": -0.905760458648312,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.7120884187170304,
+    "X2": -1.2101533021381816,
+    "L1": -1.4239601893062444,
+    "L2": -1.4582809596370483
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 3,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_101",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.9335802408858933,
+   "word_per_letter": -1.0917169079668265,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.9335802408858933,
+    "L1": -1.5768088888252134,
+    "X2": -1.5773480810685871,
+    "L2": -1.5784705763337077
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_102",
+   "kind": "NEG_PTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5347800436957748,
+   "word_per_letter": -2.34658459920629,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5347800436957748,
+    "X2": -1.5925481295232307,
+    "X1": -1.6259485461278675,
+    "L1": -1.627260166349984
+   }
+  },
+  {
+   "id": "H_103",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5624079773413766,
+   "word_per_letter": -2.6665783409612227,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5624079773413766,
+    "X2": -1.5909629891981785,
+    "L2": -1.608733168980779,
+    "X1": -1.6204923568005414
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 9,
+   "gcd": 3,
+   "lcm": 9,
+   "letters_right": 15,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_104",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5651753557289076,
+   "word_per_letter": -2.328897867785017,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5651753557289076,
+    "X2": -1.574359091197995,
+    "L2": -1.5910617471378556,
+    "L1": -1.5941768413584814
+   }
+  },
+  {
+   "id": "H_105",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6881871104593564,
+   "word_per_letter": -0.8340805523029059,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6881871104593564,
+    "X1": -1.5775720913193583,
+    "L2": -1.6142094481698017,
+    "X2": -1.6347505057657548
+   },
+   "fam": "L1",
+   "lw": 8,
+   "m": 9,
+   "gcd": 1,
+   "lcm": 72,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_106",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "L1",
+   "lm_per_letter": -1.59686166800789,
+   "word_per_letter": -2.474730364823861,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.59686166800789,
+    "X1": -1.599348660481652,
+    "L2": -1.6108391128250004,
+    "X2": -1.614188002057604
+   }
+  },
+  {
+   "id": "H_107",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.613598343983915,
+   "word_per_letter": -0.7229761475311781,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.613598343983915,
+    "X2": -1.5407981695895343,
+    "L1": -1.5964468143419506,
+    "X1": -1.6322842472348094
+   },
+   "fam": "L2",
+   "lw": 8,
+   "m": 11,
+   "gcd": 1,
+   "lcm": 88,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_108",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5535098933247242,
+   "word_per_letter": -2.4460635694372916,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5535098933247242,
+    "X1": -1.5674081229683992,
+    "L2": -1.5682592602043421,
+    "X2": -1.5989655497455106
+   }
+  },
+  {
+   "id": "H_109",
+   "kind": "NEG_PTAK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5489242335723847,
+   "word_per_letter": -2.448262724082757,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5489242335723847,
+    "X2": -1.5998367036971235,
+    "L2": -1.6024092809133923,
+    "X1": -1.61984293263636
+   }
+  },
+  {
+   "id": "H_110",
+   "kind": "NEG_CTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5824121327053027,
+   "word_per_letter": -2.5998631517640294,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5824121327053027,
+    "L1": -1.5844875634023823,
+    "L2": -1.5906868995234524,
+    "X2": -1.6311924023767956
+   }
+  },
+  {
+   "id": "H_111",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7495960467661874,
+   "word_per_letter": -0.9725225407307349,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7495960467661874,
+    "L1": -1.566147587406113,
+    "X2": -1.5853858905047487,
+    "X1": -1.5934137176082004
+   },
+   "fam": "L2",
+   "lw": 3,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 21,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_112",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -1.4781629330371795,
+   "word_per_letter": -2.048641134758474,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.4781629330371795,
+    "X1": -1.5496456678380672,
+    "L1": -1.579282606212595,
+    "X2": -1.6203729660471076
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 10,
+   "gcd": 1,
+   "lcm": 30,
+   "letters_right": 7,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_113",
+   "kind": "STRETCH",
+   "best_fam": "X1",
+   "lm_per_letter": -0.6962135393294319,
+   "word_per_letter": -0.7572283049101265,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.6962135393294319,
+    "L1": -1.5658647115774376,
+    "X2": -1.5710515966734935,
+    "L2": -1.6100652482535824
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 12,
+   "gcd": 3,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_114",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8376153133992102,
+   "word_per_letter": -0.9450634394421371,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8376153133992102,
+    "L2": -1.5618918152506818,
+    "X1": -1.5996317207506023,
+    "X2": -1.6465175210200633
+   },
+   "fam": "L1",
+   "lw": 11,
+   "m": 2,
+   "gcd": 1,
+   "lcm": 22,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_115",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.53426880442739,
+   "word_per_letter": -2.638888475310749,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.53426880442739,
+    "X1": -1.5699815552720089,
+    "L2": -1.5847069915268839,
+    "L1": -1.598855450178122
+   }
+  },
+  {
+   "id": "H_116",
+   "kind": "POS",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5880750254487868,
+   "word_per_letter": -2.6654759970923334,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5880750254487868,
+    "L1": -1.5922809219475087,
+    "L2": -1.5961570877572233,
+    "X1": -1.5990531536337642
+   },
+   "fam": "L2",
+   "lw": 9,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 72,
+   "letters_right": 4,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_117",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8988198393056609,
+   "word_per_letter": -1.1859574156621067,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8988198393056609,
+    "X2": -1.564635195529338,
+    "L2": -1.613477330232404,
+    "X1": -1.6277689103579591
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 5,
+   "gcd": 1,
+   "lcm": 5,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_118",
+   "kind": "NEG_PTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5624856497977198,
+   "word_per_letter": -2.6082006435204113,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5624856497977198,
+    "L2": -1.5842420208683723,
+    "L1": -1.6077318614752023,
+    "X2": -1.632143664144978
+   }
+  },
+  {
+   "id": "H_119",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5934881520140725,
+   "word_per_letter": -2.4821367390917426,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5934881520140725,
+    "X2": -1.609253212243088,
+    "L1": -1.6095365981965029,
+    "X1": -1.609556446466403
+   }
+  },
+  {
+   "id": "H_120",
+   "kind": "STRETCH",
+   "best_fam": "X1",
+   "lm_per_letter": -0.6705780194021368,
+   "word_per_letter": -0.7067149132224453,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.6705780194021368,
+    "X2": -1.5194058307337326,
+    "L2": -1.5377131173886436,
+    "L1": -1.5582085152723126
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 12,
+   "gcd": 3,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_121",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5527487552926404,
+   "word_per_letter": -2.6777223364995604,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5527487552926404,
+    "L2": -1.5747441931714101,
+    "L1": -1.6045300641250748,
+    "X1": -1.6284967476739691
+   }
+  },
+  {
+   "id": "H_122",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.6844436121054313,
+   "word_per_letter": -0.7388000572692787,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.6844436121054313,
+    "L1": -1.4652189317761835,
+    "L2": -1.5807421126777363,
+    "X2": -1.6095285705991627
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 2,
+   "gcd": 1,
+   "lcm": 2,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_123",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5438766223354476,
+   "word_per_letter": -2.246780347519373,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5438766223354476,
+    "X2": -1.5537967262693595,
+    "X1": -1.556744015670007,
+    "L2": -1.6064686275941809
+   }
+  },
+  {
+   "id": "H_124",
+   "kind": "POS_NONSTD",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7654417395719553,
+   "word_per_letter": -1.0587465570721073,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7654417395719553,
+    "X1": -1.2304945610262292,
+    "L1": -1.5797380336473898
+   },
+   "fam": "X1",
+   "lw": 1,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 1,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_125",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.9441199987346014,
+   "word_per_letter": -1.1229304943364269,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.9441199987346014,
+    "X2": -1.6063577259564292,
+    "L2": -1.633709927862414,
+    "X1": -1.635770641094477
+   },
+   "fam": "L1",
+   "lw": 5,
+   "m": 9,
+   "gcd": 1,
+   "lcm": 45,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_126",
+   "kind": "NEG_OTP",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5751783244657456,
+   "word_per_letter": -2.5566462147918374,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5751783244657456,
+    "L2": -1.579878233911436,
+    "L1": -1.5902615356998346,
+    "X2": -1.5951862155469423
+   }
+  },
+  {
+   "id": "H_127",
+   "kind": "POS_NONSTD",
+   "best_fam": "X1",
+   "lm_per_letter": -0.833742313234756,
+   "word_per_letter": -1.1273187493405643,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.833742313234756,
+    "L1": -1.6206075806391531,
+    "L2": -1.6210239457024127,
+    "X2": -1.6333084437496883
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 10,
+   "gcd": 1,
+   "lcm": 30,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_128",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5340216997459926,
+   "word_per_letter": -2.53366597286262,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5340216997459926,
+    "L2": -1.5531150956071682,
+    "L1": -1.5591476785220666,
+    "X1": -1.5764741483576519
+   }
+  },
+  {
+   "id": "H_129",
+   "kind": "NEG_PTAK",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5390945649753833,
+   "word_per_letter": -2.4568157592744924,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5390945649753833,
+    "X2": -1.5695915238682143,
+    "L2": -1.5767761720056386,
+    "L1": -1.594177630681967
+   }
+  },
+  {
+   "id": "H_130",
+   "kind": "POS",
+   "best_fam": "X2",
+   "lm_per_letter": -0.659673545845621,
+   "word_per_letter": -0.8153211484924403,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.659673545845621,
+    "L1": -1.5949573350167765,
+    "L2": -1.6165667837581683,
+    "X1": -1.6379294056042106
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 21,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_131",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5514818578958511,
+   "word_per_letter": -2.476632268071837,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5514818578958511,
+    "L2": -1.6035999306861657,
+    "X1": -1.60450271263565,
+    "X2": -1.610370723962707
+   }
+  },
+  {
+   "id": "H_132",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7180708764187105,
+   "word_per_letter": -0.9280848885046223,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7180708764187105,
+    "L2": -1.5866561538069366,
+    "X1": -1.6039696944128607,
+    "X2": -1.6161171533167362
+   },
+   "fam": "L1",
+   "lw": 4,
+   "m": 9,
+   "gcd": 1,
+   "lcm": 36,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_133",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "X1",
+   "lm_per_letter": -1.534308674870078,
+   "word_per_letter": -2.365071200254981,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.534308674870078,
+    "L2": -1.54088260155512,
+    "L1": -1.5926269075650836,
+    "X2": -1.6008398263696004
+   }
+  },
+  {
+   "id": "H_134",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7358297680363002,
+   "word_per_letter": -0.9191349738524723,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7358297680363002,
+    "L1": -1.5090244053977004,
+    "X2": -1.5528110185081196,
+    "X1": -1.6044530751394857
+   },
+   "fam": "L2",
+   "lw": 8,
+   "m": 2,
+   "gcd": 2,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_135",
+   "kind": "POS_NONSTD",
+   "best_fam": "X1",
+   "lm_per_letter": -0.9606099197897249,
+   "word_per_letter": -1.421236923583363,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.9606099197897249,
+    "L2": -1.5222914218902588,
+    "L1": -1.5691713615843892,
+    "X2": -1.5887167267789393
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 2,
+   "gcd": 2,
+   "lcm": 2,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_136",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.525800211323286,
+   "word_per_letter": -2.3520735798656713,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.525800211323286,
+    "X2": -1.548576494275602,
+    "X1": -1.5760874675644427,
+    "L2": -1.5957794528953808
+   }
+  },
+  {
+   "id": "H_137",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.7189374780102354,
+   "word_per_letter": -0.9487212880176138,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.7189374780102354,
+    "L2": -1.569034040271852,
+    "X2": -1.5830862607768517,
+    "L1": -1.6065886504564089
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 24,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_138",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7973441934405368,
+   "word_per_letter": -0.971454003076985,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7973441934405368,
+    "X1": -1.2304321860248877,
+    "L1": -1.3397165596984404,
+    "X2": -1.6243223405452734
+   },
+   "fam": "L2",
+   "lw": 12,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_139",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.5710322532930374,
+   "word_per_letter": -0.7078638142815397,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.5710322532930374,
+    "X1": -1.557500919077507,
+    "L2": -1.6157210014146013,
+    "X2": -1.6167958145535108
+   },
+   "fam": "L1",
+   "lw": 10,
+   "m": 10,
+   "gcd": 10,
+   "lcm": 10,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_140",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.557521974821527,
+   "word_per_letter": -2.7485315000947144,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.557521974821527,
+    "X2": -1.562068274647919,
+    "L2": -1.5930469122129618,
+    "X1": -1.600366980509506
+   }
+  },
+  {
+   "id": "H_141",
+   "kind": "POS",
+   "best_fam": "X2",
+   "lm_per_letter": -0.7917632889080571,
+   "word_per_letter": -1.033897167268611,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.7917632889080571,
+    "L1": -1.547890546741252,
+    "X1": -1.5572873413822008,
+    "L2": -1.587221282105845
+   },
+   "fam": "X2",
+   "lw": 1,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_142",
+   "kind": "NEG_GROMARK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5646358642189466,
+   "word_per_letter": -2.5270271842563816,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5646358642189466,
+    "L1": -1.5793736816681538,
+    "X2": -1.6186190044757016,
+    "X1": -1.6279448244874317
+   }
+  },
+  {
+   "id": "H_143",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5836688297003816,
+   "word_per_letter": -2.5064366739762467,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5836688297003816,
+    "L1": -1.6015051206208997,
+    "X2": -1.615148785188026,
+    "X1": -1.6171375445483887
+   }
+  },
+  {
+   "id": "H_144",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6637715603892971,
+   "word_per_letter": -0.722632800669175,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6637715603892971,
+    "L2": -1.5154844281676503,
+    "X1": -1.5615010812072103,
+    "X2": -1.5667331075276603
+   },
+   "fam": "L1",
+   "lw": 6,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 42,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_145",
+   "kind": "NEG_PTAK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5728757235548008,
+   "word_per_letter": -2.6870358765321423,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5728757235548008,
+    "L2": -1.5763199964211774,
+    "X1": -1.5942695563006186,
+    "X2": -1.6279794448583396
+   }
+  },
+  {
+   "id": "H_146",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.537147912705682,
+   "word_per_letter": -2.6151256674277894,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.537147912705682,
+    "X2": -1.566443435617329,
+    "X1": -1.6210383869630773,
+    "L2": -1.6223880864449383
+   }
+  },
+  {
+   "id": "H_147",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6559526104105804,
+   "word_per_letter": -0.7128930073189865,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6559526104105804,
+    "X1": -1.5571820686196851,
+    "L1": -1.5944535232619526,
+    "X2": -1.6045303839095628
+   },
+   "fam": "L2",
+   "lw": 12,
+   "m": 4,
+   "gcd": 4,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_148",
+   "kind": "POS",
+   "best_fam": "L1",
+   "lm_per_letter": -0.6388198411334988,
+   "word_per_letter": -0.7601777031538881,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.6388198411334988,
+    "L2": -1.5731933337357855,
+    "X2": -1.5897763001050838,
+    "X1": -1.6076354218512465
+   },
+   "fam": "L1",
+   "lw": 12,
+   "m": 5,
+   "gcd": 1,
+   "lcm": 60,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_149",
+   "kind": "NEG_OTP",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5245351464938872,
+   "word_per_letter": -2.497946789673687,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5245351464938872,
+    "L1": -1.5330342010417282,
+    "L2": -1.5850033518575017,
+    "X1": -1.629035112031882
+   }
+  },
+  {
+   "id": "H_150",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7478748507248346,
+   "word_per_letter": -0.9711245322082667,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7478748507248346,
+    "X2": -1.3861892033796206,
+    "X1": -1.5836443652197258,
+    "L2": -1.6177892920647545
+   },
+   "fam": "L1",
+   "lw": 6,
+   "m": 6,
+   "gcd": 6,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_151",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5295268567278981,
+   "word_per_letter": -2.6427010408824794,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5295268567278981,
+    "L1": -1.555032243268065,
+    "X1": -1.5821270721858924,
+    "X2": -1.61239644420362
+   }
+  },
+  {
+   "id": "H_152",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5806407743354434,
+   "word_per_letter": -3.1485369296967196,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5806407743354434,
+    "L2": -1.5900093992960822,
+    "L1": -1.59211530413517,
+    "X1": -1.623848524177447
+   }
+  },
+  {
+   "id": "H_153",
+   "kind": "POS",
+   "best_fam": "X1",
+   "lm_per_letter": -0.7973419651665158,
+   "word_per_letter": -0.7760044452508564,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.7973419651665158,
+    "L1": -1.4933492778704416,
+    "L2": -1.5662032402091728,
+    "X2": -1.6062374535141533
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 8,
+   "gcd": 2,
+   "lcm": 8,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_154",
+   "kind": "NEG_PTAK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5526747857172465,
+   "word_per_letter": -2.708997301444997,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5526747857172465,
+    "X2": -1.589839366139825,
+    "L2": -1.5908663837988044,
+    "X1": -1.6212501968305135
+   }
+  },
+  {
+   "id": "H_155",
+   "kind": "POS_MISSP",
+   "best_fam": "X2",
+   "lm_per_letter": -0.6726924688958104,
+   "word_per_letter": -0.892345060821855,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.6726924688958104,
+    "L1": -1.5916364188630077,
+    "L2": -1.6084478071305095,
+    "X1": -1.6134297734836942
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 7,
+   "gcd": 1,
+   "lcm": 14,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_156",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.537620869402164,
+   "word_per_letter": -2.5048366401792537,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.537620869402164,
+    "L2": -1.573506829799297,
+    "L1": -1.6091049835661944,
+    "X1": -1.6128018096703844
+   }
+  },
+  {
+   "id": "H_157",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5735100530395187,
+   "word_per_letter": -2.3419791297213215,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5735100530395187,
+    "L1": -1.578555674359356,
+    "X1": -1.593871287156626,
+    "L2": -1.6055273052794647
+   }
+  },
+  {
+   "id": "H_158",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5734001270389741,
+   "word_per_letter": -2.58440635377903,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5734001270389741,
+    "X1": -1.59970177874898,
+    "L2": -1.60158763366833,
+    "X2": -1.632431008766607
+   }
+  },
+  {
+   "id": "H_159",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5224493647128652,
+   "word_per_letter": -2.412288129955616,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5224493647128652,
+    "L1": -1.5837894121530591,
+    "X1": -1.6039702413345929,
+    "X2": -1.6137841506717132
+   }
+  },
+  {
+   "id": "H_160",
+   "kind": "NEG_RUNKEY",
+   "best_fam": "X1",
+   "lm_per_letter": -1.5810740101679237,
+   "word_per_letter": -2.773189687700705,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.5810740101679237,
+    "L2": -1.5887413287592917,
+    "L1": -1.6036406572639328,
+    "X2": -1.6324114519286632
+   }
+  },
+  {
+   "id": "H_161",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L2",
+   "lm_per_letter": -1.554364652785751,
+   "word_per_letter": -2.370772780405787,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.554364652785751,
+    "L1": -1.5585144579256933,
+    "X2": -1.601131962441849,
+    "X1": -1.612677989383564
+   }
+  },
+  {
+   "id": "H_162",
+   "kind": "POS_MISSP",
+   "best_fam": "X1",
+   "lm_per_letter": -0.7795812462047871,
+   "word_per_letter": -0.905921507217201,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.7795812462047871,
+    "L1": -1.2621140386510195,
+    "L2": -1.4712031752005528,
+    "X2": -1.512233813619721
+   },
+   "fam": "X1",
+   "lw": 3,
+   "m": 3,
+   "gcd": 3,
+   "lcm": 3,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_163",
+   "kind": "NEG_PTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5841915127965285,
+   "word_per_letter": -2.7796256622912643,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5841915127965285,
+    "X2": -1.586660919422956,
+    "L1": -1.5888607498203144,
+    "X1": -1.626297638360315
+   }
+  },
+  {
+   "id": "H_164",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.54167439576392,
+   "word_per_letter": -2.2906848497145,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.54167439576392,
+    "L2": -1.5536301742240632,
+    "X2": -1.5983337326954627,
+    "X1": -1.615217503659504
+   }
+  },
+  {
+   "id": "H_165",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5670272287451805,
+   "word_per_letter": -2.5904963336996767,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5670272287451805,
+    "L2": -1.5952539267402488,
+    "X2": -1.5991717318130523,
+    "X1": -1.6093724230208348
+   }
+  },
+  {
+   "id": "H_166",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.7951966848683237,
+   "word_per_letter": -0.8352122364372828,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.7951966848683237,
+    "L1": -1.5600706669934017,
+    "X1": -1.574301471952925,
+    "X2": -1.6075264627171546
+   },
+   "fam": "L2",
+   "lw": 11,
+   "m": 11,
+   "gcd": 11,
+   "lcm": 11,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_167",
+   "kind": "POS_MISSP",
+   "best_fam": "X2",
+   "lm_per_letter": -0.7166516125805559,
+   "word_per_letter": -0.8450565507290302,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.7166516125805559,
+    "L2": -1.5813000977192957,
+    "L1": -1.607878352419387,
+    "X1": -1.6490315264186908
+   },
+   "fam": "X2",
+   "lw": 3,
+   "m": 6,
+   "gcd": 3,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_168",
+   "kind": "NEG_GROMARK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.541253972799786,
+   "word_per_letter": -2.7078547269067874,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.541253972799786,
+    "L2": -1.5873293104706352,
+    "L1": -1.6201023093050289,
+    "X1": -1.6233037508371257
+   }
+  },
+  {
+   "id": "H_169",
+   "kind": "POS_MISSP",
+   "best_fam": "X1",
+   "lm_per_letter": -0.7551217198734335,
+   "word_per_letter": -0.8868185092319886,
+   "confident": true,
+   "fam_best_lm": {
+    "X1": -0.7551217198734335,
+    "X2": -1.0354799446260547,
+    "L2": -1.4254719264956537,
+    "L1": -1.5877196702376468
+   },
+   "fam": "X1",
+   "lw": 2,
+   "m": 3,
+   "gcd": 1,
+   "lcm": 6,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_170",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -0.7599529474636134,
+   "word_per_letter": -0.9877145147297481,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.7599529474636134,
+    "X1": -1.2700955721946643,
+    "X2": -1.4128184276872997,
+    "L2": -1.5234681859385335
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 1,
+   "gcd": 1,
+   "lcm": 2,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": false
+  },
+  {
+   "id": "H_171",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.6947001013430748,
+   "word_per_letter": -0.819517033411699,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.6947001013430748,
+    "L1": -1.587869807141689,
+    "X2": -1.5915690469315524,
+    "X1": -1.6235688457345907
+   },
+   "fam": "L2",
+   "lw": 3,
+   "m": 4,
+   "gcd": 1,
+   "lcm": 12,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_172",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5461532352396201,
+   "word_per_letter": -2.6373731215894507,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5461532352396201,
+    "X1": -1.6014022315641117,
+    "X2": -1.6081245598796101,
+    "L2": -1.6159086693270304
+   }
+  },
+  {
+   "id": "H_173",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "L1",
+   "lm_per_letter": -1.54777760100887,
+   "word_per_letter": -2.2285508576202178,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.54777760100887,
+    "L2": -1.5820909609499665,
+    "X1": -1.591269335373468,
+    "X2": -1.594779308126836
+   }
+  },
+  {
+   "id": "H_174",
+   "kind": "POS",
+   "best_fam": "X2",
+   "lm_per_letter": -0.6429358271529261,
+   "word_per_letter": -0.6975546049181033,
+   "confident": true,
+   "fam_best_lm": {
+    "X2": -0.6429358271529261,
+    "L2": -1.558999547866874,
+    "X1": -1.613632332495193,
+    "L1": -1.6304291930702544
+   },
+   "fam": "X2",
+   "lw": 2,
+   "m": 10,
+   "gcd": 2,
+   "lcm": 10,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_175",
+   "kind": "STRETCH",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8254452065730313,
+   "word_per_letter": -1.0123256232821838,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8254452065730313,
+    "L1": -1.5181324761576913,
+    "X2": -1.5701353780387604,
+    "X1": -1.6231013838316977
+   },
+   "fam": "L2",
+   "lw": 9,
+   "m": 12,
+   "gcd": 3,
+   "lcm": 36,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_176",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "L1",
+   "lm_per_letter": -1.542875788913867,
+   "word_per_letter": -2.187571739775509,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.542875788913867,
+    "L2": -1.5551203178222646,
+    "X2": -1.588210339245108,
+    "X1": -1.5937381106880062
+   }
+  },
+  {
+   "id": "H_177",
+   "kind": "NEG_GROMARK",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5587306530658904,
+   "word_per_letter": -2.3727492628970976,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5587306530658904,
+    "X2": -1.5943558129299547,
+    "L2": -1.5976787626589697,
+    "X1": -1.6003245971976905
+   }
+  },
+  {
+   "id": "H_178",
+   "kind": "POS_MISSP",
+   "best_fam": "L1",
+   "lm_per_letter": -0.8433072017910819,
+   "word_per_letter": -1.0064126613009905,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.8433072017910819,
+    "X1": -1.5411667992773743,
+    "X2": -1.571127437746402,
+    "L2": -1.588566928775501
+   },
+   "fam": "L1",
+   "lw": 4,
+   "m": 10,
+   "gcd": 2,
+   "lcm": 20,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_179",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "X2",
+   "lm_per_letter": -1.579201888331433,
+   "word_per_letter": -2.8745567039066158,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.579201888331433,
+    "L1": -1.612388268012323,
+    "L2": -1.6168502693630986,
+    "X1": -1.629001628953157
+   }
+  },
+  {
+   "id": "H_180",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5223251174098438,
+   "word_per_letter": -1.9613989130879101,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5223251174098438,
+    "L2": -1.53787051186388,
+    "X2": -1.5861784285414464,
+    "X1": -1.6058737539983903
+   }
+  },
+  {
+   "id": "H_181",
+   "kind": "NEG_PTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5585493848841523,
+   "word_per_letter": -2.6245110515451886,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5585493848841523,
+    "L1": -1.5685173957080571,
+    "X1": -1.59790645124986,
+    "X2": -1.6060072973793007
+   }
+  },
+  {
+   "id": "H_182",
+   "kind": "POS_MISSP",
+   "best_fam": "X2",
+   "lm_per_letter": -1.553060079921987,
+   "word_per_letter": -2.721149184220412,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.553060079921987,
+    "L1": -1.6078317577460992,
+    "L2": -1.6269068487526215,
+    "X1": -1.6436092172021444
+   },
+   "fam": "L2",
+   "lw": 7,
+   "m": 8,
+   "gcd": 1,
+   "lcm": 56,
+   "letters_right": 7,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_183",
+   "kind": "NEG_PERIODIC",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5563427239426018,
+   "word_per_letter": -2.9424247975461606,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5563427239426018,
+    "L2": -1.578060443753127,
+    "L1": -1.5803975292395072,
+    "X1": -1.5824608141604388
+   }
+  },
+  {
+   "id": "H_184",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.500512130029221,
+   "word_per_letter": -2.5714698591033014,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.500512130029221,
+    "L1": -1.5613820595263512,
+    "X2": -1.582250852685076,
+    "X1": -1.607175478922952
+   }
+  },
+  {
+   "id": "H_185",
+   "kind": "STRETCH",
+   "best_fam": "X1",
+   "lm_per_letter": -1.573086186912218,
+   "word_per_letter": -2.3257527090712533,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.573086186912218,
+    "L2": -1.5763145700557946,
+    "L1": -1.5854936591091509,
+    "X2": -1.5929880728081023
+   },
+   "fam": "L1",
+   "lw": 11,
+   "m": 12,
+   "gcd": 1,
+   "lcm": 132,
+   "letters_right": 2,
+   "exact": false,
+   "rec95": false,
+   "rec85": false,
+   "ok": false,
+   "same_family": false
+  },
+  {
+   "id": "H_186",
+   "kind": "NEG_OTP",
+   "best_fam": "L1",
+   "lm_per_letter": -1.4854306725151454,
+   "word_per_letter": -2.3339460956500004,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.4854306725151454,
+    "X1": -1.5904089581154133,
+    "L2": -1.5927713387405749,
+    "X2": -1.6071005054778351
+   }
+  },
+  {
+   "id": "H_187",
+   "kind": "NEG_SHUFFLE",
+   "best_fam": "X2",
+   "lm_per_letter": -1.576537903351563,
+   "word_per_letter": -2.436814176900171,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.576537903351563,
+    "L2": -1.5790815700767273,
+    "X1": -1.582930883138258,
+    "L1": -1.6027443987562215
+   }
+  },
+  {
+   "id": "H_188",
+   "kind": "NEG_CTAK",
+   "best_fam": "L2",
+   "lm_per_letter": -1.58014543869139,
+   "word_per_letter": -2.506394643268682,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.58014543869139,
+    "L1": -1.6259338769332035,
+    "X1": -1.6316878870753668,
+    "X2": -1.6344828192797518
+   }
+  },
+  {
+   "id": "H_189",
+   "kind": "POS",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8054414948276917,
+   "word_per_letter": -0.8613931656896924,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8054414948276917,
+    "X1": -1.5499865064090215,
+    "X2": -1.582136295735836,
+    "L1": -1.610592120763313
+   },
+   "fam": "L2",
+   "lw": 11,
+   "m": 2,
+   "gcd": 1,
+   "lcm": 22,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_190",
+   "kind": "POS_MISSP",
+   "best_fam": "L2",
+   "lm_per_letter": -0.8502499794196842,
+   "word_per_letter": -1.007027731469732,
+   "confident": true,
+   "fam_best_lm": {
+    "L2": -0.8502499794196842,
+    "L1": -1.5756312222364022,
+    "X1": -1.580287321024219,
+    "X2": -1.582733317403142
+   },
+   "fam": "L2",
+   "lw": 4,
+   "m": 2,
+   "gcd": 2,
+   "lcm": 4,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  },
+  {
+   "id": "H_191",
+   "kind": "NEG_TWO_RANDOM",
+   "best_fam": "L2",
+   "lm_per_letter": -1.5419604363886503,
+   "word_per_letter": -2.383574363159007,
+   "confident": false,
+   "fam_best_lm": {
+    "L2": -1.5419604363886503,
+    "L1": -1.565240459694268,
+    "X2": -1.5727508905746965,
+    "X1": -1.591421438822734
+   }
+  },
+  {
+   "id": "H_192",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "X1",
+   "lm_per_letter": -1.554626859158047,
+   "word_per_letter": -2.3213917711269367,
+   "confident": false,
+   "fam_best_lm": {
+    "X1": -1.554626859158047,
+    "X2": -1.5861906537344468,
+    "L1": -1.5974004603538317,
+    "L2": -1.5993632407974183
+   }
+  },
+  {
+   "id": "H_193",
+   "kind": "NEG_HOMOPHONIC",
+   "best_fam": "L1",
+   "lm_per_letter": -1.5796731409338332,
+   "word_per_letter": -2.3488478819938856,
+   "confident": false,
+   "fam_best_lm": {
+    "L1": -1.5796731409338332,
+    "X2": -1.583170010955505,
+    "X1": -1.5890487500456805,
+    "L2": -1.5999272574776227
+   }
+  },
+  {
+   "id": "H_194",
+   "kind": "NEG_PTAK",
+   "best_fam": "X2",
+   "lm_per_letter": -1.5263403541955751,
+   "word_per_letter": -2.4608756009640778,
+   "confident": false,
+   "fam_best_lm": {
+    "X2": -1.5263403541955751,
+    "L2": -1.5760919387961172,
+    "L1": -1.592610018251022,
+    "X1": -1.5930344890179016
+   }
+  },
+  {
+   "id": "H_195",
+   "kind": "POS_NONSTD",
+   "best_fam": "L1",
+   "lm_per_letter": -0.9025329496484887,
+   "word_per_letter": -1.131305368022985,
+   "confident": true,
+   "fam_best_lm": {
+    "L1": -0.9025329496484887,
+    "X2": -1.5794810306703306,
+    "X1": -1.583206592242896,
+    "L2": -1.6068130922743802
+   },
+   "fam": "L1",
+   "lw": 4,
+   "m": 9,
+   "gcd": 1,
+   "lcm": 36,
+   "letters_right": 97,
+   "exact": true,
+   "rec95": true,
+   "rec85": true,
+   "ok": true,
+   "same_family": true
+  }
+ ]
+}
