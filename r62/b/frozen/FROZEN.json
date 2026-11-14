@@ -1,0 +1,17 @@
+{
+  "classification": "R62_FROZEN_BLIND_B_NO_TRUTH",
+  "complete_candidate_fields_per_case": 13,
+  "input_sha256": "3ebd9dc5bed5046c8ec87916f079f3bf1d61e0453d8c0ed445df8ed27b0a0625",
+  "inputs": 80,
+  "lm_sha256": "b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a",
+  "modern_messages_sha256": "4284cba3e89542bc524026cf1fd099287b5a3c1648cd6c2a7944b7313dc9692f",
+  "original_K4_attempted": false,
+  "protocol_sha256": "86adc761a9918938a83942675d977fc47ef360425a4ba61a8d15764d21f2d3b1",
+  "raw_output_sha256": "fd4312fed1b2116e8d6767be5e3e6762878cfa9a38ca9f388af6d83127ee8cb9",
+  "recovered_key_97char_in_every_candidate": true,
+  "runner_sha256": "e539bb6e5bafc7ff9425cbd921d6b0dac2844ca49d4f3ffea6810d14a4870c0f",
+  "sealed_generator_sha256": "aa840c066b2da3a9ee6febb66ed974ce84c1fdedc7c0b189504f19245388559e",
+  "source_sha256": "738a9d5521063fd9407e43ac21a48827cb62d8935de3cc77af552f67c0e35edc",
+  "status": "FROZEN_BEFORE_KEY_FAMILY_OR_TEXT_REVEAL",
+  "word_model_sha256": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877"
+}
