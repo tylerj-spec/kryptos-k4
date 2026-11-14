@@ -1,0 +1,38 @@
+name: R83 synthetic checks
+on:
+  pull_request:
+    paths:
+      - "r83/**"
+      - ".github/workflows/r83-synthetic.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install numeric dependency
+        run: python3 -m pip install numpy
+      - name: No K4 data in the synthetic code paths (the K4 mode is guarded and must stay unused here)
+        run: |
+          if grep -n "reveal_k4\|TARGET.tsv\|OBKRUOXOGHULBSOLIFBBW" r83/models83.py r83/tests/test_r83.py; then exit 1; fi
+          if grep -n "EASTNORTHEAST\|BERLIN\|CLOCK" r83/*.py r83/tests/*.py; then exit 1; fi
+      - name: K4 mode refuses without a pre-registration
+        run: |
+          if [ ! -e r83/PROTOCOL.sha256 ]; then
+            if python3 -I r83/exact83.py --k4 /dev/null "$RUNNER_TEMP/x.json"; then exit 1; fi
+            if python3 -I r83/f1x_drop.py --k4 /dev/null "$RUNNER_TEMP/x.json"; then exit 1; fi
+          fi
+      - name: Unit tests (round trip; exact checks equal exhaustive search; plants; check table)
+        run: python3 -I r83/tests/test_r83.py
+      - name: Positions-only check table (regenerate and compare with the committed file)
+        run: |
+          python3 -I r83/exact83.py --checks "$RUNNER_TEMP/CHECKS.json"
+          python3 -I r81a/sealed/same_json.py "$RUNNER_TEMP/CHECKS.json" r83/results/CHECKS.json
+      - name: F1X drop-one self-test (a corrupted published letter is recovered by drop-one)
+        run: python3 -I r83/f1x_drop.py --selftest "$RUNNER_TEMP/F1X_DROP_SELFTEST.json"
