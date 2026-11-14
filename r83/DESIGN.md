@@ -74,7 +74,15 @@ All are algebraic and never decrypt.
 
 - **Drop-one** (G6, as R81a): each check also reports, per published position, the settings that become feasible once that one letter is set aside.
 - **Clue-position robustness** (PR #77 §E: a shifted clue position): every engine takes the published positions as an argument. Shifting one run by ±1 or ±2 is a call with different positions. A pre-registered variant would correct for the 8 extra position sets.
-- **Chance level.** Feasibility at few checks is expected by chance in a large family. F1X saw about 2,000 feasible settings at 3–9 checks on any ciphertext. So, as in R75, the K4 counts are read against the same check on 20 shuffles of K4, never alone. The synthetic chance levels are in §5.
+- **Chance level.** A setting is feasible by chance with probability about 26^−(checks − components), because each connected piece of the constraint graph has 26 tries at its free value. Measured on 4 random ciphertexts at full size (`r83/results/SELFTEST.json`):
+
+  | Check | Settings per ciphertext | Feasible at ≥ 3 checks, per random ciphertext |
+  |---|---|---|
+  | LX | 96.1 million | 0, 1, 2, 3, all at exactly 5 checks: keyword length 20, the edge of the range |
+  | PFX | 79,872 | 0 (150–240 at 1 check, 3–5 at 2) |
+  | WPX, SLX, SLX-A, SSX | 12,800; 832; 832; 3,328 | 0 |
+
+  So these checks are decisive on their own except at LX's longest keywords (about 18–20) and PFX's 1–2-check cells. There, as F1X did, the K4 counts are read against the same check on 20 shuffles of K4, never alone.
 
 ### 3.3 Why exact first for these families
 These checks can only exclude; a feasible setting is reported as a count and a setting, never as a plaintext (§5). This is the G5X precedent, which Tyler accepted for exclusion-only checks ("You can do this check that you offered & im fine with us doing it in the future"). A blind solver for each family would cost a sealed gate each. The exact checks decide most of each family's range in about an hour for K4 and 20 shuffles. They also show which cells, if any, still need a blind round. **Decision for Tyler: run R83a before building blind solvers for these four families** (§6).
@@ -131,7 +139,7 @@ R80a's 9 misses were all lost by pass 0: the true setting ranked 7,849 to 1.8 mi
 | `r83/exact83.py` | LX, PFX, WPX, SLX, SLX-A, SSX with drop-one; check-count table from the positions alone; self-test; K4 mode guarded by `r83/PROTOCOL.sha256` | `r83/tests/test_r83.py` |
 | `r83/tests/test_r83.py` | (1) round trip; (2) every check equals exhaustive search over all keys on small keys, run through the explicit encryptor, on planted ciphertexts and on the same ciphertexts with one published letter changed (92 comparisons); (3) 20/20 plants feasible under their own setting; (4) check table equals the engine | All pass |
 | `r83/results/CHECKS.json` | Checks per cell, from the published positions only | — |
-| `r83/results/SELFTEST.json` | 20 plants; 4 random ciphertexts through every check at full size | SELFTEST_LINE |
+| `r83/results/SELFTEST.json` | 20 plants; 4 random ciphertexts through every check at full size | 20/20 plants feasible; chance level in §3.2 |
 | `r83/dev/r80b_sweeps.py`, `r83/results/R80B_SWEEPS.json` | §4.3 | — |
 
 **Run time per ciphertext:** LX 3,610 graph cells about 3 minutes; the other four checks under 2 seconds together. K4 with drop-one plus 20 shuffles is about 1.5 hours on one core.
