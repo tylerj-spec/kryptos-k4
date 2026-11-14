@@ -10,7 +10,7 @@ Reviewed: PR #75 (the R80 design study), #76 (R81a, merged), #78 (R80a, draft) a
 ## 1. Findings in brief
 | # | Finding | Consequence |
 |---|---|---|
-| 1 | **R75's F1X already decides most of what R80 would run on K4.** F1X is the exact check for two stacked periodic stages with *any* keys, periods 1–26 each, on all four alphabets (L165). Of the 180 (listed length 1–15, free length 1–12) cells of R80's families, 171 have ≥ 3 F1X checks; F1X found no readable decode in any of them (§2) | R80's blind K4 run would mainly re-test settings already excluded. Its own new ground is 9 low-check cells and blind confirmation. Recommendation: R80 is optional (§6) |
+| 1 | **R75's F1X already decides most of what R80 would run on K4.** F1X is the exact check for two stacked periodic stages with *any* keys, periods 1–26 each, on all four alphabets (L165). Of the 180 (listed length 1–15, free length 1–12) cells of R80's families, 171 have ≥ 3 F1X checks. Across its whole range F1X left K4 no more feasible settings than its shuffles, and none of the feasible settings it could complete reads as English (§2) | R80's blind K4 run would mainly re-test settings already excluded. Its own new ground is 9 low-check cells and blind confirmation. Recommendation: R80 is optional (§6) |
 | 2 | Four keyword families in the review queue have no fixed period ≤ 26, so neither F1X nor any other ledger row covers them: the **linked key** (PR #77 ticket L), **keyword + plaintext autokey** (G2 / B1), the **walking key stepped by the plaintext** (WK-P / B1-WALK) and the **per-slot progressive key** (G3 / B2) | Each has a cheap exact check for any key letters, of the same kind as F1X and G5X (§3) |
 | 3 | Those checks are decisive over most of each family's range at K4's published positions: linked key ≥ 5 checks up to keyword length 20 at every row width; walking key ≥ 3 up to ring length 21; per-slot progression ≥ 4 up to keyword length 10 (≥ 3 up to 25 when the keyword re-enciphers itself); plaintext autokey ≥ 3 for lag ≤ 6 with keyword ≤ 12 (§3.2) | The blind solvers that remain to be built are needed only where the checks are weak: long lags, long progressive keywords (§4) |
 | 4 | Code written and tested here: reference ciphers for the four families (`r83/models83.py`) and their exact checks with drop-one (`r83/exact83.py`). Each check equals exhaustive key search on small keys, finds 20/20 plants, and runs in minutes per ciphertext (§5) | R83a is ready to pre-register |
@@ -38,8 +38,10 @@ R80a's four families (a listed key of 1–15 letters, a free key of 1–12, A–
 
 *(Computed from the 24 published positions only. Full table: §7, item 1.)*
 
-- **171 of the 180 cells have ≥ 3 checks.** At ≥ 3 checks, F1X:
-  - left 1,868 K4 settings feasible, fewer than in 19 of its 20 shuffles (median 2,354);
+- **171 of the 180 cells have ≥ 3 checks.** Over its whole range (all periods 1–26, all configurations) at ≥ 3
+  checks, F1X:
+  - left 1,868 K4 settings feasible, fewer than in 19 of its 20 shuffles (median 2,354), the level chance gives at
+    3–9 checks;
   - completed and scored every feasible setting with at most 2 unpinned letters;
   - found no readable decode (best −1.68; shuffles −1.62 to −1.67).
 - Cells with many checks but more than 2 unpinned letters (for example, equal lengths) were still checked for feasibility. A setting there that is infeasible is excluded whether or not it could be decoded.
