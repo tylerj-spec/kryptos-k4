@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="570" viewBox="0 0 920 570" role="img" aria-label="Original mathematical schematic showing 14 rows and 31 columns: 336 K3 ciphertext cells, one separator, 97 K4 ciphertext cells">
+<title>Sanborn panel 4: 14 by 31 output-layout geometry</title>
+<desc>NOT a traced worksheet or photographed original. This is a geometric illustration from the verified arithmetic 336 + 1 + 97 = 14 times 31.</desc>
+<rect width="920" height="570" fill="#faf9f6"/>
+<text x="70" y="42" font-family="Arial,sans-serif" font-weight="700" font-size="23" fill="#203346">14 by 31 output-layout schematic</text>
+<text x="70" y="67" font-family="Arial,sans-serif" font-size="14" fill="#4c5961">Original explanatory diagram, not a Sanborn photo or encryption map</text>
+<defs><pattern id="cells" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#fff" stroke-width="2"/></pattern></defs>
+<g transform="translate(75,92)">
+<rect width="744" height="240" fill="#3b6985"/>
+<rect y="240" width="624" height="24" fill="#3b6985"/>
+<rect x="624" y="240" width="24" height="24" fill="#e0ac4f"/>
+<rect x="648" y="240" width="96" height="24" fill="#bc6972"/>
+<rect y="264" width="744" height="72" fill="#bc6972"/>
+<rect width="744" height="336" fill="url(#cells)"/>
+<rect width="744" height="336" fill="none" stroke="#203346" stroke-width="2"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#203346" font-size="13">
+<text x="70" y="89">col 1</text><text x="768" y="89">col 31</text>
+<text x="38" y="110">1</text><text x="35" y="350">11</text><text x="35" y="422">14</text>
+<text x="75" y="463">K4 appears at row 11, column 28 (1-indexed): 4 + 31 + 31 + 31 cells</text>
+</g>
+<rect x="75" y="485" width="20" height="20" fill="#3b6985"/><text x="102" y="500" fill="#203346" font-family="Arial,sans-serif" font-size="14">K3 ciphertext: 336 cells</text>
+<rect x="310" y="485" width="20" height="20" fill="#e0ac4f"/><text x="338" y="500" fill="#203346" font-family="Arial,sans-serif" font-size="14">Separator: 1</text>
+<rect x="515" y="485" width="20" height="20" fill="#bc6972"/><text x="543" y="500" fill="#203346" font-family="Arial,sans-serif" font-size="14">K4 ciphertext: 97 cells</text>
+<text x="75" y="545" fill="#59656d" font-family="Arial,sans-serif" font-size="12">The original 2007 photographed sheet may differ from the final carved text; no source-image equality is asserted.</text>
+</svg>
