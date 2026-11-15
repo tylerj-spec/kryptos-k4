@@ -70,6 +70,19 @@ class HistoricalAuditTests(unittest.TestCase):
         self.assertEqual(result["rows"][1]["provenance"], "REFERENCED_NOT_INDEPENDENTLY_REPLAYED")
         self.assertEqual(result["rows"][2]["numbers"], "")
 
+    def test_verified_legacy_k4kit_location_aliases(self):
+        self.add("LEDGER.md", "\n".join([
+            "| ID | Model | Status | Key numbers | Source |",
+            "| L22 | Test historical \`r30/search.py\` | OPEN | 0 | C |",
+            "| L23 | Test historical \`r32/runs/FROZEN.sha256\` | STAT | 0 | G |",
+        ]))
+        paths={"LEDGER.md","k4kit/r30/search.py",
+               "k4kit/r32/runs/FROZEN.sha256"}
+        d=S.inventory_ledger(paths)
+        self.assertEqual(d["reference_issue_count"],0)
+        self.assertEqual(d["rows"][0]["resolved_paths"],["k4kit/r30/search.py"])
+        self.assertEqual(d["rows"][1]["resolved_paths"],["k4kit/r32/runs/FROZEN.sha256"])
+
     def test_digest_match_and_detect_modified_target(self):
         f = self.add("r91/PREREGISTRATION.md", "Frozen\n")
         h = hashlib.sha256(f.read_bytes()).hexdigest()
