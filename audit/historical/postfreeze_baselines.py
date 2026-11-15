@@ -70,7 +70,7 @@ def synthetics():
     bad[pos[4]] = AZ[(AZ.index(bad[pos[4]]) + 1) % 26]
     assert not periodic_compatible(ct, bad, pa, ca, sign, m)
     assert not mono_conflicts("ABCDEFGHIJKLMNOPQRSTUVWXYZ"*4,
-                              {0:"A", 26:"B"})
+                              {0:"A", 26:"A"})
     assert mono_conflicts("A"*97, {1:"C",2:"D"})
     assert permutation_compatible(pt, known)
     assert not permutation_compatible("B"*97,{0:"A"})
