@@ -1,13 +1,15 @@
 {
-  "_instructions": "COPY into rNN/QA_MANIFEST.json after prereg is committed; replace every EXAMPLE value. This example is NOT itself a valid experiment manifest.",
-  "schema": "k4-qa-v1",
+  "_instructions": "COPY into rNN/QA_MANIFEST.json after the preregistration is committed; replace every EXAMPLE value. Stages: preregistered -> gate -> frozen -> validated. Add freeze_manifest_path and resource_logs when K4 outputs are committed. This example is NOT itself a valid experiment manifest.",
+  "schema": "k4-qa-v2",
   "mode": "blind",
   "stage": "preregistered",
-  "hypothesis": "EXAMPLE: exact reversible cipher model and bounded covered scope",
+  "hypothesis": "EXAMPLE: exact reversible cipher model and the bounded scope it covers",
+  "not_excluded": "EXAMPLE: what a null result here cannot rule out (other alphabets, longer keys, a second stage)",
   "preregistration_path": "rNN/PREREGISTRATION.md",
   "preregistration_commit": "0000000000000000000000000000000000000000",
   "preregistration_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
   "synthetic_gate_path": "rNN/holdout/GATE.json",
+  "gate_verdict": "EXAMPLE: GO only after the sealed synthetic gate has passed its preregistered bar",
   "solver_inputs": [
     "rNN/k4/TARGET.tsv"
   ],
@@ -17,5 +19,8 @@
     "max_candidates": 1000000,
     "max_retries": 1
   },
-  "freeze_manifest_path": "rNN/k4/run/FROZEN.sha256"
+  "freeze_manifest_path": "rNN/k4/run/FROZEN.sha256",
+  "resource_logs": [
+    "rNN/k4/run/RESOURCE_LOG.json"
+  ]
 }

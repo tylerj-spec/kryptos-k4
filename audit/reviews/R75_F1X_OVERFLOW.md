@@ -2,6 +2,7 @@
 
 Affected ledger IDs: L165, L172
 Validation: CI run 43734956416 passed synthetic independent brute-force oracle, max-period planted controls, a contradictory-cycle test, and 26^17 arbitrary-precision regression.
+Independent review: PARTIAL. Found and written by one model (ChatGPT). A second model (Claude Code) re-ran `r75/audit/tests/test_f1x_safe.py` on 15 Nov 2026 (6 tests pass) but did not review the mathematics line by line. The setting-by-setting replay against archived R75 output is outstanding (`audit/NEXT_STEPS.md`, T2).
 
 ## Scope
 

@@ -2,6 +2,7 @@
 
 Affected ledger IDs: L172
 Validation: GitHub Actions run 43734350994; the frozen historical R83a results were not changed.
+Independent review: PARTIAL. Found and written by one model (ChatGPT). A second model (Claude Code) re-ran `r83/audit/plaintext_drop.py --synthetic` on 15 Nov 2026 and reproduced both false rejections by the original test. The 260-survivor K4 figure was not re-derived, and the exact one-error checker is outstanding (`audit/NEXT_STEPS.md`, T1).
 Review status: confirmed single-model mathematical counterexample and deterministic CI; requires independent external review before any claim of exhaustive corrected feasibility.
 
 ## What was tested
