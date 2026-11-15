@@ -52,6 +52,19 @@ An implementation independent of the archived L01–L04 checker, in audit/histor
 
 Reproducibility: GitHub Actions prints the model counts and stores BASELINE_EXCLUSIONS.json next to the historical inventory. No plaintext candidate or fitted key is emitted.
 
+## Independent ciphertext-only cryptanalytic verification: L167 (R78)
+
+The R78 self-keying assumption is a single stage with the key being an arbitrary **reordering of exactly the plaintext letters**, with both plaintext and key numbered by the same alphabet. The entire plaintext is used once as the key; arbitrary *different* plaintext and key alphabets are outside scope.
+
+A separate standard-library checker, audit/historical/ciphertext_invariants.py, computes the sum of ciphertext indices modulo 26 for the four ciphertext charts without looking at **any known plaintext clue**. With signs (s,t), summing all 97 equations cancels the permutation: the sum is zero when s+t=0 (Beaufort and variant), and is twice the plaintext-index sum when both signs are +1 (Vigenere), hence even.
+
+The verified K4 ciphertext yields **AZ 7, KRY 12, PAL 7, ABS 14**, independently reproducing L167's necessary conditions. Thus:
+- **Exact scope EXCL:** Beaufort/variant for all four named ciphertext charts, for every permutation under this precise self-key construction.
+- **Exact scope EXCL:** Vigenere with AZ/PAL ciphertext charts.
+- **OPEN:** Vigenere with KRY/ABS ciphertext charts; and all different plaintext-vs-key chart constructions.
+
+Synthetic validation uses **14,400** independently generated planted expressions across six message lengths, four tableaux, and three operations. The L167 check is **ciphertext-only**, not crib-assisted, and never decrypts or fits a key. The original R78's separate T-RK statistical language claim is *not* revalidated.
+
 ## Confirmed mathematical/software defects in high-impact ledger claims
 
 ### P0 — R83a plaintext-error check, L172: PR #82
@@ -107,6 +120,7 @@ A single assistant carrying out these three roles is **not equivalent to genuine
 - Executable structural scan: audit/historical/scan.py
 - Deterministic toy Git + hash tests: audit/historical/tests/test_scan.py
 - Independent scoped K4 postfreeze baseline: audit/historical/postfreeze_baselines.py
+- Independent ciphertext-only L167 invariant: audit/historical/ciphertext_invariants.py
 - Workflow: .github/workflows/historical-evidence-audit.yml
 - Downloadable Actions artifact: INVENTORY.json, SUMMARY.md and BASELINE_EXCLUSIONS.json from the successful workflow run associated with this PR
 - Companion corrective PRs: #81 future guardrails; #82 R83 PFX/WPX false-exclusion correction; #83 R75 F1X overflow safety
