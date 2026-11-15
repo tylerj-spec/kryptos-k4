@@ -1,0 +1,21 @@
+{
+  "_instructions": "COPY into rNN/QA_MANIFEST.json after prereg is committed; replace every EXAMPLE value. This example is NOT itself a valid experiment manifest.",
+  "schema": "k4-qa-v1",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "EXAMPLE: exact reversible cipher model and bounded covered scope",
+  "preregistration_path": "rNN/PREREGISTRATION.md",
+  "preregistration_commit": "0000000000000000000000000000000000000000",
+  "preregistration_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "synthetic_gate_path": "rNN/holdout/GATE.json",
+  "solver_inputs": [
+    "rNN/k4/TARGET.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_ram_mb": 4096,
+    "max_candidates": 1000000,
+    "max_retries": 1
+  },
+  "freeze_manifest_path": "rNN/k4/run/FROZEN.sha256"
+}
