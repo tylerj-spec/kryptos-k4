@@ -129,10 +129,8 @@ def check_setting(ciphertext, positions, known, cfg, m1, m2):
                 valid_roots += 1
         component_root_counts.append(valid_roots)
         active_count *= valid_roots
-        # A zero in one component proves infeasible. Exit without
-        # constructing a key or exploring other components.
-        if not active_count:
-            break
+        # Continue checking all components even after a contradiction:
+        # the structural check count must remain exact for infeasible cases.
 
     n_used = len(adjacency)
     unused = m1 + m2 - n_used
