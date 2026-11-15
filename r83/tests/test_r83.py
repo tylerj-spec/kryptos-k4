@@ -5,7 +5,8 @@
   every key, run through the explicit encryptor, finds a key that sends the published-position plaintext to the
   ciphertext: planted ciphertexts (feasible) and the same ciphertexts with one published letter changed;
 3 plants: the planted setting is listed feasible by its own family's check (20 plants);
-4 checks: the positions-only check table agrees with the checks the engines report.
+4 checks: the positions-only check table agrees with the checks the engines report;
+5 drop-one: a plant with one published letter corrupted is infeasible, and drop-one lists it with that position.
 Usage: python3 -I r83/tests/test_r83.py"""
 import itertools
 import random
@@ -137,6 +138,43 @@ def main():
             found += engine(fam, st, ct, pt)
     assert found == 20
     print("3 ok: 20/20 plants feasible under their own setting")
+
+    rec = {}
+    for fam in ("LK", "PF", "WP", "SL", "SS"):
+        for _ in range(3):
+            st, pt, ct = plant(rng, fam, m=rng.randint(2, 6))
+            if fam == "PF":
+                st, pt, ct = plant(rng, fam, m=rng.randint(2, 6), L=rng.randint(1, 3))
+            bad = int(rng.choice(POS))
+            ct2 = ct[:bad] + rng.choice([x for x in AZ if x != ct[bad]]) + ct[bad + 1:]
+            c, p = codes(ct2), codes(pt)
+            t = X.Tally(list_min=-99, cap=10 ** 9)
+            m = X._klen(st)
+            if fam == "LK":
+                X.lx(c, POS, p[POS], t, mmax=m, widths=(st["w"],), ds=(st["d"],), drop=True, conv=[tuple(st["conv"])])
+                hit = [r for r in t.drows["LX"] if r["m"] == m and r["rot"] == st["rot"]]
+            elif fam == "PF":
+                X.pfx(c, POS, p[POS], t, lmax=st["L"], mmax=m, drop=True)
+                hit = [r for r in t.drows["PFX"] if r["m"] == m and r["L"] == st["L"] and tuple(r["conv"]) == tuple(st["conv"])
+                       and r["beta"] == st["beta"] and r["f"] == st["f"]]
+            elif fam == "WP":
+                X.wpx(c, POS, p[POS], t, mmax=m, drop=True)
+                hit = [r for r in t.drows["WPX"] if r["m"] == m and tuple(r["conv"]) == tuple(st["conv"])
+                       and r["alpha"] == st["alpha"] and r["e"] == st["e"] and r["d"] == st["d"]]
+            elif fam == "SL":
+                X.slx(c, POS, p[POS], t, mmax=m, drop=True)
+                hit = [r for r in t.drows["SLX"] if r["m"] == m and tuple(r["conv"]) == tuple(st["conv"])]
+            else:
+                X.ssx(c, POS, p[POS], t, mmax=m, drop=True)
+                hit = [r for r in t.drows["SSX"] if r["m"] == m and tuple(r["conv"]) == tuple(st["conv"])]
+            still = X.setting_feasible(fam, st, c, POS, p[POS])
+            strict = (not still) and any(bad in r["dropped"] for r in hit)
+            # a corrupted letter whose equation lies on no cycle (a bridge edge, a slot with too few letters, a
+            # position no check reads) leaves the plant feasible; that is allowed, anything else is a failure
+            assert strict or still, (fam, st, bad)
+            rec[fam] = rec.get(fam, 0) + strict
+    assert sum(rec.values()) >= 10, rec
+    print("5 ok: drop-one recovers plants with one published letter corrupted, at that position (strict, of 3):", rec)
 
     tab = X.check_table()
     G = np.zeros((1, len(POS), 26), dtype=np.int16)

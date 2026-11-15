@@ -173,7 +173,7 @@ setting added to pass 0:
 
 **Run time per ciphertext:** LX 3,610 graph cells about 3 minutes; the other four checks under 2 seconds together. K4 with drop-one plus 20 shuffles is about 1.5 hours on one core.
 
-**What a feasible K4 setting would and would not mean.** As in R75 and R81a, the check never completes a key from the published letters and never decodes. A K4 setting that is feasible at ≥ 3 checks, and stands out against the shuffles, becomes the subject of a new blind round of that one family: a sealed gate, then K4 blind. It is never a solution in itself. Tyler: "if we get a possible solution, we will have to have legit proof that could be it before public submission".
+**What a feasible K4 setting would and would not mean.** As in R75 and R81a, the check never completes a key from the published letters and never decodes. (Correction after R83a: this holds for the R83 checks. R75's `f1x()`, which the F1X drop-one step calls unchanged, built decodes in memory for fully pinned settings. They were never written, scored or seen, and the two rerun jobs switched that branch off. See `r83/RESULT.md`, *Run deviation*.) A K4 setting that is feasible at ≥ 3 checks, and stands out against the shuffles, becomes the subject of a new blind round of that one family: a sealed gate, then K4 blind. It is never a solution in itself. Tyler: "if we get a possible solution, we will have to have legit proof that could be it before public submission".
 
 ## 6. Proposed order and decisions for Tyler
 | Step | What | Cost | Needs |

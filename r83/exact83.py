@@ -70,22 +70,41 @@ def slot_check(res, K):
 
 
 class Tally:
-    """Per family: settings tested and feasible by number of checks, a list of feasible settings, drop-one counts."""
+    """Per family: settings tested and feasible by number of checks, a list of feasible settings; with drop-one, the
+    settings infeasible as they stand but feasible once one published letter is set aside, by checks and by position,
+    with a list (each with the positions whose removal makes it feasible)."""
 
-    def __init__(self, list_min=MIN_CHECKS):
-        self.tested, self.feasible, self.drop = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
-        self.rows, self.list_min = defaultdict(list), list_min
+    def __init__(self, list_min=MIN_CHECKS, cap=300):
+        self.tested, self.feasible = defaultdict(Counter), defaultdict(Counter)
+        self.drop, self.drop_checks = defaultdict(Counter), defaultdict(Counter)
+        self.tested_eff, self.feasible_eff, self.drop_eff = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
+        self.rows, self.drows, self.list_min, self.cap = defaultdict(list), defaultdict(list), list_min, cap
 
-    def add(self, fam, checks, n, feas, settings=(), drop_pos=None):
+    def add(self, fam, checks, n, feas, make, dmat=None, dpos=None, eff=None):
+        """feas: (n,) bool; make(i): setting dict of row i; dmat: (n, len(dpos)) bool, newly feasible once that
+        position is dropped (rows already feasible must be False). eff: the effective strength, -log26 of the chance
+        that a setting is feasible on a random ciphertext (= checks for the slot checks; edges - slots for the graph
+        checks, whose components each have 26 tries); default checks."""
+        feas = np.asarray(feas, dtype=bool)
+        eff = checks if eff is None else eff
         self.tested[fam][checks] += n
-        self.feasible[fam][checks] += int(feas)
+        self.feasible[fam][checks] += int(feas.sum())
+        self.tested_eff[fam][eff] += n
+        self.feasible_eff[fam][eff] += int(feas.sum())
         if checks >= self.list_min:
-            for st in settings:
-                if len(self.rows[fam]) < 300:
-                    self.rows[fam].append({**st, "checks": checks})
-        if drop_pos is not None:
-            for p, k in drop_pos.items():
-                self.drop[fam][p] += k
+            for i in np.flatnonzero(feas)[:max(0, self.cap - len(self.rows[fam]))]:
+                self.rows[fam].append({**make(int(i)), "checks": checks, "eff": eff})
+        if dmat is not None:
+            dmat = np.asarray(dmat, dtype=bool) & ~feas[:, None]
+            for a in np.flatnonzero(dmat.any(axis=0)):
+                self.drop[fam][int(dpos[a])] += int(dmat[:, a].sum())
+            anyd = dmat.any(axis=1)
+            self.drop_checks[fam][checks] += int(anyd.sum())
+            self.drop_eff[fam][eff] += int(anyd.sum())
+            if checks >= self.list_min:
+                for i in np.flatnonzero(anyd)[:max(0, self.cap - len(self.drows[fam]))]:
+                    self.drows[fam].append({**make(int(i)), "checks": checks, "eff": eff,
+                                            "dropped": [int(dpos[a]) for a in np.flatnonzero(dmat[i])]})
 
     def report(self):
         out = {}
@@ -95,6 +114,11 @@ class Tally:
                         "settings_ge_%d_checks" % MIN_CHECKS: sum(v for k, v in t.items() if k >= MIN_CHECKS),
                         "feasible_ge_%d_checks" % MIN_CHECKS: sum(v for k, v in f.items() if k >= MIN_CHECKS),
                         "drop_one_feasible_by_position": dict(sorted(self.drop[fam].items())),
+                        "drop_one_feasible_by_checks": dict(sorted(self.drop_checks[fam].items())),
+                        "tested_by_eff": dict(sorted(self.tested_eff[fam].items())),
+                        "feasible_by_eff": dict(sorted(self.feasible_eff[fam].items())),
+                        "drop_one_feasible_by_eff": dict(sorted(self.drop_eff[fam].items())),
+                        "drop_one_list": self.drows[fam],
                         "feasible_list": self.rows[fam]}
         return out
 
@@ -112,10 +136,9 @@ def pfx(c, pos, pk, tally, lmax=12, mmax=26, drop=False):
         K = np.stack([(K1[CONV1.index(cv)][idx] - f * I64[beta][fb]) % 26 for cv, beta, f in conv])
         for m in range(1, mmax + 1):
             ex, d1, checks = slot_check(pos[idx] % m, K)
-            dp = {int(pos[idx[a]]): int(d1[:, a].sum()) for a in range(len(idx)) if d1[:, a].any()} if drop else None
-            tally.add("PFX", checks, len(conv), ex.sum(),
-                      [{"conv": conv[i][0], "beta": conv[i][1], "f": conv[i][2], "L": L, "m": m}
-                       for i in np.flatnonzero(ex)[:300]], dp)
+            tally.add("PFX", checks, len(conv), ex,
+                      lambda i, L=L, m=m: {"conv": conv[i][0], "beta": conv[i][1], "f": conv[i][2], "L": L, "m": m},
+                      d1 if drop else None, pos[idx])
 
 
 # ------------------------------------------------------------------------------------------------ WPX
@@ -152,10 +175,10 @@ def wpx(c, pos, pk, tally, mmax=26, drop=False):
                         feas |= ex
                         dfe |= d1
                         worst = checks if worst is None else min(worst, checks)
-                    dp = {int(pos[a]): int(dfe[:, a].sum()) for a in range(len(pos)) if dfe[:, a].any()} if drop else None
-                    tally.add("WPX", worst, len(CONV1), feas.sum(),
-                              [{"conv": CONV1[i], "alpha": alpha, "e": e, "d": d, "m": m} for i in np.flatnonzero(feas)[:300]],
-                              dp)
+                    tally.add("WPX", worst, len(CONV1), feas,
+                              lambda i, alpha=alpha, e=e, d=d, m=m: {"conv": CONV1[i], "alpha": alpha, "e": e, "d": d,
+                                                                     "m": m},
+                              dfe if drop else None, pos)
 
 
 # ------------------------------------------------------------------------------------------------ SLX / SSX
@@ -188,15 +211,12 @@ def slx(c, pos, pk, tally, mmax=26, drop=False):
             sl = _per_slot(pos, m)
             checks = len(pos) - sum(min(len(v), unk) for v in sl.values())
             feas = slx_feasible(K, pos, m, same)
-            dp = None
+            dmat = None
             if drop:
-                dp = {}
-                for a in range(len(pos)):
-                    keep = np.array([b for b in range(len(pos)) if b != a])
-                    k = int((~feas & slx_feasible(K[:, keep], pos[keep], m, same)).sum())
-                    if k:
-                        dp[int(pos[a])] = k
-            tally.add(fam, checks, len(CONV1), feas.sum(), [{"conv": CONV1[i], "m": m} for i in np.flatnonzero(feas)[:300]], dp)
+                dmat = np.stack([slx_feasible(K[:, keep], pos[keep], m, same)
+                                 for keep in (np.array([b for b in range(len(pos)) if b != a]) for a in range(len(pos)))],
+                                axis=1)
+            tally.add(fam, checks, len(CONV1), feas, lambda i, m=m: {"conv": CONV1[i], "m": m}, dmat, pos)
 
 
 CONV_SS = [(pa, ca, ka, s) for pa in A4 for ca in A4 for ka in A4 for s in SIGNS]    # 128
@@ -233,16 +253,12 @@ def ssx(c, pos, pk, tally, mmax=26, drop=False, _T=[]):
         sl = _per_slot(pos, m)
         checks = len(pos) - len(sl)
         feas = feasible(K, pos, m)
-        dp = None
+        dmat = None
         if drop:
-            dp = {}
-            for a in range(len(pos)):
-                keep = np.array([b for b in range(len(pos)) if b != a])
-                k = int((~feas & feasible(K[:, keep], pos[keep], m)).sum())
-                if k:
-                    dp[int(pos[a])] = k
-        tally.add("SSX", checks, len(CONV_SS), feas.sum(), [{"conv": CONV_SS[i], "m": m} for i in np.flatnonzero(feas)[:300]],
-                  dp)
+            dmat = np.stack([feasible(K[:, keep], pos[keep], m)
+                             for keep in (np.array([b for b in range(len(pos)) if b != a]) for a in range(len(pos)))],
+                            axis=1)
+        tally.add("SSX", checks, len(CONV_SS), feas, lambda i, m=m: {"conv": CONV_SS[i], "m": m}, dmat, pos)
 
 
 # ------------------------------------------------------------------------------------------------ LX
@@ -303,6 +319,7 @@ def lk_check(G, GI, ends, nconv, skip=None):
         comps.append(order)
     nedge = sum(len(o) for o in comps)
     checks = nedge - len(adj) + len(comps)
+    eff = nedge - len(adj)
     comps.sort(key=lambda o: -len(o))
     alive = np.arange(nconv)
     for order in comps:
@@ -326,30 +343,27 @@ def lk_check(G, GI, ends, nconv, skip=None):
         alive = alive[ok.any(axis=1)]
     feas = np.zeros(nconv, dtype=bool)
     feas[alive] = True
-    return feas, checks
+    return feas, checks, eff
 
 
-def lx(c, pos, pk, tally, mmax=20, widths=tuple(range(2, 49)) + (97,), ds=(1, -1), drop=False, conv=None):
+def lx(c, pos, pk, tally, mmax=20, widths=tuple(range(2, 49)) + (97,), ds=(1, -1), drop=False, conv=None, rots=(2, 1)):
     import models83 as MD
     conv = conv or lk_conventions()
     G, GI = lk_maps(c, pos, pk, conv)
-    for rot in (2, 1):
+    for rot in rots:
         for m in range(2, mmax + 1):
             for w in widths:
                 for d in ds:
                     if w >= N and d != 1:
                         continue
                     ends = [MD.lk_slots(int(p), m, w, d, rot) for p in pos]
-                    feas, checks = lk_check(G, GI, ends, len(conv))
-                    dp = None
+                    feas, checks, eff = lk_check(G, GI, ends, len(conv))
+                    dmat = None
                     if drop and checks >= MIN_CHECKS:
-                        dp = {}
-                        for a in range(len(pos)):
-                            k = int((~feas & lk_check(G, GI, ends, len(conv), skip=a)[0]).sum())
-                            if k:
-                                dp[int(pos[a])] = k
-                    tally.add("LX", checks, len(conv), feas.sum(),
-                              [{"conv": conv[i], "m": m, "w": w, "d": d, "rot": rot} for i in np.flatnonzero(feas)[:300]], dp)
+                        dmat = np.stack([lk_check(G, GI, ends, len(conv), skip=a)[0] for a in range(len(pos))], axis=1)
+                    tally.add("LX", checks, len(conv), feas,
+                              lambda i, m=m, w=w, d=d, rot=rot: {"conv": conv[i], "m": m, "w": w, "d": d, "rot": rot},
+                              dmat, pos, eff)
 
 
 FAMILIES = {"LX": lx, "PFX": pfx, "WPX": wpx, "SLX": slx, "SSX": ssx}
@@ -385,7 +399,7 @@ def setting_feasible(fam, st, c, pos, pk):
     m = _klen(st)
     if fam == "SL":
         return bool(slx_feasible(kv1(c, pos, pk)[CONV1.index(tuple(st["conv"]))][None, :], pos, m)[0])
-    t = Tally(list_min=-99)
+    t = Tally(list_min=-99, cap=10 ** 9)
     if fam == "WP":
         wpx(c, pos, pk, t, mmax=m)
         return any(r["m"] == m and tuple(r["conv"]) == tuple(st["conv"]) and r["alpha"] == st["alpha"]
@@ -437,8 +451,10 @@ def check_table(pos=None):
     G = np.zeros((1, len(pos), 26), dtype=np.int16)
     for rot in (2, 1):
         for m in range(2, 21):
-            out[f"LX_rot{rot}_d1"][m] = {w: lk_check(G, G, [MD.lk_slots(int(p), m, w, 1, rot) for p in pos], 1)[1]
-                                         for w in list(range(2, 49)) + [97]}
+            r = {w: lk_check(G, G, [MD.lk_slots(int(p), m, w, 1, rot) for p in pos], 1)[1:]
+                 for w in list(range(2, 49)) + [97]}
+            out[f"LX_rot{rot}_d1"][m] = {w: v[0] for w, v in r.items()}
+            out.setdefault(f"LX_eff_rot{rot}_d1", {})[m] = {w: v[1] for w, v in r.items()}
     at = set(int(p) for p in pos)
     for L in range(1, 13):
         idx = [e for e, p in enumerate(pos) if int(p) - L in at]

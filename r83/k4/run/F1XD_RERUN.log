@@ -1,0 +1,9 @@
+# F1XD rerun of NULL_010/NULL_011 (r83/f1xd_lowmem.py; see r83/RESULT.md). Byte-equality check on finished parts, then the run.
+{'id': 'K4', 'seconds': 69.7, 'peak_rss_mb': 54, 'identical_to_run_part': True}
+{'id': 'NULL_000', 'seconds': 70.6, 'peak_rss_mb': 56, 'identical_to_run_part': True}
+{'id': 'NULL_009', 'seconds': 73.3, 'peak_rss_mb': 57, 'identical_to_run_part': True}
+{'id': 'NULL_012', 'seconds': 75.5, 'peak_rss_mb': 57, 'identical_to_run_part': True}
+{'id': 'NULL_019', 'seconds': 80.5, 'peak_rss_mb': 57, 'identical_to_run_part': True}
+[{"id": "K4", "seconds": 69.7, "peak_rss_mb": 54, "identical_to_run_part": true}, {"id": "NULL_000", "seconds": 70.6, "peak_rss_mb": 56, "identical_to_run_part": true}, {"id": "NULL_009", "seconds": 73.3, "peak_rss_mb": 57, "identical_to_run_part": true}, {"id": "NULL_012", "seconds": 75.5, "peak_rss_mb": 57, "identical_to_run_part": true}, {"id": "NULL_019", "seconds": 80.5, "peak_rss_mb": 57, "identical_to_run_part": true}]
+{'id': 'NULL_010', 'seconds': 71.5, 'peak_rss_mb': 57}
+{'id': 'NULL_011', 'seconds': 67.9, 'peak_rss_mb': 57}
