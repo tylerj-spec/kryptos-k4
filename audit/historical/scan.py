@@ -161,11 +161,14 @@ def resolve_target(manifest, field, paths, expected):
     return None, "AMBIGUOUS_SHORT_NAME"
 
 
-def inventory_manifests(paths):
-    wanted = sorted(p for p in paths
-                    if (re.match(r"^r\d+[a-z]?/PROTOCOL\.sha256$", p)
-                        or (re.match(r"^r\d+[a-z]?/(?:k4|holdout)/", p)
-                            and Path(p).name == "FROZEN.sha256")))
+def inventory_manifests(paths, extra=False):
+    primary = sorted(p for p in paths
+                     if (re.match(r"^r\d+[a-z]?/PROTOCOL\.sha256$", p)
+                         or (re.match(r"^r\d+[a-z]?/(?:k4|holdout)/", p)
+                             and Path(p).name == "FROZEN.sha256")))
+    wanted = (sorted(p for p in paths
+                     if p.endswith(".sha256") and p not in primary)
+              if extra else primary)
     outcome = []
     cached = {}
     for path in wanted:
@@ -287,6 +290,10 @@ def markdown(result):
         "- Statuses: " + json.dumps(m["counts"], sort_keys=True),
         "- Missing/ambiguous paths are NOT by themselves hash mismatches.",
         "- HEAD mismatches require checking the original frozen commit.",
+        "- Other SHA256 files (archives or round-specific): %d files; %d claims." %
+        (result["additional_sha256_files"]["manifest_count"],
+         result["additional_sha256_files"]["claims"]),
+        "- Other SHA256 status: " + json.dumps(result["additional_sha256_files"]["counts"], sort_keys=True),
         "",
         "## Time order",
         "",
@@ -320,6 +327,7 @@ def main():
         "scope": "structural, not a 170-family independent crypto proof",
         "ledger": inventory_ledger(paths),
         "manifests": inventory_manifests(paths),
+        "additional_sha256_files": inventory_manifests(paths, extra=True),
         "order": inventory_order(paths),
         "static": static_flags(paths),
     }
