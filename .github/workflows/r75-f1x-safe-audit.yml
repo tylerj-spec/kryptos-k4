@@ -1,0 +1,48 @@
+name: R75 independent overflow-safe F1X auditor
+
+on:
+  pull_request:
+    paths:
+      - "r75/audit/**"
+      - ".github/workflows/r75-f1x-safe-audit.yml"
+  push:
+    branches:
+      - audit/r75-f1x-overflow-safety
+    paths:
+      - "r75/audit/**"
+      - ".github/workflows/r75-f1x-safe-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-independent-graph-oracle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Exhaustive toy oracle, max-period plants and >int64 counter
+        run: python3 -I r75/audit/tests/test_f1x_safe.py
+      - name: Verify auditor uses no clue imports or decoding APIs
+        run: |
+          python3 - <<'PY'
+          import ast
+          from pathlib import Path
+          tree = ast.parse(Path("r75/audit/f1x_safe.py").read_text())
+          imports = []
+          for node in ast.walk(tree):
+              if isinstance(node, ast.Import):
+                  imports.extend(alias.name for alias in node.names)
+              elif isinstance(node, ast.ImportFrom):
+                  imports.append(node.module or "")
+          forbidden_modules = ("reveal_k4", "keyshape", "exact", "r75.sealed.exact")
+          for name in imports:
+              assert not any(bad in name for bad in forbidden_modules), name
+          calls = {node.func.id for node in ast.walk(tree)
+                   if isinstance(node, ast.Call) and isinstance(node.func, ast.Name)}
+          assert not calls.intersection({"eval", "exec", "grid_of", "quad_score"})
+          print("F1X safe feasibility-only source: AST guard PASS")
+          PY
