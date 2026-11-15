@@ -161,6 +161,36 @@ def resolve_target(manifest, field, paths, expected):
     return None, "AMBIGUOUS_SHORT_NAME"
 
 
+def git_bytes_at(commit, path):
+    p = subprocess.run(["git", "show", f"{commit}:{path}"],
+                       cwd=ROOT, capture_output=True)
+    return p.stdout if p.returncode == 0 else None
+
+
+def historical_digest_match(manifest, path, expected):
+    """Test the version AT freeze-manifest introduction, then its ancestry.
+
+    This never rewrites historical files. A currently mismatched HEAD
+    digest can be valid evidence for a prior frozen version.
+    """
+    intro = first_added(manifest)
+    if not intro:
+        return {"historical_status": "MANIFEST_INTRO_NOT_FOUND"}
+    data = git_bytes_at(intro, path)
+    if data is not None and hashlib.sha256(data).hexdigest() == expected:
+        return {"historical_status": "MATCH_AT_MANIFEST_INTRO",
+                "matching_commit": intro}
+    commits = git("log", "--format=%H", intro, "--", path)
+    if commits:
+        for commit in commits.splitlines()[:200]:
+            data = git_bytes_at(commit, path)
+            if data is not None and hashlib.sha256(data).hexdigest() == expected:
+                return {"historical_status": "MATCH_IN_ANCESTRY_BEFORE_MANIFEST",
+                        "matching_commit": commit}
+    return {"historical_status": "UNEXPLAINED_AT_MANIFEST_INTRO",
+            "manifest_introduced_commit": intro}
+
+
 def inventory_manifests(paths, extra=False):
     primary = sorted(p for p in paths
                      if (re.match(r"^r\d+[a-z]?/PROTOCOL\.sha256$", p)
@@ -191,10 +221,13 @@ def inventory_manifests(paths, extra=False):
             actual, status = cached[resolved]
             verdict = status if actual is None else (
                 "MATCH_AT_HEAD" if actual == expected else "MISMATCH_AT_HEAD")
-            rows.append({"line": lineno, "target": target,
-                         "resolved": resolved, "resolution": how,
-                         "expected_sha256": expected, "actual_sha256": actual,
-                         "status": verdict})
+            detail = {"line": lineno, "target": target,
+                      "resolved": resolved, "resolution": how,
+                      "expected_sha256": expected, "actual_sha256": actual,
+                      "status": verdict}
+            if verdict == "MISMATCH_AT_HEAD":
+                detail.update(historical_digest_match(path, resolved, expected))
+            rows.append(detail)
         outcome.append({"manifest": path, "entries": rows,
                         "counts": dict(Counter(x["status"] for x in rows))})
     tally = Counter(item["status"] for m in outcome for item in m["entries"])
@@ -294,13 +327,20 @@ def markdown(result):
         (result["additional_sha256_files"]["manifest_count"],
          result["additional_sha256_files"]["claims"]),
         "- Other SHA256 status: " + json.dumps(result["additional_sha256_files"]["counts"], sort_keys=True),
+        "- Other SHA256 historical-mismatch check: " + json.dumps(dict(Counter(
+            e.get("historical_status", "NOT_MISMATCHED")
+            for m in result["additional_sha256_files"]["manifests"]
+            for e in m["entries"] if e["status"] == "MISMATCH_AT_HEAD"
+        )),sort_keys=True),
         "",
         "## Secondary SHA256 mismatches at HEAD: investigate historic revisions",
         "",
         "- Mismatch details (not automatically tampering): " + json.dumps([
             {"manifest": m["manifest"], "line": e["line"],
              "resolved": e.get("resolved"), "target": e.get("target"),
-             "expected": e.get("expected_sha256"), "actual": e.get("actual_sha256")}
+             "expected": e.get("expected_sha256"), "actual": e.get("actual_sha256"),
+             "historical_status": e.get("historical_status"),
+             "matching_commit": e.get("matching_commit")}
             for m in result["additional_sha256_files"]["manifests"]
             for e in m["entries"] if e["status"] == "MISMATCH_AT_HEAD"
         ], sort_keys=True),
