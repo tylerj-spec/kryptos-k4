@@ -1,0 +1,7 @@
+{
+ "conservative_unique_settings": 260,
+ "exact_unique_settings": 2,
+ "exact_subset_of_conservative": true,
+ "every_exact_survivor_position_pair_inside_conservative": true,
+ "PASS": true
+}

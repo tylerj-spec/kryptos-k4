@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 35.338,
+  "max_rss_mb": 30.5,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r83/audit/exact_drop.py",
+    "--random",
+    "r83/audit/EXACT_DROP_RANDOM.json",
+    "20",
+    "830777"
+  ]
+}
