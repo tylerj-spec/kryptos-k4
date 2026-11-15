@@ -72,6 +72,11 @@ def inventory_ledger(paths):
             ref = ref.rstrip(".,;:")
             if ref in paths or (ref.endswith("/") and any(p.startswith(ref) for p in paths)):
                 exists.append(ref)
+            elif (ref.startswith(("r30/", "r32/")) and
+                  "k4kit/" + ref in paths):
+                # Historical R30/R32 relocated under the k4kit/ tree;
+                # missing top-level path is NOT missing evidence.
+                exists.append("k4kit/" + ref)
             elif "*" in ref and any(fnmatch.fnmatch(p, ref) for p in paths):
                 exists.append(ref)
             else:
