@@ -1,0 +1,670 @@
+{
+ "rows": [
+  {
+   "id": "L01",
+   "status": "EXCL",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Any pure permutation of the 97 letters",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L02",
+   "status": "EXCL",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "In-place fixed monoalphabetic (incl. Atbash, affine)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L03",
+   "status": "EXCL m 1\u201326, 30\u201352; OPEN 27\u201329, 53\u201397 (no checks)",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "In place, periodic, 8 variants",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L04",
+   "status": "EXCL additive 1\u201325, Beaufort 1\u201326; additive m 26 SCORE",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "In place, periodic, 16 pairs, additive / Beaufort",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L05",
+   "status": "EXCL where \u2265 3 checks; WEAK 26\u201329, 52",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Multiplied periodic c = a\u00b7p + k",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L06",
+   "status": "EXCL",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Complete columnar, w 2\u201310 (all orders) + periodic 1\u201314, 8 variants",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L07",
+   "status": "EXCL m 1\u201321 (8 variants and 16 pairs, both operations); WEAK 22\u201326 \u2192 SCORE",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Circular routes (9,312) + periodic",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L08",
+   "status": "EXCL 8 variants 1\u201323, 25; 16 pairs additive 1\u201323, Beaufort 1\u201323, 25; rest SCORE",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Padded double grids (242) + periodic",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L09",
+   "status": "16 pairs EXCL additive 1\u201322, Beaufort 1\u201321; compatible fits q \u2264 2 \u2192 SCORE",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Fold (946) and back (6) maps + periodic",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L10",
+   "status": "SCORE",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "All 22,955 compatible fixed-alphabet configurations in L07\u2013L09",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L11",
+   "status": "EXCL",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Direct Hill 2\u00d72\u20135\u00d75, all alignments, AZ or KRYPTOS",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L12",
+   "status": "EXCL",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Trifid: 4 arrays, periods 1\u201397, 6 orders",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": [
+    "k4kit/tools/trifid_any.py",
+    "k4kit/results/trifid_any.log"
+   ]
+  },
+  {
+   "id": "L13",
+   "status": "EXCL m 1\u201325; m 26 SCORE (24 settings)",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Progressive key (v4 spec)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L14",
+   "status": "EXCL",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Gromark / any decimal stream, any cipher alphabet, plain AZ or KRYPTOS",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L15",
+   "status": "EXCL",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Base-26 lagged-Fibonacci, L 2\u20138, both taps, any cipher alphabet",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L16",
+   "status": "EXCL",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Free-alphabet keystreams: K1\u2013K3 running keys (both directions, both ranks), K2 coordinates, 9 dates, affine progressive",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L17",
+   "status": "EXCL lags 1\u201367; WEAK 68\u201372; OPEN 73\u201396",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Ciphertext autokey, free alphabet, free seed",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L18",
+   "status": "WEAK",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Fixed-alphabet autokey (full recurrence)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L19",
+   "status": "EXCL (no full match)",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "K1\u2013K3 running key, fixed alphabets; physical overlays; self-fold",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L20",
+   "status": "EXCL",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tableau stepping (homogeneous arithmetic only)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L21",
+   "status": "EXCL m 1\u20137, 9, 10, 14, 15, 17, 21, 25, 34, 42, 43, 45, 50; STAT m 1\u20136, 8, 9, 12, 13; others OPEN",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Per-slot arbitrary bijections, in place",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L23",
+   "status": "recovery test failed (decoys outscore truth 2,560/2,560)",
+   "source_tag": "G/C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Period-8 recovery with quadgram objective",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L25",
+   "status": "OPEN: partial 1969\u201372 and mixed-date 1980s face lists recovered from photos; remaining 1988\u201390 Pacific inscriptions, precise bearing and time-ring phase undocumented. R10b: primary 3 Oct 1990 record of faces +7\u2026+10 (Kinemathek \"Text im Bild\"); pre-1997 plates carried outdated offsets (Singapore +7:30). R11: plates changed in GDR era (Mexiko City\u2192Stadt) and in 1997 (~20 added, 4 renamed, Kiew moved) and 2025 (Wellington); radio sync only since 1997; standard time today. Photo transcription task assigned",
+   "source_tag": "C (research)",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "World Clock-derived keys",
+   "mentioned_files_found": {
+    "docs/research/2026-10-22_world_clock_and_sources.md": [
+     "archive/2026-10-26_chatgpt_starter/sources/2026-10-22_world_clock_and_sources.md"
+    ]
+   },
+   "mentioned_files_not_found": [
+    "2026-10-25_research_round3.md",
+    "photo_sources.md"
+   ],
+   "known_legacy_tools": [
+    "archive/2026-10-26_chatgpt_starter/sources/2026-10-22_world_clock_and_sources.md"
+   ]
+  },
+  {
+   "id": "L28",
+   "status": "Not adopted: no gain over v2 on K4-structured development (16/20 vs 18/20 exact)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Offset-aware solver v3 (every anchor-offset configuration, free-letter annealing)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L29",
+   "status": "SCORE diagnostic only, not recovery or a family exclusion; other-language tests OPEN",
+   "source_tag": "G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Frozen word-score sensitivity to nonstandard spelling",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L30",
+   "status": "Advisory only; no semantic or cryptographic validation",
+   "source_tag": "G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Local character-transition gibberish diagnostic (not the linked website)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L31",
+   "status": "STAT for supplied conventional-English reference only; not EXCL and not a language-general result",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Unknown English running key, direct alignment; 16 alphabet pairs x 3 operations x 4 key alphabets",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L32",
+   "status": "STAT within stated surrogate populations, not cipher identification or a posterior probability. Does not establish a nonperiodic key; conventional short-period families remain unfavorable. Original Trifid row uses lossy random replacement of symbol 27",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Eight ciphertext features under 13 supplied simulation families and four R9 boundary populations",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L34",
+   "status": "TOOL: necessary tests only under explicitly shared key, alphabets, operation and alignment; equality alone does not prove reuse. No current release status asserted",
+   "source_tag": "C/G",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Conditional K5 shared-keystream diagnostic kit",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L35",
+   "status": "Periodic substitution (16 pairs, both operations) still EXCL m 1\u201325 with any ONE anchor wrong and m 1\u201324 with any TWO; progressive key m 1\u201324 with one; decimal Gromark proof and direct Hill 2\u00d72/3\u00d73 unaffected; per-slot bijections in place reopen only m 10 and 25 (dropping position 22 or 72)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Robustness of exact exclusions to carving errors (K2 precedent)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "one_error.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L36",
+   "status": "EXCL for every setting with \u2265 3 checks (mod 13), also with any one anchor dropped (pairs); 249 survivors all \u2264 2 checks, at chance (pairs 59 vs null median 62; triples 164 vs 184; quadruples 26 vs 43) \u2192 WEAK",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "\"Multi-clock\" key in place: key = sum of 2\u20134 periodic keys (= stacked chained-alphabet Vigen\u00e8re/Beaufort/Quagmire stages, as in Paradigm PK3/PK8); 16 pairs \u00d7 both operations; pairs \u2264 48, triples \u2264 20, quadruples \u2264 12, no period dividing another",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L37",
+   "status": "1969 and 1980s face text reconstructed from photos; uncertain readings tried both ways; full names, first letters and last letters; 3 reading orders; 7 alphabets (incl. URANIA, WELTZEITUHR, ALEXANDERPLATZ); 3 operations; 3 key-rank maps. **EXCL** for the covered text: best 8/24 anchors vs random-ciphertext best 8\u20139. Re-run 25 Oct: blank lists corrected, plus a closed-circle variant (Pacific faces \u221211 to \u22129 assumed blank, text wraps round the drum): best still 8/24",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "World Clock text as running key",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": [
+    "archive/2026-10-26_chatgpt_starter/sources/world_clock_360.md"
+   ]
+  },
+  {
+   "id": "L38",
+   "status": "EXCL periods 1\u201324 for every setting (49 pairs, both operations, key indexed before or after the transposition); m 25: 1 setting with 3 checks (null 0\u20134); m 26: 1-check only",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "24-face drum transposition (write in rows of 24, read by faces: 24 starts \u00d7 2 directions \u00d7 up/down \u00d7 2 roles) + periodic substitution",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L39",
+   "status": "EXCL within scope: (a) best 6/24 (random 5\u20138); (b) best 7/24 (random 7)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Clock as lookup table. (a) Each face has its own keyed alphabet built from its text (full/upper/first city), letters assigned to faces 1 or 4 at a time, forms F1\u2013F4 including an hour shift. (b) Numeric running keys: name lengths, cities per face, city hours at every clock time",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L40",
+   "status": "EXCL as direct keys: best 8/19 and 9/23 (random-key maximum 8\u20139). Anagram readings not testable",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tyler's hour-index keys: each face's hour number selects a letter from its text, giving 24 letters (top, bottom or both; joined or with spaces; wrap or not), 48 letters (top+bottom, alternating) or an AM/PM top/bottom split; all 24 clock times; 1969 and 1980s layouts; used as repeating keys",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L41",
+   "status": "EXCL: 0 settings with \u2265 3 checks (random 0\u20132); only 1-check settings remain",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Clock-keyword columnar transposition (BERLINCLOCK, WELTZEITUHR, EASTNORTHEAST, ALEXANDERPLATZ and 6 compounds; widths 11\u201325) + periodic substitution m 1\u201326",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L42",
+   "status": "Faces: Berlin/+1 about 177 deg (south), UTC 0 SSW, \u22125 west, +7 east, date line about north. ENE (67.5) falls on +8 (IRKUTSK, ULAN BATOR / PEKING, SHANGHAI or 1972 HANOI, MANILA), \u00b11 face. Its words and keyed alphabets are **EXCL**: periodic m 1\u201326 has 0 settings with \u2265 3 checks (random 0\u20132); as repeating keys best 8/24 (random 7\u20139)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Clock orientation (orientation.py; 1972 photo L0328-0018, tower and clock coordinates, cross-checked with the 2015 photo) and the face pointing east-northeast",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "orientation.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L43",
+   "status": "No word stands out. Running-key English test: max z 3.76, 10 above z 3 (the 5.8 \"expected\" used a normal tail; the measured null tail is about 6\u00d7 heavier, see L44, so 10 is below chance) (isolated words have low power: planted 2/10). Words touching an anchor: max z 3.18 (planted 10/20). Two-alphabet Gromark: no placement survives where random strings fail; every word of 14+ letters is incompatible with all 39 primers at every position. Per-slot bijections: uninformative (random strings fit)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Guessed plaintext words (Tyler's spy/Moscow theme; 82 words incl. MOSCOW, MOSKAU, KGB, KREMLIN, LENIN, STASI, AGENT, DEADDROP, MESSAGE, DELIVER, WALL, NOVEMBER, EGYPT, distance/direction words, connectors), every placement in the unknown stretches (4,558)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "crib_words.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L44",
+   "status": "No word stands out: no flags. T3 max z 3.54 (POTSDAMER at 35), 9 above z 3. Adjacent max z 3.42 (POTSDAMER at 35), but the full POTSDAMERPLATZ there gives z 1.04. The measured null tail: P(z > 3) = 0.0083 and P(z > 3.42) = 0.0037 per placement, so about 2 and 1 such hits are expected among 232 adjacent placements",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tyler: the clock is ENE *of* the point K4 is about, so that point is WSW of the clock (wsw_geometry.py). The 247.5 deg ray from the clock passes within about 40 m of Bebelplatz (1.4 km; 1933 book burning) and the F\u00fchrerbunker site (2.4 km; former death strip), and about 230\u2013300 m from Leipziger and Potsdamer Platz (Wall; crossing opened 12 Nov 1989). Brandenburg Gate is in the ENE sector (77.4 deg) but 430 m off the ray. Far: Magdeburg 69.1, Cologne 65.9, Brussels 69.9 deg; Langley 44.4 deg (great circle) or 77.8 deg (rhumb line). 58 landmark and direction words then run through the L43 test",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "wsw_geometry.py",
+    "crib_words.py",
+    "wsw_words.txt"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L45",
+   "status": "No signal. The pre-specified flag fired (real max z 5.60 beat the first 5 decoy maxima, a 1-in-6 rule), so it was followed up: across 50 decoy sets, 15 reach the real maximum (p about 0.31). The top hit EASTGERRMANI at 42 implies the key text LCANDTHENTWH, but the correct EASTGERMANY there gives z 0.86. Counts: z > 4.5 real 11 vs decoy median 10; z > 3 rate 0.0029 vs 0.0031. Gromark: 1 long-variant placement survives (TEUFELLZBERG at 82) vs 11 for one decoy set",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tyler: the guessed words misspelled or spelled by sound (misspell_cribs.py, misspell_followup.py). 149 words from L43, L44 and L44b give 8,403 variants (one dropped letter, vowel swaps, L\u2192Q as in IQLUSION, C/K, PH/F, W/V, Y/J, doubled or undoubled letters, and pairs of sound-alike edits), 370,824 placements, running-key English test against letter-shuffled decoy words put through the same rules",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "misspell_cribs.py",
+    "misspell_followup.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L46",
+   "status": "(a) Nothing beyond chance. Only shared 4-gram: PRNG (in K1\u2013K3 ciphertext, p 0.12). Tableau 3-grams JKL, JCD, CDI (p 0.04, one of 9 tests) come from the A\u2013Z header, a row label and a row break. (b) Exact: max z 3.29 (CANYOUSEEANYTHING at 37), 3 above z 3 vs about 20 expected; no Gromark survivor. Misspelled: max z 4.63, below the decoy median 5.01 (19/20 decoys reach it). K1/K2's method itself (keyed Vigen\u00e8re, any keyword up to 25) and K3-style transposition + periodic substitution are already excluded (L03, L04, L06, L08); K1\u2013K3 text as running key is L16/L19",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tyler: K4 together with K1\u2013K3 (whole_text.py). (a) K4 letter sequences that recur in the K1\u2013K3 ciphertext, the tableau side or the K1\u2013K3 plaintext, against 2,000 shuffles of K4; (b) 51 story-continuation cribs from K1\u2013K3 (YESWONDERFULTHINGS, CANYOUSEEANYTHING, LAYERTHREE, EXACTLOCATION, coordinate numbers\u2026), exact and with the L45 misspelling rules",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "whole_text.py",
+    "results/r12_whole_text.log"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L47",
+   "status": "**Substitute, then rearrange:** counts match chance at every level (3 checks: 4,575 vs 4,685 expected; 4: 78 vs 99; 5+: 0 vs 5.9). English alarm on one setting (12 forced letters DNCEA\u2026HAIBRIH) is at chance: random letters pass that bar 0.24% of the time, about 6 expected among 2,710. **Rearrange, then substitute** (period sets totalling \u2264 24): mod-13 counts 5 checks 63 vs 49.6 expected, 6 checks 11 vs 5.4 (one random ciphertext: 34 and 3). OPEN as a statistic only (R13 calibrated with two empirical null populations): every K4 survivor forces 20\u201373 more letters and all fail the stated English screen (best long ones \u22120.03 to \u22120.37 vs English 5th percentile about 0.36), so none is a solution. The original 12-ciphertext null (two_step_followup.py) stopped unfinished; R13 finished a separate 24+24 null over the identical full catalog and exactly reproduced 575,077 designs with 5 checks and 817,523 with 6; K4 63+11; one-sided p=0.12 versus iid random, p=0.04 versus shuffles (minimum resolution; not a robust signal)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Two-step search (two_step.py; Tyler chose it): 41,502 distinct rearrangements (K3's own double quarter-turn at every grid size 2\u201348, verified on K3; all decimations; every columnar of width 2\u20137; 41 keyword columnars; both directions) \u00d7 keys that are sums of repeating keys (single 1\u201326, pairs \u2264 48, triples \u2264 20, quadruples \u2264 12) \u00d7 32 variants, in both orders",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "two_step.py",
+    "two_step_followup.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L48",
+   "status": "**No candidate.** Substitute-first: 1.70 billion settings; counts at chance (3 checks 5,107 vs 5,263 expected, random ciphertext 5,353; 4: 95 vs 111 / 125; 5: 1 vs 6.5 / 13; 6: 1 vs 0.5 / 0). Rearrange-first: 3: 3,838 vs 3,885; 4: 633 vs 707; 5: 70 vs 57; 6: 11 vs 6.3 (the L47 excess). Suspected words: no hit of 6+ letters outside the anchors (decoys also 0); 5+: 1 (HOURS) vs decoys 0\u20131; 4+: 10 vs decoy median 5, range 1\u201310 (6 of the 10 are one GATE from 6 near-identical column orders). English on forced letters only: max z 3.21 vs a null maximum of 3.01\u20134.39 over the same 3,853 survivors (40/50 replicates reach it). The pre-specified English flag fired, but on the COMPLETED text, whose free letters were chosen to look English (a biased rule); the flagged setting's forced letters give z 1.11",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "General engine (engine.py, engine_check.py; Tyler: \"let's solve Kryptos\", with his suspected-word idea). 46,621 rearrangements (L47's plus rail fence 2\u201324 at every phase, grid routes: boustrophedon, spirals in and out, diagonals on widths 2\u201348, double columnar on 20 keyword pairs, Myszkowski) \u00d7 linear key models (L47's summed periodic keys; NEW: periodic + drift a[j mod p] + b\u00b7j, p 1\u201323; two-speed clock a[j mod p] + d\u00b7floor(j/q), p 1\u201323, q 2\u201330) \u00d7 32 variants, both orders. Every survivor's forced letters scanned for 237 suspected words vs 20 letter-shuffled decoy lists, and scored for English",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "engine.py",
+    "engine_check.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L49",
+   "status": "**EXCL**: 0 settings fit (random ciphertexts: 0/500, so any hit would have been decisive)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Legacy keystream generator, in place (lin_recur.py; Tyler: identify the algorithm): key = any affine linear recurrence k_n = c1\u00b7k_{n\u22121} + \u2026 + cL\u00b7k_{n\u2212L} + d mod 26, order 1\u20136, any coefficients (covers matrix-power keystreams, LFSR-style and Fibonacci-style generators, progressive keys, short periods); 48 conventions (16 pairs \u00d7 add/Beaufort/variant Beaufort). The 13-letter key run (22\u201334) fixes the recurrence; it must reproduce the 11-letter run (64\u201374) across the 29-letter gap; forward and backward",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "lin_recur.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L50",
+   "status": "**EXCL** within scope: K4 best 9/24 anchors; 30 random ciphertexts 9\u201310",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Tableau-path masks, in place (tableau_paths.py): the key read off the physical KRYPTOS tableau (28\u00d732 as carved, with header rows, label column and the extra L) along every straight path from every start cell with every step vector (rows, columns, diagonals, knight moves, any slope, wrapping); the canonical 26\u00d726 tableau; the tableau text read as a running key (rows, columns, boustrophedon, diagonals, spiral, reversed, with and without headers/labels) at every offset; K4's physical position overlaid with every shift, straight or mirrored. 832,836 paths \u00d7 96 conventions (16 pairs \u00d7 add/Beaufort/variant \u00d7 key letter by AZ or KRYPTOS rank) = 80 M settings",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "tableau_paths.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L51",
+   "status": "No signal. K4 outputs look like the SAME solver run with wrong primers: S2 hit rate 0.22% vs wrong primers 0.47% (true primers 17.4%); skeleton median/max \u22121.255/\u22121.047 vs wrong \u22121.247/\u22121.017 (true \u22121.150/\u22120.919). Top primer not an outlier (z 1.60; K4_98800 and K4_44157 tie). K4's 22 hits are spread over primers (max 4). Decoy-word comparison (22 vs 2\u201316) is biased for optimiser output and is superseded by the wrong-primer baseline. Autoclave witnesses are arbitrary feasible plaintexts (not language-searched): 0 word hits",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Misspelling-tolerant re-score of saved candidates (gromark_rescore.py, gromark_rescore2.py; untrusted inputs read with -I): ChatGPT R7's 9,984 K4 Gromark outputs (39 primers \u00d7 256) and R9's 257 autoclave witnesses. S1 = sound-skeleton trigram score (vowels dropped, PH\u2192F, C/Q\u2192K, Z\u2192S, doubles merged; tolerant of Sanborn-style vowel swaps and doubling); S2 = suspected words incl. 8,403 misspelling variants, \u2265 6 letters outside the anchors",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "gromark_rescore.py",
+    "gromark_rescore2.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L52",
+   "status": "**Identifiability first:** at lags \u2265 about 25 the model has too many free choices for 97 letters. The search turns ANY ciphertext, including random letters, into pseudo-English (\"THETHERE\u2026\") that out-scores the true hidden message (planted accuracy 28\u201344%). So those settings cannot be decided by English, and two pre-set flags that fired there (K4 \u22123.385 vs random \u22123.389; \u22123.743 at lags 51\u201355) are this artifact. **Short lags (12\u201322, 23 settings), solution-space search** (every state satisfies the anchor equations; quick run): planted English recovered 26/46, random letters \u2264 \u22125.39, true English \u22124.3 to \u22124.6; K4 best \u22124.98 (lag 22 AZ \u2212) to \u22125.46: below English, no flag. **Full run (2M \u00d7 12):** planted English recovered 37/46 (median accuracy 0.99; misses mostly at lags 14\u201315 KRYPTOS and lag 22); random-letter controls max \u22124.909 (median \u22125.539); lowest recovered truth \u22124.612. K4: best \u22124.921 (lag 22 AZ \u22121, same-setting random \u22124.942); every short-lag setting scores at random-letter level and far below English; at 12 of 23 settings the search found no fully valid alphabet with better text (penalty 1). FLAG: none \u2192 **STAT: short-lag autoclave (12\u201322) disfavored for conventional English plaintext** (weaker at lag 22, planted 0.66\u20130.74)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "English search inside the 257 feasible plaintext-autoclave settings (L27), misspelling-tolerant scoring on top (ac_anneal.c/ac_anneal3.c + autoclave_search.py, autoclave_focus.py, autoclave_short.py; ChatGPT's witnesses re-encrypt 257/257)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "ac_anneal.c/ac_anneal3.c",
+    "autoclave_search.py",
+    "autoclave_focus.py",
+    "autoclave_short.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L53",
+   "status": "**OPEN, highly underconstrained in the stated model (not an undecidability theorem):** free alphabet choices after the anchors are 261\u2013321 bits vs about 234 bits of English redundancy, so many assignments remain. It does not prove that any arbitrary ciphertext has a valid English completion. Stays OPEN; only extra structure (e.g. slots sharing one keyed alphabet, = Quagmire, already EXCL) or K5 can test it",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Decidability of per-slot arbitrary alphabets at the open periods (L21: m 8, 11, 12, 13, 16, 18, 19, 20, 22, 23, 24)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L56",
+   "status": "**No statistically supported excess under the pre-registered primary null, not a proof of chance.** T_K4 = 74 (63 + 11, reproduced). Shuffles: median 54, 95th pct 75, max 87; 13/200 \u2265 74 \u2192 p = 0.070. iid: median 56, max 110; 4/100 \u2192 p = 0.050. Pooled with ChatGPT's L54 nulls: shuffles 13/224 (p 0.062), iid 6/124 (p 0.056). K4's 74 hits: only 2 also pass mod 2 (\u2248 2.3 expected by chance); spread over 69 rearrangements and 43 period sets (no cluster). The earlier 24-sample p = 0.04 did not replicate under the larger primary null",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Pre-registered follow-up of L47/L54 (protocols/L56_PREREGISTRATION.md, sha256 06db7875\u20265d1c91, written before computing; l56_null.py, independent of ChatGPT's code): full catalog (41,502 routes \u00d7 193 period sets \u00d7 32 variants, after order), statistic T = q5 + q6 (mod 13); primary null 200 letter-count-preserving shuffles of K4, secondary 100 iid",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "protocols/L56_PREREGISTRATION.md",
+    "l56_null.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L61",
+   "status": "**EXCL within scope.** Hill-then-rearrange: 1,162,084 settings, 0 consistent (n = 2: 18 checks, n = 3: 9\u201312, n = 4: 4; n = 5 has no checks); identity replicates L11; random ciphertexts reach only 4-check fits (median 1 per run). Rearrange-then-Hill: 184,340 testable settings, 8 consistent with \u2264 3 checks (chance level, untestable)",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Pre-registered masking rule (protocols/L61_PREREGISTRATION.md, sha256 fa3f9a2d\u20266e3118; hill_layer.py): Hill cipher (\"matrix codes Ed gave me\"; the tableau's HILL artifact; polygraphic masking of English statistics) as layer 1 in place, then a rearrangement from the full L47 catalog (41,502 + identity) as layer 2 (\"LAYER TWO\"); n = 2\u20135, all offsets, 4 numbering pairs (AZ/KRYPTOS); reverse order too",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "protocols/L61_PREREGISTRATION.md",
+    "hill_layer.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L62",
+   "status": "**No signal.** L48 forced letters (5,654 unbiased decryptions): 0 hits in every language (decoys 0\u20131). Gromark K4 outputs (9,984, English-optimised): a few hits above decoys (e.g. Spanish 11 vs max 6), but the same solver with WRONG primers shows the same or higher rates (Spanish 0.14% vs K4 0.11%; Italian 0.14% vs 0.07%; German 0.19% vs 0.13%), so it is optimiser behaviour. The anchors themselves are distinctly English (German OSTNORDOST/UHR, Dutch OOSTNOORDOOST/KLOK, French EST-NORD-EST/HORLOGE, Spanish ESTENORDESTE/RELOJ), in line with Scheidt's \"all four in English\"",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Other-language word scan (Tyler; foreign_scan.py, data/foreign_words.txt): common 5+ letter words of German, Dutch, French, Spanish, Italian, Latin and transliterated Russian (326 words) in all saved candidates, \u2265 5 letters outside the anchors, vs 20 shuffled-letter decoy lists on the same texts",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "foreign_scan.py",
+    "data/foreign_words.txt"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L63",
+   "status": "**No flag in any language.** A: K4 max z inside the null range in every language (closest German 4.37, 5/50 nulls reach it). B: planted messages recovered 18\u201322/23 per language (search works); K4's best is far below real text (K4 \u22121.17 to \u22121.28 vs genuine \u22120.89 to \u22121.13 per letter). C: K4 below the random-ciphertext 95th percentile in every language. D: 0 hits (decoys 0\u20131). **Quirk (not a flag):** at lag 22, AZ, sign \u22121, K4's optimised decrypt beats same-setting random controls (0/10 reach it) and K4 shuffles (0/7 in four languages, 1/7 German), and in English too (L52), with an equal search-space size (79.9 bits). The anchors fix only one other letter there: **X at position 75** right after BERLINCLOCK (X = full stop in K1\u2013K3); everything else is optimiser choice. Still about 0.25 per letter below genuine text, where planted messages are recovered at 72\u2013100%",
+   "source_tag": "C",
+   "scan_class": "GENERIC_SOURCE",
+   "method": "Other plaintext languages (Tyler: Dutch, West Frisian, Low German, Swedish; German added), pre-registered (protocols/L63_PREREGISTRATION.md, sha256 184d211e\u202608658a7). Letter-trigram models from original prose (data/corpus_*.txt, about 5,000 letters each; langmodels.py; 200/200 held-out windows identified correctly per language). Exact anchor tests are language-independent and stand. Re-done: A L48 forced letters, B short-lag autoclave search, C running key in that language, D suspected words (lang_tests.py, lang_autoclave.py)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "protocols/L63_PREREGISTRATION.md",
+    "data/corpus_*.txt",
+    "langmodels.py",
+    "lang_tests.py",
+    "lang_autoclave.py",
+    "results/r17_lang_*.log",
+    "r17_lag22_*.log"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L70",
+   "status": "**R20 REPRODUCED** (16/16 fixtures, 512/512 witnesses, 256/256 replay rows identical per model). **Headline narrowed:** readable (\u2264 5 wrong letters) baseline 4/16 vs orth 5/16, sign test p 0.61. Rule overlap: all 8 length-change fixtures use THE\u2192DE plus a curated A\u2192AA word from the scorer's own list. Search luck dominates: other seeds give orth 8/16 readable. **Discrimination fine:** readable truths beat their best wrong primer by 56\u201396 points; the orth dictionary does not raise wrong-primer bests (orth \u2212129 to \u2212173, baseline \u2212116 to \u2212171)",
+   "source_tag": "C R21",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "Claude audit of R20 plus a primer-blind discrimination test (claude/r20/audit_r20.py, primer_blind.py, PRIMER_BLIND_PROTOCOL.md sha256 2dd955cf\u202616ca2520). Each R20 fixture searched under its true primer plus 38 wrong anchor-feasible primers (all when fewer), both dictionaries, R20 budget",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "claude/r20/audit_r20.py",
+    "primer_blind.py",
+    "PRIMER_BLIND_PROTOCOL.md"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L71",
+   "status": "**S2 blind readable: arm 0 14/20, arm K 10/14, arm U 7/20** (exact 11/7/3). No readable truth beaten by a wrong primer; readable truths \u221270.6 to \u221295.3 vs best wrong \u2212114.9 (n = 849). Arm U failures: 8 search, **5 scorer** (truth with unknown spelling scores below a wrong decryption). Same lines, ChatGPT's shipped solver (16 restarts): orth 6/20, 5/14, 4/20; V4 11/20, 6/14, 3/20",
+   "source_tag": "C R21",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "S2 pre-registered (claude/r20/S2_PREREGISTRATION.md + amendment): your solver's model and moves, orth dictionary, quadgram term \u03bb 0.05\u21920, 64 restarts \u00d7 40k + deterministic polish. Fresh hidden set: 20 new everyday passages \u00d7 arms 0 (none) / K (two dictionary-covered changes) / U (two held-out changes: O\u2192U, E\u2192A as in K1\u2013K3, initial W\u2192V, soft C\u2192S); 54 fixtures, each blind among the true primer + \u2264 19 wrong fully feasible primers (903 lines; 7 infeasible wrong lines dropped mid-run, see amendment)",
+   "mentioned_files_found": {
+    "claude/r20/S2_PREREGISTRATION.md": [
+     "k4kit/protocols/S2_PREREGISTRATION.md"
+    ]
+   },
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L85",
+   "status": "**R24 REPRODUCED.** `REPORT.json` and `ORTH_PROBE.json` identical on replay; `verify_packet.py` PASS. Own code: G4 (98850) and G7 (60319) re-encrypt to K4; forced letters 34/97 (10 beyond the clues) and 29/97 (5 beyond). JAMES 1/5, WEIT 1/4, GAB 1/3 letters forced; ALL, CITY, PROWAR, DOES, MUNICH, JURY 0",
+   "source_tag": "C R25",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "Claude audit of R24 (scripts replayed in a copy with `python3 -I`; own Gromark and forced-mask code, `claude/r24/g4_checks.py`)",
+   "mentioned_files_found": {},
+   "mentioned_files_not_found": [
+    "claude/r24/g4_checks.py",
+    "REPORT.json",
+    "ORTH_PROBE.json",
+    "verify_packet.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L98",
+   "status": "**R28 REPRODUCED.** `R28_MORSE_TEST.json` and `R28_MORSE_PULSES.json` identical (ignoring elapsed time); passes CSV identical. Independent recount of both-free Morse-letter passes: **7/12/5 of 360**, all at 0-cycle routes; the identity route (2 crib cycles) has 0 passes. L92 sign symmetry confirmed algebraically. Script note: the four \"frozen\" routes are all R24x8 variants (CW/CCW \u00d7 fwd/inv), not \"24x8 and 23x8\" as the comment says; results unaffected",
+   "source_tag": "C R29",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "Claude audit of R28 (replay on a copy with `python3 -I`; independent driver `claude/r29/independent_morse.py`: own stream assembly, own K3-route composition, own anchor remapping, R26 oracle)",
+   "mentioned_files_found": {
+    "R28_MORSE_TEST.json": [
+     "archive/2026-10-26_chatgpt_starter/r28_results/R28_MORSE_TEST.json"
+    ],
+    "R28_MORSE_PULSES.json": [
+     "archive/2026-10-26_chatgpt_starter/r28_results/R28_MORSE_PULSES.json"
+    ]
+   },
+   "mentioned_files_not_found": [
+    "claude/r29/independent_morse.py"
+   ],
+   "known_legacy_tools": []
+  },
+  {
+   "id": "L107",
+   "status": "39 Gromark primers, ORTH, 64 restarts: best \u2212140.88 (L72 \u2212141.82). 39 two-cycle routes: \u2212148.34 (L100 \u2212148.32). The new forced-letter code reproduces L85 (98850: 10 beyond the clues; 60319: 5) and G4 agrees with all its forced letters",
+   "source_tag": "CC R30",
+   "scan_class": "UNRESOLVED_PATH",
+   "method": "R30 reference re-runs with new seeds and audits",
+   "mentioned_files_found": {
+    "r30/runs/*.json": [
+     "k4kit/r30/runs/R30_SUMMARIES.json",
+     "k4kit/r30/runs/c1.json",
+     "k4kit/r30/runs/c2.json",
+     "k4kit/r30/runs/c3.json",
+     "k4kit/r30/runs/c4_bookplant.json",
+     "k4kit/r30/runs/c5.json"
+    ]
+   },
+   "mentioned_files_not_found": [],
+   "known_legacy_tools": []
+  }
+ ]
+}
