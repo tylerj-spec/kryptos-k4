@@ -295,6 +295,16 @@ def markdown(result):
          result["additional_sha256_files"]["claims"]),
         "- Other SHA256 status: " + json.dumps(result["additional_sha256_files"]["counts"], sort_keys=True),
         "",
+        "## Secondary SHA256 mismatches at HEAD: investigate historic revisions",
+        "",
+        "- Mismatch details (not automatically tampering): " + json.dumps([
+            {"manifest": m["manifest"], "line": e["line"],
+             "resolved": e.get("resolved"), "target": e.get("target"),
+             "expected": e.get("expected_sha256"), "actual": e.get("actual_sha256")}
+            for m in result["additional_sha256_files"]["manifests"]
+            for e in m["entries"] if e["status"] == "MISMATCH_AT_HEAD"
+        ], sort_keys=True),
+        "",
         "## Time order",
         "",
         "- Rounds with preregistration and recognized output: %d" %
