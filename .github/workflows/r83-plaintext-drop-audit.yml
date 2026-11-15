@@ -1,0 +1,38 @@
+name: R83 plaintext drop-one audit (post-freeze)
+on:
+  push:
+    branches: [audit/r83-plaintext-drop-correction]
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-plaintext-drop-audit.yml"
+  pull_request:
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-plaintext-drop-audit.yml"
+permissions:
+  contents: read
+jobs:
+  synthetic-counterexamples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: Synthetic falsification: one WRONG PLAINTEXT letter, not ciphertext
+        run: python3 -I r83/audit/plaintext_drop.py --synthetic
+      - name: Independent conservative WPX post-freeze audit
+        run: |
+          python3 -I r83/audit/plaintext_drop.py --k4 /tmp/r83_wpx_plaintext_error.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open("/tmp/r83_wpx_plaintext_error.json"))
+          assert len(r["WPX_conservative_by_dropped_position"]) == 24
+          print("WPX upper-bound candidates:",r["WPX_conservative_unique_settings"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r83-plaintext-error-conservative-audit
+          path: /tmp/r83_wpx_plaintext_error.json
