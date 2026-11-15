@@ -1,0 +1,981 @@
+{
+ "total": 101,
+ "tally": {
+  "RESOLVED_BY_CONTENT": 18,
+  "RESOLVED_IN_HISTORY": 4,
+  "NOT_FOUND": 79
+ },
+ "rows": [
+  {
+   "manifest": "r34/PROTOCOL.sha256",
+   "line": 7,
+   "target": "e3_carter_rot/routes.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "r41/x1_route_pafree/out/routes_rot.txt"
+   ],
+   "basename_match": false
+  },
+  {
+   "manifest": "r34/PROTOCOL.sha256",
+   "line": 8,
+   "target": "../strictblind/blind/scan.cpp",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_IN_HISTORY",
+   "where": [
+    "blob 3b634eb00d235e7f9a03b0d07019f79fc4791189"
+   ],
+   "basename_match": false
+  },
+  {
+   "manifest": "r34/PROTOCOL.sha256",
+   "line": 9,
+   "target": "../strictblind/blind/routes.py",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_IN_HISTORY",
+   "where": [
+    "blob b5e93cb437eac750eca42009a2586fbd5db9062c"
+   ],
+   "basename_match": false
+  },
+  {
+   "manifest": "r34/PROTOCOL.sha256",
+   "line": 10,
+   "target": "../strictblind/blind/experiment.py",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_IN_HISTORY",
+   "where": [
+    "blob 6fd75c3d7c30b5877922d8e799eeeb73a8562173"
+   ],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/holdout/nulls_run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/holdout/nulls_run/FROZEN.sha256",
+   "line": 5,
+   "target": "language_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/holdout/plants_run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/holdout/plants_run/FROZEN.sha256",
+   "line": 5,
+   "target": "language_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r59/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "language_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r61/PROTOCOL.sha256",
+   "line": 11,
+   "target": "../r59/blind/rk_solve.cpp",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "r59/blind/rk_solve.cpp"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r61/PROTOCOL.sha256",
+   "line": 12,
+   "target": "../r59/blind/LM_SHA256",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "r59/blind/LM_SHA256"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r61/PROTOCOL.sha256",
+   "line": 13,
+   "target": "../r59/sealed/make_nulls.py",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "r59/sealed/make_nulls.py",
+    "r63/sealed/make_nulls.py"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r61/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r61/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "language_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r61/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r61/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "language_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/PROTOCOL.sha256",
+   "line": 14,
+   "target": "../r59/blind/LM_SHA256",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "r59/blind/LM_SHA256"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 7,
+   "target": "key_model  lm6_clock.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  clock_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 7,
+   "target": "key_model  lm6_clock.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  clock_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r63/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  lm6_clock.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  clock_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/holdout/run/FROZEN.sha256",
+   "line": 11,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  lm6_clock.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  clock_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r64/k4/run/FROZEN.sha256",
+   "line": 11,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r65/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r65/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r65/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r65/k4/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r66/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  hom_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r66/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r66/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "protocol  PREREGISTRATION.md",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_IN_HISTORY",
+   "where": [
+    "blob 7208f560b70fd1b3e5153db454c313e292f61f75"
+   ],
+   "basename_match": false
+  },
+  {
+   "manifest": "r66/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  hom_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r66/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r68/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  keyed_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r68/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r68/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  keyed_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r68/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/holdout/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "solver_binary  rk2_solve",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "key_model  lm6_de.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r69/k4/run/FROZEN.sha256",
+   "line": 9,
+   "target": "key_model  de_words.tsv",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 4,
+   "target": "scanner_binary  r70bin_rk_text_scan",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 8,
+   "target": "source  BERLIN_1912.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "source  EGYPT_1908.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "source  MURRAY_1907.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 11,
+   "target": "source  COOK_1876.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/holdout/run/FROZEN.sha256",
+   "line": 12,
+   "target": "source  BUDGE_1898.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 4,
+   "target": "scanner_binary  r70bin_rk_text_scan",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 5,
+   "target": "english_lm  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "source  BERLIN_1912.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 9,
+   "target": "source  EGYPT_1908.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "source  MURRAY_1907.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 11,
+   "target": "source  COOK_1876.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r70/k4/run/FROZEN.sha256",
+   "line": 12,
+   "target": "source  BUDGE_1898.txt",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r74/holdout/run/FROZEN.sha256",
+   "line": 8,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r74/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r75/holdout/run/FROZEN.sha256",
+   "line": 7,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r75/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r75/k4/run/FROZEN.sha256",
+   "line": 8,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r75/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r76/holdout/run/FROZEN.sha256",
+   "line": 9,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r76/holdout/run/FROZEN.sha256",
+   "line": 11,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r76/k4/run/FROZEN.sha256",
+   "line": 10,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r76/k4/run/FROZEN.sha256",
+   "line": 12,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r79/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "k1k3_pt  k1k3_plaintext.txt",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/k1k3_plaintext.txt",
+    "r33/data/k1k3_plaintext.txt",
+    "r35/p0_k1k3_mixed/key.txt"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r79/holdout/run/FROZEN.sha256",
+   "line": 12,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r79/holdout/run/FROZEN.sha256",
+   "line": 14,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r79/k4/run/FROZEN.sha256",
+   "line": 11,
+   "target": "k1k3_pt  k1k3_plaintext.txt",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/k1k3_plaintext.txt",
+    "r33/data/k1k3_plaintext.txt",
+    "r35/p0_k1k3_mixed/key.txt"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r79/k4/run/FROZEN.sha256",
+   "line": 13,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r79/k4/run/FROZEN.sha256",
+   "line": 15,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r80a/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r80a/holdout/run/FROZEN.sha256",
+   "line": 12,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r81a/holdout/run/FROZEN.sha256",
+   "line": 10,
+   "target": "k1k3_pt  k1k3_plaintext.txt",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/k1k3_plaintext.txt",
+    "r33/data/k1k3_plaintext.txt",
+    "r35/p0_k1k3_mixed/key.txt"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r81a/holdout/run/FROZEN.sha256",
+   "line": 12,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r81a/holdout/run/FROZEN.sha256",
+   "line": 14,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  },
+  {
+   "manifest": "r81a/k4/run/FROZEN.sha256",
+   "line": 12,
+   "target": "k1k3_pt  k1k3_plaintext.txt",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/k1k3_plaintext.txt",
+    "r33/data/k1k3_plaintext.txt",
+    "r35/p0_k1k3_mixed/key.txt"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r81a/k4/run/FROZEN.sha256",
+   "line": 14,
+   "target": "quadgrams  quad_log10.f32",
+   "scan_status": "AMBIGUOUS_SHORT_NAME",
+   "status": "RESOLVED_BY_CONTENT",
+   "where": [
+    "k4kit/data/quad_log10.f32",
+    "r33/data/quad_log10.f32"
+   ],
+   "basename_match": true
+  },
+  {
+   "manifest": "r81a/k4/run/FROZEN.sha256",
+   "line": 16,
+   "target": "letter_model  lm6.v2.bin",
+   "scan_status": "UNRESOLVED_PATH",
+   "status": "NOT_FOUND",
+   "where": [],
+   "basename_match": false
+  }
+ ]
+}
