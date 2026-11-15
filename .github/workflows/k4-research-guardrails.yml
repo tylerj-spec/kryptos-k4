@@ -1,0 +1,42 @@
+name: K4 research evidence guardrails
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  future-experiment-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      # Pull request: compare with main. Push to main: compare with the
+      # commit main pointed to before the push.
+      BASE: ${{ github.event_name == 'pull_request' && 'origin/main' || github.event.before }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Adversarial synthetic repo fixtures
+        run: python3 -I audit/tests/test_guardrails.py
+      - name: Prevent frozen-result rewrites, unregistered runs and unaudited ledger claims
+        run: python3 -I audit/check_guardrails.py --base "$BASE" --head HEAD
+      - name: Same check with the checker already on the base branch
+        # A pull request must not pass by weakening the checker it ships.
+        run: |
+          if git show "$BASE:audit/check_guardrails.py" > "$RUNNER_TEMP/base_checker.py" 2>/dev/null; then
+            python3 -I "$RUNNER_TEMP/base_checker.py" --base "$BASE" --head HEAD
+          else
+            echo "No checker on the base branch yet; skipped."
+          fi
+      - name: Existing strict blindness baseline
+        run: python3 -I r53/tests/test_contract.py

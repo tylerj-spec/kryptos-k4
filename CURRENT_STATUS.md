@@ -1,4 +1,24 @@
-# Current K4 research status (31 October 2026)
+# Current K4 research status (15 November 2026)
+
+**No independently verified K4 solution. Nothing was submitted to an external verifier.**
+
+**New K4 searches are on hold** (`audit/SEARCH_HOLD.md`; enforced by CI). Tyler lifts the hold.
+
+## November 2026 audit
+
+- Two confirmed defects, both corrected by additive errata; original frozen files are unchanged:
+  - **L172 (R83a):** the WPX "one published plaintext letter wrong" exclusion is withdrawn; PFX's drop-one count is not exhaustive (`r83/audit/ERRATUM.md`).
+  - **L165 (R75):** F1X solution counts can overflow int64; those counts are unverified (`r75/audit/ERRATUM.md`).
+- Independently re-derived and holding within their scope: L01–L04, L167.
+- All other ledger exclusions are **unreplayed**, not disproved. No hash mismatch in any identifiable primary frozen file.
+- Findings: `audit/historical/AUDIT_FINDINGS_AND_DECISIONS.md`. Rules for all future tests: `audit/FUTURE_TEST_GUARDRAILS.md`.
+- **What to do next:** `audit/NEXT_STEPS.md`.
+
+The sections below are the status as of 31 October 2026 and remain valid. Rounds R55–R83 are recorded in `LEDGER.md`.
+
+---
+
+## Status as of 31 October 2026
 
 **No independently verified K4 solution. Nothing was submitted to an external verifier.**
 

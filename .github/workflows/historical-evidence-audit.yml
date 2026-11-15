@@ -1,0 +1,41 @@
+name: Historical K4 ledger evidence audit
+
+on:
+  pull_request:
+    paths:
+      - "audit/historical/**"
+      - ".github/workflows/historical-evidence-audit.yml"
+  push:
+    branches:
+      - audit/historical-ledger-systematic-v1
+
+permissions:
+  contents: read
+
+jobs:
+  historical-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Independent synthetic audit-parser and Git-provenance fixtures
+        run: python3 -I audit/historical/tests/test_scan.py
+      - name: Inventory every ledger row, frozen hash and available commit-order chain
+        run: python3 -I audit/historical/scan.py --out /tmp/k4-history
+      - name: Independent post-freeze L01-L04 mathematical exclusion recheck
+        run: python3 -I audit/historical/postfreeze_baselines.py --postfreeze /tmp/k4-history/BASELINE_EXCLUSIONS.json
+      - name: Independently check ciphertext-only L167 permutation-key sum invariant
+        run: python3 -I audit/historical/ciphertext_invariants.py /tmp/k4-history/CIPHERTEXT_SUM_INVARIANT.json
+      - name: Publish audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-k4-ledger-audit
+          path: /tmp/k4-history
+          if-no-files-found: warn
+          retention-days: 90
