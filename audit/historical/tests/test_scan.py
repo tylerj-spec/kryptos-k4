@@ -104,6 +104,33 @@ class HistoricalAuditTests(unittest.TestCase):
                                     "r91/k4/run/FROZEN.sha256"})
         self.assertEqual(r["counts"]["AMBIGUOUS_SHORT_NAME"], 1)
 
+    def test_historic_prereg_digest_matches_old_frozen_version(self):
+        f = self.add("r91/PREREGISTRATION.md", "Original experimental protocol\n")
+        expected = hashlib.sha256(f.read_bytes()).hexdigest()
+        self.add("r91/PROTOCOL.sha256", expected + "  r91/PREREGISTRATION.md\n")
+        first = self.commit("freeze original exact protocol")
+        f.write_text("Later edited experimental protocol\n")
+        self.commit("subsequent unrelated edit")
+        r = S.inventory_manifests(S.tracked())
+        mismatches = [e for m in r["manifests"] for e in m["entries"]
+                      if e["status"] == "MISMATCH_AT_HEAD"]
+        self.assertEqual(len(mismatches), 1)
+        self.assertEqual(mismatches[0]["historical_status"], "MATCH_AT_MANIFEST_INTRO")
+        self.assertEqual(mismatches[0]["matching_commit"], first)
+
+    def test_historic_digest_prior_to_manifest_is_not_contemporaneous(self):
+        f = self.add("r91/PREREGISTRATION.md", "very old version\n")
+        previous = hashlib.sha256(f.read_bytes()).hexdigest()
+        self.commit("file version one")
+        f.write_text("later version before manifest\n")
+        self.add("r91/PROTOCOL.sha256", previous+"  r91/PREREGISTRATION.md\n")
+        self.commit("manifest introduced after protocol modification")
+        r = S.inventory_manifests(S.tracked())
+        mismatches = [e for m in r["manifests"] for e in m["entries"]
+                      if e["status"] == "MISMATCH_AT_HEAD"]
+        self.assertEqual(len(mismatches), 1)
+        self.assertEqual(mismatches[0]["historical_status"], "MATCH_IN_ANCESTRY_BEFORE_MANIFEST")
+
     def test_freeze_commit_order(self):
         self.add("r91/PREREGISTRATION.md", "Rules")
         first = self.commit("before")
