@@ -1,0 +1,37 @@
+name: R75 independent overflow-safe F1X auditor
+
+on:
+  pull_request:
+    paths:
+      - "r75/audit/**"
+      - ".github/workflows/r75-f1x-safe-audit.yml"
+  push:
+    branches:
+      - audit/r75-f1x-overflow-safety
+    paths:
+      - "r75/audit/**"
+      - ".github/workflows/r75-f1x-safe-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-independent-graph-oracle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Exhaustive toy oracle, max-period plants and >int64 counter
+        run: python3 -I r75/audit/tests/test_f1x_safe.py
+      - name: Verify auditor cannot call legacy decode or import K4 clues
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          s = Path("r75/audit/f1x_safe.py").read_text()
+          for forbidden in ("reveal_k4", "r83/k4", "r75/sealed/exact.py", "quad_score(", "grid_of(", "itertools.product("):
+              assert forbidden not in s, forbidden
+          print("Standalone standard-library F1X feasibility-only checker PASS")
+          PY
