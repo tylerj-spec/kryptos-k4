@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 32.249,
+  "max_rss_mb": 19.2,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 6144
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r75/audit/replay_f1x.py",
+    "--drop",
+    "r83/k4/TARGET.tsv",
+    "r75/audit/REPLAY_F1X_DROP_15_18.json",
+    "NULL_010",
+    "NULL_011",
+    "K4"
+  ]
+}

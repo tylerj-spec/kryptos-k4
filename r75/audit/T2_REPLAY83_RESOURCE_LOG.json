@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 765.508,
+  "max_rss_mb": 31.8,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 6144
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r75/audit/replay_f1x.py",
+    "--replay",
+    "r83/k4/TARGET.tsv",
+    "r75/audit/REPLAY_F1X_R83TARGET.json",
+    "NULL_000",
+    "NULL_001",
+    "NULL_002",
+    "NULL_003",
+    "NULL_004",
+    "NULL_005",
+    "NULL_006",
+    "NULL_007",
+    "NULL_008",
+    "NULL_009",
+    "NULL_010",
+    "NULL_011",
+    "NULL_012",
+    "NULL_013",
+    "NULL_014",
+    "NULL_015",
+    "NULL_016",
+    "NULL_017",
+    "NULL_018",
+    "NULL_019"
+  ]
+}

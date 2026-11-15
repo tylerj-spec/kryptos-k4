@@ -14,7 +14,7 @@ a note says so.
 **Summary:**
 - 47 rows: NOT FOUND, no script or result file in the repository.
 - 4 rows (L01–L04): the original script is NOT FOUND, but the claim has since been re-derived independently.
-- 6 rows (L12, L25, L37, L71, L98, L107): some related file found. Only L98 (the R28 outputs it audited) and L107 (its run outputs) have their own result files; no row has its own script.
+- 6 rows (L12, L25, L37, L71, L98, L107): some related file found. L98 (the R28 outputs it audited) and L107 (its run outputs) have their own result files; L71 has its protocol and solver in `k4kit/`. The rest have only related material.
 
 | Row | Recorded status | Tag | Script / result file | Scope (from the row) |
 |---|---|---|---|---|
