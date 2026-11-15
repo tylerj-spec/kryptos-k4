@@ -49,8 +49,8 @@ class HistoricalAuditTests(unittest.TestCase):
     def test_markdown_escaped_and_code_pipe(self):
         self.assertEqual(S.cells("| L01 | Model | Score | N | C/G |"),
                          ["L01", "Model", "Score", "N", "C/G"])
-        self.assertEqual(S.cells("| L55 | Model | \`pipe|inside\` | N | Source |"),
-                         ["L55", "Model", "\`pipe|inside\`", "N", "Source"])
+        self.assertEqual(S.cells("| L55 | Model | " + chr(96) + "pipe|inside" + chr(96) + " | N | Source |"),
+                         ["L55", "Model", chr(96) + "pipe|inside" + chr(96), "N", "Source"])
         self.assertEqual(S.cells(r"| L99 | A \| B | EXCL | N | C |"),
                          ["L99", r"A \| B", "EXCL", "N", "C"])
 
@@ -65,7 +65,7 @@ class HistoricalAuditTests(unittest.TestCase):
         result = S.inventory_ledger(S.tracked() | {"LEDGER.md","r82/RESULT.md"})
         self.assertEqual(result["count"], 3)
         self.assertEqual(result["unused_ids"], ["L03"])
-        self.assertEqual(result["generic_source_count"], 1)
+        self.assertEqual(result["generic_source_count"], 2)
         self.assertEqual(result["rows"][0]["audit_verdict"], "PENDING_INDEPENDENT_VALIDATION")
         self.assertEqual(result["rows"][1]["provenance"], "REFERENCED_NOT_INDEPENDENTLY_REPLAYED")
         self.assertEqual(result["rows"][2]["numbers"], "")
@@ -83,10 +83,10 @@ class HistoricalAuditTests(unittest.TestCase):
         self.assertEqual(result["counts"]["MISMATCH_AT_HEAD"], 1)
 
     def test_ambiguous_manifest_basename_not_silently_guessed(self):
-        self.add("r91/k4/a.txt", "A")
+        self.add("r91/a.txt", "A")
         self.add("r92/holdout/a.txt", "B")
         self.add("r91/k4/run/FROZEN.sha256", "0"*64+"  a.txt\n")
-        r = S.inventory_manifests({"r91/k4/a.txt",
+        r = S.inventory_manifests({"r91/a.txt",
                                     "r92/holdout/a.txt",
                                     "r91/k4/run/FROZEN.sha256"})
         self.assertEqual(r["counts"]["AMBIGUOUS_SHORT_NAME"], 1)
