@@ -1,0 +1,37 @@
+name: R83 historical plaintext-error correction
+
+on:
+  pull_request:
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-plaintext-error-audit.yml"
+  push:
+    branches:
+      - audit/r83-plaintext-drop-correction
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-plaintext-error-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test-dependency-propagation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned-numeric API compatibility
+        run: python3 -m pip install "numpy>=1.26,<3"
+      - name: Adversarial synthetic wrong-PLAINTEXT regression
+        run: python3 -I r83/audit/plaintext_drop.py --synthetic
+      - name: Post-freeze conservative K4 consistency audit
+        run: python3 -I r83/audit/plaintext_drop.py --k4 r83/audit/WPX_POSTFREEZE.json
+      - name: Preserve post-freeze audit evidence separately
+        uses: actions/upload-artifact@v4
+        with:
+          name: r83-plaintext-dependent-drop-audit
+          path: r83/audit/WPX_POSTFREEZE.json
