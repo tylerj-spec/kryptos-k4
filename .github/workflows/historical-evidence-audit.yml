@@ -27,6 +27,8 @@ jobs:
         run: python3 -I audit/historical/tests/test_scan.py
       - name: Inventory every ledger row, frozen hash and available commit-order chain
         run: python3 -I audit/historical/scan.py --out /tmp/k4-history
+      - name: Independent post-freeze L01-L04 mathematical exclusion recheck
+        run: python3 -I audit/historical/postfreeze_baselines.py --postfreeze /tmp/k4-history/BASELINE_EXCLUSIONS.json
       - name: Publish audit evidence
         if: always()
         uses: actions/upload-artifact@v4
