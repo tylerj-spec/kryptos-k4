@@ -2,7 +2,7 @@
 
 **No independently verified K4 solution. Nothing was submitted to an external verifier.**
 
-**New K4 searches are on hold** (`audit/SEARCH_HOLD.md`; enforced by CI). Tyler lifts the hold.
+**The K4 search hold was lifted by Tyler on 16 Nov 2026** (`audit/reviews/SEARCH_HOLD_LIFTED.md`). All guardrails stay in force.
 
 ## November 2026 audit
 
