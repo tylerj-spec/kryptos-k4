@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 145.82,
+  "max_rss_mb": 188.1,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r83/audit/replay_exact.py",
+    "--lx",
+    "r83/k4/TARGET.tsv",
+    "r83/audit/REPLAY_EXACT_LX_NULL_002.json",
+    "NULL_002",
+    "0.05",
+    "830616"
+  ]
+}

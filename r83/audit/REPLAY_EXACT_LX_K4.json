@@ -1,0 +1,56 @@
+{
+ "rid": "K4",
+ "fraction": 1.0,
+ "seed": 830616,
+ "settings_checked": 96112640,
+ "tested_by_checks": {
+  "5": 425984,
+  "6": 1064960,
+  "7": 2875392,
+  "8": 2875392,
+  "9": 4206592,
+  "10": 3833856,
+  "11": 4313088,
+  "12": 6762496,
+  "13": 18690048,
+  "14": 5005312,
+  "15": 4952064,
+  "16": 5058560,
+  "17": 5005312,
+  "18": 5005312,
+  "19": 5005312,
+  "20": 5005312,
+  "21": 5005312,
+  "22": 5005312,
+  "23": 5005312,
+  "24": 1011712
+ },
+ "archive_listed": 1,
+ "archive_listed_feasible_in_replay": 1,
+ "feasible_in_replay": 1,
+ "n_disagreements": 0,
+ "disagreements": [],
+ "min_checks": 5,
+ "feasible_settings": [
+  [
+   [
+    "KRY",
+    "ABS",
+    "PAL",
+    "ABS",
+    1,
+    -1,
+    -1,
+    "AZ",
+    "KRY"
+   ],
+   20,
+   4,
+   -1,
+   2,
+   5
+  ]
+ ],
+ "archive_tested_by_checks_equal": true,
+ "archive_feasible_by_checks_equal": true
+}

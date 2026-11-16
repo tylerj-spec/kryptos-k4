@@ -1,0 +1,4 @@
+{
+  "purpose": "Resource budget for T6 item 1 replay jobs (audit/NEXT_STEPS.md). Not a round QA manifest.",
+  "resource_budget": {"max_wall_seconds": 7200, "max_ram_mb": 4096, "max_candidates": 0, "max_retries": 0}
+}

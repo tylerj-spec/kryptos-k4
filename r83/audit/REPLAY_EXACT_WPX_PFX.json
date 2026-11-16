@@ -1,0 +1,299 @@
+{
+ "all_agree": true,
+ "comparison": {
+  "K4:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "K4:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_000:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_000:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_001:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_001:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_002:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_002:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_003:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_003:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_004:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_004:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 1,
+   "archive_feasible_ge3": 1
+  },
+  "NULL_005:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_005:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_006:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_006:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_007:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_007:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_008:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_008:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 1,
+   "archive_feasible_ge3": 1
+  },
+  "NULL_009:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_009:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_010:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_010:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_011:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_011:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_012:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_012:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_013:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_013:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_014:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_014:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_015:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_015:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_016:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_016:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_017:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_017:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 1,
+   "archive_feasible_ge3": 1
+  },
+  "NULL_018:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_018:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_019:WPX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  },
+  "NULL_019:PFX": {
+   "tested_equal": true,
+   "feasible_equal": true,
+   "list_equal": true,
+   "feasible_ge3": 0,
+   "archive_feasible_ge3": 0
+  }
+ }
+}

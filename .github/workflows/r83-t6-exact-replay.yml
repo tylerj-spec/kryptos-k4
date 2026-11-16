@@ -1,0 +1,28 @@
+name: R83 T6 independent EXACT replay (post-freeze)
+on:
+  pull_request:
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-t6-exact-replay.yml"
+permissions:
+  contents: read
+jobs:
+  exact-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: Toy brute force, max-parameter plants, agreement with exact83
+        run: python3 -I r83/audit/tests/test_replay_exact.py
+      - name: Slot families in full on K4 + 20 shuffles against R83a's archive
+        run: |
+          python3 -I r83/audit/replay_exact.py --slots r83/k4/TARGET.tsv /tmp/slots.json 20
+          python3 -c "import json; assert json.load(open('/tmp/slots.json'))['all_agree']"
+      - name: WPX / PFX EXACT (T1 output) against R83a's archive
+        run: |
+          python3 -I r83/audit/compare_exact_wpx_pfx.py /tmp/wpx_pfx.json
+          python3 -c "import json; assert json.load(open('/tmp/wpx_pfx.json'))['all_agree']"

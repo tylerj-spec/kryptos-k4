@@ -17,7 +17,7 @@
   - **T2 done:** F1X feasibility is confirmed setting by setting; only counts ≥ 2^63 were wrong.
   - **T3 done:** R81a's drop-one is sound. L35's Hill claim is flagged.
   - **T4, T5, T7 done:** documentation.
-  - **T6 not started.**
+  - **T6 item 1 done (16 Nov):** R83a's EXACT results reproduced independently. LX was replayed in full on K4. There were 0 disagreements. Items 2–5 are not started.
   - The conditions for lifting the search hold now rest on review of T1/T2 and Tyler's decision.
 - **What to do next:** `audit/NEXT_STEPS.md`.
 
