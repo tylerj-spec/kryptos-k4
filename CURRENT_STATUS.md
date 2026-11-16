@@ -12,6 +12,13 @@
 - Independently re-derived and holding within their scope: L01–L04, L167.
 - All other ledger exclusions are **unreplayed**, not disproved. No hash mismatch in any identifiable primary frozen file.
 - Findings: `audit/historical/AUDIT_FINDINGS_AND_DECISIONS.md`. Rules for all future tests: `audit/FUTURE_TEST_GUARDRAILS.md`.
+- **Work order progress (15 Nov, PR #86):**
+  - **T1 done:** with one wrong published letter, WPX and PFX are both CHANCE. WPX has 2 survivors (inside the conservative 260); PFX has 22.
+  - **T2 done:** F1X feasibility is confirmed setting by setting; only counts ≥ 2^63 were wrong.
+  - **T3 done:** R81a's drop-one is sound. L35's Hill claim is flagged.
+  - **T4, T5, T7 done:** documentation.
+  - **T6 not started.**
+  - The conditions for lifting the search hold now rest on review of T1/T2 and Tyler's decision.
 - **What to do next:** `audit/NEXT_STEPS.md`.
 
 The sections below are the status as of 31 October 2026 and remain valid. Rounds R55–R83 are recorded in `LEDGER.md`.

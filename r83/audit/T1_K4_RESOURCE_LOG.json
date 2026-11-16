@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 39.754,
+  "max_rss_mb": 31.7,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r83/audit/exact_drop.py",
+    "--k4",
+    "r83/k4/TARGET.tsv",
+    "r83/audit/EXACT_DROP.json",
+    "20"
+  ]
+}

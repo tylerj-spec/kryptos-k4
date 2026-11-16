@@ -1,0 +1,216 @@
+{
+ "NULL_010": {
+  "n_over_2^63": 4,
+  "n_decode_branch": 4,
+  "decode_branch_settings": [
+   [
+    [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     -1,
+     1
+    ],
+    17,
+    17
+   ],
+   [
+    [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     1,
+     -1
+    ],
+    17,
+    17
+   ]
+  ],
+  "rows": [
+   {
+    "cfg": [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     1,
+     -1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 22,
+    "checks": 6,
+    "true_count": "10306327319461675008",
+    "int64_count": -8140416754247876608,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     1,
+     -1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 73,
+    "checks": 6,
+    "true_count": "10306327319461675008",
+    "int64_count": -8140416754247876608,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     -1,
+     1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 22,
+    "checks": 6,
+    "true_count": "10306327319461675008",
+    "int64_count": -8140416754247876608,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "PAL",
+     "KRY",
+     "ABS",
+     -1,
+     1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 73,
+    "checks": 6,
+    "true_count": "10306327319461675008",
+    "int64_count": -8140416754247876608,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   }
+  ]
+ },
+ "NULL_011": {
+  "n_over_2^63": 4,
+  "n_decode_branch": 4,
+  "decode_branch_settings": [
+   [
+    [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     -1,
+     -1
+    ],
+    17,
+    17
+   ],
+   [
+    [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     1,
+     1
+    ],
+    17,
+    17
+   ]
+  ],
+  "rows": [
+   {
+    "cfg": [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     1,
+     1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 30,
+    "checks": 6,
+    "true_count": "11011033460963328000",
+    "int64_count": -7435710612746223616,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     1,
+     1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 64,
+    "checks": 6,
+    "true_count": "11011033460963328000",
+    "int64_count": -7435710612746223616,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     -1,
+     -1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 30,
+    "checks": 6,
+    "true_count": "11011033460963328000",
+    "int64_count": -7435710612746223616,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   },
+   {
+    "cfg": [
+     "PAL",
+     "ABS",
+     "KRY",
+     "KRY",
+     -1,
+     -1
+    ],
+    "m1": 17,
+    "m2": 17,
+    "dropped": 64,
+    "checks": 6,
+    "true_count": "11011033460963328000",
+    "int64_count": -7435710612746223616,
+    "unpinned_key_letters": 0,
+    "decode_branch": true
+   }
+  ]
+ },
+ "K4": {
+  "n_over_2^63": 0,
+  "n_decode_branch": 0,
+  "decode_branch_settings": [],
+  "rows": []
+ }
+}

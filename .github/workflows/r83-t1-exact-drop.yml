@@ -1,0 +1,33 @@
+name: R83 T1 exact one-wrong-plaintext-letter audit (post-freeze)
+on:
+  pull_request:
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-t1-exact-drop.yml"
+permissions:
+  contents: read
+jobs:
+  exact-drop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: Toy brute force, true-model soundness, max-parameter plants, counterexamples, R83a agreement
+        run: python3 -I r83/audit/tests/test_exact_drop.py
+      - name: Re-run K4 + 20 shuffles and compare with the committed EXACT_DROP.json
+        run: |
+          python3 -I r83/audit/exact_drop.py --k4 r83/k4/TARGET.tsv /tmp/exact_drop.json 20 > /dev/null
+          python3 - <<'PY'
+          import json
+          a = json.load(open("/tmp/exact_drop.json")); b = json.load(open("r83/audit/EXACT_DROP.json"))
+          assert a["results"] == b["results"] and a["verdicts_r83_rule"] == b["verdicts_r83_rule"]
+          print({f: v["verdict"] for f, v in a["verdicts_r83_rule"].items()})
+          PY
+      - name: Pass condition (exact WPX survivors inside the conservative 260)
+        run: |
+          python3 -I r83/audit/t1_passcheck.py /tmp/t1_pass.json
+          python3 -c "import json; assert json.load(open('/tmp/t1_pass.json'))['PASS']"
