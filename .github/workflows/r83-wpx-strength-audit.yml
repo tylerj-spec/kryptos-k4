@@ -1,0 +1,46 @@
+name: R83 WPX changed-letter constraint-strength audit
+
+on:
+  pull_request:
+    paths:
+      - "r83/audit/wpx_strength_recheck.py"
+      - "r83/audit/WPX_STRENGTH_ERRATUM.md"
+      - ".github/workflows/r83-wpx-strength-audit.yml"
+  push:
+    branches:
+      - audit/r83-t1-wpx-strength-correction
+
+permissions:
+  contents: read
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: "Synthetic soundness and post-freeze WPX strength audit"
+        run: |
+          python3 -I r83/audit/wpx_strength_recheck.py --postfreeze /tmp/wpx_strength.json
+      - name: Verify no K4 plaintext candidate or key is emitted
+        run: |
+          python3 - <<'PY'
+          import json
+          r=json.load(open("/tmp/wpx_strength.json"))
+          assert r["source_verified_against_R83_freeze"]
+          assert not r["prints_replacement_plaintext_letter"]
+          assert not r["prints_key_or_decryption"]
+          assert len(r["results"]) == 4
+          assert all(row["archived_checks_under_published_letter"] == 4 for row in r["results"])
+          assert sorted({v for row in r["results"] for v in row["witness_actual_checks"]}) == [1,2]
+          assert not any(row["survives_at_checks_ge3"] for row in r["results"])
+          print("WPX post-freeze strength falsification PASS")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r83-wpx-changed-letter-strength-audit
+          path: /tmp/wpx_strength.json
+          retention-days: 90
