@@ -1,0 +1,14 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "K4 is ordinary English enciphered in place by two keyword stages on different tableaux: one keyword a listed word (28,943, phase 0) or any 1-3 letter key, the other free 1-12 letters, both orders, 96 conventions (R80a families L1, L2, X1, X2).",
+  "not_excluded": "Listed keys at other phases, PALIMPSEST/ABSCISSA alphabets, listed keys outside the word list, free keys of 13+ letters, both keys free, transposition, masking, non-English plaintext. A blind NO_SIGNAL is statistical, weaker for free keys 8-12 (gate 22/27 and 12/16), and excludes no setting exactly.",
+  "preregistration_path": "r84/PREREGISTRATION.md",
+  "preregistration_commit": "81e5659589b79e8ce86f5621f00c02fb551fd750",
+  "preregistration_sha256": "70127c87c6bbbd4b66072357296c37387a9908ad97305a6e606a20f466841b44",
+  "synthetic_gate_path": "r80a/holdout/GATE.json",
+  "gate_verdict": "GO",
+  "solver_inputs": ["r84/k4/TARGET.tsv"],
+  "resource_budget": {"max_wall_seconds": 14400, "max_ram_mb": 4096, "max_candidates": 6060, "max_retries": 1}
+}
