@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 7015.601,
+  "max_rss_mb": 1239.5,
+  "budget": {
+    "max_wall_seconds": 14400,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "sh",
+    "r84/sealed/run_isolated.sh",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/box_k4",
+    "k4",
+    "4"
+  ]
+}

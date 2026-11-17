@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "preregistered",
+  "stage": "frozen",
   "hypothesis": "K4 is ordinary English enciphered in place by two keyword stages on different tableaux: one keyword a listed word (28,943, phase 0) or any 1-3 letter key, the other free 1-12 letters, both orders, 96 conventions (R80a families L1, L2, X1, X2).",
   "not_excluded": "Listed keys at other phases, PALIMPSEST/ABSCISSA alphabets, listed keys outside the word list, free keys of 13+ letters, both keys free, transposition, masking, non-English plaintext. A blind NO_SIGNAL is statistical, weaker for free keys 8-12 (gate 22/27 and 12/16), and excludes no setting exactly.",
   "preregistration_path": "r84/PREREGISTRATION.md",
@@ -9,6 +9,18 @@
   "preregistration_sha256": "70127c87c6bbbd4b66072357296c37387a9908ad97305a6e606a20f466841b44",
   "synthetic_gate_path": "r80a/holdout/GATE.json",
   "gate_verdict": "GO",
-  "solver_inputs": ["r84/k4/TARGET.tsv"],
-  "resource_budget": {"max_wall_seconds": 14400, "max_ram_mb": 4096, "max_candidates": 6060, "max_retries": 1}
+  "solver_inputs": [
+    "r84/k4/TARGET.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 14400,
+    "max_ram_mb": 4096,
+    "max_candidates": 6060,
+    "max_retries": 1
+  },
+  "freeze_manifest_path": "r84/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r84/k4/run/RESOURCE_LOG.json"
+  ],
+  "notes": "First launch stopped at 582 s and relaunched detached (r84/AMENDMENT_2.md); its INCOMPLETE log is kept in r84/k4/launch1_aborted/ and is not a result. Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked; recorded in r84/k4/run/SANDBOX.json)."
 }
