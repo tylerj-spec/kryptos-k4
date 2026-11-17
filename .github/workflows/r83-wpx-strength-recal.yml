@@ -1,0 +1,24 @@
+name: R83 corrected WPX one-error strength (post-freeze)
+on:
+  pull_request:
+    paths:
+      - "r83/audit/**"
+      - ".github/workflows/r83-wpx-strength-recal.yml"
+permissions:
+  contents: read
+jobs:
+  strength-recal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Survivors equal T1's; strength equals direct enumeration; plants keep a witness"
+        run: python3 -I r83/audit/tests/test_wpx_drop_strength.py
+      - name: "Re-run on K4 + 20 shuffles and compare with the committed result"
+        run: |
+          python3 -I r83/audit/wpx_drop_strength.py r83/k4/TARGET.tsv /tmp/s.json 20 > /dev/null
+          python3 -c "import json; a=json.load(open('/tmp/s.json')); b=json.load(open('r83/audit/WPX_STRENGTH.json')); assert a==b; print(a['verdict'], a['k4_max_s'], a['p_family'])"

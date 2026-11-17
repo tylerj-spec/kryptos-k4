@@ -1,0 +1,4 @@
+{
+  "purpose": "Resource budget for the corrected WPX one-error strength scan (r83/audit/WPX_STRENGTH_PLAN.md). Not a round QA manifest.",
+  "resource_budget": {"max_wall_seconds": 3600, "max_ram_mb": 2048, "max_candidates": 1, "max_retries": 0}
+}

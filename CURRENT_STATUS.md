@@ -6,6 +6,11 @@
 
 **Latest search, R84 (17 Nov 2026):** R80a's two-keyword-stage families on K4, run strict blind in an isolated sandbox. Result: **NO_SIGNAL** (K4's best is no better than 60 of 100 shuffles; 4/24 published letters). See `r84/RESULT.md` and L173.
 
+**Audit fixes merged 17 Nov:**
+- #89: a broken workflow's YAML.
+- #90: T1's WPX one-error strength labels were stale.
+- The corrected statistic, recalibrated on K4 + 20 shuffles, gives K4 max s 2 (no setting at s ≥ 3) and p 0.38. No lead. See `r83/audit/WPX_STRENGTH.md`.
+
 ## November 2026 audit
 
 - Two confirmed defects, both corrected by additive errata; original frozen files are unchanged:
