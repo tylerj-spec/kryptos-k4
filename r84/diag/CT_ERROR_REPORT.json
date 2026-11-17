@@ -1,0 +1,150 @@
+{
+ "recovered": 12,
+ "n": 12,
+ "rows": [
+  {
+   "id": "CE_00",
+   "source": "H_139",
+   "fam": "L1",
+   "kind": "POS",
+   "position": 72,
+   "letters_right": 96,
+   "lm": -0.6095119163406313,
+   "word": -0.7847468216293191,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_01",
+   "source": "H_028",
+   "fam": "L1",
+   "kind": "POS_MISSP",
+   "position": 1,
+   "letters_right": 96,
+   "lm": -0.8596292118861139,
+   "word": -1.3298179392512457,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_02",
+   "source": "H_114",
+   "fam": "L1",
+   "kind": "POS_MISSP",
+   "position": 48,
+   "letters_right": 96,
+   "lm": -0.8678077923143683,
+   "word": -1.0745361926834656,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_03",
+   "source": "H_013",
+   "fam": "L2",
+   "kind": "POS",
+   "position": 14,
+   "letters_right": 96,
+   "lm": -0.6905769642186719,
+   "word": -0.7405621462041202,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_04",
+   "source": "H_147",
+   "fam": "L2",
+   "kind": "POS",
+   "position": 5,
+   "letters_right": 96,
+   "lm": -0.7982474740149592,
+   "word": -1.0227580057863728,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_05",
+   "source": "H_093",
+   "fam": "L2",
+   "kind": "POS",
+   "position": 70,
+   "letters_right": 96,
+   "lm": -0.9364026829962782,
+   "word": -1.1399761336605223,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_06",
+   "source": "H_070",
+   "fam": "X1",
+   "kind": "POS_MISSP",
+   "position": 80,
+   "letters_right": 96,
+   "lm": -1.0094351960984924,
+   "word": -1.3708622653672107,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_07",
+   "source": "H_012",
+   "fam": "X1",
+   "kind": "POS_MISSP",
+   "position": 70,
+   "letters_right": 96,
+   "lm": -1.0378173528322843,
+   "word": -1.3438942458452192,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_08",
+   "source": "H_048",
+   "fam": "X1",
+   "kind": "POS",
+   "position": 80,
+   "letters_right": 96,
+   "lm": -0.7210511521306657,
+   "word": -0.8077008420314336,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_09",
+   "source": "H_089",
+   "fam": "X2",
+   "kind": "POS_MISSP",
+   "position": 31,
+   "letters_right": 96,
+   "lm": -0.8880477906978674,
+   "word": -1.3545644547240472,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_10",
+   "source": "H_052",
+   "fam": "X2",
+   "kind": "POS",
+   "position": 27,
+   "letters_right": 96,
+   "lm": -0.8993119403266693,
+   "word": -1.0779693592318609,
+   "confident": true,
+   "recovered": true
+  },
+  {
+   "id": "CE_11",
+   "source": "H_081",
+   "fam": "X2",
+   "kind": "POS",
+   "position": 44,
+   "letters_right": 96,
+   "lm": -0.8208639105900728,
+   "word": -0.9839281365217564,
+   "confident": true,
+   "recovered": true
+  }
+ ]
+}
