@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: python3 -m pip install numpy
-      - name: Synthetic falsification: one WRONG PLAINTEXT letter, not ciphertext
+      - name: "Synthetic falsification: one WRONG PLAINTEXT letter, not ciphertext"
         run: python3 -I r83/audit/plaintext_drop.py --synthetic
       - name: Independent conservative WPX post-freeze audit
         run: |
