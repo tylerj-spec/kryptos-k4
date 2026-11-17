@@ -1,0 +1,27 @@
+{
+ "files": {
+  "r80a/blind/run.py": "72688a5c43591b63f2d9d13f986e90324abe54798082cc95d0a315953f78c5b3",
+  "r80a/two80.py": "916490fa5cdc90c4157f61383dbde8f69b954b0d66e9c9e720a7c53121b9e5dd",
+  "r80a/twostage.c": "f052d4d7523a806aa79d61bf4788a4c6e9d82245ef0aaf5401fe9036f6be91b0",
+  "r79/solver.py": "5c8c11316ecb7b3871a4b497f499272b5615032d2269f8a764378d8491c26bdc",
+  "r79/slotsolve.c": "2c9a6e4288b89c4c6c8015100af1f6cc081a7db98462c8017b3dcc5c4534e904",
+  "r75/core.py": "b3a507f390f4567c95ba1e8f3dd1f038e7aa919c28b8abd89d81de116cf52f3e",
+  "r76/alphabets.py": "f032cd5e21dab139165a41161504e32afe5a067c4892aa9c54888cd67228bf10",
+  "r38/aca_alphabet.py": "6e78ba745b23a47533517020c9988d87a3d9e6798089f49e461869e077210640",
+  "r59/blind/LM_SHA256": "4ec351d6b885e2cedb72850f50eaba2f87f8507e15a733997103e672a66a2ed6",
+  "r75/data/kryptos_words.txt": "e5cdb08bf7b87155c24141767bd0b4117903fcd3d574f859a3e049ef235af07e",
+  "k4kit/data/word_model_orth.tsv": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "k4kit/data/quad_log10.f32": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43"
+ },
+ "dictionary_clue_word_hits": {
+  "r75/data/kryptos_words.txt": 0,
+  "k4kit/data/word_model_orth.tsv": 5,
+  "k4kit/data/quad_log10.f32": 0
+ },
+ "input": {
+  "source": "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/ce.tsv",
+  "sha256": "16903356e7b481375d7724da2ed61040077a70f91084a13cb7d553de334ae1d9",
+  "rows": 12
+ },
+ "letter_model_sha256": "b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a"
+}

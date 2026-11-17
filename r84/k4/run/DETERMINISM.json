@@ -1,0 +1,7 @@
+{
+  "check": "Amendment 2: the 8 per-ciphertext outputs of the aborted first launch (unread) against the same ciphertexts in the complete run",
+  "method": "sha256 of each aborted .partial file (recorded in r84/k4/launch1_aborted/PARTIAL_SHA256.txt before the relaunch) compared with sha256(json.dumps(record from RESULTS.jsonl + the runner's bookkeeping key families=[L1,L2,X1,X2])), the exact bytes r80a/blind/run.py writes to .partial",
+  "byte_identical": 8,
+  "of": 8,
+  "content_inspected": false
+}

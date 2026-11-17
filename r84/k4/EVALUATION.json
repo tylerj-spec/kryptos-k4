@@ -1,0 +1,251 @@
+{
+ "outcome": "NO_SIGNAL",
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "k4_best": {
+  "text": "DCHTAYPITBRACETOOBADEBSBBTOSACOWTTHEFATEISFRIESLEFEVEKENPASELOCAPTOSNTLEGOLIJHEWOTGTULYNOADIVISRE",
+  "setting": {
+   "fam": "L1",
+   "conv": [
+    "KRY",
+    "KRY",
+    "AZ",
+    "KRY",
+    "VIG",
+    "KRY",
+    -1
+   ],
+   "word": "ASSIGNMENT",
+   "free": "QQQOLZSPJTWX",
+   "m_free": 12
+  },
+  "fam": "L1",
+  "quad": -5.398172855377197,
+  "lm_per_letter": -1.569635422693892,
+  "word_per_letter": -2.365003811560525
+ },
+ "k4_best_hits": 4,
+ "k4_best_clears_cuts": false,
+ "k4_best_by_fam": {
+  "L1": {
+   "text": "DCHTAYPITBRACETOOBADEBSBBTOSACOWTTHEFATEISFRIESLEFEVEKENPASELOCAPTOSNTLEGOLIJHEWOTGTULYNOADIVISRE",
+   "setting": {
+    "fam": "L1",
+    "conv": [
+     "KRY",
+     "KRY",
+     "AZ",
+     "KRY",
+     "VIG",
+     "KRY",
+     -1
+    ],
+    "word": "ASSIGNMENT",
+    "free": "QQQOLZSPJTWX",
+    "m_free": 12
+   },
+   "fam": "L1",
+   "quad": -5.398172855377197,
+   "lm_per_letter": -1.569635422693892,
+   "word_per_letter": -2.365003811560525,
+   "hits": 4
+  },
+  "X2": {
+   "text": "AEKNUUMEOSEIAOSBETHREEMARDPSBCLOSETORTWARURGACIEVYIIEOBALEZITOLYMMISOHASTYLERHTSYSTYASTBESEKERYJS",
+   "setting": {
+    "fam": "X2",
+    "conv": [
+     "KRY",
+     "AZ",
+     "KRY",
+     "AZ",
+     "VIG",
+     "AZ",
+     1
+    ],
+    "word": "CRS",
+    "free": "YSMPUACLCIE",
+    "m_free": 11
+   },
+   "fam": "X2",
+   "quad": -5.536969184875488,
+   "lm_per_letter": -1.6147929389298576,
+   "word_per_letter": -3.1193540878568102,
+   "hits": 2
+  },
+  "X1": {
+   "text": "AHOUMEHEATSOTAMPONTONSHAIRMRIRFLTBEEGLAYCOEMBEDDLAFOATETINULEGOPOOLWEBBRTSTPBNDIFUCINTSEEUNSAPAKN",
+   "setting": {
+    "fam": "X1",
+    "conv": [
+     "AZ",
+     "AZ",
+     "KRY",
+     "KRY",
+     "BEAU",
+     "AZ",
+     -1
+    ],
+    "word": "IWD",
+    "free": "ULDGVEGLXRG",
+    "m_free": 11
+   },
+   "fam": "X1",
+   "quad": -5.506165981292725,
+   "lm_per_letter": -1.6302640810608864,
+   "word_per_letter": -2.4240694938568232,
+   "hits": 2
+  },
+  "L2": {
+   "text": "CLVALFBARGHWOEARFNIKONNOTHYYTOEUELABYJWBILLDARMADWILTOENRETAEGEEREAITABIDTOSPILASEDIREEWEARDLASTH",
+   "setting": {
+    "fam": "L2",
+    "conv": [
+     "AZ",
+     "AZ",
+     "KRY",
+     "AZ",
+     "BEAU",
+     "AZ",
+     1
+    ],
+    "word": "MARYA",
+    "free": "VOFAHSOPVHFM",
+    "m_free": 12
+   },
+   "fam": "L2",
+   "quad": -5.35650110244751,
+   "lm_per_letter": -1.6320056060386687,
+   "word_per_letter": -2.6560246898105566,
+   "hits": 4
+  }
+ },
+ "k4_top": [
+  {
+   "text": "DCHTAYPITBRACETOOBADEBSBBTOSACOWTTHEFATEISFRIESLEFEVEKENPASELOCAPTOSNTLEGOLIJHEWOTGTULYNOADIVISRE",
+   "setting": {
+    "fam": "L1",
+    "conv": [
+     "KRY",
+     "KRY",
+     "AZ",
+     "KRY",
+     "VIG",
+     "KRY",
+     -1
+    ],
+    "word": "ASSIGNMENT",
+    "free": "QQQOLZSPJTWX",
+    "m_free": 12
+   },
+   "fam": "L1",
+   "quad": -5.398172855377197,
+   "lm_per_letter": -1.569635422693892,
+   "word_per_letter": -2.365003811560525,
+   "hits": 4
+  },
+  {
+   "text": "CIGJOBETANBNISNOCOFREDMOIATBYHTMAJAUNSEYATSMAMMIERYINAANITWANTOPTINEASCSNONALSOTHINKITGEIIFRECKDN",
+   "setting": {
+    "fam": "L1",
+    "conv": [
+     "KRY",
+     "AZ",
+     "KRY",
+     "AZ",
+     "VARB",
+     "KRY",
+     -1
+    ],
+    "word": "SULKING",
+    "free": "YWHLORZQYQJW",
+    "m_free": 12
+   },
+   "fam": "L1",
+   "quad": -5.2556023597717285,
+   "lm_per_letter": -1.5772586733525253,
+   "word_per_letter": -2.3940243920041375,
+   "hits": 1
+  },
+  {
+   "text": "ONDARDUSWHYWINDONNOONTHETHWBACUEELMOCANDEEPPETCABDTOBONSTULGLTEINQNFICNGROONTHOSEOIDCODEALOPYLEST",
+   "setting": {
+    "fam": "L1",
+    "conv": [
+     "KRY",
+     "AZ",
+     "KRY",
+     "AZ",
+     "VARB",
+     "AZ",
+     1
+    ],
+    "word": "MENACED",
+    "free": "KYMDVBRTCZLP",
+    "m_free": 12
+   },
+   "fam": "L1",
+   "quad": -5.360045433044434,
+   "lm_per_letter": -1.5972112045220108,
+   "word_per_letter": -2.47270765937163,
+   "hits": 2
+  },
+  {
+   "text": "AYISHADPMNESHITISTETHDWRANONOFNADRAIONALTHMAZIAKEEPSONARDELUMSFENOHIGHDILTFFRBONDGYSMCKEESBELOUVL",
+   "setting": {
+    "fam": "L1",
+    "conv": [
+     "KRY",
+     "AZ",
+     "KRY",
+     "KRY",
+     "BEAU",
+     "KRY",
+     -1
+    ],
+    "word": "INTRACYSTIC",
+    "free": "UJDXZOEPFLXH",
+    "m_free": 12
+   },
+   "fam": "L1",
+   "quad": -5.329179286956787,
+   "lm_per_letter": -1.6080378038381447,
+   "word_per_letter": -2.629559536868876,
+   "hits": 4
+  },
+  {
+   "text": "AEKNUUMEOSEIAOSBETHREEMARDPSBCLOSETORTWARURGACIEVYIIEOBALEZITOLYMMISOHASTYLERHTSYSTYASTBESEKERYJS",
+   "setting": {
+    "fam": "X2",
+    "conv": [
+     "KRY",
+     "AZ",
+     "KRY",
+     "AZ",
+     "VIG",
+     "AZ",
+     1
+    ],
+    "word": "CRS",
+    "free": "YSMPUACLCIE",
+    "m_free": 11
+   },
+   "fam": "X2",
+   "quad": -5.536969184875488,
+   "lm_per_letter": -1.6147929389298576,
+   "word_per_letter": -3.1193540878568102,
+   "hits": 2
+  }
+ ],
+ "n_nulls": 100,
+ "null_best_lm_max": -1.475798933757181,
+ "null_best_lm_median": -1.5635271229080319,
+ "nulls_at_or_above_k4": 60,
+ "p_family": 0.6039603960396039,
+ "nulls_clearing_both_cuts": 0,
+ "k4_max_hits_any_frozen_decode": 4,
+ "null_max_hits_any_frozen_decode": 7,
+ "nulls_reaching_k4_max_hits": 42,
+ "contenders": [],
+ "witnesses_checked": 909
+}

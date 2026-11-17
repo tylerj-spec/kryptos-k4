@@ -4,6 +4,8 @@
 
 **The K4 search hold was lifted by Tyler on 16 Nov 2026** (`audit/reviews/SEARCH_HOLD_LIFTED.md`). All guardrails stay in force.
 
+**Latest search, R84 (17 Nov 2026):** R80a's two-keyword-stage families on K4, run strict blind in an isolated sandbox. Result: **NO_SIGNAL** (K4's best is no better than 60 of 100 shuffles; 4/24 published letters). See `r84/RESULT.md` and L173.
+
 ## November 2026 audit
 
 - Two confirmed defects, both corrected by additive errata; original frozen files are unchanged:
