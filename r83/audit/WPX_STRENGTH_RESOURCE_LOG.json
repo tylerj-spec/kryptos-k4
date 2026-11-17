@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 95.319,
+  "max_rss_mb": 18.1,
+  "budget": {
+    "max_wall_seconds": 3600,
+    "max_ram_mb": 2048
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r83/audit/wpx_drop_strength.py",
+    "r83/k4/TARGET.tsv",
+    "r83/audit/WPX_STRENGTH.json",
+    "20"
+  ]
+}
