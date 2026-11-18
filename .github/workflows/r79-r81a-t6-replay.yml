@@ -1,0 +1,26 @@
+name: R79/R81a T6 keyword replay (post-freeze)
+on:
+  pull_request:
+    paths:
+      - "r79/audit/**"
+      - ".github/workflows/r79-r81a-t6-replay.yml"
+permissions:
+  contents: read
+jobs:
+  keyword-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Slot rules equal the originals; counts; brute force; one-wrong-plaintext-letter plants"
+        run: python3 -I r79/audit/tests/test_replay_kw.py
+      - name: "Full replay on both targets and comparison with the archived validators"
+        run: |
+          python3 -I r79/audit/replay_kw.py r81a/k4/TARGET.tsv r79/audit/REPLAY_KW_R81A_TARGET.json 10 H7CT H7TXT LIB PROG H7CT_A LIB_A LIB_G4 PROG_A > /dev/null
+          python3 -I r79/audit/replay_kw.py r79/k4/TARGET.tsv r79/audit/REPLAY_KW_R79_TARGET.json 10 H7CT H7TXT LIB PROG > /dev/null
+          python3 -I r79/audit/compare_kw.py /tmp/cmp.json
+          python3 -c "import json; d=json.load(open('/tmp/cmp.json')); assert d['all_equal'] and d['every_setting_ge_12_checks'], d"
