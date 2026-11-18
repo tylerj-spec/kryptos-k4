@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 88.648,
+  "max_rss_mb": 19.0,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r79/audit/replay_kw.py",
+    "r81a/k4/TARGET.tsv",
+    "r79/audit/REPLAY_KW_R81A_TARGET.json",
+    "10",
+    "H7CT",
+    "H7TXT",
+    "LIB",
+    "PROG",
+    "H7CT_A",
+    "LIB_A",
+    "LIB_G4",
+    "PROG_A"
+  ]
+}
