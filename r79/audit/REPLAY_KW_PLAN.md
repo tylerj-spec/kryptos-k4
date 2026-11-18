@@ -3,7 +3,7 @@
 Written 18 Nov 2026, before `r79/audit/replay_kw.py` touches K4 or any shuffle.
 
 **Checker:** `r79/audit/replay_kw.py` uses the standard library only and imports nothing from `r79/` or `r81a/`. It
-re-derives all 982 + 2,560 slot rules, the K1–K3 streams and the setting lists from the definitions.
+re-derives all 982 + 2,919 slot rules, the K1–K3 streams and the setting lists from the definitions.
 
 **Tests that pass before this commit** (`r79/audit/tests/test_replay_kw.py`):
 1. Every slot rule equals the originals' encryption-side state machine (11,703 rule–ciphertext pairs). That is a
@@ -25,3 +25,7 @@ Both replays are full: every setting.
 - **Budget:** `T6_BUDGET.json`, 2 h and 4 GB.
 - **Not covered:** R79's H11 routes; R81a's G5X (one unknown keyword alphabet). These are separate checks, to be
   replayed later.
+
+**Correction (18 Nov 2026, before any run):** the first version of this plan said "982 + 2,560 slot rules". The
+R81a G4 count is 2,919: ROT 66, ALT 45, RESTART 858, SPLIT 1,950. That gives the 168,000 LIB_G4 settings the tests
+confirm. Nothing else changed.
