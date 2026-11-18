@@ -191,6 +191,41 @@ class GuardrailTests(unittest.TestCase):
         commit(self.root, "review note cites a different row")
         self.assertViolation("L998")
 
+    def test_promotion_without_independent_review_rejected(self):
+        write(self.root, "LEDGER.md", "# Synthetic\n| L999 | model | EXCL INDEPENDENTLY VERIFIED | n | src |\n")
+        write(self.root, "audit/reviews/example.md", "# Review\nAffected ledger IDs: L999\nPromotes: L999\n"
+              "Validation: replay\nIndependent review: NONE (one model)\n")
+        commit(self.root, "promote on a single-model replay")
+        self.assertViolation("not 'YES <reviewer>'")
+
+    def test_promotion_with_partial_review_rejected(self):
+        write(self.root, "LEDGER.md", "# Synthetic\n| L999 | model | EXCL | n | src |\n")
+        write(self.root, "audit/reviews/example.md", "# Review\nAffected ledger IDs: L999\nPromotes: L999\n"
+              "Validation: replay\nIndependent review: PARTIAL (second model reran tests)\n")
+        commit(self.root, "promote on a partial review")
+        self.assertViolation("not 'YES <reviewer>'")
+
+    def test_marked_row_without_promoting_note_rejected(self):
+        write(self.root, "LEDGER.md", "# Synthetic\n| L999 | model | EXCL INDEPENDENTLY VERIFIED | n | src |\n")
+        write(self.root, "audit/reviews/example.md", "# Review\nAffected ledger IDs: L999\n"
+              "Validation: replay\nIndependent review: NONE (one model)\n")
+        commit(self.root, "mark a row verified without a promotion note")
+        self.assertViolation("without a new review note that promotes")
+
+    def test_promotion_with_independent_review_accepted(self):
+        write(self.root, "LEDGER.md", "# Synthetic\n| L999 | model | EXCL INDEPENDENTLY VERIFIED | n | src |\n")
+        write(self.root, "audit/reviews/example.md", "# Review\nAffected ledger IDs: L999\nPromotes: L999\n"
+              "Validation: replay\nIndependent review: YES fixture-reviewer (second model), signed review link\n")
+        commit(self.root, "promote with a named independent reviewer")
+        self.assertEqual(self.violations(), [])
+
+    def test_single_model_replay_without_promotion_still_accepted(self):
+        write(self.root, "LEDGER.md", "# Synthetic\n| L999 | model | EXCL (replayed, one model) | n | src |\n")
+        write(self.root, "audit/reviews/example.md", "# Review\nAffected ledger IDs: L999\n"
+              "Validation: replay\nIndependent review: NONE (one model)\n")
+        commit(self.root, "record a replay without promoting")
+        self.assertEqual(self.violations(), [])
+
     def test_guardrail_policy_change_requires_review(self):
         write(self.root, "audit/check_guardrails.py", "# weakened\n")
         commit(self.root, "quietly weaken the checker")
