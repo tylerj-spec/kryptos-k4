@@ -43,6 +43,14 @@
 - Classification vocabulary: EXACT_SCOPE_EXCL; POSTFREEZE_CONDITIONAL_EXCL; STAT_NO_SIGNAL; SOLVER_NO_POWER; OPEN; SUPERSEDED; VERIFIED_BLIND_CANDIDATE. Never silently promote NO_SIGNAL to EXCL. Legacy EXCL is still unaudited until reviewed.
 - An invalidated test gets an erratum and restricted conclusion; original data is retained. Never delete, rewrite or pretend the old run never happened.
 - Any claim to have solved K4 requires independently reproduced complete 97-letter text, exact reversible forward encryption, reproducible key derivation, and *then* independent validation using the published letters.
+- **Promotion needs independent review (adopted 18 Nov 2026, on Tyler's instruction).**
+  - A replay by the builder, however careful, keeps a row at "replayed, one model". It does not promote it.
+  - To mark a major exclusion `INDEPENDENTLY VERIFIED`, a new review note must carry a `Promotes: L…` line and
+    `Independent review: YES <reviewer>`. The reviewer is a different model (e.g. ChatGPT) or a person, who
+    re-derived or re-ran the mathematics and is named with a link to their signed review.
+  - These count as NONE: the same model in several roles, and subagents of the same model.
+  - These count as PARTIAL: a second model that only re-ran tests or found one defect.
+  - Neither promotes. CI enforces the form (rule 10); reviewers are responsible for the substance.
 
 ## What CI enforces (`audit/check_guardrails.py`, schema `k4-qa-v2`)
 
@@ -59,6 +67,7 @@ The checker runs on every pull request to `main` and on every push to `main`. CI
 | 7 | **Blind inputs:** every file in `solver_inputs` is rejected if its name suggests clue material or its content contains a published K4 plaintext word. | Tripwire against crib leakage. Not a proof of isolation. |
 | 8 | **Search hold:** while `audit/SEARCH_HOLD.md` exists, no round may add K4 files. | New K4 searches stay suspended until the owner lifts the hold. |
 | 9 | **A change to `LEDGER.md`, or to the guardrail files themselves, needs a new `audit/reviews/*.md` note** with `Affected ledger IDs:`, `Validation:` and `Independent review:` lines. Every ledger row that changed must be named in the note. | No unaudited ledger claims; the note must say who, if anyone, checked the work independently. |
+| 10 | **Promotion needs a named independent reviewer.** A review note with a `Promotes:` line must say `Independent review: YES <reviewer>` (not NONE or PARTIAL). A changed ledger row containing `INDEPENDENTLY VERIFIED` must be promoted by such a note. | Independent mathematical criticism found the R83a and T1 WPX defects; a replay that passes is not enough (the checker must also measure the right quantity). |
 
 `audit/run_bounded.py` starts a job under the manifest's limits, kills the whole process group when a limit is reached, and writes the resource log. Start every job that reads the K4 ciphertext through it.
 
@@ -68,7 +77,7 @@ The checker runs on every pull request to `main` and on every push to `main`. CI
 - Whether positive controls corrupt a **plaintext** symbol where plaintext drives later state (the R83a defect).
 - Whether counts use arbitrary-precision integers (the R75 defect). Counts of solutions must be Python `int`, never a fixed-width NumPy product.
 - True isolation of a blind solver. Rule 7 is a tripwire only; use the R53 container pattern for real separation.
-- That reviewers are independent. `Independent review:` is a statement, and "NONE" is an acceptable honest answer that keeps the claim unverified.
+- That reviewers are independent. `Independent review:` is a statement. "NONE" is an acceptable honest answer that keeps the claim unverified. For a promotion, CI checks only that a reviewer is named after YES; whether that review was real and adequate is for Tyler and reviewers to judge.
 - Direct pushes to `main` are detected after the fact (CI turns red), not prevented. Turn on branch protection for `main` and make "K4 research evidence guardrails" a required check.
 
 ## Mandatory reviewer checklist

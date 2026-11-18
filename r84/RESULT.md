@@ -73,3 +73,13 @@ Fragments such as "TOO BAD", "THE FATE IS" are optimiser-filled. Under the worki
   and F1X's 9 low-check cells. Both come out negative.
 
 **Independent review: NONE.** One model did this work.
+
+## Scope independence (added 18 Nov 2026, after review)
+- R84's search scope is **R80a's own pre-registered scope, unchanged**: all four families, listed words at phase 0,
+  1–3-letter keys, free keys 1–12, all 96 conventions (`r80a/PREREGISTRATION.md`, d31202e, fixed before R80a's
+  holdout existed).
+- **No key length, convention or setting was selected or removed using the crib-assisted F1X results (L165)** or any
+  other published-letter result. F1X is cited in the pre-registration only as prior context, to say what a
+  negative would add.
+- So R84's blind NO_SIGNAL stands on its own. Crib-assisted exclusions may be applied to it only after the freeze, as
+  separate evidence.

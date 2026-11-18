@@ -23,6 +23,7 @@ GIT_CHANGE = re.compile(r"^(A|M|D|T|C|U)\t(.*)$")
 LEDGER_ROW = re.compile(r"^[+-]\|\s*(L[0-9]+[a-z]?)\s*\|")
 REVIEW_NOTE = re.compile(r"audit/reviews/[A-Za-z0-9_.-]+\.md")
 REVIEW_FIELDS = ("Affected ledger IDs:", "Validation:", "Independent review:")
+PROMOTED_MARK = "INDEPENDENTLY VERIFIED"
 
 # Top-level directories that are not experiment rounds. A new top-level
 # directory outside this list must be a round (rNN...), so that an
@@ -341,24 +342,45 @@ def check_ledger(repo, changes, violations):
         violations.append(
             f"{', '.join(touched)} changed without a NEW audit/reviews/*.md evidence note")
         return
-    cited = set()
+    cited, promoted_ok = set(), set()
     for p in notes:
         text = repo.read(repo.head, p).decode("utf-8", "replace")
         missing = [f for f in REVIEW_FIELDS if f not in text]
         if missing:
             violations.append(f"{p}: must contain {' and '.join(missing)}")
+        promotes, independent = set(), ""
         for line in text.splitlines():
             if line.startswith("Affected ledger IDs:"):
                 cited.update(re.findall(r"L[0-9]+[a-z]?", line))
+            elif line.startswith("Promotes:"):
+                promotes.update(re.findall(r"L[0-9]+[a-z]?", line))
+            elif line.startswith("Independent review:"):
+                independent = line[len("Independent review:"):].strip()
+        # 10. Promotion needs a genuinely independent reviewer: a note that promotes a ledger row
+        #     (Promotes: line) must say "Independent review: YES <who>", never NONE or PARTIAL.
+        if promotes:
+            if not re.match(r"YES\b\s*\S", independent):
+                violations.append(
+                    f"{p}: promotes {', '.join(sorted(promotes))} but 'Independent review:' is not "
+                    "'YES <reviewer>'; a single-model replay is not an independent review")
+            else:
+                promoted_ok |= promotes
     if "LEDGER.md" in touched:
         diff = repo.git("diff", "-U0", repo.base, repo.head, "--", "LEDGER.md").stdout
-        rows = {m.group(1) for line in diff.decode("utf-8", "replace").splitlines()
-                for m in [LEDGER_ROW.match(line)] if m}
+        lines = diff.decode("utf-8", "replace").splitlines()
+        rows = {m.group(1) for line in lines for m in [LEDGER_ROW.match(line)] if m}
         uncited = sorted(rows - cited)
         if uncited:
             violations.append(
                 "LEDGER.md rows changed but not named in a new review note's "
                 f"'Affected ledger IDs:' line: {', '.join(uncited)}")
+        marked = sorted({m.group(1) for line in lines if line.startswith("+")
+                         for m in [LEDGER_ROW.match(line)] if m and PROMOTED_MARK in line})
+        unreviewed = [r for r in marked if r not in promoted_ok]
+        if unreviewed:
+            violations.append(
+                f"LEDGER.md rows marked '{PROMOTED_MARK}' without a new review note that "
+                f"promotes them with 'Independent review: YES <reviewer>': {', '.join(unreviewed)}")
 
 
 def audit_diff(root, base, head):
