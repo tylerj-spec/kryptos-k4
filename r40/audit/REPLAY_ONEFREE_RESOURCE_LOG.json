@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 145.762,
+  "max_rss_mb": 46.8,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r40/audit/replay_onefree.py",
+    "r40/audit/REPLAY_ONEFREE.json"
+  ]
+}
