@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "preregistered",
+  "stage": "frozen",
   "hypothesis": "Strict-blind AZ/AZ single unknown-wiring stepping rotor, n=1..4, d=+/-1, 80 starts x 16000 moves, fixed seed 8600",
   "not_excluded": "No exclusions: no exhaustive permutation search; n>=5, non-AZ alphabets, extra rotors, non-English/masked plaintext, transpositions, other families, or incomplete runs untouched.",
   "preregistration_path": "r86/PREREGISTRATION.md",
@@ -21,5 +21,6 @@
   "freeze_manifest_path": "r86/k4/FROZEN.sha256",
   "resource_logs": [
     "r86/k4/run/RESOURCE_LOG.json"
-  ]
+  ],
+  "notes": "Full strict ciphertext-only K4 + 100-shuffle freeze is in r86/k4/run/RESULTS.tsv; scores and witnesses frozen before any published plaintext comparison. run_local_bounded.py is a distinct custom RLIMIT_AS runner, not the repository audit/run_bounded.py. RESOURCE_LOG max_rss_mb is a conservative upper bound from the 1 GiB RLIMIT_AS, not a directly measured peak RSS. No independent-model review or outside verifier."
 }
