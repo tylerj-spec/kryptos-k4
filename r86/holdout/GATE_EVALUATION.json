@@ -1,0 +1,235 @@
+{
+  "verdict": "GO",
+  "pass": 17,
+  "exact": 15,
+  "n_correct": 20,
+  "per_n": {
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 5
+  },
+  "items": [
+    {
+      "id": "R86_041",
+      "true_n": 3,
+      "true_d": 1,
+      "found_n": 3,
+      "found_d": 1,
+      "matches": 92,
+      "params": true,
+      "pass": false,
+      "exact": false
+    },
+    {
+      "id": "R86_042",
+      "true_n": 2,
+      "true_d": 1,
+      "found_n": 2,
+      "found_d": 1,
+      "matches": 95,
+      "params": true,
+      "pass": true,
+      "exact": false
+    },
+    {
+      "id": "R86_043",
+      "true_n": 4,
+      "true_d": -1,
+      "found_n": 4,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_044",
+      "true_n": 3,
+      "true_d": -1,
+      "found_n": 3,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_045",
+      "true_n": 3,
+      "true_d": 1,
+      "found_n": 3,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_046",
+      "true_n": 2,
+      "true_d": 1,
+      "found_n": 2,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_047",
+      "true_n": 1,
+      "true_d": -1,
+      "found_n": 1,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_048",
+      "true_n": 1,
+      "true_d": 1,
+      "found_n": 1,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_049",
+      "true_n": 1,
+      "true_d": 1,
+      "found_n": 1,
+      "found_d": 1,
+      "matches": 94,
+      "params": true,
+      "pass": false,
+      "exact": false
+    },
+    {
+      "id": "R86_050",
+      "true_n": 2,
+      "true_d": -1,
+      "found_n": 2,
+      "found_d": -1,
+      "matches": 93,
+      "params": true,
+      "pass": false,
+      "exact": false
+    },
+    {
+      "id": "R86_051",
+      "true_n": 4,
+      "true_d": 1,
+      "found_n": 4,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_052",
+      "true_n": 2,
+      "true_d": -1,
+      "found_n": 2,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_053",
+      "true_n": 4,
+      "true_d": 1,
+      "found_n": 4,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_054",
+      "true_n": 2,
+      "true_d": -1,
+      "found_n": 2,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_055",
+      "true_n": 4,
+      "true_d": -1,
+      "found_n": 4,
+      "found_d": -1,
+      "matches": 95,
+      "params": true,
+      "pass": true,
+      "exact": false
+    },
+    {
+      "id": "R86_056",
+      "true_n": 3,
+      "true_d": -1,
+      "found_n": 3,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_057",
+      "true_n": 4,
+      "true_d": -1,
+      "found_n": 4,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_058",
+      "true_n": 1,
+      "true_d": -1,
+      "found_n": 1,
+      "found_d": -1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_059",
+      "true_n": 1,
+      "true_d": 1,
+      "found_n": 1,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    },
+    {
+      "id": "R86_060",
+      "true_n": 3,
+      "true_d": 1,
+      "found_n": 3,
+      "found_d": 1,
+      "matches": 97,
+      "params": true,
+      "pass": true,
+      "exact": true
+    }
+  ],
+  "raw_sha256": "079e413ec330a8dc9ec00de376872679b4ff49169f17507677f46b36658ccebd"
+}
