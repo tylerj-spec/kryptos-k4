@@ -1,0 +1,39 @@
+{
+  "id": "R86",
+  "mode": "blind",
+  "gate_verdict": "GO",
+  "preregistration_commit": "6442ffcdde9480f6f0da8e023c2b349d347ea6d1",
+  "method": "single stepped rotor AZ/AZ, n=1..4, d=+/-1, arbitrary W, 80x16000, seed 8600",
+  "origin": "fresh heldout Pang/Lee snippets G41-G60, no K4 text or known letters",
+  "inputs_sha256": "56fe45c8b37d89a6d76931e571621423a4f9c1327e4141172ab84d49b2b71371",
+  "frozen_raw_sha256": "079e413ec330a8dc9ec00de376872679b4ff49169f17507677f46b36658ccebd",
+  "results": {
+    "correct_n_d": 20,
+    "recovered_95_or_more": 17,
+    "exact_plaintexts": 15,
+    "by_n": {
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 5
+    },
+    "total": 20,
+    "required": 16,
+    "minimum_per_n": 3
+  },
+  "independent_witness_check": {
+    "verified": 120,
+    "failed": 0,
+    "random_property_tests": 280
+  },
+  "prior_r85_no_go": {
+    "recovered_95_or_more": 15,
+    "required": 16
+  },
+  "caveats": [
+    "Single plaintext source genre",
+    "No independently signed external review",
+    "Wall-time footer of the interrupted UI session unavailable; candidate search must use separate bounded and COMPLETE log",
+    "No claim of solution or cipher-family exclusion"
+  ]
+}
