@@ -1,0 +1,25 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "Strict-blind AZ/AZ single unknown-wiring stepping rotor, n=1..4, d=+/-1, 80 starts x 16000 moves, fixed seed 8600",
+  "not_excluded": "No exclusions: no exhaustive permutation search; n>=5, non-AZ alphabets, extra rotors, non-English/masked plaintext, transpositions, other families, or incomplete runs untouched.",
+  "preregistration_path": "r86/PREREGISTRATION.md",
+  "preregistration_commit": "6442ffcdde9480f6f0da8e023c2b349d347ea6d1",
+  "preregistration_sha256": "d783dbd90589396b82c0f1b09865e2454e67bd106a81de69d7a4e9363b8b4dbe",
+  "synthetic_gate_path": "r86/holdout/GATE.json",
+  "gate_verdict": "GO",
+  "solver_inputs": [
+    "r86/k4/TARGET.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_ram_mb": 1024,
+    "max_candidates": 606,
+    "max_retries": 0
+  },
+  "freeze_manifest_path": "r86/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r86/k4/run/RESOURCE_LOG.json"
+  ]
+}
