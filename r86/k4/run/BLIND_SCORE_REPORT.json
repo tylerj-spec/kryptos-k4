@@ -1,0 +1,80 @@
+{
+  "outcome": "NO_SIGNAL",
+  "interpretation": "K4 not anomalous to 100 fixed frequency-preserving shuffled controls",
+  "k4_best_score": -1418.868044,
+  "n": 3,
+  "d": -1,
+  "k4_plaintext_unedited": "ECONOTARHINGMISWMVEESNMVALLAMOLANESOAFRIOUTTANDDHEXCEARMEMAPHONGCEWEETWAINESETAINEDATHFNINFQUANDA",
+  "best_null_at_or_above_k4": 32,
+  "null_count": 100,
+  "familywise_p": 0.32673267326732675,
+  "null_median_score": -1427.115695,
+  "null_max_score": -1373.307829,
+  "null_min_score": -1455.499944,
+  "k4_top6": [
+    {
+      "ID": "K4",
+      "RANK": "1",
+      "SCORE": "-1418.868044",
+      "N": "3",
+      "D": "-1",
+      "INVW": "QCZHFVRTDXOUPSEWMKLNJYBIGA",
+      "PLAINTEXT": "ECONOTARHINGMISWMVEESNMVALLAMOLANESOAFRIOUTTANDDHEXCEARMEMAPHONGCEWEETWAINESETAINEDATHFNINFQUANDA"
+    },
+    {
+      "ID": "K4",
+      "RANK": "2",
+      "SCORE": "-1454.911584",
+      "N": "3",
+      "D": "1",
+      "INVW": "KLQZJESUGDOXVTPNYAWIBFRHMC",
+      "PLAINTEXT": "PLOVEMAWELEMANSTOJOOKOPFREEDBIORGORYUSEREMEEINAAFINTUZDNSPUSAILLNTERRGUTVIDFRECHINYIMETELEFICIPZB"
+    },
+    {
+      "ID": "K4",
+      "RANK": "3",
+      "SCORE": "-1457.83788",
+      "N": "1",
+      "D": "1",
+      "INVW": "ILBRYNSZQCTXPHJMUDOGVKWFEA",
+      "PLAINTEXT": "JANSABLDBLOLVANTOFOCANDMINUTERPHYTOSINPARYALEYMASIFRTOUPLIVFCANTHOOBMALLISSUNDADIMOLDAGITCDMALYMK"
+    },
+    {
+      "ID": "K4",
+      "RANK": "4",
+      "SCORE": "-1458.779472",
+      "N": "1",
+      "D": "-1",
+      "INVW": "ELXOWGFMAVJTYPRSNBCIQKDUZH",
+      "PLAINTEXT": "RFCURAHTHITPETSSSINTREONSANSUMBLEANSILITYANCQUARALIIJKEHAPTSOMLIKKALEBERENASESHEDIDEDOFCEGDZBZOMZ"
+    },
+    {
+      "ID": "K4",
+      "RANK": "5",
+      "SCORE": "-1460.282687",
+      "N": "4",
+      "D": "-1",
+      "INVW": "JACKPGHVXUMSDZWLTIBRQNFOEY",
+      "PLAINTEXT": "WAMISAGARIDWHOVATESSNOMIRSSATOFRUUPAIVEDIRHHCJHHYIHABRIGERLETISTNOWATEONGTHOFBAISFROUNGTOALASWDHP"
+    },
+    {
+      "ID": "K4",
+      "RANK": "6",
+      "SCORE": "-1461.300903",
+      "N": "2",
+      "D": "1",
+      "INVW": "KEPVGRNZBWCFAISYTXHLMJQOUD",
+      "PLAINTEXT": "SEEGORHUYBYOTOCALATTDOFENDICDQUOLLALANDMBINNORTTOWICCFIFANACTSICADIDWESJTCOMMENPLAISEANOLISPAMTOM"
+    }
+  ],
+  "all_606_forward_witnesses_valid": true,
+  "gate_r86_pass": 17,
+  "gate_r86_exact": 15,
+  "metadata": {
+    "solver_sha256": "515af78392b020b25f5a172b0c3fdda1b71f2d84d92ad7e33c54698dd592e6d8",
+    "binary_sha256": "a6c25e67cf15ce7dc1a085530a325b8a63ebbd818f98a8dd59cf3f19aac1c0af",
+    "results_sha256": "5460f72117b585ec0f35dc07910a2024f26af9521129a55f8116747faca875b5",
+    "target_sha256": "d381e372b444438786fce14fb02bfff4c12b522af501311c9a6a7ebeef362969",
+    "null_seed": 860019
+  }
+}

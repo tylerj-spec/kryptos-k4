@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "wall_seconds": 384.3263,
+  "max_rss_mb": 1024,
+  "max_rss_explanation": "conservative upper bound from RLIMIT_AS=1024 MB, not independently measured peak RSS",
+  "launcher": "local Python process runner with RLIMIT_AS, not the repository audit/run_bounded.py",
+  "run_tag": "R86 K4 + 100 prespecified frequency-preserving shuffles",
+  "target_count": 101,
+  "candidate_count": 606,
+  "returncode": 0,
+  "run_input_sha256": "d381e372b444438786fce14fb02bfff4c12b522af501311c9a6a7ebeef362969",
+  "solver_binary_sha256": "a6c25e67cf15ce7dc1a085530a325b8a63ebbd818f98a8dd59cf3f19aac1c0af",
+  "all_candidates_sha256": "5460f72117b585ec0f35dc07910a2024f26af9521129a55f8116747faca875b5",
+  "original_unmodified_log": {
+    "state": "COMPLETE",
+    "tag": "k4",
+    "returncode": 0,
+    "error": "",
+    "duration_seconds": 384.3263,
+    "memory_limit_mb": 1024,
+    "wall_budget_seconds": 3600,
+    "target_count": 101,
+    "candidate_count": 606,
+    "expected_candidates": 606,
+    "target_sha256": "d381e372b444438786fce14fb02bfff4c12b522af501311c9a6a7ebeef362969",
+    "solver_sha256": "a6c25e67cf15ce7dc1a085530a325b8a63ebbd818f98a8dd59cf3f19aac1c0af",
+    "stdout_data_sha256": "5460f72117b585ec0f35dc07910a2024f26af9521129a55f8116747faca875b5",
+    "parent_pid": 1094
+  }
+}
