@@ -1,0 +1,23 @@
+name: R40/R42 T6 one-free-alphabet replay (post-freeze)
+on:
+  pull_request:
+    paths:
+      - "r40/audit/**"
+      - ".github/workflows/r40-r42-t6-replay.yml"
+permissions:
+  contents: read
+jobs:
+  onefree-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Independent kernel vs Python reference, fresh plants"
+        run: python3 -I r40/audit/tests/test_onefree.py
+      - name: "Full replay of all 20 jobs and comparison with the archived R40/R42 results"
+        run: |
+          python3 -I r40/audit/replay_onefree.py /tmp/replay.json
+          python3 -c "import json; d=json.load(open('/tmp/replay.json')); assert d['all_equal'] and d['jobs'] == 20, d"
