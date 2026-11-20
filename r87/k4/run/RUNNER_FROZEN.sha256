@@ -1,0 +1,10 @@
+94239b09326f681cc90ee7c597ea906e73fcd215ed3fd4fd5a4e71fbd0776f0b  input  /mnt/box/input/TARGET.tsv
+a4af366de74823afc5077ce474d97a76c5cfacb3cd0161011e7019c50fd18fbd  results  /mnt/box/out/k4/RESULTS.jsonl
+58067c2e41bfc53b06acf9d0e3b13881689ecdb2f83233c384a7c6528c68ec43  runner  /mnt/box/r87/blind/run87.py
+2dc091f10d209cfb2b2eb889864eb20cf1438f96d8653336e90c9623c4d813f4  solver  /mnt/box/r87/blind/solve87.py
+1b4171b5ba9f7e9add8879f3978ed382471d83587e738fb9ad378eb16148cf65  kernel  /mnt/box/r87/blind/anneal.c
+2a586c5e62533fc158cc30fdc4c7be2c6ed378cba26899788c1b547eb8644571  family  /mnt/box/r87/rotor87.py
+b3a507f390f4567c95ba1e8f3dd1f038e7aa919c28b8abd89d81de116cf52f3e  scorer  /mnt/box/r75/core.py
+d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43  quadgrams  /mnt/box/k4kit/data/quad_log10.f32
+12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877  word_model  /mnt/box/k4kit/data/word_model_orth.tsv
+b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a  letter_model  lm6.v2.bin

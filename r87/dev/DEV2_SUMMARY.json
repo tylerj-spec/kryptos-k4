@@ -1,0 +1,719 @@
+{
+ "summary": {
+  "positives_ok": 22,
+  "positives": 24,
+  "by_stratum_ok": {
+   "S1": [
+    6,
+    6
+   ],
+   "S2": [
+    6,
+    6
+   ],
+   "S3": [
+    5,
+    6
+   ],
+   "S4": [
+    5,
+    6
+   ]
+  },
+  "by_kind_ok": {
+   "plain": [
+    12,
+    12
+   ],
+   "changed2": [
+    10,
+    12
+   ]
+  },
+  "positives_recovered": 22,
+  "positives_exact": 21,
+  "positives_setting_right": 24,
+  "recovered_min_lm": -1.0747,
+  "recovered_min_word": -2.0538,
+  "negatives_confident": 0,
+  "negatives": 27,
+  "negatives_max_lm": -1.3492,
+  "negatives_max_word": -1.9733,
+  "negatives_by_generator_max_lm": {
+   "CTAK": -1.3492,
+   "GROMARK": -1.4159,
+   "QUAG3": -1.4296,
+   "RANDOM": -1.4411,
+   "RUNKEY": -1.4114,
+   "RX2": -1.4222,
+   "SHUFRX": -1.3945,
+   "TWOSTAGE": -1.4107,
+   "VIG": -1.3887
+  },
+  "cterr_ok": 8,
+  "cterr": 8,
+  "cterr_by_stratum_ok": {
+   "S1": [
+    2,
+    2
+   ],
+   "S2": [
+    2,
+    2
+   ],
+   "S3": [
+    2,
+    2
+   ],
+   "S4": [
+    2,
+    2
+   ]
+  }
+ },
+ "rows": {
+  "POS": [
+   {
+    "id": "H_000",
+    "lm": -0.6186,
+    "word": -0.7707,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "plain",
+    "n": 2,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_001",
+    "lm": -0.7407,
+    "word": -1.116,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "plain",
+    "n": 32,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_002",
+    "lm": -0.872,
+    "word": -1.2827,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "changed2",
+    "n": 7,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_003",
+    "lm": -0.9271,
+    "word": -1.5393,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "changed2",
+    "n": 1,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_015",
+    "lm": -0.798,
+    "word": -0.922,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "plain",
+    "n": 8,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_016",
+    "lm": -0.7998,
+    "word": -1.0969,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "plain",
+    "n": 3,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_017",
+    "lm": -0.7892,
+    "word": -1.0714,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "changed2",
+    "n": 31,
+    "letters": 94,
+    "recovered": false,
+    "exact": false,
+    "setting_right": true,
+    "ok": false
+   },
+   {
+    "id": "H_018",
+    "lm": -0.8937,
+    "word": -1.2476,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "changed2",
+    "n": 32,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_021",
+    "lm": -0.657,
+    "word": -0.8554,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "plain",
+    "n": 25,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_027",
+    "lm": -0.7894,
+    "word": -1.3761,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "plain",
+    "n": 16,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_030",
+    "lm": -0.8622,
+    "word": -1.0911,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "changed2",
+    "n": 31,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_031",
+    "lm": -0.9824,
+    "word": -1.2825,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "changed2",
+    "n": 12,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_037",
+    "lm": -0.8589,
+    "word": -1.1669,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "plain",
+    "n": 4,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_040",
+    "lm": -0.7661,
+    "word": -1.0472,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "changed2",
+    "n": 6,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_041",
+    "lm": -1.1007,
+    "word": -1.6096,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "changed2",
+    "n": 16,
+    "letters": 88,
+    "recovered": false,
+    "exact": false,
+    "setting_right": true,
+    "ok": false
+   },
+   {
+    "id": "H_046",
+    "lm": -0.5883,
+    "word": -0.683,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "plain",
+    "n": 12,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_048",
+    "lm": -0.6705,
+    "word": -0.8983,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "changed2",
+    "n": 15,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_050",
+    "lm": -1.0747,
+    "word": -2.0538,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "changed2",
+    "n": 1,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_051",
+    "lm": -0.6885,
+    "word": -0.8317,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "plain",
+    "n": 6,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_052",
+    "lm": -0.8441,
+    "word": -1.0162,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "changed2",
+    "n": 3,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_053",
+    "lm": -0.7059,
+    "word": -0.804,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "plain",
+    "n": 17,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_055",
+    "lm": -0.8132,
+    "word": -0.9423,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "plain",
+    "n": 7,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_056",
+    "lm": -0.8132,
+    "word": -1.0713,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "changed2",
+    "n": 7,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_058",
+    "lm": -0.7039,
+    "word": -0.8853,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "plain",
+    "n": 12,
+    "letters": 97,
+    "recovered": true,
+    "exact": true,
+    "setting_right": true,
+    "ok": true
+   }
+  ],
+  "CTERR": [
+   {
+    "id": "H_004",
+    "lm": -0.8351,
+    "word": -1.0151,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "ct1err",
+    "n": 27,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_005",
+    "lm": -0.8799,
+    "word": -1.1702,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "ct1err",
+    "n": 10,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_009",
+    "lm": -0.8447,
+    "word": -1.3511,
+    "confident": true,
+    "stratum": "S4",
+    "kind": "ct1err",
+    "n": 31,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_025",
+    "lm": -0.7373,
+    "word": -1.0662,
+    "confident": true,
+    "stratum": "S3",
+    "kind": "ct1err",
+    "n": 14,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_029",
+    "lm": -0.7064,
+    "word": -0.7896,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "ct1err",
+    "n": 1,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_038",
+    "lm": -0.7201,
+    "word": -0.8679,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "ct1err",
+    "n": 6,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_042",
+    "lm": -0.8369,
+    "word": -0.9739,
+    "confident": true,
+    "stratum": "S2",
+    "kind": "ct1err",
+    "n": 7,
+    "letters": 96,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   },
+   {
+    "id": "H_054",
+    "lm": -0.8019,
+    "word": -1.0551,
+    "confident": true,
+    "stratum": "S1",
+    "kind": "ct1err",
+    "n": 4,
+    "letters": 95,
+    "recovered": true,
+    "exact": false,
+    "setting_right": true,
+    "ok": true
+   }
+  ],
+  "NEG": [
+   {
+    "id": "H_006",
+    "lm": -1.4204,
+    "word": -1.9733,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_007",
+    "lm": -1.4867,
+    "word": -2.4026,
+    "confident": false,
+    "generator": "TWOSTAGE"
+   },
+   {
+    "id": "H_008",
+    "lm": -1.4222,
+    "word": -2.5676,
+    "confident": false,
+    "generator": "RX2"
+   },
+   {
+    "id": "H_010",
+    "lm": -1.4296,
+    "word": -2.9074,
+    "confident": false,
+    "generator": "QUAG3"
+   },
+   {
+    "id": "H_011",
+    "lm": -1.4583,
+    "word": -2.5067,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_012",
+    "lm": -1.4436,
+    "word": -2.3289,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_013",
+    "lm": -1.4753,
+    "word": -2.3398,
+    "confident": false,
+    "generator": "RX2"
+   },
+   {
+    "id": "H_014",
+    "lm": -1.4141,
+    "word": -2.0782,
+    "confident": false,
+    "generator": "CTAK"
+   },
+   {
+    "id": "H_019",
+    "lm": -1.4475,
+    "word": -2.4002,
+    "confident": false,
+    "generator": "RX2"
+   },
+   {
+    "id": "H_020",
+    "lm": -1.4724,
+    "word": -2.3903,
+    "confident": false,
+    "generator": "VIG"
+   },
+   {
+    "id": "H_022",
+    "lm": -1.4529,
+    "word": -2.4347,
+    "confident": false,
+    "generator": "GROMARK"
+   },
+   {
+    "id": "H_023",
+    "lm": -1.3887,
+    "word": -2.3792,
+    "confident": false,
+    "generator": "VIG"
+   },
+   {
+    "id": "H_024",
+    "lm": -1.3492,
+    "word": -2.1647,
+    "confident": false,
+    "generator": "CTAK"
+   },
+   {
+    "id": "H_026",
+    "lm": -1.4107,
+    "word": -2.5244,
+    "confident": false,
+    "generator": "TWOSTAGE"
+   },
+   {
+    "id": "H_028",
+    "lm": -1.4354,
+    "word": -2.3259,
+    "confident": false,
+    "generator": "SHUFRX"
+   },
+   {
+    "id": "H_032",
+    "lm": -1.4682,
+    "word": -2.2316,
+    "confident": false,
+    "generator": "GROMARK"
+   },
+   {
+    "id": "H_033",
+    "lm": -1.4021,
+    "word": -2.7158,
+    "confident": false,
+    "generator": "VIG"
+   },
+   {
+    "id": "H_034",
+    "lm": -1.4159,
+    "word": -2.0406,
+    "confident": false,
+    "generator": "GROMARK"
+   },
+   {
+    "id": "H_035",
+    "lm": -1.4181,
+    "word": -2.1054,
+    "confident": false,
+    "generator": "SHUFRX"
+   },
+   {
+    "id": "H_036",
+    "lm": -1.448,
+    "word": -2.3056,
+    "confident": false,
+    "generator": "QUAG3"
+   },
+   {
+    "id": "H_039",
+    "lm": -1.446,
+    "word": -2.4462,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_043",
+    "lm": -1.4285,
+    "word": -2.5294,
+    "confident": false,
+    "generator": "TWOSTAGE"
+   },
+   {
+    "id": "H_044",
+    "lm": -1.4601,
+    "word": -2.565,
+    "confident": false,
+    "generator": "QUAG3"
+   },
+   {
+    "id": "H_045",
+    "lm": -1.4411,
+    "word": -2.0521,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_047",
+    "lm": -1.4206,
+    "word": -2.06,
+    "confident": false,
+    "generator": "CTAK"
+   },
+   {
+    "id": "H_049",
+    "lm": -1.3945,
+    "word": -2.1271,
+    "confident": false,
+    "generator": "SHUFRX"
+   },
+   {
+    "id": "H_057",
+    "lm": -1.4114,
+    "word": -2.4962,
+    "confident": false,
+    "generator": "RUNKEY"
+   }
+  ]
+ }
+}

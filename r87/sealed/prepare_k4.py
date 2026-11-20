@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""R87 K4 target: r73/sealed/prepare_k4.py unchanged except for a fresh seed (870400): the unchanged 97-letter K4
+ciphertext (sha256-checked) plus 100 frequency-preserving shuffles, none equal to K4. Run only after the gate is GO.
+Usage: prepare_k4.py OUT.tsv"""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "r73" / "sealed"))
+import prepare_k4 as P  # noqa: E402
+
+P.SEED, P.NNULL = 870400, 100
+
+if __name__ == "__main__":
+    P.main()
