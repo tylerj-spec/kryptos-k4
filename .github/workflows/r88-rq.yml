@@ -1,0 +1,34 @@
+name: R88 stepped progressive Quagmire (tests, witnesses, gate, evaluation and exact check re-derived)
+on:
+  pull_request:
+    paths:
+      - "r88/**"
+      - ".github/workflows/r88-rq.yml"
+permissions:
+  contents: read
+jobs:
+  r88-rederive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Unit tests (witness, kernel, three exact-check implementations, sandbox refusals, holdout maker, gate bars)"
+        run: python3 -I r88/tests/test_r88.py
+      - name: "Independent witnesses re-run on the frozen gate and K4 outputs"
+        run: |
+          python3 -I r88/sealed/witness88.py r88/holdout/BLIND.tsv r88/holdout/run/RESULTS.jsonl /tmp/wg.json
+          python3 -I r88/sealed/witness88.py r88/k4/TARGET.tsv r88/k4/run/RESULTS.jsonl /tmp/wk.json
+          cmp /tmp/wg.json r88/holdout/run/WITNESS.json
+          cmp /tmp/wk.json r88/k4/run/WITNESS.json
+      - name: "Gate verdict, K4 evaluation and post-freeze exact check re-derived and compared byte for byte"
+        run: |
+          python3 -I r88/sealed/gate88.py r88/holdout r88/holdout/TRUTH.json /tmp/GATE.json
+          cmp /tmp/GATE.json r88/holdout/GATE.json
+          python3 -I r88/sealed/evaluate88.py r88/k4/TARGET.tsv r88/k4/run/RESULTS.jsonl r88/k4/run/WITNESS.json r88/k4/FROZEN.sha256 /tmp/EVALUATION.json
+          cmp /tmp/EVALUATION.json r88/k4/EVALUATION.json
+          python3 -I r88/sealed/exact88.py r88/k4/TARGET.tsv /tmp/EXACT.json
+          cmp /tmp/EXACT.json r88/k4/EXACT.json
