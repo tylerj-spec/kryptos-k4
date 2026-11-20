@@ -1,0 +1,81 @@
+{
+ "settings_per_ciphertext": 3072,
+ "random_trials": 153600,
+ "random_feasible": 0,
+ "random_feasible_checks": {},
+ "true_setting_checks": {
+  "4": 1,
+  "5": 2,
+  "6": 7,
+  "7": 20,
+  "8": 38,
+  "9": 69,
+  "10": 81,
+  "11": 50,
+  "12": 23,
+  "13": 7,
+  "14": 2
+ },
+ "blind_pilot": [
+  {
+   "ein": "PAL",
+   "eout": "KRY",
+   "n": 2,
+   "d": -1,
+   "letters_right": 90,
+   "score_per_quad": -4.634396296866397,
+   "true_score_per_quad": -4.633882837092623,
+   "wrong_period_score_per_quad": -5.420855872174527
+  },
+  {
+   "ein": "PAL",
+   "eout": "ABS",
+   "n": 1,
+   "d": -1,
+   "letters_right": 97,
+   "score_per_quad": -3.86387463072513,
+   "true_score_per_quad": -3.86387463072513,
+   "wrong_period_score_per_quad": -5.445305758334221
+  },
+  {
+   "ein": "ABS",
+   "eout": "AZ",
+   "n": 13,
+   "d": -1,
+   "letters_right": 97,
+   "score_per_quad": -4.289117658391912,
+   "true_score_per_quad": -4.289117658391912,
+   "wrong_period_score_per_quad": -5.07719601468837
+  },
+  {
+   "ein": "PAL",
+   "eout": "AZ",
+   "n": 2,
+   "d": -1,
+   "letters_right": 97,
+   "score_per_quad": -4.304371351891375,
+   "true_score_per_quad": -4.304371351891375,
+   "wrong_period_score_per_quad": -5.159115251074446
+  },
+  {
+   "ein": "ABS",
+   "eout": "KRY",
+   "n": 7,
+   "d": 1,
+   "letters_right": 97,
+   "score_per_quad": -4.262694645435252,
+   "true_score_per_quad": -4.262694645435252,
+   "wrong_period_score_per_quad": -5.010916603372452
+  },
+  {
+   "ein": "AZ",
+   "eout": "KRY",
+   "n": 13,
+   "d": 1,
+   "letters_right": 97,
+   "score_per_quad": -4.335215916024878,
+   "true_score_per_quad": -4.335215916024878,
+   "wrong_period_score_per_quad": -5.104855415668894
+  }
+ ]
+}

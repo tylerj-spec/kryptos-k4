@@ -26,3 +26,6 @@ R34_handoff.zip
 # compiled by sealed reveal scripts
 r3*/**/out/whole_family
 r4*/**/out/whole_family
+
+# R87 compiled annealing kernel
+r87/.build/
