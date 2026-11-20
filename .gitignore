@@ -29,3 +29,6 @@ r4*/**/out/whole_family
 
 # R87 compiled annealing kernel
 r87/.build/
+
+# R88 compiled annealing kernel
+r88/.build/

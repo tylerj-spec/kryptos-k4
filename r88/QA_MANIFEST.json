@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "frozen",
+  "hypothesis": "K4 is ordinary English enciphered in place by a stepped progressive Quagmire with one free alphabet (RQ, r85/DESIGN.md section 5): fixed alphabet AZ/KRYPTOS/PALIMPSEST/ABSCISSA, free plaintext alphabet (PA) or free cipher alphabet (CA), key advancing d every n letters; blind search d +-1, n 1-32 (512 settings), post-freeze exact check step 1-25, n 1-96 (19,200 settings).",
+  "not_excluded": "Irregular steps, keyword plus progression, two free alphabets, R40/R42's ACA and prefix alphabets, n 33-96 in the blind step, transposition, masking, non-English plaintext. A blind NO_SIGNAL is statistical and excludes no setting exactly; the exact step assumes all published letters right, in place.",
+  "preregistration_path": "r88/PREREGISTRATION.md",
+  "preregistration_commit": "4209ecf774e5c829be87688c079862782275bcde",
+  "preregistration_sha256": "503db690438dbe616993b3cc5ced4febd1e691b68b380cd9bb09cb2d6c92a14c",
+  "synthetic_gate_path": "r88/holdout/GATE.json",
+  "gate_verdict": "GO",
+  "solver_inputs": [
+    "r88/holdout/BLIND.tsv",
+    "r88/k4/TARGET.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096,
+    "max_candidates": 505,
+    "max_retries": 0
+  },
+  "notes": "Gate holdout: 150 items from four fresh books (sha256 in the pre-registration), seed 880500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 (r88/holdout/TRUTH_SHA256) is committed now. Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked). Gate (r88/holdout/GATE.json): GO, positives 43/48 recovered and confident (S1 11, S2 12, S3 11, S4 9 of 12), setting right 48/48, negatives 0/90 confident (max lm -1.376, incl. the RX rotor decoy), one-ciphertext-letter-wrong 11/12 (reported); blind run COMPLETE 611 s; witness 750/750; determinism 8/8. K4 + 100 shuffles: COMPLETE 419 s, 1,263 MB; witness 505/505; determinism 8/8 (K4, NULL_000-006); kernel identical to a clean compile.",
+  "freeze_manifest_path": "r88/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r88/holdout/run/RESOURCE_LOG.json",
+    "r88/k4/run/RESOURCE_LOG.json"
+  ]
+}
