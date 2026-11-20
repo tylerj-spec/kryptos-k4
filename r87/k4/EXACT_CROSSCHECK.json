@@ -1,0 +1,7 @@
+{
+ "note": "Post-freeze cross-check of r87/k4/EXACT.json on K4 only, with the second implementation (r87/rotor87.py exact_check, written separately from r87/sealed/exact87.py; tests 3 compare them). The two-letters-set-aside count is EXTRA, NOT pre-registered, exclusion-only.",
+ "settings": 3072,
+ "k4_feasible_all_24": 0,
+ "k4_feasible_one_set_aside_total_over_24_choices": 0,
+ "k4_feasible_two_set_aside_total_over_276_choices": 0
+}

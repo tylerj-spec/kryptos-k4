@@ -1,0 +1,1179 @@
+{
+ "settings": 3072,
+ "positions": 24,
+ "exact": {
+  "K4": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_000": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_001": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_002": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_003": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_004": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_005": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_006": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_007": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_008": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_009": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_010": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_011": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_012": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_013": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_014": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_015": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_016": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_017": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_018": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_019": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_020": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_021": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_022": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_023": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_024": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_025": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_026": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_027": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_028": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_029": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_030": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_031": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_032": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_033": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_034": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_035": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_036": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_037": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_038": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_039": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_040": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_041": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_042": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_043": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_044": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_045": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_046": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_047": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_048": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_049": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_050": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_051": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_052": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_053": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_054": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_055": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_056": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_057": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_058": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_059": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_060": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_061": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_062": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_063": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_064": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_065": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_066": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_067": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_068": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_069": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_070": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_071": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_072": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_073": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_074": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_075": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_076": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_077": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_078": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_079": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_080": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_081": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_082": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_083": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_084": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_085": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_086": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_087": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_088": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_089": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_090": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_091": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_092": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_093": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_094": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_095": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_096": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_097": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_098": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  },
+  "NULL_099": {
+   "feasible": 0,
+   "max_checks": -1,
+   "settings": []
+  }
+ },
+ "drop": {
+  "K4": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": [
+    {
+     "dropped_position": 21,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 22,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 23,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 24,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 25,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 26,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 27,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 28,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 29,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 30,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 31,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 32,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 33,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 63,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 64,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 65,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 66,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 67,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 68,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 69,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 70,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 71,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 72,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    },
+    {
+     "dropped_position": 73,
+     "feasible": 0,
+     "max_checks": -1,
+     "settings": []
+    }
+   ]
+  },
+  "NULL_000": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_001": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_002": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_003": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_004": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_005": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_006": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_007": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_008": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_009": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_010": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_011": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_012": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_013": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_014": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_015": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_016": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_017": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_018": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_019": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_020": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_021": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_022": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_023": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_024": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_025": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_026": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_027": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_028": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_029": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_030": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_031": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_032": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_033": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_034": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_035": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_036": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_037": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_038": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_039": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_040": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_041": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_042": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_043": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_044": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_045": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_046": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_047": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_048": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_049": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_050": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_051": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_052": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_053": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_054": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_055": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_056": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_057": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_058": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_059": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_060": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_061": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_062": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_063": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_064": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_065": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_066": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_067": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_068": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_069": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_070": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_071": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_072": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_073": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_074": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_075": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_076": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_077": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_078": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_079": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_080": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_081": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_082": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_083": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_084": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_085": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_086": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_087": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_088": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_089": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_090": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_091": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_092": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_093": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_094": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_095": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_096": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_097": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_098": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  },
+  "NULL_099": {
+   "feasible": 0,
+   "max_checks": -1,
+   "by_dropped_position": []
+  }
+ },
+ "verdict_exact": "EXCLUDED",
+ "verdict_drop": "EXCLUDED",
+ "shuffles_with_feasible_exact": 0,
+ "shuffles_with_feasible_drop": 0,
+ "shuffles_drop_max_checks": [
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1,
+  -1
+ ]
+}
