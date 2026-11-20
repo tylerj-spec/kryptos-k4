@@ -1,0 +1,22 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "K4 is ordinary English enciphered in place by one stepping rotor (RX, r85/DESIGN.md section 4): unknown wiring (any of 26!), contacts numbered by AZ/KRYPTOS/PALIMPSEST/ABSCISSA on each side (16 pairs), step d = +-1 every n letters; blind search n 1-32 (1,024 settings), post-freeze exact check n 1-96 (3,072 settings).",
+  "not_excluded": "Two or more rotors, letter-triggered or irregular stepping, other contact numberings, n 33-96 in the blind step, transposition before or after the rotor, masking or nulls, non-English plaintext, K4 ciphertext errors beyond the one-letter diagnostic. A blind NO_SIGNAL is statistical and excludes no setting exactly; the exact step assumes all published letters right, in place.",
+  "preregistration_path": "r87/PREREGISTRATION.md",
+  "preregistration_commit": "5af6212d6a59b209a01d6e852c8105048212dd12",
+  "preregistration_sha256": "e469e034fc45e3c168378fc5ec3f410322f697b23201d414cdf81ac3e98a3678",
+  "synthetic_gate_path": "r87/holdout/GATE.json",
+  "gate_verdict": "PENDING",
+  "solver_inputs": [
+    "r87/holdout/BLIND.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096,
+    "max_candidates": 505,
+    "max_retries": 0
+  },
+  "notes": "Gate holdout: 150 items from fresh books (sha256 in the pre-registration), seed 870500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 (r87/holdout/TRUTH_SHA256) is committed now. Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked; rebuilt from pinned sources)."
+}
