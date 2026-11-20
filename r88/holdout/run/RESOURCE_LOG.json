@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 610.589,
+  "max_rss_mb": 1263.2,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "sh",
+    "r88/sealed/run_isolated88.sh",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/sealed88/box_gate",
+    "gate",
+    "4"
+  ]
+}

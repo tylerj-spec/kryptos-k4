@@ -1,0 +1,22 @@
+{
+ "files": {
+  "r88/blind/run88.py": "bd1660ce251cc8293faa5d040e2490132b5898a429fb7736f8687d2df2f0c784",
+  "r88/blind/solve88.py": "1ac1740569d3f2addc549fa483c921c58bae757bc07dce280b33302d1d2ff002",
+  "r87/blind/anneal.c": "1b4171b5ba9f7e9add8879f3978ed382471d83587e738fb9ad378eb16148cf65",
+  "r88/rq88.py": "95af7d068ddecd81e7f244d67c727d9e0de3b5e69ade032a8f1c38ba0d8fde14",
+  "r75/core.py": "b3a507f390f4567c95ba1e8f3dd1f038e7aa919c28b8abd89d81de116cf52f3e",
+  "r59/blind/LM_SHA256": "4ec351d6b885e2cedb72850f50eaba2f87f8507e15a733997103e672a66a2ed6",
+  "k4kit/data/word_model_orth.tsv": "12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877",
+  "k4kit/data/quad_log10.f32": "d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43"
+ },
+ "dictionary_clue_word_hits": {
+  "k4kit/data/word_model_orth.tsv": 5,
+  "k4kit/data/quad_log10.f32": 0
+ },
+ "input": {
+  "source": "BLIND.tsv",
+  "sha256": "4ac6a8a4f82b9df3926eff36f41700089b071e3b898229527476dcddff5b429a",
+  "rows": 150
+ },
+ "letter_model_sha256": "b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a"
+}
