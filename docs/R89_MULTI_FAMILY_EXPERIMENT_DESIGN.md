@@ -1,10 +1,10 @@
 # R89 research-design proposal: unknown-family mechanism discrimination, before another K4 scan
 
-**Status: DESIGN ONLY; NOT preregistered, NO synthetic or K4 run, NO K4 candidates.** 20 November 2026, GPT-6; independent-model reviewer: **NONE**. This file intentionally lives under `docs/` because a real new `r89/` must be preregistered, checked and committed before generating its holdout or K4 outputs. Reference inventory: `docs/K4_CIPHER_FAMILY_MATRIX_2026-11-20.md` (116 classified variants). Base repository through R88 (L177).
+**Status: DESIGN ONLY; NOT preregistered, NO synthetic or K4 run, NO K4 candidates.** 20 November 2026, GPT-6; independent-model reviewer: **NONE**. This file intentionally lives under `docs/` because a real new `r89/` must be preregistered, checked and committed before generating its holdout or K4 outputs. Reference inventory: `docs/K4_CIPHER_FAMILY_MATRIX_2026-11-20.md` (118 classified variants). Base repository through R88 (L177).
 
 ## Executive decision
 
-**Do not run 116 independent key brute-forces on K4.** They are overlapping, many are mathematically unconstrained, and 97 letters seldom identifies a complicated custom process. R89 should first prove it can distinguish **several related, genuinely different reversible mechanisms when both method and key are unknown**, on *fresh* hidden 97-letter text. Only gated methods earn one tightly bounded K4 comparison. This reduces repeated optimizer-artifact headlines and preserves the user's hard blind rules.
+**Do not run 118 independent key brute-forces on K4.** They are overlapping, many are mathematically unconstrained, and 97 letters seldom identifies a complicated custom process. R89 should first prove it can distinguish **several related, genuinely different reversible mechanisms when both method and key are unknown**, on *fresh* hidden 97-letter text. Only gated methods earn one tightly bounded K4 comparison. This reduces repeated optimizer-artifact headlines and preserves the user's hard blind rules.
 
 ### Initial method pool (no published K4 letters, positions, or clue-derived sources)
 
