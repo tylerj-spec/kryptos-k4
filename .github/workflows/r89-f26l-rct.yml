@@ -1,0 +1,34 @@
+name: R89 F26L and RCT (tests, witnesses, gate, evaluation and exact checks re-derived)
+on:
+  pull_request:
+    paths:
+      - "r89/**"
+      - ".github/workflows/r89-f26l-rct.yml"
+permissions:
+  contents: read
+jobs:
+  r89-rederive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Unit tests (witness, kernel, three exact-check implementations, sandbox refusals, holdout maker, gate bars)"
+        run: python3 -I r89/tests/test_r89.py
+      - name: "Independent witnesses re-run on the frozen gate and K4 outputs"
+        run: |
+          python3 -I r89/sealed/witness89.py r89/holdout/BLIND.tsv r89/holdout/run/RESULTS.jsonl /tmp/wg.json
+          python3 -I r89/sealed/witness89.py r89/k4/TARGET.tsv r89/k4/run/RESULTS.jsonl /tmp/wk.json
+          cmp /tmp/wg.json r89/holdout/run/WITNESS.json
+          cmp /tmp/wk.json r89/k4/run/WITNESS.json
+      - name: "Gate verdict, K4 evaluation and post-freeze exact check re-derived and compared byte for byte"
+        run: |
+          python3 -I r89/sealed/gate89.py r89/holdout r89/holdout/TRUTH.json /tmp/GATE.json
+          cmp /tmp/GATE.json r89/holdout/GATE.json
+          python3 -I r89/sealed/evaluate89.py r89/k4/TARGET.tsv r89/k4/run/RESULTS.jsonl r89/k4/run/WITNESS.json r89/k4/FROZEN.sha256 /tmp/EVALUATION.json
+          cmp /tmp/EVALUATION.json r89/k4/EVALUATION.json
+          python3 -I r89/sealed/exact89.py r89/k4/TARGET.tsv F26L,RCT /tmp/EXACT.json
+          cmp /tmp/EXACT.json r89/k4/EXACT.json
