@@ -1,14 +1,14 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "preregistered",
+  "stage": "gate",
   "hypothesis": "K4 is ordinary English enciphered by (F26L) a 2x13 block fractionation (20 alphabets, blocks 5/7/9/11, offsets u != v) followed by a K1/K2-style KRYPTOS tableau keyed PALIMPSEST or ABSCISSA (any sign and phase), 135,360 settings plus 3,760 bare F26, all enumerated; or by (RCT) a rotor with an unknown wiring whose step depends on the ciphertext letter (16 contact pairs x 28 schedules, 448 settings). Per-arm sealed gate; K4 only through passing arms.",
   "not_excluded": "Other fractionation shapes, alphabets, block sizes or outer keys; RCT with other trigger rules, step sizes or several rotors; transposition; masking; non-English plaintext. A blind NO_SIGNAL is statistical; the exact checks assume the published letters right (up to one wrong) and in order.",
   "preregistration_path": "r89/PREREGISTRATION.md",
   "preregistration_commit": "935a403a41088247aa61bdd848b842d3b169e357",
   "preregistration_sha256": "0a279beee93e985b1972322fc423b32c90ff08869e60de2f07f4645feb64704e",
   "synthetic_gate_path": "r89/holdout/GATE.json",
-  "gate_verdict": "PENDING",
+  "gate_verdict": "GO",
   "solver_inputs": [
     "r89/holdout/BLIND.tsv"
   ],
@@ -18,5 +18,5 @@
     "max_candidates": 2010,
     "max_retries": 0
   },
-  "notes": "Gate holdout: 255 items from four fresh genre books (sha256 in the pre-registration), seed 890500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 (r89/holdout/TRUTH_SHA256) is committed now. Design by ChatGPT (PR #98), independently reviewed and built by Claude Code (r89/REVIEW_PR98.md). Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked)."
+  "notes": "Gate holdout: 255 items from four fresh genre books (sha256 in the pre-registration), seed 890500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 (r89/holdout/TRUTH_SHA256) is committed now. Design by ChatGPT (PR #98), independently reviewed and built by Claude Code (r89/REVIEW_PR98.md). Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked). Gate (r89/holdout/GATE.json): both arms GO. F26L 47/48 ok, 47 exact (the miss, H_116, is a masked technical text that F26L decoded 97/97 but that scores -1.439, below the cut); RCT 42/48 ok (at the bar), 39 exact, strata >= 10/12, genres >= 13/16, masked 9/12; negatives 0/150 confident (max lm -1.352). Blind run COMPLETE 752 s; witness 1,833/1,833; determinism 8/8."
 }
