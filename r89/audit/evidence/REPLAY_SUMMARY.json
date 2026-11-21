@@ -1,0 +1,510 @@
+{
+  "mode": "FROZEN_RESULT_REPLAY",
+  "new_blind_search": false,
+  "language_model_scores_recomputed": false,
+  "checks": [
+    {
+      "name": "r89/PROTOCOL.sha256",
+      "passed": true,
+      "entries": 32,
+      "files": [
+        {
+          "path": "r89/PREREGISTRATION.md",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/REVIEW_PR98.md",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/f26l.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/rct.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/run89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/f26_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/rct_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r87/blind/anneal.c",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/make89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/make_sandbox89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/run_isolated89.sh",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/witness89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/gate89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/prepare_k4.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/evaluate89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/exact89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/determinism89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/tests/test_r89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/dev/DEV.md",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/dev/DEV_SUMMARY.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r87/rotor87.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r88/rq88.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r75/core.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r59/blind/LM_SHA256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r59/blind/lm_build.cpp",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r59/corpus/build_corpus.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/word_model_orth.tsv",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/quad_log10.f32",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r73/sealed/prepare_k4.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r73/sealed/reveal_k4.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r39/ic_gate/k4_ciphertext.txt",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "audit/run_bounded.py",
+          "present": true,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "name": "r89/holdout/GATE_FROZEN.sha256",
+      "passed": true,
+      "entries": 22,
+      "files": [
+        {
+          "path": "r89/holdout/BLIND.tsv",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/TRUTH_SHA256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/RESULTS.jsonl",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/RUNNER_FROZEN.sha256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/SANDBOX.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/WITNESS.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/DETERMINISM.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/run/RESOURCE_LOG.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/PREREGISTRATION.md",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/PROTOCOL.sha256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/run89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/f26_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/rct_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r87/blind/anneal.c",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/f26l.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/rct.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/gate89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/witness89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/determinism89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r75/core.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/quad_log10.f32",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/word_model_orth.tsv",
+          "present": true,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "name": "r89/k4/FROZEN.sha256",
+      "passed": true,
+      "entries": 28,
+      "files": [
+        {
+          "path": "r89/k4/TARGET.tsv",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/RESULTS.jsonl",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/RUNNER_FROZEN.sha256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/WITNESS.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/SANDBOX.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/DETERMINISM.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/k4/run/RESOURCE_LOG.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/PREREGISTRATION.md",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/PROTOCOL.sha256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/holdout/GATE.json",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/run89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/f26_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/blind/rct_solve.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r87/blind/anneal.c",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/f26l.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/rct.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/make_sandbox89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/run_isolated89.sh",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/witness89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/determinism89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/evaluate89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/exact89.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r89/sealed/prepare_k4.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r75/core.py",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/quad_log10.f32",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "k4kit/data/word_model_orth.tsv",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "r59/blind/LM_SHA256",
+          "present": true,
+          "matches": true
+        },
+        {
+          "path": "audit/run_bounded.py",
+          "present": true,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "name": "sealed_truth_digest",
+      "passed": true
+    },
+    {
+      "name": "target_integrity",
+      "passed": true,
+      "rows": 201,
+      "nulls": 200
+    },
+    {
+      "name": "unit_tests",
+      "passed": true
+    },
+    {
+      "name": "witness_gate",
+      "passed": true
+    },
+    {
+      "name": "witness_k4",
+      "passed": true
+    },
+    {
+      "name": "gate",
+      "passed": true
+    },
+    {
+      "name": "evaluation",
+      "passed": true
+    },
+    {
+      "name": "exact",
+      "passed": true
+    }
+  ],
+  "commands": [
+    {
+      "label": "unit_tests",
+      "returncode": 0,
+      "wall_seconds": 5.126
+    },
+    {
+      "label": "witness_gate",
+      "returncode": 0,
+      "wall_seconds": 0.105,
+      "matches_frozen_bytes": true
+    },
+    {
+      "label": "witness_k4",
+      "returncode": 0,
+      "wall_seconds": 0.084,
+      "matches_frozen_bytes": true
+    },
+    {
+      "label": "gate",
+      "returncode": 0,
+      "wall_seconds": 0.057,
+      "matches_frozen_bytes": true
+    },
+    {
+      "label": "evaluation",
+      "returncode": 0,
+      "wall_seconds": 0.054,
+      "matches_frozen_bytes": true
+    },
+    {
+      "label": "exact",
+      "returncode": 0,
+      "wall_seconds": 265.6,
+      "matches_frozen_bytes": true
+    }
+  ],
+  "passed": true
+}
