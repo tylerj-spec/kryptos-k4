@@ -1,0 +1,13 @@
+{
+  "files": {
+    "brief.json": "d1633dae3642b09826c7ade1279bf67221d9c6235aa9721d8bb074623fa5407c",
+    "phase1/alpha.md": "20113d3069fbad9eb19c1f44bd7972cced431c76fe2dd5f3cd3f9502dd39529b",
+    "phase1/beta.md": "2c05da071384c226d02db1ee30529b240ff2bb2fa4224771b4554f8d9b73ae4e",
+    "phase1/gamma.md": "95ad3585611568987e83af69dc5952b9806be76dfcd028c1f93d347986ffc81c"
+  },
+  "protocol": "independent-draft-adversarial-review",
+  "scope": "method_review_only",
+  "seats": {},
+  "source": "research_council/briefs/r75.json",
+  "version": 1
+}
