@@ -10,7 +10,8 @@
   "synthetic_gate_path": "r89/holdout/GATE.json",
   "gate_verdict": "GO",
   "solver_inputs": [
-    "r89/holdout/BLIND.tsv"
+    "r89/holdout/BLIND.tsv",
+    "r89/k4/TARGET.tsv"
   ],
   "resource_budget": {
     "max_wall_seconds": 7200,
