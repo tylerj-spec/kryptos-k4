@@ -1,0 +1,19 @@
+{
+  "scope": "AZ/KRY reversed same-alphabet stages, no transposition",
+  "raw_settings": 2880,
+  "distinct_full_40_maps": 2880,
+  "equivalent_raw_settings": 0,
+  "max_equiv_class": 1,
+  "period_counts": {
+    "40": 2880
+  },
+  "equivalent_to_fixed_AZ_KRY_PAL_ABS_single_stage_slot_maps": 0,
+  "single_stage_slot_permutations": 829,
+  "verified_97_letter_roundtrips": 2880,
+  "K4_ciphertext_used": false,
+  "published_K4_plaintext_used": false,
+  "limitations": [
+    "Local development audit, re-execute in CI",
+    "Not a proof against arbitrary 26! period-40 positional alphabets"
+  ]
+}

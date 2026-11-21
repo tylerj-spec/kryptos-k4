@@ -1,0 +1,29 @@
+{
+  "scope": "LOCAL UNSEALED DEVELOPMENT SMOKE ONLY - pydoc technical prose",
+  "K4_ciphertext_used": false,
+  "published_K4_plaintext_used": false,
+  "candidate_settings": 2880,
+  "training_topics": 21,
+  "development_topics": 5,
+  "unseen_topics": 7,
+  "development_min_positive_score": -4.239581227302551,
+  "development_max_null_score": -6.020011901855469,
+  "development_score_cut": -5.12979656457901,
+  "unseen_positive_count": 60,
+  "unseen_exact_full_97_and_setting": 60,
+  "unseen_negative_count": 120,
+  "unseen_false_confident": 0,
+  "unseen_confident_exact": 60,
+  "unseen_positive_scores_min": -4.23656439781189,
+  "unseen_positive_scores_max": -3.436658024787903,
+  "unseen_negative_scores_min": -6.188672423362732,
+  "unseen_negative_scores_max": -5.935926198959351,
+  "source_distinctness": "topics disjoint at document level, all from the same Python documentation corpus",
+  "limitations": [
+    "Not pre-registered or sealed",
+    "Non-literary, genre-matched corpora",
+    "Technical prose from Python documentation not representative of K4 plaintext",
+    "Only four negative types and 120 negatives",
+    "R75's pinned R59 language model has NOT been tested in this pilot"
+  ]
+}
