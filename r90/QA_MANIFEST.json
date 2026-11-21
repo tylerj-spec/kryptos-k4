@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is ordinary English enciphered by R89's F26 / F26L construction (2x13 block fractionation, blocks 5/7/9/11, offsets u != v, optional KRYPTOS tableau keyed PALIMPSEST/ABSCISSA at any sign and phase) over the 15 alphabet classes R89 left open (ORCHARD, MYSTERY, TRAVEL, MECHANIC, RIVER, PHILOSOPHY, HORIZON, GARDEN, SECRET, TEMPLE, MARKET, TUNNEL, LIBRARY, MIRROR, CIPHER; keyword then the rest of A-Z): 104,340 fixed decryptions, all scored.",
   "not_excluded": "Other alphabets, block sizes, offsets or outer keys; other fractionation shapes; insertion or deletion errors; transposition; masking; non-English plaintext. The blind result is statistical; the exact check assumes the published letters right (up to one wrong plaintext letter or one wrong ciphertext letter) and in order.",
   "preregistration_path": "r90/PREREGISTRATION.md",
@@ -21,5 +21,10 @@
     "max_retries": 0
   },
   "resource_semantics": "audit/run_bounded_agg.py: max_ram_mb and max_cpu_seconds are AGGREGATE over the job's process group (sampled), max_ram_mb is also the per-process RLIMIT_AS; max_wall_seconds is the job's wall clock.",
-  "notes": "Gate holdout: 202 items from four fresh genre books (sha256 in the pre-registration), seed 900500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 is committed now. Follows ChatGPT's R89 result review (r89/audit/REVIEW_20261121.md). Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked). Gate (r90/holdout/GATE.json): GO, 48/48 ok with the right key, 48 exact, retained 48/48 (stage-1 rank 1 throughout), masked 12/12, negatives 0/150 confident (max lm -1.708). Blind run COMPLETE 21.6 s, aggregate peak 2,568 MB with 2 workers (Amendment 1); witness 1,259/1,259; determinism 8/8."
+  "notes": "Gate holdout: 202 items from four fresh genre books (sha256 in the pre-registration), seed 900500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 is committed now. Follows ChatGPT's R89 result review (r89/audit/REVIEW_20261121.md). Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked). Gate (r90/holdout/GATE.json): GO, 48/48 ok with the right key, 48 exact, retained 48/48 (stage-1 rank 1 throughout), masked 12/12, negatives 0/150 confident (max lm -1.708). Blind run COMPLETE 21.6 s, aggregate peak 2,568 MB with 2 workers (Amendment 1); witness 1,259/1,259; determinism 8/8. K4 + 200 shuffles: COMPLETE 22.2 s, aggregate peak 2,568 MB, 42 s CPU (2 workers); witness 1,302/1,302; determinism 8/8.",
+  "freeze_manifest_path": "r90/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r90/holdout/run/RESOURCE_LOG.json",
+    "r90/k4/run/RESOURCE_LOG.json"
+  ]
 }
