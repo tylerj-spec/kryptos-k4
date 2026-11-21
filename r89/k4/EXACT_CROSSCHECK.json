@@ -1,0 +1,11 @@
+{
+ "note": "Post-freeze cross-check of r89/k4/EXACT.json on K4 only, with the second implementations: r89/f26l.decrypt (full 97-letter decryption of every setting) and r89/rct.exact_check (written separately from r89/sealed/exact89.py; tests 6 compare them). The RCT two-letters-set-aside count is EXTRA, NOT pre-registered, exclusion-only.",
+ "f26_settings": 139120,
+ "f26_k4_max_hits": 7,
+ "f26_k4_settings_24": 0,
+ "f26_k4_settings_ge_23": 0,
+ "rct_settings": 448,
+ "rct_k4_feasible_all_24": 0,
+ "rct_k4_feasible_one_set_aside_total_over_24_choices": 0,
+ "rct_k4_feasible_two_set_aside_total_over_276_choices": 0
+}
