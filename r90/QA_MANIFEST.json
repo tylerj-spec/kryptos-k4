@@ -1,0 +1,24 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "K4 is ordinary English enciphered by R89's F26 / F26L construction (2x13 block fractionation, blocks 5/7/9/11, offsets u != v, optional KRYPTOS tableau keyed PALIMPSEST/ABSCISSA at any sign and phase) over the 15 alphabet classes R89 left open (ORCHARD, MYSTERY, TRAVEL, MECHANIC, RIVER, PHILOSOPHY, HORIZON, GARDEN, SECRET, TEMPLE, MARKET, TUNNEL, LIBRARY, MIRROR, CIPHER; keyword then the rest of A-Z): 104,340 fixed decryptions, all scored.",
+  "not_excluded": "Other alphabets, block sizes, offsets or outer keys; other fractionation shapes; insertion or deletion errors; transposition; masking; non-English plaintext. The blind result is statistical; the exact check assumes the published letters right (up to one wrong plaintext letter or one wrong ciphertext letter) and in order.",
+  "preregistration_path": "r90/PREREGISTRATION.md",
+  "preregistration_commit": "cd411e9b7d1dae53286179b7eeb2b640331f01f4",
+  "preregistration_sha256": "79eedd25f599bbebd88f1fb404a8bb85f2c2240fdb8a557d2bdb49e9603e27fa",
+  "synthetic_gate_path": "r90/holdout/GATE.json",
+  "gate_verdict": "PENDING",
+  "solver_inputs": [
+    "r90/holdout/BLIND.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096,
+    "max_cpu_seconds": 28800,
+    "max_candidates": 1407,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py: max_ram_mb and max_cpu_seconds are AGGREGATE over the job's process group (sampled), max_ram_mb is also the per-process RLIMIT_AS; max_wall_seconds is the job's wall clock.",
+  "notes": "Gate holdout: 202 items from four fresh genre books (sha256 in the pre-registration), seed 900500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 is committed now. Follows ChatGPT's R89 result review (r89/audit/REVIEW_20261121.md). Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked)."
+}
