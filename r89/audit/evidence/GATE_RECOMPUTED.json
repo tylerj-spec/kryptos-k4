@@ -1,0 +1,335 @@
+{
+  "scope": "Saved synthetic holdout and saved scores only; independent aggregation and reference encryption; no K4 input.",
+  "commit": "9e04e4e32eeb7c947e32979dc6663433e358192d",
+  "source_sha256": {
+    "r89/holdout/TRUTH.json": "94913d50485ae7f2e356d9f557a319d4cb6327105da28f8c75ca3253626b082a",
+    "r89/holdout/BLIND.tsv": "ca4be08635e72d2bc25ed0a616b629865013dfff0bd2a393eaedebfc72bcf3f1",
+    "r89/holdout/run/RESULTS.jsonl": "a435f341172c660c58e4605e37aa635e389b2c05b0ce14f4c8c57cbb2d7cd8e1",
+    "r89/holdout/GATE.json": "19790b957a377faa12c52b6c54a581f05097fbeef5a452a64e7d02e6a86bbf6d"
+  },
+  "classes": {
+    "POS": 96,
+    "NEG": 150,
+    "EXTRA": 9
+  },
+  "negative_generators": {
+    "SUBTRANS": 15,
+    "PERIODIC": 15,
+    "RUNKEY": 15,
+    "ANAGRAM": 25,
+    "RX": 15,
+    "PTAK": 15,
+    "F26X": 15,
+    "RCTX": 15,
+    "RANDOM": 5,
+    "RQ": 15
+  },
+  "arms": {
+    "F26L": {
+      "positives": 48,
+      "ok": 47,
+      "exact": 47,
+      "full_key": 47,
+      "message_contact_equivalent": 47,
+      "by_stratum": {
+        "S1": [
+          12,
+          12
+        ],
+        "S2": [
+          12,
+          12
+        ],
+        "S3": [
+          12,
+          12
+        ],
+        "S4": [
+          11,
+          12
+        ]
+      },
+      "by_genre": {
+        "G1": [
+          16,
+          16
+        ],
+        "G2": [
+          16,
+          16
+        ],
+        "G3": [
+          15,
+          16
+        ]
+      },
+      "masked": [
+        11,
+        12
+      ],
+      "unmasked": [
+        36,
+        36
+      ],
+      "misses": [
+        {
+          "id": "H_116",
+          "right": 5,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": false,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S4",
+          "genre": "G3",
+          "masked": true
+        }
+      ],
+      "ok_without_true_contact_key": [],
+      "unused_contact_completions": [],
+      "cells": {
+        "S2/G2": 4,
+        "S2/G3": 4,
+        "S1/G1": 4,
+        "S1/G2": 4,
+        "S3/G1": 4,
+        "S4/G2": 4,
+        "S1/G3": 4,
+        "S3/G3": 4,
+        "S4/G1": 4,
+        "S4/G3": 4,
+        "S3/G2": 4,
+        "S2/G1": 4
+      },
+      "claude_preregistered_go": true,
+      "original_design_method_key_ge42_satisfied_even_with_message_equivalence": true
+    },
+    "RCT": {
+      "positives": 48,
+      "ok": 42,
+      "exact": 39,
+      "full_key": 37,
+      "message_contact_equivalent": 39,
+      "by_stratum": {
+        "S1": [
+          11,
+          12
+        ],
+        "S2": [
+          11,
+          12
+        ],
+        "S3": [
+          10,
+          12
+        ],
+        "S4": [
+          10,
+          12
+        ]
+      },
+      "by_genre": {
+        "G1": [
+          15,
+          16
+        ],
+        "G2": [
+          13,
+          16
+        ],
+        "G3": [
+          14,
+          16
+        ]
+      },
+      "masked": [
+        9,
+        12
+      ],
+      "unmasked": [
+        33,
+        36
+      ],
+      "misses": [
+        {
+          "id": "H_059",
+          "right": 94,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S2",
+          "genre": "G2",
+          "masked": true
+        },
+        {
+          "id": "H_064",
+          "right": 82,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S4",
+          "genre": "G2",
+          "masked": false
+        },
+        {
+          "id": "H_090",
+          "right": 7,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": false,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S4",
+          "genre": "G1",
+          "masked": false
+        },
+        {
+          "id": "H_099",
+          "right": 90,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S3",
+          "genre": "G3",
+          "masked": true
+        },
+        {
+          "id": "H_168",
+          "right": 94,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S1",
+          "genre": "G3",
+          "masked": false
+        },
+        {
+          "id": "H_190",
+          "right": 6,
+          "arm_found": "RCT",
+          "ok": false,
+          "exact": false,
+          "confident": false,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S3",
+          "genre": "G2",
+          "masked": true
+        }
+      ],
+      "ok_without_true_contact_key": [
+        {
+          "id": "H_121",
+          "right": 96,
+          "arm_found": "RCT",
+          "ok": true,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S4",
+          "genre": "G3",
+          "masked": false
+        },
+        {
+          "id": "H_150",
+          "right": 96,
+          "arm_found": "RCT",
+          "ok": true,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S3",
+          "genre": "G3",
+          "masked": false
+        },
+        {
+          "id": "H_194",
+          "right": 95,
+          "arm_found": "RCT",
+          "ok": true,
+          "exact": false,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": false,
+          "stratum": "S4",
+          "genre": "G2",
+          "masked": true
+        }
+      ],
+      "unused_contact_completions": [
+        {
+          "id": "H_112",
+          "right": 97,
+          "arm_found": "RCT",
+          "ok": true,
+          "exact": true,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": true,
+          "stratum": "S1",
+          "genre": "G2",
+          "masked": true
+        },
+        {
+          "id": "H_202",
+          "right": 97,
+          "arm_found": "RCT",
+          "ok": true,
+          "exact": true,
+          "confident": true,
+          "full_key": false,
+          "message_contact_equivalent": true,
+          "stratum": "S2",
+          "genre": "G1",
+          "masked": true
+        }
+      ],
+      "cells": {
+        "S1/G1": 4,
+        "S1/G2": 4,
+        "S2/G3": 4,
+        "S4/G2": 4,
+        "S3/G1": 4,
+        "S4/G3": 4,
+        "S3/G2": 4,
+        "S2/G2": 4,
+        "S4/G1": 4,
+        "S1/G3": 4,
+        "S3/G3": 4,
+        "S2/G1": 4
+      },
+      "claude_preregistered_go": true,
+      "original_design_method_key_ge42_satisfied_even_with_message_equivalence": false
+    }
+  },
+  "positive_reference_encryptions": 96,
+  "saved_reference_witnesses": 1536,
+  "negatives_confident_best": 0,
+  "negatives_confident_any_saved": 0,
+  "zero_of_150_iid_binomial_95pct_upper": 0.019773438164508494,
+  "binomial_qualification": "Illustrative bound assumes independent exchangeable cases; stratified generators and reused source books do not establish that assumption.",
+  "positive_overlaps_ge20": [
+    {
+      "first": "H_062",
+      "second": "H_088",
+      "shared_substring": 51,
+      "genre": "G1"
+    }
+  ]
+}

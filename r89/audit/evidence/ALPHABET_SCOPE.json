@@ -1,0 +1,57 @@
+{
+  "old_reference_sha256": "b263e44f8e34e66112965ad29f44bd255a1a3c5624469809fc292e3a393c36f7",
+  "old_alphabets": 20,
+  "old_distinct_canonical_classes": 20,
+  "new_alphabets": 20,
+  "new_distinct_canonical_classes": 20,
+  "class_matches": {
+    "AZ": [
+      "AZ"
+    ],
+    "KRYPTOS": [
+      "KRYPTOS"
+    ],
+    "PALIMPSEST": [
+      "PALIMPSEST"
+    ],
+    "ABSCISSA": [
+      "ABSCISSA"
+    ],
+    "ORCHARD": [],
+    "CANDLE": [
+      "CANDLE"
+    ],
+    "MYSTERY": [],
+    "TRAVEL": [],
+    "MECHANIC": [],
+    "RIVER": [],
+    "PHILOSOPHY": [],
+    "HORIZON": [],
+    "GARDEN": [],
+    "SECRET": [],
+    "TEMPLE": [],
+    "MARKET": [],
+    "TUNNEL": [],
+    "LIBRARY": [],
+    "MIRROR": [],
+    "CIPHER": []
+  },
+  "old_classes_covered": 5,
+  "old_classes_not_covered": [
+    "ORCHARD",
+    "MYSTERY",
+    "TRAVEL",
+    "MECHANIC",
+    "RIVER",
+    "PHILOSOPHY",
+    "HORIZON",
+    "GARDEN",
+    "SECRET",
+    "TEMPLE",
+    "MARKET",
+    "TUNNEL",
+    "LIBRARY",
+    "MIRROR",
+    "CIPHER"
+  ]
+}

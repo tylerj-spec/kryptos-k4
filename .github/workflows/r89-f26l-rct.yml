@@ -1,4 +1,4 @@
-name: R89 F26L and RCT (tests, witnesses, gate, evaluation and exact checks re-derived)
+name: R89 frozen evidence and independent mathematical review
 on:
   pull_request:
     paths:
@@ -16,19 +16,27 @@ jobs:
         with:
           python-version: '3.11'
       - run: python3 -m pip install numpy
-      - name: "Unit tests (witness, kernel, three exact-check implementations, sandbox refusals, holdout maker, gate bars)"
-        run: python3 -I r89/tests/test_r89.py
-      - name: "Independent witnesses re-run on the frozen gate and K4 outputs"
+      - name: "Bounded original unit, witness, gate, evaluation and exact replays"
+        run: >-
+          python3 -I audit/run_bounded.py --manifest r89/QA_MANIFEST.json
+          --log /tmp/r89-replay-resource.json -- python3 -I r89/audit/review_replay.py
+          --root . --out /tmp/r89-replay
+      - name: "Bounded independent exact reconstruction and exhaustive toy oracle"
         run: |
-          python3 -I r89/sealed/witness89.py r89/holdout/BLIND.tsv r89/holdout/run/RESULTS.jsonl /tmp/wg.json
-          python3 -I r89/sealed/witness89.py r89/k4/TARGET.tsv r89/k4/run/RESULTS.jsonl /tmp/wk.json
-          cmp /tmp/wg.json r89/holdout/run/WITNESS.json
-          cmp /tmp/wk.json r89/k4/run/WITNESS.json
-      - name: "Gate verdict, K4 evaluation and post-freeze exact check re-derived and compared byte for byte"
+          python3 -I audit/run_bounded.py --manifest r89/QA_MANIFEST.json --log /tmp/r89-independent-resource.json -- python3 -I r89/audit/independent_exact.py . /tmp/r89-independent-exact.json
+          cmp /tmp/r89-independent-exact.json r89/audit/evidence/INDEPENDENT_EXACT.json
+      - name: "Independent synthetic gate and key-recovery audit"
         run: |
-          python3 -I r89/sealed/gate89.py r89/holdout r89/holdout/TRUTH.json /tmp/GATE.json
-          cmp /tmp/GATE.json r89/holdout/GATE.json
-          python3 -I r89/sealed/evaluate89.py r89/k4/TARGET.tsv r89/k4/run/RESULTS.jsonl r89/k4/run/WITNESS.json r89/k4/FROZEN.sha256 /tmp/EVALUATION.json
-          cmp /tmp/EVALUATION.json r89/k4/EVALUATION.json
-          python3 -I r89/sealed/exact89.py r89/k4/TARGET.tsv F26L,RCT /tmp/EXACT.json
-          cmp /tmp/EXACT.json r89/k4/EXACT.json
+          python3 -I r89/audit/recompute_gate.py . /tmp/r89-independent-gate.json
+          cmp /tmp/r89-independent-gate.json r89/audit/evidence/GATE_RECOMPUTED.json
+      - name: "Retain audit logs and results"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r89-review-evidence
+          path: |
+            /tmp/r89-replay
+            /tmp/r89-replay-resource.json
+            /tmp/r89-independent-resource.json
+            /tmp/r89-independent-exact.json
+            /tmp/r89-independent-gate.json

@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 271.174,
+  "max_rss_mb": 55.7,
+  "budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096
+  },
+  "command": [
+    "python3",
+    "-I",
+    "r89/audit/review_replay.py",
+    "--root",
+    ".",
+    "--out",
+    "/workspace/scratch/4f425b909cf8/r89_replay"
+  ]
+}

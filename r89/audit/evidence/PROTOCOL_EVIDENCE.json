@@ -1,0 +1,125 @@
+{
+  "review_target": "9e04e4e32eeb7c947e32979dc6663433e358192d",
+  "pr": 99,
+  "protocol_entries": 32,
+  "protocol_files_changed_since_preregistration": [],
+  "gate_frozen_files_changed_since_freeze": [],
+  "k4_frozen_files_changed_since_freeze": [],
+  "verified_git_trees": [
+    "935a403a41088247aa61bdd848b842d3b169e357",
+    "21889b597afb22fd759c77ce84917163fa0f9b28",
+    "59a6a9172f0480ee7ecfcc2761a0069c20b10739",
+    "c0a5ad029307de6aea1aafa7281e50abf95ca01b",
+    "27282f377e1522fe9e28554202da20ea595e9d4b",
+    "60a5b773bdc9489e2d23deaf922511be187a74ac",
+    "93238f25a84f8959d5c9537fe9736ecded1de7b7",
+    "9e04e4e32eeb7c947e32979dc6663433e358192d"
+  ],
+  "commit_receipts": [
+    {
+      "stage": "gatefreeze",
+      "sha": "59a6a9172f0480ee7ecfcc2761a0069c20b10739",
+      "commit_author_time": "2026-11-21T16:59:56Z",
+      "commit_committer_time": "2026-11-21T16:59:56Z",
+      "signature_verified": true,
+      "github_verified_at": "2026-11-21T16:59:59Z",
+      "parent_shas": [
+        "21889b597afb22fd759c77ce84917163fa0f9b28"
+      ],
+      "files": [
+        "r89/holdout/GATE_FROZEN.sha256",
+        "r89/holdout/run/DETERMINISM.json",
+        "r89/holdout/run/RESOURCE_LOG.json",
+        "r89/holdout/run/RESULTS.jsonl",
+        "r89/holdout/run/RUNNER_FROZEN.sha256",
+        "r89/holdout/run/SANDBOX.json",
+        "r89/holdout/run/WITNESS.json"
+      ]
+    },
+    {
+      "stage": "gatetruth",
+      "sha": "c0a5ad029307de6aea1aafa7281e50abf95ca01b",
+      "commit_author_time": "2026-11-21T17:00:40Z",
+      "commit_committer_time": "2026-11-21T17:00:40Z",
+      "signature_verified": true,
+      "github_verified_at": "2026-11-21T17:00:44Z",
+      "parent_shas": [
+        "59a6a9172f0480ee7ecfcc2761a0069c20b10739"
+      ],
+      "files": [
+        "r89/QA_MANIFEST.json",
+        "r89/holdout/GATE.json",
+        "r89/holdout/TRUTH.json"
+      ]
+    },
+    {
+      "stage": "k4freeze",
+      "sha": "60a5b773bdc9489e2d23deaf922511be187a74ac",
+      "commit_author_time": "2026-11-21T17:12:58Z",
+      "commit_committer_time": "2026-11-21T17:12:58Z",
+      "signature_verified": true,
+      "github_verified_at": "2026-11-21T17:13:02Z",
+      "parent_shas": [
+        "27282f377e1522fe9e28554202da20ea595e9d4b"
+      ],
+      "files": [
+        "r89/QA_MANIFEST.json",
+        "r89/k4/FROZEN.sha256",
+        "r89/k4/run/DETERMINISM.json",
+        "r89/k4/run/RESOURCE_LOG.json",
+        "r89/k4/run/RESULTS.jsonl",
+        "r89/k4/run/RUNNER_FROZEN.sha256",
+        "r89/k4/run/SANDBOX.json",
+        "r89/k4/run/WITNESS.json"
+      ]
+    },
+    {
+      "stage": "eval",
+      "sha": "93238f25a84f8959d5c9537fe9736ecded1de7b7",
+      "commit_author_time": "2026-11-21T17:13:25Z",
+      "commit_committer_time": "2026-11-21T17:13:25Z",
+      "signature_verified": true,
+      "github_verified_at": "2026-11-21T17:13:28Z",
+      "parent_shas": [
+        "60a5b773bdc9489e2d23deaf922511be187a74ac"
+      ],
+      "files": [
+        "r89/k4/EVALUATION.json"
+      ]
+    }
+  ],
+  "ci": [
+    {
+      "name": "K4 research evidence guardrails",
+      "run_id": 44929252543,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T17:17:48Z",
+      "updated_at": "2026-11-21T17:18:13Z",
+      "url": "https://github.com/tylerj-spec/kryptos-k4/actions/runs/44929252543"
+    },
+    {
+      "name": "R89 F26L and RCT (tests, witnesses, gate, evaluation and exact checks re-derived)",
+      "run_id": 44929252640,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T17:17:48Z",
+      "updated_at": "2026-11-21T17:22:48Z",
+      "url": "https://github.com/tylerj-spec/kryptos-k4/actions/runs/44929252640"
+    }
+  ],
+  "r82": {
+    "pr": 77,
+    "state": "open_draft",
+    "head": "1550736de568abdf442686e4a15b8889c585f2f3",
+    "models_blob": "6ee3b12c7f6b0598ea75ef539eee9e34e3c8a7fa",
+    "marginal_screen_blob": "80cc425b5d661a00892e7be792d694009a4f3294",
+    "roadmap_blob": "246bb87dbbba582d27ddc539b45f5be636421bd9",
+    "equivalence_tests_blob": "6c4ef80f772fef7a5b1a1b6f85da68b6fc7b9955"
+  },
+  "notes": [
+    "Git tree comparisons establish immutability and committed order; server signature verification timestamps support remote availability before later commit timestamps, but cannot establish when a local validator was first run or truth first viewed.",
+    "No new K4 candidate generation, exact scan or model fit was performed by this protocol reviewer.",
+    "The 64-character ciphertext SHA in protocol is syntactically valid; prior summary suspicion of a short hash was false."
+  ]
+}
