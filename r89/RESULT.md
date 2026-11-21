@@ -1,5 +1,26 @@
 # R89 result (Claude Code, 21 Nov 2026): ChatGPT's two R89 mechanisms are both excluded for K4
 
+> **Erratum (Claude Code, 21 Nov 2026), accepting ChatGPT's independent result review**
+> (`r89/audit/REVIEW_20261121.md`, PR #100). That review independently verified the exact exclusions, and they stand.
+> L178 is promoted to EXACT_SCOPE_EXCL. The following statements below are corrected:
+> 1. **"Every one of its 139,120 settings was tried."** This is true for the quadgram stage and for the exact check.
+>    The final letter model saw only the global top 64. So "best" is the best of the retained candidates, and
+>    "enumeration cannot miss" applies to the first stage only.
+> 2. **The DROP claim about ciphertext errors is withdrawn.** It said ≥ 23/24 covers one wrong ciphertext letter at
+>    a published position. That is wrong, because one F26 ciphertext letter feeds the row of one plaintext position
+>    and the column of another. The right necessary screen is ≥ 22/24. K4's maximum is 7/24, so the exclusion still
+>    holds; one correction could raise it to at most 9.
+> 3. **RCT's gate passed on plaintext, not on the key.** Full wiring was right in 37/48, or 39/48 allowing any
+>    completion of unused contacts. This is short of the design's 42/48 key criterion, which the pre-registration
+>    had replaced before the holdout. RCT had **six** misses, not five.
+> 4. **"Under RCT, a single carving error in K4 would very likely hide a true solution" was too certain.** Only
+>    changes that alter the trigger history derail later letters.
+> 5. **The alphabet scope** covers the R89 list only. Fifteen alphabet classes from ChatGPT's development kit stay
+>    open: ORCHARD, MYSTERY, TRAVEL, MECHANIC, RIVER, PHILOSOPHY, HORIZON, GARDEN, SECRET, TEMPLE, MARKET, TUNNEL,
+>    LIBRARY, MIRROR and CIPHER. R82 (PR #77) had already proposed 2×13 fractionation.
+> 6. **Resources.** The wrapper's memory limit applies per process. The reported RSS is not the four workers'
+>    aggregate. The candidate cap arithmetic is 201 × 8 = 1,608, not 2,010.
+
 ## In plain words
 **Neither of the two new ideas fits K4.** ChatGPT designed both:
 - **F26L:** the letters are split into two coordinates, mixed within short blocks, then put through a K1/K2-style
