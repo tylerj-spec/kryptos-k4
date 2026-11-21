@@ -1,0 +1,2201 @@
+{
+ "verdict": "GO",
+ "bars": {
+  "ok": 42,
+  "exact": 36,
+  "stratum": 9,
+  "genre": 12,
+  "masked": 8,
+  "retained": 46,
+  "neg_confident_max": 1
+ },
+ "cut_lm": -1.3,
+ "cut_word": -2.5,
+ "recovered_letters": 95,
+ "summary": {
+  "ok": 48,
+  "positives": 48,
+  "exact": 48,
+  "key_right": 48,
+  "retained": 48,
+  "stage1_rank_max": 1,
+  "by_stratum": {
+   "S1": [
+    12,
+    12
+   ],
+   "S2": [
+    12,
+    12
+   ],
+   "S3": [
+    12,
+    12
+   ],
+   "S4": [
+    12,
+    12
+   ]
+  },
+  "by_genre": {
+   "G1": [
+    16,
+    16
+   ],
+   "G2": [
+    16,
+    16
+   ],
+   "G3": [
+    16,
+    16
+   ]
+  },
+  "masked": [
+   12,
+   12
+  ],
+  "unmasked": [
+   36,
+   36
+  ],
+  "recovered_min_lm": -1.2623,
+  "extras": [
+   {
+    "id": "H_015",
+    "kind": "PTERR",
+    "letters": 97,
+    "ok": true,
+    "key_right": true,
+    "retained": true
+   },
+   {
+    "id": "H_050",
+    "kind": "CTERR",
+    "letters": 95,
+    "ok": true,
+    "key_right": true,
+    "retained": true
+   },
+   {
+    "id": "H_055",
+    "kind": "PTERR",
+    "letters": 97,
+    "ok": true,
+    "key_right": true,
+    "retained": true
+   },
+   {
+    "id": "H_177",
+    "kind": "CTERR",
+    "letters": 96,
+    "ok": true,
+    "key_right": true,
+    "retained": true
+   }
+  ],
+  "negatives_confident": 0,
+  "negatives": 150,
+  "negatives_max_lm": -1.7081,
+  "negatives_max_word": -2.7511,
+  "negatives_by_generator_max_lm": {
+   "ANAGRAM": -1.7081,
+   "F26R89": -1.7285,
+   "F26X": -1.8526,
+   "PERIODIC": -1.8371,
+   "PTAK": -1.8126,
+   "RANDOM": -1.8475,
+   "RCT": -1.8202,
+   "RQ": -1.859,
+   "RUNKEY": -1.8248,
+   "RX": -1.835,
+   "SUBTRANS": -1.8406
+  },
+  "go": true
+ },
+ "witnesses": 1259,
+ "rows": {
+  "POS": [
+   {
+    "id": "H_002",
+    "arm_found": "F26C",
+    "lm": -0.7876,
+    "word": -1.237,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_003",
+    "arm_found": "F26C",
+    "lm": -0.9851,
+    "word": -1.1728,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_005",
+    "arm_found": "F26C",
+    "lm": -0.9005,
+    "word": -1.1474,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": true
+   },
+   {
+    "id": "H_007",
+    "arm_found": "F26C",
+    "lm": -1.2324,
+    "word": -1.7784,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": true
+   },
+   {
+    "id": "H_009",
+    "arm_found": "F26C",
+    "lm": -0.7716,
+    "word": -1.0429,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_016",
+    "arm_found": "F26C",
+    "lm": -0.6114,
+    "word": -0.9213,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_044",
+    "arm_found": "F26C",
+    "lm": -0.8097,
+    "word": -1.0395,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": true
+   },
+   {
+    "id": "H_048",
+    "arm_found": "F26C",
+    "lm": -0.7409,
+    "word": -0.9491,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_057",
+    "arm_found": "F26C",
+    "lm": -0.6105,
+    "word": -0.8505,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_059",
+    "arm_found": "F26C",
+    "lm": -0.769,
+    "word": -0.8571,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_060",
+    "arm_found": "F26C",
+    "lm": -0.8555,
+    "word": -1.1634,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": true
+   },
+   {
+    "id": "H_062",
+    "arm_found": "F26C",
+    "lm": -0.8991,
+    "word": -1.3572,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": true
+   },
+   {
+    "id": "H_064",
+    "arm_found": "F26C",
+    "lm": -1.1041,
+    "word": -1.5041,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": true
+   },
+   {
+    "id": "H_065",
+    "arm_found": "F26C",
+    "lm": -0.6173,
+    "word": -0.8158,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_070",
+    "arm_found": "F26C",
+    "lm": -0.7572,
+    "word": -0.8156,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_073",
+    "arm_found": "F26C",
+    "lm": -0.6062,
+    "word": -0.6442,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_077",
+    "arm_found": "F26C",
+    "lm": -0.673,
+    "word": -0.8046,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_081",
+    "arm_found": "F26C",
+    "lm": -0.6142,
+    "word": -0.6897,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_082",
+    "arm_found": "F26C",
+    "lm": -0.6735,
+    "word": -0.8109,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_083",
+    "arm_found": "F26C",
+    "lm": -0.5812,
+    "word": -0.7641,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_088",
+    "arm_found": "F26C",
+    "lm": -1.1863,
+    "word": -1.6651,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": true
+   },
+   {
+    "id": "H_092",
+    "arm_found": "F26C",
+    "lm": -0.6994,
+    "word": -0.9802,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_096",
+    "arm_found": "F26C",
+    "lm": -0.7838,
+    "word": -0.9925,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_100",
+    "arm_found": "F26C",
+    "lm": -0.7499,
+    "word": -0.7215,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_101",
+    "arm_found": "F26C",
+    "lm": -0.64,
+    "word": -0.8298,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_103",
+    "arm_found": "F26C",
+    "lm": -0.8435,
+    "word": -0.946,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_111",
+    "arm_found": "F26C",
+    "lm": -0.7936,
+    "word": -1.0376,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": true
+   },
+   {
+    "id": "H_112",
+    "arm_found": "F26C",
+    "lm": -0.6908,
+    "word": -1.2032,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_118",
+    "arm_found": "F26C",
+    "lm": -0.5891,
+    "word": -0.6807,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_119",
+    "arm_found": "F26C",
+    "lm": -0.8804,
+    "word": -1.0975,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_125",
+    "arm_found": "F26C",
+    "lm": -0.6711,
+    "word": -0.7987,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_127",
+    "arm_found": "F26C",
+    "lm": -0.6619,
+    "word": -0.8756,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_130",
+    "arm_found": "F26C",
+    "lm": -0.6812,
+    "word": -0.8769,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_131",
+    "arm_found": "F26C",
+    "lm": -0.6693,
+    "word": -0.7461,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_136",
+    "arm_found": "F26C",
+    "lm": -0.6179,
+    "word": -0.8931,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_141",
+    "arm_found": "F26C",
+    "lm": -0.5538,
+    "word": -0.7476,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_144",
+    "arm_found": "F26C",
+    "lm": -0.8382,
+    "word": -0.9211,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_145",
+    "arm_found": "F26C",
+    "lm": -0.6736,
+    "word": -0.7392,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": false
+   },
+   {
+    "id": "H_154",
+    "arm_found": "F26C",
+    "lm": -1.2292,
+    "word": -1.8352,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": true
+   },
+   {
+    "id": "H_157",
+    "arm_found": "F26C",
+    "lm": -0.6756,
+    "word": -0.755,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_160",
+    "arm_found": "F26C",
+    "lm": -0.7086,
+    "word": -0.8672,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_171",
+    "arm_found": "F26C",
+    "lm": -0.744,
+    "word": -0.9536,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_175",
+    "arm_found": "F26C",
+    "lm": -0.6425,
+    "word": -0.9167,
+    "confident": true,
+    "genre": "G3",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S3",
+    "param": 9,
+    "masked": false
+   },
+   {
+    "id": "H_180",
+    "arm_found": "F26C",
+    "lm": -1.2623,
+    "word": -1.6918,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S4",
+    "param": 11,
+    "masked": true
+   },
+   {
+    "id": "H_182",
+    "arm_found": "F26C",
+    "lm": -0.7733,
+    "word": -1.156,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": true
+   },
+   {
+    "id": "H_187",
+    "arm_found": "F26C",
+    "lm": -0.7965,
+    "word": -0.8325,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S2",
+    "param": 7,
+    "masked": false
+   },
+   {
+    "id": "H_193",
+    "arm_found": "F26C",
+    "lm": -0.6878,
+    "word": -0.9071,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": false
+   },
+   {
+    "id": "H_201",
+    "arm_found": "F26C",
+    "lm": -1.087,
+    "word": -1.467,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "stratum": "S1",
+    "param": 5,
+    "masked": true
+   }
+  ],
+  "EXTRA": [
+   {
+    "id": "H_015",
+    "arm_found": "F26C",
+    "lm": -0.6113,
+    "word": -0.6161,
+    "confident": true,
+    "genre": "G2",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "kind": "PTERR"
+   },
+   {
+    "id": "H_050",
+    "arm_found": "F26C",
+    "lm": -0.8927,
+    "word": -1.4919,
+    "confident": true,
+    "genre": "G3",
+    "letters": 95,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": false,
+    "kind": "CTERR"
+   },
+   {
+    "id": "H_055",
+    "arm_found": "F26C",
+    "lm": -0.6228,
+    "word": -0.7599,
+    "confident": true,
+    "genre": "G1",
+    "letters": 97,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": true,
+    "kind": "PTERR"
+   },
+   {
+    "id": "H_177",
+    "arm_found": "F26C",
+    "lm": -0.6584,
+    "word": -0.9725,
+    "confident": true,
+    "genre": "G1",
+    "letters": 96,
+    "key_right": true,
+    "stage1_rank": 1,
+    "retained": true,
+    "ok": true,
+    "exact": false,
+    "kind": "CTERR"
+   }
+  ],
+  "NEG": [
+   {
+    "id": "H_000",
+    "arm_found": "F26C",
+    "lm": -1.8248,
+    "word": -3.9744,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_001",
+    "arm_found": "F26C",
+    "lm": -1.9006,
+    "word": -4.0629,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_004",
+    "arm_found": "F26C",
+    "lm": -1.8202,
+    "word": -3.5842,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_006",
+    "arm_found": "F26C",
+    "lm": -1.89,
+    "word": -3.8066,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_008",
+    "arm_found": "F26C",
+    "lm": -1.9151,
+    "word": -3.795,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_010",
+    "arm_found": "F26C",
+    "lm": -1.8699,
+    "word": -4.1295,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_011",
+    "arm_found": "F26C",
+    "lm": -1.7664,
+    "word": -2.7637,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_012",
+    "arm_found": "F26C",
+    "lm": -1.8716,
+    "word": -4.0761,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_013",
+    "arm_found": "F26C",
+    "lm": -1.7802,
+    "word": -3.8865,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_014",
+    "arm_found": "F26C",
+    "lm": -1.8,
+    "word": -3.1089,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_017",
+    "arm_found": "F26C",
+    "lm": -1.8805,
+    "word": -3.9722,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_018",
+    "arm_found": "F26C",
+    "lm": -1.8847,
+    "word": -3.9247,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_019",
+    "arm_found": "F26",
+    "lm": -1.7997,
+    "word": -3.5544,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_020",
+    "arm_found": "F26",
+    "lm": -1.7494,
+    "word": -3.6127,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_021",
+    "arm_found": "F26C",
+    "lm": -1.8872,
+    "word": -4.5958,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_022",
+    "arm_found": "F26C",
+    "lm": -1.8929,
+    "word": -4.2326,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_023",
+    "arm_found": "F26",
+    "lm": -1.8266,
+    "word": -3.5666,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_024",
+    "arm_found": "F26",
+    "lm": -1.7492,
+    "word": -3.0911,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_025",
+    "arm_found": "F26",
+    "lm": -1.7721,
+    "word": -2.9581,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_026",
+    "arm_found": "F26C",
+    "lm": -1.8891,
+    "word": -4.1607,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_027",
+    "arm_found": "F26C",
+    "lm": -1.885,
+    "word": -4.2678,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_028",
+    "arm_found": "F26",
+    "lm": -1.9043,
+    "word": -4.2021,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_029",
+    "arm_found": "F26C",
+    "lm": -1.859,
+    "word": -4.5828,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_030",
+    "arm_found": "F26",
+    "lm": -1.7807,
+    "word": -3.086,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_031",
+    "arm_found": "F26C",
+    "lm": -1.8599,
+    "word": -4.2152,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_032",
+    "arm_found": "F26C",
+    "lm": -1.8936,
+    "word": -4.1524,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_033",
+    "arm_found": "F26",
+    "lm": -1.7674,
+    "word": -3.0157,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_034",
+    "arm_found": "F26C",
+    "lm": -1.9381,
+    "word": -4.1433,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_035",
+    "arm_found": "F26C",
+    "lm": -1.8876,
+    "word": -3.8962,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_036",
+    "arm_found": "F26C",
+    "lm": -1.8801,
+    "word": -4.0111,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_037",
+    "arm_found": "F26C",
+    "lm": -1.8631,
+    "word": -3.8214,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_038",
+    "arm_found": "F26C",
+    "lm": -1.9081,
+    "word": -3.8962,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_039",
+    "arm_found": "F26",
+    "lm": -1.7561,
+    "word": -3.0001,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_040",
+    "arm_found": "F26C",
+    "lm": -1.8293,
+    "word": -3.4209,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_041",
+    "arm_found": "F26C",
+    "lm": -1.8704,
+    "word": -4.1335,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_042",
+    "arm_found": "F26C",
+    "lm": -1.8739,
+    "word": -3.9555,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_043",
+    "arm_found": "F26C",
+    "lm": -1.885,
+    "word": -3.9536,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_045",
+    "arm_found": "F26C",
+    "lm": -1.8785,
+    "word": -4.4772,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_046",
+    "arm_found": "F26C",
+    "lm": -1.8932,
+    "word": -4.4911,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_047",
+    "arm_found": "F26",
+    "lm": -1.766,
+    "word": -3.1065,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_049",
+    "arm_found": "F26C",
+    "lm": -1.8264,
+    "word": -3.8048,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_051",
+    "arm_found": "F26C",
+    "lm": -1.7632,
+    "word": -3.1375,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_052",
+    "arm_found": "F26",
+    "lm": -1.7916,
+    "word": -3.2703,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_053",
+    "arm_found": "F26C",
+    "lm": -1.9274,
+    "word": -4.1057,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_054",
+    "arm_found": "F26C",
+    "lm": -1.7285,
+    "word": -3.6886,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_056",
+    "arm_found": "F26",
+    "lm": -1.7684,
+    "word": -3.5847,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_058",
+    "arm_found": "F26C",
+    "lm": -1.8943,
+    "word": -4.1189,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_061",
+    "arm_found": "F26C",
+    "lm": -1.9066,
+    "word": -3.9496,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_063",
+    "arm_found": "F26C",
+    "lm": -1.8406,
+    "word": -3.7938,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_066",
+    "arm_found": "F26C",
+    "lm": -1.915,
+    "word": -4.1592,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_067",
+    "arm_found": "F26C",
+    "lm": -1.8725,
+    "word": -4.437,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_068",
+    "arm_found": "F26",
+    "lm": -1.7977,
+    "word": -3.4788,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_069",
+    "arm_found": "F26C",
+    "lm": -1.9066,
+    "word": -4.2397,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_071",
+    "arm_found": "F26C",
+    "lm": -1.9067,
+    "word": -3.7916,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_072",
+    "arm_found": "F26C",
+    "lm": -1.8977,
+    "word": -3.5999,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_074",
+    "arm_found": "F26C",
+    "lm": -1.8915,
+    "word": -3.7185,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_075",
+    "arm_found": "F26C",
+    "lm": -1.9041,
+    "word": -4.2154,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_076",
+    "arm_found": "F26C",
+    "lm": -1.7923,
+    "word": -2.9714,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_078",
+    "arm_found": "F26C",
+    "lm": -1.8915,
+    "word": -3.6808,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_079",
+    "arm_found": "F26",
+    "lm": -1.7579,
+    "word": -3.554,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_080",
+    "arm_found": "F26C",
+    "lm": -1.8526,
+    "word": -3.9945,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_084",
+    "arm_found": "F26C",
+    "lm": -1.9148,
+    "word": -4.2128,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_085",
+    "arm_found": "F26C",
+    "lm": -1.8805,
+    "word": -3.9937,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_086",
+    "arm_found": "F26C",
+    "lm": -1.8972,
+    "word": -3.9018,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_087",
+    "arm_found": "F26C",
+    "lm": -1.8918,
+    "word": -4.1145,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_089",
+    "arm_found": "F26",
+    "lm": -1.7995,
+    "word": -3.8664,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_090",
+    "arm_found": "F26C",
+    "lm": -1.835,
+    "word": -4.0698,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_091",
+    "arm_found": "F26C",
+    "lm": -1.8789,
+    "word": -4.0804,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_093",
+    "arm_found": "F26C",
+    "lm": -1.7344,
+    "word": -3.475,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_094",
+    "arm_found": "F26C",
+    "lm": -1.8684,
+    "word": -4.3065,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_095",
+    "arm_found": "F26C",
+    "lm": -1.8969,
+    "word": -4.0986,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_097",
+    "arm_found": "F26C",
+    "lm": -1.8993,
+    "word": -4.0238,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_098",
+    "arm_found": "F26C",
+    "lm": -1.9065,
+    "word": -4.6945,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_099",
+    "arm_found": "F26C",
+    "lm": -1.8724,
+    "word": -4.243,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_102",
+    "arm_found": "F26",
+    "lm": -1.791,
+    "word": -3.642,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_104",
+    "arm_found": "F26C",
+    "lm": -1.8371,
+    "word": -3.8418,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_105",
+    "arm_found": "F26C",
+    "lm": -1.893,
+    "word": -4.2466,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_106",
+    "arm_found": "F26",
+    "lm": -1.7484,
+    "word": -3.1113,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_107",
+    "arm_found": "F26C",
+    "lm": -1.8583,
+    "word": -3.854,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_108",
+    "arm_found": "F26C",
+    "lm": -1.9043,
+    "word": -4.2588,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_109",
+    "arm_found": "F26C",
+    "lm": -1.9175,
+    "word": -4.018,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_110",
+    "arm_found": "F26C",
+    "lm": -1.8964,
+    "word": -3.9452,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_113",
+    "arm_found": "F26C",
+    "lm": -1.851,
+    "word": -3.6341,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_114",
+    "arm_found": "F26C",
+    "lm": -1.8579,
+    "word": -4.2013,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_115",
+    "arm_found": "F26C",
+    "lm": -1.871,
+    "word": -3.7363,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_116",
+    "arm_found": "F26C",
+    "lm": -1.8637,
+    "word": -4.1913,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_117",
+    "arm_found": "F26C",
+    "lm": -1.9056,
+    "word": -4.2076,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_120",
+    "arm_found": "F26C",
+    "lm": -1.797,
+    "word": -3.6229,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_121",
+    "arm_found": "F26C",
+    "lm": -1.9317,
+    "word": -4.4296,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_122",
+    "arm_found": "F26C",
+    "lm": -1.8735,
+    "word": -4.4402,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_123",
+    "arm_found": "F26",
+    "lm": -1.8574,
+    "word": -4.1185,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_124",
+    "arm_found": "F26C",
+    "lm": -1.8706,
+    "word": -4.2069,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_126",
+    "arm_found": "F26C",
+    "lm": -1.9051,
+    "word": -4.0222,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_128",
+    "arm_found": "F26C",
+    "lm": -1.8542,
+    "word": -3.9055,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_129",
+    "arm_found": "F26C",
+    "lm": -1.9031,
+    "word": -4.3134,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_132",
+    "arm_found": "F26C",
+    "lm": -1.8795,
+    "word": -3.8294,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_133",
+    "arm_found": "F26",
+    "lm": -1.8655,
+    "word": -4.1528,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_134",
+    "arm_found": "F26",
+    "lm": -1.8289,
+    "word": -3.4928,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_135",
+    "arm_found": "F26C",
+    "lm": -1.9002,
+    "word": -4.0135,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_137",
+    "arm_found": "F26C",
+    "lm": -1.8805,
+    "word": -3.8272,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_138",
+    "arm_found": "F26C",
+    "lm": -1.9111,
+    "word": -4.1072,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_139",
+    "arm_found": "F26C",
+    "lm": -1.8898,
+    "word": -3.9528,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_140",
+    "arm_found": "F26C",
+    "lm": -1.8794,
+    "word": -4.0647,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_142",
+    "arm_found": "F26C",
+    "lm": -1.8583,
+    "word": -3.9351,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_143",
+    "arm_found": "F26C",
+    "lm": -1.8844,
+    "word": -3.6639,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_146",
+    "arm_found": "F26C",
+    "lm": -1.887,
+    "word": -3.6287,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_147",
+    "arm_found": "F26",
+    "lm": -1.7937,
+    "word": -3.1292,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_148",
+    "arm_found": "F26C",
+    "lm": -1.8817,
+    "word": -3.6056,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_149",
+    "arm_found": "F26C",
+    "lm": -1.8788,
+    "word": -3.8393,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_150",
+    "arm_found": "F26C",
+    "lm": -1.9228,
+    "word": -4.178,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_151",
+    "arm_found": "F26C",
+    "lm": -1.899,
+    "word": -4.0615,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_152",
+    "arm_found": "F26C",
+    "lm": -1.89,
+    "word": -3.8713,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_153",
+    "arm_found": "F26",
+    "lm": -1.7081,
+    "word": -2.7511,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_155",
+    "arm_found": "F26",
+    "lm": -1.7677,
+    "word": -3.2818,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_156",
+    "arm_found": "F26C",
+    "lm": -1.8928,
+    "word": -4.7725,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_158",
+    "arm_found": "F26C",
+    "lm": -1.8774,
+    "word": -3.8576,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_159",
+    "arm_found": "F26C",
+    "lm": -1.9142,
+    "word": -4.3974,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_161",
+    "arm_found": "F26C",
+    "lm": -1.8778,
+    "word": -3.6884,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_162",
+    "arm_found": "F26C",
+    "lm": -1.8956,
+    "word": -4.5569,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_163",
+    "arm_found": "F26",
+    "lm": -1.7399,
+    "word": -3.0575,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_164",
+    "arm_found": "F26C",
+    "lm": -1.8514,
+    "word": -4.2619,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_165",
+    "arm_found": "F26C",
+    "lm": -1.8943,
+    "word": -4.2794,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_166",
+    "arm_found": "F26C",
+    "lm": -1.8766,
+    "word": -4.073,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_167",
+    "arm_found": "F26C",
+    "lm": -1.8904,
+    "word": -4.2649,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_168",
+    "arm_found": "F26C",
+    "lm": -1.7385,
+    "word": -2.9178,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_169",
+    "arm_found": "F26C",
+    "lm": -1.8829,
+    "word": -4.1091,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_170",
+    "arm_found": "F26C",
+    "lm": -1.9065,
+    "word": -4.2053,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_172",
+    "arm_found": "F26C",
+    "lm": -1.8635,
+    "word": -4.3958,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_173",
+    "arm_found": "F26C",
+    "lm": -1.8475,
+    "word": -4.474,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_174",
+    "arm_found": "F26C",
+    "lm": -1.8728,
+    "word": -4.0125,
+    "confident": false,
+    "generator": "PERIODIC"
+   },
+   {
+    "id": "H_176",
+    "arm_found": "F26C",
+    "lm": -1.9039,
+    "word": -3.9428,
+    "confident": false,
+    "generator": "F26X"
+   },
+   {
+    "id": "H_178",
+    "arm_found": "F26C",
+    "lm": -1.8859,
+    "word": -3.7832,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_179",
+    "arm_found": "F26",
+    "lm": -1.7891,
+    "word": -3.3208,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_181",
+    "arm_found": "F26C",
+    "lm": -1.9267,
+    "word": -3.512,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_183",
+    "arm_found": "F26",
+    "lm": -1.7736,
+    "word": -3.2902,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_184",
+    "arm_found": "F26C",
+    "lm": -1.8569,
+    "word": -4.2296,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_185",
+    "arm_found": "F26C",
+    "lm": -1.8396,
+    "word": -3.564,
+    "confident": false,
+    "generator": "F26R89"
+   },
+   {
+    "id": "H_186",
+    "arm_found": "F26C",
+    "lm": -1.8903,
+    "word": -4.0572,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_188",
+    "arm_found": "F26C",
+    "lm": -1.8759,
+    "word": -3.8754,
+    "confident": false,
+    "generator": "SUBTRANS"
+   },
+   {
+    "id": "H_189",
+    "arm_found": "F26C",
+    "lm": -1.8949,
+    "word": -4.1394,
+    "confident": false,
+    "generator": "RUNKEY"
+   },
+   {
+    "id": "H_190",
+    "arm_found": "F26C",
+    "lm": -1.9201,
+    "word": -4.429,
+    "confident": false,
+    "generator": "RX"
+   },
+   {
+    "id": "H_191",
+    "arm_found": "F26C",
+    "lm": -1.8126,
+    "word": -4.5188,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_192",
+    "arm_found": "F26C",
+    "lm": -1.9102,
+    "word": -4.1801,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_194",
+    "arm_found": "F26C",
+    "lm": -1.8898,
+    "word": -3.9541,
+    "confident": false,
+    "generator": "PTAK"
+   },
+   {
+    "id": "H_195",
+    "arm_found": "F26C",
+    "lm": -1.917,
+    "word": -3.9478,
+    "confident": false,
+    "generator": "RQ"
+   },
+   {
+    "id": "H_196",
+    "arm_found": "F26C",
+    "lm": -1.8951,
+    "word": -4.4567,
+    "confident": false,
+    "generator": "RCT"
+   },
+   {
+    "id": "H_197",
+    "arm_found": "F26C",
+    "lm": -1.8663,
+    "word": -4.1648,
+    "confident": false,
+    "generator": "RANDOM"
+   },
+   {
+    "id": "H_198",
+    "arm_found": "F26",
+    "lm": -1.7924,
+    "word": -3.2276,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_199",
+    "arm_found": "F26",
+    "lm": -1.7234,
+    "word": -3.0019,
+    "confident": false,
+    "generator": "ANAGRAM"
+   },
+   {
+    "id": "H_200",
+    "arm_found": "F26",
+    "lm": -1.8777,
+    "word": -4.1821,
+    "confident": false,
+    "generator": "RANDOM"
+   }
+  ]
+ }
+}

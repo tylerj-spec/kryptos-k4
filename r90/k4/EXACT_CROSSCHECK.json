@@ -1,0 +1,6 @@
+{
+ "note": "Post-freeze cross-check of r90/k4/EXACT.json on K4 with the second implementation (r90/f26c.decrypt: full 97-letter decryption of every setting; written separately from r90/sealed/exact90.py, tests 5 compare them).",
+ "settings": 104340,
+ "k4_max_hits": 6,
+ "k4_settings_ge_22": 0
+}

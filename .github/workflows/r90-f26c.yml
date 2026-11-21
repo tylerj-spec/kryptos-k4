@@ -1,0 +1,40 @@
+name: R90 F26C (tests; bounded witness, gate, evaluation and exact replays)
+on:
+  pull_request:
+    paths:
+      - "r90/**"
+      - "audit/run_bounded_agg.py"
+      - ".github/workflows/r90-f26c.yml"
+permissions:
+  contents: read
+jobs:
+  r90-rederive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Unit tests (R90 and the aggregate resource wrapper)"
+        run: |
+          python3 -I r90/tests/test_r90.py
+          python3 -I audit/tests/test_run_bounded_agg.py
+      - name: "Bounded replays: witnesses, gate verdict, K4 evaluation and exact check, compared byte for byte"
+        run: |
+          cat > /tmp/r90_replay.sh <<'SH'
+          set -eu
+          python3 -I r90/sealed/witness90.py r90/holdout/BLIND.tsv r90/holdout/run/RESULTS.jsonl /tmp/wg.json
+          python3 -I r90/sealed/witness90.py r90/k4/TARGET.tsv r90/k4/run/RESULTS.jsonl /tmp/wk.json
+          cmp /tmp/wg.json r90/holdout/run/WITNESS.json
+          cmp /tmp/wk.json r90/k4/run/WITNESS.json
+          python3 -I r90/sealed/gate90.py r90/holdout r90/holdout/TRUTH.json /tmp/GATE.json
+          cmp /tmp/GATE.json r90/holdout/GATE.json
+          python3 -I r90/sealed/evaluate90.py r90/k4/TARGET.tsv r90/k4/run/RESULTS.jsonl r90/k4/run/WITNESS.json r90/k4/FROZEN.sha256 /tmp/EVALUATION.json
+          cmp /tmp/EVALUATION.json r90/k4/EVALUATION.json
+          python3 -I r90/sealed/exact90.py r90/k4/TARGET.tsv /tmp/EXACT.json
+          cmp /tmp/EXACT.json r90/k4/EXACT.json
+          SH
+          python3 -I audit/run_bounded_agg.py --manifest r90/QA_MANIFEST.json --log /tmp/r90-replay-resource.json -- sh /tmp/r90_replay.sh
+          cat /tmp/r90-replay-resource.json
