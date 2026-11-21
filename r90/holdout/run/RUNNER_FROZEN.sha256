@@ -1,0 +1,9 @@
+170a564e1d6b3baabcb88777edc556275bee8c4d141425a72bd5520c31765757  input  /mnt/box/input/TARGET.tsv
+8340b31103ea0e014c7f50a2e441f6b7de50b08e924ab4370ad7bcdf144c0dcc  results  /mnt/box/out/gate/RESULTS.jsonl
+e182beb57afe9331edbadc8064c8d47c838fecedb4407cb809d6dd36fbcf2d17  runner  /mnt/box/r90/blind/run90.py
+b86be628122c4d2d6fc99ba51f916521c865da8c9c8d189bb4a7a8714e6825aa  solver  /mnt/box/r90/blind/f26c_solve.py
+b6a840fe4c612a4f87803de0e245d474ae0caff43746701510629a88ac3bd151  family  /mnt/box/r90/f26c.py
+b3a507f390f4567c95ba1e8f3dd1f038e7aa919c28b8abd89d81de116cf52f3e  scorer  /mnt/box/r75/core.py
+d2a64e70154725a0c0d1901690df47c73086e0bfc112ad419aad2eb069f89a43  quadgrams  /mnt/box/k4kit/data/quad_log10.f32
+12392e2d463631bbcaafd7aa56eb2bc391325d8964e6f5c19b13786a48676877  word_model  /mnt/box/k4kit/data/word_model_orth.tsv
+b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a  letter_model  lm6.v2.bin
