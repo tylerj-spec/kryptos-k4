@@ -1,0 +1,34 @@
+name: R95 fixed-score saved-evidence review
+
+on:
+  pull_request:
+    paths:
+      - "r95/**"
+      - ".github/workflows/r95-score-review.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-scalar-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reconstruct the exact frozen model and training stream
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+          MKL_NUM_THREADS: '1'
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest r95/CI_REBUILD_BUDGET.json --log /tmp/r95-model-resource.json -- python3 -I r95/rebuild_model.py --repo "$GITHUB_WORKSPACE" --out /tmp/r95-model
+      - name: Independently verify all saved neighbors and decisions
+        # This verifies saved evidence; it never invokes the primary experiment or an optimizer.
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest r95/REVIEW_BUDGET.json --log /tmp/r95-review-resource.json -- python3 -I r95/verify_score_challenge.py --repo "$GITHUB_WORKSPACE" --model5 /tmp/r95-model/lm5.bin --training-text /tmp/r95-model/corpus/train.txt --protocol "$GITHUB_WORKSPACE/r95/PROTOCOL.sha256" --run "$GITHUB_WORKSPACE/r95/development" --out /tmp/r95-review
+          cmp /tmp/r95-review/REVIEW_RESULTS.json r95/review/REVIEW_RESULTS.json

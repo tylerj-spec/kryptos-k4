@@ -1,0 +1,31 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered_development",
+  "hypothesis": "One fixed rebuilt K5 objective has at most2 of48 spent RX2-O cases with any legal one-swap neighbor below95 matches scoring above the truth; baseline lower4 is reported separately. No K4 hypothesis is tested.",
+  "not_excluded": "Every K4 method, every cipher family, arbitrary wrong keys beyond the finite neighborhood, other scores, unknown-key recovery, language masking and fresh-source or wrong-family performance.",
+  "preregistration_path": "r95/PREREGISTRATION.md",
+  "preregistration_commit": "c02b7a92404c2c18d41e7d2a13d75099ab8764bc",
+  "preregistration_sha256": "b91449d0e1131ddbdd0434aaf1e261efcce1b86a9a69b86438a7446477778c7d",
+  "solver_inputs": [],
+  "diagnostic_inputs": ["r94/inputs/PANEL.tsv", "r94/inputs/PANEL_TRUTH.json", "r91/R59_LOWER4_FROM_K5.bin"],
+  "external_diagnostic_inputs": "The exact K5 model and training text are bound by MODEL_SPEC.json and the preregistration",
+  "gate_verdict": "NOT_A_GATE_DEVELOPMENT_ONLY",
+  "k4_run_authorized": false,
+  "new_holdout": false,
+  "resource_budget": {
+    "max_wall_seconds": 300,
+    "max_cpu_seconds": 240,
+    "max_ram_mb": 1024,
+    "max_candidates": 31248,
+    "max_retries": 0
+  },
+  "workers": 1,
+  "output_limits": {"neighbor_shards": 48, "rows_per_shard": 650, "max_shard_bytes": 524288, "max_total_bytes": 33554432},
+  "verification_budget_path": "r95/REVIEW_BUDGET.json",
+  "resource_semantics": "One primary invocation and one separate saved-evidence verifier; at most600wall/480aggregateCPU seconds across both. One worker each; zero retries. Sampled process-group RSS plus per-process RLIMIT_AS. Native thread counts fixed to1.",
+  "notes": "crib_assisted labels access to public synthetic truth, not K4 published letters. Spent-data scoring diagnostic only. Full97training occurrence is a descriptive provenance check. Same-plaintext aliases are not full cipher-function equivalence. No optimizer or fresh gate.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r95/PROTOCOL.sha256",
+  "resource_logs": ["r95/RESOURCE_LOG.json"]
+}

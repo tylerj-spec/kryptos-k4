@@ -1,0 +1,13 @@
+{
+  "description": "R95 separately coded scalar saved-evidence verifier; no primary rerun or optimizer",
+  "resource_budget": {
+    "max_wall_seconds": 300,
+    "max_cpu_seconds": 240,
+    "max_ram_mb": 512,
+    "max_candidates": 31248,
+    "max_retries": 0
+  },
+  "workers": 1,
+  "independent_model_review": "NONE",
+  "parent_scope": "Second and last registered job in R95; combined primary/review ceiling600wall/480CPU seconds"
+}

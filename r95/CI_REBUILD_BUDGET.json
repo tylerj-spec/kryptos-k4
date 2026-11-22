@@ -1,0 +1,12 @@
+{
+  "description": "Reconstruct only the frozen existing model and normalized corpus for CI reproducibility; no panel evaluation or optimizer",
+  "resource_budget": {
+    "max_wall_seconds": 600,
+    "max_cpu_seconds": 180,
+    "max_ram_mb": 1024,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "workers": 1,
+  "scope": "A verification replication dependency, outside and not a renewal of the original primary experiment allowance"
+}
