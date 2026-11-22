@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 2.266,
+  "max_rss_mb": 1092.7,
+  "aggregate_peak_rss_mb": 1092.7,
+  "per_process_peak_rss_mb": 1107.2,
+  "cpu_seconds": 2.092,
+  "samples": 9,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/backlog/multirotor/solver/dev/run_v2.py",
+    "score",
+    "/tmp/claude-0/lmbuild/lm6.v2.bin",
+    "audit/backlog/multirotor/solver/dev/v2/run"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "ids": [
+  "K4",
+  "NULL_000",
+  "NULL_001",
+  "NULL_002",
+  "NULL_003",
+  "NULL_004",
+  "NULL_005",
+  "NULL_006"
+ ],
+ "byte_identical": {
+  "K4": true,
+  "NULL_000": true,
+  "NULL_001": true,
+  "NULL_002": true,
+  "NULL_003": true,
+  "NULL_004": true,
+  "NULL_005": true,
+  "NULL_006": true
+ },
+ "passed": true,
+ "open_kernel_sha256": [
+  "4cb52910ccefc30917ecd15f2238783cbfb8a05dfc1b2d67f71ef715413ac49b"
+ ]
+}

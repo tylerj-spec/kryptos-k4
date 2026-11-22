@@ -1,0 +1,33 @@
+{
+ "note": "Post-freeze cross-check of r92/k4/EXACT.json on K4 with rotor92.exact_check (second implementation).",
+ "settings": 192,
+ "k4_exact_feasible": 0,
+ "k4_drop_feasible_by_position": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "agrees_exact": true,
+ "agrees_drop": true
+}

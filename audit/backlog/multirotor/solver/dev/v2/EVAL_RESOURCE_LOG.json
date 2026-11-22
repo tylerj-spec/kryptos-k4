@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 0.253,
+  "max_rss_mb": 1.4,
+  "aggregate_peak_rss_mb": 1.4,
+  "per_process_peak_rss_mb": 15.5,
+  "cpu_seconds": 0.071,
+  "samples": 1,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/backlog/multirotor/solver/dev/eval_v1.py",
+    "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+    "audit/backlog/multirotor/solver/dev/v2/run/RESULTS.jsonl",
+    "audit/backlog/multirotor/solver/dev/v2/EVAL.json"
+  ]
+}

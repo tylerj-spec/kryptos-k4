@@ -1,0 +1,30 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "frozen",
+  "hypothesis": "K4 is ordinary English enciphered in place by R87's single stepping rotor with a step-boundary phase (family RXP, r92/rotor92.py): s_i = d*floor((i+r)/n), n 2-4, r 1..n-1, d +-1; contact numberings E_in, E_out in AZ/KRYPTOS/PALIMPSEST/ABSCISSA; any wiring: 192 labels (ChatGPT's work order Priority 2).",
+  "not_excluded": "Other phases or periods (n <= 96 with every r is deferred); two or more rotors; letter-driven or irregular stepping; other contact numberings; transposition; masking or nulls; non-English plaintext; insertion or deletion errors. The blind result is statistical; the exact check assumes the published letters right (up to one wrong plaintext or ciphertext letter at a published position) and in order.",
+  "preregistration_path": "r92/PREREGISTRATION.md",
+  "preregistration_commit": "14494aa03b6809f125a2b0f3048965f180201b6a",
+  "preregistration_sha256": "e4e36fbd2e3e338dcf53c31a8964ec30db4a6dcb536811eb898f23de231d0212",
+  "synthetic_gate_path": "r92/holdout/GATE.json",
+  "gate_verdict": "GO",
+  "solver_inputs": [
+    "r92/holdout/BLIND.tsv",
+    "r92/k4/TARGET.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 7200,
+    "max_ram_mb": 4096,
+    "max_cpu_seconds": 28800,
+    "max_candidates": 1005,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py: max_ram_mb and max_cpu_seconds are AGGREGATE over the job's process group (sampled), max_ram_mb is also the per-process RLIMIT_AS; max_wall_seconds is the job's wall clock.",
+  "notes": "Gate holdout: 202 items from four fresh genre books (sha256 in the pre-registration), seed 920500; the truth file stays outside the repository and the sandbox until the blind outputs are frozen and pushed; only its sha256 is committed now. 2 workers (each holds the letter model). Nothing from R92 enters the RX2 solver work. Letter model sha256 b1a2a3c777dafd6eadc277ee50eb988858253a7843fedfc6903700c61a92a85a (untracked). Gate (r92/holdout/GATE.json): GO, 47/48 ok, 44 exact, every cell >= 7/8, genres 15/16/16, masked 11/12, setting right 48/48, negatives 0/150 confident (max lm -1.350). Blind run COMPLETE 966 s, aggregate peak 2,564 MB with 2 workers; witness 1,010/1,010; determinism 8/8; freeze pushed (92ba8ed) before the truth was opened. K4 + 200 shuffles: COMPLETE 1,022 s, aggregate peak 2,563 MB, 2,013 s CPU (2 workers); witness 1,005/1,005; determinism 8/8.",
+  "freeze_manifest_path": "r92/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r92/holdout/run/RESOURCE_LOG.json",
+    "r92/k4/run/RESOURCE_LOG.json"
+  ]
+}

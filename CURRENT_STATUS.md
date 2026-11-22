@@ -1,3 +1,16 @@
+# Current K4 research status — 22 November 2026 update
+
+**No independently verified K4 solution.** On 22 November (Claude Code, PR for branch `claude/zen-clarke-s6fwj5`),
+both priorities of the work order below were taken to a terminal outcome:
+
+| Work order item | Outcome | Evidence |
+| --- | --- | --- |
+| Priority 2: the 192 n<=4 boundary-phase single-rotor labels | Full strict-blind round **R92 (L181)**: sealed gate GO (47/48, 0/150); K4 blind NO_SIGNAL (p 0.254, 0/24); post-freeze exact check **EXCLUDED** (EXACT and DROP, 0 of 192 feasible), cross-checked. Single-model; nothing entered RX2 | `r92/RESULT.md` |
+| Priority 1: RX2-O blind solver, at most 3 versions | **Stopped after version 3: SOLVER_NO_POWER on development data.** v1 INCOMPLETE (infrastructure), v2 0/48 (quadgram objective overfits), v3 0/48 (order-5 objective ranks the truth first, search never reaches it). No gate, no K4; RX2-O stays OPEN | `audit/backlog/multirotor/solver/RESULT.md` |
+
+The refinement of the work order is `audit/reviews/NEXT_STEPS_REFINEMENT_20261122.md`. Everything below is the
+21 November status, unchanged.
+
 # Current K4 research status — 21 November 2026
 
 **No independently verified K4 solution.** The present closeout audits existing exclusions and prepares bounded research; it makes no new K4 candidate claim.

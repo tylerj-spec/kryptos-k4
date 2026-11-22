@@ -1,0 +1,28 @@
+{
+  "status": "INCOMPLETE",
+  "reason": "exit code 1",
+  "exit_code": 1,
+  "wall_seconds": 679.701,
+  "max_rss_mb": 59.2,
+  "aggregate_peak_rss_mb": 59.2,
+  "per_process_peak_rss_mb": 39.6,
+  "cpu_seconds": 1336.537,
+  "samples": 2700,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "rx2o/dev/run_v1.py",
+    "/tmp/claude-0/lmbuild/lm6.v2.bin",
+    "rx2o/dev/panel/PANEL.tsv",
+    "rx2o/dev/v1/run",
+    "2"
+  ]
+}
