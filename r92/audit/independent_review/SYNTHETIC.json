@@ -1,0 +1,44 @@
+{
+  "checker_sha256": "f5e84c7514fe3744e5b03fb527e2a67a73710f8c48b4cd43792c83294f78123c",
+  "ciphertext_substitution_checks": 31040,
+  "identity_second_rotor_embeddings": 1280,
+  "mode": "SYNTHETIC_ONLY",
+  "plaintext_substitution_checks": 31040,
+  "plants_and_inverse_checks": 320,
+  "reads_k4_or_its_mask": false,
+  "reads_original_implementation": false,
+  "remaining_n5_to_96_nonzero_labels": 145728,
+  "rx0_subset_labels": 128,
+  "rxp_labels": 192,
+  "seed": 921105,
+  "status": "PASS",
+  "toy_cases": 289412,
+  "toy_schedules": [
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      -1
+    ],
+    [
+      3,
+      2,
+      1
+    ],
+    [
+      4,
+      3,
+      -1
+    ]
+  ],
+  "toy_sizes": [
+    2,
+    3,
+    4
+  ],
+  "translation_overlap_examples": 320
+}
