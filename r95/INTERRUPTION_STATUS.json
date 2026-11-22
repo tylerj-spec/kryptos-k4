@@ -1,0 +1,38 @@
+{
+  "status": "PUBLICATION_AND_REVIEW_INCOMPLETE",
+  "date": "2026-11-22",
+  "timezone": "America/Chicago",
+  "preregistration_commit": "c02b7a92404c2c18d41e7d2a13d75099ab8764bc",
+  "executed_source_commit": "b3471306d15b61489d9630b4fee079d89c8d1b6f",
+  "observed_primary_invocations": 1,
+  "observed_primary_exit_code": 0,
+  "observed_primary_stdout": {
+    "status": "COMPLETE",
+    "cases_written": 48,
+    "neighbor_records_written": 31200,
+    "output": "/workspace/scratch/4f425b909cf8/r89_review_repo/r95/development"
+  },
+  "observed_wrapper_stderr": "COMPLETE: 1.754 s wall, 1.736 s CPU, aggregate peak 123.3 MB",
+  "record_type": "Contemporaneous tool-output summary; not a substitute for the inaccessible original resource log",
+  "original_artifact_inventory_reported": {
+    "files": 56,
+    "total_bytes": 11310130,
+    "max_file_bytes": 231231
+  },
+  "recovered_artifact": {
+    "path": "r95/development/neighbors/D_000.jsonl",
+    "git_blob_sha": "78221aaf4becf19efc0e9834028551bf43cc6237",
+    "bytes": 231029,
+    "rows": 650
+  },
+  "workspace_root": "/workspace/scratch/4f425b909cf8/r89_review_repo",
+  "workspace_access": "Unavailable during publication; persistence of remaining files is not established",
+  "runtime_notice": "The exec runtime was replaced. Stored values and running cells were lost. Prior external tool operations may have completed; inspect their results before retrying.",
+  "complete_evidence_freeze_published": false,
+  "independent_code_verifier_run": false,
+  "scientific_verdict": "NOT_READ_OR_VERIFIED",
+  "retry_performed": false,
+  "K4_computation": false,
+  "ledger_promotion": false,
+  "next_action": "Recover original outputs and resource log when workspace access returns; complete publication, then the already-registered scalar verification. Do not silently rerun the primary."
+}
