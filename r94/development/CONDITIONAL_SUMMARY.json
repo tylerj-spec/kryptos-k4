@@ -1,0 +1,47 @@
+{
+  "true_U": {
+    "A": {
+      "cases": 48,
+      "ge95": 0,
+      "exact": 0,
+      "median_matches": 49.0,
+      "max_matches": 65,
+      "wrong_text_above_true_lm4": 0,
+      "true_lm4_above_found": 48
+    },
+    "B": {
+      "cases": 48,
+      "ge95": 0,
+      "exact": 0,
+      "median_matches": 51.5,
+      "max_matches": 94,
+      "wrong_text_above_true_lm4": 6,
+      "true_lm4_above_found": 42
+    }
+  },
+  "true_V": {
+    "A": {
+      "cases": 48,
+      "ge95": 0,
+      "exact": 0,
+      "median_matches": 43.0,
+      "max_matches": 72,
+      "wrong_text_above_true_lm4": 0,
+      "true_lm4_above_found": 48
+    },
+    "B": {
+      "cases": 48,
+      "ge95": 0,
+      "exact": 0,
+      "median_matches": 45.5,
+      "max_matches": 93,
+      "wrong_text_above_true_lm4": 3,
+      "true_lm4_above_found": 45
+    }
+  },
+  "true_key_neighborhood": {
+    "cases": 48,
+    "neighbors_evaluated": 31200,
+    "cases_with_wrong_text_above_true": 39
+  }
+}

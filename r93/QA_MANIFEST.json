@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "A position-only single rotor with any 26-symbol wiring, AZ/KRY/PAL/ABS contact pairs, n=5..96, phase=1..n-1 and direction +/-1 can satisfy the 24 fixed published observations, or all except one. Full 145728 labeled domain; aggregate compatibility only.",
   "not_excluded": "Untested alphabets, periods >=97, other step sizes, multiple rotors, letter-triggered or irregular updates, transposition, shifted alignment, insertions/deletions, simultaneous error models, or alternative published observations beyond one omission. No blind recovery or candidate evidence is claimed.",
   "preregistration_path": "r93/PREREGISTRATION.md",
@@ -24,5 +24,9 @@
   },
   "schema_compatibility": "The legacy schema requires a positive max_candidates ceiling. Its unused upper ceiling is 1, while the stricter limits max_decoded_candidates=0 and max_surviving_setting_outputs=0 remain binding. Actual zero candidates satisfy both. Aggregate records are separately capped at 201 and are not redefined as candidates.",
   "resource_semantics": "audit/run_bounded_agg.py; wall and aggregate CPU caps, sampled aggregate process-group RSS plus per-process RLIMIT_AS. Zero target retries.",
-  "notes": "Preregistration and explicit mode clarification were published before source and the formal correctness gate. Development smoke output is DEVELOPMENT_ONLY. No target is permitted until the complete checker gate is GO and published; all output remains aggregate only. Same-model review does not provide independent-model promotion."
+  "notes": "Preregistration and explicit mode clarification were published before source and the formal correctness gate. Development smoke output is DEVELOPMENT_ONLY. No target is permitted until the complete checker gate is GO and published; all output remains aggregate only. Same-model review does not provide independent-model promotion.",
+  "freeze_manifest_path": "r93/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r93/TARGET_RESOURCE_LOG.json"
+  ]
 }

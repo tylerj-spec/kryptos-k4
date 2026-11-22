@@ -1,0 +1,1442 @@
+{
+  "A": {
+    "total": {
+      "cases": 48,
+      "top1_ge95": 0,
+      "top1_exact": 0,
+      "any_retained_ge95": 0,
+      "any_final_state_ge95": 0,
+      "maximum_top1_matches": 13,
+      "maximum_final_state_matches": 23,
+      "median_top1_matches": 8.0
+    },
+    "by_cell": {
+      "n1t3": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 15,
+        "median_top1_matches": 8.5
+      },
+      "n1t4": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 12,
+        "maximum_final_state_matches": 17,
+        "median_top1_matches": 9.0
+      },
+      "n2t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 9,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 7.0
+      },
+      "n2t2": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 9,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 8.5
+      },
+      "n3t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 11,
+        "maximum_final_state_matches": 15,
+        "median_top1_matches": 9.0
+      },
+      "n3t2": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 13,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 7.0
+      },
+      "n4t0": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 15,
+        "median_top1_matches": 9.0
+      },
+      "n4t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 23,
+        "median_top1_matches": 7.5
+      }
+    },
+    "rows": [
+      {
+        "id": "D_000",
+        "cell": "n1t3",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_001",
+        "cell": "n1t3",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_002",
+        "cell": "n1t3",
+        "top1_matches": 8,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_003",
+        "cell": "n1t3",
+        "top1_matches": 9,
+        "any_retained_matches": 14,
+        "best_final_state_matches": 14,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_004",
+        "cell": "n1t3",
+        "top1_matches": 10,
+        "any_retained_matches": 15,
+        "best_final_state_matches": 15,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_005",
+        "cell": "n1t3",
+        "top1_matches": 9,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_006",
+        "cell": "n1t4",
+        "top1_matches": 8,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_007",
+        "cell": "n1t4",
+        "top1_matches": 8,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_008",
+        "cell": "n1t4",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_009",
+        "cell": "n1t4",
+        "top1_matches": 12,
+        "any_retained_matches": 16,
+        "best_final_state_matches": 16,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_010",
+        "cell": "n1t4",
+        "top1_matches": 11,
+        "any_retained_matches": 17,
+        "best_final_state_matches": 17,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_011",
+        "cell": "n1t4",
+        "top1_matches": 10,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_012",
+        "cell": "n2t1",
+        "top1_matches": 7,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_013",
+        "cell": "n2t1",
+        "top1_matches": 7,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_014",
+        "cell": "n2t1",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_015",
+        "cell": "n2t1",
+        "top1_matches": 9,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_016",
+        "cell": "n2t1",
+        "top1_matches": 8,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_017",
+        "cell": "n2t1",
+        "top1_matches": 7,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_018",
+        "cell": "n2t2",
+        "top1_matches": 9,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_019",
+        "cell": "n2t2",
+        "top1_matches": 8,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_020",
+        "cell": "n2t2",
+        "top1_matches": 9,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_021",
+        "cell": "n2t2",
+        "top1_matches": 9,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_022",
+        "cell": "n2t2",
+        "top1_matches": 3,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_023",
+        "cell": "n2t2",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_024",
+        "cell": "n3t1",
+        "top1_matches": 11,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_025",
+        "cell": "n3t1",
+        "top1_matches": 8,
+        "any_retained_matches": 15,
+        "best_final_state_matches": 15,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_026",
+        "cell": "n3t1",
+        "top1_matches": 6,
+        "any_retained_matches": 14,
+        "best_final_state_matches": 14,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_027",
+        "cell": "n3t1",
+        "top1_matches": 11,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_028",
+        "cell": "n3t1",
+        "top1_matches": 10,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_029",
+        "cell": "n3t1",
+        "top1_matches": 7,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_030",
+        "cell": "n3t2",
+        "top1_matches": 6,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_031",
+        "cell": "n3t2",
+        "top1_matches": 5,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_032",
+        "cell": "n3t2",
+        "top1_matches": 9,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_033",
+        "cell": "n3t2",
+        "top1_matches": 13,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_034",
+        "cell": "n3t2",
+        "top1_matches": 7,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_035",
+        "cell": "n3t2",
+        "top1_matches": 7,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_036",
+        "cell": "n4t0",
+        "top1_matches": 9,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_037",
+        "cell": "n4t0",
+        "top1_matches": 10,
+        "any_retained_matches": 15,
+        "best_final_state_matches": 15,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_038",
+        "cell": "n4t0",
+        "top1_matches": 10,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_039",
+        "cell": "n4t0",
+        "top1_matches": 7,
+        "any_retained_matches": 15,
+        "best_final_state_matches": 15,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_040",
+        "cell": "n4t0",
+        "top1_matches": 5,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_041",
+        "cell": "n4t0",
+        "top1_matches": 9,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_042",
+        "cell": "n4t1",
+        "top1_matches": 7,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_043",
+        "cell": "n4t1",
+        "top1_matches": 9,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_044",
+        "cell": "n4t1",
+        "top1_matches": 7,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_045",
+        "cell": "n4t1",
+        "top1_matches": 10,
+        "any_retained_matches": 23,
+        "best_final_state_matches": 23,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_046",
+        "cell": "n4t1",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_047",
+        "cell": "n4t1",
+        "top1_matches": 8,
+        "any_retained_matches": 16,
+        "best_final_state_matches": 16,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      }
+    ]
+  },
+  "B": {
+    "total": {
+      "cases": 48,
+      "top1_ge95": 0,
+      "top1_exact": 0,
+      "any_retained_ge95": 0,
+      "any_final_state_ge95": 0,
+      "maximum_top1_matches": 19,
+      "maximum_final_state_matches": 19,
+      "median_top1_matches": 6.0
+    },
+    "by_cell": {
+      "n1t3": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 6,
+        "maximum_final_state_matches": 14,
+        "median_top1_matches": 5.0
+      },
+      "n1t4": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 9,
+        "maximum_final_state_matches": 14,
+        "median_top1_matches": 6.0
+      },
+      "n2t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 13,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 7.0
+      },
+      "n2t2": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 6.5
+      },
+      "n3t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 5.5
+      },
+      "n3t2": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 12,
+        "maximum_final_state_matches": 12,
+        "median_top1_matches": 5.5
+      },
+      "n4t0": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 10,
+        "maximum_final_state_matches": 13,
+        "median_top1_matches": 6.0
+      },
+      "n4t1": {
+        "cases": 6,
+        "top1_ge95": 0,
+        "top1_exact": 0,
+        "any_retained_ge95": 0,
+        "any_final_state_ge95": 0,
+        "maximum_top1_matches": 19,
+        "maximum_final_state_matches": 19,
+        "median_top1_matches": 8.5
+      }
+    },
+    "rows": [
+      {
+        "id": "D_000",
+        "cell": "n1t3",
+        "top1_matches": 6,
+        "any_retained_matches": 14,
+        "best_final_state_matches": 14,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_001",
+        "cell": "n1t3",
+        "top1_matches": 5,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_002",
+        "cell": "n1t3",
+        "top1_matches": 4,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_003",
+        "cell": "n1t3",
+        "top1_matches": 5,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_004",
+        "cell": "n1t3",
+        "top1_matches": 4,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_005",
+        "cell": "n1t3",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_006",
+        "cell": "n1t4",
+        "top1_matches": 5,
+        "any_retained_matches": 14,
+        "best_final_state_matches": 14,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_007",
+        "cell": "n1t4",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_008",
+        "cell": "n1t4",
+        "top1_matches": 8,
+        "any_retained_matches": 8,
+        "best_final_state_matches": 8,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_009",
+        "cell": "n1t4",
+        "top1_matches": 9,
+        "any_retained_matches": 14,
+        "best_final_state_matches": 14,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_010",
+        "cell": "n1t4",
+        "top1_matches": 3,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_011",
+        "cell": "n1t4",
+        "top1_matches": 7,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_012",
+        "cell": "n2t1",
+        "top1_matches": 3,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_013",
+        "cell": "n2t1",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_014",
+        "cell": "n2t1",
+        "top1_matches": 8,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_015",
+        "cell": "n2t1",
+        "top1_matches": 6,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_016",
+        "cell": "n2t1",
+        "top1_matches": 8,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_017",
+        "cell": "n2t1",
+        "top1_matches": 13,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_018",
+        "cell": "n2t2",
+        "top1_matches": 10,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_019",
+        "cell": "n2t2",
+        "top1_matches": 6,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_020",
+        "cell": "n2t2",
+        "top1_matches": 6,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_021",
+        "cell": "n2t2",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_022",
+        "cell": "n2t2",
+        "top1_matches": 7,
+        "any_retained_matches": 8,
+        "best_final_state_matches": 8,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_023",
+        "cell": "n2t2",
+        "top1_matches": 4,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_024",
+        "cell": "n3t1",
+        "top1_matches": 5,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_025",
+        "cell": "n3t1",
+        "top1_matches": 5,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_026",
+        "cell": "n3t1",
+        "top1_matches": 7,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_027",
+        "cell": "n3t1",
+        "top1_matches": 4,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_028",
+        "cell": "n3t1",
+        "top1_matches": 10,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_029",
+        "cell": "n3t1",
+        "top1_matches": 6,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_030",
+        "cell": "n3t2",
+        "top1_matches": 12,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_031",
+        "cell": "n3t2",
+        "top1_matches": 10,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_032",
+        "cell": "n3t2",
+        "top1_matches": 4,
+        "any_retained_matches": 12,
+        "best_final_state_matches": 12,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_033",
+        "cell": "n3t2",
+        "top1_matches": 3,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_034",
+        "cell": "n3t2",
+        "top1_matches": 3,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_035",
+        "cell": "n3t2",
+        "top1_matches": 7,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_036",
+        "cell": "n4t0",
+        "top1_matches": 10,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_037",
+        "cell": "n4t0",
+        "top1_matches": 6,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_038",
+        "cell": "n4t0",
+        "top1_matches": 10,
+        "any_retained_matches": 10,
+        "best_final_state_matches": 10,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_039",
+        "cell": "n4t0",
+        "top1_matches": 6,
+        "any_retained_matches": 13,
+        "best_final_state_matches": 13,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_040",
+        "cell": "n4t0",
+        "top1_matches": 6,
+        "any_retained_matches": 9,
+        "best_final_state_matches": 9,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_041",
+        "cell": "n4t0",
+        "top1_matches": 6,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_042",
+        "cell": "n4t1",
+        "top1_matches": 3,
+        "any_retained_matches": 7,
+        "best_final_state_matches": 7,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_043",
+        "cell": "n4t1",
+        "top1_matches": 11,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_044",
+        "cell": "n4t1",
+        "top1_matches": 11,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_045",
+        "cell": "n4t1",
+        "top1_matches": 19,
+        "any_retained_matches": 19,
+        "best_final_state_matches": 19,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_046",
+        "cell": "n4t1",
+        "top1_matches": 5,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      },
+      {
+        "id": "D_047",
+        "cell": "n4t1",
+        "top1_matches": 6,
+        "any_retained_matches": 11,
+        "best_final_state_matches": 11,
+        "retained_count": 8,
+        "top1_equivalence": {
+          "gauge_equivalent": false,
+          "operator_equivalent_97": false,
+          "raw_wirings_equal": false
+        }
+      }
+    ]
+  }
+}
