@@ -1,0 +1,10 @@
+{
+  "saved_higher_score_wrong_neighbors": 39,
+  "below95": 25,
+  "atleast95": 14,
+  "min_matches": 90,
+  "max_matches": 96,
+  "scope": "Independent direct recount of the 39 already-frozen best-neighbor witness texts; no scores or optimizer rerun.",
+  "freeze_commit": "542165b77806917d17dd4f3f8314685fd2d1e55a",
+  "independent_model_review": "NONE"
+}
