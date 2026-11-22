@@ -1,0 +1,591 @@
+{
+  "round": "41",
+  "reviewer": "ChatGPT",
+  "mode": "POSTFREEZE_CRIB_ASSISTED_EXCLUSION_AUDIT",
+  "plan_commit": "dea5bb84ec983b3d7fc978e11efeebe7f0fd72df",
+  "code_commit": "b23e1bcc12119707fb699d81ae6d71c63ce0c376",
+  "plan_sha256": "9f0b36394cadde96167be48b1fb3b2b60acd984c43ae445b2170dc1c8d2d7605",
+  "source_sha256": {
+    "audit/backlog/r32/replay_kernel.cpp": "e238c005b1d8f0515b35c0770cc8baca0a0e830622583018e3466d2342250597",
+    "audit/backlog/r32/check_replay.py": "04f2705f64f95b2f7090ce2167b1c8d247ff9c8d8260619e6cde47c63a5d3637",
+    "audit/backlog/r32/run_targets.py": "a433b650bff31c14a890493438b3cf148def7a9ba6d0ea1be74afa59a3e7c6cc"
+  },
+  "key_source_sha256": {
+    "CARTER": "6761a5075869325f708e1d81f8bd0efeeab5aaaad43206e1551ed53243f13ee0",
+    "K1K3": "bb6b5b03500084ccd45bd93ab7a63ab986026e83e6a84aa2b93cb8824d3281b5"
+  },
+  "binary_sha256": "8f7f2d3f2dbc45c4007e3d10270a4c0bcd61d60f40cf320e9ea610933ae6d57d",
+  "synthetic_sha256": "1be70be9a1a4ad59eb42c22a172e6e4fc9f7ecff8102512787dfd87f3fc6b4f5",
+  "independent_route_sha256": {
+    "r32_f1": "fae0c6cee82d37825d003f4d05b24280be8b06f241a783279e5c6f4b5781c79d",
+    "r32_f2": "0f31d36be4bbe8b95525b565caff5b5b4c683972c43fb62c114f5341c879139b",
+    "r41_A": "890c09d528c131f6134bf46d0d4a83367af78b8cf4b4b79089d3cc820c57f9c3",
+    "r41_B": "2bdb17046c570eb84b174c00f4b9a0df2cc56749572802888afc1ca90f8562c5"
+  },
+  "input_sha256": {
+    "r41/x1_route_pafree/K4_ct.txt": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+    "r41/x1_route_pafree/NULL_00_ct.txt": "0c1c57982a6a4b3dc6375ef5e2b972b38736766e4f3847768ed68a9089cdb43a",
+    "r41/x1_route_pafree/NULL_01_ct.txt": "303becbeb6f93897e7143b5475f06ac24e8811944b638f44d0c3fe4416f8025b",
+    "r41/x1_route_pafree/PLANT_00_ct.txt": "0eb4a656fac263c0a0744ad69bca0f1c3006dbb251795902b5af6ea7aeae44da",
+    "r41/x1_route_pafree/PLANT_01_ct.txt": "e5dc69ad22f35dddfdc55ac2a4ef3691d9fb20321be1f8e2f88c6a6437d0905c",
+    "r41/x1_route_pafree/PLANT_02_ct.txt": "f2d7d3f80092a2a843458fad759d34cbf66b3a7101b5684b462093be6151c703",
+    "r41/x1_route_pafree/PLANT_03_ct.txt": "cd56b42303a711e7fece18763ce8096704243d63a79df795a1a5f1af0c43ae8b",
+    "r41/x1_route_pafree/PLANT_04_ct.txt": "0eaf3bf5dee9d50363fcf8384f6a77497737c93d26effdf2907932ab101fd58a",
+    "r41/x1_route_pafree/PLANT_05_ct.txt": "e8f0c428b7aaadb1f4d8b15f80f7ff99073fda4cb293a334812651992fb4349e"
+  },
+  "archive_sha256": {
+    "r41/x1_route_pafree/out/WF_K4_A.tsv": "7741ec572b8ca8f333008340c68cd3a98e6be61ffa754a8020926b4673397101",
+    "r41/x1_route_pafree/out/WF_K4_B.tsv": "c0076d5b50a651db1eb417a9855c0cf5d89b07384b3be37095595e3ab49f3137",
+    "r41/x1_route_pafree/out/WF_NULL_00_A.tsv": "797f1953275bb9799c619ade8a65ebf7c747229652c553c3552eb39c15ac4516",
+    "r41/x1_route_pafree/out/WF_NULL_00_B.tsv": "a03d6ba163ca2a7dddcff375f8ce5c3e5574d88bacd15393b4c8c36fa7fce418",
+    "r41/x1_route_pafree/out/WF_NULL_01_A.tsv": "f4fd4e6b8534d6834eb50906f10a89aae7b6e6e5dde69627e6d41e3449f34073",
+    "r41/x1_route_pafree/out/WF_NULL_01_B.tsv": "501e7334604a4408024a0a1f7a59baaa9e1334a153c6e0894645b63ae62b394f",
+    "r41/x1_route_pafree/out/WF_PLANT_00_A.tsv": "060d29fbf4151994261f16faf9ef864e9ce1e0334676d263b3b4154a45c498b0",
+    "r41/x1_route_pafree/out/WF_PLANT_00_B.tsv": "acfb470d1a4ecb7a7a6552d5ea4e76a18fb706c4b4f7d403179abe68a8a58b3a",
+    "r41/x1_route_pafree/out/WF_PLANT_01_A.tsv": "7f50cf633f05147944926d96715a7249374cf877c09b467bbdfd1c3c166726a7",
+    "r41/x1_route_pafree/out/WF_PLANT_01_B.tsv": "53804691cc8e49d01af9fd32d50c2aa5f558257df6e436aceb6c8c162f0269b4",
+    "r41/x1_route_pafree/out/WF_PLANT_02_A.tsv": "ffb3132bb2d48e30e3f0cc678584e962487688449f3fa40ff454f2b15b2c341d",
+    "r41/x1_route_pafree/out/WF_PLANT_02_B.tsv": "2350f1a403ad2035e7a4db63d69b2467c72cf6ef9ee1c301b0f4a5a066c27864",
+    "r41/x1_route_pafree/out/WF_PLANT_03_A.tsv": "dc7b5aa9c9e051271fa2ecb3ecd914eb294a687528430738ebe3a63b31fd18ab",
+    "r41/x1_route_pafree/out/WF_PLANT_03_B.tsv": "44c54c27e857e9161a4811e5dcec6b64af1e127cbb88e99a25b87f4f9e9fb6c5",
+    "r41/x1_route_pafree/out/WF_PLANT_04_A.tsv": "2644f15d976fb0820859cb808b0ae6990cb75ed866d17c1caefd6fc3726e866a",
+    "r41/x1_route_pafree/out/WF_PLANT_04_B.tsv": "ed57ac78f735aefd698c1012b16e7f9d18f25223ea940e5c20cde8c4fb628a69",
+    "r41/x1_route_pafree/out/WF_PLANT_05_A.tsv": "fa1c58603040b570e448dc33cb2fd62f22a6bc0d5fd537427de8e06393a5dfc0",
+    "r41/x1_route_pafree/out/WF_PLANT_05_B.tsv": "d9961b8202ff9caeea085f630fe3ff70102c1ae80013bc750a8a3989ce77ef43"
+  },
+  "jobs": {
+    "K4": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0286834
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.377064
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.400591
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00211843
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0420705
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0249059
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "NULL_00": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0136428
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.156755
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.384065
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00187979
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0396355
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0243417
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "NULL_01": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0136199
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.283079
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.414517
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00186504
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0401115
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0248731
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_00": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 1,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 1,
+            "index_hits": 1,
+            "wall_seconds": 0.0135008
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.23514
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.353111
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0019382
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0398302
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0241463
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_01": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 1,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0129482
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 1,
+            "index_hits": 2,
+            "wall_seconds": 0.1367
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.389844
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00185474
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.039133
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.024548
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_02": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 1,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.014367
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.149077
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 1,
+            "index_hits": 1,
+            "wall_seconds": 0.372435
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00188453
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0414379
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0267815
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_03": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 2,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0155775
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.152257
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.379294
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 2,
+            "index_hits": 2,
+            "wall_seconds": 0.00241758
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 2,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.042129
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 2,
+            "index_hits": 2,
+            "wall_seconds": 0.0248994
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_04": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0143071
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.154099
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.39963
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0019152
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 1,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 1,
+            "index_hits": 1,
+            "wall_seconds": 0.0434468
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0297632
+          }
+        },
+        "matches_archive": true
+      }
+    },
+    "PLANT_05": {
+      "A": {
+        "settings": 3630205152,
+        "consistent": 0,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 162400000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0155194
+          },
+          "C6": {
+            "keys": 1000000,
+            "settings": 1624000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.157184
+          },
+          "CARTER": {
+            "keys": 1131312,
+            "settings": 1837250688,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.365525
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 6554464,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.00180375
+          }
+        },
+        "matches_archive": true
+      },
+      "B": {
+        "settings": 7282520000,
+        "consistent": 1,
+        "families": {
+          "G5": {
+            "keys": 100000,
+            "settings": 7000000000,
+            "consistent": 0,
+            "index_hits": 0,
+            "wall_seconds": 0.0401906
+          },
+          "K1K3": {
+            "keys": 4036,
+            "settings": 282520000,
+            "consistent": 1,
+            "index_hits": 1,
+            "wall_seconds": 0.0278127
+          }
+        },
+        "matches_archive": true
+      }
+    }
+  },
+  "plants_verified": [
+    "PLANT_00",
+    "PLANT_01",
+    "PLANT_02",
+    "PLANT_03",
+    "PLANT_04",
+    "PLANT_05"
+  ],
+  "status": "COMPLETE_FULL_FEASIBILITY_COUNTS_AGREE",
+  "total_labeled_settings": 98214526368,
+  "scope_limit": "Complete algebraic feasibility join; not the historical full violation histogram or positive minimum-V statistic."
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "toy_exhaustive_comparisons": 9416,
+  "constant_relative_collapse_checks": 2420,
+  "round_trips": 150,
+  "composite_alphabets_tested": [
+    4,
+    6,
+    26
+  ],
+  "structural_counts": {
+    "differential_raw_schedules": 400,
+    "differential_constant_relative_schedules": 20,
+    "differential_retained_schedules": 380,
+    "differential_labelled_settings": 6080,
+    "odometer_labelled_settings": 16640
+  },
+  "synthetic_stress": {
+    "plants": {
+      "SAT": 64
+    },
+    "random_pairs": {
+      "SAT": 10,
+      "UNSAT": 54
+    }
+  },
+  "stress_max_nodes": 11,
+  "worked_example": {
+    "q": 5,
+    "plaintext": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      0,
+      3
+    ],
+    "w1": [
+      2,
+      4,
+      1,
+      0,
+      3
+    ],
+    "w2": [
+      1,
+      3,
+      4,
+      2,
+      0
+    ],
+    "shifts": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "ciphertext": [
+      4,
+      1,
+      3,
+      3,
+      3,
+      1,
+      1
+    ]
+  },
+  "scope": "Synthetic mathematical validation only; no K4 or English recovery gate."
+}

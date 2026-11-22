@@ -1,4 +1,28 @@
-# Current K4 research status (15 November 2026)
+# Current K4 research status — 21 November 2026
+
+**No independently verified K4 solution.** The present closeout audits existing exclusions and prepares bounded research; it makes no new K4 candidate claim.
+
+## Current closeout
+
+| Task | Current result | Evidence |
+| --- | --- | --- |
+| R32 historical aggregate replay | Complete full recount: 7,099,791,216 labeled settings; all retained archive statistics agree; zero full known-letter matches | `audit/reviews/R32_INDEPENDENT_RECOUNT.md` |
+| R41 historical feasibility replay | Complete algebraic join across all nine saved inputs; all 18 part-counts agree; K4 has zero of 10,912,725,152 feasible settings | `audit/reviews/R41_INDEPENDENT_FEASIBILITY.md` |
+| R90 independent review | Exact finite exclusion independently verified and L179 promoted; saved blind statistics remain NO_SIGNAL with no full original LM rerun claimed | `r90/audit/independent_closeout/REVIEW.md` |
+| Multi-rotor designs | Complete reversible RX2-O/RX2-D designs, tested exact constraint kernel, phase/equivalence audit and finite execution bounds; cipher families remain OPEN | `audit/backlog/multirotor/DESIGN.md` |
+| R82 / PTAK solver gates | Fresh prospective synthetic power screens in preparation; no new K4 search | R91 registration and results will supersede this in-progress line |
+
+R89 and R90 jointly close 35 enumerated F26 alphabet classes, including all 20 original-design classes, within their finite parameter/error bounds. R90's independent exact result does not depend on the language model. Its amended operational retry and sampled summed-RSS semantics remain disclosed.
+
+The multi-rotor review found 192 labeled phase-shifted single-rotor settings outside R87's zero-boundary-phase schedule. They remain OPEN. Equal-motion collapse alone does not certify an old exclusion.
+
+The search hold was lifted on 16 November; current guardrails remain in force. New blind searches still require a fresh power gate, a frozen complete parameter/score/budget specification, and outputs committed and pushed before known-letter evaluation. Same-model subagents count as one review.
+
+## Historical status snapshots
+
+The following text is retained as historical context. Its then-current backlog, dates and thresholds are superseded by the closeout table and current guardrails above.
+
+### Snapshot originally titled: Current K4 research status (15 November 2026)
 
 **No independently verified K4 solution. Nothing was submitted to an external verifier.**
 
