@@ -1,0 +1,294 @@
+{
+  "candidate_forward_witnesses": 600,
+  "critical_artifacts_present_at_freeze": true,
+  "decisions": {
+    "PTAK_R68": {
+      "exact_message_key": 32,
+      "messages": 240,
+      "outcome": "SOLVER_NO_POWER",
+      "passing_strata": 0,
+      "strata": 12
+    },
+    "R82_LINKED": {
+      "exact_message_key": 250,
+      "messages": 360,
+      "outcome": "SOLVER_NO_POWER",
+      "passing_strata": 8,
+      "strata": 18
+    }
+  },
+  "equivalent_nonidentical_keys": 0,
+  "freeze_commit": "600747049a1537378e7843d93b356ddbe8d4390a",
+  "genre_counts": {
+    "PTAK_R68": {
+      "analytic_nonfiction": 80,
+      "narrative": 80,
+      "political_essay": 80
+    },
+    "R82_LINKED": {
+      "analytic_nonfiction": 120,
+      "narrative": 120,
+      "political_essay": 120
+    }
+  },
+  "hash_entries": {
+    "freeze": 60,
+    "inputs": 5,
+    "protocol": 39
+  },
+  "imports_gate_or_solver": false,
+  "kind": "Separate same-model post-freeze aggregate and forward audit",
+  "scope": "Saved synthetic outcomes only; no K4 or independent-model gate certification.",
+  "source_windows_nonoverlapping": true,
+  "status": "PASS",
+  "strata": {
+    "PTAK_R68": {
+      "L13": {
+        "exact_message_key": 11,
+        "key_equivalent": 11,
+        "key_exact": 11,
+        "n": 20,
+        "plain95": 11,
+        "plain97": 11
+      },
+      "L14": {
+        "exact_message_key": 10,
+        "key_equivalent": 10,
+        "key_exact": 10,
+        "n": 20,
+        "plain95": 10,
+        "plain97": 10
+      },
+      "L15": {
+        "exact_message_key": 6,
+        "key_equivalent": 6,
+        "key_exact": 6,
+        "n": 20,
+        "plain95": 6,
+        "plain97": 6
+      },
+      "L16": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "L17": {
+        "exact_message_key": 3,
+        "key_equivalent": 3,
+        "key_exact": 3,
+        "n": 20,
+        "plain95": 3,
+        "plain97": 3
+      },
+      "L18": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "L19": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L20": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L21": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L22": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L23": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L24": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      }
+    },
+    "R82_LINKED": {
+      "m12_w12": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m12_w14": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m12_w31": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m3_w3": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m3_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m3_w5": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w4": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w6": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m5_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m5_w5": {
+        "exact_message_key": 17,
+        "key_equivalent": 17,
+        "key_exact": 17,
+        "n": 20,
+        "plain95": 17,
+        "plain97": 17
+      },
+      "m5_w7": {
+        "exact_message_key": 19,
+        "key_equivalent": 19,
+        "key_exact": 19,
+        "n": 20,
+        "plain95": 19,
+        "plain97": 19
+      },
+      "m7_w31": {
+        "exact_message_key": 17,
+        "key_equivalent": 17,
+        "key_exact": 17,
+        "n": 20,
+        "plain95": 17,
+        "plain97": 17
+      },
+      "m7_w7": {
+        "exact_message_key": 13,
+        "key_equivalent": 13,
+        "key_exact": 13,
+        "n": 20,
+        "plain95": 13,
+        "plain97": 13
+      },
+      "m7_w9": {
+        "exact_message_key": 14,
+        "key_equivalent": 14,
+        "key_exact": 14,
+        "n": 20,
+        "plain95": 14,
+        "plain97": 14
+      },
+      "m9_w11": {
+        "exact_message_key": 9,
+        "key_equivalent": 9,
+        "key_exact": 9,
+        "n": 20,
+        "plain95": 9,
+        "plain97": 9
+      },
+      "m9_w31": {
+        "exact_message_key": 8,
+        "key_equivalent": 8,
+        "key_exact": 8,
+        "n": 20,
+        "plain95": 8,
+        "plain97": 8
+      },
+      "m9_w9": {
+        "exact_message_key": 10,
+        "key_equivalent": 10,
+        "key_exact": 10,
+        "n": 20,
+        "plain95": 10,
+        "plain97": 10
+      }
+    }
+  },
+  "true_keys_primitive": true,
+  "truth_and_verdict_absent_at_freeze": true,
+  "truth_forward_witnesses": 600,
+  "truth_sha256": "2ece5a84dfdaa644a43ab5829e4f300e773ebb26d294f1e7cb9ee16d530cb5b7"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 4.765,
+  "max_rss_mb": 51.2,
+  "aggregate_peak_rss_mb": 51.2,
+  "per_process_peak_rss_mb": 61.9,
+  "cpu_seconds": 4.553,
+  "samples": 19,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/backlog/check_r91_public_provenance.py",
+    ".",
+    "/workspace/scratch/4f425b909cf8/backlog_gate_dev/sources",
+    "/workspace/scratch/4f425b909cf8/backlog_gate_dev/r59_rebuild/corpus/train.txt",
+    "audit/backlog/R91_PUBLIC_PROVENANCE.json"
+  ]
+}
