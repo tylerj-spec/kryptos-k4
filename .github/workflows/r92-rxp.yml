@@ -1,0 +1,42 @@
+name: R92 RXP (tests; bounded witness, gate, evaluation and exact replays)
+on:
+  pull_request:
+    paths:
+      - "r92/**"
+      - "audit/run_bounded_agg.py"
+      - ".github/workflows/r92-rxp.yml"
+permissions:
+  contents: read
+jobs:
+  r92-rederive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: "Unit tests (R92 and the aggregate resource wrapper)"
+        run: |
+          python3 -I r92/tests/test_r92.py
+          python3 -I audit/tests/test_run_bounded_agg.py
+      - name: "Bounded replays: witnesses, gate verdict, K4 evaluation, exact check and cross-check, compared byte for byte"
+        run: |
+          cat > /tmp/r92_replay.sh <<'SH'
+          set -eu
+          python3 -I r92/sealed/witness92.py r92/holdout/BLIND.tsv r92/holdout/run/RESULTS.jsonl /tmp/wg.json
+          python3 -I r92/sealed/witness92.py r92/k4/TARGET.tsv r92/k4/run/RESULTS.jsonl /tmp/wk.json
+          cmp /tmp/wg.json r92/holdout/run/WITNESS.json
+          cmp /tmp/wk.json r92/k4/run/WITNESS.json
+          python3 -I r92/sealed/gate92.py r92/holdout r92/holdout/TRUTH.json /tmp/GATE.json
+          cmp /tmp/GATE.json r92/holdout/GATE.json
+          python3 -I r92/sealed/evaluate92.py r92/k4/TARGET.tsv r92/k4/run/RESULTS.jsonl r92/k4/run/WITNESS.json r92/k4/FROZEN.sha256 /tmp/EVALUATION.json
+          cmp /tmp/EVALUATION.json r92/k4/EVALUATION.json
+          python3 -I r92/sealed/exact92.py r92/k4/TARGET.tsv /tmp/EXACT.json
+          cmp /tmp/EXACT.json r92/k4/EXACT.json
+          python3 -I r92/sealed/exact_crosscheck92.py r92/k4/TARGET.tsv r92/k4/EXACT.json /tmp/XC.json
+          cmp /tmp/XC.json r92/k4/EXACT_CROSSCHECK.json
+          SH
+          python3 -I audit/run_bounded_agg.py --manifest r92/QA_MANIFEST.json --log /tmp/r92-replay-resource.json -- sh /tmp/r92_replay.sh
+          cat /tmp/r92-replay-resource.json
