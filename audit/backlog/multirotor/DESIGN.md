@@ -58,7 +58,7 @@ Domain: `n1,n2=1…4`, `r_j=0…n_j-1`, each direction ±1, and 16 contact pairs
 
 The union is at most **22,720 labeled structural settings**. It is not asserted to be a disjoint set of distinct cipher functions. Retaining duplicates is safe for exhaustive feasibility and is accounted for in whole-search statistical calibration. Free wirings are not a small finite-key brute-force task: there are `(26!)^2` labeled wiring pairs before equivalences.
 
-**Phase caveat found in review:** removing the 20 equal-motion clock rows means removing them from this two-motion design, not declaring all of them excluded on K4. R87 used `s_i=d*floor(i/n)` without a boundary phase. Only eight removed clock rows (128 contact-pair labels) have r=0 and fall within that tested schedule. The other 12 rows (192 contact-pair labels) reduce to phase-shifted single-rotor schedules and remain **OPEN**. They require a separate RX1 phase audit if pursued. An angular starting orientation is absorbable; this step-boundary phase is not.
+**Phase caveat found in review:** removing the 20 equal-motion clock rows means removing them from this two-motion design, not declaring all of them excluded on K4. R87 used `s_i=d*floor(i/n)` without a boundary phase. Only eight removed clock rows (128 contact-pair labels) have r=0 and fall within that tested schedule. The other 12 rows (192 contact-pair labels) reduce to phase-shifted single-rotor schedules and remain **OPEN**. They require a separate RX1 phase audit if pursued. An angular starting orientation is absorbable; this step-boundary phase is not. These 192 labels concern n<=4 only. Extending nonzero boundary phases through n=96 gives 145,920 labels, a different domain. With arbitrary phase, even n>=97 can put one step inside the 97-letter window; the old zero-phase monoalphabetic shortcut does not settle that domain.
 
 ### Worked example, five-symbol toy alphabet
 
@@ -125,17 +125,38 @@ This execution took 0.251 seconds under a 180-second wall / 120-second CPU / 512
 
 ## 5. Executable bounds for the next experiment
 
-These are complete proposed bounds for a future registration, not permission to skip G0–G4 or a claim that a blind solver is implemented. The present closeout stops after design and synthetic mathematical validation.
+These are proposed bounds for a future registration, not permission to skip G0–G4 or a claim that a blind solver is implemented. The present closeout stops after design and synthetic mathematical validation. The active work order is [audit/NEXT_STEPS.md](../../NEXT_STEPS.md).
+
+**Prospective review refinement, 21 November 2026:** the original four n-strata pooled different turnover regimes, including a stationary slow rotor. Before any formal rotor holdout exists, replace that proposal with eight cells of 20 controls (160 total):
+
+| n | h | Slow-rotor turnovers in 97 positions |
+| --- | --- | ---: |
+| 1 | 0–7 / 8–25 | 3 / 4 |
+| 2 | 0–3 / 4–25 | 1 / 2 |
+| 3 | 0–19 / 20–25 | 1 / 2 |
+| 4 | 0–1 / 2–25 | 0 / 1 |
+
+Each slash separates two distinct acceptance cells. Within each cell use every direction pair five times, every contact pair at least once with four prespecified repeats, and balanced boundary phases (n=3 uses 7/7/6). Spread turnover locations across their available range. This is marginal balancing of a sampled distribution, not full factorial power over all 16,640 labels.
+
+Freeze top-ranked recovery as the primary metric; any-of-eight candidate recall and exact 97/97 are separate diagnostics. A full forward witness is required, but it does not prove recovery of the builder's raw wiring decomposition. Unused contacts, algebraic gauges and identical schedules are not uniquely identifiable. In the n=4/no-turnover cell, d2 and h=0 versus 1 have no distinguishable effect; a static arbitrary W2 can also absorb output-alphabet relabelings. The reference evaluator must define operational behavioral-equivalence rules before registration.
+
+The wrong-family panel also needs an overlap rule: W2=identity embeds the corresponding n<=4 single-rotor functions inside RX2-O. Correct plaintext recovery from such a control is overlap or cross-family recovery, not automatically a false positive. Grade confident wrong plaintexts and unsupported exclusive-family claims as errors, permit a frozen ambiguous/abstention label, and report negative and overlap denominators separately. Freeze all panel definitions before generation, with no performance-based relabeling.
+
+These changes affect only the prospective gate. The executed synthetic proof tests and their frozen records are unchanged; no rotor K4 test has been run.
 
 | Stage | Fixed scope | Hard cap | Stop / interpretation |
 | --- | --- | --- | --- |
-| Solver engineering | RX2-O first; 16,640 structural settings; choose and freeze a candidate-retention rule and scoring model on spent text only | 1,800 wall seconds, 1,800 CPU seconds, 2,048 MB aggregate RSS per development job; at most 3 declared development versions | A prototype that cannot recover planted truths stays SOLVER_NO_POWER; no K4 |
-| Necessary power screen | True structural setting supplied; two wirings and 97-letter fresh text hidden; 20 plants in each n=1,2,3,4 stratum; represent slow-turnover cases in all strata and no-turnover cases where available (n=4) | 1,800 wall / 1,800 CPU seconds / 2,048 MB; one frozen solver attempt | Require at least 18/20 >=95 letters and consistent observed-contact keys per stratum; exact 97 separately reported; failure rejects that solver attempt |
-| Full unknown-method gate | Search the full proposed catalog for every input; 20 fresh plants per accepted structural stratum; 200 wrong-family controls including R87/R89 single rotors, autokey, tableaux and shuffled texts | 3,600 wall / 7,200 CPU seconds / 4,096 MB; at most 2 workers, 8 retained candidates per input, zero reruns on revealed holdout | Require >=18/20 correct method-equivalence class and >=95/97 text per stratum, zero confident wrong-family controls; freeze candidates before truth; otherwise NO-GO |
+| Solver engineering | RX2-O first; 16,640 structural settings; choose and freeze a candidate-retention rule and scoring model on spent text only | At most 3 declared versions; all computation jobs within each version share a cumulative 1,800 wall / 1,800 CPU-second budget and a 2,048 MiB aggregate RSS ceiling | Completed poor-recovery benchmarks are development no-power evidence; exhausted or invalid jobs are INCOMPLETE; stop after version 3 without a viable prototype; no K4 |
+| Necessary power screen | True structural setting supplied; two wirings and 97-letter fresh text hidden; 20 plants in each of the eight turnover cells above: 160 total | 1,800 wall / 1,800 CPU seconds / 2,048 MiB; one frozen solver attempt, zero retries | Require at least 18/20 top-ranked >=95/97-letter recoveries with valid complete forward witnesses per cell; exact 97, behavioral key equivalence and candidate recall separately reported; failure rejects that attempt |
+| Full unknown-method gate | Search all 16,640 O labels for every input; 160 different fresh plants in the eight cells plus 200 challenge controls, with negative/overlap panels fixed in advance | 3,600 wall / 7,200 CPU seconds / 4,096 MiB; at most 2 workers, 8 retained candidates per input, zero reruns on revealed holdout | Require >=18/20 confident top-ranked >=95/97 text recoveries with full witnesses per cell and zero confident control errors under the frozen overlap/equivalence rule; abstaining on all inputs cannot pass; freeze candidates before truth; otherwise NO-GO |
 | Blind target experiment, only after gate GO | One unchanged K4 ciphertext + 200 shuffles, identical complete search and retention for every input | Same 3,600 wall / 7,200 CPU seconds / 4,096 MB, at most 8 retained outputs per input | Commit and push all outputs and witnesses before published-letter evaluation; maximum-score null calibration over the whole search; no excluded-family claim from NO_SIGNAL |
 | Separate post-freeze exact audit | At most 22,720 structural settings x 201 inputs = 4,566,720 base feasibility calls; no decoded plaintext output | 1,800 wall / 1,800 CPU seconds / 2,048 MB; 10,000 nodes per call and 20,000,000 nodes over the entire job | UNKNOWN is not UNSAT. If adding single-error relaxations, register their exact call count and budget separately before execution |
 
-The final experiment registration must add actual immutable source/model hashes, fresh corpus hashes and sampling seeds, compiler/runtime details, numeric acceptance/abstention score cuts, and a measured throughput forecast. Those values cannot be honestly filled in before a blind solver exists. This document supplies finite engineering and execution boundaries; it does not fabricate solver readiness.
+For every stage, resource exhaustion or failed isolation, integrity or witness checks is INCOMPLETE. Only a completed, valid formal run below its recovery/confidence bar is NO-GO. Development evidence is labeled as such and is never a formal gate verdict.
+
+The final experiment registration must add actual immutable source/model hashes, fresh corpus hashes and sampling seeds, compiler/runtime details, numeric acceptance/abstention score cuts, the operational key-equivalence/control-overlap evaluator, and a measured throughput forecast. Those values cannot be honestly filled in before a blind solver exists. This document supplies finite engineering and execution boundaries; it does not fabricate solver readiness.
+
+The full 360-input O gate represents 5,990,400 labeled structural branches before within-branch search, allowing about 1.20 CPU milliseconds per branch on average under the cap. It permits at most 2,880 retained candidate records. The 201-input target stage represents 3,344,640 O branches. Any ciphertext-only pruning and its effect on recovery must be developed and frozen before the gate and applied identically to every control/target. Passing the easier supplied-structure screen establishes neither that throughput nor full-search power.
 
 The prospective blind score is a whole-pipeline maximum: every null must undergo the same structural search and pruning. With 200 shuffles, the smallest add-one empirical p-value is 1/201. Do not treat one chosen structural row as a separate uncorrected test. A recovered wiring must re-encrypt the full 97-symbol output, but unobserved wiring contacts and algebraic gauges must be compared by induced behavior, not raw arrays.
 
