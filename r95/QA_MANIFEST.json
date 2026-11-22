@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "preregistered_development",
+  "stage": "preregistered",
   "hypothesis": "One fixed rebuilt K5 objective has at most2 of48 spent RX2-O cases with any legal one-swap neighbor below95 matches scoring above the truth; baseline lower4 is reported separately. No K4 hypothesis is tested.",
   "not_excluded": "Every K4 method, every cipher family, arbitrary wrong keys beyond the finite neighborhood, other scores, unknown-key recovery, language masking and fresh-source or wrong-family performance.",
   "preregistration_path": "r95/PREREGISTRATION.md",
