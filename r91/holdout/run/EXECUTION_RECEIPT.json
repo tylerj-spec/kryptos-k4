@@ -1,0 +1,55 @@
+{
+  "all_public_forward_witnesses": 600,
+  "candidate_attempts_per_arm": 1,
+  "candidate_rows": {
+    "PTAK_R68": 240,
+    "R82_LINKED": 360
+  },
+  "compiled_binary_hashes": "r91/holdout/run/BUILD_RECEIPT.json",
+  "gate_accuracy_evaluated": false,
+  "independent_model_execution_review": "NONE",
+  "preregistration_commit": "61affb205c85509d713951bfe58fc4a6ee85ef84",
+  "private_truth_read": false,
+  "public_input_commit": "552022dbe551181da96a525d8afbbedb38c79a94",
+  "resources": {
+    "PREPARATION_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 0.1,
+      "cpu_seconds": 0.053,
+      "status": "COMPLETE",
+      "wall_seconds": 0.252
+    },
+    "PTAK_BUILD_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 246.9,
+      "cpu_seconds": 3.668,
+      "status": "COMPLETE",
+      "wall_seconds": 3.763
+    },
+    "PTAK_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 3.7,
+      "cpu_seconds": 7.342,
+      "status": "COMPLETE",
+      "wall_seconds": 7.523
+    },
+    "R82_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 24.8,
+      "cpu_seconds": 11.565,
+      "status": "COMPLETE",
+      "wall_seconds": 10.774
+    },
+    "SECCOMP_BUILD_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 1.8,
+      "cpu_seconds": 0.314,
+      "status": "COMPLETE",
+      "wall_seconds": 0.503
+    },
+    "WITNESS_RESOURCE_LOG": {
+      "aggregate_peak_rss_mb": 0.1,
+      "cpu_seconds": 0.069,
+      "status": "COMPLETE",
+      "wall_seconds": 0.252
+    }
+  },
+  "seccomp_file_and_network_denial_probes": "Enforced by each pinned candidate kernel before searching; nonzero probe result would abort. Both kernels exited0.",
+  "source_commit": "e9ee84906a4680cdf1b5a43dcd40a03fc46e9b22",
+  "stage": "Complete candidate outputs ready for publication; private truth has not been opened"
+}

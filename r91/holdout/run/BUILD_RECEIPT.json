@@ -1,0 +1,42 @@
+{
+  "source_commit": "e9ee84906a4680cdf1b5a43dcd40a03fc46e9b22",
+  "public_input_commit": "552022dbe551181da96a525d8afbbedb38c79a94",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "r91/ptak_r68_screen.cpp",
+      "-o",
+      "r91/ptak_r68_screen"
+    ],
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-shared",
+      "-fPIC",
+      "r91/seccomp_io.cpp",
+      "-o",
+      "r91/seccomp_io.so"
+    ]
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "binaries": {
+    "r91/ptak_r68_screen": {
+      "sha256": "7c72460c2d84c89bd4cdff0ec8970d5447059fa94f5e49299c8c79b162378563",
+      "bytes": 70120
+    },
+    "r91/seccomp_io.so": {
+      "sha256": "fa9717644c0fbdc28e99dbcb0ec1a39e02c918e045360af0a4604145f3beb03c",
+      "bytes": 16136
+    }
+  },
+  "binary_storage": "Hashes of local compiled binaries recorded here; binaries need not be committed and are not referenced as file entries in FROZEN.sha256.",
+  "sources_and_inputs_verified": true,
+  "private_truth_read": false
+}

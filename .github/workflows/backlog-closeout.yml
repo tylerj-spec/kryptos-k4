@@ -1,0 +1,42 @@
+name: Backlog closeout evidence (R32 R41 R90 R91 RX2)
+
+on:
+  pull_request:
+    paths:
+      - "audit/backlog/**"
+      - "r41/audit/backlog_closeout/**"
+      - "r90/audit/independent_closeout/**"
+      - "r91/**"
+      - ".github/workflows/backlog-closeout.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-and-saved-outcomes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install numpy
+      - name: Synthetic rotor proof challenges
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest audit/backlog/multirotor/BUDGET.json --log /tmp/rx2-test-resource.json -- python3 -I audit/backlog/multirotor/test_synthetic.py /tmp/rx2-test.json
+          python3 -I audit/run_bounded_agg.py --manifest audit/backlog/multirotor/BUDGET.json --log /tmp/rx2-review-resource.json -- python3 -I audit/backlog/multirotor/internal_review_checks.py /tmp/rx2-review.json
+      - name: Independent R32 full recount
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest audit/backlog/r32/BUDGET.json --log /tmp/r32-resource.json -- python3 -I audit/backlog/r32/run_targets.py --round 32 --binary /tmp/k4-history-kernel --carter r34/carter_az.txt --out /tmp/r32-replay.json --plan-commit dea5bb84ec983b3d7fc978e11efeebe7f0fd72df --code-commit b23e1bcc12119707fb699d81ae6d71c63ce0c376
+          python3 -c "import json; a=json.load(open('/tmp/r32-replay.json')); b=json.load(open('audit/backlog/r32/REPLAY.json')); assert all(a['jobs'][k]['histogram']==b['jobs'][k]['histogram'] for k in b['jobs']); assert a['total_settings']==b['total_settings']"
+      - name: Independent R41 complete feasibility
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest r41/audit/backlog_closeout/BUDGET.json --log /tmp/r41-resource.json -- python3 -I audit/backlog/r32/run_targets.py --round 41 --binary /tmp/k4-history-kernel --carter r34/carter_az.txt --out /tmp/r41-replay.json --plan-commit dea5bb84ec983b3d7fc978e11efeebe7f0fd72df --code-commit b23e1bcc12119707fb699d81ae6d71c63ce0c376
+          python3 -c "import json; a=json.load(open('/tmp/r41-replay.json')); b=json.load(open('r41/audit/backlog_closeout/REPLAY.json')); assert all((a['jobs'][k][p]['settings'],a['jobs'][k][p]['consistent'])==(b['jobs'][k][p]['settings'],b['jobs'][k][p]['consistent']) for k in b['jobs'] for p in b['jobs'][k]); assert a['total_labeled_settings']==b['total_labeled_settings']"
+      - name: R90 independent exact and saved-output audit
+        run: python3 -I audit/run_bounded_agg.py --manifest r90/QA_MANIFEST.json --log /tmp/r90-independent-resource.json -- python3 -I r90/audit/independent_closeout/review_r90.py . /tmp/r90-independent-results
+      - name: R91 post-freeze synthetic result audit
+        run: python3 -I audit/run_bounded_agg.py --manifest r91/QA_MANIFEST.json --log /tmp/r91-result-resource.json -- python3 -I audit/backlog/verify_r91_result.py . /tmp/r91-independent-result.json

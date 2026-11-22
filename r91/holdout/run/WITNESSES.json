@@ -1,0 +1,13 @@
+{
+  "all_forward_witnesses_pass": true,
+  "ptak_witnesses": 240,
+  "r82_witnesses": 360,
+  "references": "Independent scalar reference.py, not either solver's internal decryption",
+  "scope": "Public ciphertext, structural settings and saved keys/plaintexts only; no truth opened",
+  "sha256": {
+    "holdout/PTAK_INPUT.jsonl": "ae24f05cef2811de2a998f873159daafcbfbc10548b667467a507f6736b7b2f6",
+    "holdout/R82_INPUT.jsonl": "88c1da9b90412b945ea2b0fa8ba766d7e492ce3a497755f8e6d71b8d12c50b36",
+    "holdout/run/PTAK_OUTPUT.jsonl": "347ca15c1dd802ebdfbba2570f60d89d7b975023f176efa1b47b2d3de411ac5a",
+    "holdout/run/R82_OUTPUT.jsonl": "45e7c23d1097f1706b2fc8bb329442812604b38260f79779a4b39567eee65dd4"
+  }
+}
