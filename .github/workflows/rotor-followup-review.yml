@@ -1,0 +1,34 @@
+name: R92-R94 saved-evidence review
+
+on:
+  pull_request:
+    paths:
+      - "r92/audit/independent_review/**"
+      - "r93/**"
+      - "r94/**"
+      - "audit/rotor_followup/**"
+      - ".github/workflows/rotor-followup-review.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-evidence-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reproduce the independent R92 audit
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest r92/audit/independent_review/BUDGET.json --log /tmp/r92-independent-resource.json -- python3 -I r92/audit/independent_review/review92.py audit --publication-commit 567f418961cc18847207008468679115074f4c93 --out audit/rotor_followup/CI_R92_REPLAY.json
+          cmp audit/rotor_followup/CI_R92_REPLAY.json r92/audit/independent_review/REVIEW_RESULTS.json
+      - name: Reproduce postrun artifact, witness, score and count review
+        # Saved-evidence verification only: no R93 target scan or R94 optimizer.
+        run: |
+          python3 -I audit/run_bounded_agg.py --manifest audit/rotor_followup/BUDGET.json --log /tmp/rotor-postrun-resource.json -- python3 -I audit/rotor_followup/check_postrun.py --source-commit 3e781d57994a617610db943ea57438759dc6b4ce --r93-gate-commit 2621a5e0d64fe787c498cc765f7ee14dd78af1ee --r93-freeze-commit 542165b77806917d17dd4f3f8314685fd2d1e55a --r94-freeze-commit 542165b77806917d17dd4f3f8314685fd2d1e55a --out /tmp/rotor-postrun-review.json
+          cmp /tmp/rotor-postrun-review.json audit/rotor_followup/REVIEW_RESULTS.json

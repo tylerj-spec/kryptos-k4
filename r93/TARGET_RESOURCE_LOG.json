@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 6.273,
+  "max_rss_mb": 94.5,
+  "aggregate_peak_rss_mb": 94.5,
+  "per_process_peak_rss_mb": 81.3,
+  "cpu_seconds": 7.972,
+  "samples": 25,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 512,
+    "max_cpu_seconds": 1200
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "r93/run_target93.py",
+    "--source-commit",
+    "3e781d57994a617610db943ea57438759dc6b4ce",
+    "--gate-commit",
+    "2621a5e0d64fe787c498cc765f7ee14dd78af1ee",
+    "--binary",
+    "/tmp/r93-target-checker",
+    "--out-dir",
+    "r93/k4"
+  ]
+}

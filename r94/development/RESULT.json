@@ -1,0 +1,127 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC",
+  "bounded_solver_outcome": "SOLVER_NO_POWER",
+  "unknown_two_wiring": {
+    "A": {
+      "cases": 48,
+      "top1_ge95": 0,
+      "top1_exact": 0,
+      "any_retained_ge95": 0,
+      "any_final_state_ge95": 0,
+      "maximum_top1_matches": 13,
+      "maximum_final_state_matches": 23,
+      "median_top1_matches": 8.0
+    },
+    "B": {
+      "cases": 48,
+      "top1_ge95": 0,
+      "top1_exact": 0,
+      "any_retained_ge95": 0,
+      "any_final_state_ge95": 0,
+      "maximum_top1_matches": 19,
+      "maximum_final_state_matches": 19,
+      "median_top1_matches": 6.0
+    }
+  },
+  "truth_assisted_diagnostic": {
+    "true_U": {
+      "A": {
+        "cases": 48,
+        "ge95": 0,
+        "exact": 0,
+        "median_matches": 49.0,
+        "max_matches": 65,
+        "wrong_text_above_true_lm4": 0,
+        "true_lm4_above_found": 48
+      },
+      "B": {
+        "cases": 48,
+        "ge95": 0,
+        "exact": 0,
+        "median_matches": 51.5,
+        "max_matches": 94,
+        "wrong_text_above_true_lm4": 6,
+        "true_lm4_above_found": 42
+      }
+    },
+    "true_V": {
+      "A": {
+        "cases": 48,
+        "ge95": 0,
+        "exact": 0,
+        "median_matches": 43.0,
+        "max_matches": 72,
+        "wrong_text_above_true_lm4": 0,
+        "true_lm4_above_found": 48
+      },
+      "B": {
+        "cases": 48,
+        "ge95": 0,
+        "exact": 0,
+        "median_matches": 45.5,
+        "max_matches": 93,
+        "wrong_text_above_true_lm4": 3,
+        "true_lm4_above_found": 45
+      }
+    },
+    "true_key_neighborhood": {
+      "cases": 48,
+      "neighbors_evaluated": 31200,
+      "cases_with_wrong_text_above_true": 39
+    }
+  },
+  "phases": {
+    "mathematical_checks": {
+      "wall_seconds": 0.030640029999972285,
+      "cpu_seconds": 0.030637601000000014,
+      "cap_wall_and_cpu_seconds": 60,
+      "status": "COMPLETE"
+    },
+    "A": {
+      "wall_seconds": 0.34290186800001266,
+      "cpu_seconds": 0.34272062300000006,
+      "cap_wall_and_cpu_seconds": 300,
+      "status": "COMPLETE"
+    },
+    "B": {
+      "wall_seconds": 4.635235474000069,
+      "cpu_seconds": 4.634602317000001,
+      "cap_wall_and_cpu_seconds": 900,
+      "status": "COMPLETE"
+    },
+    "diagnostics_and_archive_replay": {
+      "wall_seconds": 1.0002554080000436,
+      "cpu_seconds": 1.0002187029999998,
+      "cap_wall_and_cpu_seconds": 300,
+      "status": "COMPLETE"
+    }
+  },
+  "input_receipt": {
+    "source_commit": "9e4bd400e64c6aa46ae3afdc9ba0d82a1a927fd1",
+    "panel_source": "audit/backlog/multirotor/solver/dev/panel/PANEL.tsv",
+    "truth_source": "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+    "reference_source": "audit/backlog/multirotor/solver/rx2o.py",
+    "copies_are_byte_identical": true,
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "model_path": "r91/R59_LOWER4_FROM_K5.bin",
+    "model_sha256": "85b4adf264619a12c9ed646c7d4fc952ef76025db67dd96f2b668ea1e1cf1f41",
+    "model_provenance_receipt": "r91/MODEL_RECEIPT.json",
+    "frequency_source": "r91/vendor/r82/pairwise_pilot.py: FREQ",
+    "inputs": {
+      "r94/inputs/PANEL.tsv": "9b3ed6b49d437d4289f2a1126dd79b61ed7158b0e35b408bb39b1409aab8786c",
+      "r94/inputs/PANEL_TRUTH.json": "27aecaf0aa2050e12d0d05e6c2ccc84b0598acd170e3e47f8667718732cf6ebf"
+    }
+  },
+  "unknown_outputs_before_truth": {
+    "A": "2d718e0dd36393f07da5a169911965998a354fb0949ec86dbd1d3c3889c0a136",
+    "B": "c984e830b5b1c29d191bb9e95bef67d031f0d6326479f21674db111ea9360ec2"
+  },
+  "k4_authorized": false,
+  "formal_gate_pass": false,
+  "new_holdout": false,
+  "negative_control_count": 0,
+  "original_lm5_or_lm6_replayed": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "conditional_assignment_exhaustive": 24,
+  "cycle_parameterization": 54,
+  "reference_roundtrip": 24,
+  "lm4_scalar_batch": 24,
+  "replacement_objectives": 144
+}

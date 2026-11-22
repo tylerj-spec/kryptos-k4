@@ -1,0 +1,11 @@
+{
+  "resource_budget": {
+    "max_wall_seconds": 300,
+    "max_cpu_seconds": 180,
+    "max_ram_mb": 1024,
+    "max_retries": 0
+  },
+  "mode": "POSTFREEZE_CRIB_ASSISTED_AGGREGATE_AUDIT",
+  "logical_exact_and_single_deletion_decisions": 1608000,
+  "new_decoded_candidates": 0
+}

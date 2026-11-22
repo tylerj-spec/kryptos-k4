@@ -1,3 +1,124 @@
+# Current K4 research status — 22 November 2026 (America/Chicago)
+
+**No independently verified K4 solution. All three requested follow-ups are complete.**
+The exact single-rotor record is stronger; the tested structural two-rotor
+procedures remain unable to recover the practice texts.
+
+| Follow-up | Completed result | Evidence |
+| --- | --- | --- |
+| Independent R92 review | PASS. L181's finite exact exclusion independently verified, plus the registered 128 zero-phase labels through n=4; all 320 labels fail EXACT and every single-observation omission on 201 frozen inputs | `r92/audit/independent_review/REVIEW.md`, `audit/reviews/R92_INDEPENDENT_REVIEW.md` |
+| Wider timing audit R93 | EXACT_SCOPE_EXCL for all 145,728 registered n=5..96 nonzero-phase labels, with any wiring, at all 24 observations or with any one omitted. K4 and all 200 shuffles have zero compatibility. Independent-model review NONE | `r93/RESULT.md`, L182 |
+| Structural two-rotor development R94 | COMPLETE_DIAGNOSTIC / SOLVER_NO_POWER: A and B each 0/48 at >=95 letters, including all saved finals. Both one-true-wiring conditions also 0/48. Cipher family OPEN; no K4 run | `r94/RESULT.md`, L183 |
+
+## What the review establishes
+
+The completed postrun checker verifies 74 artifact hashes, R93's source/gate/
+freeze chronology and aggregate arithmetic, and R94's 999 new states, scalar
+scores and witnesses, 31,200 true-key neighbors, 1,920 historical final-restart
+witnesses, 768 ranked witnesses and 17 historical resource logs. It passed in
+3.256 seconds wall/3.204 aggregate CPU with 29.2 MiB sampled aggregate RSS.
+This is internal same-model review; it does not promote R93/R94 to
+independently reviewed results or independently regenerate R93's full scan.
+The signed review is `audit/rotor_followup/REVIEW.md`.
+
+R92's saved gate is 47/48 at >=95/97, with 44/48 exact and 44/48 used-contact key
+agreement. Its blind result remains NO_SIGNAL (50/200 shuffles at least as
+high; add-one 51/201). Original optimizer/full-model rescoring and raw-book
+freshness were not independently certified. The disclosed development overrun
+remains a deviation.
+
+R93 completes the recorded phase coverage of the same position-only single
+rotor through period 96 when combined with R87/R92: 148,992 labeled settings.
+That combined accounting does not independently review the remaining R87
+results. The corrected deferred count was 145,728, not 145,920. Other alphabets,
+stepping laws, multi-rotor constructions and wider error/alignment models
+remain outside these exclusions.
+
+R94 provides evidence against its order-four objective as well as its search:
+39/48 true keys have a higher-scoring wrong local neighbor; 25 saved best
+counterexamples fall below the >=95 recovery threshold. Even with one true
+wiring supplied, the conditional searches have no >=95 recovery. The registered
+finite loops reached their stopping conditions; their unused resource ceilings
+do not authorize extra attempts.
+
+## Next decisions
+
+The active decision order is `audit/reviews/NEXT_STEPS_AFTER_R94.md`:
+
+1. Obtain a different-model R93 exact review before promoting L182.
+2. Require improved scoring and conditional recovery before another joint
+   two-rotor search; any new method needs a separate frozen work order and
+   fresh full-pipeline gate before K4.
+3. Keep the unchanged R82/PTAK procedures and the completed RX2-O/R94 work
+   orders parked. Avoid re-enumerating already-covered rotor labels.
+
+The earlier R32/R41 replays, R90 independent review, R82/PTAK screens and
+multi-rotor design work remain closed at their documented scopes
+(`audit/backlog/CLOSEOUT.md`). Frozen work orders and original evidence remain
+unchanged; scope/reporting corrections are additive.
+
+The user explicitly approved the source and registered-result publication.
+Source, gate and complete result freezes were published in order before their
+dependent stages. Automatic publication-review blocks were resolved through
+the recorded approval/provenance review; no alternate upload route was used.
+The source/gate/result commits are 3e781d5, 2621a5e and 542165b. Current outcomes
+supersede the historical pending-approval and unrun snapshots below.
+
+## Historical status snapshots
+
+The following sections are preserved as records of earlier stages. Their
+pending/open-task language and earlier work-order priorities are historical.
+
+# Current follow-up status — 21 November 2026 (America/Chicago)
+
+**No independently verified K4 solution.** The R92 independent audit is complete.
+The R93 wider timing audit and R94 structural two-rotor work are registered and
+source-reviewed, but their formal runs have **not started**.
+
+This is the prepared follow-up branch status. PR #104 remains the merged
+baseline at `9e4bd400e64c6aa46ae3afdc9ba0d82a1a927fd1`; the new source/result
+bundle and the ledger promotion below await publication approval and merge.
+
+| Requested follow-up | Current outcome | Evidence |
+| --- | --- | --- |
+| Independent R92 review | PASS for the finite exact exclusion; L181 promotion prepared. All 192 R92 labels plus 128 registered R87 zero-phase labels through n=4 independently replayed on 201 frozen inputs; every exact and single-deletion result is zero | `r92/audit/independent_review/REVIEW.md`, `audit/reviews/R92_INDEPENDENT_REVIEW.md` |
+| Wider timing range | R93 registered, source reviewed, NOT RUN. Correct remaining domain: 145,728 labeled settings, n=5..96 and nonzero boundary phases. Exact-checker correctness gate must pass and be published before the aggregate-only target audit | `r93/PREREGISTRATION.md`, `r93/MODE_CLARIFICATION.md`, `r93/EXECUTION_HANDOFF.md` |
+| New structural two-rotor work | R94 registered, source reviewed, NOT RUN. Two finite versions on the existing spent 48-case panel, followed by explicitly labeled conditional diagnostics; no K4 authorization or fresh gate | `r94/WORK_ORDER.md`, `r94/audit/STATIC_SOURCE_REVIEW.md`, `r94/EXECUTION_HANDOFF.md` |
+
+## Findings and active limits
+
+R92's recorded recovery is 47/48 at >=95/97 letters, including 44/48 exact
+texts and 44/48 used-contact key agreements. Its retained blind pipeline remains
+NO_SIGNAL (50/200 shuffles at least as high; add-one 51/201). The independent
+audit checked all 2,015 saved candidate witnesses, but did not rerun the original
+optimization or full letter-model rescoring. The original development overrun
+remains disclosed.
+
+RX2-O with identity second wiring includes the phased single rotor, and distinct
+clock schedules need not represent disjoint functions. The old v3 experiment
+shows truth above its retained final states in 47/48 cases, not a global score
+optimum. These corrections are additive; frozen original evidence is unchanged.
+
+The prior R32/R41 replays, R90 review, R82/PTAK screens and multi-rotor designs
+remain closed at the scopes recorded in the previous closeout. R82 and unchanged
+PTAK remain parked. The superseded three-version RX2-O work order is complete.
+R94 is the separately registered structural development attempt.
+
+Automatic approval review has rejected publication of the new bundle as
+potential sensitive egress. Repository/PR metadata and public blob checks
+establish the destination and the already-public origin of copied practice
+plaintexts/test keys; the rejection nevertheless requires explicit approval of
+the exact public payload. No alternate publication route was used. R93/R94
+execution remains paused because their registrations require source publication
+first. See `audit/reviews/PUBLICATION_PROVENANCE_R92_R94.md` for the concrete
+inventory and provenance.
+
+## Historical status snapshots from main
+
+The following sections are preserved as historical records. Their open-task
+lists and current-work-order language are superseded by the table above.
+The original UTC-dated headings are retained.
+
 # Current K4 research status — 22 November 2026 update
 
 **No independently verified K4 solution.** On 22 November (Claude Code, PR for branch `claude/zen-clarke-s6fwj5`),

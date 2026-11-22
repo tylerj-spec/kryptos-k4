@@ -1,0 +1,245 @@
+{
+  "adversarial": {
+    "disjoint_conflict_valid_deletions": 0,
+    "lost_update_changed_positions": 90,
+    "lost_update_covered_by_drop": false,
+    "one_conflict_valid_deletions": 2,
+    "receipt": {
+      "input_sha256": "22e244af06fcd645f660a6e86ef5dbf8a73dd2d70eaffc7b6fd251983c6c972d",
+      "output_sha256": "35be322d094f9d154a8aba4733b8497f180353bd7ae7b0a15f90b586b549f28b",
+      "records": 2
+    }
+  },
+  "benchmark": {
+    "aggregate_results": {
+      "SYNTH_0": {
+        "drop_feasible_label_observation_pairs": 0,
+        "drop_feasible_labels": 0,
+        "exact_feasible_labels": 0,
+        "settings": 145728
+      }
+    },
+    "cpu_seconds": 0.032305999999999946,
+    "forecast_multiplier": 402.0,
+    "forecast_startup_seconds": 10,
+    "forecast_target_cpu_seconds": 22.98701199999998,
+    "forecast_target_wall_seconds": 22.94968630003018,
+    "inputs": 1,
+    "receipt": {
+      "bitfield_stream_persisted": false,
+      "bitfield_stream_sha256": "6bd98738bac1952749e1159524424b21869346a6f2dc3dcee7a19ca879a7650a",
+      "count_arithmetic": "Python int",
+      "input_count": 1,
+      "input_sha256": "78a7d31535685888e62b9c8d36dfdaa4f88a32ce46381d312d2b87cf60f4eb51",
+      "labels_per_input": 145728
+    },
+    "scope_settings_per_input": 145728,
+    "wall_seconds": 0.032213150000075075
+  },
+  "blind_recovery_certified": false,
+  "boundary_plants": {
+    "by_period": {
+      "5": 96,
+      "96": 96
+    },
+    "false_exclusions": 0,
+    "forward_inverse_roundtrips": 384,
+    "observed_ciphertext_dropout_checks": 192,
+    "outside_observations_exact_checks": 192,
+    "parameter_plants": 192,
+    "plaintext_reencrypt_single_position_checks": 192,
+    "receipt": {
+      "input_sha256": "b643ec1997df650dc904003f040b092c6b3f5a4969465d8082a1366a679949f0",
+      "output_sha256": "cdbee8cb47e4f81655810b6ac696da561f63bb901027ab13729e4854fed11e0a",
+      "records": 960
+    },
+    "setting_checks": 960,
+    "text_types": {
+      "0": 64,
+      "1": 64,
+      "2": 64
+    },
+    "wrong_plaintext_dropout_checks": 192
+  },
+  "build": {
+    "binary_sha256": "1d4822bc1609160dff02a5baad52320f927e38bfbdd836fed79eb6ab6de3487f",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "source_sha256": "b8e43b14543cb899726e17910016ef34219d2ff2b4f21adbb66c7602d519d21d"
+  },
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "gate_verdict": "DEVELOPMENT_ONLY",
+  "scope": {
+    "affine_contact_relations": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        1,
+        0
+      ]
+    ],
+    "all_n2_n96_nonzero_phase_labels": 145920,
+    "claim": "Labeled parameter counts, not independent cipher families or statistical trials.",
+    "clock_labels": 9108,
+    "clock_multiplicity_histogram": {
+      "1": 4504,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 4,
+      "32": 4,
+      "33": 4,
+      "34": 4,
+      "35": 4,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 4,
+      "46": 4,
+      "47": 4,
+      "48": 2
+    },
+    "distinct_clock_contact_labels": 75040,
+    "distinct_clock_sequences": 4690,
+    "largest_clock_multiplicity": 48,
+    "logical_exact_and_delete_tests_201_inputs": 732283200,
+    "primary_base_calls_201_inputs": 29291328,
+    "r87_zero_phase_shared_clock_contact_labels": 1504,
+    "r87_zero_phase_shared_clocks": 94,
+    "r92_n2_n4_labels": 192,
+    "r92_shared_clocks": 0,
+    "raw_labels_equivalent_to_r87_clocks": 36096,
+    "registered_labels": 145728,
+    "remaining_distinct_clock_contact_labels": 73536,
+    "scope": {
+      "contact_pairs": 16,
+      "directions": [
+        -1,
+        1
+      ],
+      "length": 97,
+      "n_max": 96,
+      "n_min": 5,
+      "phase": "1..n-1"
+    }
+  },
+  "source_commit": null,
+  "sources": {
+    "reference93.py": "909eca37a15db831ce4b1be566c7ed575cdd82c56d2826abe2ee123a26d5a850",
+    "runner93.py": "2b0631afcc6620cc18b1bd0b6f4d066369dbc8192c7ba34f48a08d9454a67f95",
+    "scope93.py": "2183055a4b1d747185d71dae4fc8da17954eea2316ebcbd7c16ea240c298ac50",
+    "validate93.py": "2fd1cffd63b278a846dfbca51faa636e3237cffb7f6835b1238a65f9a2b92204"
+  },
+  "status": "COMPLETE",
+  "synthetic_only": true,
+  "toy_oracle": {
+    "cases": 485,
+    "false_exclusions": 0,
+    "false_feasibilities": 0,
+    "omission_mask_disagreements": 0,
+    "receipt": {
+      "input_sha256": "7d05b6bd1eb3f9728b94a1874267f22dbfe0eef4365665bb0b652ecc240b7b21",
+      "output_sha256": "28c705db525aa3e9633ef3ab5225a73da52cf32cf022eb591f6c5d1a728f24d7",
+      "records": 485
+    },
+    "strata": {
+      "2": {
+        "cases": 180,
+        "max_observations": 6
+      },
+      "3": {
+        "cases": 169,
+        "max_observations": 5
+      },
+      "4": {
+        "cases": 136,
+        "max_observations": 4
+      }
+    }
+  },
+  "worked_example": {
+    "ciphertext_indices": [
+      2,
+      3,
+      0,
+      2,
+      1,
+      4,
+      0,
+      4,
+      1
+    ],
+    "plaintext_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      0,
+      1,
+      2,
+      3
+    ],
+    "receipt": {
+      "input_sha256": "2ff85c5fb2e37feed9797c823c62613316246f6feffd65b058c20d21a8275d86",
+      "output_sha256": "bddc2e22f5a03066dedb6af55f4d7695528d719cea2a8605fccbaf5e07c725a9",
+      "records": 1
+    }
+  }
+}

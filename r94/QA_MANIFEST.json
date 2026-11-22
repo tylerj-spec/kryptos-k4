@@ -1,0 +1,40 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "On the existing spent synthetic 48-case RX2-O panel with supplied structure, exact conditional unigram assignment and a fixed order-4 structured refinement produce auditable unknown-two-wiring outcomes; separate true-one-wiring diagnostics locate score and optimization failures. No K4 hypothesis is tested.",
+  "not_excluded": "Every cipher family, every K4 hypothesis, alternative solvers or budgets, all unknown structural labels, fresh-source generalization, negatives, masking and information-theoretic identifiability. A failure rejects only this finite two-version spent-panel attempt.",
+  "preregistration_path": "r94/PREREGISTRATION.md",
+  "preregistration_commit": "567f418961cc18847207008468679115074f4c93",
+  "preregistration_sha256": "2e1cdfac3c11251d0062763926034a7a2b36a4c786a1773d543ca3f8789a30d4",
+  "solver_inputs": [
+    "r94/inputs/PANEL.tsv",
+    "r91/R59_LOWER4_FROM_K5.bin"
+  ],
+  "diagnostic_inputs": [
+    "r94/inputs/PANEL_TRUTH.json"
+  ],
+  "gate_verdict": "NOT_A_GATE_DEVELOPMENT_ONLY",
+  "k4_run_authorized": false,
+  "new_holdout": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1100,
+    "max_retries": 0
+  },
+  "phase_limits_wall_and_cpu_seconds": {
+    "mathematical_checks": 60,
+    "A": 300,
+    "B": 900,
+    "diagnostics_and_archive_replay": 300
+  },
+  "resource_semantics": "One cumulative audit/run_bounded_agg.py invocation covers all imports, self-checks, both finite versions, diagnostics and reporting. Aggregate sampled process-group RSS and CPU; the same RAM value is a per-process RLIMIT_AS. Internal phase checks cannot reset the global allowance.",
+  "notes": "mode=crib_assisted describes the overall development round because post-output oracle diagnostics deliberately receive public synthetic true wirings. The unknown-two-wiring phase reads no truth and saves/hash-binds both outputs before the truth read. This is ordinary filesystem execution, not a sealed operating-system blind sandbox. Public test keys and plaintexts are not account credentials. No confidence, false-positive rate or formal gate pass is estimated from positive-only spent cases.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r94/PROTOCOL.sha256",
+  "resource_logs": [
+    "r94/RESOURCE_LOG.json"
+  ]
+}

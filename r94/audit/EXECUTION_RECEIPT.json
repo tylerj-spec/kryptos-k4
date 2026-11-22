@@ -1,0 +1,30 @@
+{
+  "checks": "Postrun source/output hash and receipt accounting only; no optimizer rerun.",
+  "coordinator_confirmed_publication_before_invocation": true,
+  "event_order": {
+    "A_file_closed_index": 54,
+    "B_file_closed_index": 106,
+    "os_blind_isolation_claimed": false,
+    "truth_open_index": 108,
+    "unknown_output_hashes_verified": true,
+    "zero_based_indices": true
+  },
+  "independent_execution_review": "NONE",
+  "invocations": 1,
+  "new_saved_states": {
+    "best_neighbor_witnesses": 39,
+    "conditional_versions": 192,
+    "qa_ceiling": 1100,
+    "total": 999,
+    "unknown_versions": 768
+  },
+  "original_order5_or_6_scores_recomputed": false,
+  "output_manifest_sha256": "5e56976da2600d716a85a2e37da60417b1d70ca2cbaba77c401a241aefac23dc",
+  "preregistration_commit": "567f418961cc18847207008468679115074f4c93",
+  "protocol_sha256": "d16853b5c70885897e026a99d2d63f1e655bd12e7bf2c142074b19f7937011b1",
+  "resource_log_sha256": "fbdf9f7beb1d3de6e9b731b3dad171fef30ca2804f36f7e2f95d788da4dbf7e6",
+  "result_sha256": "50e36763864b29d31e55022bef01b5959fd670804b8ee4bc0d6f18ec7e90a4cb",
+  "retries": 0,
+  "source_publication_commit": "3e781d57994a617610db943ea57438759dc6b4ce",
+  "status": "COMPLETE_DIAGNOSTIC"
+}

@@ -1,0 +1,580 @@
+{
+  "v2": {
+    "saved_final_restart_witnesses": 1536,
+    "saved_final_restart_ge95": 0,
+    "maximum_saved_final_restart_matches": 20,
+    "top1_ge95": 0,
+    "any_retained_ge95": 0,
+    "maximum_top1_matches": 15,
+    "raw_sha256": "c765101ef4f3fd6278be19b2f4665d37a3307c0504f8f5af928def7273a03a3a",
+    "ranked_sha256": "fcb3dff14f598c63a5acdea0c6d0774bb6e9371815f8e82b5d7a59955a79db09",
+    "original_order5_or_6_scores_recomputed": false
+  },
+  "v3": {
+    "saved_final_restart_witnesses": 384,
+    "saved_final_restart_ge95": 0,
+    "maximum_saved_final_restart_matches": 18,
+    "top1_ge95": 0,
+    "any_retained_ge95": 0,
+    "maximum_top1_matches": 12,
+    "raw_sha256": "3c75d28659e51edf9e74be32e9452eff99138311ac3dd63ce7a20e4ef5e2d71d",
+    "ranked_sha256": "6975699b48d6a3d2bf54111771d6e6d38f24fcdef8eafce4fb8e54900dff629e",
+    "original_order5_or_6_scores_recomputed": false
+  },
+  "resources": {
+    "versions": {
+      "v1": {
+        "jobs": 4,
+        "wall_seconds": 681.216,
+        "cpu_seconds": 1337.784,
+        "logs": [
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v1/PANEL_RESOURCE_LOG.json",
+            "sha256": "7bf48ee8c9231d0f26b2a21734b6c311aec42ea9ad9860725a5b37920db6ba29",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.253,
+              "max_rss_mb": 3.8,
+              "aggregate_peak_rss_mb": 3.8,
+              "per_process_peak_rss_mb": 23.3,
+              "cpu_seconds": 0.149,
+              "samples": 1,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "rx2o/dev/make_panel.py",
+                "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/books88/Rebecca-of-Sunnybrook-Farm_498.txt,/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/books88/The-Prince-and-the-Pauper_1837.txt,/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/books88/The-Railway-Children_1874.txt,/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/books85/Anne-of-Green-Gables_45.txt",
+                "930300",
+                "rx2o/dev/panel"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v1/RUN_RESOURCE_LOG.json",
+            "sha256": "9137ce1a19baf707e45fcb38cf14fde962ee00e9aaf3514ef559601bd397e2c8",
+            "log": {
+              "status": "INCOMPLETE",
+              "reason": "exit code 1",
+              "exit_code": 1,
+              "wall_seconds": 679.701,
+              "max_rss_mb": 59.2,
+              "aggregate_peak_rss_mb": 59.2,
+              "per_process_peak_rss_mb": 39.6,
+              "cpu_seconds": 1336.537,
+              "samples": 2700,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "rx2o/dev/run_v1.py",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "rx2o/dev/panel/PANEL.tsv",
+                "rx2o/dev/v1/run",
+                "2"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v1/SPEED_RESOURCE_LOG.json",
+            "sha256": "8520c55f0716a9ad5c2826c8355a4513701f10084b4504bdc3d6fae6b949f003",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.755,
+              "max_rss_mb": 18.8,
+              "aggregate_peak_rss_mb": 18.8,
+              "per_process_peak_rss_mb": 20.2,
+              "cpu_seconds": 0.644,
+              "samples": 3,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/speed_v1.py"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v1/TESTS_RESOURCE_LOG.json",
+            "sha256": "cfbd149151f6d894ceabf24bd293d8c522b11e4626cf114e178ead6001f2534b",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.507,
+              "max_rss_mb": 17.1,
+              "aggregate_peak_rss_mb": 17.1,
+              "per_process_peak_rss_mb": 35.0,
+              "cpu_seconds": 0.454,
+              "samples": 2,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "rx2o/tests/test_rx2o.py"
+              ]
+            }
+          }
+        ]
+      },
+      "v2": {
+        "jobs": 7,
+        "wall_seconds": 705.573,
+        "cpu_seconds": 1377.248,
+        "logs": [
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/ANNEAL_RESOURCE_LOG.json",
+            "sha256": "258f7c1cb850588b30e26dd1f3a48eac43d1946274cf574ccf045abda72ffe18",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 699.019,
+              "max_rss_mb": 58.8,
+              "aggregate_peak_rss_mb": 58.8,
+              "per_process_peak_rss_mb": 22.2,
+              "cpu_seconds": 1371.67,
+              "samples": 2776,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v2.py",
+                "anneal",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL.tsv",
+                "audit/backlog/multirotor/solver/dev/v2/run",
+                "2"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/DIAG_RESOURCE_LOG.json",
+            "sha256": "c8b38f5213c452228828fa966b87a51618788cddf04c1a9b066065cb23bec634",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 1.763,
+              "max_rss_mb": 880.0,
+              "aggregate_peak_rss_mb": 880.0,
+              "per_process_peak_rss_mb": 894.3,
+              "cpu_seconds": 1.536,
+              "samples": 7,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/diag_v2.py",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+                "audit/backlog/multirotor/solver/dev/v2/run",
+                "audit/backlog/multirotor/solver/dev/v2/DIAG.json",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/EVAL_RESOURCE_LOG.json",
+            "sha256": "00d69221028f08575b0e1a125e7e03ac1200db2a7c3c855ddaacaf94f8faa9a7",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.253,
+              "max_rss_mb": 1.4,
+              "aggregate_peak_rss_mb": 1.4,
+              "per_process_peak_rss_mb": 15.5,
+              "cpu_seconds": 0.071,
+              "samples": 1,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/eval_v1.py",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+                "audit/backlog/multirotor/solver/dev/v2/run/RESULTS.jsonl",
+                "audit/backlog/multirotor/solver/dev/v2/EVAL.json"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/LMCHECK2_RESOURCE_LOG.json",
+            "sha256": "1fcb32c6ee1a2c05801913fe5bce1fd31b1bf1e9cafc86042cf28cb2ba79cc96",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 1.513,
+              "max_rss_mb": 64.0,
+              "aggregate_peak_rss_mb": 64.0,
+              "per_process_peak_rss_mb": 898.8,
+              "cpu_seconds": 1.315,
+              "samples": 6,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v2.py",
+                "lmcheck",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/dev92/run/RESULTS.jsonl"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/LMCHECK_RESOURCE_LOG.json",
+            "sha256": "a64e40d73f1d9621e596dbbf8337986355cf365f5a34563b54e92222e541f2de",
+            "log": {
+              "status": "INCOMPLETE",
+              "reason": "exit code 1",
+              "exit_code": 1,
+              "wall_seconds": 0.253,
+              "max_rss_mb": 2.8,
+              "aggregate_peak_rss_mb": 2.8,
+              "per_process_peak_rss_mb": 34.3,
+              "cpu_seconds": 0.11,
+              "samples": 1,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v2.py",
+                "lmcheck",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/SCORE_RESOURCE_LOG.json",
+            "sha256": "0d43514c672b99a634661697eea4a38dfca674d22fb16c1727ca7106587cc4d5",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 2.266,
+              "max_rss_mb": 1092.7,
+              "aggregate_peak_rss_mb": 1092.7,
+              "per_process_peak_rss_mb": 1107.2,
+              "cpu_seconds": 2.092,
+              "samples": 9,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v2.py",
+                "score",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "audit/backlog/multirotor/solver/dev/v2/run"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v2/TESTS_RESOURCE_LOG.json",
+            "sha256": "db255c439336d7c8493114b978d00c746ee17bbe5a3ea5ca3b68ebce1325b903",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.506,
+              "max_rss_mb": 17.1,
+              "aggregate_peak_rss_mb": 17.1,
+              "per_process_peak_rss_mb": 34.9,
+              "cpu_seconds": 0.454,
+              "samples": 2,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/tests/test_rx2o.py"
+              ]
+            }
+          }
+        ]
+      },
+      "v3": {
+        "jobs": 6,
+        "wall_seconds": 639.875,
+        "cpu_seconds": 1254.518,
+        "logs": [
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/ANNEAL_ATTEMPT1_RESOURCE_LOG.json",
+            "sha256": "96feb9379ac4e5e6c16ad038aba22ae92ef0fcb5e352b162c6e0e14be6363521",
+            "log": {
+              "status": "INCOMPLETE",
+              "reason": "exit code 1",
+              "exit_code": 1,
+              "wall_seconds": 0.26,
+              "max_rss_mb": 4.4,
+              "aggregate_peak_rss_mb": 4.4,
+              "per_process_peak_rss_mb": 17.8,
+              "cpu_seconds": 0.056,
+              "samples": 1,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v3.py",
+                "anneal",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL.tsv",
+                "audit/backlog/multirotor/solver/dev/v3/run",
+                "2"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/ANNEAL_RESOURCE_LOG.json",
+            "sha256": "1fac2714aebbc1e178cffa56696c792e2dac6117c77464e253370703b5e5012d",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 633.064,
+              "max_rss_mb": 237.7,
+              "aggregate_peak_rss_mb": 237.7,
+              "per_process_peak_rss_mb": 137.4,
+              "cpu_seconds": 1248.559,
+              "samples": 2513,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v3.py",
+                "anneal",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL.tsv",
+                "audit/backlog/multirotor/solver/dev/v3/run",
+                "2"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/CHECK_RESOURCE_LOG.json",
+            "sha256": "0d8eef177f714552604856aca4d9cdb148c9916a45f6b7d622f089651d8fd9b1",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 2.519,
+              "max_rss_mb": 153.1,
+              "aggregate_peak_rss_mb": 153.1,
+              "per_process_peak_rss_mb": 155.2,
+              "cpu_seconds": 2.453,
+              "samples": 10,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/check_v3.py",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/DIAG_RESOURCE_LOG.json",
+            "sha256": "b1d6da0fc7f14abbbd648c37accbacfc5500c0181b50fc165fd08066190a6aea",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 1.764,
+              "max_rss_mb": 529.9,
+              "aggregate_peak_rss_mb": 529.9,
+              "per_process_peak_rss_mb": 910.6,
+              "cpu_seconds": 1.601,
+              "samples": 7,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/diag_v3.py",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+                "audit/backlog/multirotor/solver/dev/v3/run",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "audit/backlog/multirotor/solver/dev/v3/DIAG.json"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/EVAL_RESOURCE_LOG.json",
+            "sha256": "31648945e0f7463877e89cbd3183d274aaf2656d815a67b88a9d1b5d0c84c09c",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 0.254,
+              "max_rss_mb": 2.5,
+              "aggregate_peak_rss_mb": 2.5,
+              "per_process_peak_rss_mb": 15.2,
+              "cpu_seconds": 0.042,
+              "samples": 1,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/eval_v1.py",
+                "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+                "audit/backlog/multirotor/solver/dev/v3/run/RESULTS.jsonl",
+                "audit/backlog/multirotor/solver/dev/v3/EVAL.json"
+              ]
+            }
+          },
+          {
+            "path": "audit/backlog/multirotor/solver/dev/v3/SCORE_RESOURCE_LOG.json",
+            "sha256": "edd80239af366e43af62e584d1858c7c78660e7b2da8b1878c2ff9ca2b8a1362",
+            "log": {
+              "status": "COMPLETE",
+              "reason": null,
+              "exit_code": 0,
+              "wall_seconds": 2.014,
+              "max_rss_mb": 1270.5,
+              "aggregate_peak_rss_mb": 1270.5,
+              "per_process_peak_rss_mb": 1277.7,
+              "cpu_seconds": 1.807,
+              "samples": 8,
+              "sample_interval_s": 0.25,
+              "budget": {
+                "max_wall_seconds": 1800,
+                "max_ram_mb": 2048,
+                "max_cpu_seconds": 1800
+              },
+              "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+              "wrapper": "audit/run_bounded_agg.py",
+              "command": [
+                "python3",
+                "-I",
+                "audit/backlog/multirotor/solver/dev/run_v3.py",
+                "score",
+                "/tmp/claude-0/lmbuild/lm6.v2.bin",
+                "audit/backlog/multirotor/solver/dev/v3/run"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "total_wall_seconds": 2026.664,
+    "total_cpu_seconds": 3969.55
+  },
+  "v1": {
+    "status": "INCOMPLETE",
+    "saved_candidate_evidence": false,
+    "recovery_rate": null
+  },
+  "interpretation": "Final saved restart states only; no exhaustive visited-state record or full LM replay."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "frozen",
+  "hypothesis": "A position-only single rotor with any 26-symbol wiring, AZ/KRY/PAL/ABS contact pairs, n=5..96, phase=1..n-1 and direction +/-1 can satisfy the 24 fixed published observations, or all except one. Full 145728 labeled domain; aggregate compatibility only.",
+  "not_excluded": "Untested alphabets, periods >=97, other step sizes, multiple rotors, letter-triggered or irregular updates, transposition, shifted alignment, insertions/deletions, simultaneous error models, or alternative published observations beyond one omission. No blind recovery or candidate evidence is claimed.",
+  "preregistration_path": "r93/PREREGISTRATION.md",
+  "preregistration_commit": "567f418961cc18847207008468679115074f4c93",
+  "preregistration_sha256": "8fe62792c91e7b58706effd2bc1c951c730fa232dbf628f9f183eb0af23fe941",
+  "synthetic_gate_path": "r93/holdout/CHECKER_GATE.json",
+  "gate_verdict": "GO",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "mode_clarification_path": "r93/MODE_CLARIFICATION.md",
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1200,
+    "max_ram_mb": 512,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 201
+  },
+  "schema_compatibility": "The legacy schema requires a positive max_candidates ceiling. Its unused upper ceiling is 1, while the stricter limits max_decoded_candidates=0 and max_surviving_setting_outputs=0 remain binding. Actual zero candidates satisfy both. Aggregate records are separately capped at 201 and are not redefined as candidates.",
+  "resource_semantics": "audit/run_bounded_agg.py; wall and aggregate CPU caps, sampled aggregate process-group RSS plus per-process RLIMIT_AS. Zero target retries.",
+  "notes": "Preregistration and explicit mode clarification were published before source and the formal correctness gate. Development smoke output is DEVELOPMENT_ONLY. No target is permitted until the complete checker gate is GO and published; all output remains aggregate only. Same-model review does not provide independent-model promotion.",
+  "freeze_manifest_path": "r93/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r93/TARGET_RESOURCE_LOG.json"
+  ]
+}

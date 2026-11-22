@@ -1,0 +1,34 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 3.256,
+  "max_rss_mb": 29.2,
+  "aggregate_peak_rss_mb": 29.2,
+  "per_process_peak_rss_mb": 30.1,
+  "cpu_seconds": 3.204,
+  "samples": 13,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 300,
+    "max_ram_mb": 512,
+    "max_cpu_seconds": 180
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/rotor_followup/check_postrun.py",
+    "--source-commit",
+    "3e781d57994a617610db943ea57438759dc6b4ce",
+    "--r93-gate-commit",
+    "2621a5e0d64fe787c498cc765f7ee14dd78af1ee",
+    "--r93-freeze-commit",
+    "542165b77806917d17dd4f3f8314685fd2d1e55a",
+    "--r94-freeze-commit",
+    "542165b77806917d17dd4f3f8314685fd2d1e55a",
+    "--out",
+    "audit/rotor_followup/REVIEW_RESULTS.json"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "build": {
+    "binary_sha256": "1d4822bc1609160dff02a5baad52320f927e38bfbdd836fed79eb6ab6de3487f",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "source_sha256": "b8e43b14543cb899726e17910016ef34219d2ff2b4f21adbb66c7602d519d21d"
+  },
+  "canonical_ciphertext_file_sha256": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+  "gate_commit": "2621a5e0d64fe787c498cc765f7ee14dd78af1ee",
+  "gate_resource_sha256": "95e0fb9d01b869c4beb71574f763aa8d72a8aa6f91ce0184ab4a7eac729fe876",
+  "gate_sha256": "073a7bb72e3b550bb126ca291f21d6fd713402354cbdb41ed50ff678763f29b4",
+  "input_sha256": "fbc28710cfba45278f9c34fada0c212e622d17df766b8e82029ec1b6fdad9610",
+  "observation_source_sha256": "63121ceaddaa577427dec10d169975a96b6c21c9e4f344ccc7d4c4064650425b",
+  "preregistration_commit": "567f418961cc18847207008468679115074f4c93",
+  "preregistration_sha256": "8fe62792c91e7b58706effd2bc1c951c730fa232dbf628f9f183eb0af23fe941",
+  "shuffle_draws": 200,
+  "shuffle_seed": 930400,
+  "source_commit": "3e781d57994a617610db943ea57438759dc6b4ce",
+  "source_sha256": {
+    "audit/run_bounded_agg.py": "95f08289573427e1927336854eaac664931bcf5aeadd518d0bbd2e171cf5b2e7",
+    "r73/sealed/reveal_k4.py": "63121ceaddaa577427dec10d169975a96b6c21c9e4f344ccc7d4c4064650425b",
+    "r93/MODE_CLARIFICATION.md": "cb0f5a19bf4be05994649b17b1c50dbf184f562dced648e5eb7a88b8ddd81dbe",
+    "r93/PREREGISTRATION.md": "8fe62792c91e7b58706effd2bc1c951c730fa232dbf628f9f183eb0af23fe941",
+    "r93/SOURCE_IMPLEMENTATION.md": "513794370c3ecdddc2ed8d0d152b82f9ba918b170590ba19f58c0dcdb63fb5f6",
+    "r93/VALIDATION_BUDGET.json": "4b6ea28ffb725fae756f3763007629bea3146468d09ae0d55211033450cd5710",
+    "r93/checker93.cpp": "b8e43b14543cb899726e17910016ef34219d2ff2b4f21adbb66c7602d519d21d",
+    "r93/reference93.py": "909eca37a15db831ce4b1be566c7ed575cdd82c56d2826abe2ee123a26d5a850",
+    "r93/run_target93.py": "8e92c59581abd8a59675bd0d7459dc8be8fc41baab07cae5afc442d7a3e226fe",
+    "r93/runner93.py": "cc45fb0b8afdb5740a3c71165e1c849aceca4a37e1c513b53fc7e24564b6a424",
+    "r93/scope93.py": "2183055a4b1d747185d71dae4fc8da17954eea2316ebcbd7c16ea240c298ac50",
+    "r93/validate93.py": "d2d998a63fdb7874f003dc4f78d0dff6abe4cf8358ec8512ae90ab60aa33383a"
+  }
+}

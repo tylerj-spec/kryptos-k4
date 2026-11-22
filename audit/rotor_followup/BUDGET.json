@@ -1,0 +1,10 @@
+{
+  "resource_budget": {
+    "max_wall_seconds": 300,
+    "max_cpu_seconds": 180,
+    "max_ram_mb": 512,
+    "max_candidates": 0,
+    "max_retries": 0
+  },
+  "purpose": "Post-freeze same-model verification of saved R93/R94 evidence; no optimizer or full R93 target scan is invoked."
+}

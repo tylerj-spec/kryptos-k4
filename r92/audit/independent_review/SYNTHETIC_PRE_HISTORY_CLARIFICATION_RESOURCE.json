@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 3.757,
+  "max_rss_mb": 13.7,
+  "aggregate_peak_rss_mb": 13.7,
+  "per_process_peak_rss_mb": 13.6,
+  "cpu_seconds": 3.551,
+  "samples": 15,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 180,
+    "max_ram_mb": 512,
+    "max_cpu_seconds": 120
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "r92/audit/independent_review/review92.py",
+    "synthetic",
+    "--out",
+    "r92/audit/independent_review/SYNTHETIC.json"
+  ]
+}
