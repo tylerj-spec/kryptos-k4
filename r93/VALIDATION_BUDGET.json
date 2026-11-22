@@ -1,0 +1,9 @@
+{
+  "resource_budget": {
+    "max_wall_seconds": 180,
+    "max_cpu_seconds": 120,
+    "max_ram_mb": 512,
+    "max_candidates": 0,
+    "max_retries": 0
+  }
+}

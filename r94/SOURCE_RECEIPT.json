@@ -1,0 +1,19 @@
+{
+  "source_commit": "9e4bd400e64c6aa46ae3afdc9ba0d82a1a927fd1",
+  "panel_source": "audit/backlog/multirotor/solver/dev/panel/PANEL.tsv",
+  "truth_source": "audit/backlog/multirotor/solver/dev/panel/PANEL_TRUTH.json",
+  "reference_source": "audit/backlog/multirotor/solver/rx2o.py",
+  "copies_are_byte_identical": true,
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model_path": "r91/R59_LOWER4_FROM_K5.bin",
+  "model_sha256": "85b4adf264619a12c9ed646c7d4fc952ef76025db67dd96f2b668ea1e1cf1f41",
+  "model_provenance_receipt": "r91/MODEL_RECEIPT.json",
+  "frequency_source": "r91/vendor/r82/pairwise_pilot.py: FREQ",
+  "inputs": {
+    "r94/inputs/PANEL.tsv": "9b3ed6b49d437d4289f2a1126dd79b61ed7158b0e35b408bb39b1409aab8786c",
+    "r94/inputs/PANEL_TRUTH.json": "27aecaf0aa2050e12d0d05e6c2ccc84b0598acd170e3e47f8667718732cf6ebf"
+  }
+}

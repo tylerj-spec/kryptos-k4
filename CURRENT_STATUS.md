@@ -1,3 +1,53 @@
+# Current follow-up status — 21 November 2026 (America/Chicago)
+
+**No independently verified K4 solution.** The R92 independent audit is complete.
+The R93 wider timing audit and R94 structural two-rotor work are registered and
+source-reviewed, but their formal runs have **not started**.
+
+This is the prepared follow-up branch status. PR #104 remains the merged
+baseline at `9e4bd400e64c6aa46ae3afdc9ba0d82a1a927fd1`; the new source/result
+bundle and the ledger promotion below await publication approval and merge.
+
+| Requested follow-up | Current outcome | Evidence |
+| --- | --- | --- |
+| Independent R92 review | PASS for the finite exact exclusion; L181 promotion prepared. All 192 R92 labels plus 128 registered R87 zero-phase labels through n=4 independently replayed on 201 frozen inputs; every exact and single-deletion result is zero | `r92/audit/independent_review/REVIEW.md`, `audit/reviews/R92_INDEPENDENT_REVIEW.md` |
+| Wider timing range | R93 registered, source reviewed, NOT RUN. Correct remaining domain: 145,728 labeled settings, n=5..96 and nonzero boundary phases. Exact-checker correctness gate must pass and be published before the aggregate-only target audit | `r93/PREREGISTRATION.md`, `r93/MODE_CLARIFICATION.md`, `r93/EXECUTION_HANDOFF.md` |
+| New structural two-rotor work | R94 registered, source reviewed, NOT RUN. Two finite versions on the existing spent 48-case panel, followed by explicitly labeled conditional diagnostics; no K4 authorization or fresh gate | `r94/WORK_ORDER.md`, `r94/audit/STATIC_SOURCE_REVIEW.md`, `r94/EXECUTION_HANDOFF.md` |
+
+## Findings and active limits
+
+R92's recorded recovery is 47/48 at >=95/97 letters, including 44/48 exact
+texts and 44/48 used-contact key agreements. Its retained blind pipeline remains
+NO_SIGNAL (50/200 shuffles at least as high; add-one 51/201). The independent
+audit checked all 2,015 saved candidate witnesses, but did not rerun the original
+optimization or full letter-model rescoring. The original development overrun
+remains disclosed.
+
+RX2-O with identity second wiring includes the phased single rotor, and distinct
+clock schedules need not represent disjoint functions. The old v3 experiment
+shows truth above its retained final states in 47/48 cases, not a global score
+optimum. These corrections are additive; frozen original evidence is unchanged.
+
+The prior R32/R41 replays, R90 review, R82/PTAK screens and multi-rotor designs
+remain closed at the scopes recorded in the previous closeout. R82 and unchanged
+PTAK remain parked. The superseded three-version RX2-O work order is complete.
+R94 is the separately registered structural development attempt.
+
+Automatic approval review has rejected publication of the new bundle as
+potential sensitive egress. Repository/PR metadata and public blob checks
+establish the destination and the already-public origin of copied practice
+plaintexts/test keys; the rejection nevertheless requires explicit approval of
+the exact public payload. No alternate publication route was used. R93/R94
+execution remains paused because their registrations require source publication
+first. See `audit/reviews/PUBLICATION_PROVENANCE_R92_R94.md` for the concrete
+inventory and provenance.
+
+## Historical status snapshots from main
+
+The following sections are preserved as historical records. Their open-task
+lists and current-work-order language are superseded by the table above.
+The original UTC-dated headings are retained.
+
 # Current K4 research status — 22 November 2026 update
 
 **No independently verified K4 solution.** On 22 November (Claude Code, PR for branch `claude/zen-clarke-s6fwj5`),
