@@ -35,3 +35,7 @@ r88/.build/
 
 # R89 compiled annealing kernel
 r89/.build/
+
+# R92 compiled annealing kernel
+r92/.build/
+rx2o/.build/
