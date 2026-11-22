@@ -1,0 +1,11 @@
+{
+  "resource_budget": {
+    "max_wall_seconds": 180,
+    "max_cpu_seconds": 120,
+    "max_ram_mb": 512,
+    "max_retries": 0
+  },
+  "mode": "SYNTHETIC_ONLY",
+  "toy_plaintext_ciphertext_schedule_cases": 289412,
+  "real_label_plants": 320
+}
