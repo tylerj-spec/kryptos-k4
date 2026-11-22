@@ -1,0 +1,32 @@
+{
+  "comparisons": {
+    "answer_commitment": {
+      "byte_identical": true,
+      "sha256": "5e43beb9c749b5b3454fb29e3d0dbdb9a34491adb206fc622f53237d42b35be6"
+    },
+    "complete_answer_file": {
+      "byte_identical": true,
+      "sha256": "2ece5a84dfdaa644a43ab5829e4f300e773ebb26d294f1e7cb9ee16d530cb5b7"
+    },
+    "linked_public_inputs": {
+      "byte_identical": true,
+      "sha256": "88c1da9b90412b945ea2b0fa8ba766d7e492ce3a497755f8e6d71b8d12c50b36"
+    },
+    "ptak_public_inputs": {
+      "byte_identical": true,
+      "sha256": "ae24f05cef2811de2a998f873159daafcbfbc10548b667467a507f6736b7b2f6"
+    }
+  },
+  "contains_account_credentials_or_access_tokens": false,
+  "data_classification": "Synthetic cipher test answers from public-source book windows and generated toy-cipher keys",
+  "full_answer_file_reconstructible_from_public_sources_and_fixed_public_seed": true,
+  "generator": "r91/make_gate.py",
+  "generator_sha256": "8d32313d7e8ae971a717bf4db19bcfeab7fd21c7bf47ee2f8a62ec3f2e00a94d",
+  "key_generation": "Python random.Random(912211), sampled A-Z strings of declared lengths, primitive-period rejection; no account or credential input",
+  "message_count": 600,
+  "public_generator_seed": 912211,
+  "purpose": "Post-result public-data provenance audit; no candidate solver rerun",
+  "source_manifest": "r91/SOURCES.json",
+  "status": "PASS",
+  "training_provenance": "Reconstructed from the public pinned R59 corpus; used only to reject exact duplicate windows"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "INCOMPLETE",
+  "reason": "exit code 1",
+  "exit_code": 1,
+  "wall_seconds": 0.502,
+  "max_rss_mb": 16.3,
+  "aggregate_peak_rss_mb": 16.3,
+  "per_process_peak_rss_mb": 18.9,
+  "cpu_seconds": 0.465,
+  "samples": 2,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 180,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 120
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/backlog/r32/check_replay.py",
+    "--synthetic",
+    "--binary",
+    "/tmp/kryptos_backlog_replay_kernel",
+    "--out",
+    "audit/backlog/r32/SYNTHETIC.json"
+  ]
+}

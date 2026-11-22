@@ -1,0 +1,6306 @@
+{
+  "decisions": {
+    "PTAK_R68": {
+      "failed_strata": [
+        "L13",
+        "L14",
+        "L15",
+        "L16",
+        "L17",
+        "L18",
+        "L19",
+        "L20",
+        "L21",
+        "L22",
+        "L23",
+        "L24"
+      ],
+      "full_unknown_family_gate": "NOT_ELIGIBLE_FAILURE_OF_MANDATORY_POWER_SCREEN",
+      "k4_run_allowed": false,
+      "outcome": "SOLVER_NO_POWER",
+      "passing_strata": []
+    },
+    "R82_LINKED": {
+      "failed_strata": [
+        "m5_w5",
+        "m7_w7",
+        "m7_w9",
+        "m7_w31",
+        "m9_w9",
+        "m9_w11",
+        "m9_w31",
+        "m12_w12",
+        "m12_w14",
+        "m12_w31"
+      ],
+      "full_unknown_family_gate": "NOT_ELIGIBLE_FAILURE_OF_MANDATORY_POWER_SCREEN",
+      "k4_run_allowed": false,
+      "outcome": "SOLVER_NO_POWER",
+      "passing_strata": [
+        "m3_w3",
+        "m3_w5",
+        "m3_w31",
+        "m4_w4",
+        "m4_w6",
+        "m4_w31",
+        "m5_w7",
+        "m5_w31"
+      ]
+    }
+  },
+  "freeze_commit": "600747049a1537378e7843d93b356ddbe8d4390a",
+  "independent_execution_review": "NONE",
+  "label": "Preregistered fresh synthetic known-structure power screen; not method recognition",
+  "records": [
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_000",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_001",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_002",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_003",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_004",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_005",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_006",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_007",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_008",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_009",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_010",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_011",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_012",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_013",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_014",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_015",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_016",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_017",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_018",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_019",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w3",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_020",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_021",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_022",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_023",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_024",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_025",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_026",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_027",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_028",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_029",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_030",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_031",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_032",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_033",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_034",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_035",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_036",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_037",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_038",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_039",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_040",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_041",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_042",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_043",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_044",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_045",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_046",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_047",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_048",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_049",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_050",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_051",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_052",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_053",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_054",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_055",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_056",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_057",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_058",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_059",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m3_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_060",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_061",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_062",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_063",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_064",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_065",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_066",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_067",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_068",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_069",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_070",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_071",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_072",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_073",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_074",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_075",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_076",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_077",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_078",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_079",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w4",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_080",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_081",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_082",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_083",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_084",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_085",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_086",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_087",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_088",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_089",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_090",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_091",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_092",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_093",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_094",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_095",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_096",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_097",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_098",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_099",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w6",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_100",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_101",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_102",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_103",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_104",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_105",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_106",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_107",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_108",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_109",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_110",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_111",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_112",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_113",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_114",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_115",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_116",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_117",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_118",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_119",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m4_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_120",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_121",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_122",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_123",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_124",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_125",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_126",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 2,
+      "genre": "political_essay",
+      "id": "L_127",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_128",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "narrative",
+      "id": "L_129",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_130",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_131",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_132",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_133",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_134",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_135",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_136",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "analytic_nonfiction",
+      "id": "L_137",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_138",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_139",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w5",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_140",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_141",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_142",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_143",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_144",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_145",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 42,
+      "genre": "political_essay",
+      "id": "L_146",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_147",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_148",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_149",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_150",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_151",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_152",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_153",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_154",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_155",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_156",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_157",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_158",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_159",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_160",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_161",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_162",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_163",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_164",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_165",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_166",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_167",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_168",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_169",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_170",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_171",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_172",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_173",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_174",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_175",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_176",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_177",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_178",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_179",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m5_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_180",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_181",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_182",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_183",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_184",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_185",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_186",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 20,
+      "genre": "political_essay",
+      "id": "L_187",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_188",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_189",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_190",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_191",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 9,
+      "genre": "narrative",
+      "id": "L_192",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 9,
+      "genre": "political_essay",
+      "id": "L_193",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 71,
+      "genre": "analytic_nonfiction",
+      "id": "L_194",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "narrative",
+      "id": "L_195",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_196",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "analytic_nonfiction",
+      "id": "L_197",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_198",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 33,
+      "genre": "political_essay",
+      "id": "L_199",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w7",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_200",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_201",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_202",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_203",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_204",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_205",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_206",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_207",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_208",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_209",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_210",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 72,
+      "genre": "narrative",
+      "id": "L_211",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_212",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "analytic_nonfiction",
+      "id": "L_213",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 24,
+      "genre": "narrative",
+      "id": "L_214",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_215",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 19,
+      "genre": "analytic_nonfiction",
+      "id": "L_216",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 72,
+      "genre": "narrative",
+      "id": "L_217",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_218",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "analytic_nonfiction",
+      "id": "L_219",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_220",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_221",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_222",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 37,
+      "genre": "analytic_nonfiction",
+      "id": "L_223",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_224",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_225",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_226",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_227",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_228",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_229",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_230",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_231",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_232",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 5,
+      "genre": "narrative",
+      "id": "L_233",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 56,
+      "genre": "political_essay",
+      "id": "L_234",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_235",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_236",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_237",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_238",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_239",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m7_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_240",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "political_essay",
+      "id": "L_241",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 13,
+      "genre": "analytic_nonfiction",
+      "id": "L_242",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "narrative",
+      "id": "L_243",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_244",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_245",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "narrative",
+      "id": "L_246",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 78,
+      "genre": "political_essay",
+      "id": "L_247",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "analytic_nonfiction",
+      "id": "L_248",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_249",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_250",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_251",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_252",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_253",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_254",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_255",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "political_essay",
+      "id": "L_256",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "analytic_nonfiction",
+      "id": "L_257",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 77,
+      "genre": "narrative",
+      "id": "L_258",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_259",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w9",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 22,
+      "genre": "political_essay",
+      "id": "L_260",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 78,
+      "genre": "analytic_nonfiction",
+      "id": "L_261",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "narrative",
+      "id": "L_262",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_263",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_264",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_265",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_266",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_267",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "narrative",
+      "id": "L_268",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_269",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 61,
+      "genre": "analytic_nonfiction",
+      "id": "L_270",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_271",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 62,
+      "genre": "political_essay",
+      "id": "L_272",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "analytic_nonfiction",
+      "id": "L_273",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_274",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_275",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 14,
+      "genre": "analytic_nonfiction",
+      "id": "L_276",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "narrative",
+      "id": "L_277",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "political_essay",
+      "id": "L_278",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 2,
+      "genre": "analytic_nonfiction",
+      "id": "L_279",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w11",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 81,
+      "genre": "analytic_nonfiction",
+      "id": "L_280",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 31,
+      "genre": "narrative",
+      "id": "L_281",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 79,
+      "genre": "political_essay",
+      "id": "L_282",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 64,
+      "genre": "analytic_nonfiction",
+      "id": "L_283",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_284",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_285",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_286",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 64,
+      "genre": "narrative",
+      "id": "L_287",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 45,
+      "genre": "political_essay",
+      "id": "L_288",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_289",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "L_290",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 11,
+      "genre": "political_essay",
+      "id": "L_291",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_292",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 79,
+      "genre": "narrative",
+      "id": "L_293",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_294",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_295",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 79,
+      "genre": "narrative",
+      "id": "L_296",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 11,
+      "genre": "political_essay",
+      "id": "L_297",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_298",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 45,
+      "genre": "narrative",
+      "id": "L_299",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m9_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "narrative",
+      "id": "L_300",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "political_essay",
+      "id": "L_301",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_302",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "narrative",
+      "id": "L_303",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 5,
+      "genre": "political_essay",
+      "id": "L_304",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "analytic_nonfiction",
+      "id": "L_305",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 5,
+      "genre": "narrative",
+      "id": "L_306",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "political_essay",
+      "id": "L_307",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "analytic_nonfiction",
+      "id": "L_308",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 5,
+      "genre": "narrative",
+      "id": "L_309",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 3,
+      "genre": "political_essay",
+      "id": "L_310",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_311",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "narrative",
+      "id": "L_312",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 81,
+      "genre": "political_essay",
+      "id": "L_313",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 55,
+      "genre": "analytic_nonfiction",
+      "id": "L_314",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 3,
+      "genre": "narrative",
+      "id": "L_315",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "political_essay",
+      "id": "L_316",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "analytic_nonfiction",
+      "id": "L_317",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 5,
+      "genre": "narrative",
+      "id": "L_318",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 11,
+      "genre": "political_essay",
+      "id": "L_319",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w12",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 69,
+      "genre": "political_essay",
+      "id": "L_320",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_321",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 9,
+      "genre": "narrative",
+      "id": "L_322",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "political_essay",
+      "id": "L_323",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 69,
+      "genre": "analytic_nonfiction",
+      "id": "L_324",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "narrative",
+      "id": "L_325",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "political_essay",
+      "id": "L_326",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "analytic_nonfiction",
+      "id": "L_327",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "narrative",
+      "id": "L_328",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 3,
+      "genre": "political_essay",
+      "id": "L_329",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 4,
+      "genre": "analytic_nonfiction",
+      "id": "L_330",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 9,
+      "genre": "narrative",
+      "id": "L_331",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 83,
+      "genre": "political_essay",
+      "id": "L_332",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 36,
+      "genre": "analytic_nonfiction",
+      "id": "L_333",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "narrative",
+      "id": "L_334",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "political_essay",
+      "id": "L_335",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "L_336",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "narrative",
+      "id": "L_337",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "political_essay",
+      "id": "L_338",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "analytic_nonfiction",
+      "id": "L_339",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w14",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 18,
+      "genre": "analytic_nonfiction",
+      "id": "L_340",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 71,
+      "genre": "narrative",
+      "id": "L_341",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 83,
+      "genre": "political_essay",
+      "id": "L_342",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 84,
+      "genre": "analytic_nonfiction",
+      "id": "L_343",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 53,
+      "genre": "narrative",
+      "id": "L_344",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "political_essay",
+      "id": "L_345",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 24,
+      "genre": "analytic_nonfiction",
+      "id": "L_346",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 16,
+      "genre": "narrative",
+      "id": "L_347",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 7,
+      "genre": "political_essay",
+      "id": "L_348",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 39,
+      "genre": "analytic_nonfiction",
+      "id": "L_349",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 28,
+      "genre": "narrative",
+      "id": "L_350",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 6,
+      "genre": "political_essay",
+      "id": "L_351",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 84,
+      "genre": "analytic_nonfiction",
+      "id": "L_352",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 15,
+      "genre": "narrative",
+      "id": "L_353",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 17,
+      "genre": "political_essay",
+      "id": "L_354",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_355",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 13,
+      "genre": "narrative",
+      "id": "L_356",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "L_357",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 8,
+      "genre": "analytic_nonfiction",
+      "id": "L_358",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "R82_LINKED",
+      "correct_letters": 10,
+      "genre": "narrative",
+      "id": "L_359",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "m12_w31",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 66,
+      "genre": "political_essay",
+      "id": "P_000",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_001",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_002",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_003",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 89,
+      "genre": "analytic_nonfiction",
+      "id": "P_004",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_005",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_006",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 82,
+      "genre": "analytic_nonfiction",
+      "id": "P_007",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_008",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 83,
+      "genre": "political_essay",
+      "id": "P_009",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "analytic_nonfiction",
+      "id": "P_010",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 69,
+      "genre": "narrative",
+      "id": "P_011",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_012",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_013",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 58,
+      "genre": "narrative",
+      "id": "P_014",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 75,
+      "genre": "political_essay",
+      "id": "P_015",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "analytic_nonfiction",
+      "id": "P_016",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_017",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_018",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_019",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L13",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "analytic_nonfiction",
+      "id": "P_020",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "narrative",
+      "id": "P_021",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_022",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_023",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "narrative",
+      "id": "P_024",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "political_essay",
+      "id": "P_025",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "analytic_nonfiction",
+      "id": "P_026",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_027",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_028",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 49,
+      "genre": "analytic_nonfiction",
+      "id": "P_029",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 83,
+      "genre": "narrative",
+      "id": "P_030",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 77,
+      "genre": "political_essay",
+      "id": "P_031",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 83,
+      "genre": "analytic_nonfiction",
+      "id": "P_032",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_033",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_034",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_035",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 76,
+      "genre": "narrative",
+      "id": "P_036",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_037",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_038",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_039",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L14",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "narrative",
+      "id": "P_040",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 61,
+      "genre": "political_essay",
+      "id": "P_041",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 73,
+      "genre": "analytic_nonfiction",
+      "id": "P_042",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 52,
+      "genre": "narrative",
+      "id": "P_043",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 85,
+      "genre": "political_essay",
+      "id": "P_044",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 85,
+      "genre": "analytic_nonfiction",
+      "id": "P_045",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_046",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 44,
+      "genre": "political_essay",
+      "id": "P_047",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 90,
+      "genre": "analytic_nonfiction",
+      "id": "P_048",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_049",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "political_essay",
+      "id": "P_050",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 85,
+      "genre": "analytic_nonfiction",
+      "id": "P_051",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 72,
+      "genre": "narrative",
+      "id": "P_052",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_053",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_054",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 46,
+      "genre": "narrative",
+      "id": "P_055",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_056",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 72,
+      "genre": "analytic_nonfiction",
+      "id": "P_057",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "narrative",
+      "id": "P_058",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 78,
+      "genre": "political_essay",
+      "id": "P_059",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L15",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "political_essay",
+      "id": "P_060",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_061",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 61,
+      "genre": "narrative",
+      "id": "P_062",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "political_essay",
+      "id": "P_063",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "analytic_nonfiction",
+      "id": "P_064",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 91,
+      "genre": "narrative",
+      "id": "P_065",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 66,
+      "genre": "political_essay",
+      "id": "P_066",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 73,
+      "genre": "analytic_nonfiction",
+      "id": "P_067",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "narrative",
+      "id": "P_068",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "political_essay",
+      "id": "P_069",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 61,
+      "genre": "analytic_nonfiction",
+      "id": "P_070",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 42,
+      "genre": "narrative",
+      "id": "P_071",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 67,
+      "genre": "political_essay",
+      "id": "P_072",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 67,
+      "genre": "analytic_nonfiction",
+      "id": "P_073",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 79,
+      "genre": "narrative",
+      "id": "P_074",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 49,
+      "genre": "political_essay",
+      "id": "P_075",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 67,
+      "genre": "analytic_nonfiction",
+      "id": "P_076",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 66,
+      "genre": "narrative",
+      "id": "P_077",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 72,
+      "genre": "political_essay",
+      "id": "P_078",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 85,
+      "genre": "analytic_nonfiction",
+      "id": "P_079",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L16",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "analytic_nonfiction",
+      "id": "P_080",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 76,
+      "genre": "narrative",
+      "id": "P_081",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "political_essay",
+      "id": "P_082",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 57,
+      "genre": "analytic_nonfiction",
+      "id": "P_083",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 65,
+      "genre": "narrative",
+      "id": "P_084",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 40,
+      "genre": "political_essay",
+      "id": "P_085",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "analytic_nonfiction",
+      "id": "P_086",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 87,
+      "genre": "narrative",
+      "id": "P_087",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_088",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 76,
+      "genre": "analytic_nonfiction",
+      "id": "P_089",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 29,
+      "genre": "narrative",
+      "id": "P_090",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 42,
+      "genre": "political_essay",
+      "id": "P_091",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 62,
+      "genre": "analytic_nonfiction",
+      "id": "P_092",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 73,
+      "genre": "narrative",
+      "id": "P_093",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 52,
+      "genre": "political_essay",
+      "id": "P_094",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 57,
+      "genre": "analytic_nonfiction",
+      "id": "P_095",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 62,
+      "genre": "narrative",
+      "id": "P_096",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_097",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "analytic_nonfiction",
+      "id": "P_098",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "narrative",
+      "id": "P_099",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L17",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "narrative",
+      "id": "P_100",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 32,
+      "genre": "political_essay",
+      "id": "P_101",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 43,
+      "genre": "analytic_nonfiction",
+      "id": "P_102",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 43,
+      "genre": "narrative",
+      "id": "P_103",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 82,
+      "genre": "political_essay",
+      "id": "P_104",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 61,
+      "genre": "analytic_nonfiction",
+      "id": "P_105",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 40,
+      "genre": "narrative",
+      "id": "P_106",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "political_essay",
+      "id": "P_107",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 77,
+      "genre": "analytic_nonfiction",
+      "id": "P_108",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "narrative",
+      "id": "P_109",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "political_essay",
+      "id": "P_110",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 77,
+      "genre": "analytic_nonfiction",
+      "id": "P_111",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 86,
+      "genre": "narrative",
+      "id": "P_112",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 75,
+      "genre": "political_essay",
+      "id": "P_113",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "analytic_nonfiction",
+      "id": "P_114",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 60,
+      "genre": "narrative",
+      "id": "P_115",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 97,
+      "genre": "political_essay",
+      "id": "P_116",
+      "key_equivalent": true,
+      "key_exact": true,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 27,
+      "genre": "analytic_nonfiction",
+      "id": "P_117",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 51,
+      "genre": "narrative",
+      "id": "P_118",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 53,
+      "genre": "political_essay",
+      "id": "P_119",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L18",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 62,
+      "genre": "political_essay",
+      "id": "P_120",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 36,
+      "genre": "analytic_nonfiction",
+      "id": "P_121",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 62,
+      "genre": "narrative",
+      "id": "P_122",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "political_essay",
+      "id": "P_123",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "analytic_nonfiction",
+      "id": "P_124",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 77,
+      "genre": "narrative",
+      "id": "P_125",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 47,
+      "genre": "political_essay",
+      "id": "P_126",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 52,
+      "genre": "analytic_nonfiction",
+      "id": "P_127",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 10,
+      "genre": "narrative",
+      "id": "P_128",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 51,
+      "genre": "political_essay",
+      "id": "P_129",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 57,
+      "genre": "analytic_nonfiction",
+      "id": "P_130",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 50,
+      "genre": "narrative",
+      "id": "P_131",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 42,
+      "genre": "political_essay",
+      "id": "P_132",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 76,
+      "genre": "analytic_nonfiction",
+      "id": "P_133",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 46,
+      "genre": "narrative",
+      "id": "P_134",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 60,
+      "genre": "political_essay",
+      "id": "P_135",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 30,
+      "genre": "analytic_nonfiction",
+      "id": "P_136",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 52,
+      "genre": "narrative",
+      "id": "P_137",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 50,
+      "genre": "political_essay",
+      "id": "P_138",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "analytic_nonfiction",
+      "id": "P_139",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L19",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 33,
+      "genre": "analytic_nonfiction",
+      "id": "P_140",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "narrative",
+      "id": "P_141",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "political_essay",
+      "id": "P_142",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "analytic_nonfiction",
+      "id": "P_143",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "narrative",
+      "id": "P_144",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 37,
+      "genre": "political_essay",
+      "id": "P_145",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 35,
+      "genre": "analytic_nonfiction",
+      "id": "P_146",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 58,
+      "genre": "narrative",
+      "id": "P_147",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 39,
+      "genre": "political_essay",
+      "id": "P_148",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 69,
+      "genre": "analytic_nonfiction",
+      "id": "P_149",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 64,
+      "genre": "narrative",
+      "id": "P_150",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 58,
+      "genre": "political_essay",
+      "id": "P_151",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 49,
+      "genre": "analytic_nonfiction",
+      "id": "P_152",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "narrative",
+      "id": "P_153",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 69,
+      "genre": "political_essay",
+      "id": "P_154",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "analytic_nonfiction",
+      "id": "P_155",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 25,
+      "genre": "narrative",
+      "id": "P_156",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "political_essay",
+      "id": "P_157",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 39,
+      "genre": "analytic_nonfiction",
+      "id": "P_158",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 54,
+      "genre": "narrative",
+      "id": "P_159",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L20",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 38,
+      "genre": "narrative",
+      "id": "P_160",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 44,
+      "genre": "political_essay",
+      "id": "P_161",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 34,
+      "genre": "analytic_nonfiction",
+      "id": "P_162",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 55,
+      "genre": "narrative",
+      "id": "P_163",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 56,
+      "genre": "political_essay",
+      "id": "P_164",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "analytic_nonfiction",
+      "id": "P_165",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 28,
+      "genre": "narrative",
+      "id": "P_166",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 19,
+      "genre": "political_essay",
+      "id": "P_167",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 57,
+      "genre": "analytic_nonfiction",
+      "id": "P_168",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 48,
+      "genre": "narrative",
+      "id": "P_169",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 51,
+      "genre": "political_essay",
+      "id": "P_170",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 37,
+      "genre": "analytic_nonfiction",
+      "id": "P_171",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 35,
+      "genre": "narrative",
+      "id": "P_172",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 61,
+      "genre": "political_essay",
+      "id": "P_173",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 33,
+      "genre": "analytic_nonfiction",
+      "id": "P_174",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 50,
+      "genre": "narrative",
+      "id": "P_175",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 45,
+      "genre": "political_essay",
+      "id": "P_176",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 44,
+      "genre": "analytic_nonfiction",
+      "id": "P_177",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 25,
+      "genre": "narrative",
+      "id": "P_178",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 23,
+      "genre": "political_essay",
+      "id": "P_179",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L21",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 40,
+      "genre": "political_essay",
+      "id": "P_180",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 23,
+      "genre": "analytic_nonfiction",
+      "id": "P_181",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "narrative",
+      "id": "P_182",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 63,
+      "genre": "political_essay",
+      "id": "P_183",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 0,
+      "genre": "analytic_nonfiction",
+      "id": "P_184",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 59,
+      "genre": "narrative",
+      "id": "P_185",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 39,
+      "genre": "political_essay",
+      "id": "P_186",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 31,
+      "genre": "analytic_nonfiction",
+      "id": "P_187",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 26,
+      "genre": "narrative",
+      "id": "P_188",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 72,
+      "genre": "political_essay",
+      "id": "P_189",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 66,
+      "genre": "analytic_nonfiction",
+      "id": "P_190",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 57,
+      "genre": "narrative",
+      "id": "P_191",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 14,
+      "genre": "political_essay",
+      "id": "P_192",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 23,
+      "genre": "analytic_nonfiction",
+      "id": "P_193",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 69,
+      "genre": "narrative",
+      "id": "P_194",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 69,
+      "genre": "political_essay",
+      "id": "P_195",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 49,
+      "genre": "analytic_nonfiction",
+      "id": "P_196",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 26,
+      "genre": "narrative",
+      "id": "P_197",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 66,
+      "genre": "political_essay",
+      "id": "P_198",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 25,
+      "genre": "analytic_nonfiction",
+      "id": "P_199",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L22",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "analytic_nonfiction",
+      "id": "P_200",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "narrative",
+      "id": "P_201",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 16,
+      "genre": "political_essay",
+      "id": "P_202",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 39,
+      "genre": "analytic_nonfiction",
+      "id": "P_203",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "narrative",
+      "id": "P_204",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 64,
+      "genre": "political_essay",
+      "id": "P_205",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 9,
+      "genre": "analytic_nonfiction",
+      "id": "P_206",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 18,
+      "genre": "narrative",
+      "id": "P_207",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 14,
+      "genre": "political_essay",
+      "id": "P_208",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 21,
+      "genre": "analytic_nonfiction",
+      "id": "P_209",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "narrative",
+      "id": "P_210",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "political_essay",
+      "id": "P_211",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 18,
+      "genre": "analytic_nonfiction",
+      "id": "P_212",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 50,
+      "genre": "narrative",
+      "id": "P_213",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 32,
+      "genre": "political_essay",
+      "id": "P_214",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 25,
+      "genre": "analytic_nonfiction",
+      "id": "P_215",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 5,
+      "genre": "narrative",
+      "id": "P_216",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 23,
+      "genre": "political_essay",
+      "id": "P_217",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 9,
+      "genre": "analytic_nonfiction",
+      "id": "P_218",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 44,
+      "genre": "narrative",
+      "id": "P_219",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L23",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "narrative",
+      "id": "P_220",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 0,
+      "genre": "political_essay",
+      "id": "P_221",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 16,
+      "genre": "analytic_nonfiction",
+      "id": "P_222",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 48,
+      "genre": "narrative",
+      "id": "P_223",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 52,
+      "genre": "political_essay",
+      "id": "P_224",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 44,
+      "genre": "analytic_nonfiction",
+      "id": "P_225",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 40,
+      "genre": "narrative",
+      "id": "P_226",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 29,
+      "genre": "political_essay",
+      "id": "P_227",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 16,
+      "genre": "analytic_nonfiction",
+      "id": "P_228",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "narrative",
+      "id": "P_229",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "political_essay",
+      "id": "P_230",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 48,
+      "genre": "analytic_nonfiction",
+      "id": "P_231",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 33,
+      "genre": "narrative",
+      "id": "P_232",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 41,
+      "genre": "political_essay",
+      "id": "P_233",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 28,
+      "genre": "analytic_nonfiction",
+      "id": "P_234",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 36,
+      "genre": "narrative",
+      "id": "P_235",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 20,
+      "genre": "political_essay",
+      "id": "P_236",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 24,
+      "genre": "analytic_nonfiction",
+      "id": "P_237",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 29,
+      "genre": "narrative",
+      "id": "P_238",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    },
+    {
+      "arm": "PTAK_R68",
+      "correct_letters": 28,
+      "genre": "political_essay",
+      "id": "P_239",
+      "key_equivalent": false,
+      "key_exact": false,
+      "stratum": "L24",
+      "witness": true
+    }
+  ],
+  "round": "R91",
+  "scope_limit": "Only the pinned bounded solver attempts; cipher families remain OPEN. No K4 input, output or exclusion.",
+  "strata": {
+    "PTAK_R68": {
+      "L13": {
+        "exact_message_key": 11,
+        "key_equivalent": 11,
+        "key_exact": 11,
+        "n": 20,
+        "plain95": 11,
+        "plain97": 11
+      },
+      "L14": {
+        "exact_message_key": 10,
+        "key_equivalent": 10,
+        "key_exact": 10,
+        "n": 20,
+        "plain95": 10,
+        "plain97": 10
+      },
+      "L15": {
+        "exact_message_key": 6,
+        "key_equivalent": 6,
+        "key_exact": 6,
+        "n": 20,
+        "plain95": 6,
+        "plain97": 6
+      },
+      "L16": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "L17": {
+        "exact_message_key": 3,
+        "key_equivalent": 3,
+        "key_exact": 3,
+        "n": 20,
+        "plain95": 3,
+        "plain97": 3
+      },
+      "L18": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "L19": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L20": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L21": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L22": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L23": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      },
+      "L24": {
+        "exact_message_key": 0,
+        "key_equivalent": 0,
+        "key_exact": 0,
+        "n": 20,
+        "plain95": 0,
+        "plain97": 0
+      }
+    },
+    "R82_LINKED": {
+      "m12_w12": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m12_w14": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m12_w31": {
+        "exact_message_key": 1,
+        "key_equivalent": 1,
+        "key_exact": 1,
+        "n": 20,
+        "plain95": 1,
+        "plain97": 1
+      },
+      "m3_w3": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m3_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m3_w5": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w4": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m4_w6": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m5_w31": {
+        "exact_message_key": 20,
+        "key_equivalent": 20,
+        "key_exact": 20,
+        "n": 20,
+        "plain95": 20,
+        "plain97": 20
+      },
+      "m5_w5": {
+        "exact_message_key": 17,
+        "key_equivalent": 17,
+        "key_exact": 17,
+        "n": 20,
+        "plain95": 17,
+        "plain97": 17
+      },
+      "m5_w7": {
+        "exact_message_key": 19,
+        "key_equivalent": 19,
+        "key_exact": 19,
+        "n": 20,
+        "plain95": 19,
+        "plain97": 19
+      },
+      "m7_w31": {
+        "exact_message_key": 17,
+        "key_equivalent": 17,
+        "key_exact": 17,
+        "n": 20,
+        "plain95": 17,
+        "plain97": 17
+      },
+      "m7_w7": {
+        "exact_message_key": 13,
+        "key_equivalent": 13,
+        "key_exact": 13,
+        "n": 20,
+        "plain95": 13,
+        "plain97": 13
+      },
+      "m7_w9": {
+        "exact_message_key": 14,
+        "key_equivalent": 14,
+        "key_exact": 14,
+        "n": 20,
+        "plain95": 14,
+        "plain97": 14
+      },
+      "m9_w11": {
+        "exact_message_key": 9,
+        "key_equivalent": 9,
+        "key_exact": 9,
+        "n": 20,
+        "plain95": 9,
+        "plain97": 9
+      },
+      "m9_w31": {
+        "exact_message_key": 8,
+        "key_equivalent": 8,
+        "key_exact": 8,
+        "n": 20,
+        "plain95": 8,
+        "plain97": 8
+      },
+      "m9_w9": {
+        "exact_message_key": 10,
+        "key_equivalent": 10,
+        "key_exact": 10,
+        "n": 20,
+        "plain95": 10,
+        "plain97": 10
+      }
+    }
+  },
+  "truth_sha256": "2ece5a84dfdaa644a43ab5829e4f300e773ebb26d294f1e7cb9ee16d530cb5b7",
+  "witnesses_passed": 600
+}

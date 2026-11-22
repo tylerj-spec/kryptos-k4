@@ -1,0 +1,69 @@
+{
+  "label": "spent developer data only; no parameter tuning",
+  "roundtrips_per_arm": 1200,
+  "r82_six_cases_seconds": 0.3408758630000648,
+  "ptak_six_cases_seconds": 0.19265763099997457,
+  "records": [
+    {
+      "id": "DEV_L000",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_L001",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_L002",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_L003",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_L004",
+      "right": 4,
+      "key_exact": false
+    },
+    {
+      "id": "DEV_L005",
+      "right": 8,
+      "key_exact": false
+    },
+    {
+      "id": "DEV_P000",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_P001",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_P002",
+      "right": 62,
+      "key_exact": false
+    },
+    {
+      "id": "DEV_P003",
+      "right": 97,
+      "key_exact": true
+    },
+    {
+      "id": "DEV_P004",
+      "right": 39,
+      "key_exact": false
+    },
+    {
+      "id": "DEV_P005",
+      "right": 16,
+      "key_exact": false
+    }
+  ],
+  "seccomp_probes_enforced_in_each_candidate_kernel": true
+}

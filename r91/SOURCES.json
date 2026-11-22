@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "file": "1872-0.txt",
+      "title": "The Red House Mystery",
+      "genre": "narrative",
+      "url": "https://raw.githubusercontent.com/GITenberg/The-Red-House-Mystery_1872/master/1872-0.txt",
+      "git_blob_sha": "41746c98ca8d9472777c21801d47b182c5785cea",
+      "sha256": "ee1ab93b8cde3bd5ab404eee337b8f96ac1163a39a3b7d18566c75c3b0e03a7a"
+    },
+    {
+      "file": "147-0.txt",
+      "title": "Common Sense",
+      "genre": "political_essay",
+      "url": "https://raw.githubusercontent.com/GITenberg/Common-Sense_147/master/147-0.txt",
+      "git_blob_sha": "cb0c5ecc80d1d64a1b95c39c459795c4bacb986e",
+      "sha256": "e10795000c9ec0abad2bac1aad3b1eeced791c64eb21f08d256ff2b2d2489fe6"
+    },
+    {
+      "file": "2529.txt",
+      "title": "The Analysis of Mind",
+      "genre": "analytic_nonfiction",
+      "url": "https://raw.githubusercontent.com/GITenberg/The-Analysis-of-Mind_2529/master/2529.txt",
+      "git_blob_sha": "c565d8f9b7768c159ed78e733a05095439be845f",
+      "sha256": "5444c346a0b7ca9f62499d9b028f5bd5974a8d688d60b15ca0b103a77eee3138"
+    }
+  ],
+  "generator_seed": 912211
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "gate",
+  "hypothesis": "The archived R82 linked-tableau baseline and R68 PTAK primer optimizer meet a fresh necessary recovery-power screen at the declared known structural settings: at least18 of20 exact97-letter messages plus true or proved-equivalent keys in every stratum. Synthetic controls only; no K4 hypothesis is tested.",
+  "not_excluded": "Any cipher family, alternative algorithms or seeds, larger search budgets, unknown-structure recognition, equivalent branches, other parameters, masking, other languages or noise. Failure rejects only the pinned broad bounded solver attempt.",
+  "preregistration_path": "r91/PREREGISTRATION.md",
+  "preregistration_commit": "61affb205c85509d713951bfe58fc4a6ee85ef84",
+  "preregistration_sha256": "d0f5722aa0aa4460f2f72ca215aa59c196edddd3b541bea067fd976d8f16765d",
+  "synthetic_gate_path": "r91/RESULT.json",
+  "gate_verdict": "PENDING_TRUTH_REVEAL",
+  "solver_inputs": [
+    "r91/R59_LOWER4_FROM_K5.bin",
+    "r91/routes.txt",
+    "r91/empty_words.tsv",
+    "r91/holdout/R82_INPUT.jsonl",
+    "r91/holdout/PTAK_INPUT.jsonl",
+    "r91/holdout/run/PTAK_INPUT.tsv"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800,
+    "max_candidates": 600,
+    "max_retries": 0
+  },
+  "resource_semantics": "Per formal arm: one candidate kernel, aggregate sampled RSS and CPU through audit/run_bounded_agg.py, plus per-process RLIMIT_AS. Generation, compilation and evaluation separately use the same cap.",
+  "notes": "Preregistration and complete source/model were published before generation; public inputs and truth commitment were published before execution. Both fixed candidate kernels ran once under the aggregate wrapper; 600/600 independent scalar forward witnesses passed before any truth opening. Runtime input TSV is a deterministic transformation by the pinned prepare_ptak.py of the published PTAK JSONL. This is known-structure recovery only. No result authorizes K4. Independent-model execution review: NONE.",
+  "k4_run_authorized": false,
+  "independent_execution_review": "NONE",
+  "solver_input_derivations": {
+    "r91/holdout/run/PTAK_INPUT.tsv": {
+      "from": "r91/holdout/PTAK_INPUT.jsonl",
+      "via": "r91/prepare_ptak.py",
+      "public_input_commit": "552022dbe551181da96a525d8afbbedb38c79a94",
+      "sha256": "9517c26fdab1f0f24915d7c49354c359bfd5c4101e9297416768b76d0416ed0b"
+    }
+  },
+  "freeze_manifest_path": "r91/holdout/FROZEN.sha256",
+  "resource_logs": [
+    "r91/holdout/run/PREPARATION_RESOURCE_LOG.json",
+    "r91/holdout/run/PTAK_BUILD_RESOURCE_LOG.json",
+    "r91/holdout/run/PTAK_RESOURCE_LOG.json",
+    "r91/holdout/run/R82_RESOURCE_LOG.json",
+    "r91/holdout/run/SECCOMP_BUILD_RESOURCE_LOG.json",
+    "r91/holdout/run/WITNESS_RESOURCE_LOG.json"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 0.252,
+  "max_rss_mb": 0.1,
+  "aggregate_peak_rss_mb": 0.1,
+  "per_process_peak_rss_mb": 9.1,
+  "cpu_seconds": 0.053,
+  "samples": 1,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "r91/prepare_ptak.py",
+    "r91/holdout/PTAK_INPUT.jsonl",
+    "r91/holdout/run/PTAK_INPUT.tsv"
+  ]
+}

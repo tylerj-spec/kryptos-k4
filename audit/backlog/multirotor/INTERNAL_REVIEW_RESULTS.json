@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "review_role": "same-model internal challenge; not independent-model council",
+  "q4_length4_exhaustive_plaintext_ciphertext_comparisons": 131072,
+  "q6_random_oracle_comparisons": 200,
+  "q6_outcomes": {
+    "SAT": 72,
+    "UNSAT": 128
+  },
+  "q6_observation_order_and_duplicate_checks": 200,
+  "mod26_nonunit_difference_cases": 2,
+  "interface_gauge_checks": 360,
+  "initial_angle_absorption_checks": 30,
+  "D": {
+    "raw_clock_rows": 400,
+    "constant_relative_rows": 20,
+    "retained_labelled_settings": 6080,
+    "removed_r87_phase0_labels": 128,
+    "removed_phase_nonzero_labels_still_open": 192
+  },
+  "O": {
+    "labelled_clock_rows": 1040,
+    "distinct_literal_full_schedules": 1016,
+    "labelled_settings": 16640,
+    "distinct_literal_schedules_times_contacts": 16256,
+    "static_second_clock_rows": 32,
+    "static_second_labelled_settings": 512,
+    "constant_relative_rows": 0
+  },
+  "boundary_phase_not_absorbed_counterexample": {
+    "q": 26,
+    "n": 2,
+    "r": 1,
+    "wiring": "swap 0 and 1; identity elsewhere",
+    "full_time_map_pattern": "F0 != F1 == F2"
+  },
+  "static_second_counterexample_outside_all_r87_static_maps": true,
+  "scope": "Synthetic mathematics only. No target text, known-letter positions, English score, or K4 call."
+}

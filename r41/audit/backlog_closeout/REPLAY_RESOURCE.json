@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 15.288,
+  "max_rss_mb": 146.0,
+  "aggregate_peak_rss_mb": 146.0,
+  "per_process_peak_rss_mb": 123.9,
+  "cpu_seconds": 8.784,
+  "samples": 61,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 2400,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/backlog/r32/run_targets.py",
+    "--round",
+    "41",
+    "--binary",
+    "/tmp/kryptos_backlog_replay_target41",
+    "--carter",
+    "/tmp/kryptos_backlog_carter_az.txt",
+    "--out",
+    "r41/audit/backlog_closeout/REPLAY.json",
+    "--plan-commit",
+    "dea5bb84ec983b3d7fc978e11efeebe7f0fd72df",
+    "--code-commit",
+    "b23e1bcc12119707fb699d81ae6d71c63ce0c376"
+  ]
+}
