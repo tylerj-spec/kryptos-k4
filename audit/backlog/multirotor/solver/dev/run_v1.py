@@ -3,7 +3,7 @@
 Workers (no letter model; created before the main process loads it, so no page is shared or double-counted) run
 solve_v1.restarts per plant. The main process then scores the KEEP best distinct decodes (by quadgram) with the
 R59 letter model and the word model; top-1 is the letter-model maximum among them. Output OUT/RESULTS.jsonl.
-Usage: python3 -I rx2o/dev/run_v1.py LM.bin PANEL.tsv OUTDIR [PROCS=2]"""
+Usage: python3 -I audit/backlog/multirotor/solver/dev/run_v1.py LM.bin PANEL.tsv OUTDIR [PROCS=2]"""
 import json
 import sys
 import time
@@ -11,7 +11,7 @@ from multiprocessing import Pool
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
+ROOT = HERE.parents[4]
 sys.path[:0] = [str(HERE.parent), str(ROOT / "r75")]
 import solve_v1 as S  # noqa: E402
 

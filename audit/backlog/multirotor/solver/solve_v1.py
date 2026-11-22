@@ -2,7 +2,7 @@
 """RX2-O development solver, VERSION 1 (supplied structure). Reads only a ciphertext, its structural label and the
 generic English quadgram table. No K4 data, no published letters, no truth.
 For a label (ein, eout, n, r, h, d1, d2): R restarts x I iterations of joint annealing over both inverse wirings
-(rx2o/kernel/anneal2.c), each followed by a greedy polish. Every restart's decode is re-derived by the explicit
+(kernel/anneal2.c), each followed by a greedy polish. Every restart's decode is re-derived by the explicit
 decryptor (rx2o.decrypt) and checked to re-encrypt. Seeds come from (SEED, ciphertext, label).
 Functions: lib(), restarts(ct, label, R, I, T0, seed) -> [(quad score, W1, W2, text)], seed_of."""
 import ctypes
@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[3]
 sys.path.insert(0, str(HERE))
 import rx2o as X  # noqa: E402
 

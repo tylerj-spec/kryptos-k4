@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve()
-sys.path[:0] = [str(HERE.parents[1]), str(HERE.parents[2] / "r89" / "sealed")]
+sys.path[:0] = [str(HERE.parents[1]), str(HERE.parents[5] / "r89" / "sealed")]
 import rx2o as X  # noqa: E402
 import make89 as M89  # noqa: E402
 

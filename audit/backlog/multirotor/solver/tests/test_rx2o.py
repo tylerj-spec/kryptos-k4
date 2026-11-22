@@ -2,13 +2,13 @@
 """RX2-O development tests (synthetic only). 1 rx2o.encrypt equals ChatGPT's rotor_constraints.encrypt with its
 odometer (contact alphabets applied outside), round trips; 2 16,640 labels; every label's turnover count matches its
 cell; 3 the kernel's per-restart score equals the quadgram score of rx2o.decrypt of the returned wirings.
-Usage: python3 -I rx2o/tests/test_rx2o.py"""
+Usage: python3 -I audit/backlog/multirotor/solver/tests/test_rx2o.py"""
 import random
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
+ROOT = HERE.parents[4]
 sys.path[:0] = [str(HERE.parent), str(ROOT / "audit/backlog/multirotor"), str(ROOT / "r87")]
 import rx2o as X  # noqa: E402
 import rotor_constraints as RC  # noqa: E402
