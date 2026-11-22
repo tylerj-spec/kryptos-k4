@@ -12,7 +12,7 @@
 | R41 historical feasibility replay | Complete algebraic join across all nine saved inputs; all 18 part-counts agree; K4 has zero of 10,912,725,152 feasible settings | `audit/reviews/R41_INDEPENDENT_FEASIBILITY.md` |
 | R90 independent review | Exact finite exclusion independently verified and L179 promoted; saved blind statistics remain NO_SIGNAL with no full original LM rerun claimed | `r90/audit/independent_closeout/REVIEW.md` |
 | Multi-rotor designs | Complete reversible RX2-O/RX2-D designs, tested exact constraint kernel, phase/equivalence audit and finite execution bounds; cipher families remain OPEN | `audit/backlog/multirotor/DESIGN.md` |
-| R82 solver gate | Completed R91 supplied-structure screen: 250/360 exact, 8/18 cells pass; broad bounded attempt SOLVER_NO_POWER, family OPEN | `r91/RESULT.md`, `audit/backlog/R91_RESULT_REVIEW.json` |
+| R82 solver gate | Completed R91 supplied-structure screen: 250/360 exact, 8/18 cells pass; broad bounded attempt SOLVER_NO_POWER. All 18 tested cells lie inside archived R83 LX scope; R91 adds no cipher exclusion | `r91/RESULT.md`, `audit/backlog/R91_RESULT_REVIEW.json`, `audit/reviews/POST_CLOSEOUT_SCOPE_REVIEW.md` |
 | PTAK solver gate | Completed R91 lags 13–24 screen: 32/240 exact, 0/12 cells pass; archived bounded attempt SOLVER_NO_POWER, family OPEN | `r91/RESULT.md`, `audit/reviews/R91_POWER_GATE_CLOSEOUT.md` |
 
 R89 and R90 jointly close 35 enumerated F26 alphabet classes, including all 20 original-design classes, within their finite parameter/error bounds. R90's independent exact result does not depend on the language model. Its amended operational retry and sampled summed-RSS semantics remain disclosed.
@@ -20,6 +20,17 @@ R89 and R90 jointly close 35 enumerated F26 alphabet classes, including all 20 o
 The multi-rotor review found 192 labeled phase-shifted single-rotor settings outside R87's zero-boundary-phase schedule. They remain OPEN. Equal-motion collapse alone does not certify an old exclusion.
 
 The search hold was lifted on 16 November; current guardrails remain in force. New blind searches still require a fresh power gate, a frozen complete parameter/score/budget specification, and outputs committed and pushed before known-letter evaluation. Same-model subagents count as one review.
+
+## Current next steps after the closeout review
+
+The six-item backlog above was merged in PR #102 at `c16c4ad11c92391377f7347a70d88a5c02710fa5`; it is closed. The active work order is [audit/NEXT_STEPS.md](audit/NEXT_STEPS.md). Its old 15 November checklist is now explicitly historical.
+
+1. **Primary research: RX2-O solver engineering**, at most three versions under fixed development caps. A working blind solver, confidence rule, key-equivalence evaluator and measured whole-search throughput must exist before a fresh formal gate.
+2. **Parallel synthetic work: the 192 n<=4 single-rotor boundary-phase labels.** This is scope hygiene, not a K4 lead or a clue-assisted filter for the blind solver.
+3. **Park the proposed narrow R82 K4 gate.** Source comparison proves that all 18 R91 linked-key cells, including the successful m=3/4 subgroup, are contained in archived R83 LX. The archive's only EXACT survivor is at m=20. This review does not independently certify or promote R83/L172; it prevents a redundant search from being presented as new coverage.
+4. **Park the unchanged long-lag PTAK optimizer.** Reopen only after a materially different implementation demonstrates development recovery and passes a fresh gate.
+
+The prospective rotor screen now has eight turnover-regime cells (160 controls), separating static and moving slow-rotor behavior. The full-method gate must handle nested single-rotor overlap, unidentifiable key labels, and top-ranked recovery separately from candidate recall. These corrections are prospective; no new experiment or K4 computation was performed. See [the review](audit/reviews/POST_CLOSEOUT_SCOPE_REVIEW.md) and [the revised design bounds](audit/backlog/multirotor/DESIGN.md).
 
 ## Historical status snapshots
 
@@ -55,7 +66,7 @@ The following text is retained as historical context. Its then-current backlog, 
   - The conditions for lifting the search hold now rest on review of T1/T2 and Tyler's decision.
 - **What to do next:** `audit/NEXT_STEPS.md`.
 
-The sections below are the status as of 31 October 2026 and remain valid. Rounds R55–R83 are recorded in `LEDGER.md`.
+The sections below preserve the status as of 31 October 2026. Their priorities and thresholds are historical, not current work instructions. Rounds R55–R83 are recorded in `LEDGER.md`.
 
 ---
 
