@@ -12,7 +12,9 @@
   "solver_inputs": [
     "r91/R59_LOWER4_FROM_K5.bin",
     "r91/routes.txt",
-    "r91/empty_words.tsv"
+    "r91/empty_words.tsv",
+    "r91/holdout/R82_INPUT.jsonl",
+    "r91/holdout/PTAK_INPUT.jsonl"
   ],
   "resource_budget": {
     "max_wall_seconds": 1800,
