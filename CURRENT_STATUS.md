@@ -22,8 +22,10 @@ rebuilt R95's registered model exactly and recomputed the registered endpoint wi
   order-4 baseline gives 32/48.
 - **Agreement:** the one recovered primary shard agrees 650/650.
 - **What it permits:** only a separately specified conditional-recovery work order (charter §6.3). No K4 run.
-- **R95's own branch record** is unchanged. Whether this replication closes R95 is Tyler's decision
-  (`audit/reviews/r95_independent/REVIEW.md`).
+- **R95 is CLOSED.** Tyler: "Yes, that is fine with closing 95" (`audit/reviews/R95_CLOSEOUT.md`). Its
+  registration is kept verbatim in `audit/reviews/r95_independent/r95_registration_snapshot/`.
+- **Next** (charter §6.3): a separately specified conditional-recovery work order. It has not yet been drafted or
+  approved.
 
 Everything below is the 22 November status, unchanged.
 

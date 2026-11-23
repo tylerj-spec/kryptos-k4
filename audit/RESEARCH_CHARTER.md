@@ -513,6 +513,14 @@ undefined claim that all hand-plausible constructions have been excluded.
   a prerequisite for the immediate milestone or a replacement for a concealed gate.
 - **D-6. K5 and contamination:** apply Section 12's provenance, applicability and input-isolation checks.
   Any material change to an active round is separately registered; no speculative release blocks R95.
+- [x] **D-7. R95 closed (23 November 2026, additive).**
+  - Tyler: "Yes, that is fine with closing 95".
+  - The outcome GO_FOR_CONDITIONAL_DEVELOPMENT (order-5 objective 1/48 against the ≤ 2/48 bar; baseline 32/48)
+    rests on Claude Code's independent replication. That replication rebuilt the registered model digest and
+    reproduced the recovered primary shard exactly.
+  - R95's lost primary outputs and its unused same-model verifier are no longer required.
+  - Next is the §6.3 conditional-recovery work order, separately specified. No K4 run is authorized.
+  - See `audit/reviews/R95_CLOSEOUT.md`.
 
 
 ---
