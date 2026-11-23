@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 4.776,
+  "max_rss_mb": 199.6,
+  "aggregate_peak_rss_mb": 199.6,
+  "per_process_peak_rss_mb": 207.6,
+  "cpu_seconds": 4.712,
+  "samples": 19,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 300,
+    "max_ram_mb": 1024,
+    "max_cpu_seconds": 240
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "audit/reviews/r95_independent/verify95.py",
+    "run",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/r95build_cr/lm5.bin",
+    "/tmp/claude-0/lmbuild/out/train.txt"
+  ]
+}

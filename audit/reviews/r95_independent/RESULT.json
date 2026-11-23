@@ -1,0 +1,89 @@
+{
+ "reviewer": "Claude Code",
+ "mode": "DEVELOPMENT_SYNTHETIC_TRUTH_ASSISTED_INDEPENDENT_REPLICATION",
+ "k4_inputs": 0,
+ "worked_example": {
+  "fast": [
+   0,
+   1,
+   1
+  ],
+  "slow": [
+   0,
+   0,
+   0
+  ],
+  "ciphertext": [
+   0,
+   0,
+   2
+  ],
+  "pass": true
+ },
+ "provenance": {
+  "chronology_c02b7a9_b347130_8f59313": true,
+  "r95_protocol_entries": 22,
+  "r95_protocol_mismatches": [],
+  "panel_sha256_ok": true,
+  "truth_sha256_ok": true,
+  "model4_sha256_ok": true,
+  "builder_sha256_ok": true,
+  "shard_blob_ok": true,
+  "pass": true
+ },
+ "model_reconstruction": "BUILD_CR.json (Amendment 1)",
+ "recovered_shard_check": {
+  "records": 650,
+  "expected": 650,
+  "mismatching_records": [],
+  "pass": true
+ },
+ "checks": {
+  "true_encrypt_ok": 48,
+  "true_decrypt_ok": 48,
+  "neighbor_witness_ok": 31200,
+  "neighbors": 31200
+ },
+ "endpoint": {
+  "K4": {
+   "cases_with_any_below95_neighbor_above_truth": 32,
+   "by_cell": {
+    "n1t3": 4,
+    "n1t4": 4,
+    "n2t1": 6,
+    "n2t2": 3,
+    "n3t1": 4,
+    "n3t2": 2,
+    "n4t0": 6,
+    "n4t1": 3
+   },
+   "cases_with_wrong_text_above_truth": 39,
+   "cases_with_95_96_above_truth": 28,
+   "total_below95_neighbors_above_truth": 73
+  },
+  "K5": {
+   "cases_with_any_below95_neighbor_above_truth": 1,
+   "by_cell": {
+    "n1t3": 0,
+    "n1t4": 1,
+    "n2t1": 0,
+    "n2t2": 0,
+    "n3t1": 0,
+    "n3t2": 0,
+    "n4t0": 0,
+    "n4t1": 0
+   },
+   "cases_with_wrong_text_above_truth": 5,
+   "cases_with_95_96_above_truth": 4,
+   "total_below95_neighbors_above_truth": 1
+  }
+ },
+ "registered_rule_applied_to_replication": "GO_FOR_CONDITIONAL_DEVELOPMENT",
+ "verbatim_truth_in_training_cases": 0,
+ "all_checks_pass": true,
+ "wall_s": 4.71,
+ "outputs_sha256": {
+  "CASES.json": "fb2034d658d8ee6403797081f34afdae7f4f1d089bb98edddf26d2013012d9aa",
+  "NEIGHBORS.tsv": "b56ff8604895f1a1a1b2aeda28a180eaa813845fd2d904ba11e92cc5896a72a5"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "builder_patch": {
+  "old": "float lp = log10f(p);",
+  "new": "float lp = (float)log10((double)p);",
+  "lines_changed": 1
+ },
+ "patched_builder_sha256": "7209109ed0914625af6e10d447ba647ec990ecb635319ebe7f3d008e42b47aad",
+ "train_sha256_ok": true,
+ "model5_bytes": 49426528,
+ "model5_sha256": "e9c0848f5e256814387968c09006a44804e90a72aeb79034d0b12abfcce31abd",
+ "model5_sha256_ok": true,
+ "model4_sha256_ok": true,
+ "orders1_4_equal_baseline": true,
+ "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+ "glibc": "ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39",
+ "pass": true
+}
