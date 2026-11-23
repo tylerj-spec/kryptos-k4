@@ -5,7 +5,7 @@
   "hypothesis": "On the spent 48-case RX2-O panel with supplied structure and ONE supplied true inverse wiring (true-U or true-V, 96 conditions), a fixed annealer using R95's fixed order-5 objective recovers >=95/97 letters in >=44/48 cases per condition and >=5/6 per turnover cell. No K4 hypothesis is tested.",
   "not_excluded": "Every cipher family and every K4 hypothesis; both-wirings-unknown recovery; unknown structure; fresh texts; masking or misspelling; false-positive rates. A failure rejects only these two fixed versions under this objective on this spent panel.",
   "preregistration_path": "r96/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING_FIRST_COMMIT",
+  "preregistration_commit": "7a37a278a4a1b0f48e50d847c2efefe91d1dc934",
   "solver_inputs": [
     "r96/inputs/CONDITIONS.tsv"
   ],
@@ -59,5 +59,6 @@
   "notes": "Type C development (charter section 5). Approved by Tyler 23 Nov 2026: 'I approve'. mode=crib_assisted denotes supplied synthetic truth (one true wiring), not K4 letters. The solver reads only CONDITIONS.tsv and the model; the evaluator opens PANEL_TRUTH.json only after the version's outputs are frozen and pushed.",
   "independent_execution_review": "NONE",
   "protocol_manifest_path": "r96/PROTOCOL.sha256",
-  "resource_logs": []
+  "resource_logs": [],
+  "preregistration_sha256": "164608bf012e1ee77ff525972d40a1d566343cc9f9b19c80ec37dd63f52daa46"
 }
