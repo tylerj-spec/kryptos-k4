@@ -1,0 +1,63 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "On the spent 48-case RX2-O panel with supplied structure and ONE supplied true inverse wiring (true-U or true-V, 96 conditions), a fixed annealer using R95's fixed order-5 objective recovers >=95/97 letters in >=44/48 cases per condition and >=5/6 per turnover cell. No K4 hypothesis is tested.",
+  "not_excluded": "Every cipher family and every K4 hypothesis; both-wirings-unknown recovery; unknown structure; fresh texts; masking or misspelling; false-positive rates. A failure rejects only these two fixed versions under this objective on this spent panel.",
+  "preregistration_path": "r96/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING_FIRST_COMMIT",
+  "solver_inputs": [
+    "r96/inputs/CONDITIONS.tsv"
+  ],
+  "diagnostic_inputs": [
+    "r94/inputs/PANEL_TRUTH.json"
+  ],
+  "external_model": {
+    "sha256": "e9c0848f5e256814387968c09006a44804e90a72aeb79034d0b12abfcce31abd",
+    "bytes": 49426528,
+    "rebuild": "audit/reviews/r95_independent/build_cr.py",
+    "training_sha256": "871627e5fd2f84b4afa976516303098f437b5c339b7297db238fcd1ecb0e0434"
+  },
+  "gate_verdict": "NOT_A_GATE_DEVELOPMENT_ONLY",
+  "k4_run_authorized": false,
+  "new_holdout": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1536,
+    "max_retries": 0
+  },
+  "job_budgets": {
+    "build": [
+      120,
+      90,
+      512
+    ],
+    "selftest": [
+      120,
+      60,
+      512
+    ],
+    "v1": [
+      450,
+      450,
+      2048
+    ],
+    "v2": [
+      450,
+      450,
+      2048
+    ],
+    "evaluate_each": [
+      120,
+      60,
+      512
+    ]
+  },
+  "resource_semantics": "audit/run_bounded_agg.py per job: wall, aggregate CPU and sampled aggregate RSS (also the per-process RLIMIT_AS). One worker. Zero retries. The sum of job budgets is inside the charter's 1,800/1,800/2,048 development ceiling.",
+  "notes": "Type C development (charter section 5). Approved by Tyler 23 Nov 2026: 'I approve'. mode=crib_assisted denotes supplied synthetic truth (one true wiring), not K4 letters. The solver reads only CONDITIONS.tsv and the model; the evaluator opens PANEL_TRUTH.json only after the version's outputs are frozen and pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r96/PROTOCOL.sha256",
+  "resource_logs": []
+}
