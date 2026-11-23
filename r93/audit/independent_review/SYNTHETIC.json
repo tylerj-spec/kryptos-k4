@@ -1,0 +1,126 @@
+{
+ "reviewer": "Claude Code",
+ "mode": "SYNTHETIC_ONLY",
+ "k4_data_read": false,
+ "source_sha256": {
+  "check93r.c": "d0aa2af9ac85b5772c13dfc16c6c6ec545ccb97f8de056bc151680b169dbac5e",
+  "review93.py": "309679cd80bf424f8bfb1c591d5787b39cca32cab5d2314eebb92bf07aba9aa1"
+ },
+ "alphabets": [
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "KRYPTOSABCDEFGHIJLMNQUVWXZ",
+  "PALIMSETBCDFGHJKNOQRUVWXYZ",
+  "ABSCIDEFGHJKLMNOPQRTUVWXYZ"
+ ],
+ "T7_worked_example": {
+  "offsets": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -2,
+   -2,
+   -2
+  ],
+  "ciphertext": [
+   2,
+   3,
+   0,
+   2,
+   1,
+   4,
+   0,
+   4,
+   1
+  ],
+  "pass": true
+ },
+ "T1_toy_oracle": {
+  "lists": 33483,
+  "disagreements": 0,
+  "pass": true
+ },
+ "T2_schedules": {
+  "clock_labels": 9108,
+  "labels": 145728,
+  "step_vs_floor_mismatches": 0,
+  "distinct_clock_sequences": 4690,
+  "distinct_clock_contact_labels": 75040,
+  "sequences_shared_with_r87": 94,
+  "clock_contact_labels_shared_with_r87": 1504,
+  "raw_labels_shared_with_r87": 36096,
+  "distinct_clock_contact_labels_outside_r87": 73536,
+  "sequences_shared_with_r92": 0,
+  "differences_from_r93_accounting": {},
+  "pass": true
+ },
+ "T3_plants": {
+  "plants": 145728,
+  "round_trips": 9108,
+  "failures": 0,
+  "pass": true
+ },
+ "T4_error_plants": {
+  "error_plants": 9108,
+  "checks": 27324,
+  "failures": 0,
+  "pass": true
+ },
+ "T5_second_implementation": {
+  "comparisons": 24000,
+  "flag_vectors_disagreeing": 0,
+  "exact_feasible_seen": 39,
+  "pass": true
+ },
+ "T6_sensitivity_throughput": {
+  "scans": [
+   {
+    "input": "random_0",
+    "labels": 145728,
+    "exact": 0,
+    "drop_labels": 0,
+    "drop_pairs": 0,
+    "wall_s": 0.0662,
+    "cpu_s": 0.0662
+   },
+   {
+    "input": "random_1",
+    "labels": 145728,
+    "exact": 0,
+    "drop_labels": 0,
+    "drop_pairs": 0,
+    "wall_s": 0.0608,
+    "cpu_s": 0.0608
+   },
+   {
+    "input": "random_2",
+    "labels": 145728,
+    "exact": 0,
+    "drop_labels": 0,
+    "drop_pairs": 0,
+    "wall_s": 0.0564,
+    "cpu_s": 0.0564
+   },
+   {
+    "input": "planted",
+    "labels": 145728,
+    "exact": 16,
+    "drop_labels": 56,
+    "drop_pairs": 424,
+    "wall_s": 0.0687,
+    "cpu_s": 0.0687
+   }
+  ],
+  "forecast_wall_s": 37.62,
+  "forecast_cpu_s": 37.62,
+  "forecast_limits_80pct": [
+   1440,
+   960
+  ],
+  "pass": true
+ },
+ "verdict": "GO",
+ "wall_s": 9.22
+}

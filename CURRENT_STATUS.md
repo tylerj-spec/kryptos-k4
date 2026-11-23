@@ -1,3 +1,23 @@
+# Current K4 research status — 23 November 2026 update
+
+**No independently verified K4 solution.**
+
+**L182 (R93) is now independently verified.** Claude Code's different-model review is complete: charter §6.1, the
+"Now — separate reviewer" item.
+- A separately derived and coded checker reproduces every one of R93's 201 per-input counts. All are zero:
+  - no setting of the 145,728 fits K4's 24 published letters;
+  - none fits with any one letter set aside;
+  - the same holds for all 200 shuffles.
+- It also reproduces R93's scope accounting.
+- Evidence: `r93/audit/independent_review/REVIEW.md` and `audit/reviews/R93_INDEPENDENT_REVIEW.md`.
+
+**Coverage.** With L181, every nonzero step-boundary phase of the position-only single rotor is independently
+verified as excluded through period 96. R87's 2,944 zero-phase labels with n 5–96 remain single-model, and are the
+next item of the charter's Phase 1 backlog (L176).
+
+**R95** (charter §6.2) remains ChatGPT's active item and was not touched. Everything below is the 22 November
+status, unchanged.
+
 # Current K4 research status — 22 November 2026 (America/Chicago)
 
 **No independently verified K4 solution. R92–R94 are closed at their recorded scopes;

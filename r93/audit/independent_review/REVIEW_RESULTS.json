@@ -1,0 +1,1248 @@
+{
+ "reviewer": "Claude Code",
+ "mode": "POSTFREEZE_CRIB_ASSISTED_AGGREGATE_REVIEW",
+ "provenance": {
+  "inputs_sha256_ok": true,
+  "k4_file_sha256_ok": true,
+  "observation_file_sha256_ok": true,
+  "k4_97_letters": true,
+  "k4_first_row": true,
+  "observations": 24,
+  "observations_unique_in_range": true,
+  "inputs": 201,
+  "shuffles_distinct_not_k4_frequency_preserving": true,
+  "shuffles_regenerated_byte_identical": true,
+  "shuffle_draws": 200
+ },
+ "totals": {
+  "inputs": 201,
+  "setting_input_calls": 29291328,
+  "exact_decisions": 29291328,
+  "omission_decisions": 702991872,
+  "k4": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "shuffles_with_any_exact": 0,
+  "shuffles_with_any_drop": 0
+ },
+ "agrees_with_r93_aggregates": true,
+ "per_input": {
+  "K4": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_000": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_001": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_002": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_003": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_004": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_005": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_006": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_007": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_008": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_009": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_010": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_011": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_012": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_013": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_014": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_015": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_016": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_017": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_018": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_019": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_020": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_021": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_022": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_023": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_024": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_025": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_026": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_027": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_028": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_029": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_030": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_031": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_032": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_033": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_034": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_035": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_036": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_037": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_038": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_039": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_040": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_041": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_042": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_043": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_044": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_045": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_046": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_047": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_048": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_049": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_050": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_051": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_052": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_053": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_054": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_055": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_056": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_057": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_058": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_059": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_060": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_061": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_062": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_063": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_064": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_065": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_066": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_067": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_068": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_069": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_070": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_071": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_072": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_073": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_074": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_075": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_076": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_077": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_078": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_079": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_080": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_081": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_082": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_083": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_084": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_085": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_086": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_087": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_088": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_089": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_090": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_091": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_092": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_093": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_094": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_095": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_096": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_097": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_098": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_099": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_100": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_101": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_102": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_103": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_104": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_105": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_106": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_107": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_108": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_109": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_110": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_111": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_112": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_113": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_114": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_115": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_116": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_117": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_118": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_119": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_120": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_121": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_122": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_123": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_124": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_125": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_126": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_127": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_128": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_129": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_130": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_131": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_132": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_133": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_134": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_135": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_136": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_137": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_138": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_139": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_140": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_141": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_142": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_143": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_144": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_145": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_146": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_147": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_148": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_149": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_150": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_151": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_152": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_153": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_154": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_155": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_156": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_157": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_158": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_159": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_160": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_161": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_162": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_163": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_164": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_165": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_166": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_167": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_168": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_169": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_170": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_171": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_172": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_173": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_174": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_175": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_176": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_177": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_178": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_179": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_180": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_181": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_182": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_183": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_184": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_185": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_186": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_187": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_188": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_189": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_190": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_191": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_192": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_193": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_194": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_195": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_196": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_197": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_198": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  },
+  "SHUF_199": {
+   "settings": 145728,
+   "exact_feasible_labels": 0,
+   "drop_feasible_labels": 0,
+   "drop_feasible_label_observation_pairs": 0
+  }
+ },
+ "outputs": {
+  "decoded_plaintexts": 0,
+  "wirings": 0,
+  "feasible_label_lists": 0,
+  "rankings": 0
+ },
+ "scan_cpu_s": 13.12,
+ "wall_s": 13.16
+}

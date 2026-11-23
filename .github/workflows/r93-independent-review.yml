@@ -1,0 +1,41 @@
+name: R93 independent review (Claude Code) replay
+on:
+  pull_request:
+    paths:
+      - "r93/**"
+      - ".github/workflows/r93-independent-review.yml"
+permissions:
+  contents: read
+jobs:
+  r93-review-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Synthetic gate and target replay under the aggregate wrapper; deterministic fields compared with the frozen evidence"
+        run: |
+          D=r93/audit/independent_review
+          sha256sum -c $D/SOURCE.sha256
+          sha256sum -c $D/REVIEW_FROZEN.sha256
+          python3 -I audit/run_bounded_agg.py --manifest $D/SYNTHETIC_BUDGET.json --log /tmp/syn-log.json -- python3 -I $D/review93.py gate /tmp/SYN.json
+          python3 -I audit/run_bounded_agg.py --manifest $D/BUDGET.json --log /tmp/tgt-log.json -- python3 -I $D/review93.py target /tmp/TGT.json
+          python3 - <<'PY'
+          import json
+          D = "r93/audit/independent_review/"
+          a, b = json.load(open("/tmp/SYN.json")), json.load(open(D + "SYNTHETIC.json"))
+          assert a["verdict"] == b["verdict"] == "GO"
+          for k in a:
+              if k.startswith("T") and k != "T6_sensitivity_throughput":
+                  assert a[k] == b[k], k
+          for x, y in zip(a["T6_sensitivity_throughput"]["scans"], b["T6_sensitivity_throughput"]["scans"]):
+              assert {k: x[k] for k in ("input", "labels", "exact", "drop_labels", "drop_pairs")} == \
+                     {k: y[k] for k in ("input", "labels", "exact", "drop_labels", "drop_pairs")}
+          a, b = json.load(open("/tmp/TGT.json")), json.load(open(D + "REVIEW_RESULTS.json"))
+          for k in ("provenance", "totals", "agrees_with_r93_aggregates", "per_input", "outputs"):
+              assert a[k] == b[k], k
+          assert a["agrees_with_r93_aggregates"] is True
+          print("R93 independent review replay: identical")
+          PY

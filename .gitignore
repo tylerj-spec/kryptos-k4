@@ -39,3 +39,4 @@ r89/.build/
 # R92 compiled annealing kernel
 r92/.build/
 audit/backlog/multirotor/solver/.build/
+r93/audit/independent_review/.build/
