@@ -15,8 +15,17 @@
 verified as excluded through period 96. R87's 2,944 zero-phase labels with n 5–96 remain single-model, and are the
 next item of the charter's Phase 1 backlog (L176).
 
-**R95** (charter §6.2) remains ChatGPT's active item and was not touched. Everything below is the 22 November
-status, unchanged.
+**R95's score check is GO by independent replication (L184).** Tyler asked "Can you verify R95". R95's primary
+evidence was lost with ChatGPT's workspace: 1 of 48 shards was published, and its verifier never ran. So Claude Code
+rebuilt R95's registered model exactly and recomputed the registered endpoint with independent code.
+- **Order-5 objective:** 1/48 cases have a below-95/97 one-swap neighbor above truth, against the bar of ≤ 2. The
+  order-4 baseline gives 32/48.
+- **Agreement:** the one recovered primary shard agrees 650/650.
+- **What it permits:** only a separately specified conditional-recovery work order (charter §6.3). No K4 run.
+- **R95's own branch record** is unchanged. Whether this replication closes R95 is Tyler's decision
+  (`audit/reviews/r95_independent/REVIEW.md`).
+
+Everything below is the 22 November status, unchanged.
 
 # Current K4 research status — 22 November 2026 (America/Chicago)
 
