@@ -24,10 +24,12 @@ rebuilt R95's registered model exactly and recomputed the registered endpoint wi
 - **What it permits:** only a separately specified conditional-recovery work order (charter §6.3). No K4 run.
 - **R95 is CLOSED.** Tyler: "Yes, that is fine with closing 95" (`audit/reviews/R95_CLOSEOUT.md`). Its
   registration is kept verbatim in `audit/reviews/r95_independent/r95_registration_snapshot/`.
-- **Next** (charter §6.3): the conditional-recovery work order is **drafted for Tyler's approval**
-  (`audit/reviews/R96_WORK_ORDER_DRAFT.md`). It has the true-U and true-V conditions on the spent panel, the R95
-  order-5 objective, at most two fixed optimizer versions, and bars of ≥ 44/48 per condition and ≥ 5/6 per cell.
-  Nothing is coded or run yet.
+- **R96 conditional recovery PASSES (L185).** Tyler approved it ("I approve"). With one true wiring supplied, R95's
+  objective and plain annealing recover ≥ 95/97 letters in 45/48 (true-V) and 47/48 (true-U) cases. Every turnover
+  cell is ≥ 5/6.
+- There are zero search gaps. The 4 misses are objective counterexamples.
+- Outcome: GO_FOR_JOINT_DEVELOPMENT. The next rung (both wirings unknown, structure supplied) needs its own work
+  order. No K4 run is authorized (`r96/RESULT.md`).
 
 Everything below is the 22 November status, unchanged.
 
