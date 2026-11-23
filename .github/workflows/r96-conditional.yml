@@ -1,0 +1,42 @@
+name: R96 conditional recovery (witness and model-free recount)
+on:
+  pull_request:
+    paths:
+      - "r96/**"
+      - ".github/workflows/r96-conditional.yml"
+permissions:
+  contents: read
+jobs:
+  r96-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Freeze manifest, forward witness, and recovery counts recomputed from the saved states and the public truth"
+        run: |
+          sha256sum -c r96/run_v1/OUTPUTS.sha256
+          python3 -I r96/witness96.py r96/inputs/CONDITIONS.tsv r96/run_v1/RESULTS.jsonl /tmp/W.json
+          cmp /tmp/W.json r96/run_v1/WITNESS.json
+          python3 -I - <<'PY'
+          import json
+          truth = json.load(open("r94/inputs/PANEL_TRUTH.json"))
+          ev = json.load(open("r96/eval_v1/EVAL.json"))
+          cnt = {}
+          for line in open("r96/run_v1/RESULTS.jsonl"):
+              r = json.loads(line)
+              t = truth[r["id"]]
+              top = r["starts"][r["top1"]]
+              assert top["score"] == max(s["score"] for s in r["starts"])
+              ok = sum(a == b for a, b in zip(top["text"], t["pt"])) >= 95
+              c = cnt.setdefault(r["condition"], {"recovered": 0, "by_cell": {}})
+              c["recovered"] += ok
+              c["by_cell"][t["cell"]] = c["by_cell"].get(t["cell"], 0) + ok
+          for cond, c in cnt.items():
+              s = ev["summary"][cond]
+              assert c["recovered"] == s["recovered"] and c["by_cell"] == s["by_cell"], cond
+              assert s["passes"] == (c["recovered"] >= 44 and min(c["by_cell"].values()) >= 5)
+          print("R96 recount identical:", {k: v["recovered"] for k, v in cnt.items()})
+          PY

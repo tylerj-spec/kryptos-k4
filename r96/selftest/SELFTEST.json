@@ -1,0 +1,29 @@
+{
+ "T1_round_trip_and_kernel_score": {
+  "cases": 40,
+  "round_trip_failures": 0,
+  "score_mismatches": 0,
+  "pass": true
+ },
+ "T2_runs_return_valid_states": {
+  "runs": 24,
+  "failures": 0,
+  "pass": true
+ },
+ "T3_hungarian_vs_brute_force": {
+  "instances": 200,
+  "failures": 0,
+  "pass": true
+ },
+ "T4_speed": {
+  "proposals_per_cpu_s": {
+   "U_searched": 1418913,
+   "V_searched": 1340595
+  },
+  "s": 1340595,
+  "rule": "I = floor(0.6*450*s/(96*16)/10000)*10000",
+  "pass": true
+ },
+ "I": 230000,
+ "pass": true
+}
