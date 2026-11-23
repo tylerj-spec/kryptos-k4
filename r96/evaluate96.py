@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """R96 evaluation of one version. Opens r94/inputs/PANEL_TRUTH.json ONLY after checking that the version's outputs
-are listed in its FROZEN.sha256, unchanged, and present in FREEZE_COMMIT, which must be on the remote branch.
+are listed in its OUTPUTS.sha256 (the freeze manifest), unchanged, and present in FREEZE_COMMIT, which must be on the remote branch.
 Usage: python3 -I r96/evaluate96.py VERSION FREEZE_COMMIT MODEL.bin"""
 import hashlib
 import json
@@ -23,7 +23,7 @@ def git(*a):
 def main():
     version, commit, model_path = int(sys.argv[1]), sys.argv[2], sys.argv[3]
     run = HERE / f"run_v{version}"
-    frozen = {l.split()[-1]: l.split()[0] for l in (run / "FROZEN.sha256").read_text().splitlines() if l.strip()}
+    frozen = {l.split()[-1]: l.split()[0] for l in (run / "OUTPUTS.sha256").read_text().splitlines() if l.strip()}
     for rel in (f"r96/run_v{version}/RESULTS.jsonl", f"r96/run_v{version}/RUN.json", f"r96/run_v{version}/WITNESS.json",
                 f"r96/run_v{version}/RESOURCE_LOG.json"):
         h = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
