@@ -62,7 +62,8 @@
   "resource_logs": [
     "r96/selftest/BUILD_RESOURCE_LOG.json",
     "r96/selftest/SELFTEST_RESOURCE_LOG.json",
-    "r96/run_v1/RESOURCE_LOG.json"
+    "r96/run_v1/RESOURCE_LOG.json",
+    "r96/eval_v1/RESOURCE_LOG.json"
   ],
   "preregistration_sha256": "164608bf012e1ee77ff525972d40a1d566343cc9f9b19c80ec37dd63f52daa46"
 }
