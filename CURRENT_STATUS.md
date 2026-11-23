@@ -24,8 +24,10 @@ rebuilt R95's registered model exactly and recomputed the registered endpoint wi
 - **What it permits:** only a separately specified conditional-recovery work order (charter §6.3). No K4 run.
 - **R95 is CLOSED.** Tyler: "Yes, that is fine with closing 95" (`audit/reviews/R95_CLOSEOUT.md`). Its
   registration is kept verbatim in `audit/reviews/r95_independent/r95_registration_snapshot/`.
-- **Next** (charter §6.3): a separately specified conditional-recovery work order. It has not yet been drafted or
-  approved.
+- **Next** (charter §6.3): the conditional-recovery work order is **drafted for Tyler's approval**
+  (`audit/reviews/R96_WORK_ORDER_DRAFT.md`). It has the true-U and true-V conditions on the spent panel, the R95
+  order-5 objective, at most two fixed optimizer versions, and bars of ≥ 44/48 per condition and ≥ 5/6 per cell.
+  Nothing is coded or run yet.
 
 Everything below is the 22 November status, unchanged.
 
