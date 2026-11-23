@@ -188,9 +188,10 @@ def run(model5_path, train):
     t0 = time.time()
     rep = {"reviewer": "Claude Code", "mode": "DEVELOPMENT_SYNTHETIC_TRUTH_ASSISTED_INDEPENDENT_REPLICATION",
            "k4_inputs": 0, "worked_example": worked_example(), "provenance": provenance()}
-    build_rep = json.loads((HERE / "BUILD.json").read_text())
+    builds = [json.loads((HERE / f).read_text()) for f in ("BUILD.json", "BUILD_CR.json") if (HERE / f).exists()]
     m5b = Path(model5_path).read_bytes()
-    assert build_rep["pass"] and sha(m5b) == PIN["model5_sha256"], "model reconstruction not verified"
+    assert any(b["pass"] for b in builds) and sha(m5b) == PIN["model5_sha256"], "model reconstruction not verified"
+    rep["model_reconstruction"] = "BUILD_CR.json (Amendment 1)" if not builds[0]["pass"] else "BUILD.json"
     M = {4: Model(ROOT / PIN["model4"][0]), 5: Model(model5_path)}
     assert M[4].K == 4 and M[5].K == 5
     train_text = Path(train).read_text()
