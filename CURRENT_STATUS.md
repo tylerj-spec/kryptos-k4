@@ -1,11 +1,18 @@
 # Current K4 research status — 22 November 2026 (America/Chicago)
 
-**No independently verified K4 solution. All three requested follow-ups are complete.**
+**No independently verified K4 solution. R92–R94 are closed at their recorded scopes;
+R95's publication and verification chain is the active 25-meter milestone.**
 
-**Governance (proposed, 22 Nov):** the research charter and roadmap are at `audit/RESEARCH_CHARTER.md`. They take
-effect when Tyler merges them and do not change any guardrail, frozen file or ledger row.
+**Governance:** PR #106 adopted `audit/RESEARCH_CHARTER.md` at `a8f29c0` on
+22 November (America/Chicago). The reconciliation in
+`audit/reviews/PR106_CHATGPT_RECONCILIATION.md` carries R95 into that plan and
+corrects its input boundaries and claim limits. No guardrail, frozen evidence
+or ledger row changes in this planning update.
+
 The exact single-rotor record is stronger; the tested structural two-rotor
-procedures remain unable to recover the practice texts.
+procedures remain unable to recover the practice texts. R95 tests one fixed
+replacement score on spent practice data; it does not yet have a verified
+scientific result in the published repository.
 
 | Follow-up | Completed result | Evidence |
 | --- | --- | --- |
@@ -13,7 +20,33 @@ procedures remain unable to recover the practice texts.
 | Wider timing audit R93 | EXACT_SCOPE_EXCL for all 145,728 registered n=5..96 nonzero-phase labels, with any wiring, at all 24 observations or with any one omitted. K4 and all 200 shuffles have zero compatibility. Independent-model review NONE | `r93/RESULT.md`, L182 |
 | Structural two-rotor development R94 | COMPLETE_DIAGNOSTIC / SOLVER_NO_POWER: A and B each 0/48 at >=95 letters, including all saved finals. Both one-true-wiring conditions also 0/48. Cipher family OPEN; no K4 run | `r94/RESULT.md`, L183 |
 
-## What the review establishes
+## Active work: finish the existing R95 evidence chain
+
+The pinned branch `chatgpt/r95-fixed-score-challenge-20261122` at
+[`8f59313`](https://github.com/tylerj-spec/kryptos-k4/commit/8f59313c7d4fa6327e0cee41a39f092ebbeb23aa)
+contains R95's registration, source, verifier and interruption record, but
+only one primary neighbor shard. Its complete evidence freeze and scalar
+verification are not published. A later session reported recovery with
+55/55 output and 22/22 source/input hashes matching and publication accepted;
+that report must be reconciled with the remote artifacts before completion
+or a scientific verdict is recorded.
+
+R95 compares one fixed rebuilt order-five objective with the lower-order
+baseline on the 48 spent R94 cases and all 31,200 legal one-swap neighbors.
+Its endpoint is cases with **any** below-95/97 neighbor above truth; at most
+2/48 is GO_FOR_CONDITIONAL_DEVELOPMENT, after complete verification. The
+historical 25/48 saved-best figure is not this endpoint. A pass only supports
+a separately registered conditional-solver proposal; the family remains OPEN.
+
+Finish original evidence publication, the already registered scalar verifier
+and the scoped closeout. Check for completed pending operations before any
+invocation; preserve the one-primary/one-verifier, zero-retry limits. Missing
+original evidence remains INCOMPLETE; no silent primary rerun. The verifier
+is a second ChatGPT code path, not independent-model review. This task does
+not discharge R93's separate different-model review. Exact remaining steps
+and limits are in charter Section 6.2 and the pinned R95 work order.
+
+## What the R92–R94 review establishes
 
 The completed postrun checker verifies 74 artifact hashes, R93's source/gate/
 freeze chronology and aggregate arithmetic, and R94's 999 new states, scalar
@@ -46,14 +79,20 @@ do not authorize extra attempts.
 
 ## Next decisions
 
-The active decision order is `audit/reviews/NEXT_STEPS_AFTER_R94.md`:
+The active plan is `audit/RESEARCH_CHARTER.md` Sections 6.1–6.3, carrying
+forward `audit/reviews/NEXT_STEPS_AFTER_R94.md` without changing its limits:
 
-1. Obtain a different-model R93 exact review before promoting L182.
-2. Require improved scoring and conditional recovery before another joint
-   two-rotor search; any new method needs a separate frozen work order and
-   fresh full-pipeline gate before K4.
-3. Keep the unchanged R82/PTAK procedures and the completed RX2-O/R94 work
-   orders parked. Avoid re-enumerating already-covered rotor labels.
+1. Finish and verify R95's existing fixed-score evidence chain as the immediate
+   25-meter target. Record its actual outcome; do not infer GO from hash checks.
+2. In parallel, obtain a different-model R93 exact review before promoting
+   L182. Claude or a person must independently re-derive/replay ChatGPT's work.
+3. Only after a verified R95 GO, prepare separately specified conditional and
+   joint recovery work. Preserve >=44/48 recovery and >=5/6 in each turnover
+   cell, then require a fresh full-pipeline GO before K4. These are development
+   prerequisites, not evidence that the rotor family is K4's method.
+4. Keep the unchanged R82/PTAK procedures and the completed RX2-O/R94 work
+   orders parked. Avoid re-enumerating already-covered rotor labels. RX2-D
+   remains design-only; RX2-O's failed recovery experiments do not test it.
 
 The earlier R32/R41 replays, R90 independent review, R82/PTAK screens and
 multi-rotor design work remain closed at their documented scopes
