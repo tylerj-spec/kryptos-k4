@@ -59,6 +59,10 @@
   "notes": "Type C development (charter section 5). Approved by Tyler 23 Nov 2026: 'I approve'. mode=crib_assisted denotes supplied synthetic truth (one true wiring), not K4 letters. The solver reads only CONDITIONS.tsv and the model; the evaluator opens PANEL_TRUTH.json only after the version's outputs are frozen and pushed.",
   "independent_execution_review": "NONE",
   "protocol_manifest_path": "r96/PROTOCOL.sha256",
-  "resource_logs": [],
+  "resource_logs": [
+    "r96/selftest/BUILD_RESOURCE_LOG.json",
+    "r96/selftest/SELFTEST_RESOURCE_LOG.json",
+    "r96/run_v1/RESOURCE_LOG.json"
+  ],
   "preregistration_sha256": "164608bf012e1ee77ff525972d40a1d566343cc9f9b19c80ec37dd63f52daa46"
 }

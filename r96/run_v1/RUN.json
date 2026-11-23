@@ -1,0 +1,12 @@
+{
+ "version": 1,
+ "I": 230000,
+ "R": 16,
+ "T0": 4.0,
+ "seed_prefix": "960101",
+ "conditions": 96,
+ "wall_s": 265.96,
+ "cpu_s": 263.74,
+ "inputs_sha256": "dc9e2a7219dacc8afc048e1d07160cc1f1036ff5ba17df2b116ac4f787d92f18",
+ "model_sha256": "e9c0848f5e256814387968c09006a44804e90a72aeb79034d0b12abfcce31abd"
+}
