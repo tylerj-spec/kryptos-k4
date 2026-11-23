@@ -1,0 +1,6 @@
+{
+  "resource_budget": {"max_wall_seconds": 300, "max_cpu_seconds": 240, "max_ram_mb": 1024, "max_retries": 0},
+  "build_budget": {"max_wall_seconds": 120, "max_cpu_seconds": 90, "max_ram_mb": 512, "max_retries": 0},
+  "mode": "DEVELOPMENT_SYNTHETIC_TRUTH_ASSISTED_INDEPENDENT_REPLICATION",
+  "k4_inputs": 0
+}
