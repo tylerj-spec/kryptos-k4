@@ -1,6 +1,9 @@
 # Current K4 research status — 22 November 2026 (America/Chicago)
 
 **No independently verified K4 solution. All three requested follow-ups are complete.**
+
+**Governance (proposed, 22 Nov):** the research charter and roadmap are at `audit/RESEARCH_CHARTER.md`. They take
+effect when Tyler merges them and do not change any guardrail, frozen file or ledger row.
 The exact single-rotor record is stronger; the tested structural two-rotor
 procedures remain unable to recover the practice texts.
 
