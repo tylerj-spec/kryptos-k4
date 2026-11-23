@@ -1,0 +1,5 @@
+{
+  "resource_budget": {"max_wall_seconds": 180, "max_cpu_seconds": 120, "max_ram_mb": 512, "max_retries": 0},
+  "mode": "SYNTHETIC_ONLY",
+  "note": "R93 independent review (Claude Code): toy oracle, schedules, plants at all 145,728 labels, error plants, second implementation, sensitivity and throughput. No K4 data."
+}

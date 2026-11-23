@@ -1,0 +1,7 @@
+{
+  "resource_budget": {"max_wall_seconds": 1800, "max_cpu_seconds": 1200, "max_ram_mb": 512, "max_retries": 0},
+  "mode": "POSTFREEZE_CRIB_ASSISTED_AGGREGATE_REVIEW",
+  "setting_input_calls": 29291328,
+  "omission_decisions": 732283200,
+  "new_decoded_candidates": 0
+}
