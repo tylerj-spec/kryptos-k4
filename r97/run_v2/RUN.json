@@ -1,0 +1,11 @@
+{
+ "version": 2,
+ "I_c": 140000,
+ "restarts": 3,
+ "T0": 4.0,
+ "seed_prefix": "970201",
+ "cases": 48,
+ "wall_s": 212.25,
+ "cpu_s": 210.2,
+ "model_sha256": "e9c0848f5e256814387968c09006a44804e90a72aeb79034d0b12abfcce31abd"
+}
