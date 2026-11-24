@@ -1,0 +1,41 @@
+name: R97 joint recovery (witness and model-free recount)
+on:
+  pull_request:
+    paths:
+      - "r97/**"
+      - ".github/workflows/r97-joint.yml"
+permissions:
+  contents: read
+jobs:
+  r97-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Freeze manifests, forward witnesses, and recovery counts recomputed from the saved finals and the public truth"
+        run: |
+          for v in 1 2; do
+            sha256sum -c r97/run_v$v/OUTPUTS.sha256
+            python3 -I r97/witness97.py r94/inputs/PANEL.tsv r97/run_v$v/RESULTS.jsonl /tmp/W$v.json
+            cmp /tmp/W$v.json r97/run_v$v/WITNESS.json
+          done
+          python3 -I - <<'PY'
+          import json
+          truth = json.load(open("r94/inputs/PANEL_TRUTH.json"))
+          for v in (1, 2):
+              ev = json.load(open(f"r97/eval_v{v}/EVAL.json"))["summary"]
+              rec, cells = 0, {}
+              for line in open(f"r97/run_v{v}/RESULTS.jsonl"):
+                  r = json.loads(line)
+                  top = r["finals"][r["top1"]]
+                  assert top["score"] == max(f["score"] for f in r["finals"])
+                  ok = sum(a == b for a, b in zip(top["text"], truth[r["id"]]["pt"])) >= 95
+                  rec += ok
+                  c = truth[r["id"]]["cell"]
+                  cells[c] = cells.get(c, 0) + ok
+              assert rec == ev["recovered"] and cells == ev["by_cell"], v
+              print(f"R97 v{v} recount identical: {rec}/48")
+          PY
