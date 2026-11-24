@@ -26,5 +26,7 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
   "notes": "Type B exact scope (charter section 5), shortlist S2 of audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md, run after S1 closed (R98, L187). Approval: Tyler 24 Nov 2026 'Go for it & all necessary follow on actions until you've worked your way thru enough of the plan for review'. No K4 input until the checker gate is GO and pushed.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r99/PROTOCOL.sha256"
+  "protocol_manifest_path": "r99/PROTOCOL.sha256",
+  "source_manifest_path": "r99/SOURCE.sha256",
+  "gate_budget_path": "r99/budgets/GATE_BUDGET.json"
 }
