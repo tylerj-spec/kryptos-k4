@@ -1,0 +1,52 @@
+name: R99 keyed-tableau plaintext autokey (freeze check and recount)
+on:
+  pull_request:
+    paths:
+      - "r99/**"
+      - ".github/workflows/r99-autokey.yml"
+permissions:
+  contents: read
+jobs:
+  r99-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r99/PROTOCOL.sha256
+          sha256sum -c r99/SOURCE.sha256
+          sha256sum -c r99/holdout/GATE_FROZEN.sha256
+          sha256sum -c r99/k4/FROZEN.sha256
+      - name: "Recount all 201 frozen inputs, re-derive the shuffles and the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r99", "r76"]
+          import alphabets as AL, checker99 as CK, run_target99 as RT
+          tier = [a for _, a in AL.large_tier()]
+          IDX = CK.tier_idx(tier)
+          obs = RT.observations()
+          agg = json.load(open("r99/k4/AGGREGATES.json"))
+          rows = [line.split("\t") for line in open("r99/k4/INPUTS.tsv").read().splitlines()[1:]]
+          inputs, _ = RT.target_inputs()
+          assert [list(x) for x in inputs] == rows and len(rows) == 201
+          for (name, ct), want in zip(rows, agg["inputs"]):
+              lags = {}
+              for (L, s1, s2), (k, e, d) in CK.scan(ct, obs, IDX, fast=True).items():
+                  r = lags.setdefault(str(L), {"links": k, "exact": 0, "drop": 0})
+                  r["exact"] += e
+                  r["drop"] += d
+              assert {"id": name, "lags": lags} == want, name
+          print("R99 recount identical: 201/201")
+          PY
+          python3 -I r99/evaluate99.py r99/k4/AGGREGATES.json /tmp/E99.json
+          cmp /tmp/E99.json r99/k4/EVALUATION.json
+      - name: "Second checker path on K4"
+        run: |
+          python3 -I r99/crosscheck99.py /tmp/X99.json
+          python3 -c "import json; d = json.load(open('/tmp/X99.json')); assert d['agree_with_frozen']; print('agree')"

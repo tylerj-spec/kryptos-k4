@@ -2,6 +2,14 @@
 
 **No independently verified K4 solution.**
 
+**R99 keyed-tableau plaintext autokey: EXCLUDED at every decidable lag (L188).** This is construction-discovery item S2.
+- **Cipher:** K1/K2's tableau, one keyword alphabet for the plaintext, ciphertext and feedback ranks, with each letter keyed by the plaintext letter L places back. ACA Condi is L = 1.
+- **Alphabets and keys:** any of the 77,229 tier alphabets, all four sign pairs, any constant.
+- **Result:** no setting fits K4's published letters at lags 1–23 or 34–47, and with one error allowed still none at lags 1–23 and 36–45.
+- **Weak lags** (1–5 links) have only chance-level fits. Lags 27–29 and 53–96 cannot be decided.
+- **Checks:** the gate's brute-force oracle, plants and a separately coded Condi all passed, and a second checker path agrees (`r99/RESULT.md`).
+- **Lane review point:** `audit/reviews/CONSTRUCTION_LANE_REVIEW_20261124.md`. S1 and S2 are closed. S3 (free alphabets) needs a type C solver first.
+
 **R98 Slidefair: EXCLUDED (L187).** This is the first construction-discovery item (`audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md`, S1).
 - **Cipher:** ACA Slidefair, the two-letter rectangle rule on a sliding Vigenère or Beaufort chart.
 - **Alphabets:** any two of R76's 77,229 keyword alphabets.

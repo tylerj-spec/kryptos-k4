@@ -190,6 +190,10 @@ chance.** The most important open items are in §17.
 - **Plaintext autokey (autoclave):** `k_i` comes from `p_{i−L}`.
   - Exact partition: 127 EXCL and 257 FEAS, all with gibberish witnesses (L27, L52, L58, L59).
   - At long lags this model can turn *any* ciphertext into pseudo-English, so it cannot identify a solution (L52).
+  - **One keyed alphabet for plain, cipher and feedback ranks** (K1/K2's tableau with an autokey; ACA Condi), any of
+    R76's 77,229 keyword alphabets, all four sign pairs, any constant: **EXCL** at lags 1–23 and 34–47, and with one
+    error allowed at lags 1–23 and 36–45 (L188, R99). Lags 24–33 and 48–52 are weak (chance-level feasible); lags
+    27–29 and 53–96 cannot be decided from the published letters.
 
 ## 8. Transposition combined with substitution (two layers)
 - **What it is:** substitute, then rearrange (S_then_T), or the reverse (T_then_S).
