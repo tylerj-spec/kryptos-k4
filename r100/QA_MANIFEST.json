@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered by a Quagmire-type plaintext autokey: plaintext ranks in A, ciphertext ranks in B (A and B any of R76's 77,229 tier alphabets), feedback ranks in A, B or AZ, B^-1(C_i) = s1*A^-1(P_i) + s2*F^-1(P_{i-L}) + c, signs +-1, any c and primer; exact necessary conditions from the direct links (both letters published) at the 12 lags with >= 10 direct links, all correct (EXACT) or one published position set aside (DROP, lags 1-5).",
   "not_excluded": "Lags with fewer than 10 direct links; chain constraints through unpublished positions (unused); alphabets outside the tier; keyword plus autokey; ciphertext autokey; transposition; insertion or deletion; two errors. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r100/PREREGISTRATION.md",
@@ -30,5 +30,9 @@
   "source_manifest_path": "r100/SOURCE.sha256",
   "gate_budget_path": "r100/budgets/GATE_BUDGET.json",
   "gate_freeze_path": "r100/holdout/GATE_FROZEN.sha256",
-  "gate_resource_log": "r100/holdout/VALIDATION_RESOURCE.json"
+  "gate_resource_log": "r100/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r100/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r100/TARGET_RESOURCE_LOG.json"
+  ]
 }
