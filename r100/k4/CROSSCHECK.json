@@ -1,0 +1,67 @@
+{
+ "implementation": "integer-key Counter joins, one per cut (second algorithm)",
+ "input": "K4",
+ "agree_with_frozen": true,
+ "lags": {
+  "1": {
+   "links": 22,
+   "exact": 0,
+   "drop": 0
+  },
+  "2": {
+   "links": 20,
+   "exact": 0,
+   "drop": 0
+  },
+  "3": {
+   "links": 18,
+   "exact": 0,
+   "drop": 0
+  },
+  "4": {
+   "links": 16,
+   "exact": 0,
+   "drop": 0
+  },
+  "5": {
+   "links": 14,
+   "exact": 0,
+   "drop": 0
+  },
+  "6": {
+   "links": 12,
+   "exact": 0,
+   "drop": null
+  },
+  "7": {
+   "links": 10,
+   "exact": 0,
+   "drop": null
+  },
+  "39": {
+   "links": 10,
+   "exact": 0,
+   "drop": null
+  },
+  "40": {
+   "links": 11,
+   "exact": 0,
+   "drop": null
+  },
+  "41": {
+   "links": 11,
+   "exact": 0,
+   "drop": null
+  },
+  "42": {
+   "links": 11,
+   "exact": 0,
+   "drop": null
+  },
+  "43": {
+   "links": 10,
+   "exact": 0,
+   "drop": null
+  }
+ }
+}

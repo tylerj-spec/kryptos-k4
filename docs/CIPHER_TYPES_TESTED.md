@@ -194,6 +194,9 @@ chance.** The most important open items are in §17.
     R76's 77,229 keyword alphabets, all four sign pairs, any constant: **EXCL** at lags 1–23 and 34–47, and with one
     error allowed at lags 1–23 and 36–45 (L188, R99). Lags 24–33 and 48–52 are weak (chance-level feasible); lags
     27–29 and 53–96 cannot be decided from the published letters.
+  - **Two keyword alphabets** (Quagmire I/II/IV-type autokey: plaintext ranks in A, cipher ranks in B, key letter
+    numbered in A, B or A–Z), any two of the 77,229 tier alphabets: **EXCL** by necessary direct-link conditions at
+    lags 1–7 and 39–43, and with one error allowed at lags 1–5 (L189, R100). Other lags have too few direct links.
 
 ## 8. Transposition combined with substitution (two layers)
 - **What it is:** substitute, then rearrange (S_then_T), or the reverse (T_then_S).

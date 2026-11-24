@@ -1,0 +1,56 @@
+name: R100 Quagmire-type plaintext autokey (freeze check and recount)
+on:
+  pull_request:
+    paths:
+      - "r100/**"
+      - ".github/workflows/r100-quagmire.yml"
+permissions:
+  contents: read
+jobs:
+  r100-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r100/PROTOCOL.sha256
+          sha256sum -c r100/SOURCE.sha256
+          sha256sum -c r100/holdout/GATE_FROZEN.sha256
+          sha256sum -c r100/k4/FROZEN.sha256
+      - name: "Recount all 101 frozen inputs, re-derive the shuffles and the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r100", "r76"]
+          import alphabets as AL, checker100 as CK, run_target100 as RT
+          tier = [a for _, a in AL.large_tier()]
+          IT = CK.tier_idxt(tier)
+          obs = RT.observations()
+          agg = json.load(open("r100/k4/AGGREGATES.json"))
+          rows = [line.split("\t") for line in open("r100/k4/INPUTS.tsv").read().splitlines()[1:]]
+          inputs, _ = RT.target_inputs()
+          assert [list(x) for x in inputs] == rows and len(rows) == 101
+          for (name, ct), want in zip(rows, agg["inputs"]):
+              per = {}
+              for (L, s1, s2, F), (k, e, d) in CK.scan(ct, obs, IT, agg["scanned_lags"], agg["drop_lags"]).items():
+                  r = per.setdefault(str(L), {"links": k, "exact": 0, "drop": 0 if d is not None else None})
+                  r["exact"] += e
+                  if d is not None:
+                      r["drop"] += d
+              assert {"id": name, "lags": per} == want, name
+          print("R100 recount identical: 101/101")
+          PY
+          python3 -I r100/evaluate100.py r100/k4/AGGREGATES.json /tmp/E100.json
+          cmp /tmp/E100.json r100/k4/EVALUATION.json
+      - name: "Second algorithm on K4"
+        run: |
+          python3 -I r100/crosscheck100.py /tmp/X100.json
+          python3 -c "import json; d = json.load(open('/tmp/X100.json')); assert d['agree_with_frozen']; print('agree')"
