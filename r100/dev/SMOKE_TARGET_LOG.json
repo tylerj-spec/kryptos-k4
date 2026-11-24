@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 283.64,
+  "max_rss_mb": 207.4,
+  "aggregate_peak_rss_mb": 207.4,
+  "per_process_peak_rss_mb": 156.0,
+  "cpu_seconds": 282.263,
+  "samples": 1127,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 1024,
+    "max_cpu_seconds": 1200
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "r100/dev/smoke_target100.py",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/dev100/smoke"
+  ]
+}
