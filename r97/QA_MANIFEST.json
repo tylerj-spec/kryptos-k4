@@ -64,6 +64,10 @@
   "notes": "Type C development, spent panel. Approval: Tyler 24 Nov 2026 'Your good for the next steps' on the post-R96 queue (PR #113); disclosed in the preregistration as preceding the written specification. mode=crib_assisted denotes synthetic truth used only after the freeze (evaluation and diagnostics), never K4 letters. The solver reads only r94/inputs/PANEL.tsv and the model.",
   "independent_execution_review": "NONE",
   "protocol_manifest_path": "r97/PROTOCOL.sha256",
-  "resource_logs": [],
+  "resource_logs": [
+    "r97/selftest/BUILD_RESOURCE_LOG.json",
+    "r97/selftest/SELFTEST_RESOURCE_LOG.json",
+    "r97/run_v1/RESOURCE_LOG.json"
+  ],
   "preregistration_sha256": "b78fd4ecc92472c58be9a8d826a1e2819b806def2dfacdb596b575511b161f5c"
 }
