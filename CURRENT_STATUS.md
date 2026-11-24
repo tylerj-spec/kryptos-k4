@@ -1,6 +1,27 @@
+# Current K4 research status — 24 November 2026 update
+
+**No independently verified K4 solution.**
+
+**R97 joint recovery: SOLVER_NO_POWER (L186). The RX2-O solver line stops.** With neither wiring given, two
+registered joint optimizers recovered 0/48 spent practice messages (best 13/97). Every case is a search gap.
+- **Diagnostics:** starting from the true first wiring with only 4 random swaps, the alternation still recovers
+  nothing.
+- **Throughput:** a structure-blind full pipeline would anyway be 140×–7,000× over the fresh-gate cap
+  (`r97/G0_FEASIBILITY.md`).
+- **Status:** RX2-O stays OPEN, and nothing is excluded.
+- **Next:** the parallel construction-discovery lane (`audit/reviews/POST_R96_NEXT_STEPS_20261123.md`). Reopening
+  RX2-O needs a ciphertext-only initializer that recovers one wiring essentially exactly, shown first on synthetic
+  data.
+
+Everything below is the 23 November status, unchanged.
+
 # Current K4 research status — 23 November 2026 update
 
-**No independently verified K4 solution.**\n\n**Active next milestone (23 Nov):** R96's core recovery counts and all 1,536 saved-state decryptions were independently reproduced by ChatGPT in `audit/reviews/R96_CHATGPT_INDEPENDENT_RECOUNT.md`. This is a scoped independent recount, **not** a complete independent provenance/toolchain audit. R97 (both wirings unknown, structure supplied) is the next **proposed** type C stage, requiring its own preregistration and approval. After any R97 GO, a fresh sealed full-pipeline gate with structure also unknown is mandatory before any K4 contact. The current work queue is `audit/reviews/POST_R96_NEXT_STEPS_20261123.md`; older R95/R93 instructions below are historical. Construction-discovery research runs separately under the blind firewall.\n\n
+**No independently verified K4 solution.**
+
+**Active next milestone (23 Nov):** R96's core recovery counts and all 1,536 saved-state decryptions were independently reproduced by ChatGPT in `audit/reviews/R96_CHATGPT_INDEPENDENT_RECOUNT.md`. This is a scoped independent recount, **not** a complete independent provenance/toolchain audit. R97 (both wirings unknown, structure supplied) is the next **proposed** type C stage, requiring its own preregistration and approval. After any R97 GO, a fresh sealed full-pipeline gate with structure also unknown is mandatory before any K4 contact. The current work queue is `audit/reviews/POST_R96_NEXT_STEPS_20261123.md`; older R95/R93 instructions below are historical. Construction-discovery research runs separately under the blind firewall.
+
+
 
 **L182 (R93) is now independently verified.** Claude Code's different-model review is complete: charter §6.1, the
 "Now — separate reviewer" item.

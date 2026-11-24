@@ -1,0 +1,25 @@
+{
+ "T1_round_trip_gauge_and_score": {
+  "cases": 40,
+  "round_trip_failures": 0,
+  "gauge_failures": 0,
+  "score_mismatches": 0,
+  "pass": true
+ },
+ "T2_cond_returns_valid_states": {
+  "runs": 48,
+  "failures": 0,
+  "pass": true
+ },
+ "T3_speed": {
+  "proposals_per_cpu_s": {
+   "U": 1671719,
+   "V": 1629828
+  },
+  "s": 1629828,
+  "rule": "I_c = floor(0.6*700*s/4608/10000)*10000",
+  "pass": true
+ },
+ "I_c": 140000,
+ "pass": true
+}
