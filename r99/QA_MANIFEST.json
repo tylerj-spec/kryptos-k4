@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered by K1/K2's keyed tableau with a plaintext autokey (Condi type): one alphabet A from R76's 77,229-alphabet tier for plaintext, ciphertext and feedback ranks, y_i = s1*x_i + s2*x_{i-L} + c, lag L 1-96, signs +-1, any constant c and any primer; exact chain-link compatibility with the 24 published letters, all correct or the chain cut at one published position.",
   "not_excluded": "Lags 27-29 and 53-96 (no information); separate plain/cipher/feedback alphabets; alphabets outside the tier; keyword plus autokey (m > 1); ciphertext autokey; transposition; insertion or deletion; two errors. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r99/PREREGISTRATION.md",
@@ -30,5 +30,9 @@
   "source_manifest_path": "r99/SOURCE.sha256",
   "gate_budget_path": "r99/budgets/GATE_BUDGET.json",
   "gate_freeze_path": "r99/holdout/GATE_FROZEN.sha256",
-  "gate_resource_log": "r99/holdout/VALIDATION_RESOURCE.json"
+  "gate_resource_log": "r99/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r99/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r99/TARGET_RESOURCE_LOG.json"
+  ]
 }
