@@ -26,5 +26,8 @@
   "notes": "Type B exact scope (charter section 5), shortlist S1 of audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md. Approval: Tyler 24 Nov 2026 'Go for it & all necessary follow on actions until you've worked your way thru enough of the plan for review'. No K4 input until the checker gate is GO and pushed.",
   "independent_execution_review": "NONE",
   "protocol_manifest_path": "r98/PROTOCOL.sha256",
-  "preregistration_sha256": "c94bfbc4f807cdb626924ef5a9a815793cab3e163a810611b166b79ea6555b41"
+  "preregistration_sha256": "c94bfbc4f807cdb626924ef5a9a815793cab3e163a810611b166b79ea6555b41",
+  "amendment_path": "r98/AMENDMENT_1.md",
+  "source_manifest_path": "r98/SOURCE.sha256",
+  "gate_budget_path": "r98/budgets/GATE_BUDGET.json"
 }
