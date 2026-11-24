@@ -70,7 +70,8 @@
     "r97/run_v1/RESOURCE_LOG.json",
     "r97/eval_v1/RESOURCE_LOG.json",
     "r97/run_v2/RESOURCE_LOG.json",
-    "r97/eval_v2/RESOURCE_LOG.json"
+    "r97/eval_v2/RESOURCE_LOG.json",
+    "r97/diagnostics/RESOURCE_LOG.json"
   ],
   "preregistration_sha256": "b78fd4ecc92472c58be9a8d826a1e2819b806def2dfacdb596b575511b161f5c"
 }

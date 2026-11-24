@@ -1,3 +1,20 @@
+# Current K4 research status — 24 November 2026 update
+
+**No independently verified K4 solution.**
+
+**R97 joint recovery: SOLVER_NO_POWER (L186). The RX2-O solver line stops.** With neither wiring given, two
+registered joint optimizers recovered 0/48 spent practice messages (best 13/97). Every case is a search gap.
+- **Diagnostics:** starting from the true first wiring with only 4 random swaps, the alternation still recovers
+  nothing.
+- **Throughput:** a structure-blind full pipeline would anyway be 140×–7,000× over the fresh-gate cap
+  (`r97/G0_FEASIBILITY.md`).
+- **Status:** RX2-O stays OPEN, and nothing is excluded.
+- **Next:** the parallel construction-discovery lane (`audit/reviews/POST_R96_NEXT_STEPS_20261123.md`). Reopening
+  RX2-O needs a ciphertext-only initializer that recovers one wiring essentially exactly, shown first on synthetic
+  data.
+
+Everything below is the 23 November status, unchanged.
+
 # Current K4 research status — 23 November 2026 update
 
 **No independently verified K4 solution.**
