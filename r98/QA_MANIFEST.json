@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered by ACA Slidefair (Vigenere/Variant or Beaufort slide; either role order; either output order; either pair parity) with PA and CA from R76's 77,229-alphabet keyword tier and ANY per-pair key; exact compatibility with the 24 published letters, all correct or one pair dropped.",
   "not_excluded": "Free alphabets; keyword alphabets outside the tier; other digraphic rules; transposition layers; insertion or deletion; simultaneous errors at two pairs. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r98/PREREGISTRATION.md",
@@ -31,5 +31,9 @@
   "source_manifest_path": "r98/SOURCE.sha256",
   "gate_budget_path": "r98/budgets/GATE_BUDGET.json",
   "gate_freeze_path": "r98/holdout/GATE_FROZEN.sha256",
-  "gate_resource_log": "r98/holdout/VALIDATION_RESOURCE.json"
+  "gate_resource_log": "r98/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r98/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r98/TARGET_RESOURCE_LOG.json"
+  ]
 }

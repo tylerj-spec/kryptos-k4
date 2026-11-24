@@ -1,0 +1,1229 @@
+{
+ "round": "R98",
+ "mode": "crib_assisted aggregate-only",
+ "tier": 77229,
+ "conventions": 16,
+ "published_pairs_per_parity": {
+  "0": 11,
+  "1": 11
+ },
+ "labelled_settings": 95429095056,
+ "shuffle_seed": 980400,
+ "shuffle_draws": 200,
+ "inputs": [
+  {
+   "id": "K4",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_000",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_001",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_002",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_003",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_004",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_005",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_006",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_007",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_008",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_009",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_010",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_011",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_012",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_013",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_014",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_015",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_016",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_017",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_018",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_019",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_020",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_021",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_022",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_023",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_024",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_025",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_026",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_027",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_028",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_029",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_030",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_031",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_032",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_033",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_034",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_035",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_036",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_037",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_038",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_039",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_040",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_041",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_042",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_043",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_044",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_045",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_046",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_047",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_048",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_049",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_050",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_051",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_052",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_053",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_054",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_055",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_056",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_057",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_058",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_059",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_060",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_061",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_062",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_063",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_064",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_065",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_066",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_067",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_068",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_069",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_070",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_071",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_072",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_073",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_074",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_075",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_076",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_077",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_078",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_079",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_080",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_081",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_082",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_083",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_084",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_085",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_086",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_087",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_088",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_089",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_090",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_091",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_092",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_093",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_094",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_095",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_096",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_097",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_098",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_099",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_100",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_101",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_102",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_103",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_104",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_105",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_106",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_107",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_108",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_109",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_110",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_111",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_112",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_113",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_114",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_115",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_116",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_117",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_118",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_119",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_120",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_121",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_122",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_123",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_124",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_125",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_126",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_127",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_128",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_129",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_130",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_131",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_132",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_133",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_134",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_135",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_136",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_137",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_138",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_139",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_140",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_141",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_142",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_143",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_144",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_145",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_146",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_147",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_148",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_149",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_150",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_151",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_152",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_153",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_154",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_155",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_156",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_157",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_158",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_159",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_160",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_161",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_162",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_163",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_164",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_165",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_166",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_167",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_168",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_169",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_170",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_171",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_172",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_173",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_174",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_175",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_176",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_177",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_178",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_179",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_180",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_181",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_182",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_183",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_184",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_185",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_186",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_187",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_188",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_189",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_190",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_191",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_192",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_193",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_194",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_195",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_196",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_197",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_198",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_199",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  }
+ ],
+ "receipt": {
+  "head_commit": "960607ccda1d4b44dfb62f225c34f6af6ef454af",
+  "protocol_files": 10,
+  "source_files": 8,
+  "gate_sha256": "776917242e2d16569f6bcc21b3ad93fe2de78ffec29c356e34415dd082af1d1b"
+ },
+ "wall_s": 263.06,
+ "cpu_s": 260.92
+}
