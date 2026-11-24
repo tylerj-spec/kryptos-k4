@@ -5,7 +5,7 @@
   "hypothesis": "K4 is enciphered by ACA Slidefair (Vigenere/Variant or Beaufort slide; either role order; either output order; either pair parity) with PA and CA from R76's 77,229-alphabet keyword tier and ANY per-pair key; exact compatibility with the 24 published letters, all correct or one pair dropped.",
   "not_excluded": "Free alphabets; keyword alphabets outside the tier; other digraphic rules; transposition layers; insertion or deletion; simultaneous errors at two pairs. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r98/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING_FIRST_COMMIT",
+  "preregistration_commit": "b455147849d1445e181023332c4569e3dae9d24f",
   "synthetic_gate_path": "r98/holdout/CHECKER_GATE.json",
   "gate_verdict": "PENDING",
   "gate_type": "EXACT_CHECKER_CORRECTNESS",
@@ -25,5 +25,6 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
   "notes": "Type B exact scope (charter section 5), shortlist S1 of audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md. Approval: Tyler 24 Nov 2026 'Go for it & all necessary follow on actions until you've worked your way thru enough of the plan for review'. No K4 input until the checker gate is GO and pushed.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r98/PROTOCOL.sha256"
+  "protocol_manifest_path": "r98/PROTOCOL.sha256",
+  "preregistration_sha256": "c94bfbc4f807cdb626924ef5a9a815793cab3e163a810611b166b79ea6555b41"
 }
