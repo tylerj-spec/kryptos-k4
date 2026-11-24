@@ -1,0 +1,322 @@
+{
+ "round": "R99",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "blind_recovery_certified": false,
+ "seed": 990901,
+ "development_only": false,
+ "tier": 77229,
+ "tier_sha256_ok": true,
+ "V1_round_trip": {
+  "cases": 400,
+  "failures": 0,
+  "pass": true
+ },
+ "V2_oracle": {
+  "inputs": 30,
+  "sub_tier": 120,
+  "mismatches_fast": 0,
+  "mismatches_simple": 0,
+  "inputs_with_exact": 30,
+  "rows": [
+   {
+    "kind": "planted",
+    "lags": 50,
+    "oracle_exact": 1002,
+    "oracle_drop": 2246,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 19,
+    "oracle_exact": 1198,
+    "oracle_drop": 2808,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 28,
+    "oracle_exact": 492,
+    "oracle_drop": 1018,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 21,
+    "oracle_exact": 1050,
+    "oracle_drop": 3625,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 57,
+    "oracle_exact": 1245,
+    "oracle_drop": 3108,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 30,
+    "oracle_exact": 2417,
+    "oracle_drop": 5726,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 47,
+    "oracle_exact": 1103,
+    "oracle_drop": 2518,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 18,
+    "oracle_exact": 1029,
+    "oracle_drop": 2740,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 33,
+    "oracle_exact": 505,
+    "oracle_drop": 1029,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 9,
+    "oracle_exact": 484,
+    "oracle_drop": 1089,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 28,
+    "oracle_exact": 506,
+    "oracle_drop": 1011,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 26,
+    "oracle_exact": 1896,
+    "oracle_drop": 5130,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 46,
+    "oracle_exact": 1125,
+    "oracle_drop": 2535,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 18,
+    "oracle_exact": 1030,
+    "oracle_drop": 2770,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 55,
+    "oracle_exact": 1002,
+    "oracle_drop": 2488,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 19,
+    "oracle_exact": 1803,
+    "oracle_drop": 3996,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 29,
+    "oracle_exact": 501,
+    "oracle_drop": 1045,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 25,
+    "oracle_exact": 1683,
+    "oracle_drop": 4675,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 49,
+    "oracle_exact": 1124,
+    "oracle_drop": 2526,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 28,
+    "oracle_exact": 1654,
+    "oracle_drop": 4927,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 56,
+    "oracle_exact": 1015,
+    "oracle_drop": 2881,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 28,
+    "oracle_exact": 2522,
+    "oracle_drop": 6087,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 35,
+    "oracle_exact": 502,
+    "oracle_drop": 1013,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 18,
+    "oracle_exact": 1019,
+    "oracle_drop": 2938,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 36,
+    "oracle_exact": 501,
+    "oracle_drop": 1018,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 8,
+    "oracle_exact": 493,
+    "oracle_drop": 1012,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 46,
+    "oracle_exact": 1008,
+    "oracle_drop": 2245,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 9,
+    "oracle_exact": 503,
+    "oracle_drop": 1064,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": 41,
+    "oracle_exact": 495,
+    "oracle_drop": 1069,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": 31,
+    "oracle_exact": 2980,
+    "oracle_drop": 6641,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   }
+  ],
+  "pass": true
+ },
+ "V3_full_tier_plants": {
+  "plants": 32,
+  "exact_label_missed": 0,
+  "exact_count_zero": 0,
+  "pt_drop_label_missed": 0,
+  "pt_drop_count_zero": 0,
+  "ct_drop_count_zero": 0,
+  "pass": true
+ },
+ "V4_condi": {
+  "plants": 16,
+  "label_missed": 0,
+  "count_zero": 0,
+  "pass": true
+ },
+ "V5_throughput": {
+  "scans": [
+   {
+    "wall_s": 1.022,
+    "cpu_s": 1.016,
+    "lag_sign_cells": 136,
+    "exact": 324265,
+    "drop": 650097
+   },
+   {
+    "wall_s": 1.195,
+    "cpu_s": 1.182,
+    "lag_sign_cells": 192,
+    "exact": 647129,
+    "drop": 1439146
+   },
+   {
+    "wall_s": 0.747,
+    "cpu_s": 0.742,
+    "lag_sign_cells": 92,
+    "exact": 317835,
+    "drop": 653551
+   }
+  ],
+  "simple_agrees_3_lags": true,
+  "planted_full_scan_exact": 1,
+  "forecast_wall_s": 490.4,
+  "forecast_cpu_s": 485.2,
+  "limit_wall_s": 1440.0,
+  "limit_cpu_s": 960.0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 70.36,
+ "cpu_s": 69.86,
+ "source_sha256": {
+  "autokey99.py": "7e4394024cdef377fca73095723d87f5ff054d79efba16d189f59741e3f80754",
+  "checker99.py": "6e0557b259e5d519fbd1819227fc15217691eff08d841cc84f8bd0288eb5b780",
+  "validate99.py": "6918afffa966f690dd0f0bc6fd74be8db7e7c4817a9010bf16a15dbfd3ff1b28",
+  "run_target99.py": "275417034abcd84b5d908685f4de7ea7fec06238093d0cc6c53294d5f5a365c1",
+  "evaluate99.py": "61e9fb3486c752f85049e51972b7c09d435107bb91f05bec0c2f18e6f9fea014"
+ }
+}
