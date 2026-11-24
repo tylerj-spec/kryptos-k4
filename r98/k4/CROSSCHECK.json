@@ -1,0 +1,43 @@
+{
+ "implementation": "pure-Python tuple matching (second implementation)",
+ "inputs_checked": 6,
+ "rows": [
+  {
+   "id": "K4",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_000",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_001",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_002",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_003",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  },
+  {
+   "id": "SHUF_004",
+   "exact_feasible_settings": 0,
+   "drop_feasible_setting_pair_omissions": 0,
+   "conventions_with_any_feasible": 0
+  }
+ ],
+ "agree_with_frozen": true
+}

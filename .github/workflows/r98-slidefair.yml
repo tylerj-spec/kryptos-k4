@@ -1,0 +1,48 @@
+name: R98 Slidefair exact scope (freeze check and recount)
+on:
+  pull_request:
+    paths:
+      - "r98/**"
+      - ".github/workflows/r98-slidefair.yml"
+permissions:
+  contents: read
+jobs:
+  r98-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r98/PROTOCOL.sha256
+          sha256sum -c r98/SOURCE.sha256
+          sha256sum -c r98/holdout/GATE_FROZEN.sha256
+          sha256sum -c r98/k4/FROZEN.sha256
+      - name: "Recount all 201 frozen inputs, re-derive the shuffles and the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r98", "r76"]
+          import alphabets as AL, checker98 as CK, slidefair98 as SF, run_target98 as RT
+          tier = [a for _, a in AL.large_tier()]
+          IDX = CK.tier_idx(tier)
+          obs = RT.observations()
+          agg = json.load(open("r98/k4/AGGREGATES.json"))
+          rows = [line.split("\t") for line in open("r98/k4/INPUTS.tsv").read().splitlines()[1:]]
+          inputs, _ = RT.target_inputs()
+          assert [list(x) for x in inputs] == rows and len(rows) == 201
+          for (name, ct), want in zip(rows, agg["inputs"]):
+              got, _ = CK.scan(ct, obs, IDX, SF.CONVENTIONS)
+              assert {"id": name, **got} == want, name
+          print("R98 recount identical: 201/201")
+          PY
+          python3 -I r98/evaluate98.py r98/k4/AGGREGATES.json /tmp/E98.json
+          cmp /tmp/E98.json r98/k4/EVALUATION.json
+      - name: "Second implementation (pure Python) on K4"
+        run: |
+          python3 -I r98/crosscheck98.py 1 /tmp/X98.json
+          python3 -c "import json; d = json.load(open('/tmp/X98.json')); assert d['agree_with_frozen'], d; print(d['rows'][0])"

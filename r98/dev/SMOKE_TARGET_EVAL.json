@@ -1,0 +1,20 @@
+{
+ "decision": "LEAD",
+ "k4": {
+  "exact": 2,
+  "drop": 24,
+  "conventions_with_any": 2
+ },
+ "shuffles": {
+  "n": 200,
+  "with_exact": 0,
+  "with_drop": 0,
+  "max_exact": 0,
+  "max_drop": 0,
+  "total_exact": 0,
+  "total_drop": 0,
+  "reaching_k4_count": 0,
+  "count_compared": "exact_feasible_settings"
+ },
+ "aggregates_sha256": "e02613226482f32a89e4bd76e187e90e12f9bf4c0ba642d0b5a1e40bbc88ba0f"
+}
