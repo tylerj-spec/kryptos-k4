@@ -1,0 +1,6624 @@
+{
+ "round": "R100",
+ "mode": "crib_assisted aggregate-only",
+ "tier": 77229,
+ "signs": 4,
+ "feedback_conventions": [
+  "A",
+  "B",
+  "AZ"
+ ],
+ "scanned_lags": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  39,
+  40,
+  41,
+  42,
+  43
+ ],
+ "drop_lags": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "link_counts": {
+  "1": 22,
+  "2": 20,
+  "3": 18,
+  "4": 16,
+  "5": 14,
+  "6": 12,
+  "7": 10,
+  "39": 10,
+  "40": 11,
+  "41": 11,
+  "42": 11,
+  "43": 10
+ },
+ "settings_per_lag": 71571821292,
+ "shuffle_seed": 1000400,
+ "shuffle_draws": 100,
+ "inputs": [
+  {
+   "id": "K4",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_000",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_001",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_002",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_003",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_004",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_005",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_006",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_007",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_008",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_009",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_010",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_011",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_012",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_013",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_014",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_015",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_016",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_017",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_018",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_019",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_020",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_021",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_022",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_023",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_024",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_025",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_026",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_027",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_028",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_029",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_030",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_031",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_032",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_033",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_034",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_035",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_036",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_037",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_038",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_039",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_040",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_041",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_042",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_043",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_044",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_045",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_046",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_047",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_048",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_049",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_050",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_051",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_052",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_053",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_054",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_055",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_056",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_057",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_058",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_059",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_060",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_061",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_062",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_063",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_064",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_065",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_066",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_067",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_068",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_069",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_070",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_071",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_072",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_073",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_074",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_075",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_076",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_077",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_078",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_079",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_080",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_081",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_082",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_083",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_084",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_085",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_086",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_087",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_088",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_089",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 1,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_090",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_091",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_092",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_093",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_094",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_095",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_096",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_097",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_098",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  },
+  {
+   "id": "SHUF_099",
+   "lags": {
+    "1": {
+     "links": 22,
+     "exact": 0,
+     "drop": 0
+    },
+    "2": {
+     "links": 20,
+     "exact": 0,
+     "drop": 0
+    },
+    "3": {
+     "links": 18,
+     "exact": 0,
+     "drop": 0
+    },
+    "4": {
+     "links": 16,
+     "exact": 0,
+     "drop": 0
+    },
+    "5": {
+     "links": 14,
+     "exact": 0,
+     "drop": 0
+    },
+    "6": {
+     "links": 12,
+     "exact": 0,
+     "drop": null
+    },
+    "7": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "39": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    },
+    "40": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "41": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "42": {
+     "links": 11,
+     "exact": 0,
+     "drop": null
+    },
+    "43": {
+     "links": 10,
+     "exact": 0,
+     "drop": null
+    }
+   }
+  }
+ ],
+ "receipt": {
+  "head_commit": "2b246904a36da7e727520de5d3c1e0dcdd0f666c",
+  "protocol_files": 13,
+  "source_files": 7,
+  "gate_sha256": "796248f5b51f729420d2db7f8968bef3c3f97bdd819e8d56972c9abeefcfac4e"
+ },
+ "wall_s": 278.7,
+ "cpu_s": 277.13
+}

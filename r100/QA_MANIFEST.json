@@ -1,0 +1,38 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "frozen",
+  "hypothesis": "K4 is enciphered by a Quagmire-type plaintext autokey: plaintext ranks in A, ciphertext ranks in B (A and B any of R76's 77,229 tier alphabets), feedback ranks in A, B or AZ, B^-1(C_i) = s1*A^-1(P_i) + s2*F^-1(P_{i-L}) + c, signs +-1, any c and primer; exact necessary conditions from the direct links (both letters published) at the 12 lags with >= 10 direct links, all correct (EXACT) or one published position set aside (DROP, lags 1-5).",
+  "not_excluded": "Lags with fewer than 10 direct links; chain constraints through unpublished positions (unused); alphabets outside the tier; keyword plus autokey; ciphertext autokey; transposition; insertion or deletion; two errors. Aggregate exact compatibility only; no blind recovery.",
+  "preregistration_path": "r100/PREREGISTRATION.md",
+  "preregistration_commit": "f6307c6fa417a371af289f3cfd026e5bf664f4de",
+  "preregistration_sha256": "4306a43dfec243b491ba6440be3e4426345c74b013917d16f2e9aca992104580",
+  "synthetic_gate_path": "r100/holdout/CHECKER_GATE.json",
+  "gate_verdict": "GO",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "solver_inputs": [],
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1200,
+    "max_ram_mb": 1024,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 101
+  },
+  "schema_compatibility": "As R93/R98/R99: the legacy schema requires a positive max_candidates; the binding limits are max_decoded_candidates=0 and max_surviving_setting_outputs=0.",
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries; BLAS pinned to one thread.",
+  "notes": "Type B exact scope (charter section 5), the third construction-discovery slot (audit/reviews/CONSTRUCTION_LANE_REVIEW_20261124.md choice 1). Approval: Tyler 24 Nov 2026 'continue with the plan' (PR #113 plan). No K4 input until the checker gate is GO and pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r100/PROTOCOL.sha256",
+  "source_manifest_path": "r100/SOURCE.sha256",
+  "gate_budget_path": "r100/budgets/GATE_BUDGET.json",
+  "gate_freeze_path": "r100/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r100/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r100/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r100/TARGET_RESOURCE_LOG.json"
+  ]
+}

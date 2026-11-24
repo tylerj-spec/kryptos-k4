@@ -1,0 +1,523 @@
+{
+ "round": "R100",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "blind_recovery_certified": false,
+ "seed": 4444,
+ "development_only": true,
+ "tier": 77229,
+ "tier_sha256_ok": true,
+ "V1_round_trip": {
+  "cases": 400,
+  "failures": 0,
+  "pass": true
+ },
+ "V2_oracle": {
+  "inputs": 16,
+  "sub_tier": 16,
+  "mismatches_fast": 0,
+  "mismatches_simple": 0,
+  "inputs_with_exact": 16,
+  "rows": [
+   {
+    "kind": "planted",
+    "lags": [
+     4,
+     73,
+     79,
+     80,
+     83,
+     84,
+     89
+    ],
+    "drop_lags": [
+     4,
+     79,
+     80,
+     83,
+     84
+    ],
+    "oracle_exact": 1,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     1,
+     3,
+     27,
+     28,
+     30,
+     31
+    ],
+    "drop_lags": [
+     1
+    ],
+    "oracle_exact": 119,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     4,
+     41,
+     43,
+     44,
+     54,
+     56,
+     58
+    ],
+    "drop_lags": [
+     4,
+     54,
+     56
+    ],
+    "oracle_exact": 97,
+    "oracle_drop": 1,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     2,
+     4,
+     11,
+     13,
+     14,
+     15
+    ],
+    "drop_lags": [
+     2
+    ],
+    "oracle_exact": 219,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     9,
+     30,
+     33,
+     37,
+     40,
+     41,
+     42
+    ],
+    "drop_lags": [
+     9,
+     33,
+     37,
+     40,
+     41,
+     42
+    ],
+    "oracle_exact": 1,
+    "oracle_drop": 1,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     5,
+     31,
+     33,
+     34,
+     35,
+     36
+    ],
+    "drop_lags": [],
+    "oracle_exact": 210,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     4,
+     9,
+     51,
+     52,
+     59,
+     65,
+     66
+    ],
+    "drop_lags": [
+     4,
+     9,
+     51,
+     52,
+     59
+    ],
+    "oracle_exact": 171,
+    "oracle_drop": 1,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     1,
+     2,
+     16,
+     18,
+     20,
+     21
+    ],
+    "drop_lags": [
+     1
+    ],
+    "oracle_exact": 245,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     1,
+     6,
+     11,
+     13,
+     16,
+     23,
+     27
+    ],
+    "drop_lags": [
+     1,
+     6,
+     11,
+     13,
+     16,
+     23
+    ],
+    "oracle_exact": 102,
+    "oracle_drop": 1,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     1,
+     4,
+     17,
+     19,
+     20,
+     23
+    ],
+    "drop_lags": [
+     1
+    ],
+    "oracle_exact": 367,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     4,
+     10,
+     25,
+     29,
+     30,
+     35,
+     40
+    ],
+    "drop_lags": [
+     4,
+     29,
+     30,
+     35,
+     40
+    ],
+    "oracle_exact": 2,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     1,
+     2,
+     3,
+     4,
+     35,
+     41
+    ],
+    "drop_lags": [
+     1,
+     2
+    ],
+    "oracle_exact": 218,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     1,
+     11,
+     38,
+     49,
+     50,
+     53,
+     55
+    ],
+    "drop_lags": [
+     1,
+     49,
+     50,
+     53
+    ],
+    "oracle_exact": 309,
+    "oracle_drop": 2,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     1,
+     2,
+     28,
+     29,
+     31,
+     32
+    ],
+    "drop_lags": [
+     1
+    ],
+    "oracle_exact": 151,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "planted",
+    "lags": [
+     1,
+     4,
+     41,
+     42,
+     43,
+     46,
+     47
+    ],
+    "drop_lags": [
+     1,
+     4,
+     41,
+     42,
+     43
+    ],
+    "oracle_exact": 146,
+    "oracle_drop": 2,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   },
+   {
+    "kind": "random",
+    "lags": [
+     3,
+     31,
+     32,
+     33,
+     35,
+     36
+    ],
+    "drop_lags": [],
+    "oracle_exact": 126,
+    "oracle_drop": 0,
+    "mismatches_fast": 0,
+    "mismatches_simple": 0
+   }
+  ],
+  "pass": true
+ },
+ "V2b_simple_path": {
+  "inputs": 8,
+  "sub_tier": 300,
+  "disagreements": 0,
+  "rows": [
+   {
+    "lags": 12,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 1,
+    "drop": 1,
+    "agree": true
+   },
+   {
+    "lags": 12,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 0,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 12,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 1,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 14,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 0,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 13,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 1,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 12,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 0,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 13,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 1,
+    "drop": 0,
+    "agree": true
+   },
+   {
+    "lags": 12,
+    "drop_lags": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exact": 0,
+    "drop": 0,
+    "agree": true
+   }
+  ],
+  "pass": true
+ },
+ "V3_full_tier_plants": {
+  "plants": 32,
+  "exact_zero": 0,
+  "pt_drop_zero": 0,
+  "ct_drop_zero": 0,
+  "drop_plants": 16,
+  "pass": true
+ },
+ "V4_quagmire": {
+  "plants_per_type": 4,
+  "missed": {
+   "I": 0,
+   "II": 0,
+   "III": 0,
+   "IV": 0
+  },
+  "pass": true
+ },
+ "V5_throughput": {
+  "scans": [
+   {
+    "wall_s": 3.219,
+    "cpu_s": 3.21,
+    "lags": 12,
+    "drop_lags": 5,
+    "exact": 0,
+    "drop": 0
+   },
+   {
+    "wall_s": 3.174,
+    "cpu_s": 3.17,
+    "lags": 12,
+    "drop_lags": 5,
+    "exact": 0,
+    "drop": 0
+   },
+   {
+    "wall_s": 2.575,
+    "cpu_s": 2.566,
+    "lags": 12,
+    "drop_lags": 5,
+    "exact": 0,
+    "drop": 0
+   }
+  ],
+  "planted_full_scan_exact": 1,
+  "forecast_wall_s": 660.2,
+  "forecast_cpu_s": 658.4,
+  "limit_wall_s": 1440.0,
+  "limit_cpu_s": 960.0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "DEVELOPMENT_ONLY_GO",
+ "wall_s": 98.42,
+ "cpu_s": 97.96,
+ "source_sha256": {
+  "autokey100.py": "7c2ba0e5df788c5709e0e735453371dc1579949782962a91404a4fbec918bfd8",
+  "checker100.py": "5214f554ecf9cb720e107b6b6870ea627f02825b1fc153c090ed555991ce6bad",
+  "validate100.py": "2d5a07baef50600eed5ffd5aabdc7b6eb775462fdbbbe309bf321bbd76406b34",
+  "run_target100.py": "1ed5e3f6ce98f61626dbeba474076d049f2ed0715de5ef28e657e8ccf870188c",
+  "evaluate100.py": "733447a2d57478612c6fb41ddbd8eb2e298a452be54fa306ecb52e0f0b59512c"
+ }
+}

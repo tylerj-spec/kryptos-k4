@@ -2,6 +2,13 @@
 
 **No independently verified K4 solution.**
 
+**R100 two-alphabet Quagmire-type autokey: EXCLUDED at the 12 decidable lags (L189).** This is the third and last construction-discovery slot in the PR #113 plan.
+- **Cipher:** the plaintext is read in one keyword alphabet and the ciphertext written in another (Quagmire I, II and IV tableaux). The key is the plaintext letter L places back, numbered in either alphabet or in A–Z.
+- **Alphabets and keys:** any two of the 77,229 tier alphabets, all signs, any constant.
+- **Result:** no setting fits K4's published letters at lags 1–7 or 39–43, and with one error allowed still none at lags 1–5. Other lags have too few direct checks.
+- **Checks:** the gate's oracle, plants and all four Quagmire types passed, and a second algorithm agrees (`r100/RESULT.md`).
+- **The construction lane's three slots are now used:** R98, R99 and R100, all EXCLUDED. What remains in the plan is S3 (free alphabets), which needs a type C solver, and a different-model review of R98–R100.
+
 **R99 keyed-tableau plaintext autokey: EXCLUDED at every decidable lag (L188).** This is construction-discovery item S2.
 - **Cipher:** K1/K2's tableau, one keyword alphabet for the plaintext, ciphertext and feedback ranks, with each letter keyed by the plaintext letter L places back. ACA Condi is L = 1.
 - **Alphabets and keys:** any of the 77,229 tier alphabets, all four sign pairs, any constant.

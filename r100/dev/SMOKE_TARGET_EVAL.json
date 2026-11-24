@@ -1,0 +1,108 @@
+{
+ "decision": "CHANCE",
+ "k4_exact_total": 1,
+ "k4_drop_total": 0,
+ "shuffles_exact_total_max": 1,
+ "shuffles_drop_total_max": 0,
+ "shuffles_with_exact": 1,
+ "shuffles_with_drop": 0,
+ "per_lag": {
+  "1": {
+   "links": 22,
+   "exact": 0,
+   "drop": 0,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": 0
+  },
+  "2": {
+   "links": 20,
+   "exact": 0,
+   "drop": 0,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": 0
+  },
+  "3": {
+   "links": 18,
+   "exact": 0,
+   "drop": 0,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": 0
+  },
+  "4": {
+   "links": 16,
+   "exact": 0,
+   "drop": 0,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": 0
+  },
+  "5": {
+   "links": 14,
+   "exact": 0,
+   "drop": 0,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": 0
+  },
+  "6": {
+   "links": 12,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  },
+  "7": {
+   "links": 10,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  },
+  "39": {
+   "links": 10,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 1,
+   "shuffles_with_exact": 1,
+   "shuffles_drop_max": null
+  },
+  "40": {
+   "links": 11,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  },
+  "41": {
+   "links": 11,
+   "exact": 1,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  },
+  "42": {
+   "links": 11,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  },
+  "43": {
+   "links": 10,
+   "exact": 0,
+   "drop": null,
+   "shuffles_exact_max": 0,
+   "shuffles_with_exact": 0,
+   "shuffles_drop_max": null
+  }
+ },
+ "aggregates_sha256": "eb5f48e91b68bee1f9fe1bbd5dfcac18d987bc8aa212677487d18f227dbbfc6d"
+}
