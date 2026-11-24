@@ -1,0 +1,38 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "frozen",
+  "hypothesis": "K4 is enciphered by K1/K2's keyed tableau with a plaintext autokey (Condi type): one alphabet A from R76's 77,229-alphabet tier for plaintext, ciphertext and feedback ranks, y_i = s1*x_i + s2*x_{i-L} + c, lag L 1-96, signs +-1, any constant c and any primer; exact chain-link compatibility with the 24 published letters, all correct or the chain cut at one published position.",
+  "not_excluded": "Lags 27-29 and 53-96 (no information); separate plain/cipher/feedback alphabets; alphabets outside the tier; keyword plus autokey (m > 1); ciphertext autokey; transposition; insertion or deletion; two errors. Aggregate exact compatibility only; no blind recovery.",
+  "preregistration_path": "r99/PREREGISTRATION.md",
+  "preregistration_commit": "ad330afe7f63cb8a15d5c9a8b91fb373fa427b83",
+  "preregistration_sha256": "9da59744c05df5f1a45c27725a739c1675cf3bdfbec7754604905e5e9c2f7811",
+  "synthetic_gate_path": "r99/holdout/CHECKER_GATE.json",
+  "gate_verdict": "GO",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "solver_inputs": [],
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1200,
+    "max_ram_mb": 1024,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 201
+  },
+  "schema_compatibility": "As R93/R98: the legacy schema requires a positive max_candidates; the binding limits are max_decoded_candidates=0 and max_surviving_setting_outputs=0.",
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Type B exact scope (charter section 5), shortlist S2 of audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md, run after S1 closed (R98, L187). Approval: Tyler 24 Nov 2026 'Go for it & all necessary follow on actions until you've worked your way thru enough of the plan for review'. No K4 input until the checker gate is GO and pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r99/PROTOCOL.sha256",
+  "source_manifest_path": "r99/SOURCE.sha256",
+  "gate_budget_path": "r99/budgets/GATE_BUDGET.json",
+  "gate_freeze_path": "r99/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r99/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r99/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r99/TARGET_RESOURCE_LOG.json"
+  ]
+}
