@@ -2,6 +2,15 @@
 
 **No independently verified K4 solution.**
 
+**R98 Slidefair: EXCLUDED (L187).** This is the first construction-discovery item (`audit/reviews/CONSTRUCTION_SHORTLIST_20261124.md`, S1).
+- **Cipher:** ACA Slidefair, the two-letter rectangle rule on a sliding Vigenère or Beaufort chart.
+- **Alphabets:** any two of R76's 77,229 keyword alphabets.
+- **Key:** any key per pair. The key cancels from the check, so every key is decided at once.
+- **Result:** under all 16 conventions, no setting fits K4's 24 published letters, even with one of the 11 pairs set aside. All 200 shuffles also give zero.
+- **Checks:** the gate's brute-force oracle and full-tier plants all passed, and a second implementation agrees.
+- **Not excluded:** free alphabets, alphabets outside the tier, and a different same-column rule at two or more pairs (`r98/RESULT.md`).
+- **Next:** shortlist S2, a Condi-type keyed plaintext autokey (R99), after its G0 overlap check.
+
 **R97 joint recovery: SOLVER_NO_POWER (L186). The RX2-O solver line stops.** With neither wiring given, two
 registered joint optimizers recovered 0/48 spent practice messages (best 13/97). Every case is a search gap.
 - **Diagnostics:** starting from the true first wiring with only 4 random swaps, the alternation still recovers

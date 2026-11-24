@@ -1,0 +1,582 @@
+{
+ "development_only": true,
+ "agree_and_planted_found": true,
+ "rows": [
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    0,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    5,
+    1048
+   ],
+   "pure": [
+    5,
+    1048
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    0,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    151
+   ],
+   "pure": [
+    1,
+    151
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    0,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    242
+   ],
+   "pure": [
+    1,
+    242
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    0,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    147
+   ],
+   "pure": [
+    1,
+    147
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    1,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    242
+   ],
+   "pure": [
+    1,
+    242
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    1,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    147
+   ],
+   "pure": [
+    1,
+    147
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    1,
+    1,
+    0
+   ],
+   "planted": true,
+   "fast": [
+    5,
+    1048
+   ],
+   "pure": [
+    5,
+    1048
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "VIG",
+    1,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    151
+   ],
+   "pure": [
+    1,
+    151
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    0,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    931
+   ],
+   "pure": [
+    3,
+    931
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    0,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    0,
+    106
+   ],
+   "pure": [
+    0,
+    106
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    0,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    0,
+    220
+   ],
+   "pure": [
+    0,
+    220
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    0,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    219
+   ],
+   "pure": [
+    3,
+    219
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    1,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    218
+   ],
+   "pure": [
+    1,
+    218
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    1,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    153
+   ],
+   "pure": [
+    3,
+    153
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    1,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    940
+   ],
+   "pure": [
+    3,
+    940
+   ]
+  },
+  {
+   "plant": 0,
+   "convention": [
+    "BEAU",
+    1,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    159
+   ],
+   "pure": [
+    2,
+    159
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    0,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    163
+   ],
+   "pure": [
+    3,
+    163
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    0,
+    0,
+    1
+   ],
+   "planted": true,
+   "fast": [
+    2,
+    224
+   ],
+   "pure": [
+    2,
+    224
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    0,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    144
+   ],
+   "pure": [
+    2,
+    144
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    0,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    216
+   ],
+   "pure": [
+    1,
+    216
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    1,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    144
+   ],
+   "pure": [
+    2,
+    144
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    1,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    216
+   ],
+   "pure": [
+    1,
+    216
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    1,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    163
+   ],
+   "pure": [
+    3,
+    163
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "VIG",
+    1,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    224
+   ],
+   "pure": [
+    2,
+    224
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    0,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    139
+   ],
+   "pure": [
+    2,
+    139
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    0,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    0,
+    172
+   ],
+   "pure": [
+    0,
+    172
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    0,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    162
+   ],
+   "pure": [
+    3,
+    162
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    0,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    209
+   ],
+   "pure": [
+    1,
+    209
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    1,
+    0,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    3,
+    148
+   ],
+   "pure": [
+    3,
+    148
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    1,
+    0,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    1,
+    228
+   ],
+   "pure": [
+    1,
+    228
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    1,
+    1,
+    0
+   ],
+   "planted": false,
+   "fast": [
+    2,
+    177
+   ],
+   "pure": [
+    2,
+    177
+   ]
+  },
+  {
+   "plant": 1,
+   "convention": [
+    "BEAU",
+    1,
+    1,
+    1
+   ],
+   "planted": false,
+   "fast": [
+    0,
+    155
+   ],
+   "pure": [
+    0,
+    155
+   ]
+  }
+ ]
+}
