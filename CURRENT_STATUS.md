@@ -1,6 +1,6 @@
 # Current K4 research status — 23 November 2026 update
 
-**No independently verified K4 solution.**
+**No independently verified K4 solution.**\n\n**Active next milestone (23 Nov):** R96's core recovery counts and all 1,536 saved-state decryptions were independently reproduced by ChatGPT in `audit/reviews/R96_CHATGPT_INDEPENDENT_RECOUNT.md`. This is a scoped independent recount, **not** a complete independent provenance/toolchain audit. R97 (both wirings unknown, structure supplied) is the next **proposed** type C stage, requiring its own preregistration and approval. After any R97 GO, a fresh sealed full-pipeline gate with structure also unknown is mandatory before any K4 contact. The current work queue is `audit/reviews/POST_R96_NEXT_STEPS_20261123.md`; older R95/R93 instructions below are historical. Construction-discovery research runs separately under the blind firewall.\n\n
 
 **L182 (R93) is now independently verified.** Claude Code's different-model review is complete: charter §6.1, the
 "Now — separate reviewer" item.
