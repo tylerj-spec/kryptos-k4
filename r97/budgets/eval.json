@@ -1,0 +1,1 @@
+{"resource_budget": {"max_wall_seconds": 120, "max_cpu_seconds": 60, "max_ram_mb": 512, "max_retries": 0}}
