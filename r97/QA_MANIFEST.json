@@ -1,0 +1,68 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "On the spent 48-case RX2-O panel with supplied structure and BOTH inverse wirings unknown, a fixed alternating conditional optimizer (version 1; version 2 iterated local search only if version 1 fails) using R95's fixed order-5 objective recovers >=95/97 letters in >=44/48 cases and >=5/6 per turnover cell. No K4 hypothesis is tested.",
+  "not_excluded": "Every cipher family and every K4 hypothesis; unknown structure; fresh texts; masking or misspelling; false-positive rates; other joint optimizers or budgets. A failure rejects only these two fixed versions under this objective on this spent panel. Per r97/G0_FEASIBILITY.md no RX2-O fresh gate or K4 run is designed without a demonstrated structure-pruning method.",
+  "preregistration_path": "r97/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING_FIRST_COMMIT",
+  "solver_inputs": [
+    "r94/inputs/PANEL.tsv"
+  ],
+  "diagnostic_inputs": [
+    "r94/inputs/PANEL_TRUTH.json"
+  ],
+  "external_model": {
+    "sha256": "e9c0848f5e256814387968c09006a44804e90a72aeb79034d0b12abfcce31abd",
+    "bytes": 49426528,
+    "rebuild": "audit/reviews/r95_independent/build_cr.py",
+    "training_sha256": "871627e5fd2f84b4afa976516303098f437b5c339b7297db238fcd1ecb0e0434"
+  },
+  "gate_verdict": "NOT_A_GATE_DEVELOPMENT_ONLY",
+  "k4_run_authorized": false,
+  "new_holdout": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 288,
+    "max_retries": 0
+  },
+  "job_budgets": {
+    "build": [
+      120,
+      90,
+      512
+    ],
+    "selftest": [
+      120,
+      60,
+      512
+    ],
+    "v1": [
+      750,
+      700,
+      2048
+    ],
+    "v2": [
+      750,
+      700,
+      2048
+    ],
+    "evaluate_each": [
+      120,
+      60,
+      512
+    ],
+    "diagnostics": [
+      240,
+      120,
+      1024
+    ]
+  },
+  "resource_semantics": "audit/run_bounded_agg.py per job: wall, aggregate CPU and sampled aggregate RSS (also the per-process RLIMIT_AS). One worker. Zero retries. Job budgets sum to at most 1,790 CPU s, inside the charter's development ceiling.",
+  "notes": "Type C development, spent panel. Approval: Tyler 24 Nov 2026 'Your good for the next steps' on the post-R96 queue (PR #113); disclosed in the preregistration as preceding the written specification. mode=crib_assisted denotes synthetic truth used only after the freeze (evaluation and diagnostics), never K4 letters. The solver reads only r94/inputs/PANEL.tsv and the model.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r97/PROTOCOL.sha256",
+  "resource_logs": []
+}
