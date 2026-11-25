@@ -1,0 +1,30 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "K4 is enciphered by a plaintext autokey on ONE arbitrary alphabet A (any of 26!) used for plaintext, ciphertext and feedback ranks (free-alphabet Condi type): y_i = s1*x_i + s2*x_{i-L} + c, lags 1-5, signs +-1, any c and primer; exact chain-link feasibility over bijective rank functions.",
+  "not_excluded": "Lags 6-96; one wrong letter (no DROP screen); separate plaintext/cipher/feedback alphabets; keyword plus autokey; ciphertext autokey; transposition; insertion or deletion. Aggregate exact compatibility only; no blind recovery.",
+  "preregistration_path": "r101/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "c68ba33cb515ee351cb4ff959ccef2c356c4ee7c603e7781e3e43b9958837eae",
+  "synthetic_gate_path": "r101/holdout/CHECKER_GATE.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "solver_inputs": [],
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1200,
+    "max_ram_mb": 1024,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 21
+  },
+  "schema_compatibility": "As R93/R98-R100: the legacy schema requires a positive max_candidates; the binding limits are max_decoded_candidates=0 and max_surviving_setting_outputs=0.",
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries; BLAS pinned to one thread.",
+  "notes": "Type B exact scope (charter section 5): the exact half of shortlist S3 (one free alphabet; S1 with free alphabets has no exact check and is left to a type C work order). Approval: Tyler 25 Nov 2026 'Stick with the plan developed that is in git, we are good to continue with it'. No K4 input until the checker gate is GO and pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r101/PROTOCOL.sha256"
+}
