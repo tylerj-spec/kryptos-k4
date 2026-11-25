@@ -2,6 +2,11 @@
 
 **No independently verified K4 solution.**
 
+**Operating procedure: rolling experiments and audits** (`audit/OPERATING_PROCEDURE_ROLLING.md`; endorsed by Tyler, 25 Nov).
+- **Audit batch A:** ChatGPT audits R98–R101 (L187–L190).
+- **Current batch:** Claude Code works through `audit/reviews/BATCH_WORK_ORDER_R102_R107.md`, the two-free-alphabet autokey S3b plus the structured-key Slidefair branch.
+- **Queue and dependencies:** `audit/ROLLING_QUEUE.md`.
+
 **R101 plaintext autokey on ANY single alphabet: EXCLUDED at lags 1–5 (L190).** This is the exact half of the plan's next item, S3.
 - **Cipher:** R99's cipher with the alphabet free (any of 26! orderings). ACA Condi with any keyed alphabet is included.
 - **Result:** no alphabet and no setting fits K4's published letters at lags 1–5. Two separately written exact solvers agree on all 20 cells.
