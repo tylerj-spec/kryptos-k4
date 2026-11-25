@@ -5,7 +5,7 @@
   "hypothesis": "Analysis round (no K4 input): the two-free-alphabet plaintext autokey reduces to a Latin square isotopic to Z26 at the plaintext pair (P_{i-L}, P_i); closed plaintext hypotheses admit an exact linear-congruence consistency test with bijectivity; crib-shaped windows are underdetermined; a lag-L repeated-pair statistic is a ciphertext-only prediction.",
   "not_excluded": "Nothing is excluded: this round makes no K4 claim and touches no K4 data. Its theorems are verified on synthetic data only.",
   "preregistration_path": "r102/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "529680c8ffb55cce5b9967a1daecadad527dc3c2",
   "preregistration_sha256": "2d06b763bdde1adbd1deda4935b0db12ca99ef7c5f5a5a386eea8423635c428f",
   "synthetic_gate_path": "r102/run_v1/RESULTS.json",
   "gate_verdict": "PENDING",
