@@ -22,7 +22,7 @@ import dfs102 as D  # noqa: E402
 SEED = 1020901
 AZ = AK.AZ
 CLUE_WORDS = ("EASTNORTHEAST", "NORTHEAST", "BERLIN", "CLOCK")
-SOURCES = ("s3b102.py", "dfs102.py", "run102.py")
+SOURCES = ("s3b102.py", "dfs102.py", "run102.py", "AMENDMENT_1.md")
 TEXT = ROOT / "r33/data/source_carter_mace_1923_google_ocr.txt"
 
 
@@ -109,17 +109,25 @@ def main():
     rep["C2_gauge"] = {"cases": 200, "failures": bad, "pass": bad == 0}
 
     lags = [1, 2, 3, 5, 8, 13, 21, 40]
-    miss = badw = 0
-    for k in range(120):
+    inc = badw = und = und_unconfirmed = 0
+    for k in range(120):                                  # AMENDMENT_1 (approved): soundness over both solvers
         L = lags[k % len(lags)]
         pt, ct, F, s1, s2 = plant(rng, txt, L)
         for n in (97, 60):
             hyp = list(pt[:n]) + [None] * (97 - n)
             st, d, wit = S.solve(ct, hyp, L, s1, s2, F)
-            miss += st != "CONSISTENT"
+            if st == "UNDECIDED":
+                und += 1
+                dst = D.solve(ct, hyp, L, s1, s2, F, node_cap=2_000_000)
+                und_unconfirmed += dst != "CONSISTENT"
+            else:
+                dst = D.solve(ct, hyp, L, s1, s2, F)
+            inc += st == "INCONSISTENT" or dst == "INCONSISTENT"
             badw += st == "CONSISTENT" and not witness_ok(ct, hyp, L, s1, s2, F, wit)
-    rep["C3_soundness"] = {"hypotheses": 240, "not_consistent": miss, "bad_witnesses": badw,
-                           "pass": miss == 0 and badw == 0}
+    rep["C3_soundness"] = {"hypotheses": 240, "inconsistent_by_either": inc, "primary_undecided": und,
+                           "undecided_not_confirmed_by_dfs": und_unconfirmed, "bad_witnesses": badw,
+                           "amendment": "AMENDMENT_1 (approved)",
+                           "pass": inc == 0 and und_unconfirmed == 0 and badw == 0}
 
     both = dis = 0
     rows = []

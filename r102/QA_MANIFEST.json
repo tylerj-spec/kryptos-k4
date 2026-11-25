@@ -21,5 +21,7 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries; BLAS pinned to one thread.",
   "notes": "Batch R102-R107 (audit/reviews/BATCH_WORK_ORDER_R102_R107.md), endorsed by Tyler 25 Nov 2026. Synthetic only; no K4 ciphertext, no published letters. The mode field follows the R96/R97 convention for synthetic development rounds; this round has no blind K4 run and no crib use.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r102/PROTOCOL.sha256"
+  "protocol_manifest_path": "r102/PROTOCOL.sha256",
+  "amendment_path": "r102/AMENDMENT_1.md",
+  "source_manifest_path": "r102/SOURCE.sha256"
 }

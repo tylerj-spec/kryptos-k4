@@ -1,6 +1,8 @@
-# R102 Amendment 1, PROPOSED (not applied): C3 must not count UNDECIDED cells as soundness failures
+# R102 Amendment 1 (APPROVED): C3 must not count UNDECIDED cells as soundness failures
 
-**Status: PROPOSED; review requested.** This is stop condition 2 of `audit/OPERATING_PROCEDURE_ROLLING.md`: a
+**Status: APPROVED.** Tyler, 25 Nov 2026: "Go with the recommended", meaning the proposed change below, not the alternative. It is applied in `run102.py` before the registered run.
+
+**Original status: PROPOSED; review requested.** This is stop condition 2 of `audit/OPERATING_PROCEDURE_ROLLING.md`: a
 pre-registered pass condition needs changing. The registered run (seed 1020901) has **not** been run, and nothing
 has touched K4.
 
