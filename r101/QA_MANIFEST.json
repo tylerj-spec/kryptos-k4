@@ -1,14 +1,14 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "preregistered",
+  "stage": "gate",
   "hypothesis": "K4 is enciphered by a plaintext autokey on ONE arbitrary alphabet A (any of 26!) used for plaintext, ciphertext and feedback ranks (free-alphabet Condi type): y_i = s1*x_i + s2*x_{i-L} + c, lags 1-5, signs +-1, any c and primer; exact chain-link feasibility over bijective rank functions.",
   "not_excluded": "Lags 6-96; one wrong letter (no DROP screen); separate plaintext/cipher/feedback alphabets; keyword plus autokey; ciphertext autokey; transposition; insertion or deletion. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r101/PREREGISTRATION.md",
   "preregistration_commit": "43be642951799e0a79d55e643efcf5465637756c",
   "preregistration_sha256": "c68ba33cb515ee351cb4ff959ccef2c356c4ee7c603e7781e3e43b9958837eae",
   "synthetic_gate_path": "r101/holdout/CHECKER_GATE.json",
-  "gate_verdict": "PENDING",
+  "gate_verdict": "GO",
   "gate_type": "EXACT_CHECKER_CORRECTNESS",
   "blind_recovery_certified": false,
   "solver_inputs": [],
@@ -29,5 +29,7 @@
   "protocol_manifest_path": "r101/PROTOCOL.sha256",
   "source_manifest_path": "r101/SOURCE.sha256",
   "gate_budget_path": "r101/budgets/GATE_BUDGET.json",
-  "amendment_path": "r101/AMENDMENT_1.md"
+  "amendment_path": "r101/AMENDMENT_1.md",
+  "gate_freeze_path": "r101/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r101/holdout/VALIDATION_RESOURCE.json"
 }
