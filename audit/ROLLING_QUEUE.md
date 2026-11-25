@@ -12,7 +12,7 @@ kept in git history.
 ## Current batch: `audit/reviews/BATCH_WORK_ORDER_R102_R107.md`
 | Item | Depends on | Dependency verified? | Status |
 |---|---|---|---|
-| R102 S3b algebra | — | — | **next** |
+| R102 S3b algebra | — | — | **BLOCKED: stop condition 2.** Proposed amendment to C3 (`r102/AMENDMENT_1_PROPOSED.md`) awaits review; the registered run has not been run |
 | R103 S3b identifiability | R102's code (re-verified in R103's own gate) | not needed | queued |
 | R104 feedback-chain decomposition and architecture | — | — | queued |
 | R105 conditional synthetic solver | R103 IDENTIFIABLE and R104's feasibility gate | — | conditional |
