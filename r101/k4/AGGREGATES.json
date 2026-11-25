@@ -1,0 +1,3491 @@
+{
+ "round": "R101",
+ "mode": "crib_assisted aggregate-only",
+ "alphabets": "all 26! (bijective rank functions)",
+ "lags": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "signs": 4,
+ "dmax": 7,
+ "shuffle_seed": 1010400,
+ "shuffle_draws": 20,
+ "inputs": [
+  {
+   "id": "K4",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_000",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_001",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_002",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_003",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_004",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_005",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_006",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_007",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_008",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_009",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_010",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_011",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_012",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_013",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_014",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 7,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 8,
+     "status": "UNDECIDED"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 9,
+     "status": "UNDECIDED"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 8,
+     "status": "UNDECIDED"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 8,
+     "status": "UNDECIDED"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_015",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_016",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 2,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_017",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_018",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  },
+  {
+   "id": "SHUF_019",
+   "cells": [
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": 1,
+     "s2": -1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": 1,
+     "links": 23,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 1,
+     "s1": -1,
+     "s2": -1,
+     "links": 23,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": 1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": 1,
+     "s2": -1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": 1,
+     "links": 22,
+     "d13": 4,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 2,
+     "s1": -1,
+     "s2": -1,
+     "links": 22,
+     "d13": 3,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": 1,
+     "s2": -1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": 1,
+     "links": 21,
+     "d13": 5,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 3,
+     "s1": -1,
+     "s2": -1,
+     "links": 21,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": 1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": 1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 4,
+     "s1": -1,
+     "s2": -1,
+     "links": 20,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": 1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": 1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    },
+    {
+     "L": 5,
+     "s1": -1,
+     "s2": -1,
+     "links": 19,
+     "d13": 6,
+     "status": "INFEASIBLE"
+    }
+   ]
+  }
+ ],
+ "receipt": {
+  "head_commit": "22d0a51473ce0404ec75670d7c9930d2f66142d1",
+  "protocol_files": 10,
+  "source_files": 9,
+  "gate_sha256": "8ab1dd48c95295bbe340d8efce01e829a6214218f7236f6117b9a049e4e794b6"
+ },
+ "wall_s": 114.11,
+ "cpu_s": 113.2
+}

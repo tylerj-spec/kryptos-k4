@@ -1,0 +1,270 @@
+{
+ "round": "R101",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "blind_recovery_certified": false,
+ "seed": 4545,
+ "development_only": true,
+ "V1_round_trip": {
+  "cases": 400,
+  "failures": 0,
+  "pass": true
+ },
+ "V2_plants": {
+  "plants": 60,
+  "decided": 50,
+  "missed": 0,
+  "pass": true
+ },
+ "V3_two_solvers": {
+  "cells": 32,
+  "both_decided": 28,
+  "disagreements": 0,
+  "rows": [
+   {
+    "planted": true,
+    "L": 1,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "UNDECIDED"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 1,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 3,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 1,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 1,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 2,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 2,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 1,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 3,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "UNDECIDED"
+   },
+   {
+    "planted": false,
+    "L": 5,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 2,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 4,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "UNDECIDED"
+   },
+   {
+    "planted": true,
+    "L": 3,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 3,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 4,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 3,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 5,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 4,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 4,
+    "primary": "FEASIBLE",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 3,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   },
+   {
+    "planted": true,
+    "L": 3,
+    "primary": "UNDECIDED",
+    "dfs": "FEASIBLE"
+   },
+   {
+    "planted": false,
+    "L": 3,
+    "primary": "INFEASIBLE",
+    "dfs": "INFEASIBLE"
+   }
+  ],
+  "pass": true
+ },
+ "V4_condi": {
+  "plants": 16,
+  "missed": 0,
+  "pass": true
+ },
+ "V5_chance_and_throughput": {
+  "cells": 120,
+  "feasible": 0,
+  "undecided": 4,
+  "scans": [
+   {
+    "wall_s": 0.011,
+    "cpu_s": 0.011
+   },
+   {
+    "wall_s": 0.022,
+    "cpu_s": 0.022
+   },
+   {
+    "wall_s": 0.059,
+    "cpu_s": 0.059
+   },
+   {
+    "wall_s": 13.039,
+    "cpu_s": 12.917
+   },
+   {
+    "wall_s": 7.955,
+    "cpu_s": 7.841
+   },
+   {
+    "wall_s": 3.951,
+    "cpu_s": 3.908
+   }
+  ],
+  "forecast_wall_s": 557.6,
+  "forecast_cpu_s": 552.5,
+  "limit_wall_s": 1440.0,
+  "limit_cpu_s": 960.0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "DEVELOPMENT_ONLY_GO",
+ "wall_s": 108.83,
+ "cpu_s": 107.69,
+ "source_sha256": {
+  "freealpha101.py": "069dc1799ddaf62101ae23028a4f3ba7efb7f402323e026d156b7e35b3312347",
+  "dfs101.py": "1111793a1194f2b1ed984bfa3e80cd6e70e6243d14da64c022b29ff25051ea17",
+  "validate101.py": "e1e06ffbf43457c13042ec24c923db71aea499fb7aa985c92495dd8f1a16609d",
+  "run_target101.py": "c761bef77c5691e4062a13ad2e7c0005b0cfb2eb8dca37071957394d8b73ccd6",
+  "evaluate101.py": "2d99a942feca0b30a9a09cf42866949296997ece46372bd7e533aa2c5602ca36"
+ }
+}
