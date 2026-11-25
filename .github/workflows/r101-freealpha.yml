@@ -1,0 +1,53 @@
+name: R101 one-free-alphabet plaintext autokey (freeze check and recount)
+on:
+  pull_request:
+    paths:
+      - "r101/**"
+      - ".github/workflows/r101-freealpha.yml"
+permissions:
+  contents: read
+jobs:
+  r101-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r101/PROTOCOL.sha256
+          sha256sum -c r101/SOURCE.sha256
+          sha256sum -c r101/holdout/GATE_FROZEN.sha256
+          sha256sum -c r101/k4/FROZEN.sha256
+      - name: "Recount all 21 frozen inputs, re-derive the shuffles and the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r101", "r99"]
+          import autokey99 as AK, freealpha101 as FA, run_target101 as RT
+          obs = RT.observations()
+          agg = json.load(open("r101/k4/AGGREGATES.json"))
+          rows = [line.split("\t") for line in open("r101/k4/INPUTS.tsv").read().splitlines()[1:]]
+          inputs, _ = RT.target_inputs()
+          assert [list(x) for x in inputs] == rows and len(rows) == 21
+          for (name, ct), want in zip(rows, agg["inputs"]):
+              cells = []
+              for L in (1, 2, 3, 4, 5):
+                  for s1, s2 in AK.SIGNS:
+                      st, k, d13 = FA.solve(ct, obs, L, s1, s2)
+                      cells.append({"L": L, "s1": s1, "s2": s2, "links": k, "d13": d13, "status": st})
+              assert {"id": name, "cells": cells} == want, name
+          print("R101 recount identical: 21/21")
+          PY
+          python3 -I r101/evaluate101.py r101/k4/AGGREGATES.json /tmp/E101.json
+          cmp /tmp/E101.json r101/k4/EVALUATION.json
+      - name: "Second solver (DFS) on K4"
+        run: |
+          python3 -I r101/crosscheck101.py /tmp/X101.json
+          python3 -c "import json; d = json.load(open('/tmp/X101.json')); assert d['agree_where_both_decided'] and d['both_decided'] == 20; print('agree 20/20')"

@@ -1,0 +1,149 @@
+{
+ "implementation": "dfs101 (second solver)",
+ "node_cap": 5000000,
+ "input": "K4",
+ "both_decided": 20,
+ "agree_where_both_decided": true,
+ "cells": [
+  {
+   "L": 1,
+   "s1": 1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": 1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": -1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": -1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": 1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": 1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": -1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": -1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": 1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": 1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": -1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": -1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": 1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": 1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": -1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": -1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": 1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": 1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": -1,
+   "s2": 1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": -1,
+   "s2": -1,
+   "primary": "INFEASIBLE",
+   "dfs": "INFEASIBLE"
+  }
+ ]
+}

@@ -1,3 +1,14 @@
+# Current K4 research status — 25 November 2026 update
+
+**No independently verified K4 solution.**
+
+**R101 plaintext autokey on ANY single alphabet: EXCLUDED at lags 1–5 (L190).** This is the exact half of the plan's next item, S3.
+- **Cipher:** R99's cipher with the alphabet free (any of 26! orderings). ACA Condi with any keyed alphabet is included.
+- **Result:** no alphabet and no setting fits K4's published letters at lags 1–5. Two separately written exact solvers agree on all 20 cells.
+- **What is left of S3:** the two-free-alphabet half. It has no exact check and needs a type C solver work order (`audit/reviews/S3_STATUS_20261125.md`).
+
+Everything below is the 24 November status, unchanged.
+
 # Current K4 research status — 24 November 2026 update
 
 **No independently verified K4 solution.**

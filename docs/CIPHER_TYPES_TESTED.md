@@ -197,6 +197,8 @@ chance.** The most important open items are in §17.
   - **Two keyword alphabets** (Quagmire I/II/IV-type autokey: plaintext ranks in A, cipher ranks in B, key letter
     numbered in A, B or A–Z), any two of the 77,229 tier alphabets: **EXCL** by necessary direct-link conditions at
     lags 1–7 and 39–43, and with one error allowed at lags 1–5 (L189, R100). Other lags have too few direct links.
+  - **One ARBITRARY alphabet** (any of 26!, for plain, cipher and feedback ranks; ACA Condi with any keyed alphabet):
+    **EXCL** at lags 1–5, every sign pair, any constant (L190, R101). Lags 6–96 are not decided.
 
 ## 8. Transposition combined with substitution (two layers)
 - **What it is:** substitute, then rearrange (S_then_T), or the reverse (T_then_S).
