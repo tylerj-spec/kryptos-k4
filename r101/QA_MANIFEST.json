@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered by a plaintext autokey on ONE arbitrary alphabet A (any of 26!) used for plaintext, ciphertext and feedback ranks (free-alphabet Condi type): y_i = s1*x_i + s2*x_{i-L} + c, lags 1-5, signs +-1, any c and primer; exact chain-link feasibility over bijective rank functions.",
   "not_excluded": "Lags 6-96; one wrong letter (no DROP screen); separate plaintext/cipher/feedback alphabets; keyword plus autokey; ciphertext autokey; transposition; insertion or deletion. Aggregate exact compatibility only; no blind recovery.",
   "preregistration_path": "r101/PREREGISTRATION.md",
@@ -31,5 +31,9 @@
   "gate_budget_path": "r101/budgets/GATE_BUDGET.json",
   "amendment_path": "r101/AMENDMENT_1.md",
   "gate_freeze_path": "r101/holdout/GATE_FROZEN.sha256",
-  "gate_resource_log": "r101/holdout/VALIDATION_RESOURCE.json"
+  "gate_resource_log": "r101/holdout/VALIDATION_RESOURCE.json",
+  "freeze_manifest_path": "r101/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r101/TARGET_RESOURCE_LOG.json"
+  ]
 }
