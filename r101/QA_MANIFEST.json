@@ -26,5 +26,8 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries; BLAS pinned to one thread.",
   "notes": "Type B exact scope (charter section 5): the exact half of shortlist S3 (one free alphabet; S1 with free alphabets has no exact check and is left to a type C work order). Approval: Tyler 25 Nov 2026 'Stick with the plan developed that is in git, we are good to continue with it'. No K4 input until the checker gate is GO and pushed.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r101/PROTOCOL.sha256"
+  "protocol_manifest_path": "r101/PROTOCOL.sha256",
+  "source_manifest_path": "r101/SOURCE.sha256",
+  "gate_budget_path": "r101/budgets/GATE_BUDGET.json",
+  "amendment_path": "r101/AMENDMENT_1.md"
 }

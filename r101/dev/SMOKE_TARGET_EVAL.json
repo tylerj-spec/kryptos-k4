@@ -1,0 +1,175 @@
+{
+ "decision": "CHANCE",
+ "k4_feasible_cells": 1,
+ "k4_undecided_cells": 0,
+ "k4_cells": [
+  {
+   "L": 1,
+   "s1": 1,
+   "s2": 1,
+   "links": 23,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": 1,
+   "s2": -1,
+   "links": 23,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": -1,
+   "s2": 1,
+   "links": 23,
+   "d13": 6,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 1,
+   "s1": -1,
+   "s2": -1,
+   "links": 23,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": 1,
+   "s2": 1,
+   "links": 22,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": 1,
+   "s2": -1,
+   "links": 22,
+   "d13": 5,
+   "status": "FEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": -1,
+   "s2": 1,
+   "links": 22,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 2,
+   "s1": -1,
+   "s2": -1,
+   "links": 22,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": 1,
+   "s2": 1,
+   "links": 21,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": 1,
+   "s2": -1,
+   "links": 21,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": -1,
+   "s2": 1,
+   "links": 21,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 3,
+   "s1": -1,
+   "s2": -1,
+   "links": 21,
+   "d13": 3,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": 1,
+   "s2": 1,
+   "links": 20,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": 1,
+   "s2": -1,
+   "links": 20,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": -1,
+   "s2": 1,
+   "links": 20,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 4,
+   "s1": -1,
+   "s2": -1,
+   "links": 20,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": 1,
+   "s2": 1,
+   "links": 19,
+   "d13": 4,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": 1,
+   "s2": -1,
+   "links": 19,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": -1,
+   "s2": 1,
+   "links": 19,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  },
+  {
+   "L": 5,
+   "s1": -1,
+   "s2": -1,
+   "links": 19,
+   "d13": 5,
+   "status": "INFEASIBLE"
+  }
+ ],
+ "shuffles": {
+  "n": 20,
+  "with_feasible": 1,
+  "max_feasible_cells": 1,
+  "total_feasible_cells": 1,
+  "undecided_cells": 2
+ },
+ "aggregates_sha256": "05698126ed6aca00c11fcbaddf1ac058ece10ac7073a00671fbaff969ad0cb00"
+}
