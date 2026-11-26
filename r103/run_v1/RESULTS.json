@@ -1,0 +1,118 @@
+{
+ "round": "R103",
+ "seed": 1030901,
+ "G1_soundness": {
+  "plants": 100,
+  "failures": 0,
+  "pass": true
+ },
+ "G2_two_solvers": {
+  "cases": 40,
+  "both_decided": 36,
+  "disagreements": 0,
+  "pass": true
+ },
+ "M2_primary": {
+  "trials": 3000,
+  "hits": 0,
+  "by_lag_hits_trials": {
+   "1": [
+    0,
+    380
+   ],
+   "2": [
+    0,
+    380
+   ],
+   "3": [
+    0,
+    380
+   ],
+   "5": [
+    0,
+    380
+   ],
+   "8": [
+    0,
+    370
+   ],
+   "13": [
+    0,
+    370
+   ],
+   "21": [
+    0,
+    370
+   ],
+   "40": [
+    0,
+    370
+   ]
+  },
+  "cpu_after_s": 182.0
+ },
+ "M1_curve": {
+  "30": {
+   "trials": 214,
+   "hits": 74,
+   "by_lag_hits_trials": {
+    "1": [
+     4,
+     27
+    ],
+    "2": [
+     3,
+     27
+    ],
+    "3": [
+     4,
+     27
+    ],
+    "5": [
+     5,
+     27
+    ],
+    "8": [
+     2,
+     27
+    ],
+    "13": [
+     6,
+     27
+    ],
+    "21": [
+     24,
+     26
+    ],
+    "40": [
+     26,
+     26
+    ]
+   },
+   "truncated": true
+  },
+  "45": {
+   "trials": 0,
+   "hits": 0,
+   "by_lag_hits_trials": {},
+   "truncated": true
+  },
+  "60": {
+   "trials": 0,
+   "hits": 0,
+   "by_lag_hits_trials": {},
+   "truncated": true
+  }
+ },
+ "M3_unknown_lag": {
+  "trials": 0,
+  "hits": 0,
+  "truncated": true
+ },
+ "verdict": "IDENTIFIABLE",
+ "wall_s": 1789.91,
+ "cpu_s": 1779.51,
+ "source_sha256": {
+  "run103.py": "0ca1c43a9263deeb64cc71bbba0f82a16ecf0168bd8c25cf9e292313b199f262"
+ }
+}
