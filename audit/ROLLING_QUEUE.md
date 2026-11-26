@@ -14,8 +14,8 @@ kept in git history.
 |---|---|---|---|
 | R102 S3b algebra | — | — | **done: VERIFIED (L191).** C5 refuted the 'no exact crib check' claim |
 | R103 S3b identifiability | R102's code (re-verified in R103's own gate) | not needed | **done: IDENTIFIABLE (L192)** |
-| R104 feedback-chain decomposition and architecture | — | — | **next** |
-| R105 conditional synthetic solver | R103 IDENTIFIABLE and R104's feasibility gate | — | conditional |
+| R104 feedback-chain decomposition and architecture | — | — | **done (L193).** R105 entry gate met for B known, F = A (19/24); the A-known mode is closed (0/24) |
+| R105 conditional synthetic solver | R103 IDENTIFIABLE and R104's feasibility gate | entry met (R103, R104); both unaudited, batch B | **next, for mode B known, F = A only** |
 | R106 joint synthetic solver | R105 GO | **must be independently verified** | conditional |
 | R107 structured-key Slidefair feasibility | — | — | queued (independent branch) |
 

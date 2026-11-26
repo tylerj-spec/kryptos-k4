@@ -1,0 +1,37 @@
+name: R104 architecture study (frozen-output check and deterministic re-run)
+on:
+  pull_request:
+    paths:
+      - "r104/**"
+      - ".github/workflows/r104-architecture.yml"
+permissions:
+  contents: read
+jobs:
+  r104-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r104/PROTOCOL.sha256
+          sha256sum -c r104/SOURCE.sha256
+          sha256sum -c r104/run_v1/OUTPUTS.sha256
+      - name: "Re-run the registered computation and compare every result except timings"
+        run: |
+          python3 -I r104/run104.py /tmp/R104.json
+          python3 - <<'PY'
+          import json
+          a = json.load(open("/tmp/R104.json")); b = json.load(open("r104/run_v1/RESULTS.json"))
+          for d in (a, b):
+              d.pop("wall_s"); d.pop("cpu_s")
+          assert a == b, [k for k in a if a[k] != b.get(k)]
+          print("R104 reproduced:", a["R105_entry"])
+          PY
