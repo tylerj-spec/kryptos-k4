@@ -1,0 +1,39 @@
+name: R105 conditional solver (frozen-output check and deterministic re-run)
+on:
+  pull_request:
+    paths:
+      - "r105/**"
+      - ".github/workflows/r105-conditional-solver.yml"
+permissions:
+  contents: read
+jobs:
+  r105-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r105/PROTOCOL.sha256
+          sha256sum -c r105/SOURCE.sha256
+          sha256sum -c r105/run_v1/OUTPUTS.sha256
+      - name: "Re-run the registered computation (E1 time guard off: the frozen E1 was not truncated) and compare"
+        run: |
+          python3 -I -c "import sys; sys.path.insert(0, 'r105'); import run105 as R; R.GUARD_CPU = float('inf'); sys.argv = ['run105', '/tmp/R105.json']; R.main()"
+          python3 - <<'PY'
+          import json
+          a = json.load(open("/tmp/R105.json")); b = json.load(open("r105/run_v1/RESULTS.json"))
+          assert not b["E1_sigma_unknown"]["truncated"]
+          for d in (a, b):
+              d.pop("wall_s"); d.pop("cpu_s")
+              d["M1_plants"].pop("cpu_after_s"); d["M2_nulls"].pop("cpu_after_s")
+          assert a == b, [k for k in a if a[k] != b.get(k)]
+          print("R105 reproduced:", a["verdict"])
+          PY
