@@ -21,5 +21,6 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
   "notes": "Batch R102-R107 item R104 (endorsed by Tyler 25 Nov 2026). Mode field per the R96/R97 convention for synthetic rounds; no K4 data, no crib use.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r104/PROTOCOL.sha256"
+  "protocol_manifest_path": "r104/PROTOCOL.sha256",
+  "source_manifest_path": "r104/SOURCE.sha256"
 }
