@@ -1,0 +1,43 @@
+name: R103 identifiability (frozen-output check and primary re-run)
+on:
+  pull_request:
+    paths:
+      - "r103/**"
+      - ".github/workflows/r103-identifiability.yml"
+permissions:
+  contents: read
+jobs:
+  r103-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r103/PROTOCOL.sha256
+          sha256sum -c r103/SOURCE.sha256
+          sha256sum -c r103/run_v1/OUTPUTS.sha256
+      - name: "Re-run G1, G2 and the primary M2 (exploratory sections skipped) and compare"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path.insert(0, "r103")
+          import run103 as R
+          R.GUARD_CPU = 0.0                      # skip the exploratory M1/M3 sections; G1, G2, M2 are never guarded
+          sys.argv = ["run103.py", "/tmp/R103.json"]
+          R.main()
+          a = json.load(open("/tmp/R103.json")); b = json.load(open("r103/run_v1/RESULTS.json"))
+          for k in ("G1_soundness", "G2_two_solvers"):
+              assert a[k] == b[k], k
+          ma, mb = dict(a["M2_primary"]), dict(b["M2_primary"])
+          ma.pop("cpu_after_s"); mb.pop("cpu_after_s")
+          assert ma == mb, (ma, mb)
+          print("R103 G1, G2, M2 reproduced; M2 hits:", ma["hits"])
+          PY
