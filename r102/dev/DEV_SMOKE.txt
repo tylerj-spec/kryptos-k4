@@ -1,0 +1,6 @@
+R102 development smoke (seed 77, small counts; NOT the registered run, which has not been run)
+C3-like (16 plants x prefixes 97 and 60): 30/32 CONSISTENT by the primary, valid witnesses 30/30,
+  2/32 UNDECIDED (both L = 40, n = 60: 20 equations, mod-13 dimension 9 and 12 > DMAX 7);
+  the DFS solver (node cap 2,000,000) decides both CONSISTENT. 0 true hypotheses INCONSISTENT by either solver.
+C4-like (12 closed hypotheses, n 60/97, L 1-8): 12/12 decided by both solvers, 12/12 agree
+  (6 true -> CONSISTENT, 6 unrelated English -> INCONSISTENT).

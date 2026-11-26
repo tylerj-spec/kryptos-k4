@@ -1,0 +1,551 @@
+{
+ "round": "R102",
+ "seed": 1020902,
+ "corpus_letters": 288037,
+ "C1_reduction": {
+  "cases": 400,
+  "failures": 0,
+  "pass": true
+ },
+ "C2_gauge": {
+  "cases": 200,
+  "failures": 0,
+  "pass": true
+ },
+ "C3_soundness": {
+  "hypotheses": 240,
+  "inconsistent_by_either": 0,
+  "primary_undecided": 16,
+  "undecided_not_confirmed_by_dfs": 0,
+  "bad_witnesses": 0,
+  "amendment": "AMENDMENT_1 (approved)",
+  "pass": true
+ },
+ "C4_two_solvers": {
+  "cases": 60,
+  "both_decided": 58,
+  "disagreements": 0,
+  "rows": [
+   {
+    "true": true,
+    "n": 60,
+    "L": 1,
+    "F": "A",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 5,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 1,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 3,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 5,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 8,
+    "F": "A",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 1,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 3,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 3,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 5,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 2,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 8,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 8,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 3,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 3,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 1,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 5,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 1,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 2,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 1,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 5,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 3,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 2,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 2,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 3,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 2,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 2,
+    "F": "AZ",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 1,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 60,
+    "L": 2,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": true,
+    "n": 97,
+    "L": 5,
+    "F": "B",
+    "primary": "CONSISTENT",
+    "dfs": "CONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 8,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 1,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 1,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 3,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 1,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "UNDECIDED"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 8,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 5,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 8,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 8,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 1,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 5,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 5,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 1,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 1,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 1,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 3,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 3,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 1,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 3,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 1,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 3,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 8,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 8,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 8,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 3,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 8,
+    "F": "AZ",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 8,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "UNDECIDED"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 3,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 60,
+    "L": 2,
+    "F": "B",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   },
+   {
+    "true": false,
+    "n": 97,
+    "L": 3,
+    "F": "A",
+    "primary": "INCONSISTENT",
+    "dfs": "INCONSISTENT"
+   }
+  ],
+  "pass": true
+ },
+ "C5_crib_shape": {
+  "cells": 1200,
+  "consistent": 512,
+  "undecided": 316,
+  "share_consistent": 0.5792,
+  "max_equations": 22,
+  "min_d13": 2,
+  "prediction_ge_90pct": false
+ },
+ "C6_lag_pairs": {
+  "1": {
+   "plant_mean": 13.255,
+   "shuffle_mean": 7.89,
+   "shuffle_q95": 13,
+   "power_gt_q95": 0.41
+  },
+  "2": {
+   "plant_mean": 9.045,
+   "shuffle_mean": 7.145,
+   "shuffle_q95": 13,
+   "power_gt_q95": 0.11
+  },
+  "3": {
+   "plant_mean": 7.68,
+   "shuffle_mean": 6.99,
+   "shuffle_q95": 12,
+   "power_gt_q95": 0.09
+  }
+ },
+ "verdict": "VERIFIED",
+ "wall_s": 212.84,
+ "cpu_s": 211.57,
+ "source_sha256": {
+  "s3b102.py": "d9e4d8c4cf41c26352ec928f3c419c3a05cbe1e9955f0774ed053187f730f05b",
+  "dfs102.py": "01b6437ab964270ced28b714e176476db2ef89293e2586bf776f0e6bb2ff4ad5",
+  "run102.py": "d0a9333086bbee425598e4c8ba2e2fd5aca8a069ae976038181bb3c0b1010711",
+  "AMENDMENT_1.md": "fc6beb1430922297e9a4d52a3a886f11b27223602966d39c83c0d1adfa373b92",
+  "AMENDMENT_2.md": "a7a184c2b640f34ef566efc1aa97d2aff1e7ac4fa645336d091a3f82c6546353"
+ }
+}
