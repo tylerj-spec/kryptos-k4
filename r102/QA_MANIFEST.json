@@ -7,7 +7,7 @@
   "preregistration_path": "r102/PREREGISTRATION.md",
   "preregistration_commit": "529680c8ffb55cce5b9967a1daecadad527dc3c2",
   "preregistration_sha256": "2d06b763bdde1adbd1deda4935b0db12ca99ef7c5f5a5a386eea8423635c428f",
-  "synthetic_gate_path": "r102/run_v1/RESULTS.json",
+  "synthetic_gate_path": "r102/run_v2/RESULTS.json",
   "gate_verdict": "PENDING",
   "gate_type": "ANALYSIS_VERIFICATION",
   "blind_recovery_certified": false,
@@ -22,6 +22,6 @@
   "notes": "Batch R102-R107 (audit/reviews/BATCH_WORK_ORDER_R102_R107.md), endorsed by Tyler 25 Nov 2026. Synthetic only; no K4 ciphertext, no published letters. The mode field follows the R96/R97 convention for synthetic development rounds; this round has no blind K4 run and no crib use.",
   "independent_execution_review": "NONE",
   "protocol_manifest_path": "r102/PROTOCOL.sha256",
-  "amendment_path": "r102/AMENDMENT_1.md",
+  "amendment_path": "r102/AMENDMENT_1.md; r102/AMENDMENT_2.md",
   "source_manifest_path": "r102/SOURCE.sha256"
 }

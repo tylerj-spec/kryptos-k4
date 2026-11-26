@@ -12,7 +12,7 @@ kept in git history.
 ## Current batch: `audit/reviews/BATCH_WORK_ORDER_R102_R107.md`
 | Item | Depends on | Dependency verified? | Status |
 |---|---|---|---|
-| R102 S3b algebra | — | — | **BLOCKED: stop conditions 6 and 2.** Run v1 was INCOMPLETE at the 1,800 s wall cap (`r102/run_v1/INCOMPLETE.md`). Proposed remedy `r102/AMENDMENT_2_PROPOSED.md` awaits review |
+| R102 S3b algebra | — | — | **running v2.** Amendment 2 approved by Tyler 26 Nov ("Do recommend"): C5 decided by the DFS alone, new seed 1020902. v1 was INCOMPLETE (budget) |
 | R103 S3b identifiability | R102's code (re-verified in R103's own gate) | not needed | queued |
 | R104 feedback-chain decomposition and architecture | — | — | queued |
 | R105 conditional synthetic solver | R103 IDENTIFIABLE and R104's feasibility gate | — | conditional |

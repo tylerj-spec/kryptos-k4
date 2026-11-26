@@ -19,10 +19,10 @@ import autokey100 as AK  # noqa: E402
 import s3b102 as S  # noqa: E402
 import dfs102 as D  # noqa: E402
 
-SEED = 1020901
+SEED = 1020902                       # AMENDMENT_2 (approved): run v2 with a new seed; v1 was INCOMPLETE
 AZ = AK.AZ
 CLUE_WORDS = ("EASTNORTHEAST", "NORTHEAST", "BERLIN", "CLOCK")
-SOURCES = ("s3b102.py", "dfs102.py", "run102.py", "AMENDMENT_1.md")
+SOURCES = ("s3b102.py", "dfs102.py", "run102.py", "AMENDMENT_1.md", "AMENDMENT_2.md")
 TEXT = ROOT / "r33/data/source_carter_mace_1923_google_ocr.txt"
 
 
@@ -162,9 +162,10 @@ def main():
                 R = S.rows(ct, hyp, L, s1, s2, F)
                 if not R:
                     continue
-                st, d, _ = S.solve(ct, hyp, L, s1, s2, F)
-                if st == "UNDECIDED":
-                    st = D.solve(ct, hyp, L, s1, s2, F, node_cap=50_000)
+                used = sorted({c for r in R for c in range(S.NV) if r[c] % 26})     # AMENDMENT_2: dimension by
+                sp = S.affine_space(R, used, 13)                                    # elimination only; the DFS
+                d = len(sp[1]) if sp is not None else None                          # alone decides the cell
+                st = D.solve(ct, hyp, L, s1, s2, F, node_cap=50_000)
                 n_ += 1
                 cons += st == "CONSISTENT"
                 und += st == "UNDECIDED"

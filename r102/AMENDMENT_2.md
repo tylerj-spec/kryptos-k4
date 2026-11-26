@@ -1,6 +1,8 @@
-# R102 Amendment 2, PROPOSED (not applied): a C5 scale that fits the budget, and a v2 run
+# R102 Amendment 2 (APPROVED): a C5 scale that fits the budget, and a v2 run
 
-**Status: PROPOSED; review requested.** These are stop conditions 2 and 6: run v1 exceeded its registered budget
+**Status: APPROVED.** Tyler, 26 Nov 2026: "Do recommend", meaning the recommended change, not the alternative. It is applied in `run102.py`, and v2 is the only run.
+
+**Original status: PROPOSED; review requested.** These are stop conditions 2 and 6: run v1 exceeded its registered budget
 (`run_v1/INCOMPLETE.md`), and the remedy changes the registered computation. Nothing has been re-run.
 
 ## Proposed change (recommended)
