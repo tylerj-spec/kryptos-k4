@@ -1,0 +1,33 @@
+name: R107 periodic-key Slidefair testability (frozen-output check and deterministic re-run)
+on:
+  pull_request:
+    paths:
+      - "r107/**"
+      - ".github/workflows/r107-slidefair-periodic.yml"
+permissions:
+  contents: read
+jobs:
+  r107-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r107/PROTOCOL.sha256
+          sha256sum -c r107/SOURCE.sha256
+          sha256sum -c r107/run_v1/OUTPUTS.sha256
+      - name: "Re-run the registered computation (standard library only) and compare every result except timings"
+        run: |
+          python3 -I r107/run107.py /tmp/R107.json
+          python3 - <<'PY'
+          import json
+          a = json.load(open("/tmp/R107.json")); b = json.load(open("r107/run_v1/RESULTS.json"))
+          for d in (a, b):
+              d.pop("wall_s"); d.pop("cpu_s")
+          assert a == b, [k for k in a if a[k] != b.get(k)]
+          print("R107 reproduced:", a["verdict"], a["labels_by_period"])
+          PY
