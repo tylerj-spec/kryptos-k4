@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "gate",
+  "hypothesis": "Synthetic study (no K4 input): in the two-free-alphabet plaintext autokey with the cipher alphabet B, the lag and the signs supplied and F = A, the fixed solver S105 (exact pooled-histogram grid over the constant and chain offsets, n-gram re-ranking, batched substitution annealing) recovers the plaintext from 97 letters on fresh plants at lags 1-5, and its score separates recoveries from wrong-hypothesis nulls.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made.",
+  "preregistration_path": "r105/PREREGISTRATION.md",
+  "preregistration_commit": "4576cb06ac6a791c755f9dfb505717c46a1d8cd2",
+  "preregistration_sha256": "a2bb3aefe77e0d4489829afed9719c0f026dcdc28558b548e50e2567d1731637",
+  "synthetic_gate_path": "r105/run_v1/RESULTS.json",
+  "gate_verdict": "GO",
+  "gate_type": "SOLVER_DEVELOPMENT",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Batch R102-R107 item R105 (endorsed by Tyler 25 Nov 2026), mode B known with F = A only (R104 gate). Mode field per the R96/R97 convention for synthetic rounds; no K4 data, no crib use. R106 requires an independently verified GO from this round.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r105/PROTOCOL.sha256",
+  "source_manifest_path": "r105/SOURCE.sha256",
+  "outputs_manifest_path": "r105/run_v1/OUTPUTS.sha256",
+  "verdict": "GO (synthetic conditional solver, B known, F = A); no K4 claim"
+}
