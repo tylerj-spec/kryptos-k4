@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "gate",
+  "hypothesis": "Synthetic study (no K4 input): for ACA Slidefair (R98's 16 conventions) with free plaintext and cipher alphabets and a key periodic over pairs (period p, including keyword keys), an exact crib check X107 (letter identity plus forced collisions of the homogeneous mod-26 system, with one pair allowed to drop) is sound on plants and excludes a large share of random hypotheses at small p; each period is labelled TESTABLE, WEAK or NOT_TESTABLE by its chance-exclusion power.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made.",
+  "preregistration_path": "r107/PREREGISTRATION.md",
+  "preregistration_commit": "f76e520a86901917e6f0323a5d8afe34798f5424",
+  "preregistration_sha256": "f5880c7ea4cee8b7a65f58b0c6c0891b4de3fdc46216cafc5771b6d458820929",
+  "synthetic_gate_path": "r107/run_v1/RESULTS.json",
+  "gate_verdict": "GO",
+  "gate_type": "ANALYSIS_VERIFICATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Batch R102-R107 item R107 (independent branch, endorsed by Tyler 25 Nov 2026). Mode field per the R96/R97 convention for synthetic rounds; no K4 data and no published crib positions are used. A K4 run of X107 would be a separately registered round, proposed for approval.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r107/PROTOCOL.sha256",
+  "source_manifest_path": "r107/SOURCE.sha256",
+  "outputs_manifest_path": "r107/run_v1/OUTPUTS.sha256",
+  "verdict": "TESTABLE at p 1-8, 10, 11; WEAK at 9, 12, 16, 24, 36 and any key (synthetic; no K4 claim)"
+}
