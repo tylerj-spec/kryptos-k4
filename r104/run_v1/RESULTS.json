@@ -1,0 +1,293 @@
+{
+ "round": "R104",
+ "seed": 1040901,
+ "E1_landscape": {
+  "mean_fraction_correct": {
+   "F=A swap_A x1": 0.926,
+   "F=A swap_A x2": 0.874,
+   "F=A swap_B x1": 0.442,
+   "F=A swap_B x2": 0.26,
+   "F=AZ swap_A x1": 0.458,
+   "F=AZ swap_A x2": 0.294,
+   "F=AZ swap_B x1": 0.378,
+   "F=AZ swap_B x2": 0.184,
+   "F=B swap_A x1": 0.461,
+   "F=B swap_A x2": 0.243,
+   "F=B swap_B x1": 0.213,
+   "F=B swap_B x2": 0.146
+  },
+  "prediction_holds": true
+ },
+ "E2_identities": {
+  "cases": 100,
+  "a_B_known_FA_failures": 0,
+  "b_A_known_FA_failures": 0,
+  "b_A_known_FAZ_failures": 0,
+  "pass": true
+ },
+ "E3_P1_B_known": {
+  "plants": 24,
+  "recovered": 19,
+  "rows": [
+   {
+    "L": 1,
+    "sigma": -1,
+    "letters": 96
+   },
+   {
+    "L": 2,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 3,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 1,
+    "sigma": 1,
+    "letters": 92
+   },
+   {
+    "L": 2,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 3,
+    "sigma": -1,
+    "letters": 16
+   },
+   {
+    "L": 1,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 2,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 3,
+    "sigma": -1,
+    "letters": 95
+   },
+   {
+    "L": 1,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 2,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 3,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 1,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 2,
+    "sigma": -1,
+    "letters": 92
+   },
+   {
+    "L": 3,
+    "sigma": 1,
+    "letters": 8
+   },
+   {
+    "L": 1,
+    "sigma": -1,
+    "letters": 41
+   },
+   {
+    "L": 2,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 3,
+    "sigma": -1,
+    "letters": 23
+   },
+   {
+    "L": 1,
+    "sigma": 1,
+    "letters": 94
+   },
+   {
+    "L": 2,
+    "sigma": 1,
+    "letters": 95
+   },
+   {
+    "L": 3,
+    "sigma": 1,
+    "letters": 97
+   },
+   {
+    "L": 1,
+    "sigma": -1,
+    "letters": 97
+   },
+   {
+    "L": 2,
+    "sigma": 1,
+    "letters": 94
+   },
+   {
+    "L": 3,
+    "sigma": -1,
+    "letters": 84
+   }
+  ],
+  "gate_for_R105": true
+ },
+ "E4_P2_A_known": {
+  "plants": 24,
+  "recovered": 0,
+  "search_gaps": 7,
+  "objective_counterexamples": 17,
+  "rows": [
+   {
+    "letters": 7,
+    "true_map_score": -367.68,
+    "found_map_score": -366.91
+   },
+   {
+    "letters": 5,
+    "true_map_score": -376.02,
+    "found_map_score": -371.34
+   },
+   {
+    "letters": 11,
+    "true_map_score": -376.17,
+    "found_map_score": -363.16
+   },
+   {
+    "letters": 1,
+    "true_map_score": -369.85,
+    "found_map_score": -375.43
+   },
+   {
+    "letters": 9,
+    "true_map_score": -388.06,
+    "found_map_score": -376.16
+   },
+   {
+    "letters": 5,
+    "true_map_score": -366.74,
+    "found_map_score": -364.92
+   },
+   {
+    "letters": 3,
+    "true_map_score": -366.06,
+    "found_map_score": -369.6
+   },
+   {
+    "letters": 2,
+    "true_map_score": -385.76,
+    "found_map_score": -369.14
+   },
+   {
+    "letters": 2,
+    "true_map_score": -382.24,
+    "found_map_score": -368.72
+   },
+   {
+    "letters": 2,
+    "true_map_score": -374.27,
+    "found_map_score": -369.71
+   },
+   {
+    "letters": 3,
+    "true_map_score": -370.5,
+    "found_map_score": -367.89
+   },
+   {
+    "letters": 4,
+    "true_map_score": -370.55,
+    "found_map_score": -364.36
+   },
+   {
+    "letters": 3,
+    "true_map_score": -371.89,
+    "found_map_score": -367.33
+   },
+   {
+    "letters": 7,
+    "true_map_score": -365.01,
+    "found_map_score": -367.21
+   },
+   {
+    "letters": 4,
+    "true_map_score": -374.73,
+    "found_map_score": -369.86
+   },
+   {
+    "letters": 2,
+    "true_map_score": -369.9,
+    "found_map_score": -369.04
+   },
+   {
+    "letters": 4,
+    "true_map_score": -369.39,
+    "found_map_score": -372.28
+   },
+   {
+    "letters": 5,
+    "true_map_score": -373.12,
+    "found_map_score": -372.08
+   },
+   {
+    "letters": 9,
+    "true_map_score": -366.44,
+    "found_map_score": -370.51
+   },
+   {
+    "letters": 8,
+    "true_map_score": -378.01,
+    "found_map_score": -366.54
+   },
+   {
+    "letters": 6,
+    "true_map_score": -370.65,
+    "found_map_score": -370.38
+   },
+   {
+    "letters": 6,
+    "true_map_score": -359.93,
+    "found_map_score": -357.76
+   },
+   {
+    "letters": 6,
+    "true_map_score": -366.45,
+    "found_map_score": -369.85
+   },
+   {
+    "letters": 4,
+    "true_map_score": -367.27,
+    "found_map_score": -370.68
+   }
+  ],
+  "gate_for_R105": false
+ },
+ "R105_entry": {
+  "B_known_F_A": true,
+  "A_known_F_A_L1": false
+ },
+ "wall_s": 69.1,
+ "cpu_s": 68.45,
+ "source_sha256": {
+  "run104.py": "9e1b1baa1b6bb80a6b959dd1d1fe48a59570ffe720f6ab91ee9d8420e065c1cf"
+ }
+}
