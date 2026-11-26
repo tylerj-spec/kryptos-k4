@@ -5,7 +5,7 @@
   "hypothesis": "Synthetic study (no K4 input): in the two-free-alphabet plaintext autokey, plaintext-alphabet errors stay local when F = A while cipher-alphabet errors propagate; with B known and F = A the problem reduces to a simple substitution of a known rank sequence (prototype P1), and with A known to a substitution of a code sequence (prototype P2); the prototypes' recovery on fresh plants sets R105's entry gate.",
   "not_excluded": "Nothing is excluded and no K4 claim is made.",
   "preregistration_path": "r104/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "2709df3f8055290faf8fff2969fa56a12556aea9",
   "preregistration_sha256": "f7e4992f6a7ac0abf2b3f57d1bfe268b7c5508e96d3a628d19969231a9f5c028",
   "synthetic_gate_path": "r104/run_v1/RESULTS.json",
   "gate_verdict": "PENDING",
