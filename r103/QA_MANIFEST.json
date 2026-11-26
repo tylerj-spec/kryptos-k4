@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "gate",
+  "hypothesis": "Synthetic measurement (no K4 input): under the two-free-alphabet plaintext autokey, unrelated English 97-letter passages essentially never pass R102's exact consistency test against a planted ciphertext (false-consistency < 1e-3 over all 12 sign/feedback cells at the true lag), i.e. 97 letters identify the English plaintext.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made; identifiability against random unrelated passages does not cover adversarial near-English search outputs (R104).",
+  "preregistration_path": "r103/PREREGISTRATION.md",
+  "preregistration_commit": "b03793f6ea928227ef7b041824da2d93410e83fb",
+  "preregistration_sha256": "2f85abc621db163fe4dae1146e05a97352245be3b63e46e944fb45363778b583",
+  "synthetic_gate_path": "r103/run_v1/RESULTS.json",
+  "gate_verdict": "GO",
+  "gate_type": "ANALYSIS_VERIFICATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries; registered CPU time guard (1,400 s) truncates only the exploratory sections.",
+  "notes": "Batch R102-R107 item R103 (endorsed by Tyler 25 Nov 2026). Mode field per the R96/R97 convention for synthetic rounds; no K4 data, no crib use.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r103/PROTOCOL.sha256",
+  "source_manifest_path": "r103/SOURCE.sha256",
+  "verdict": "IDENTIFIABLE",
+  "outputs_manifest_path": "r103/run_v1/OUTPUTS.sha256"
+}

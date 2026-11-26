@@ -13,8 +13,8 @@ kept in git history.
 | Item | Depends on | Dependency verified? | Status |
 |---|---|---|---|
 | R102 S3b algebra | — | — | **done: VERIFIED (L191).** C5 refuted the 'no exact crib check' claim |
-| R103 S3b identifiability | R102's code (re-verified in R103's own gate) | not needed | queued |
-| R104 feedback-chain decomposition and architecture | — | — | queued |
+| R103 S3b identifiability | R102's code (re-verified in R103's own gate) | not needed | **done: IDENTIFIABLE (L192)** |
+| R104 feedback-chain decomposition and architecture | — | — | **next** |
 | R105 conditional synthetic solver | R103 IDENTIFIABLE and R104's feasibility gate | — | conditional |
 | R106 joint synthetic solver | R105 GO | **must be independently verified** | conditional |
 | R107 structured-key Slidefair feasibility | — | — | queued (independent branch) |
