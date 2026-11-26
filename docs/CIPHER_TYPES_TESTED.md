@@ -239,7 +239,9 @@ chance.** The most important open items are in §17.
   - **R57:** a separate, explicitly *nonstandard* pad-X/truncate convention for odd 97-letter input: 97,344 invertible 2x2 matrices, 20/20 synthetic hidden-key controls; K4 top 0/24, best 2/24, no readable output. Not an exclusion of all Hill variants.
 - **Slidefair** (ACA; a two-letter rectangle rule on a sliding Vigenère/Variant or Beaufort chart), any per-pair
   key, PA and CA any two of R76's 77,229 keyword alphabets, all 16 conventions: **EXCL**, with one dropped pair
-  allowed (L187, R98). Free alphabets and alphabets outside the tier stay OPEN.
+  allowed (L187, R98). Free alphabets and alphabets outside the tier stay OPEN. With free alphabets and a key
+  periodic over pairs, an exact crib check exists and is powerful at p 1–8, 10, 11 (L195, R107; synthetic only). The
+  K4 run is proposal P4, not yet run.
 - **Playfair, two-square, four-square:** **EXCL** (L88).
   - These use 25-letter squares, but K4 has all 26 letters.
   - Playfair also cannot encrypt a doubled letter within a pair.
@@ -352,7 +354,7 @@ chance.** The most important open items are in §17.
 10. **A masking step before encryption.** Scheidt has spoken of "masking"; the form is unknown (L26).
 11. **ACA types with mixed alphabets that change during encryption:** Ragbaby, Slidefair, Portax, Alberti-style
     disk moves. Slidefair with keyword alphabets and any key is now EXCL (L187); with free alphabets it is still
-    open.
+    open, but testable exactly under a periodic key (L195; K4 run proposed as P4).
 
 See `CRYPTOGRAPHY_REFERENCE.md` for how each of these works and `CRYPTANALYSIS_METHODS.md` for how to test them.
 
