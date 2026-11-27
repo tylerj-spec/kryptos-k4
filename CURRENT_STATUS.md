@@ -1,3 +1,27 @@
+# Current K4 research status — 27 November 2026 quality review
+
+**No independently verified K4 solution.** PR #125 merged R108–R111. The current work queue is
+`audit/ROLLING_QUEUE.md`; full audit batches A, B and C remain open.
+
+**ChatGPT's targeted review is PARTIAL:** `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md`.
+The experiments are useful within their scopes, with the following qualifications carried into future planning:
+
+- **R108 / L196:** all 768 settings are excluded assuming correct crib letters and no same-column crib pair;
+  372 remain excluded allowing at most one erroneous/same-column pair. General same-column handling remains open.
+- **R109 / L197:** 34 settings fail necessary direct-pair constraints (6 with one error allowed); 322 pass those
+  constraints and 64 are undecided. Passing is not proof of full-chain feasibility. R102 corrected the older
+  claim that no exact two-alphabet crib check exists.
+- **R110 / L198:** no primary lag-1 signal. The exploratory lag-21 result revisits a width-21 repeat structure
+  studied in R71; it is not independent new evidence. P5 needs a materially new mechanism or prediction.
+- **R105 / L194 and R111 / L199:** R105 meets its registered >=90/97 recovery bar on 42/50 plants; the published
+  table gives 31/50 at >=95 and 17/50 exact. R111 remains provisional NO_SIGNAL. Independent-text validation,
+  complete forward witnesses and the substantive batch-B audit remain priorities; R106 remains blocked.
+
+The review checked source, mathematics, reported evidence and chronology; it did not replay the target jobs or
+complete a ledger promotion. Independent approved fallback work may continue under the rolling procedure.
+
+Earlier dated updates follow as historical snapshots; current qualifications above supersede conflicting summaries.
+
 # Current K4 research status — 25 November 2026 update
 
 **No independently verified K4 solution.**

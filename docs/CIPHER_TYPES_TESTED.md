@@ -239,9 +239,12 @@ chance.** The most important open items are in §17.
   - **R57:** a separate, explicitly *nonstandard* pad-X/truncate convention for odd 97-letter input: 97,344 invertible 2x2 matrices, 20/20 synthetic hidden-key controls; K4 top 0/24, best 2/24, no readable output. Not an exclusion of all Hill variants.
 - **Slidefair** (ACA; a two-letter rectangle rule on a sliding Vigenère/Variant or Beaufort chart), any per-pair
   key, PA and CA any two of R76's 77,229 keyword alphabets, all 16 conventions: **EXCL**, with one dropped pair
-  allowed (L187, R98). Free alphabets and alphabets outside the tier stay OPEN. With free alphabets and a key
-  periodic over pairs, or any key, **EXCL at the exact level for all 16 conventions** (L196, R108). Allowing one bad
-  crib pair, EXCL for every convention at p 1–5, 7, 19, 21, and for 4–12 of the 16 elsewhere, any key included.
+  allowed (L187, R98); that round leaves alphabets outside its tier OPEN. R108 extends the test to free alphabets
+  and periods 1–47 over pairs or any key: **all 768 labelled settings are excluded conditional on correct crib
+  letters and no same-column crib pair** (L196). Allowing at most one erroneous or same-column pair, 372 settings
+  remain excluded: every convention at p 1–5, 7, 19, 21, and 4–12 of the 16 elsewhere (4 with any key).
+  General handling of two or more same-column/error pairs remains OPEN; this is not an unconditional exclusion
+  of ordinary Slidefair. See `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md` (partial review).
 - **Playfair, two-square, four-square:** **EXCL** (L88).
   - These use 25-letter squares, but K4 has all 26 letters.
   - Playfair also cannot encrypt a doubled letter within a pair.
@@ -353,8 +356,9 @@ chance.** The most important open items are in §17.
    double rotation with free alphabets.
 10. **A masking step before encryption.** Scheidt has spoken of "masking"; the form is unknown (L26).
 11. **ACA types with mixed alphabets that change during encryption:** Ragbaby, Slidefair, Portax, Alberti-style
-    disk moves. Slidefair with keyword alphabets and any key is now EXCL (L187); with free alphabets it is still
-    EXCL at the exact level under any key (L196, R108).
+    disk moves. Slidefair with keyword alphabets in R98's tier and any key is EXCL in that round's scope (L187).
+    With free alphabets, R108's exclusions assume no same-column crib pair, or allow at most one such/error pair
+    in the 372 DROP settings (L196); the general same-column case remains OPEN (see section 9).
 
 See `CRYPTOGRAPHY_REFERENCE.md` for how each of these works and `CRYPTANALYSIS_METHODS.md` for how to test them.
 
