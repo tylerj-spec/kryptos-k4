@@ -31,7 +31,7 @@ the parts it relies on.
 | Round | Proposal | Mode | Result |
 |---|---|---|---|
 | **R108** (L196) | P4 | crib-assisted, exact | Slidefair with **free** alphabets, all 16 conventions, keys periodic over pairs (p 1–47) or **any key**: **all 768 K4 cells excluded** at the exact level. **372 cells** are also excluded with one bad crib pair. 200 shuffles: median 136 cells open, and 48 shuffles also had 0, so this is not an anomaly. The rank reference agrees 768/768 |
-| **R109** (L197) | P1 | crib-assisted, exact | See `r109/RESULT.md` |
+| **R109** (L197) | P1 | crib-assisted, exact | Two-free-alphabet plaintext autokey, F ∈ {A, B, AZ}, 4 sign pairs, lags 1–96. **34 of the 420 checkable cells excluded** (exact); **6** of them also with one wrong letter (L2 F = AZ; L9 F = A, opposite signs). 322 open, 64 undecided, 732 without constraint. The DFS confirms all 34. No lead (primary-only exclusions: K4 12, shuffles median 4) |
 | **R110** (L198) | P2 | blind, ciphertext only | Lag 1: **no signal** (p = 0.071). Exploratory lag 21: R_21 = 11 against 3.69 (p = 0.0013; Bonferroni over 24 lags, 0.032) |
 | **R111** (L199) | P3 | blind | S105 on K4 at 20 cells (B ∈ {AZ, KRY}, L 1–5, both σ): **NO_SIGNAL**. The best cell scored −459.3, below 9 of the 15 shuffle maxima. The post-freeze clue check gave 1/24 for the top cell |
 

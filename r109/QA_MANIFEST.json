@@ -38,5 +38,6 @@
   "freeze_manifest_path": "r109/k4/FROZEN.sha256",
   "resource_logs": [
     "r109/k4/TARGET_RESOURCE_LOG.json"
-  ]
+  ],
+  "verdict": "EXCL (EXACT) 34 of 420 checkable cells (6 also with one error: L2 F=AZ, L9 F=A opposite signs); 322 OPEN, 64 UNDECIDED, 732 NO_EQUATIONS; no LEAD"
 }
