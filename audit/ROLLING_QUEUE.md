@@ -10,6 +10,11 @@ kept in git history.
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
 | C | R107, R108, R109, R110, R111 (L195–L199) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
 
+**27 Nov quality review:** `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md` is a partial ChatGPT review
+of R105 and R108–R111. It corrects claim scope and identifies audit priorities; it closes no batch and does not
+verify R105's GO for R106. Priorities: shared equation builders/DFS-only decisions, independent-text solver
+validation and complete witnesses, and reconciliation of lag 21 with R71.
+
 ## Current batch: `audit/reviews/BATCH_WORK_ORDER_R102_R107.md`
 | Item | Depends on | Dependency verified? | Status |
 |---|---|---|---|
@@ -23,15 +28,15 @@ kept in git history.
 ## Proposals P1–P4: done (Tyler, 27 Nov 2026: "Do the 4 proposals then we'll do the audit")
 | Item | Round | Result |
 |---|---|---|
-| P1 exact S3b crib check on K4 | **R109 (L197)** | 34 of 420 checkable cells excluded (6 with one error allowed); mostly open |
+| P1 exact S3b crib check on K4 | **R109 (L197)** | 34 of 420 checkable cells excluded (6 with one error allowed); 322 satisfy the tested necessary equations, 64 undecided; passing is not full-chain feasibility |
 | P2 ciphertext-only lag-1 test | **R110 (L198)** | no lag-1 signal (p = 0.071); exploratory lag 21 p = 0.0013 (Bonferroni 0.032) |
 | P3 blind S105 on K4, B ∈ {AZ, KRY} | **R111 (L199)** | NO_SIGNAL (provisional on the batch-B audit of R105) |
-| P4 exact free-alphabet periodic Slidefair | **R108 (L196)** | all 768 cells excluded at the exact level, any key included; 372 with one bad pair |
+| P4 exact free-alphabet periodic Slidefair | **R108 (L196)** | all 768 cells excluded assuming correct crib letters and no same-column crib pair; 372 remain excluded allowing at most one erroneous/same-column pair |
 
 ## Proposed new items (need approval)
 | Item | Why | Depends on |
 |---|---|---|
-| **P5. Lag-21 follow-up (ciphertext only).** List the constructions that predict an R_21 excess, give each its own synthetic power, and test each in a registered blind round | R110's exploratory lag-21 excess (p = 0.0013; Bonferroni 0.032 over 24 lags) | none; must stay blind |
+| **P5. Lag-21 follow-up (ciphertext only).** First reconcile with R71 and specify a materially new mechanism or distinguishing prediction; then propose a finite synthetic gate before any registered target follow-up | R110 remeasures a previously known width-21 repeat structure with a different weighting. Its p = 0.0013 / Bonferroni 0.032 is scoped to this scan, not independent confirmation | novelty review and a concrete work order; must stay blind; do not repeat R71's family sweep without new justification |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |
@@ -49,4 +54,4 @@ kept in git history.
 | Historical cryptographic methods | high |
 | Non-repeating key generation | medium |
 | Rotor solver | low (only with a materially different strategy) |
-| Unrestricted free-alphabet Slidefair | deferred (insufficient identifiability) |
+| Unrestricted free-alphabet Slidefair | R108 gives conditional exclusions; general same-column handling remains open. Derive and validate any broader exact test on synthetic data before target work |
