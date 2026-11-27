@@ -10,6 +10,8 @@ kept in git history.
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
 | C | R107–R113 (L195–L201) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
 
+**Audit readiness index (27 Nov):** `audit/reviews/AUDIT_READINESS_20261127.md` lists R98–R113 by batch, with each claim, what to check first, the known independence gaps and what waits on the review.
+
 **27 Nov quality review:** `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md` is a partial ChatGPT review
 of R105 and R108–R111. It corrects claim scope and identifies audit priorities; it closes no batch and does not
 verify R105's GO for R106. Priorities: shared equation builders/DFS-only decisions, independent-text solver
