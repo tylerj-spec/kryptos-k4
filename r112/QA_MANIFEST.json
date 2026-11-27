@@ -1,0 +1,25 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "Synthetic study (no K4 input): an exact crib check X112 for ACA Slidefair with free alphabets and a periodic (or any) key that treats every crib pair as normal OR same-column with the proper equations (any number of same-column pairs; optionally one pair set aside) is sound on plants, agrees with a brute-force reference, and keeps substantial chance-exclusion power.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made. Same-column rules other than R98's 'letters to the right' at two or more pairs are outside X112.",
+  "preregistration_path": "r112/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "91930d339f0bbf08bb7c48f101a5e72f5cc25fae37f7d78f95b7cb07312b4e1c",
+  "synthetic_gate_path": "r112/run_v1/RESULTS.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "ANALYSIS_VERIFICATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Tyler 27 Nov 2026: 'continue on along with any logical next steps that you suggest until we're ready for an actual substantive review'. Item 3 of the 27 Nov partial quality review. Mode field per the R96/R97 convention for synthetic rounds.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r112/PROTOCOL.sha256"
+}
