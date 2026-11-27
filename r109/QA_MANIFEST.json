@@ -1,0 +1,30 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "K4 is a plaintext autokey with two FREE alphabets (R102's S3b): B^-1(C_i) = s1*A^-1(P_i) + s2*F^-1(P_{i-L}) + c, F in {A, B, AZ}, any signs, constant and primer, lags 1-96, read in place; exact compatibility of the 24 published letters per (lag, signs, F) cell by R102's CRT solver with a DFS second solver, all letters kept or one published position dropped.",
+  "not_excluded": "OPEN, UNDECIDED and NO_EQUATIONS cells; two or more errors; ciphertext not in place or further layers; ciphertext autokey or multiple-lag forms. Aggregate exact verdicts only; no blind recovery.",
+  "preregistration_path": "r109/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "a8af3814db80847b216a33e95371700ba1684632bd4d826d725591d2f5e439f4",
+  "synthetic_gate_path": "r109/holdout/GATE.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "solver_inputs": [],
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_cpu_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 21
+  },
+  "schema_compatibility": "As R98: the legacy schema requires a positive max_candidates; the binding limits are max_decoded_candidates=0 and max_surviving_setting_outputs=0 (no witness alphabets are written).",
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries. Gate budget in r109/budgets/GATE_BUDGET.json.",
+  "notes": "Proposal P1 (audit/ROLLING_QUEUE.md), approved by Tyler 27 Nov 2026 ('Do the 4 proposals then we'll do the audit'). Type B exact scope. Uses R102's unaudited solvers, re-verified in this round's own gate.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r109/PROTOCOL.sha256"
+}
