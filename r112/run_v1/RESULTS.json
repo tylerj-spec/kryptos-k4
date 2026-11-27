@@ -1,0 +1,179 @@
+{
+ "round": "R112",
+ "seed": 1120901,
+ "T1_structure": {
+  "messages": 300,
+  "pairs": 14400,
+  "same_column_pairs": 3341,
+  "round_trip_failures": 0,
+  "equation_failures": 0,
+  "pass": true
+ },
+ "T2_soundness": {
+  "plants": 400,
+  "same_column_crib_pairs_histogram": {
+   "0": 123,
+   "1": 67,
+   "2": 28,
+   "3": 28,
+   "4": 47,
+   "5": 45,
+   "6": 31,
+   "7": 20,
+   "8": 10,
+   "9": 1
+  },
+  "excluded_true": 0,
+  "excluded_drop_with_one_error": 0,
+  "pass": true
+ },
+ "T3_two_implementations": {
+  "small_mask_cells": 1920,
+  "full_mask_cells": 40,
+  "disagreements": 0,
+  "pass": true
+ },
+ "T4_chance_power": {
+  "messages": 40,
+  "by_period": {
+   "1": {
+    "EXCL": 640,
+    "EXCL_DROP": 640,
+    "cells": 640,
+    "share_excl": 1.0,
+    "share_excl_drop": 1.0
+   },
+   "2": {
+    "EXCL": 640,
+    "EXCL_DROP": 640,
+    "cells": 640,
+    "share_excl": 1.0,
+    "share_excl_drop": 1.0
+   },
+   "3": {
+    "EXCL": 640,
+    "EXCL_DROP": 628,
+    "cells": 640,
+    "share_excl": 1.0,
+    "share_excl_drop": 0.9812
+   },
+   "4": {
+    "EXCL": 628,
+    "EXCL_DROP": 540,
+    "cells": 640,
+    "share_excl": 0.9812,
+    "share_excl_drop": 0.8438
+   },
+   "5": {
+    "EXCL": 596,
+    "EXCL_DROP": 444,
+    "cells": 640,
+    "share_excl": 0.9313,
+    "share_excl_drop": 0.6937
+   },
+   "6": {
+    "EXCL": 588,
+    "EXCL_DROP": 448,
+    "cells": 640,
+    "share_excl": 0.9187,
+    "share_excl_drop": 0.7
+   },
+   "7": {
+    "EXCL": 592,
+    "EXCL_DROP": 356,
+    "cells": 640,
+    "share_excl": 0.925,
+    "share_excl_drop": 0.5563
+   },
+   "8": {
+    "EXCL": 560,
+    "EXCL_DROP": 336,
+    "cells": 640,
+    "share_excl": 0.875,
+    "share_excl_drop": 0.525
+   },
+   "9": {
+    "EXCL": 548,
+    "EXCL_DROP": 308,
+    "cells": 640,
+    "share_excl": 0.8562,
+    "share_excl_drop": 0.4813
+   },
+   "10": {
+    "EXCL": 516,
+    "EXCL_DROP": 260,
+    "cells": 640,
+    "share_excl": 0.8063,
+    "share_excl_drop": 0.4062
+   },
+   "11": {
+    "EXCL": 496,
+    "EXCL_DROP": 264,
+    "cells": 640,
+    "share_excl": 0.775,
+    "share_excl_drop": 0.4125
+   },
+   "12": {
+    "EXCL": 524,
+    "EXCL_DROP": 260,
+    "cells": 640,
+    "share_excl": 0.8187,
+    "share_excl_drop": 0.4062
+   },
+   "16": {
+    "EXCL": 448,
+    "EXCL_DROP": 196,
+    "cells": 640,
+    "share_excl": 0.7,
+    "share_excl_drop": 0.3063
+   },
+   "24": {
+    "EXCL": 416,
+    "EXCL_DROP": 140,
+    "cells": 640,
+    "share_excl": 0.65,
+    "share_excl_drop": 0.2188
+   },
+   "36": {
+    "EXCL": 408,
+    "EXCL_DROP": 148,
+    "cells": 640,
+    "share_excl": 0.6375,
+    "share_excl_drop": 0.2313
+   },
+   "any": {
+    "EXCL": 372,
+    "EXCL_DROP": 124,
+    "cells": 640,
+    "share_excl": 0.5813,
+    "share_excl_drop": 0.1938
+   }
+  }
+ },
+ "labels_by_period": {
+  "1": "ROBUST",
+  "2": "ROBUST",
+  "3": "ROBUST",
+  "4": "ROBUST",
+  "5": "ROBUST",
+  "6": "ROBUST",
+  "7": "ROBUST",
+  "8": "ROBUST",
+  "9": "TESTABLE",
+  "10": "TESTABLE",
+  "11": "TESTABLE",
+  "12": "TESTABLE",
+  "16": "TESTABLE",
+  "24": "TESTABLE",
+  "36": "TESTABLE",
+  "any": "TESTABLE"
+ },
+ "verdict": "COMPLETE",
+ "wall_s": 404.99,
+ "cpu_s": 402.09,
+ "source_sha256": {
+  "x112.py": "ed8e5378c6a0f9cec34e74cf03bfeadb3da174538807931ddb726d254c33b392",
+  "ref112.py": "7256db081bd3184aa33487a8b0b3ae8ebb093c1b7e440ef4dfbb49ea7cfca9e7",
+  "run112.py": "b6a1a4212a973001410497f08cb718f5f8e4b4c140da060b6875e22aa22e8aa7"
+ }
+}
