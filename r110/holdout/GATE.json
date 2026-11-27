@@ -1,0 +1,33 @@
+{
+ "round": "R110",
+ "gate_type": "STATISTIC_POWER_AND_SIZE",
+ "seed": 1100901,
+ "G1_two_implementations": {
+  "strings": 500,
+  "lags": 24,
+  "disagreements": 0,
+  "pass": true
+ },
+ "G2_power_L1": {
+  "plants": 300,
+  "significant": 122,
+  "share": 0.4067,
+  "pass": true
+ },
+ "G3_size_L1": {
+  "strings": 300,
+  "significant": 12,
+  "share": 0.04,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 14.41,
+ "cpu_s": 14.34,
+ "source_sha256": {
+  "lagpair110.py": "239915f199ff7d3ef5325e0535f82748679c2dd83bdfa874268b1c30cd0f93e3",
+  "gate110.py": "3154b45ede725cd1b89844edcb98cfa4b40684a3d6226fd6cd6e9d0085229146",
+  "run_target110.py": "f44566f07bcd7cc1baf394019f8f05e3e324a7269601ce1a6bab0316a5a7f81d",
+  "evaluate110.py": "258dfc3064d71a0c638359c5916ccbb8f14e6ea83de20fb581619912d2f15b5f"
+ }
+}

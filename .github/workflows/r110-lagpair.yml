@@ -1,0 +1,45 @@
+name: R110 K4 lag-pair test (freeze check and deterministic re-run)
+on:
+  pull_request:
+    paths:
+      - "r110/**"
+      - ".github/workflows/r110-lagpair.yml"
+permissions:
+  contents: read
+jobs:
+  r110-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r110/PROTOCOL.sha256
+          sha256sum -c r110/SOURCE.sha256
+          sha256sum -c r110/holdout/GATE_FROZEN.sha256
+          sha256sum -c r110/k4/FROZEN.sha256
+      - name: "Re-run the 100,000 shuffles and compare; re-derive the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys
+          sys.path[:0] = ["r110"]
+          import lagpair110 as LP, run_target110 as RT
+          ct = open("r39/ic_gate/k4_ciphertext.txt").read().strip()
+          want = json.load(open("r110/k4/STATISTICS.json"))
+          obs = {L: LP.R_counter(ct, L) for L in RT.LAGS}
+          assert {str(L): v for L, v in obs.items()} == want["R_K4"]
+          rng = random.Random(RT.SHUFFLE_SEED)
+          ge = dict.fromkeys(RT.LAGS, 0)
+          lst = list(ct)
+          for _ in range(RT.N_SHUF):
+              rng.shuffle(lst)
+              for L in RT.LAGS:
+                  ge[L] += LP.R_counter(lst, L) >= obs[L]
+          assert {str(L): (1 + ge[L]) / (RT.N_SHUF + 1) for L in RT.LAGS} == want["p_one_sided"]
+          print("R110 reproduced: p_1 =", want["p_one_sided"]["1"])
+          PY
+          python3 -I r110/evaluate110.py /tmp/E110.json
+          cmp /tmp/E110.json r110/k4/EVALUATION.json

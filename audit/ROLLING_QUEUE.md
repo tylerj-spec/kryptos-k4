@@ -8,7 +8,7 @@ kept in git history.
 |---|---|---|---|
 | A | R98, R99, R100, R101 (L187–L190) | ChatGPT | **assigned 25 Nov 2026; in progress** |
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
-| C | R107 onward (L195–) | ChatGPT | open |
+| C | R107, R108, R109, R110, R111 (L195–L199) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
 
 ## Current batch: `audit/reviews/BATCH_WORK_ORDER_R102_R107.md`
 | Item | Depends on | Dependency verified? | Status |
@@ -20,13 +20,18 @@ kept in git history.
 | R106 joint synthetic solver | R105 GO | **must be independently verified**; not yet (batch B) | **blocked until ChatGPT verifies R105** |
 | R107 structured-key Slidefair feasibility | — | — | **done (L195): TESTABLE at p 1–8, 10, 11** by the exact check X107; WEAK at 9, 12, 16, 24, 36 and any key |
 
-## Proposed new items (outside the approved batch; need approval)
+## Proposals P1–P4: done (Tyler, 27 Nov 2026: "Do the 4 proposals then we'll do the audit")
+| Item | Round | Result |
+|---|---|---|
+| P1 exact S3b crib check on K4 | **R109 (L197)** | 34 of 420 checkable cells excluded (6 with one error allowed); mostly open |
+| P2 ciphertext-only lag-1 test | **R110 (L198)** | no lag-1 signal (p = 0.071); exploratory lag 21 p = 0.0013 (Bonferroni 0.032) |
+| P3 blind S105 on K4, B ∈ {AZ, KRY} | **R111 (L199)** | NO_SIGNAL (provisional on the batch-B audit of R105) |
+| P4 exact free-alphabet periodic Slidefair | **R108 (L196)** | all 768 cells excluded at the exact level, any key included; 372 with one bad pair |
+
+## Proposed new items (need approval)
 | Item | Why | Depends on |
 |---|---|---|
-| **P1. Exact S3b crib check on K4.** Direct-pair necessary conditions for every pair of free alphabets, every (lag, signs, F); a type B round with its own gate (oracle, plants, two solvers) | R102 C5: about 42% of cells are excluded by chance alone, so the check has real power | none (its own gate re-verifies the solvers) |
-| **P2. Ciphertext-only lag-1 repeated-pair test on K4.** A blind round with shuffle nulls, no clues | R102 C6: power 0.41 at L = 1 | none |
-| **P3. Blind K4 run of R105's solver S105 with B from a short list registered in advance** (for example straight and KRYPTOS-keyed), lags 1–5, both σ, with decoy nulls on shuffled K4. Exploratory; the score detects hypotheses, not letter-perfect decryptions | R105 GO (L194): 42/50 synthetic, all recoveries above all decoys | **R105 independently verified** (batch B) |
-| **P4. Exact periodic-key free-alphabet Slidefair crib check on K4** (X107): 16 conventions × p 1–48 and any key, EXACT and DROP levels, with 200 shuffle controls and the rank reference as post-freeze cross-check; crib-assisted, exclusion-only | R107 (L195): chance exclusion ≥ 0.50 at p 1–8, 10, 11 with one pair dropped | none (its own gate re-runs R107's soundness and two-implementation checks) |
+| **P5. Lag-21 follow-up (ciphertext only).** List the constructions that predict an R_21 excess, give each its own synthetic power, and test each in a registered blind round | R110's exploratory lag-21 excess (p = 0.0013; Bonferroni 0.032 over 24 lags) | none; must stay blind |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |
