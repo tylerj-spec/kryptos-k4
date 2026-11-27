@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is a plaintext autokey with two FREE alphabets (R102's S3b): B^-1(C_i) = s1*A^-1(P_i) + s2*F^-1(P_{i-L}) + c, F in {A, B, AZ}, any signs, constant and primer, lags 1-96, read in place; exact compatibility of the 24 published letters per (lag, signs, F) cell by R102's CRT solver with a DFS second solver, all letters kept or one published position dropped.",
   "not_excluded": "OPEN, UNDECIDED and NO_EQUATIONS cells; two or more errors; ciphertext not in place or further layers; ciphertext autokey or multiple-lag forms. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r109/PREREGISTRATION.md",
@@ -34,5 +34,9 @@
   ],
   "gate_freeze_path": "r109/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r109/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r109/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r109/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r109/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r109/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }
