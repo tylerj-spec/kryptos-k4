@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "blind",
+  "stage": "preregistered",
+  "hypothesis": "K4 is a two-free-alphabet plaintext autokey with F = A (R105's mode): B^-1(C_i) = s1*A^-1(P_i) + s2*A^-1(P_{i-L}) + c, plaintext alphabet A free, cipher alphabet B in {AZ, KRYPTOS-keyed}, lag 1-5, any signs, constant and primer, read in place; R105's solver S105, run blind on all 20 cells, finds an English plaintext that out-scores the same search on 15 letter-shuffles of K4 and reaches -440.",
+  "not_excluded": "Nothing is excluded: S105 recovers 84% of synthetic plants, so NO_SIGNAL is not an exclusion. Not covered: B outside the list, lags above 5, F other than A, transposition or other layers, non-English plaintext.",
+  "preregistration_path": "r111/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "f99287440f9899f8fffeeceebbb8ccceaed9430ea79344de9a1aa8e46ac35d7e",
+  "synthetic_gate_path": "r111/holdout/GATE.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "BLIND_SOLVER_RECOVERY",
+  "blind_recovery_certified": false,
+  "solver_inputs": [
+    "r39/ic_gate/k4_ciphertext.txt"
+  ],
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_cpu_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_candidates": 20,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries. Gate budget in r111/budgets/GATE_BUDGET.json.",
+  "notes": "Proposal P3 (audit/ROLLING_QUEUE.md), approved by Tyler 27 Nov 2026 ('Do the 4 proposals then we'll do the audit'), run ahead of the batch-B audit of R105 on that instruction; conclusions provisional until then. Clue check only after the K4 freeze is pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r111/PROTOCOL.sha256"
+}
