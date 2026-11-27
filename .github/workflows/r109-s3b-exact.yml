@@ -1,0 +1,48 @@
+name: R109 two-free-alphabet autokey exact check on K4 (freeze check, K4 recount, decision)
+on:
+  pull_request:
+    paths:
+      - "r109/**"
+      - ".github/workflows/r109-s3b-exact.yml"
+permissions:
+  contents: read
+jobs:
+  r109-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r109/PROTOCOL.sha256
+          sha256sum -c r109/SOURCE.sha256
+          sha256sum -c r109/holdout/GATE_FROZEN.sha256
+          sha256sum -c r109/k4/FROZEN.sha256
+      - name: "Recount every K4 cell (EXACT, DFS cross-check, DROP) and compare; re-derive the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r109"]
+          import check109 as K, run_target109 as RT
+          ct = open("r39/ic_gate/k4_ciphertext.txt").read().strip()
+          obs = RT.observations()
+          hyp = [obs.get(i) for i in range(97)]
+          want = json.load(open("r109/k4/VERDICTS.json"))["K4_cells"]
+          for L, s1, s2, F in RT.CELLS:
+              v, prim, _ = K.exact(ct, hyp, L, s1, s2, F)
+              rec = {"exact": v, "primary": prim}
+              if v == "INCONSISTENT":
+                  rec["dfs_crosscheck"] = K.dfs_crosscheck(ct, hyp, L, s1, s2, F)
+                  rec["drop"] = K.drop(ct, hyp, L, s1, s2, F)
+              assert rec == want[f"L{L}_s{s1:+d}{s2:+d}_F{F}"], (L, s1, s2, F)
+          print("R109 K4 recount identical:", len(want), "cells")
+          PY
+          python3 -I r109/evaluate109.py /tmp/E109.json
+          cmp /tmp/E109.json r109/k4/EVALUATION.json
