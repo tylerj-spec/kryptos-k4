@@ -1,0 +1,40 @@
+{
+ "round": "R109",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "seed": 1090901,
+ "V1_soundness": {
+  "plants": 150,
+  "verdicts": {
+   "CONSISTENT": 82,
+   "UNDECIDED": 1,
+   "NO_EQUATIONS": 67
+  },
+  "no_equations": 67,
+  "inconsistent_true_hypotheses": 0,
+  "bad_witnesses": 0,
+  "pass": true
+ },
+ "V2_one_error": {
+  "plants": 150,
+  "excluded_drop_with_one_error": 0,
+  "pass": true
+ },
+ "V3_two_solvers": {
+  "cases": 600,
+  "both_decided": 142,
+  "disagreements": 0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 79.36,
+ "cpu_s": 79.06,
+ "source_sha256": {
+  "check109.py": "def739d4b32a853cbe58452c7e53b4c48db98054a097b7709e99e0b8d6e2cf7f",
+  "gate109.py": "87e00ea417afc0b0091280794791e7a733311b98f391e5796190b93b794ebe8a",
+  "run_target109.py": "9a4158b554071e2976a2c9fa00c7b2e39e49be43f5d9608971d1866e7fc1f000",
+  "evaluate109.py": "1bc46b9334b5b247128688c013742b33cda56dc5aebaa257441bda75bc7f0323",
+  "AMENDMENT_1.md": "4a5e747ee9c82ab0a90cc0b485bac9a48a6515e3de82da46143a0733032aa29c",
+  "AMENDMENT_2.md": "3a1d10a9840796e0172a24771bdcd390b099c449426b75eb275fe8a62f6f00db"
+ }
+}
