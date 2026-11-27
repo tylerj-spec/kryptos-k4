@@ -1,14 +1,14 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "preregistered",
+  "stage": "gate",
   "hypothesis": "Ciphertext-only: K4's lag-1 repeated-pair count R_1 exceeds its letter-shuffle null at alpha 0.05, as predicted (power 0.41) for a lag-1 two-free-alphabet plaintext autokey (R102 C6); lags 2-24 exploratory with Bonferroni.",
   "not_excluded": "Nothing is excluded: the test is weak (power 0.41 at L = 1, about 0.1 at L = 2-3) and non-specific (any cipher preserving lag-L repetition raises R_L). A null result is STAT_NO_SIGNAL only.",
   "preregistration_path": "r110/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "1433893646160543a2513b407138063c3ac035e0",
   "preregistration_sha256": "ebce400f8c1fd068dc5cba301af7ca570f87458fc13a0a081ad6c2421773b946",
   "synthetic_gate_path": "r110/holdout/GATE.json",
-  "gate_verdict": "PENDING",
+  "gate_verdict": "GO",
   "gate_type": "STATISTIC_POWER_AND_SIZE",
   "blind_recovery_certified": false,
   "solver_inputs": [
@@ -24,5 +24,9 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries. Gate budget in r110/budgets/GATE_BUDGET.json.",
   "notes": "Proposal P2 (audit/ROLLING_QUEUE.md), approved by Tyler 27 Nov 2026 ('Do the 4 proposals then we'll do the audit'). Ciphertext only; no published letter is read at any stage.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r110/PROTOCOL.sha256"
+  "protocol_manifest_path": "r110/PROTOCOL.sha256",
+  "source_manifest_path": "r110/SOURCE.sha256",
+  "gate_freeze_path": "r110/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r110/holdout/GATE_RESOURCE_LOG.json",
+  "gate_budget_path": "r110/budgets/GATE_BUDGET.json"
 }
