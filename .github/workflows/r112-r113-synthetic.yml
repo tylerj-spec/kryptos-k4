@@ -1,0 +1,39 @@
+name: R112 and R113 synthetic rounds (hash checks and deterministic re-runs)
+on:
+  pull_request:
+    paths:
+      - "r112/**"
+      - "r113/**"
+      - ".github/workflows/r112-r113-synthetic.yml"
+permissions:
+  contents: read
+jobs:
+  r112-r113-rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r112/PROTOCOL.sha256
+          sha256sum -c r112/SOURCE.sha256
+          sha256sum -c r112/run_v1/OUTPUTS.sha256
+          sha256sum -c r113/PROTOCOL.sha256
+          sha256sum -c r113/SOURCE.sha256
+          sha256sum -c r113/run_v1/OUTPUTS.sha256
+      - name: "Re-run both registered computations (standard library only) and compare every result except timings"
+        run: |
+          python3 -I r112/run112.py /tmp/R112.json
+          python3 -I r113/run113.py /tmp/R113.json
+          python3 - <<'PY'
+          import json
+          for a_path, b_path in (("/tmp/R112.json", "r112/run_v1/RESULTS.json"), ("/tmp/R113.json", "r113/run_v1/RESULTS.json")):
+              a, b = json.load(open(a_path)), json.load(open(b_path))
+              for d in (a, b):
+                  d.pop("wall_s"); d.pop("cpu_s")
+              assert a == b, (b_path, [k for k in a if a[k] != b.get(k)])
+              print(b_path, "reproduced")
+          PY
