@@ -60,3 +60,16 @@ All 24 lags are in `k4/EVALUATION.json`. The Bonferroni-adjusted minimum over la
 - list which constructions predict R_21;
 - test them with their own synthetic power;
 - stay strictly blind.
+
+## Errata (additive, 27 Nov 2026; after ChatGPT's partial quality review `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md`)
+1. **Lag 21 is not a new observation.** R71 (`r71/PREREGISTRATION.md`, `r71/RESULT.md`) already registered and
+   reported the width-21 repeated-pair structure, with a K4 count of 11.
+   - R110 weights a pair that occurs n times as n(n − 1)/2; R71 used max(n − 1, 0).
+   - Both measure the same structure in the same 97 letters.
+   - The adjusted p = 0.032 is scoped to R110's 24-lag scan. It is **not independent confirmation**, not a
+     correction for earlier choices of statistic, and not a probability that any construction is true.
+2. **The follow-up comes after a novelty review.** The proposed follow-up (P5) must first reconcile with R71's
+   family simulations, which gave NO_FAMILY. It must also name a materially new mechanism or distinguishing
+   prediction. If none emerges, it closes without a K4 run.
+3. **The lag 2–24 scan was registered.** It was registered as exploratory. A chat summary called it unplanned;
+   that was inaccurate.
