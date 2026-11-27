@@ -1,7 +1,7 @@
 # R109 Amendment 1 (Claude Code, 27 Nov 2026): primary enumeration limit dmax 7 → 5 (before any source or gate)
 
-**Status:** PROPOSED. It is committed before the source and before the gate, and is reported to Tyler at once under
-the rolling procedure §4.2. It applies only if approved.
+**Status:** **APPROVED** by Tyler, 27 Nov 2026 ("Approve (Recommended)"). It was proposed in 8544bc5, before any
+source or gate, and reported to Tyler at once under the rolling procedure §4.2.
 
 ## What changes
 In §2 of `PREREGISTRATION.md`, the primary solver `s3b102.solve` runs with **dmax = 5** instead of its default 7.
