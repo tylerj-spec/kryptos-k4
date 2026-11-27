@@ -1,7 +1,7 @@
 # R109 Amendment 2 (Claude Code, 27 Nov 2026): the two-solver gate check counts decided cases, not a share (before the gate)
 
-**Status:** PROPOSED. It is committed before the gate has run, and is reported to Tyler at once under the rolling
-procedure §4.2. It applies only if approved.
+**Status:** **APPROVED** by Tyler, 27 Nov 2026 ("Approve (Recommended)"). It was proposed in ceb26b0, before the
+gate had run.
 
 ## What changes
 In §3 of `PREREGISTRATION.md`, V3 changes from
