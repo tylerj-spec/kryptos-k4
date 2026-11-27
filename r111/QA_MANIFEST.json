@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is a two-free-alphabet plaintext autokey with F = A (R105's mode): B^-1(C_i) = s1*A^-1(P_i) + s2*A^-1(P_{i-L}) + c, plaintext alphabet A free, cipher alphabet B in {AZ, KRYPTOS-keyed}, lag 1-5, any signs, constant and primer, read in place; R105's solver S105, run blind on all 20 cells, finds an English plaintext that out-scores the same search on 15 letter-shuffles of K4 and reaches -440.",
   "not_excluded": "Nothing is excluded: S105 recovers 84% of synthetic plants, so NO_SIGNAL is not an exclusion. Not covered: B outside the list, lags above 5, F other than A, transposition or other layers, non-English plaintext.",
   "preregistration_path": "r111/PREREGISTRATION.md",
@@ -28,5 +28,9 @@
   "source_manifest_path": "r111/SOURCE.sha256",
   "gate_freeze_path": "r111/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r111/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r111/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r111/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r111/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r111/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }

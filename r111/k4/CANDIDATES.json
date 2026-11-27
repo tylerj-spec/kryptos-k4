@@ -1,0 +1,416 @@
+{
+ "round": "R111",
+ "head_commit_at_start": "edb25f3a09981e5de53fa8d705a0e5c1dfa23069",
+ "ciphertext_sha256": "2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3",
+ "shuffle_seed": 1110400,
+ "solver_seed": 1110402,
+ "cells": [
+  [
+   "AZ",
+   1,
+   1
+  ],
+  [
+   "AZ",
+   1,
+   -1
+  ],
+  [
+   "AZ",
+   2,
+   1
+  ],
+  [
+   "AZ",
+   2,
+   -1
+  ],
+  [
+   "AZ",
+   3,
+   1
+  ],
+  [
+   "AZ",
+   3,
+   -1
+  ],
+  [
+   "AZ",
+   4,
+   1
+  ],
+  [
+   "AZ",
+   4,
+   -1
+  ],
+  [
+   "AZ",
+   5,
+   1
+  ],
+  [
+   "AZ",
+   5,
+   -1
+  ],
+  [
+   "KRY",
+   1,
+   1
+  ],
+  [
+   "KRY",
+   1,
+   -1
+  ],
+  [
+   "KRY",
+   2,
+   1
+  ],
+  [
+   "KRY",
+   2,
+   -1
+  ],
+  [
+   "KRY",
+   3,
+   1
+  ],
+  [
+   "KRY",
+   3,
+   -1
+  ],
+  [
+   "KRY",
+   4,
+   1
+  ],
+  [
+   "KRY",
+   4,
+   -1
+  ],
+  [
+   "KRY",
+   5,
+   1
+  ],
+  [
+   "KRY",
+   5,
+   -1
+  ]
+ ],
+ "wall_s": 1815.8,
+ "cpu_s": 1807.8,
+ "K4": {
+  "T": -459.2648,
+  "cells": [
+   {
+    "B": "AZ",
+    "L": 1,
+    "sigma": 1,
+    "score": -498.787,
+    "reencrypts": true,
+    "plaintext": "ZDGINTALCULLFALLAUMANSSNBASKEWHNPRIMBLYEXPRORCHANAYOSSTOLPLAIGHTVSEDSOUTPWIDETITGUNLABULRYDORCEJM",
+    "A": "ZYKMNHXTEQWPFUBGDCRAVILJSO",
+    "c": 11,
+    "offsets": [
+     0
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 1,
+    "sigma": -1,
+    "score": -497.7268,
+    "reencrypts": true,
+    "plaintext": "ELTOOMAKHZEUPMORTELEETMUSSSTOLLTHTTWOFTHECBCWEREENDCCARNGINGTELOPRIVICTEDALLBOYSHEMVFQUTBIGPXISCV",
+    "A": "EVBRNLMJGTSFOHWUPYXDCAIKZQ",
+    "c": 22,
+    "offsets": [
+     0
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 2,
+    "sigma": 1,
+    "score": -488.6058,
+    "reencrypts": true,
+    "plaintext": "HLFDEELYMANDDDERJUSMPHYLSPREYNUTUTHQUIVISTSTALOGYBRAIDWICRATHEINNOFMSTHEPOCHOFSPEBULEMONCRISKWASU",
+    "A": "HCVZUAGTQIJWOMBNYRFSEKXPDL",
+    "c": 18,
+    "offsets": [
+     0,
+     25
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 2,
+    "sigma": -1,
+    "score": -489.1678,
+    "reencrypts": true,
+    "plaintext": "IAANTTUNGLORITWODOTIMSYHYNDRIVESHAVEDAYSARSTYLLYCOISAFTIPLJSKIHUMBEDAXMALICETOKCOUPUTGLONGCOREDDI",
+    "A": "IPBLOVFNSETRHAZMUWKGDXCQJY",
+    "c": 23,
+    "offsets": [
+     0,
+     13
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 3,
+    "sigma": 1,
+    "score": -471.4085,
+    "reencrypts": true,
+    "plaintext": "LYURYCLEDWESMULEREKBWCONBYSHTHEBRUAGERKUPTINARDCHOFTEXTMIMGOWIFSERINGHDIMJUSTHEYALHITERTARMAINSWI",
+    "A": "LVFCBJSIQUNEPWTDZYKXMOGRAH",
+    "c": 20,
+    "offsets": [
+     0,
+     17,
+     9
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 3,
+    "sigma": -1,
+    "score": -493.1672,
+    "reencrypts": true,
+    "plaintext": "IRKTVARIERLSINCBSRBYHOLERTOMINDSLICLEOTTOLEGAMEOFCCEPUNDEXCUPROXDIVENNGUTUSSTISRNLEAMAJPWOODSHABE",
+    "A": "IEWGCJRXQKAPUFMSBYZVOHTDNL",
+    "c": 21,
+    "offsets": [
+     0,
+     6,
+     9
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 4,
+    "sigma": 1,
+    "score": -480.1498,
+    "reencrypts": true,
+    "plaintext": "TBJACKAMWHILHAAVINTFUEDUBRIGHTSBAYERSARETHEITSTYWRHIFFEWBLOGUSLEEPULLYPSELFONTICIERHODOETOISTARRM",
+    "A": "TVBANEPDXZJUKMYHCRWILSGOFQ",
+    "c": 4,
+    "offsets": [
+     0,
+     2,
+     10,
+     3
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 4,
+    "sigma": -1,
+    "score": -467.7505,
+    "reencrypts": true,
+    "plaintext": "PFILEDENKEPUTERNTNDYLEMORARRICRATOPOLAYCHEMOMSOMEBANSOMAAIESCHLOLDRASINDINGQUIBUTWRITPACREVISSEOF",
+    "A": "POMIUFHLVZWNKDBGSXRTYCAQEJ",
+    "c": 22,
+    "offsets": [
+     0,
+     5,
+     3,
+     7
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 5,
+    "sigma": 1,
+    "score": -466.9,
+    "reencrypts": true,
+    "plaintext": "LINLAYGUNILIGILEBYAMPHOLDKENAMAAICENTTAHEORCHAUDRONOBLECHISKYFACTHANIAIDAFTSAROVESOINGVERSTDEPICC",
+    "A": "LCNZXTJEWGYKUADQIOSRBHFMVP",
+    "c": 4,
+    "offsets": [
+     0,
+     16,
+     2,
+     0,
+     13
+    ]
+   },
+   {
+    "B": "AZ",
+    "L": 5,
+    "sigma": -1,
+    "score": -473.2888,
+    "reencrypts": true,
+    "plaintext": "DONWHAWOMANWHODGECHRIEFIRSYTHEANKSVCTMILYDORANSIVENMETOLIANDLABDISAFEUDITIOFCROWBYOVEENECOAAPGREQ",
+    "A": "DOKQXCNAJTMPEBUWLISHRVZYGF",
+    "c": 7,
+    "offsets": [
+     0,
+     1,
+     6,
+     15,
+     19
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 1,
+    "sigma": 1,
+    "score": -495.6401,
+    "reencrypts": true,
+    "plaintext": "YMIDINNYDRCAREHEPTCISKTANDSQNXBREACULEOFOREAUMSISHYTHEMWEWAILARYPOLENEXCLOUGOSIITMALVEDICKURTHRXF",
+    "A": "YJCBPRZLUOMSIEXDQFTNHAWGVK",
+    "c": 24,
+    "offsets": [
+     0
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 1,
+    "sigma": -1,
+    "score": -543.8813,
+    "reencrypts": true,
+    "plaintext": "RKSINTEDCMOCHHZFLOYOUTKUUMURMSHEMEDYTHIFTJPJRDIDFRONYALSCZABGPAWNGEVEANDACRAFUXSBYPERACKWESULLMWH",
+    "A": "RJBAYEWGLTZHNCQVDMSUOPXFKI",
+    "c": 10,
+    "offsets": [
+     0
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 2,
+    "sigma": 1,
+    "score": -490.9836,
+    "reencrypts": true,
+    "plaintext": "UIFAILEPHTBRIDSSIOTSTOREAKEARINGALLYLICCFMTBUZEPEASOTHCAEDEMONSHJOLAYUNDEHEWDVXTOACHEWARNGREYARDC",
+    "A": "UIEFGARMWSCVTLJDBXHZYPNQOK",
+    "c": 23,
+    "offsets": [
+     0,
+     1
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 2,
+    "sigma": -1,
+    "score": -500.4889,
+    "reencrypts": true,
+    "plaintext": "HEZONSYOUNDSTUATCKVYLOWEDGOVERNADABLYAVAPSCUBINORMGRMPTWESKYJOBHAYMDICONUNFETERIGHTHEFEELFDEHEXPR",
+    "A": "HDGFJKICEOUWSQMPZVRYBNLTAX",
+    "c": 10,
+    "offsets": [
+     0,
+     8
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 3,
+    "sigma": 1,
+    "score": -479.0845,
+    "reencrypts": true,
+    "plaintext": "TIMPERSUKSCOMYAWUXIDRUNEWBANGDRIFTHINEWASTCBSHTRICFLHASAGLOVERSTJURUGUSTANNTHEYBYPOKINCENTILSTYLP",
+    "A": "TAGVQHDKRNOYUPIBLMZCWEJSFX",
+    "c": 14,
+    "offsets": [
+     0,
+     14,
+     17
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 3,
+    "sigma": -1,
+    "score": -490.774,
+    "reencrypts": true,
+    "plaintext": "GAMESFINVILLMTHREDSELOUYCOMMISBYJOBRASFATRALKHEFURURGEPUTCHEEDECNBOESTLOPSALSHEWIZAARGHPFTCENTSOA",
+    "A": "GXBNJDRESYOKQHTZUMCAFPWILV",
+    "c": 20,
+    "offsets": [
+     0,
+     19,
+     17
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 4,
+    "sigma": 1,
+    "score": -468.581,
+    "reencrypts": true,
+    "plaintext": "IFEDUPOSEIKEEVEATBEARGAPBEUNKYECHANYOFAALSTTHALLOIDVISTICORCEDREDCBROWHEYSOFMATUASINOREBRAWNWHERJ",
+    "A": "IABYZMGCOSJQDURNLWEHPKXFVT",
+    "c": 8,
+    "offsets": [
+     0,
+     23,
+     18,
+     12
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 4,
+    "sigma": -1,
+    "score": -475.8873,
+    "reencrypts": true,
+    "plaintext": "NIRUSMEEKBLVDSHESTREISSSASSOMAKRUPTPARMARIUPLINTOFOURPTBYSCONTIVEHALIEGYGARDFEMOSWEEDUALARJETONGW",
+    "A": "NXIUQGEMOFCBPJWVHTKLDZRYAS",
+    "c": 22,
+    "offsets": [
+     0,
+     2,
+     22,
+     3
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 5,
+    "sigma": 1,
+    "score": -465.9,
+    "reencrypts": true,
+    "plaintext": "ECLEASKFLAMIASRRANDVANDMOFTEDNHEPOLYINISWHERTZEDAWIGBUTYOFCHARAROLIESWAWHOFIORTELYCARMSOANSMECOAD",
+    "A": "ERGOXYKWNIADQUTHFSPZJVCBML",
+    "c": 14,
+    "offsets": [
+     0,
+     22,
+     25,
+     0,
+     10
+    ]
+   },
+   {
+    "B": "KRY",
+    "L": 5,
+    "sigma": -1,
+    "score": -459.2648,
+    "reencrypts": true,
+    "plaintext": "MISTTITBRELACIONCEHADEDABAGSHEUNGOODDICHRARDUKRANGADELHIMISTSTHILDONGWOWENFONABORUPTITYCELFORAMTB",
+    "A": "MREHXAKQNWOPIVSULCYTJFDZBG",
+    "c": 19,
+    "offsets": [
+     0,
+     12,
+     14,
+     19,
+     19
+    ]
+   }
+  ]
+ }
+}
