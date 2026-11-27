@@ -1,0 +1,197 @@
+{
+ "decision": "NO_SIGNAL",
+ "label": null,
+ "top_cell": {
+  "cell": [
+   "KRY",
+   5,
+   -1
+  ],
+  "score": -459.2648,
+  "agreement": 1
+ },
+ "max_agreement_any_cell": 5,
+ "expected_by_chance_per_cell": 0.923,
+ "cells": [
+  {
+   "cell": [
+    "AZ",
+    1,
+    1
+   ],
+   "score": -498.787,
+   "agreement": 0
+  },
+  {
+   "cell": [
+    "AZ",
+    1,
+    -1
+   ],
+   "score": -497.7268,
+   "agreement": 3
+  },
+  {
+   "cell": [
+    "AZ",
+    2,
+    1
+   ],
+   "score": -488.6058,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "AZ",
+    2,
+    -1
+   ],
+   "score": -489.1678,
+   "agreement": 3
+  },
+  {
+   "cell": [
+    "AZ",
+    3,
+    1
+   ],
+   "score": -471.4085,
+   "agreement": 5
+  },
+  {
+   "cell": [
+    "AZ",
+    3,
+    -1
+   ],
+   "score": -493.1672,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "AZ",
+    4,
+    1
+   ],
+   "score": -480.1498,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "AZ",
+    4,
+    -1
+   ],
+   "score": -467.7505,
+   "agreement": 3
+  },
+  {
+   "cell": [
+    "AZ",
+    5,
+    1
+   ],
+   "score": -466.9,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "AZ",
+    5,
+    -1
+   ],
+   "score": -473.2888,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "KRY",
+    1,
+    1
+   ],
+   "score": -495.6401,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "KRY",
+    1,
+    -1
+   ],
+   "score": -543.8813,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "KRY",
+    2,
+    1
+   ],
+   "score": -490.9836,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "KRY",
+    2,
+    -1
+   ],
+   "score": -500.4889,
+   "agreement": 3
+  },
+  {
+   "cell": [
+    "KRY",
+    3,
+    1
+   ],
+   "score": -479.0845,
+   "agreement": 1
+  },
+  {
+   "cell": [
+    "KRY",
+    3,
+    -1
+   ],
+   "score": -490.774,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "KRY",
+    4,
+    1
+   ],
+   "score": -468.581,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "KRY",
+    4,
+    -1
+   ],
+   "score": -475.8873,
+   "agreement": 2
+  },
+  {
+   "cell": [
+    "KRY",
+    5,
+    1
+   ],
+   "score": -465.9,
+   "agreement": 0
+  },
+  {
+   "cell": [
+    "KRY",
+    5,
+    -1
+   ],
+   "score": -459.2648,
+   "agreement": 1
+  }
+ ]
+}
