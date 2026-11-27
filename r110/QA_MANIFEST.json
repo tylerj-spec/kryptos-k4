@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "blind",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "Ciphertext-only: K4's lag-1 repeated-pair count R_1 exceeds its letter-shuffle null at alpha 0.05, as predicted (power 0.41) for a lag-1 two-free-alphabet plaintext autokey (R102 C6); lags 2-24 exploratory with Bonferroni.",
   "not_excluded": "Nothing is excluded: the test is weak (power 0.41 at L = 1, about 0.1 at L = 2-3) and non-specific (any cipher preserving lag-L repetition raises R_L). A null result is STAT_NO_SIGNAL only.",
   "preregistration_path": "r110/PREREGISTRATION.md",
@@ -28,5 +28,9 @@
   "source_manifest_path": "r110/SOURCE.sha256",
   "gate_freeze_path": "r110/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r110/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r110/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r110/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r110/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r110/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }
