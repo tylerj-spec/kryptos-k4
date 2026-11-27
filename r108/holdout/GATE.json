@@ -1,0 +1,44 @@
+{
+ "round": "R108",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "seed": 1080901,
+ "V1_structure": {
+  "messages": 200,
+  "pairs": 9600,
+  "failures": {
+   "round_trip": 0,
+   "identity": 0,
+   "equation": 0,
+   "pair_map": 0
+  },
+  "pass": true
+ },
+ "V2_soundness": {
+  "plants": 400,
+  "failures": 0,
+  "by_same_column_and_verdict": {
+   "same_col_0:OPEN": 264,
+   "same_col_1:EXCLUDED_EXACT": 23,
+   "same_col_1:OPEN": 86,
+   "same_col_2+:EXCLUDED_DROP": 3,
+   "same_col_2+:EXCLUDED_EXACT": 6,
+   "same_col_2+:OPEN": 18
+  },
+  "pass": true
+ },
+ "V3_two_implementations": {
+  "cells": 3472,
+  "disagreements": 0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 176.6,
+ "cpu_s": 175.87,
+ "source_sha256": {
+  "gate108.py": "793d4a6d1e9104fbf60c8ef286ce837ec8191adb309e63857c42986c2c23d57a",
+  "run_target108.py": "d57088e809bfb82a189759869d40906dd5543ad1bf4110ce785440e9d3e81b47",
+  "evaluate108.py": "635ea92af0d7d42f61b789ef888e569a3a1b618812d9198f61115bc57d30b521",
+  "crosscheck108.py": "f1189efe1947be7a494075713484c1fa532b5958b1317afaf62fc898e40ef415"
+ }
+}
