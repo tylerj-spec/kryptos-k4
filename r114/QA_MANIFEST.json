@@ -1,0 +1,25 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "Synthetic validation (no K4 input): R105's unchanged solver S105 meets registered bars on held-out text (Carter second half; K1-K3 plaintext), balanced across the 20 (B, L, sigma) cells, under a first-half-only quadgram table, with the true cell on top in the 20-cell search and recoveries above all decoys including two-free-alphabet autokeys; every output carries a full 97-letter forward witness (fail closed).",
+  "not_excluded": "Nothing is excluded and no K4 claim is made. It does not verify R105's original GO (batch-B audit) and does not cover B off the list, lags above 5, F other than A, or non-English text.",
+  "preregistration_path": "r114/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "c2fbd6204f7c8b88e7d4a16f31ad6d870434933a05d2387f1599ef9fb75b0881",
+  "synthetic_gate_path": "r114/run_v1/RESULTS_JOB1.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "SOLVER_VALIDATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_cpu_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py, two jobs, each within this budget; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "P7 (audit/reviews/SOLVER_VALIDATION_PLAN_20261127.md); Tyler 27 Nov 2026 'Continue'. Mode field per the R96/R97 convention for synthetic rounds.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r114/PROTOCOL.sha256"
+}
