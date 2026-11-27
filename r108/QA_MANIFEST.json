@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered by ACA Slidefair (R98's 16 conventions) with FREE plaintext and cipher alphabets and a key periodic over pairs with period 1-47, or any key; exact compatibility of the 24 published letters, in place, checked per (convention, period) cell by X107 (letter identity plus forced collisions of the homogeneous mod-26 system), all crib pairs kept or one set aside.",
   "not_excluded": "OPEN cells; non-periodic structured keys other than the any-key cell; another same-column rule or errors at two or more crib pairs; other digraphic rules; transposition, insertion or deletion layers. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r108/PREREGISTRATION.md",
@@ -30,5 +30,9 @@
   "source_manifest_path": "r108/SOURCE.sha256",
   "gate_freeze_path": "r108/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r108/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r108/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r108/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r108/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r108/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }
