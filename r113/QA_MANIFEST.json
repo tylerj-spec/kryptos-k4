@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "gate",
+  "hypothesis": "Synthetic study (no K4 input): a decimation transposition mod 97 placing plaintext neighbours at ciphertext lag +-21 (steps 37 and 60), with a periodic substitution (p 2-30, random alphabets) before or after it, IC-matched to K4, makes R_21 >= 11 at least 10x more likely (conservative 99% bounds) than R71's running-key baseline; otherwise P5 closes.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made. Other lag-21 constructions (routes, layouts, non-periodic substitutions) are not simulated.",
+  "preregistration_path": "r113/PREREGISTRATION.md",
+  "preregistration_commit": "0fe82fae21da7076a31fdd752064fa011de83d61",
+  "preregistration_sha256": "cb51cfcfd88f5f47c36799b44a906da970566077a56453f6a71ef05a87069357",
+  "synthetic_gate_path": "r113/run_v1/RESULTS.json",
+  "gate_verdict": "GO",
+  "gate_type": "ANALYSIS_VERIFICATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "P5 step 1 (audit/ROLLING_QUEUE.md; audit/reviews/LAG21_NOVELTY_REVIEW_20261127.md); Tyler 27 Nov 2026 'continue on along with any logical next steps that you suggest'. Uses only the published K4 constants IC 0.03608 and R21 = 11 as thresholds; reads no K4 file. Mode field per the R96/R97 convention for synthetic rounds.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r113/PROTOCOL.sha256",
+  "source_manifest_path": "r113/SOURCE.sha256",
+  "outputs_manifest_path": "r113/run_v1/OUTPUTS.sha256",
+  "verdict": "CLOSE: conservative ratios 1.8-2.3 < 10; P5 closes with no K4 run (synthetic)"
+}

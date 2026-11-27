@@ -8,7 +8,7 @@ kept in git history.
 |---|---|---|---|
 | A | R98, R99, R100, R101 (L187–L190) | ChatGPT | **assigned 25 Nov 2026; in progress** |
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
-| C | R107, R108, R109, R110, R111 (L195–L199) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
+| C | R107–R113 (L195–L201) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
 
 **27 Nov quality review:** `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md` is a partial ChatGPT review
 of R105 and R108–R111. It corrects claim scope and identifies audit priorities; it closes no batch and does not
@@ -36,7 +36,9 @@ validation and complete witnesses, and reconciliation of lag 21 with R71.
 ## Proposed new items (need approval)
 | Item | Why | Depends on |
 |---|---|---|
-| **P5. Lag-21 follow-up (ciphertext only).** Novelty review done (`audit/reviews/LAG21_NOVELTY_REVIEW_20261127.md`): ciphertext autokey at lag 21 is already excluded (L17, L157); plaintext autokey and periodic predict no excess; the one uncovered mechanism is a transposition putting plaintext neighbours 21 apart, then a polyalphabetic substitution. **Step 1 (synthetic only):** IC-matched simulation of that family; **stop rule:** close P5 unless P(R21 >= 11) beats R71's running-key baseline by >= 10x (conservative bound). Step 2 (crib-assisted exact check) only if step 1 passes, separately registered | R110 re-measures R71's width-21 structure; it is not independent evidence | approval of step 1; must stay blind; no K4 input in step 1 |
+| **P5. Lag-21 follow-up: CLOSED (R113, L201).** The uncovered mechanism (lag-21-adjacency decimation plus periodic substitution) reaches only conservative 1.8-2.3x the running-key baseline, below the 10x bar; no K4 run | — | — |
+| **P6. K4 run of R112's exact check X112** (general same-column handling; 16 conventions x p 1-47 and any key; EXCL and EXCL_DROP; 200 shuffles; brute-force reference on the K4 cells after the freeze). Removes R108's no-same-column assumption | R112 (L200): sound, 0 disagreements, ROBUST at p 1-8 | approval; after the substantive review |
+| **P7. S105 validation round** per `audit/reviews/SOLVER_VALIDATION_PLAN_20261127.md` (disjoint text, balanced cells, exact endpoints, fail-closed 97-letter witnesses, full-search decoys); synthetic only | review item 2; needed before R106 or any R111 follow-up | approval of the bars; may run during the batch-B audit |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |

@@ -1,0 +1,212 @@
+{
+ "round": "R113",
+ "seed": 1130901,
+ "attempts_per_arm": 100000,
+ "ic_window": [
+  0.0341,
+  0.0381
+ ],
+ "R_bar": 11,
+ "C1_decimation": {
+  "pass": true
+ },
+ "C2_two_implementations": {
+  "strings": 1000,
+  "disagreements": 0,
+  "pass": true
+ },
+ "C3_sanity_no_substitution": {
+  "mean_R21_D37": 21.578,
+  "mean_R21_shuffled": 12.322,
+  "difference_in_se": 24.19,
+  "pass": true
+ },
+ "arms": {
+  "D37_after": {
+   "accepted": 25987,
+   "acceptance": 0.2599,
+   "q1_hits": 205,
+   "q1": 0.007888559664447608,
+   "q1_cp99": [
+    0.006545977887031984,
+    0.009414617584684593
+   ],
+   "q2_hits": 83,
+   "q2": 0.0031939046446300074,
+   "q2_cp99": [
+    0.0023641061361546205,
+    0.004210769035348949
+   ],
+   "mean_triple_repeats_21_42": 0.1483,
+   "q1_by_period_band": {
+    "11-20": {
+     "hits": 86,
+     "accepted": 10010
+    },
+    "2-5": {
+     "hits": 24,
+     "accepted": 456
+    },
+    "21-30": {
+     "hits": 53,
+     "accepted": 12610
+    },
+    "6-10": {
+     "hits": 42,
+     "accepted": 2911
+    }
+   }
+  },
+  "D37_before": {
+   "accepted": 25718,
+   "acceptance": 0.2572,
+   "q1_hits": 207,
+   "q1": 0.008048837390154755,
+   "q1_cp99": [
+    0.006685350353475117,
+    0.009597643435815428
+   ],
+   "q2_hits": 85,
+   "q2": 0.0033050781553775567,
+   "q2_cp99": [
+    0.002455723358281536,
+    0.004343353506853498
+   ],
+   "mean_triple_repeats_21_42": 0.1614,
+   "q1_by_period_band": {
+    "11-20": {
+     "hits": 88,
+     "accepted": 10066
+    },
+    "2-5": {
+     "hits": 22,
+     "accepted": 425
+    },
+    "21-30": {
+     "hits": 62,
+     "accepted": 12456
+    },
+    "6-10": {
+     "hits": 35,
+     "accepted": 2771
+    }
+   }
+  },
+  "D60_after": {
+   "accepted": 25876,
+   "acceptance": 0.2588,
+   "q1_hits": 180,
+   "q1": 0.0069562528984387076,
+   "q1_cp99": [
+    0.005696826580165848,
+    0.008400509706870396
+   ],
+   "q2_hits": 54,
+   "q2": 0.0020868758695316123,
+   "q2_cp99": [
+    0.0014283856176958158,
+    0.002934842135772942
+   ],
+   "mean_triple_repeats_21_42": 0.144,
+   "q1_by_period_band": {
+    "11-20": {
+     "hits": 61,
+     "accepted": 10061
+    },
+    "2-5": {
+     "hits": 25,
+     "accepted": 441
+    },
+    "21-30": {
+     "hits": 44,
+     "accepted": 12499
+    },
+    "6-10": {
+     "hits": 50,
+     "accepted": 2875
+    }
+   }
+  },
+  "D60_before": {
+   "accepted": 25406,
+   "acceptance": 0.2541,
+   "q1_hits": 219,
+   "q1": 0.008620011021018658,
+   "q1_cp99": [
+    0.007198591165446022,
+    0.010228716518757397
+   ],
+   "q2_hits": 73,
+   "q2": 0.002873337007006219,
+   "q2_cp99": [
+    0.002081809383496725,
+    0.0038566687214143807
+   ],
+   "mean_triple_repeats_21_42": 0.1622,
+   "q1_by_period_band": {
+    "11-20": {
+     "hits": 79,
+     "accepted": 9841
+    },
+    "2-5": {
+     "hits": 16,
+     "accepted": 414
+    },
+    "21-30": {
+     "hits": 68,
+     "accepted": 12380
+    },
+    "6-10": {
+     "hits": 56,
+     "accepted": 2771
+    }
+   }
+  },
+  "RUNKEY": {
+   "accepted": 31993,
+   "acceptance": 0.3199,
+   "q1_hits": 75,
+   "q1": 0.0023442628074891382,
+   "q1_cp99": [
+    0.001706239098304862,
+    0.0031347060835268943
+   ],
+   "q2_hits": 15,
+   "q2": 0.00046885256149782763,
+   "q2_cp99": [
+    0.00021548856624303793,
+    0.000880138259695074
+   ],
+   "mean_triple_repeats_21_42": 0.073,
+   "q1_by_period_band": {}
+  }
+ },
+ "ratios_vs_RUNKEY": {
+  "D37_after": {
+   "q1_conservative_ratio": 2.088227002024709,
+   "q1_point_ratio": 3.3650491912622975,
+   "q2_conservative_ratio": 2.686062229556605
+  },
+  "D37_before": {
+   "q1_conservative_ratio": 2.132688097492493,
+   "q1_point_ratio": 3.4334193949762812,
+   "q2_conservative_ratio": 2.7901563546758292
+  },
+  "D60_after": {
+   "q1_conservative_ratio": 1.8173399445973837,
+   "q1_point_ratio": 2.967351986396661,
+   "q2_conservative_ratio": 1.6229104938475047
+  },
+  "D60_before": {
+   "q1_conservative_ratio": 2.2964166252380522,
+   "q1_point_ratio": 3.677066834605999,
+   "q2_conservative_ratio": 2.365320857904726
+  }
+ },
+ "decision": "CLOSE",
+ "wall_s": 56.03,
+ "cpu_s": 55.7,
+ "source_sha256": {
+  "run113.py": "ac34d8af6f02b3afdf0a4dee828a3db045b9ab4aed7041ccd1e6fd53a13ad9b9"
+ }
+}
