@@ -100,3 +100,27 @@ alphabets, constant and primer. The 6 EXCL cells also allow one wrong published 
 R111's NO_SIGNAL stands on its own: it did not use R109.
 
 Nothing from R109 enters any blind search.
+
+## Errata (additive, 27 Nov 2026; after ChatGPT's partial quality review `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md`)
+1. **"Possible" overstates the 322 cells.** "322 are possible. Some pair of alphabets fits the 24 letters" is too
+   strong. Equations are built only where both P_i and P_(i−L) are published. The 322 cells **satisfy those
+   necessary direct-pair equations**. That is not a full-chain feasibility proof: it says nothing about propagation
+   through the unknown positions between published letters, with one primer and both alphabets. "Mostly open"
+   means **not excluded by this screen**.
+2. **The 732 NO_EQUATIONS cells** are unconstrained by this direct-pair screen. That does not show that no stronger
+   check could constrain them.
+3. **The solvers are not two independent proofs.**
+   - "The two solvers never disagree: the DFS confirmed all 34" is accurate, but only 12 exclusions came from the
+     primary (CRT) solver.
+   - The other **22 came from the DFS fallback** and were then re-checked by the same DFS.
+   - Both solvers use the same equation builder (`r102/s3b102.py rows`).
+   - So 22 of the 34 rest on one method. A separate derivation of the equation mapping and of DFS exhaustion is an
+     audit priority.
+4. **The amendments are not both conservative.** "Both are conservative" was inaccurate.
+   - **Amendment 1** (dmax 7 → 5) is conservative for verdicts, because capped cells return UNDECIDED.
+   - **Amendment 2 relaxed a gate acceptance criterion**: from ≥ 50% of 200 cases decided by both solvers, to ≥ 40
+     of 600. The gate observed 142/600. That exceeds the old absolute count of 100, but not its 50% share.
+   - Both amendments were documented and approved before the gate. They are disclosed prospective changes, not an
+     unchanged pre-registration.
+5. **V1 coverage.** Of V1's 150 plants, only **83** exercised nonempty systems; 67 had no equations. Future gates
+   should require nonvacuous cases in each relevant stratum.

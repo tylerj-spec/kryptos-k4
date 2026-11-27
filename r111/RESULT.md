@@ -85,3 +85,17 @@ recovery rate is 84–88%, so this is **not an exclusion**.
 - any additional layer.
 
 Nothing from R111 enters another blind search.
+
+## Errata and limits (additive, 27 Nov 2026; after ChatGPT's partial quality review `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md`)
+1. **Re-encryption was checked only from position L.** With a free primer, the first L letters can be fitted
+   algebraically, so that part is not tested. A future version should:
+   - emit the primer;
+   - forward-encrypt all 97 letters independently;
+   - make any failed witness **invalidate** the score-based decision.
+
+   All flags passed here, and the frozen source is unchanged.
+2. **Gate coverage.** The gate's 8 plants cover 8 of the 20 cells, with one lag-5 plant. 7/8 is a small gate, not a
+   reliability estimate per cell.
+3. **The plaintext source is not partitioned.** Gate plants and R105's development and registered plants all use
+   the same Carter OCR text. No disjoint-window partition was enforced. The provenance of the quadgram model's
+   training text is unverified. This is an evidence gap, not a finding of leakage.

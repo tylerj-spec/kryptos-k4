@@ -84,3 +84,23 @@ zero retries.
 - The ciphertext not read in place.
 
 Nothing from R108 enters any blind search.
+
+## Errata (additive, 27 Nov 2026; after ChatGPT's partial quality review `audit/reviews/R108_R111_CHATGPT_QUALITY_REVIEW_20261127.md`)
+1. **The headline and "Consequence" overstate the scope.** "Excluded … under every key structure tested" and "now
+   excluded for K4 in place, at the exact level, under any key" hold only on a condition: the 22 published letters
+   in the 11 complete crib pairs are right, and **no crib pair invokes the same-column rule**.
+   - The 372 DROP cells remain excluded allowing **at most one** erroneous or same-column pair.
+   - Two or more such pairs are outside every R108 guarantee.
+   - Same-column handling is an ordinary branch of the cipher, so this is **not an unconditional exclusion of
+     ordinary Slidefair** with free alphabets.
+   - The title's "372 of 768 cells survive one bad pair" means 372 cells **remain excluded** with one bad pair.
+2. **The same-column fraction.** "About 38% of true messages" was R107's panel (151/400). R108's own gate panel had
+   **136/400 (34%)** plants with at least one same-column crib pair. 23 of the 109 one-pair plants were labelled
+   EXCLUDED_EXACT. That is consistent with the label's stated assumption, and it shows why the assumption must stay
+   attached to every summary.
+3. **The cross-check is partly independent.** The rank reference re-implements only the forced-collision test. It
+   runs inside the same `X.check` pipeline, so pair extraction, equation construction, the identity test and the
+   DROP bookkeeping are shared. "Agrees 768/768" is accurate, but it is not an independent re-derivation of the
+   whole check.
+4. **The counts overlap.** The 768 and 372 are counts of overlapping labelled settings, not independent pieces of
+   evidence.

@@ -36,7 +36,7 @@ validation and complete witnesses, and reconciliation of lag 21 with R71.
 ## Proposed new items (need approval)
 | Item | Why | Depends on |
 |---|---|---|
-| **P5. Lag-21 follow-up (ciphertext only).** First reconcile with R71 and specify a materially new mechanism or distinguishing prediction; then propose a finite synthetic gate before any registered target follow-up | R110 remeasures a previously known width-21 repeat structure with a different weighting. Its p = 0.0013 / Bonferroni 0.032 is scoped to this scan, not independent confirmation | novelty review and a concrete work order; must stay blind; do not repeat R71's family sweep without new justification |
+| **P5. Lag-21 follow-up (ciphertext only).** Novelty review done (`audit/reviews/LAG21_NOVELTY_REVIEW_20261127.md`): ciphertext autokey at lag 21 is already excluded (L17, L157); plaintext autokey and periodic predict no excess; the one uncovered mechanism is a transposition putting plaintext neighbours 21 apart, then a polyalphabetic substitution. **Step 1 (synthetic only):** IC-matched simulation of that family; **stop rule:** close P5 unless P(R21 >= 11) beats R71's running-key baseline by >= 10x (conservative bound). Step 2 (crib-assisted exact check) only if step 1 passes, separately registered | R110 re-measures R71's width-21 structure; it is not independent evidence | approval of step 1; must stay blind; no K4 input in step 1 |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |
