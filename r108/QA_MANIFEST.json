@@ -5,7 +5,7 @@
   "hypothesis": "K4 is enciphered by ACA Slidefair (R98's 16 conventions) with FREE plaintext and cipher alphabets and a key periodic over pairs with period 1-47, or any key; exact compatibility of the 24 published letters, in place, checked per (convention, period) cell by X107 (letter identity plus forced collisions of the homogeneous mod-26 system), all crib pairs kept or one set aside.",
   "not_excluded": "OPEN cells; non-periodic structured keys other than the any-key cell; another same-column rule or errors at two or more crib pairs; other digraphic rules; transposition, insertion or deletion layers. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r108/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "0bc11c3f6df95f1023ec874d3ac5471c60f8e055",
   "preregistration_sha256": "6486204b8fd7d079833321ec4728c1afefd431862248049da6a5001158ca913d",
   "synthetic_gate_path": "r108/holdout/GATE.json",
   "gate_verdict": "PENDING",
@@ -26,5 +26,6 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries. Gate budget in r108/budgets/GATE_BUDGET.json.",
   "notes": "Proposal P4 (audit/ROLLING_QUEUE.md), approved by Tyler 27 Nov 2026 ('Do the 4 proposals then we'll do the audit'). Type B exact scope. No K4 input until the gate is GO and pushed.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r108/PROTOCOL.sha256"
+  "protocol_manifest_path": "r108/PROTOCOL.sha256",
+  "source_manifest_path": "r108/SOURCE.sha256"
 }
