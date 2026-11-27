@@ -32,5 +32,6 @@
   "freeze_manifest_path": "r111/k4/FROZEN.sha256",
   "resource_logs": [
     "r111/k4/TARGET_RESOURCE_LOG.json"
-  ]
+  ],
+  "verdict": "NO_SIGNAL (solver-limited; not an exclusion); provisional on the batch-B audit of R105"
 }

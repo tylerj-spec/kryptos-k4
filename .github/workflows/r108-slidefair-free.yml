@@ -1,0 +1,51 @@
+name: R108 free-alphabet periodic Slidefair on K4 (freeze check, recount, cross-check)
+on:
+  pull_request:
+    paths:
+      - "r108/**"
+      - ".github/workflows/r108-slidefair-free.yml"
+permissions:
+  contents: read
+jobs:
+  r108-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r108/PROTOCOL.sha256
+          sha256sum -c r108/SOURCE.sha256
+          sha256sum -c r108/holdout/GATE_FROZEN.sha256
+          sha256sum -c r108/k4/FROZEN.sha256
+      - name: "Recount all 201 frozen inputs and the 768 K4 cells, then re-derive the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r108", "r107", "r98"]
+          import run_target108 as RT, x107 as X, slidefair98 as SF
+          rows = RT.inputs()
+          assert [list(r) for r in rows] == [l.split("\t") for l in open("r108/k4/INPUTS.tsv").read().splitlines()[1:]]
+          obs = RT.observations()
+          hyp = [obs.get(i) for i in range(97)]
+          agg = json.load(open("r108/k4/AGGREGATES.json"))
+          for (name, ct), want in zip(rows, agg["inputs"]):
+              counts = {RT.label(p): dict.fromkeys(RT.VERDICTS, 0) for p in RT.P_ALL}
+              for conv in SF.CONVENTIONS:
+                  for p in RT.P_ALL:
+                      st = X.check(ct, hyp, conv, p)
+                      counts[RT.label(p)][st] += 1
+                      if name == "K4":
+                          assert agg["K4_cells"][f"{'_'.join(map(str, conv))}|p={RT.label(p)}"] == st
+              assert counts == want["by_key_structure"], name
+          print("R108 recount identical: 201/201 inputs, 768 K4 cells")
+          PY
+          python3 -I r108/evaluate108.py /tmp/E108.json
+          cmp /tmp/E108.json r108/k4/EVALUATION.json
+      - name: "Rank-reference cross-check on K4"
+        run: |
+          python3 -I r108/crosscheck108.py /tmp/X108.json
+          cmp /tmp/X108.json r108/k4/CROSSCHECK.json

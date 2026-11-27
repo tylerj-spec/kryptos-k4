@@ -32,5 +32,6 @@
   "freeze_manifest_path": "r110/k4/FROZEN.sha256",
   "resource_logs": [
     "r110/k4/TARGET_RESOURCE_LOG.json"
-  ]
+  ],
+  "verdict": "STAT_NO_SIGNAL at L = 1 (p 0.071); exploratory lag 21 p 0.0013 (Bonferroni 0.032)"
 }

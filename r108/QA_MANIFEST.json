@@ -34,5 +34,6 @@
   "freeze_manifest_path": "r108/k4/FROZEN.sha256",
   "resource_logs": [
     "r108/k4/TARGET_RESOURCE_LOG.json"
-  ]
+  ],
+  "verdict": "EXCL (EXACT) all 768 cells incl. any key; 372 cells also with one bad crib pair (DROP); PARTIAL at DROP level"
 }

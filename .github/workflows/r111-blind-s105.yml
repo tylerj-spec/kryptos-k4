@@ -1,0 +1,45 @@
+name: R111 blind S105 on K4 (freeze check, K4 re-run, witnesses, decision and clue check)
+on:
+  pull_request:
+    paths:
+      - "r111/**"
+      - ".github/workflows/r111-blind-s105.yml"
+permissions:
+  contents: read
+jobs:
+  r111-recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r111/PROTOCOL.sha256
+          sha256sum -c r111/SOURCE.sha256
+          sha256sum -c r111/holdout/GATE_FROZEN.sha256
+          sha256sum -c r111/k4/FROZEN.sha256
+      - name: "Re-run the 20-cell search on K4 (first in the solver stream) and compare every cell"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys
+          sys.path[:0] = ["r111"]
+          import cells111 as C, run_target111 as RT
+          ct = open("r39/ic_gate/k4_ciphertext.txt").read().strip()
+          T, rows = C.search(ct, random.Random(RT.SOLVER_SEED), keep_text=True)
+          want = json.load(open("r111/k4/CANDIDATES.json"))["K4"]
+          assert T == want["T"] and rows == want["cells"], "K4 re-run differs"
+          print("R111 K4 re-run identical: T =", T)
+          PY
+      - name: "Re-derive the decision and the post-freeze clue check"
+        run: |
+          python3 -I r111/evaluate111.py /tmp/E111.json
+          cmp /tmp/E111.json r111/k4/EVALUATION.json
+          python3 -I r111/cluecheck111.py /tmp/C111.json
+          cmp /tmp/C111.json r111/k4/CLUE_CHECK.json
