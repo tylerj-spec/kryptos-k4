@@ -1,0 +1,25 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "preregistered",
+  "hypothesis": "Synthetic study (no K4 input): an exact crib check X115 for a keystream from an affine linear recurrence of order L over Z26 with BOTH alphabets free (Quagmire IV type; Vigenere, Beaufort and Variant collapse) is structurally correct, sound on plants, agrees with an independent reference, and keeps chance-exclusion power at low orders.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made. Recurrences mod 10, nonlinear recurrences and interrupted or restarted keys are outside X115.",
+  "preregistration_path": "r115/PREREGISTRATION.md",
+  "preregistration_commit": "PENDING",
+  "preregistration_sha256": "e5198fe77d61d2dcaa198d5dd703f7b249f1608d94d29885c28a5f2abb39704b",
+  "synthetic_gate_path": "r115/run_v1/RESULTS.json",
+  "gate_verdict": "PENDING",
+  "gate_type": "ANALYSIS_VERIFICATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_cpu_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Tyler 27 Nov 2026: 'continue on along with any logical next steps that you suggest until we're ready for an actual substantive review'. Fallback task F3 (authorized at once); rank 1 of audit/reviews/F3_KEYGEN_CATALOGUE_20261128.md. Mode field per the R96/R97 convention for synthetic rounds.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r115/PROTOCOL.sha256"
+}
