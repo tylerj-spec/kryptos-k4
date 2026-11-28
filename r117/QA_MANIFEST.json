@@ -1,14 +1,14 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "preregistered",
+  "stage": "gate",
   "hypothesis": "K4 is enciphered by ACA Slidefair (R98's 16 conventions) with FREE plaintext and cipher alphabets and a key periodic over pairs with period 1-47, or any key, where every crib pair may be normal or same-column (R98's rule) in any number; exact compatibility of the 24 published letters, in place, checked per (convention, period) cell by X112, all crib pairs kept or one set aside.",
   "not_excluded": "OPEN cells; other same-column rules; errors at two or more crib pairs; non-periodic structured keys other than the any-key cell; other digraphic rules; transposition, insertion or deletion layers; masks under reading B. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r117/PREREGISTRATION.md",
   "preregistration_commit": "PENDING",
   "preregistration_sha256": "20fd48966d38f9bc91e1b5f6b9edbd9e62ed5ba188313e69cf701cb643e085b0",
   "synthetic_gate_path": "r117/holdout/GATE.json",
-  "gate_verdict": "PENDING",
+  "gate_verdict": "GO",
   "gate_type": "EXACT_CHECKER_CORRECTNESS",
   "blind_recovery_certified": false,
   "solver_inputs": [],
@@ -26,5 +26,9 @@
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS over the job's process group (3 workers); zero retries. Gate budget in r117/budgets/GATE_BUDGET.json; cross-check budget in r117/budgets/CROSSCHECK_BUDGET.json.",
   "notes": "Proposal P6 (audit/ROLLING_QUEUE.md), approved by Tyler 28 Nov 2026 ('I approve all of them'). Type B exact scope. No K4 input until the gate is GO and pushed.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r117/PROTOCOL.sha256"
+  "protocol_manifest_path": "r117/PROTOCOL.sha256",
+  "source_manifest_path": "r117/SOURCE.sha256",
+  "gate_freeze_path": "r117/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r117/holdout/GATE_RESOURCE_LOG.json",
+  "gate_budget_path": "r117/budgets/GATE_BUDGET.json"
 }

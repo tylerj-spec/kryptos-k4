@@ -1,0 +1,46 @@
+{
+ "round": "R117",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "seed": 1170901,
+ "G1_structure": {
+  "messages": 150,
+  "pairs": 7200,
+  "same_column_pairs": 1606,
+  "round_trip_failures": 0,
+  "equation_failures": 0,
+  "pass": true
+ },
+ "G2_soundness": {
+  "plants": 200,
+  "same_column_crib_pairs_histogram": {
+   "0": 63,
+   "1": 36,
+   "2": 7,
+   "3": 19,
+   "4": 22,
+   "5": 25,
+   "6": 11,
+   "7": 10,
+   "8": 7
+  },
+  "excluded_true": 0,
+  "excluded_drop_with_one_error": 0,
+  "pass": true
+ },
+ "G3_two_implementations": {
+  "small_mask_cells": 1280,
+  "full_mask_cells": 30,
+  "disagreements": 0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 43.05,
+ "cpu_s": 42.76,
+ "source_sha256": {
+  "gate117.py": "e8d532de7c5334bd45368cb4fd20773c94db6d48a9e1412850f54f3a1f243e3f",
+  "run_target117.py": "925d3ebc11f418941a07bd6d6b604e20aac120911ce353dd8cc86855e071404f",
+  "evaluate117.py": "f1412d16b842ce5bd7b12fd4907d7a796812b984f892d4743469aa4fc764ff4c",
+  "crosscheck117.py": "1c45f66a97d6470fb3756a4187d166d8bb42d3acb9005b17df457580bdd73108"
+ }
+}
