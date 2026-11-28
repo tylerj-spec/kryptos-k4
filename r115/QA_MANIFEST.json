@@ -1,14 +1,14 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "preregistered",
+  "stage": "gate",
   "hypothesis": "Synthetic study (no K4 input): an exact crib check X115 for a keystream from an affine linear recurrence of order L over Z26 with BOTH alphabets free (Quagmire IV type; Vigenere, Beaufort and Variant collapse) is structurally correct, sound on plants, agrees with an independent reference, and keeps chance-exclusion power at low orders.",
   "not_excluded": "Nothing is excluded and no K4 claim is made. Recurrences mod 10, nonlinear recurrences and interrupted or restarted keys are outside X115.",
   "preregistration_path": "r115/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "ad3a123ea3c3627d2f41590d95b58a847e2de499",
   "preregistration_sha256": "e5198fe77d61d2dcaa198d5dd703f7b249f1608d94d29885c28a5f2abb39704b",
   "synthetic_gate_path": "r115/run_v2/RESULTS.json",
-  "gate_verdict": "PENDING",
+  "gate_verdict": "GO",
   "gate_type": "ANALYSIS_VERIFICATION",
   "blind_recovery_certified": false,
   "resource_budget": {
@@ -24,5 +24,8 @@
   "protocol_manifest_path": "r115/PROTOCOL.sha256",
   "amendments": [
     "r115/AMENDMENT_1.md"
-  ]
+  ],
+  "source_manifest_path": "r115/SOURCE.sha256",
+  "outputs_manifest_path": "r115/run_v2/OUTPUTS.sha256",
+  "verdict": "COMPLETE: X115 sound (0/400 plants, 0 wrong-letter DROP), 0/6,828 disagreements; ROBUST at L 1, TESTABLE at L 2, WEAK at L 3-4 (synthetic; no K4 claim)"
 }
