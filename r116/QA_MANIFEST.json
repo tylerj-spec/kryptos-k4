@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "K4 is enciphered as y(c_n) = x(p_n) + k_n (mod 26) with FREE plaintext and cipher alphabets (Vigenere, Beaufort and Variant collapse) and a key from an affine linear recurrence k_n = a_1 k_{n-1} + ... + a_L k_{n-L} + d (mod 26) from the first crib position on; exact compatibility of the 24 published letters, in place, checked per coefficient vector by X115 (mod-2 and mod-13 systems, forced collisions), all equations kept or one set aside; L 1-2 per vector, L 3-4 counts.",
   "not_excluded": "OPEN vectors; orders 3 and above as families; recurrences mod 10; nonlinear recurrences; restarted or interrupted keys; errors at two or more crib letters; transposition, insertion or deletion layers; masks that merge two crib letters. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r116/PREREGISTRATION.md",
@@ -30,5 +30,9 @@
   "source_manifest_path": "r116/SOURCE.sha256",
   "gate_freeze_path": "r116/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r116/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r116/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r116/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r116/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r116/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }
