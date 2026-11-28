@@ -1,0 +1,261 @@
+{
+ "round": "R114",
+ "job": 2,
+ "seed_plants": 1140901,
+ "seed_solver": 1140902,
+ "A4": {
+  "plants": 12,
+  "right_cell": 12,
+  "recovered90": 12,
+  "rows": [
+   {
+    "B": "AZ",
+    "L": 1,
+    "sigma": 1,
+    "T": -400.1123,
+    "top_cell": [
+     "AZ",
+     1,
+     1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 4,
+    "sigma": -1,
+    "T": -398.0822,
+    "top_cell": [
+     "AZ",
+     4,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 91,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "KRY",
+    "L": 3,
+    "sigma": 1,
+    "T": -397.9101,
+    "top_cell": [
+     "KRY",
+     3,
+     1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 1,
+    "sigma": -1,
+    "T": -375.4669,
+    "top_cell": [
+     "AZ",
+     1,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 5,
+    "sigma": 1,
+    "T": -390.6122,
+    "top_cell": [
+     "AZ",
+     5,
+     1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "KRY",
+    "L": 3,
+    "sigma": -1,
+    "T": -383.9808,
+    "top_cell": [
+     "KRY",
+     3,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 2,
+    "sigma": 1,
+    "T": -369.8428,
+    "top_cell": [
+     "AZ",
+     2,
+     1
+    ],
+    "right_cell": true,
+    "letters": 96,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 5,
+    "sigma": -1,
+    "T": -374.2295,
+    "top_cell": [
+     "AZ",
+     5,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 96,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "KRY",
+    "L": 4,
+    "sigma": 1,
+    "T": -404.3044,
+    "top_cell": [
+     "KRY",
+     4,
+     1
+    ],
+    "right_cell": true,
+    "letters": 96,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "AZ",
+    "L": 2,
+    "sigma": -1,
+    "T": -400.7283,
+    "top_cell": [
+     "AZ",
+     2,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 90,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "KRY",
+    "L": 1,
+    "sigma": 1,
+    "T": -394.398,
+    "top_cell": [
+     "KRY",
+     1,
+     1
+    ],
+    "right_cell": true,
+    "letters": 97,
+    "witness_ok": true,
+    "recovered90": true
+   },
+   {
+    "B": "KRY",
+    "L": 4,
+    "sigma": -1,
+    "T": -379.2911,
+    "top_cell": [
+     "KRY",
+     4,
+     -1
+    ],
+    "right_cell": true,
+    "letters": 95,
+    "witness_ok": true,
+    "recovered90": true
+   }
+  ]
+ },
+ "A5": {
+  "decoys": 12,
+  "max_T": -455.5282,
+  "max_by_kind": {
+   "random": -457.6356,
+   "shuffle_of_A4": -458.4892,
+   "two_free_alphabet_autokey": -455.5282
+  },
+  "rows": [
+   {
+    "kind": "random",
+    "T": -457.6356
+   },
+   {
+    "kind": "random",
+    "T": -459.432
+   },
+   {
+    "kind": "random",
+    "T": -462.7099
+   },
+   {
+    "kind": "random",
+    "T": -460.0601
+   },
+   {
+    "kind": "shuffle_of_A4",
+    "T": -458.4892
+   },
+   {
+    "kind": "shuffle_of_A4",
+    "T": -465.6013
+   },
+   {
+    "kind": "shuffle_of_A4",
+    "T": -464.2669
+   },
+   {
+    "kind": "shuffle_of_A4",
+    "T": -463.8832
+   },
+   {
+    "kind": "two_free_alphabet_autokey",
+    "T": -458.5867
+   },
+   {
+    "kind": "two_free_alphabet_autokey",
+    "T": -455.5282
+   },
+   {
+    "kind": "two_free_alphabet_autokey",
+    "T": -471.666
+   },
+   {
+    "kind": "two_free_alphabet_autokey",
+    "T": -463.5558
+   }
+  ]
+ },
+ "bars": {
+  "bar4_A4": true,
+  "bar5_A5": true
+ },
+ "wall_s": 3161.76,
+ "cpu_s": 3138.17,
+ "source_sha256": {
+  "run114.py": "5e00a47f7a7e959b78ff1ba1d443c1b421f7359fbf1520637afee5c3bbac88a9"
+ }
+}
