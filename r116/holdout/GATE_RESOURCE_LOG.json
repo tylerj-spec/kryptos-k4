@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 107.626,
+  "max_rss_mb": 44.5,
+  "aggregate_peak_rss_mb": 44.5,
+  "per_process_peak_rss_mb": 44.4,
+  "cpu_seconds": 106.689,
+  "samples": 428,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 1800
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "OMP_NUM_THREADS=1",
+    "python3",
+    "-I",
+    "r116/gate116.py",
+    "r116/holdout/GATE.json"
+  ]
+}

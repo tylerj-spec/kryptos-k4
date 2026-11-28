@@ -1,0 +1,32 @@
+{
+ "round": "R116",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "seed": 1160901,
+ "V1_structure": {
+  "messages": 100,
+  "failures": 0,
+  "pass": true
+ },
+ "V2_soundness": {
+  "plants": 200,
+  "true_vector_excluded": 0,
+  "wrong_letter_excl_drop": 0,
+  "pass": true
+ },
+ "V3_two_implementations": {
+  "messages": 12,
+  "cells": 3214,
+  "disagreements": 0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 107.38,
+ "cpu_s": 106.57,
+ "source_sha256": {
+  "gate116.py": "3e7a1522c919da70994c4830eb8f3f8c8780587022707fc3b62eece60f16ef6e",
+  "run_target116.py": "edfe4fa4731314894a48260055cbb7193c9a4d1a4c3c517faecc2804e411fa0d",
+  "evaluate116.py": "5be16d3efb3899b02d88dc7cb935c1be8cea2e213cd225ac1393faeaf4653cca",
+  "crosscheck116.py": "346dd6f066c471fee0410320d4202abd9d1bc98336ed10c0149bd10d8e17f197"
+ }
+}
