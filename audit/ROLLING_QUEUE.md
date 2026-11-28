@@ -8,7 +8,7 @@ kept in git history.
 |---|---|---|---|
 | A | R98, R99, R100, R101 (L187–L190) | ChatGPT | **assigned 25 Nov 2026; in progress** |
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
-| C | R107–R115 (L195–L203) | ChatGPT | **ready for audit (28 Nov 2026)**, after batch B |
+| C | R107–R119 (L195–L207) | ChatGPT | **ready for audit (28 Nov 2026)**, after batch B |
 
 **Audit readiness index (27 Nov):** `audit/reviews/AUDIT_READINESS_20261127.md` lists R98–R113 by batch, with each claim, what to check first, the known independence gaps and what waits on the review.
 
@@ -39,16 +39,19 @@ validation and complete witnesses, and reconciliation of lag 21 with R71.
 | Item | Why | Depends on |
 |---|---|---|
 | **P5. Lag-21 follow-up: CLOSED (R113, L201).** The uncovered mechanism (lag-21-adjacency decimation plus periodic substitution) reaches only conservative 1.8-2.3x the running-key baseline, below the 10x bar; no K4 run | — | — |
-| **P6. K4 run of R112's exact check X112** (general same-column handling; 16 conventions x p 1-47 and any key; EXCL and EXCL_DROP; 200 shuffles; brute-force reference on the K4 cells after the freeze). Removes R108's no-same-column assumption | R112 (L200): sound, 0 disagreements, ROBUST at p 1-8 | approval; after the substantive review |
+| **P6. done (R117, L205):** free-alphabet Slidefair EXCL for K4 in all 768 cells with exact same-column handling (356 at DROP); brute-force cross-check 0/768 | Tyler 28 Nov: 'I approve all of them' | — |
 | **P7. S105 validation: done (R114, L202).** 4/5 bars pass; bar 3 (quadgram sensitivity) exactly at its 15-point limit, recorded FAIL by the frozen code's float rounding, PASS on the integer reading: for the reviewer. About 83% at >= 90 letters, 30-45% exact | — | — |
-| **P8. K4 run of R115's exact check X115** (affine linear-recurrence key, both alphabets free; every coefficient vector at orders 1-2, with orders 3-4 reported as WEAK; EXCL and EXCL_DROP; 200 shuffles; reference re-check of the K4 cells after the freeze). Order 1 includes progressive keys with two free alphabets (L177 had one) | R115 (L203) | approval; with P6 |
-| **P9. Blind-solver robustness to masked English** (F1 section 4): S105 and the R59/R61 running-key solvers on plants respelled by registered rule sets (L69's Dutch-like rules, telegraphese), reported as the drop in recovery against unmasked plants. Synthetic only | F1; R114's arms | approval |
+| **P8. done (R116, L204):** order-1 linear-recurrence keys with two free alphabets EXCL (DROP) for K4; order 2: 668/676 excluded, 8 OPEN; orders 3-4 WEAK | Tyler 28 Nov | — |
+| **P9. done (R118, L206):** Germanic/Dutch-like respelling SENSITIVE for S105 (-72.5) and R59's solver (-75); telegraphese ROBUST. Qualifies L149 and L199 | Tyler 28 Nov | — |
+| **P10. Decide R116's 8 OPEN order-2 vectors exactly** by a complete feasibility search (enumerate the crib system's solution space with injectivity) on those 8 fixed vectors | R116 | approval |
+| **P11. Orthography-aware blind scorer** (R118's development target): a letter or word model trained on registered respelling rules, validated as R114, before any repeat blind K4 run of S105 or R59's solver | R118 | approval |
+| **P12. F2 ranks 2–3 on L161's routes:** Slidefair, then a route (crib pairs move; report pair counts per route), and a route, then the two-free-alphabet autokey (R102's test) | F2, R119 | approval |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |
 |---|---|
 | F1 reversible language masking, as concrete mechanisms with predictions | **done (28 Nov):** `audit/reviews/F1_LANGUAGE_MASKING_CATALOGUE_20261128.md`. It adds a masking-scope sentence for exact rounds, and P9 |
-| F2 layered simple constructions, as a G0 catalogue | **done (27 Nov):** `audit/reviews/F2_LAYERED_CATALOGUE_20261127.md`. Its ranks 1–3 are R73-class route rounds, which need approval |
+| F2 layered simple constructions, as a G0 catalogue | **done (27 Nov).** Rank 1 run as **R119 (L207)**, approved by Tyler on 28 Nov: 8 of 26 routes excluded in every cell; periods 1, 2 and 4 excluded for all. Ranks 2–3 not yet run |
 | F3 non-repeating deterministic key generation | **done (28 Nov):** `audit/reviews/F3_KEYGEN_CATALOGUE_20261128.md`. Rank 1 became R115 (L203) and P8 |
 
 ## Standing parallel research priorities

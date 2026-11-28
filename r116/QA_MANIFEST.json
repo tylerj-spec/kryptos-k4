@@ -5,7 +5,7 @@
   "hypothesis": "K4 is enciphered as y(c_n) = x(p_n) + k_n (mod 26) with FREE plaintext and cipher alphabets (Vigenere, Beaufort and Variant collapse) and a key from an affine linear recurrence k_n = a_1 k_{n-1} + ... + a_L k_{n-L} + d (mod 26) from the first crib position on; exact compatibility of the 24 published letters, in place, checked per coefficient vector by X115 (mod-2 and mod-13 systems, forced collisions), all equations kept or one set aside; L 1-2 per vector, L 3-4 counts.",
   "not_excluded": "OPEN vectors; orders 3 and above as families; recurrences mod 10; nonlinear recurrences; restarted or interrupted keys; errors at two or more crib letters; transposition, insertion or deletion layers; masks that merge two crib letters. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r116/PREREGISTRATION.md",
-  "preregistration_commit": "PENDING",
+  "preregistration_commit": "755b0e8661c8c8ecc5ab27cb20948c6a1251e11b",
   "preregistration_sha256": "b91f0648bb80debccb35b863ed98144bb2c4ab0eeb59326910b4fc19714fe591",
   "synthetic_gate_path": "r116/holdout/GATE.json",
   "gate_verdict": "GO",
@@ -33,6 +33,8 @@
   "gate_budget_path": "r116/budgets/GATE_BUDGET.json",
   "freeze_manifest_path": "r116/k4/FROZEN.sha256",
   "resource_logs": [
-    "r116/k4/TARGET_RESOURCE_LOG.json"
-  ]
+    "r116/k4/TARGET_RESOURCE_LOG.json",
+    "r116/k4/CROSSCHECK_RESOURCE_LOG.json"
+  ],
+  "verdict": "EXCLUDED_DROP at order 1 (26/26 vectors, incl. progressive and multiplicative keys with two free alphabets); order 2 PARTIAL: 668/676 excluded (470 DROP), 8 OPEN; orders 3-4 WEAK (73.8%, 13.7% excluded); no LEAD; reference cross-check 0 disagreements"
 }

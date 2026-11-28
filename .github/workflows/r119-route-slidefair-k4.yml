@@ -1,0 +1,48 @@
+name: R119 route then Slidefair on K4 (freeze check, full recount, reference sample)
+on:
+  pull_request:
+    paths:
+      - "r119/**"
+      - ".github/workflows/r119-route-slidefair-k4.yml"
+permissions:
+  contents: read
+jobs:
+  r119-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r119/PROTOCOL.sha256
+          sha256sum -c r119/SOURCE.sha256
+          sha256sum -c r119/holdout/GATE_FROZEN.sha256
+          sha256sum -c r119/k4/FROZEN.sha256
+      - name: "Recount all 26 routes x 768 cells, re-derive the decision, and re-check 26 cells by brute force"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys, multiprocessing as mp
+          sys.path[:0] = ["r119", "r117", "r112", "r98"]
+          import run_target119 as RT9, routes119 as RT, run_target117 as T7, crosscheck117 as XC
+          ct = RT9.k4_ciphertext()
+          obs = RT9.observations()
+          hyp = [obs.get(i) for i in range(97)]
+          agg = json.load(open("r119/k4/AGGREGATES.json"))
+          routes = RT.routes()
+          jobs = [(RT.unroute(ct, r["perm"]), hyp, True) for r in routes]
+          with mp.get_context("fork").Pool(2) as pool:
+              res = list(pool.imap(T7.scan_input, jobs))
+          for r, want, (counts, cells) in zip(routes, agg["routes"], res):
+              assert r["name"] == want["route"] and counts == want["by_key_structure"] and cells == want["cells"], r["name"]
+          rng = random.Random(1190903)
+          sample = [(rng.choice(sorted(w["cells"])), RT.unroute(ct, r["perm"]), w) for r, w in zip(routes, agg["routes"])]
+          with mp.get_context("fork").Pool(2) as pool:
+              got = list(pool.imap(XC.ref_verdict, [(c, xs, hyp) for c, xs, _ in sample]))
+          assert all(g[1] == w["cells"][c] for g, (c, _, w) in zip(got, sample))
+          print("R119 recount identical: 26 routes x 768 cells; brute-force reference agrees on 26 sampled cells")
+          PY
+          python3 -I r119/evaluate119.py /tmp/E119.json
+          cmp /tmp/E119.json r119/k4/EVALUATION.json

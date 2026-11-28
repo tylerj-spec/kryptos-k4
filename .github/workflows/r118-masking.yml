@@ -1,0 +1,58 @@
+name: R118 solver robustness to masked English (hash checks, partial S re-run, R recount)
+on:
+  pull_request:
+    paths:
+      - "r118/**"
+      - ".github/workflows/r118-masking.yml"
+permissions:
+  contents: read
+jobs:
+  r118-recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r118/PROTOCOL.sha256
+          sha256sum -c r118/SOURCE.sha256
+          sha256sum -c r118/run_v1/OUTPUTS.sha256
+      - name: "Re-solve the first 9 S plants, and recount the R arm from the frozen solver outputs"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys
+          sys.path[:0] = ["r118"]
+          import run118 as R
+          S = json.load(open("r118/run_v1/RESULTS_S.json"))
+          toks, start, _ = R.token_regions()
+          rng = random.Random(R.SEED_S_PLANTS)
+          plants = []
+          for (b, L, sig) in R.C.CELLS[:2]:
+              for _ in range(2):
+                  forms = R.window_forms(rng, toks, start)
+                  s1, s2 = rng.choice([sp for sp in R.R114.SIGN_PAIRS if -sp[0] * sp[1] == sig])
+                  A = "".join(rng.sample(R.AZ, 26)); c = rng.randrange(26); primer = [rng.randrange(26) for _ in range(L)]
+                  for k in R.FORMS:
+                      ct = R.AK.encrypt(forms[k], A, R.C.B_LIST[b], "A", L, s1, s2, c, primer)
+                      plants.append({"form": k, "B": b, "L": L, "sigma": sig, "signs": [s1, s2], "A": A, "c": c, "pt": forms[k], "ct": ct})
+          srng = random.Random(R.SEED_S_SOLVER)
+          for i, p in enumerate(plants[:9]):
+              got = R.R114.solve_plant(p, srng)
+              want = {k: v for k, v in S["rows"][i].items() if k not in ("window", "form", "exact")}
+              assert got == want, (i, got, want)
+          Rr = json.load(open("r118/run_v1/RESULTS_R.json"))
+          for k in R.FORMS:
+              rk = [r for r in Rr["rows"] if r["form"] == k]
+              assert sum(r["pc60"] for r in rk) == Rr["summary"][k]["pc60"]
+          for k in R.FORMS:
+              rk = [r for r in S["rows"] if r["form"] == k]
+              assert sum(r["recovered90"] for r in rk) == S["summary"][k]["ge90"]
+          print("R118: 9 S plants re-solved identically; S and R summaries recounted;", S["drops"], Rr["drops"])
+          PY
