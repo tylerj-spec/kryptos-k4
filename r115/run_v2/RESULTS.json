@@ -1,0 +1,4593 @@
+{
+ "round": "R115",
+ "seed": 1150901,
+ "stage_wall_s": {
+  "T1": 0.14,
+  "T2": 0.68,
+  "T3": 194.8,
+  "T4": 701.83
+ },
+ "T1": {
+  "messages": 300,
+  "failures": 0,
+  "failed": []
+ },
+ "T2": {
+  "plants": 400,
+  "true_vector_excluded": 0,
+  "wrong_letter_excl_drop": 0,
+  "rows": [
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 1,
+    "a": [
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 1,
+    "a": [
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     4,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     20,
+     24
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     25,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     3,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     12,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     16,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     15,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     16,
+     2
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     23,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     13,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     17,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     21,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     21,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     11,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     20,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     25,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     8,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     11,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     23,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     20,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     22,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     22,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     4,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     21,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     22,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     6,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     10,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     17,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     13,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     14,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     23,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     3,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     2,
+     24
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     0,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     5,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     17,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     22,
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     15,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     23,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     6,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     16,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     5,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     23,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     11,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     4,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     13,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     14,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     19,
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     9,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     25,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     7,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     6,
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     13,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     21,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     19,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     21,
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     10,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     1,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     14,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     18,
+     24
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     24,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 2,
+    "a": [
+     10,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 2,
+    "a": [
+     13,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     23,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     24,
+     15,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     22,
+     17,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     14,
+     16,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     25,
+     8,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     7,
+     19,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     24,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     13,
+     12,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     14,
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     10,
+     10,
+     2
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     4,
+     10,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     2,
+     17,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     11,
+     6,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     11,
+     20,
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     25,
+     25,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     8,
+     15,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     21,
+     1,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     15,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     19,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     8,
+     13,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     9,
+     10,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     16,
+     19,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     16,
+     14,
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     20,
+     19,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     10,
+     4,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     13,
+     22,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     23,
+     4,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     19,
+     5,
+     2
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     13,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     19,
+     16,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     20,
+     23,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     25,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     24,
+     18,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     18,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     0,
+     25,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     5,
+     14,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     24,
+     17,
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     16,
+     10,
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     18,
+     24,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     2,
+     11,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     12,
+     25,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     18,
+     22,
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     16,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     10,
+     25,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     11,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     9,
+     8,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     23,
+     5,
+     0
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     4,
+     0,
+     24
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     24,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     6,
+     23,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     12,
+     8,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     24,
+     2,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     20,
+     14,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     6,
+     13,
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     4,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     8,
+     21,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     3,
+     2,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     6,
+     2,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     4,
+     20,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     2,
+     21,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     7,
+     14,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     22,
+     5,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     8,
+     23,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     12,
+     10,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     3,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     7,
+     23,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     11,
+     14,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     17,
+     7,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     13,
+     23,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     5,
+     11,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     19,
+     17,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     12,
+     25,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     1,
+     19,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 3,
+    "a": [
+     2,
+     12,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     5,
+     9,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 3,
+    "a": [
+     8,
+     15,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     20,
+     4,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     17,
+     2,
+     24,
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     21,
+     16,
+     10,
+     12
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     25,
+     8,
+     20,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     22,
+     23,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     21,
+     18,
+     20,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     7,
+     18,
+     13,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     11,
+     9,
+     9,
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     13,
+     14,
+     12,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     22,
+     0,
+     22,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     10,
+     22,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     1,
+     22,
+     2
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     5,
+     15,
+     18,
+     10
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     20,
+     11,
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     11,
+     5,
+     0,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     3,
+     23,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     25,
+     15,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     8,
+     12,
+     2,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     22,
+     4,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     11,
+     23,
+     14,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     16,
+     8,
+     18,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     21,
+     3,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     25,
+     4,
+     1,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     19,
+     2,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     20,
+     15,
+     18,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     24,
+     5,
+     19,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     13,
+     9,
+     18,
+     20
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     23,
+     18,
+     3,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     13,
+     20,
+     6,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     14,
+     3,
+     25,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     25,
+     16,
+     3,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     17,
+     0,
+     6,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     3,
+     12,
+     8,
+     19
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     20,
+     6,
+     19,
+     25
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     8,
+     25,
+     25,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     20,
+     19,
+     8,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     5,
+     10,
+     11,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     16,
+     4,
+     1,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     0,
+     9,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     16,
+     14,
+     18,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     14,
+     2,
+     2,
+     21
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     12,
+     16,
+     16
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "EXCL"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     7,
+     5,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     10,
+     6,
+     2,
+     18
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     18,
+     22,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     6,
+     11,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     3,
+     21,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     24,
+     21,
+     17,
+     8
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     12,
+     4,
+     9,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     19,
+     24,
+     12,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     4,
+     1,
+     12,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     0,
+     24,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     21,
+     21,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     19,
+     13,
+     5,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     18,
+     6,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     3,
+     17,
+     13,
+     23
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     23,
+     18,
+     12,
+     3
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     14,
+     13,
+     20,
+     5
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     18,
+     1,
+     5,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     22,
+     17,
+     2,
+     11
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     6,
+     13,
+     3,
+     15
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     19,
+     2,
+     7,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     17,
+     15,
+     21,
+     13
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     1,
+     0,
+     20,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     10,
+     16,
+     16,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     2,
+     20,
+     1,
+     22
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     21,
+     21,
+     23,
+     17
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     7,
+     7,
+     0,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     2,
+     23,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     24,
+     6,
+     10,
+     4
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     23,
+     4,
+     1,
+     2
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     0,
+     18,
+     24,
+     1
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     9,
+     16,
+     2,
+     14
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     23,
+     18,
+     14,
+     7
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     14,
+     6,
+     21,
+     9
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   },
+   {
+    "L": 4,
+    "a": [
+     22,
+     13,
+     6,
+     6
+    ],
+    "verdict": "OPEN",
+    "wrong_letter_verdict": "OPEN"
+   }
+  ]
+ },
+ "T3": {
+  "messages": 24,
+  "cells": 6828,
+  "disagreements": 0,
+  "tally_x115": {
+   "EXCL": 3935,
+   "OPEN": 2129,
+   "EXCL_DROP": 764
+  },
+  "examples": []
+ },
+ "T4": {
+  "1": {
+   "messages": 40,
+   "vectors_per_message": 26,
+   "excl_share": 0.9837,
+   "excl_drop_share": 0.8885,
+   "excl_share_min": 0.7692,
+   "excl_share_max": 1.0,
+   "label": "ROBUST",
+   "per_message": [
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 10,
+     "EXCL_DROP": 16,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 10,
+     "EXCL_DROP": 13,
+     "OPEN": 3
+    },
+    {
+     "EXCL": 2,
+     "EXCL_DROP": 24,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 3,
+     "EXCL_DROP": 18,
+     "OPEN": 5
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 7,
+     "EXCL_DROP": 19,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 7,
+     "EXCL_DROP": 19,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 1,
+     "EXCL_DROP": 25,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 7,
+     "EXCL_DROP": 19,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 1,
+     "EXCL_DROP": 25,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 3,
+     "EXCL_DROP": 23,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 2,
+     "EXCL_DROP": 24,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 9,
+     "EXCL_DROP": 11,
+     "OPEN": 6
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 6,
+     "EXCL_DROP": 20,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 2,
+     "EXCL_DROP": 24,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 24,
+     "OPEN": 2
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 13,
+     "EXCL_DROP": 13,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 2,
+     "EXCL_DROP": 24,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 1,
+     "EXCL_DROP": 25,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 1,
+     "EXCL_DROP": 25,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 7,
+     "EXCL_DROP": 18,
+     "OPEN": 1
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 5,
+     "EXCL_DROP": 21,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 0,
+     "EXCL_DROP": 26,
+     "OPEN": 0
+    }
+   ]
+  },
+  "2": {
+   "messages": 40,
+   "vectors_per_message": 676,
+   "excl_share": 0.8379,
+   "excl_drop_share": 0.4661,
+   "excl_share_min": 0.0991,
+   "excl_share_max": 1.0,
+   "label": "TESTABLE",
+   "per_message": [
+    {
+     "EXCL": 348,
+     "EXCL_DROP": 318,
+     "OPEN": 10
+    },
+    {
+     "EXCL": 307,
+     "EXCL_DROP": 220,
+     "OPEN": 149
+    },
+    {
+     "EXCL": 151,
+     "EXCL_DROP": 525,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 150,
+     "EXCL_DROP": 523,
+     "OPEN": 3
+    },
+    {
+     "EXCL": 243,
+     "EXCL_DROP": 59,
+     "OPEN": 374
+    },
+    {
+     "EXCL": 35,
+     "EXCL_DROP": 32,
+     "OPEN": 609
+    },
+    {
+     "EXCL": 299,
+     "EXCL_DROP": 346,
+     "OPEN": 31
+    },
+    {
+     "EXCL": 152,
+     "EXCL_DROP": 524,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 151,
+     "EXCL_DROP": 525,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 273,
+     "EXCL_DROP": 76,
+     "OPEN": 327
+    },
+    {
+     "EXCL": 331,
+     "EXCL_DROP": 314,
+     "OPEN": 31
+    },
+    {
+     "EXCL": 7,
+     "EXCL_DROP": 669,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 121,
+     "EXCL_DROP": 554,
+     "OPEN": 1
+    },
+    {
+     "EXCL": 471,
+     "EXCL_DROP": 89,
+     "OPEN": 116
+    },
+    {
+     "EXCL": 162,
+     "EXCL_DROP": 192,
+     "OPEN": 322
+    },
+    {
+     "EXCL": 207,
+     "EXCL_DROP": 204,
+     "OPEN": 265
+    },
+    {
+     "EXCL": 246,
+     "EXCL_DROP": 106,
+     "OPEN": 324
+    },
+    {
+     "EXCL": 496,
+     "EXCL_DROP": 43,
+     "OPEN": 137
+    },
+    {
+     "EXCL": 327,
+     "EXCL_DROP": 347,
+     "OPEN": 2
+    },
+    {
+     "EXCL": 160,
+     "EXCL_DROP": 510,
+     "OPEN": 6
+    },
+    {
+     "EXCL": 141,
+     "EXCL_DROP": 535,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 266,
+     "EXCL_DROP": 375,
+     "OPEN": 35
+    },
+    {
+     "EXCL": 105,
+     "EXCL_DROP": 570,
+     "OPEN": 1
+    },
+    {
+     "EXCL": 300,
+     "EXCL_DROP": 368,
+     "OPEN": 8
+    },
+    {
+     "EXCL": 179,
+     "EXCL_DROP": 230,
+     "OPEN": 267
+    },
+    {
+     "EXCL": 250,
+     "EXCL_DROP": 97,
+     "OPEN": 329
+    },
+    {
+     "EXCL": 554,
+     "EXCL_DROP": 122,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 177,
+     "EXCL_DROP": 492,
+     "OPEN": 7
+    },
+    {
+     "EXCL": 142,
+     "EXCL_DROP": 533,
+     "OPEN": 1
+    },
+    {
+     "EXCL": 512,
+     "EXCL_DROP": 157,
+     "OPEN": 7
+    },
+    {
+     "EXCL": 254,
+     "EXCL_DROP": 315,
+     "OPEN": 107
+    },
+    {
+     "EXCL": 253,
+     "EXCL_DROP": 84,
+     "OPEN": 339
+    },
+    {
+     "EXCL": 10,
+     "EXCL_DROP": 666,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 417,
+     "EXCL_DROP": 257,
+     "OPEN": 2
+    },
+    {
+     "EXCL": 263,
+     "EXCL_DROP": 66,
+     "OPEN": 347
+    },
+    {
+     "EXCL": 358,
+     "EXCL_DROP": 283,
+     "OPEN": 35
+    },
+    {
+     "EXCL": 440,
+     "EXCL_DROP": 77,
+     "OPEN": 159
+    },
+    {
+     "EXCL": 302,
+     "EXCL_DROP": 359,
+     "OPEN": 15
+    },
+    {
+     "EXCL": 489,
+     "EXCL_DROP": 171,
+     "OPEN": 16
+    },
+    {
+     "EXCL": 6,
+     "EXCL_DROP": 670,
+     "OPEN": 0
+    }
+   ]
+  },
+  "3": {
+   "messages": 40,
+   "vectors_per_message": 17576,
+   "excl_share": 0.4753,
+   "excl_drop_share": 0.1592,
+   "excl_share_min": 0.029,
+   "excl_share_max": 1.0,
+   "label": "WEAK",
+   "per_message": [
+    {
+     "EXCL": 427,
+     "EXCL_DROP": 83,
+     "OPEN": 17066
+    },
+    {
+     "EXCL": 4026,
+     "EXCL_DROP": 1081,
+     "OPEN": 12469
+    },
+    {
+     "EXCL": 15050,
+     "EXCL_DROP": 550,
+     "OPEN": 1976
+    },
+    {
+     "EXCL": 11813,
+     "EXCL_DROP": 2857,
+     "OPEN": 2906
+    },
+    {
+     "EXCL": 12596,
+     "EXCL_DROP": 4613,
+     "OPEN": 367
+    },
+    {
+     "EXCL": 1701,
+     "EXCL_DROP": 172,
+     "OPEN": 15703
+    },
+    {
+     "EXCL": 12137,
+     "EXCL_DROP": 1750,
+     "OPEN": 3689
+    },
+    {
+     "EXCL": 15180,
+     "EXCL_DROP": 1680,
+     "OPEN": 716
+    },
+    {
+     "EXCL": 2117,
+     "EXCL_DROP": 398,
+     "OPEN": 15061
+    },
+    {
+     "EXCL": 3266,
+     "EXCL_DROP": 432,
+     "OPEN": 13878
+    },
+    {
+     "EXCL": 1794,
+     "EXCL_DROP": 191,
+     "OPEN": 15591
+    },
+    {
+     "EXCL": 11706,
+     "EXCL_DROP": 2654,
+     "OPEN": 3216
+    },
+    {
+     "EXCL": 12090,
+     "EXCL_DROP": 1362,
+     "OPEN": 4124
+    },
+    {
+     "EXCL": 9038,
+     "EXCL_DROP": 8313,
+     "OPEN": 225
+    },
+    {
+     "EXCL": 80,
+     "EXCL_DROP": 17496,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 10829,
+     "EXCL_DROP": 6553,
+     "OPEN": 194
+    },
+    {
+     "EXCL": 166,
+     "EXCL_DROP": 2546,
+     "OPEN": 14864
+    },
+    {
+     "EXCL": 2995,
+     "EXCL_DROP": 582,
+     "OPEN": 13999
+    },
+    {
+     "EXCL": 2977,
+     "EXCL_DROP": 540,
+     "OPEN": 14059
+    },
+    {
+     "EXCL": 2200,
+     "EXCL_DROP": 97,
+     "OPEN": 15279
+    },
+    {
+     "EXCL": 2772,
+     "EXCL_DROP": 236,
+     "OPEN": 14568
+    },
+    {
+     "EXCL": 1910,
+     "EXCL_DROP": 422,
+     "OPEN": 15244
+    },
+    {
+     "EXCL": 792,
+     "EXCL_DROP": 16784,
+     "OPEN": 0
+    },
+    {
+     "EXCL": 391,
+     "EXCL_DROP": 864,
+     "OPEN": 16321
+    },
+    {
+     "EXCL": 14792,
+     "EXCL_DROP": 1794,
+     "OPEN": 990
+    },
+    {
+     "EXCL": 2668,
+     "EXCL_DROP": 1895,
+     "OPEN": 13013
+    },
+    {
+     "EXCL": 11827,
+     "EXCL_DROP": 2566,
+     "OPEN": 3183
+    },
+    {
+     "EXCL": 1402,
+     "EXCL_DROP": 175,
+     "OPEN": 15999
+    },
+    {
+     "EXCL": 3438,
+     "EXCL_DROP": 1318,
+     "OPEN": 12820
+    },
+    {
+     "EXCL": 819,
+     "EXCL_DROP": 1449,
+     "OPEN": 15308
+    },
+    {
+     "EXCL": 9258,
+     "EXCL_DROP": 8138,
+     "OPEN": 180
+    },
+    {
+     "EXCL": 11375,
+     "EXCL_DROP": 1984,
+     "OPEN": 4217
+    },
+    {
+     "EXCL": 2723,
+     "EXCL_DROP": 1753,
+     "OPEN": 13100
+    },
+    {
+     "EXCL": 3790,
+     "EXCL_DROP": 1816,
+     "OPEN": 11970
+    },
+    {
+     "EXCL": 1215,
+     "EXCL_DROP": 115,
+     "OPEN": 16246
+    },
+    {
+     "EXCL": 1446,
+     "EXCL_DROP": 180,
+     "OPEN": 15950
+    },
+    {
+     "EXCL": 2435,
+     "EXCL_DROP": 288,
+     "OPEN": 14853
+    },
+    {
+     "EXCL": 2466,
+     "EXCL_DROP": 15104,
+     "OPEN": 6
+    },
+    {
+     "EXCL": 12471,
+     "EXCL_DROP": 978,
+     "OPEN": 4127
+    },
+    {
+     "EXCL": 2025,
+     "EXCL_DROP": 108,
+     "OPEN": 15443
+    }
+   ]
+  },
+  "4": {
+   "messages": 20,
+   "vectors_per_message": 456976,
+   "excl_share": 0.1605,
+   "excl_drop_share": 0.0134,
+   "excl_share_min": 0.0144,
+   "excl_share_max": 0.9196,
+   "label": "WEAK",
+   "per_message": [
+    {
+     "EXCL": 22980,
+     "EXCL_DROP": 6121,
+     "OPEN": 427875
+    },
+    {
+     "EXCL": 3197,
+     "EXCL_DROP": 13053,
+     "OPEN": 440726
+    },
+    {
+     "EXCL": 88173,
+     "EXCL_DROP": 3953,
+     "OPEN": 364850
+    },
+    {
+     "EXCL": 78525,
+     "EXCL_DROP": 7091,
+     "OPEN": 371360
+    },
+    {
+     "EXCL": 13518,
+     "EXCL_DROP": 2195,
+     "OPEN": 441263
+    },
+    {
+     "EXCL": 16946,
+     "EXCL_DROP": 3096,
+     "OPEN": 436934
+    },
+    {
+     "EXCL": 85285,
+     "EXCL_DROP": 2464,
+     "OPEN": 369227
+    },
+    {
+     "EXCL": 23389,
+     "EXCL_DROP": 15896,
+     "OPEN": 417691
+    },
+    {
+     "EXCL": 39222,
+     "EXCL_DROP": 717,
+     "OPEN": 417037
+    },
+    {
+     "EXCL": 363078,
+     "EXCL_DROP": 11247,
+     "OPEN": 82651
+    },
+    {
+     "EXCL": 9212,
+     "EXCL_DROP": 5077,
+     "OPEN": 442687
+    },
+    {
+     "EXCL": 58305,
+     "EXCL_DROP": 10565,
+     "OPEN": 388106
+    },
+    {
+     "EXCL": 3056,
+     "EXCL_DROP": 5008,
+     "OPEN": 448912
+    },
+    {
+     "EXCL": 13485,
+     "EXCL_DROP": 1370,
+     "OPEN": 442121
+    },
+    {
+     "EXCL": 50191,
+     "EXCL_DROP": 848,
+     "OPEN": 405937
+    },
+    {
+     "EXCL": 39286,
+     "EXCL_DROP": 7883,
+     "OPEN": 409807
+    },
+    {
+     "EXCL": 406972,
+     "EXCL_DROP": 13244,
+     "OPEN": 36760
+    },
+    {
+     "EXCL": 12093,
+     "EXCL_DROP": 2815,
+     "OPEN": 442068
+    },
+    {
+     "EXCL": 11525,
+     "EXCL_DROP": 8919,
+     "OPEN": 436532
+    },
+    {
+     "EXCL": 5436,
+     "EXCL_DROP": 1144,
+     "OPEN": 450396
+    }
+   ]
+  }
+ },
+ "T1_T3_pass": true,
+ "labels": {
+  "1": "ROBUST",
+  "2": "TESTABLE",
+  "3": "WEAK",
+  "4": "WEAK"
+ },
+ "wall_s": 897.47,
+ "cpu_s": 889.88,
+ "source_sha256": {
+  "x115.py": "7891f89190a9a230167a18b6857857b1bf1ea626f5e4b23fffa6a9b4689f813b",
+  "ref115.py": "820b1630f0e8d5045985667520d302fd1e12c44917eab9008a2c379ed8d1c530",
+  "run115.py": "683cb3b453686448d9e4746a98cfc399d0bd79479fc8776858f7abd8e0cadf81"
+ }
+}
