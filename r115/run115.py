@@ -173,12 +173,12 @@ def main():
     t0w, t0c = time.time(), time.process_time()
     rng = random.Random(SEED)
     txt = corpus()
-    rep = {"round": "R115", "seed": SEED}
+    rep = {"round": "R115", "seed": SEED, "stage_wall_s": {}}
     for name, fn in (("T1", t1), ("T2", t2), ("T3", t3), ("T4", t4)):
         s = time.time()
         rep[name] = fn(rng, txt)
-        rep[name]["wall_s"] = round(time.time() - s, 2)
-        print(name, "done", rep[name]["wall_s"], "s", flush=True)
+        rep["stage_wall_s"][name] = round(time.time() - s, 2)
+        print(name, "done", rep["stage_wall_s"][name], "s", flush=True)
     passed = (rep["T1"]["failures"] == 0 and rep["T2"]["true_vector_excluded"] == 0
               and rep["T2"]["wrong_letter_excl_drop"] == 0 and rep["T3"]["disagreements"] == 0)
     rep["T1_T3_pass"] = passed

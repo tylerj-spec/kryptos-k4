@@ -7,7 +7,7 @@
   "preregistration_path": "r115/PREREGISTRATION.md",
   "preregistration_commit": "PENDING",
   "preregistration_sha256": "e5198fe77d61d2dcaa198d5dd703f7b249f1608d94d29885c28a5f2abb39704b",
-  "synthetic_gate_path": "r115/run_v1/RESULTS.json",
+  "synthetic_gate_path": "r115/run_v2/RESULTS.json",
   "gate_verdict": "PENDING",
   "gate_type": "ANALYSIS_VERIFICATION",
   "blind_recovery_certified": false,
@@ -19,7 +19,10 @@
     "max_retries": 0
   },
   "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS; zero retries.",
-  "notes": "Tyler 27 Nov 2026: 'continue on along with any logical next steps that you suggest until we're ready for an actual substantive review'. Fallback task F3 (authorized at once); rank 1 of audit/reviews/F3_KEYGEN_CATALOGUE_20261128.md. Mode field per the R96/R97 convention for synthetic rounds.",
+  "notes": "Tyler 27 Nov 2026: 'continue on along with any logical next steps that you suggest until we're ready for an actual substantive review'. Fallback task F3 (authorized at once); rank 1 of audit/reviews/F3_KEYGEN_CATALOGUE_20261128.md. Mode field per the R96/R97 convention for synthetic rounds. Run v1 INCOMPLETE (crash in the report step after all computations; no result written, 4a09125). Amendment 1 (Tyler 28 Nov, 'Approve (Recommended)'): report-step fix only, same seed and budget; run v2 is the only run with results.",
   "independent_execution_review": "NONE",
-  "protocol_manifest_path": "r115/PROTOCOL.sha256"
+  "protocol_manifest_path": "r115/PROTOCOL.sha256",
+  "amendments": [
+    "r115/AMENDMENT_1.md"
+  ]
 }
