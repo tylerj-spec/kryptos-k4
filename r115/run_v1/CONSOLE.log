@@ -1,0 +1,13 @@
+T1 done 0.14 s
+T2 done 0.54 s
+T3 done 192.9 s
+T4 done 655.53 s
+Traceback (most recent call last):
+  File "/workspace/kryptos-k4/r115/run115.py", line 194, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/kryptos-k4/r115/run115.py", line 185, in main
+    rep["labels"] = {L: v["label"] for L, v in rep["T4"].items()}
+                        ~^^^^^^^^^
+TypeError: 'float' object is not subscriptable
+INCOMPLETE: 849.43 s wall, 844.383 s CPU, aggregate peak 585.1 MB (exit code 1)

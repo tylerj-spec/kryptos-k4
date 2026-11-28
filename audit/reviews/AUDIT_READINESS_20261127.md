@@ -48,3 +48,23 @@ Independent review: NONE (one model). Everything below awaits the different-mode
 ## Closed in this period
 - **P5 (lag 21):** closed by R113 with no K4 run.
 - **Proposals P1–P4:** run as R109, R110, R111 and R108.
+
+## Update, 28 Nov 2026 (additive; the tables above are unchanged)
+**Added to batch C:**
+
+| Batch | Round | Ledger | Claim (in its stated scope) | Check first |
+|---|---|---|---|---|
+| C | R114 | L202 | S105 validated on held-out text: about 83% at ≥ 90/97 letters, 30–45% exact, 12/12 correct top cell, decoys separated; bar 3 is exactly at its 15-point limit (recorded FAIL by float rounding, PASS on the integer reading) | Which reading of bar 3 governs; the A3 table swap; that TEST-C is fresh but not provably unseen |
+| C | R115 | L203 | Exact check X115 for linear-recurrence keys with two free alphabets: sound, two implementations agree, power by order (see `r115/RESULT.md`) | The mod-2 / mod-13 split of the coefficient vector; X115 imports R112's `Sys` |
+
+**Desk catalogues, done:**
+- F1 (`F1_LANGUAGE_MASKING_CATALOGUE_20261128.md`). This adds a scope point for exact checks under masking.
+- F2 (`F2_LAYERED_CATALOGUE_20261127.md`).
+- F3 (`F3_KEYGEN_CATALOGUE_20261128.md`).
+
+**Waiting on the review or on approval:**
+- **P6:** the K4 run of X112.
+- **P8:** the K4 run of X115.
+- **R73-class route rounds** from F2.
+- **R106.**
+- **R111's provisional status.**

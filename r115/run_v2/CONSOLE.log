@@ -1,0 +1,6 @@
+T1 done 0.14 s
+T2 done 0.68 s
+T3 done 194.8 s
+T4 done 701.83 s
+{"T1_T3_pass": true, "labels": {"1": "ROBUST", "2": "TESTABLE", "3": "WEAK", "4": "WEAK"}, "T4": {"1": {"excl_share": 0.9837, "excl_drop_share": 0.8885}, "2": {"excl_share": 0.8379, "excl_drop_share": 0.4661}, "3": {"excl_share": 0.4753, "excl_drop_share": 0.1592}, "4": {"excl_share": 0.1605, "excl_drop_share": 0.0134}}}
+COMPLETE: 897.866 s wall, 890.024 s CPU, aggregate peak 584.7 MB
