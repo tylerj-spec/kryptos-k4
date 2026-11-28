@@ -1,0 +1,28 @@
+{
+  "status": "INCOMPLETE",
+  "reason": "exit code 1",
+  "exit_code": 1,
+  "wall_seconds": 849.43,
+  "max_rss_mb": 585.1,
+  "aggregate_peak_rss_mb": 585.1,
+  "per_process_peak_rss_mb": 584.9,
+  "cpu_seconds": 844.383,
+  "samples": 3377,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 3600
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "OMP_NUM_THREADS=1",
+    "python3",
+    "-I",
+    "r115/run115.py",
+    "r115/run_v1/RESULTS.json"
+  ]
+}
