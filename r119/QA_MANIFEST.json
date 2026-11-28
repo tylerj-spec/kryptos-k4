@@ -1,7 +1,7 @@
 {
   "schema": "k4-qa-v2",
   "mode": "crib_assisted",
-  "stage": "gate",
+  "stage": "frozen",
   "hypothesis": "EXPLORATORY (L161): K4 = route(Slidefair(pt)) with one of the 26 undocumented directed K3-style routes of L161 and ACA Slidefair (R98's 16 conventions, FREE alphabets, periodic key p 1-47 or any key, every crib pair normal or same-column); exact compatibility of the 24 published letters, in place, checked per (route, convention, period) cell by X112 on the un-routed ciphertext, all crib pairs kept or one set aside.",
   "not_excluded": "Routes outside the 26; Slidefair then route; autokeys after a route; other same-column rules; errors at two or more crib pairs; OPEN cells; masks under reading B. Aggregate exact verdicts only; no blind recovery.",
   "preregistration_path": "r119/PREREGISTRATION.md",
@@ -30,5 +30,9 @@
   "source_manifest_path": "r119/SOURCE.sha256",
   "gate_freeze_path": "r119/holdout/GATE_FROZEN.sha256",
   "gate_resource_log": "r119/holdout/GATE_RESOURCE_LOG.json",
-  "gate_budget_path": "r119/budgets/GATE_BUDGET.json"
+  "gate_budget_path": "r119/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r119/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r119/k4/TARGET_RESOURCE_LOG.json"
+  ]
 }
