@@ -1,0 +1,46 @@
+name: R114 S105 validation (hash checks, witness re-check, deterministic partial re-run)
+on:
+  pull_request:
+    paths:
+      - "r114/**"
+      - ".github/workflows/r114-validation.yml"
+permissions:
+  contents: read
+jobs:
+  r114-recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source and output manifests"
+        run: |
+          sha256sum -c r114/PROTOCOL.sha256
+          sha256sum -c r114/SOURCE.sha256
+          sha256sum -c r114/run_v1/OUTPUTS.sha256
+      - name: "Re-derive the plant list, recount the bars, and re-run the first 10 A1 plants and the first A4 plant"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys
+          sys.path[:0] = ["r114"]
+          import run114 as R
+          j1 = json.load(open("r114/run_v1/RESULTS_JOB1.json")); j2 = json.load(open("r114/run_v1/RESULTS_JOB2.json"))
+          r1 = j1["A1"]["rows"]
+          assert sum(r["recovered90"] for r in r1) == j1["A1"]["ge90"]["hits"]
+          assert all(r["witness_ok"] for a in ("A1", "A2", "A3") for r in j1[a]["rows"])
+          dev, a1, a2, a4, a5 = R.plants(random.Random(R.SEED_PLANTS))
+          srng = random.Random(R.SEED_SOLVER)
+          for k in range(10):
+              got = R.solve_plant(a1[k], srng)
+              assert got == r1[k], (k, got, r1[k])
+          srng2 = random.Random(R.SEED_SOLVER)
+          T, cells = R.C.search(a4[0]["ct"], srng2, keep_text=True)
+          assert T == j2["A4"]["rows"][0]["T"], (T, j2["A4"]["rows"][0]["T"])
+          print("R114 partial re-run identical; bars", j1["bars"], j2["bars"])
+          PY

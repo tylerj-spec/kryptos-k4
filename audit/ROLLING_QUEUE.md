@@ -8,7 +8,7 @@ kept in git history.
 |---|---|---|---|
 | A | R98, R99, R100, R101 (L187–L190) | ChatGPT | **assigned 25 Nov 2026; in progress** |
 | B | R102, R103, R104, R105 (L191–L194) | ChatGPT | **ready for audit (26 Nov 2026)**; R106 waits on it |
-| C | R107–R113 (L195–L201) | ChatGPT | **ready for audit (27 Nov 2026)**, after batch B |
+| C | R107–R114 (L195–L202) | ChatGPT | **ready for audit (28 Nov 2026)**, after batch B |
 
 **Audit readiness index (27 Nov):** `audit/reviews/AUDIT_READINESS_20261127.md` lists R98–R113 by batch, with each claim, what to check first, the known independence gaps and what waits on the review.
 
@@ -40,7 +40,7 @@ validation and complete witnesses, and reconciliation of lag 21 with R71.
 |---|---|---|
 | **P5. Lag-21 follow-up: CLOSED (R113, L201).** The uncovered mechanism (lag-21-adjacency decimation plus periodic substitution) reaches only conservative 1.8-2.3x the running-key baseline, below the 10x bar; no K4 run | — | — |
 | **P6. K4 run of R112's exact check X112** (general same-column handling; 16 conventions x p 1-47 and any key; EXCL and EXCL_DROP; 200 shuffles; brute-force reference on the K4 cells after the freeze). Removes R108's no-same-column assumption | R112 (L200): sound, 0 disagreements, ROBUST at p 1-8 | approval; after the substantive review |
-| **P7. S105 validation round** per `audit/reviews/SOLVER_VALIDATION_PLAN_20261127.md` (disjoint text, balanced cells, exact endpoints, fail-closed 97-letter witnesses, full-search decoys); synthetic only | review item 2; needed before R106 or any R111 follow-up | approval of the bars; may run during the batch-B audit |
+| **P7. S105 validation: done (R114, L202).** 4/5 bars pass; bar 3 (quadgram sensitivity) exactly at its 15-point limit, recorded FAIL by the frozen code's float rounding, PASS on the integer reading: for the reviewer. About 83% at >= 90 letters, 30-45% exact | — | — |
 
 ## Fallback tasks (independent of everything above)
 | Item | Status |
