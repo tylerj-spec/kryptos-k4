@@ -68,3 +68,19 @@ Independent review: NONE (one model). Everything below awaits the different-mode
 - **R73-class route rounds** from F2.
 - **R106.**
 - **R111's provisional status.**
+
+## Update, 28 Nov 2026, later (additive)
+Tyler approved P6, P8, P9 and F2's route rounds: "I approve all of them". Four more rounds join batch C (details in
+`audit/reviews/R116_R119_RESULTS.md`):
+
+| Batch | Round | Ledger | Claim (in its stated scope) | Check first |
+|---|---|---|---|---|
+| C | R116 | L204 | K4: order-1 linear-recurrence keys with two free alphabets EXCL (DROP); order 2: 668/676 excluded | The mod-2 / mod-13 split; the superset model |
+| C | R117 | L205 | K4: free-alphabet Slidefair EXCL in all 768 cells, with exact same-column handling | The 16 cells that moved from DROP to exact-only; the brute-force check covered all 768 |
+| C | R118 | L206 | Synthetic: both blind solvers SENSITIVE to Germanic/Dutch-like respelling, ROBUST to telegraphese | Rule set G is a single strong variant; the R arm ran on each plant's own convention |
+| C | R119 | L207 | K4: route, then Slidefair, EXCL for 8 of 26 L161 routes; periods 1, 2 and 4 for all | The reused R117 null; the exploratory scope (L161) |
+
+**Next proposals (need approval):**
+- **P10:** decide R116's 8 OPEN order-2 vectors exactly.
+- **P11:** an orthography-aware blind scorer.
+- **P12:** F2 ranks 2–3.

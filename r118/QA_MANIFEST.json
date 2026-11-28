@@ -1,0 +1,28 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "gate",
+  "hypothesis": "Synthetic measurement (no K4 input): the unchanged blind solvers S105 (R105/R111) and R59's running-key solver lose recovery on English masked by two registered rule sets (Germanic/Dutch-like respelling; telegraphese) relative to the same windows unmasked; labelled SENSITIVE if the drop exceeds 15 points, ROBUST otherwise.",
+  "not_excluded": "Nothing is excluded and no K4 claim is made. Other rule sets, other languages and other solvers are not measured.",
+  "preregistration_path": "r118/PREREGISTRATION.md",
+  "preregistration_commit": "707b8af7d72b591690c65b26d4522e89c23f5012",
+  "preregistration_sha256": "f22dab0bfbc064054d903052325ab8613d32d491e960b8a2b1e349bfe24e9ee1",
+  "synthetic_gate_path": "r118/run_v1/RESULTS_S.json",
+  "gate_verdict": "GO",
+  "gate_type": "SOLVER_VALIDATION",
+  "blind_recovery_certified": false,
+  "resource_budget": {
+    "max_wall_seconds": 3600,
+    "max_cpu_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0
+  },
+  "resource_semantics": "audit/run_bounded_agg.py, two jobs (S and R arms), each within this budget; aggregate wall, CPU and sampled RSS; zero retries.",
+  "notes": "Proposal P9 (audit/ROLLING_QUEUE.md; F1 section 4), approved by Tyler 28 Nov 2026 ('I approve all of them'). Mode field per the R96/R97 convention for synthetic rounds.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r118/PROTOCOL.sha256",
+  "source_manifest_path": "r118/SOURCE.sha256",
+  "outputs_manifest_path": "r118/run_v1/OUTPUTS.sha256",
+  "verdict": "S105: U 82.5% >= 90, G 10% (SENSITIVE, -72.5 points), T 80% (ROBUST); R59 solver: U 91.7% pair-correct >= 60, G 16.7% (SENSITIVE, -75), T 91.7% (ROBUST); synthetic, no K4 claim"
+}

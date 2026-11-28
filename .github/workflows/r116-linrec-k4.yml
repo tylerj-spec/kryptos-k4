@@ -1,0 +1,52 @@
+name: R116 linear-recurrence keys on K4 (freeze check, recount, cross-check)
+on:
+  pull_request:
+    paths:
+      - "r116/**"
+      - ".github/workflows/r116-linrec-k4.yml"
+permissions:
+  contents: read
+jobs:
+  r116-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install "numpy>=1.26,<3"
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r116/PROTOCOL.sha256
+          sha256sum -c r116/SOURCE.sha256
+          sha256sum -c r116/holdout/GATE_FROZEN.sha256
+          sha256sum -c r116/k4/FROZEN.sha256
+      - name: "Recount orders 1-3 on all 201 frozen inputs and order 4 on K4 and two shuffles, then re-derive the decision"
+        run: |
+          python3 -I - <<'PY'
+          import json, sys
+          sys.path[:0] = ["r116", "r115"]
+          import run_target116 as RT
+          rows = RT.inputs()
+          assert [list(r) for r in rows] == [l.split("\t") for l in open("r116/k4/INPUTS.tsv").read().splitlines()[1:]]
+          obs = RT.observations()
+          agg = json.load(open("r116/k4/AGGREGATES.json"))
+          for idx, ((name, ct), want) in enumerate(zip(rows, agg["inputs"])):
+              orders = (1, 2, 3, 4) if idx <= 2 else (1, 2, 3)
+              counts, cells, struct = RT.scan_input(ct, obs, orders, keep=name == "K4")
+              assert all(counts[L] == want["by_order"][L] for L in counts), name
+              if name == "K4":
+                  assert cells == agg["K4_cells_L1_L2"]
+                  assert struct == agg["K4_structured_L3_L4"]
+          print("R116 recount identical: 201/201 inputs at orders 1-3, 3 inputs at order 4, all K4 cells")
+          PY
+          python3 -I r116/evaluate116.py /tmp/E116.json
+          cmp /tmp/E116.json r116/k4/EVALUATION.json
+      - name: "Reference cross-check on K4"
+        run: |
+          python3 -I r116/crosscheck116.py /tmp/X116.json
+          cmp /tmp/X116.json r116/k4/CROSSCHECK.json

@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "exit_code": 0,
+  "wall_seconds": 1247.839,
+  "max_rss_mb": 1420.4,
+  "aggregate_peak_rss_mb": 1420.4,
+  "per_process_peak_rss_mb": 1376.5,
+  "cpu_seconds": 1225.982,
+  "samples": 4951,
+  "sample_interval_s": 0.25,
+  "budget": {
+    "max_wall_seconds": 3600,
+    "max_ram_mb": 2048,
+    "max_cpu_seconds": 3600
+  },
+  "semantics": "aggregate over the job's process group: sampled resident memory and CPU time; per-process RLIMIT_AS = max_ram_mb; wall clock of the whole job",
+  "wrapper": "audit/run_bounded_agg.py",
+  "command": [
+    "python3",
+    "-I",
+    "r118/run118.py",
+    "--arm",
+    "R",
+    "--lm",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/box_repro/lm/lm6.v2.bin",
+    "--solver",
+    "/tmp/claude-0/-workspace-kryptos-k4/ff13e42d-2b2b-53ec-b0cc-127bf64bf02b/scratchpad/r118dev/rk_solve",
+    "--work",
+    "r118/run_v1/work_R",
+    "r118/run_v1/RESULTS_R.json"
+  ]
+}

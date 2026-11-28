@@ -1,0 +1,28 @@
+k4_first_forward {"EXCL_DROP": 260, "EXCL": 72, "OPEN": 436}
+k4_first_inverse {"EXCL_DROP": 304, "EXCL": 464, "OPEN": 0}
+k4_last_forward {"EXCL_DROP": 428, "EXCL": 64, "OPEN": 276}
+k4_last_inverse {"EXCL_DROP": 476, "EXCL": 176, "OPEN": 116}
+k14_first_forward {"EXCL_DROP": 200, "EXCL": 312, "OPEN": 256}
+k14_first_inverse {"EXCL_DROP": 156, "EXCL": 464, "OPEN": 148}
+k14_last_forward {"EXCL_DROP": 156, "EXCL": 476, "OPEN": 136}
+k14_last_inverse {"EXCL_DROP": 328, "EXCL": 320, "OPEN": 120}
+k25_first_forward {"EXCL_DROP": 388, "EXCL": 248, "OPEN": 132}
+k25_first_inverse {"EXCL_DROP": 444, "EXCL": 196, "OPEN": 128}
+k25_last_forward {"EXCL_DROP": 136, "EXCL": 500, "OPEN": 132}
+k25_last_inverse {"EXCL_DROP": 424, "EXCL": 72, "OPEN": 272}
+k28_first_forward {"EXCL_DROP": 364, "EXCL": 404, "OPEN": 0}
+k28_first_inverse {"EXCL_DROP": 296, "EXCL": 92, "OPEN": 380}
+k28_last_forward {"EXCL_DROP": 392, "EXCL": 376, "OPEN": 0}
+k28_last_inverse {"EXCL_DROP": 460, "EXCL": 172, "OPEN": 136}
+k46_first_forward {"EXCL_DROP": 360, "EXCL": 408, "OPEN": 0}
+k46_first_inverse {"EXCL_DROP": 344, "EXCL": 424, "OPEN": 0}
+k46_last_forward {"EXCL_DROP": 636, "EXCL": 132, "OPEN": 0}
+k46_last_inverse {"EXCL_DROP": 520, "EXCL": 248, "OPEN": 0}
+k49_first_forward {"EXCL_DROP": 480, "EXCL": 148, "OPEN": 140}
+k49_first_inverse {"EXCL_DROP": 472, "EXCL": 152, "OPEN": 144}
+k49_last_forward {"EXCL_DROP": 432, "EXCL": 52, "OPEN": 284}
+k49_last_inverse {"EXCL_DROP": 492, "EXCL": 276, "OPEN": 0}
+k92_first_forward {"EXCL_DROP": 96, "EXCL": 240, "OPEN": 432}
+k92_first_inverse {"EXCL_DROP": 460, "EXCL": 192, "OPEN": 116}
+routes 26 OPEN max 436
+COMPLETE: 319.432 s wall, 316.724 s CPU, aggregate peak 68.4 MB

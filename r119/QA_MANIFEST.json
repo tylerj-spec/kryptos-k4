@@ -1,0 +1,40 @@
+{
+  "schema": "k4-qa-v2",
+  "mode": "crib_assisted",
+  "stage": "frozen",
+  "hypothesis": "EXPLORATORY (L161): K4 = route(Slidefair(pt)) with one of the 26 undocumented directed K3-style routes of L161 and ACA Slidefair (R98's 16 conventions, FREE alphabets, periodic key p 1-47 or any key, every crib pair normal or same-column); exact compatibility of the 24 published letters, in place, checked per (route, convention, period) cell by X112 on the un-routed ciphertext, all crib pairs kept or one set aside.",
+  "not_excluded": "Routes outside the 26; Slidefair then route; autokeys after a route; other same-column rules; errors at two or more crib pairs; OPEN cells; masks under reading B. Aggregate exact verdicts only; no blind recovery.",
+  "preregistration_path": "r119/PREREGISTRATION.md",
+  "preregistration_commit": "9ba6dd7815117a60f2622e1db6ff00e646e3c82b",
+  "preregistration_sha256": "6053049c83eca7ccc0d67ffdf512c0fc81b030777b3f45175cd31296a2eb36f3",
+  "synthetic_gate_path": "r119/holdout/GATE.json",
+  "gate_verdict": "GO",
+  "gate_type": "EXACT_CHECKER_CORRECTNESS",
+  "blind_recovery_certified": false,
+  "solver_inputs": [],
+  "resource_budget": {
+    "max_wall_seconds": 1800,
+    "max_cpu_seconds": 1800,
+    "max_ram_mb": 2048,
+    "max_candidates": 1,
+    "max_retries": 0,
+    "max_decoded_candidates": 0,
+    "max_surviving_setting_outputs": 0,
+    "max_aggregate_records": 26
+  },
+  "schema_compatibility": "As R98/R108/R117: the legacy schema requires a positive max_candidates; the binding limits are max_decoded_candidates=0 and max_surviving_setting_outputs=0.",
+  "resource_semantics": "audit/run_bounded_agg.py; aggregate wall, CPU and sampled RSS over the job's process group (3 workers); zero retries. Gate and cross-check budgets in r119/budgets/.",
+  "notes": "F2 rank 1 (audit/reviews/F2_LAYERED_CATALOGUE_20261127.md), approved by Tyler 28 Nov 2026 ('I approve all of them'); R73-class, explicitly exploratory per L161; the sealed gate is the pilot. Null: R117's frozen 200 shuffles. No K4 input until the gate is GO and pushed.",
+  "independent_execution_review": "NONE",
+  "protocol_manifest_path": "r119/PROTOCOL.sha256",
+  "source_manifest_path": "r119/SOURCE.sha256",
+  "gate_freeze_path": "r119/holdout/GATE_FROZEN.sha256",
+  "gate_resource_log": "r119/holdout/GATE_RESOURCE_LOG.json",
+  "gate_budget_path": "r119/budgets/GATE_BUDGET.json",
+  "freeze_manifest_path": "r119/k4/FROZEN.sha256",
+  "resource_logs": [
+    "r119/k4/TARGET_RESOURCE_LOG.json",
+    "r119/k4/CROSSCHECK_RESOURCE_LOG.json"
+  ],
+  "verdict": "PARTIAL (exploratory): EXCLUDED_EXACT for 8 of 26 routes in all 768 cells; periods 1, 2, 4 excluded for all 26 routes, period 3 for 25; 18 routes PARTIAL within the shuffle range; no LEAD; brute-force sample 0/312 disagreements"
+}

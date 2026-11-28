@@ -1,0 +1,60 @@
+{
+ "round": "R119",
+ "gate_type": "EXACT_CHECKER_CORRECTNESS",
+ "seed": 1190901,
+ "G1_routes": {
+  "routes": 26,
+  "names": [
+   "k4_first_forward",
+   "k4_first_inverse",
+   "k4_last_forward",
+   "k4_last_inverse",
+   "k14_first_forward",
+   "k14_first_inverse",
+   "k14_last_forward",
+   "k14_last_inverse",
+   "k25_first_forward",
+   "k25_first_inverse",
+   "k25_last_forward",
+   "k25_last_inverse",
+   "k28_first_forward",
+   "k28_first_inverse",
+   "k28_last_forward",
+   "k28_last_inverse",
+   "k46_first_forward",
+   "k46_first_inverse",
+   "k46_last_forward",
+   "k46_last_inverse",
+   "k49_first_forward",
+   "k49_first_inverse",
+   "k49_last_forward",
+   "k49_last_inverse",
+   "k92_first_forward",
+   "k92_first_inverse"
+  ],
+  "roundtrip_failures": 0,
+  "pass": true
+ },
+ "G2_soundness": {
+  "plants": 260,
+  "excluded_true": 0,
+  "excluded_drop_with_one_error": 0,
+  "pass": true
+ },
+ "G3_two_implementations": {
+  "cells": 52,
+  "disagreements": 0,
+  "pass": true
+ },
+ "status": "COMPLETE",
+ "gate_verdict": "GO",
+ "wall_s": 63.56,
+ "cpu_s": 61.84,
+ "source_sha256": {
+  "routes119.py": "0c4ebc8805492a5395e6c6454d04af82b9083a7eb6bccb2e562e63cb85c2e9e3",
+  "gate119.py": "cd87d586f8041e2775a3c96f9ccaafffca2230cdbc0f6f114adc66a947f99856",
+  "run_target119.py": "d5fb3a3bb6e473ebb8fa201e2d153d8612955e7b72d4709bcd74014dca159bb7",
+  "evaluate119.py": "657925f7a758657d638f849aec75477786d4b35521c3e78660771436c0268020",
+  "crosscheck119.py": "7c4624137287cc787a51c7fbeef7323219929343b296238c3d8e44caf0fbcd19"
+ }
+}

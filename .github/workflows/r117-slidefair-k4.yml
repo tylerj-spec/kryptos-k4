@@ -1,0 +1,50 @@
+name: R117 Slidefair with same-column handling on K4 (freeze check, partial recount, reference sample)
+on:
+  pull_request:
+    paths:
+      - "r117/**"
+      - ".github/workflows/r117-slidefair-k4.yml"
+permissions:
+  contents: read
+jobs:
+  r117-recount:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: "Registration, source, gate and target freeze manifests"
+        run: |
+          sha256sum -c r117/PROTOCOL.sha256
+          sha256sum -c r117/SOURCE.sha256
+          sha256sum -c r117/holdout/GATE_FROZEN.sha256
+          sha256sum -c r117/k4/FROZEN.sha256
+      - name: "Recount K4 (768 cells) and the first 40 shuffles, re-derive the decision, and re-check 96 K4 cells by brute force"
+        run: |
+          python3 -I - <<'PY'
+          import json, random, sys, multiprocessing as mp
+          sys.path[:0] = ["r117", "r112", "r98"]
+          import run_target117 as RT, crosscheck117 as XC
+          rows = RT.inputs()
+          assert [list(r) for r in rows] == [l.split("\t") for l in open("r117/k4/INPUTS.tsv").read().splitlines()[1:]]
+          obs = RT.observations()
+          hyp = [obs.get(i) for i in range(97)]
+          agg = json.load(open("r117/k4/AGGREGATES.json"))
+          jobs = [(ct, hyp, name == "K4") for name, ct in rows[:41]]
+          with mp.get_context("fork").Pool(2) as pool:
+              res = list(pool.imap(RT.scan_input, jobs))
+          for (name, _), want, (counts, cells) in zip(rows[:41], agg["inputs"][:41], res):
+              assert counts == want["by_key_structure"], name
+              if name == "K4":
+                  assert cells == agg["K4_cells"]
+          ct = rows[0][1]
+          sample = random.Random(1170903).sample(sorted(agg["K4_cells"]), 96)
+          with mp.get_context("fork").Pool(2) as pool:
+              ref = dict(pool.imap(XC.ref_verdict, [(c, ct, hyp) for c in sample]))
+          assert all(ref[c] == agg["K4_cells"][c] for c in sample)
+          print("R117 recount identical: K4 768 cells + 40 shuffles; brute-force reference agrees on 96 sampled K4 cells")
+          PY
+          python3 -I r117/evaluate117.py /tmp/E117.json
+          cmp /tmp/E117.json r117/k4/EVALUATION.json
