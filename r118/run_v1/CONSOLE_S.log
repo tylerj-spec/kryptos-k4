@@ -1,0 +1,2 @@
+{"summary": {"U": {"plants": 40, "ge90": 33, "exact": 16, "witness_failures": 0, "share_ge90": 0.825}, "G": {"plants": 40, "ge90": 4, "exact": 0, "witness_failures": 0, "share_ge90": 0.1}, "T": {"plants": 40, "ge90": 32, "exact": 16, "witness_failures": 0, "share_ge90": 0.8}}, "drops": {"G": {"drop_points": 72.5, "recovered_U_not_M": 30, "recovered_M_not_U": 1, "label": "SENSITIVE"}, "T": {"drop_points": 2.5, "recovered_U_not_M": 2, "recovered_M_not_U": 1, "label": "ROBUST"}}}
+COMPLETE: 850.779 s wall, 830.224 s CPU, aggregate peak 372.2 MB
